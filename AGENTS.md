@@ -22,6 +22,12 @@
   - `Embedding/` → `models/embeddings`
   - `upscale/` → `models/upscale_models`
   - `ControlNet/` → `models/controlnet` (only for CivitAI-sourced controlnets)
+- **Checkpoint organization by base model**: Inside `Model/` and `NSFW_model/`, organize checkpoints into subfolders by their base model type so ComfyUI can group them logically:
+  - `Model/SDXL/` — for SDXL-based checkpoints
+  - `Model/pony/` — for Pony Diffusion-based checkpoints
+  - `Model/SD1.5/` — for SD 1.5-based checkpoints
+  - (Create additional subfolders as needed for other base models)
+  - The same rule applies to `NSFW_model/SDXL/`, `NSFW_model/pony/`, etc.
 - **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/<Category>/` (e.g., `ControlNet/`, `checkpoints/`, `loras/`) and symlink into the appropriate `models/` directory.
 - **If a category doesn't exist yet**:
   1. Create the folder under the correct NAS base path.
