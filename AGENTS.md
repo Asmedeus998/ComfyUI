@@ -10,6 +10,15 @@
 ## Runtime & Logs
 
 - **ComfyUI runs inside a tmux session named `comfyui-dev`**.
+- **After installing new custom nodes or patching node code, restart ComfyUI** so the changes are picked up:
+  ```bash
+  # Stop current instance
+  tmux send-keys -t comfyui-dev C-c
+  sleep 2
+  # Restart
+  tmux send-keys -t comfyui-dev "cd /home/yumeko/github/ComfyUI && ./start.sh" Enter
+  ```
+  Then wait ~20s and verify it's up: `curl -s http://127.0.0.1:8195/system_stats`
 - To check live logs / errors, always inspect the tmux session first:
   ```bash
   tmux capture-pane -p -t comfyui-dev -S -1000 | tail -100
