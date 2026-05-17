@@ -27,4 +27,4 @@
   1. Create the folder under the correct NAS base path.
   2. Save the downloaded model there.
   3. Symlink it into the corresponding `models/` directory.
-  4. Update `scripts/link_nas_models.sh` so future models of that type are auto-linked.
+  4. **Mandatory**: Update `scripts/link_nas_models.sh` to auto-link the new category, then **commit and push** the script change alongside any `AGENTS.md` updates.
