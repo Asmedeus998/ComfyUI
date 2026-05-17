@@ -113,6 +113,7 @@ link_folder "$NAS_BASE/upscale" "$COMFYUI/models/upscale_models" "Legacy Upscale
 # ═══════════════════════════════════════════════════════════════════════
 echo "=== HuggingFace links ==="
 link_flat "$HF_BASE/ControlNet" "$COMFYUI/models/controlnet" "HF ControlNet"
+link_flat "$HF_BASE/sdxl" "$COMFYUI/models/checkpoints" "HF SDXL Checkpoints"
 
 # ═══════════════════════════════════════════════════════════════════════
 # EXTRAS
