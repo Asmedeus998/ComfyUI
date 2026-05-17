@@ -8,6 +8,7 @@
 set -euo pipefail
 
 NAS_BASE="${NAS_BASE:-/mnt/storage/comfyui_data/CivitAI}"
+HF_BASE="${HF_BASE:-/mnt/storage/comfyui_data/Huggingface}"
 COMFYUI="${COMFYUI:-$(cd "$(dirname "$0")/.." && pwd)}"
 DRY_RUN="${DRY_RUN:-0}"
 
@@ -84,6 +85,7 @@ for arg in "$@"; do
 done
 
 echo "NAS_BASE : $NAS_BASE"
+echo "HF_BASE  : $HF_BASE"
 echo "COMFYUI  : $COMFYUI"
 echo ""
 
@@ -105,6 +107,12 @@ link_folder "$NAS_BASE/Embedding/Embedding001"      "$COMFYUI/models/embeddings"
 link_folder "$NAS_BASE/Embedding/nixeu-embeddings"  "$COMFYUI/models/embeddings" "Legacy nixeu-embeddings"
 
 link_folder "$NAS_BASE/upscale" "$COMFYUI/models/upscale_models" "Legacy Upscalers"
+
+# ═══════════════════════════════════════════════════════════════════════
+# HUGGINGFACE
+# ═══════════════════════════════════════════════════════════════════════
+echo "=== HuggingFace links ==="
+link_flat "$HF_BASE/ControlNet" "$COMFYUI/models/controlnet" "HF ControlNet"
 
 # ═══════════════════════════════════════════════════════════════════════
 # EXTRAS
