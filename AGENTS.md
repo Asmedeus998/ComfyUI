@@ -10,18 +10,21 @@
 ## Model Storage (IMPORTANT)
 
 - **All models MUST be saved to the NAS**, not directly into the local repo's `models/` folders.
-  - NAS base path: `/mnt/storage/comfyui_data/CivitAI/`
-  - The project uses `scripts/link_nas_models.sh` to symlink from the NAS into `models/`.
-- **Existing categories** on the NAS (save to the appropriate folder):
+- **Source determines the NAS base path**:
+  - **CivitAI downloads** → `/mnt/storage/comfyui_data/CivitAI/`
+  - **HuggingFace downloads** → `/mnt/storage/comfyui_data/Huggingface/`
+- The project uses `scripts/link_nas_models.sh` to symlink from the NAS into `models/`.
+- **Existing CivitAI categories** (save to the appropriate folder):
   - `Model/` → `models/checkpoints`
   - `NSFW_model/` → `models/checkpoints`
   - `VAE/` → `models/vae`
   - `LORA/`, `NSFW_LORA/`, `LORA_character/`, `Lora_clothes/`, `Lora_style/` → `models/loras`
   - `Embedding/` → `models/embeddings`
   - `upscale/` → `models/upscale_models`
-  - `ControlNet/` → `models/controlnet`
+  - `ControlNet/` → `models/controlnet` (only for CivitAI-sourced controlnets)
+- **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/` (organized by subfolder if desired) and symlink into the appropriate `models/` directory.
 - **If a category doesn't exist yet**:
-  1. Create the folder under `/mnt/storage/comfyui_data/CivitAI/<Category>/`
+  1. Create the folder under the correct NAS base path.
   2. Save the downloaded model there.
   3. Symlink it into the corresponding `models/` directory.
   4. Update `scripts/link_nas_models.sh` so future models of that type are auto-linked.
