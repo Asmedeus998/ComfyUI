@@ -112,8 +112,10 @@ link_folder "$NAS_BASE/upscale" "$COMFYUI/models/upscale_models" "Legacy Upscale
 # HUGGINGFACE
 # ═══════════════════════════════════════════════════════════════════════
 echo "=== HuggingFace links ==="
-link_flat "$HF_BASE/ControlNet" "$COMFYUI/models/controlnet" "HF ControlNet"
-link_flat "$HF_BASE/Model" "$COMFYUI/models/checkpoints" "HF Checkpoints"
+link_flat "$HF_BASE/ControlNet"  "$COMFYUI/models/controlnet"  "HF ControlNet"
+link_flat "$HF_BASE/Model"       "$COMFYUI/models/checkpoints" "HF Checkpoints"
+link_flat "$HF_BASE/clip_vision" "$COMFYUI/models/clip_vision" "HF CLIP Vision"
+link_flat "$HF_BASE/ipadapter"   "$COMFYUI/models/ipadapter"   "HF IPAdapter"
 
 # ═══════════════════════════════════════════════════════════════════════
 # EXTRAS

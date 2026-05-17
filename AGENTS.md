@@ -31,6 +31,8 @@
 - **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/<Category>/` and symlink into the appropriate `models/` directory.
   - `Model/SDXL/`, `Model/pony/`, `Model/SD1.5/` → `models/checkpoints` (same base-model subfolder rule as CivitAI)
   - `ControlNet/` → `models/controlnet`
+  - `clip_vision/` → `models/clip_vision` (CLIP Vision encoders for IPAdapter, e.g. `CLIP-ViT-H-14-laion2B-s32B-b79K.bin`)
+  - `ipadapter/` → `models/ipadapter` (IPAdapter models, e.g. `ip-adapter_sdxl_vit-h.safetensors`)
 - **If a category doesn't exist yet**:
   1. Create the folder under the correct NAS base path.
   2. Save the downloaded model there.
