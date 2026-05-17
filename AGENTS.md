@@ -7,6 +7,22 @@
   - Preferred flags: `aria2c -x 4 -s 4 --dir=<output_dir> --out=<filename> <url>`
 - **Custom nodes**: Clone into `custom_nodes/`. This directory is gitignored; do not commit custom node sub-repos.
 
+## Runtime & Logs
+
+- **ComfyUI runs inside a tmux session named `comfyui-dev`**.
+- To check live logs / errors, always inspect the tmux session first:
+  ```bash
+  tmux capture-pane -p -t comfyui-dev -S -1000 | tail -100
+  ```
+  Or attach interactively: `tmux attach -t comfyui-dev`
+- Common issues visible in the tmux log:
+  - `ClipVision model not found` → missing `clip_vision` model
+  - `IPAdapter model not found` → missing `ipadapter` model  
+  - `ERROR lora ... shape '...' is invalid` → LoRA base model mismatch (e.g. SD 1.5 LoRA on SDXL checkpoint)
+  - `lora key not loaded` → LoRA has extra keys for a different architecture (usually harmless if partial)
+  - `Failed to validate prompt` → workflow nodes have disconnected/missing required inputs
+  - `warning, embedding:... does not exist` → missing Textual Inversion embedding (non-blocking)
+
 ## Model Storage (IMPORTANT)
 
 - **All models MUST be saved to the NAS**, not directly into the local repo's `models/` folders.
