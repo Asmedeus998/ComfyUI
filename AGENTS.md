@@ -28,7 +28,9 @@
   - `Model/SD1.5/` — for SD 1.5-based checkpoints
   - (Create additional subfolders as needed for other base models)
   - The same rule applies to `NSFW_model/SDXL/`, `NSFW_model/pony/`, etc.
-- **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/<Category>/` (e.g., `ControlNet/`, `checkpoints/`, `loras/`) and symlink into the appropriate `models/` directory.
+- **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/<Category>/` and symlink into the appropriate `models/` directory.
+  - `Model/SDXL/`, `Model/pony/`, `Model/SD1.5/` → `models/checkpoints` (same base-model subfolder rule as CivitAI)
+  - `ControlNet/` → `models/controlnet`
 - **If a category doesn't exist yet**:
   1. Create the folder under the correct NAS base path.
   2. Save the downloaded model there.
