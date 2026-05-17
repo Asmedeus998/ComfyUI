@@ -22,7 +22,7 @@
   - `Embedding/` → `models/embeddings`
   - `upscale/` → `models/upscale_models`
   - `ControlNet/` → `models/controlnet` (only for CivitAI-sourced controlnets)
-- **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/` (organized by subfolder if desired) and symlink into the appropriate `models/` directory.
+- **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/<Category>/` (e.g., `ControlNet/`, `checkpoints/`, `loras/`) and symlink into the appropriate `models/` directory.
 - **If a category doesn't exist yet**:
   1. Create the folder under the correct NAS base path.
   2. Save the downloaded model there.
