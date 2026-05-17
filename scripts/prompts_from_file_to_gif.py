@@ -1,0 +1,1 @@
+/mnt/storage/comfyui_data/CivitAI/scripts/prompts_from_file_to_gif.py
