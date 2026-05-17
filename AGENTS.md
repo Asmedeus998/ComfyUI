@@ -49,8 +49,20 @@
   - `ControlNet/` → `models/controlnet`
   - `clip_vision/` → `models/clip_vision` (CLIP Vision encoders for IPAdapter, e.g. `CLIP-ViT-H-14-laion2B-s32B-b79K.bin`)
   - `ipadapter/` → `models/ipadapter` (IPAdapter models, e.g. `ip-adapter_sdxl_vit-h.safetensors`)
+- **Custom-node-internal models** (e.g. IndexTTS2): Some nodes store their own checkpoints inside the custom node folder (e.g. `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`). For these:
+  1. Download to a NAS subfolder (e.g. `Huggingface/IndexTTS2/`).
+  2. Symlink the individual files into the custom node's expected `checkpoints/` directory.
+  3. Document in `AGENTS.md` under **Known Custom Nodes**.
 - **If a category doesn't exist yet**:
   1. Create the folder under the correct NAS base path.
   2. Save the downloaded model there.
   3. Symlink it into the corresponding `models/` directory.
   4. **Mandatory**: Update `scripts/link_nas_models.sh` to auto-link the new category, then **commit and push** the script change alongside any `AGENTS.md` updates.
+
+## Known Custom Nodes
+
+| Node Pack | Status | Notes |
+|-----------|--------|-------|
+| `snicolast/ComfyUI-IndexTTS2` | ✅ Installed | Voice cloning + emotion control. Requires `wetext` (not `pynini`). Models in `Huggingface/IndexTTS2/` → `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`. Patched for `transformers 5.8.1` compat (missing `OffloadedCache`, `ExtensionsTrie`, `LlamaConfig` positional args, etc.). |
+| `comfyui_ipadapter_plus` | ✅ Installed | IPAdapter for SDXL. Requires `clip_vision/` + `ipadapter/` models. |
+| `ComfyUI-Inspire-Pack` | ✅ Installed | Various utility nodes. |
