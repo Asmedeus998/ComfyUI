@@ -118,6 +118,12 @@ link_flat "$HF_BASE/clip_vision" "$COMFYUI/models/clip_vision" "HF CLIP Vision"
 link_flat "$HF_BASE/ipadapter"   "$COMFYUI/models/ipadapter"   "HF IPAdapter"
 
 # ═══════════════════════════════════════════════════════════════════════
+# GPT-SoVITS
+# ═══════════════════════════════════════════════════════════════════════
+echo "=== GPT-SoVITS links ==="
+link_folder "/mnt/storage/comfyui_data/GPTSOVITS-data" "$COMFYUI/models" "GPT-SoVITS Data"
+
+# ═══════════════════════════════════════════════════════════════════════
 # EXTRAS
 # ═══════════════════════════════════════════════════════════════════════
 if [[ -d "$NAS_BASE/scripts" ]]; then
