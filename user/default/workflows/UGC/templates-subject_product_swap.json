@@ -18,9 +18,29 @@
       "flags": {},
       "order": 0,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -28,6 +48,7 @@
           ]
         },
         {
+          "localized_name": "MASK",
           "name": "MASK",
           "type": "MASK",
           "links": null
@@ -37,7 +58,12 @@
       "properties": {
         "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
-        "ver": "0.3.76"
+        "ver": "0.3.76",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "subject-girl-holding-skincare-bottle.png",
@@ -60,9 +86,29 @@
       "flags": {},
       "order": 1,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -70,6 +116,7 @@
           ]
         },
         {
+          "localized_name": "MASK",
           "name": "MASK",
           "type": "MASK",
           "links": null
@@ -79,7 +126,12 @@
       "properties": {
         "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
-        "ver": "0.3.76"
+        "ver": "0.3.76",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "product-cleanser.jpeg",
@@ -104,20 +156,87 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "images",
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
           "link": 21
         },
         {
+          "localized_name": "files",
           "name": "files",
           "shape": 7,
           "type": "GEMINI_INPUT_FILES",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_modalities",
+          "name": "response_modalities",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_modalities"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
           "link": null
         }
       ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -125,6 +244,7 @@
           ]
         },
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": null
@@ -133,7 +253,12 @@
       "properties": {
         "Node name for S&R": "GeminiImage2Node",
         "cnr_id": "comfy-core",
-        "ver": "0.3.76"
+        "ver": "0.3.76",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "Swap the product the subject is holding in image 1 with the product in image 2.",
@@ -143,7 +268,7 @@
         "auto",
         "2K",
         "IMAGE+TEXT",
-        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -164,16 +289,31 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "images",
           "name": "images",
           "type": "IMAGE",
           "link": 16
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
         }
       ],
       "outputs": [],
       "properties": {
         "Node name for S&R": "SaveImage",
         "cnr_id": "comfy-core",
-        "ver": "0.3.76"
+        "ver": "0.3.76",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "ComfyUI"
@@ -198,12 +338,14 @@
       "inputs": [
         {
           "label": "image_1",
+          "localized_name": "image",
           "name": "image",
           "type": "IMAGE",
           "link": 19
         },
         {
           "label": "image_2",
+          "localized_name": "image_1",
           "name": "image_1",
           "type": "IMAGE",
           "link": 20
@@ -211,6 +353,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -221,7 +364,12 @@
       "properties": {
         "proxyWidgets": [],
         "cnr_id": "comfy-core",
-        "ver": "0.4.0"
+        "ver": "0.4.0",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": []
     }
@@ -379,6 +527,24 @@
                   "name": "target_height"
                 },
                 "link": 13
+              },
+              {
+                "localized_name": "padding_color",
+                "name": "padding_color",
+                "type": "COMBO",
+                "widget": {
+                  "name": "padding_color"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "interpolation",
+                "name": "interpolation",
+                "type": "COMBO",
+                "widget": {
+                  "name": "interpolation"
+                },
+                "link": null
               }
             ],
             "outputs": [
@@ -394,7 +560,12 @@
             "properties": {
               "Node name for S&R": "ResizeAndPadImage",
               "cnr_id": "comfy-core",
-              "ver": "0.3.76"
+              "ver": "0.3.76",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.8",
+                "input_ue_unconnectable": {}
+              }
             },
             "widgets_values": [
               512,
@@ -452,7 +623,12 @@
               }
             ],
             "properties": {
-              "Node name for S&R": "BatchImagesNode"
+              "Node name for S&R": "BatchImagesNode",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.8",
+                "input_ue_unconnectable": {}
+              }
             },
             "widgets_values": []
           },
@@ -507,7 +683,12 @@
             "properties": {
               "Node name for S&R": "GetImageSize",
               "cnr_id": "comfy-core",
-              "ver": "0.3.76"
+              "ver": "0.3.76",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.8",
+                "input_ue_unconnectable": {}
+              }
             },
             "widgets_values": []
           }
@@ -580,10 +761,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4973091420289531,
+      "scale": 0.20187235411893648,
       "offset": [
-        740.5178273746039,
-        -29.56361970646151
+        90.76260235536711,
+        -29.563619706461395
       ]
     },
     "frontendVersion": "1.43.16",
@@ -611,7 +792,8 @@
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
-    "linearMode": true
+    "linearMode": false,
+    "ue_links": []
   },
   "version": 0.4
 }

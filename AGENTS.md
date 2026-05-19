@@ -26,7 +26,7 @@
   Or attach interactively: `tmux attach -t comfyui-dev`
 - Common issues visible in the tmux log:
   - `ClipVision model not found` → missing `clip_vision` model
-  - `IPAdapter model not found` → missing `ipadapter` model  
+  - `IPAdapter model not found` → missing `ipadapter` model
   - `ERROR lora ... shape '...' is invalid` → LoRA base model mismatch (e.g. SD 1.5 LoRA on SDXL checkpoint)
   - `lora key not loaded` → LoRA has extra keys for a different architecture (usually harmless if partial)
   - `Failed to validate prompt` → workflow nodes have disconnected/missing required inputs
@@ -71,10 +71,18 @@
   3. Symlink it into the corresponding `models/` directory.
   4. **Mandatory**: Update `scripts/link_nas_models.sh` to auto-link the new category, then **commit and push** the script change alongside any `AGENTS.md` updates.
 
+## Workflows & App Mode
+
+- **`.app.json` workflows always open in App Mode** (Linear Mode). The ComfyUI frontend treats this extension as an app workflow, and it also looks at `extra.linearMode` inside the JSON.
+- **To convert an app workflow to normal node-graph mode:**
+  1. Rename the file from `.app.json` → `.json`
+  2. Edit the JSON and set `"linearMode": false` under the `extra` object
+
 ## Known Custom Nodes
 
 | Node Pack | Status | Notes |
-|-----------|--------|-------|
+| --------- | ------ | ----- |
+
 | `snicolast/ComfyUI-IndexTTS2` | ✅ Installed | Voice cloning + emotion control. Requires `wetext` (not `pynini`). Models in `Huggingface/IndexTTS2/` → `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`. Patched for `transformers 5.8.1` compat (missing `OffloadedCache`, `ExtensionsTrie`, `LlamaConfig` positional args, etc.). |
 | `comfyui_ipadapter_plus` | ✅ Installed | IPAdapter for SDXL. Requires `clip_vision/` + `ipadapter/` models. |
 | `ComfyUI-Inspire-Pack` | ✅ Installed | Various utility nodes. |
