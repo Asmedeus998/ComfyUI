@@ -291,3 +291,59 @@ async def test_listuserdata_v2_url_encoded_path(aiohttp_client, app, tmp_path):
     assert entry["name"] == "file.txt"
     # Ensure the path is correctly decoded and uses forward slash
     assert entry["path"] == "my dir/file.txt"
+
+
+async def test_get_userdata_nested_file(aiohttp_client, app, tmp_path):
+    os.makedirs(tmp_path / "workflows" / "UGC")
+    with open(tmp_path / "workflows" / "UGC" / "test.json", "w") as f:
+        f.write('{"workflow": true}')
+
+    client = await aiohttp_client(app)
+    resp = await client.get("/userdata/workflows/UGC/test.json")
+
+    assert resp.status == 200
+    assert await resp.text() == '{"workflow": true}'
+
+
+async def test_post_userdata_nested_file(aiohttp_client, app, tmp_path):
+    os.makedirs(tmp_path / "workflows" / "UGC")
+
+    client = await aiohttp_client(app)
+    content = b'{"workflow": true}'
+    resp = await client.post("/userdata/workflows/UGC/test.json", data=content)
+
+    assert resp.status == 200
+    assert await resp.text() == '"workflows/UGC/test.json"'
+
+    # Verify file was created with correct content
+    with open(tmp_path / "workflows" / "UGC" / "test.json", "rb") as f:
+        assert f.read() == content
+
+
+async def test_delete_userdata_nested_file(aiohttp_client, app, tmp_path):
+    os.makedirs(tmp_path / "workflows" / "UGC")
+    with open(tmp_path / "workflows" / "UGC" / "test.json", "w") as f:
+        f.write("test content")
+
+    client = await aiohttp_client(app)
+    resp = await client.delete("/userdata/workflows/UGC/test.json")
+
+    assert resp.status == 204
+    assert not os.path.exists(tmp_path / "workflows" / "UGC" / "test.json")
+
+
+async def test_move_userdata_nested_file(aiohttp_client, app, tmp_path):
+    os.makedirs(tmp_path / "workflows" / "UGC")
+    with open(tmp_path / "workflows" / "UGC" / "source.json", "w") as f:
+        f.write("test content")
+
+    client = await aiohttp_client(app)
+    resp = await client.post("/userdata/workflows/UGC/source.json/move/workflows/UGC/dest.json")
+
+    assert resp.status == 200
+    assert await resp.text() == '"workflows/UGC/dest.json"'
+
+    # Verify file was moved
+    assert not os.path.exists(tmp_path / "workflows" / "UGC" / "source.json")
+    with open(tmp_path / "workflows" / "UGC" / "dest.json", "r") as f:
+        assert f.read() == "test content"

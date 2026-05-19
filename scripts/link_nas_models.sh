@@ -116,6 +116,9 @@ link_flat "$HF_BASE/ControlNet"  "$COMFYUI/models/controlnet"  "HF ControlNet"
 link_flat "$HF_BASE/Model"       "$COMFYUI/models/checkpoints" "HF Checkpoints"
 link_flat "$HF_BASE/clip_vision" "$COMFYUI/models/clip_vision" "HF CLIP Vision"
 link_flat "$HF_BASE/ipadapter"   "$COMFYUI/models/ipadapter"   "HF IPAdapter"
+link_flat "$HF_BASE/text_encoders" "$COMFYUI/models/text_encoders" "HF Text Encoders"
+link_flat "$HF_BASE/latent_upscale_models" "$COMFYUI/models/latent_upscale_models" "HF Latent Upscalers"
+link_flat "$HF_BASE/LORA"        "$COMFYUI/models/loras"       "HF LoRAs"
 
 # ═══════════════════════════════════════════════════════════════════════
 # GPT-SoVITS

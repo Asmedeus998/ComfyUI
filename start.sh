@@ -18,6 +18,14 @@ fi
 
 source .venv/bin/activate
 
+# ─── Load local secrets ──────────────────────────────────────────────
+if [ -f ".env" ]; then
+    set -a
+    source .env
+    set +a
+    echo "[+] Loaded API keys from .env"
+fi
+
 # ─── Install deps ────────────────────────────────────────────────────
 echo "[+] Checking / installing Python packages..."
 uv pip install -r requirements.txt

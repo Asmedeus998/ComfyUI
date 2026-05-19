@@ -54,10 +54,13 @@
   - (Create additional subfolders as needed for other base models)
   - The same rule applies to `NSFW_model/SDXL/`, `NSFW_model/pony/`, etc.
 - **HuggingFace models**: Save to `/mnt/storage/comfyui_data/Huggingface/<Category>/` and symlink into the appropriate `models/` directory.
-  - `Model/SDXL/`, `Model/pony/`, `Model/SD1.5/` → `models/checkpoints` (same base-model subfolder rule as CivitAI)
+  - `Model/SDXL/`, `Model/pony/`, `Model/SD1.5/`, `Model/LTX/` → `models/checkpoints` (same base-model subfolder rule as CivitAI)
   - `ControlNet/` → `models/controlnet`
   - `clip_vision/` → `models/clip_vision` (CLIP Vision encoders for IPAdapter, e.g. `CLIP-ViT-H-14-laion2B-s32B-b79K.bin`)
   - `ipadapter/` → `models/ipadapter` (IPAdapter models, e.g. `ip-adapter_sdxl_vit-h.safetensors`)
+  - `text_encoders/` → `models/text_encoders`
+  - `latent_upscale_models/` → `models/latent_upscale_models`
+  - `LORA/` → `models/loras`
 - **Custom-node-internal models** (e.g. IndexTTS2): Some nodes store their own checkpoints inside the custom node folder (e.g. `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`). For these:
   1. Download to a NAS subfolder (e.g. `Huggingface/IndexTTS2/`).
   2. Symlink the individual files into the custom node's expected `checkpoints/` directory.
