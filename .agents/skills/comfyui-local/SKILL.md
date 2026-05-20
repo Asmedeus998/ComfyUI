@@ -63,11 +63,66 @@ Local API nodes support env vars so keys are not saved in workflow JSON:
 
 Always leave the `api_key` widget empty in the workflow when using env vars.
 
-## Handling Missing comfy-core Subgraphs & Nodes
+## Handling Subgraphs in Workflow Conversions
 
-Some workflows contain **subgraphs** (UUID-typed nodes like `68c58c16-e698-45a4-97f9-54ae8eb9dee9`) or other comfy-core nodes that may not exist in the local environment.
+Many workflows use **subgraphs** (collapsed node groups) to keep the main graph clean. Subgraph instances appear as UUID-typed nodes (e.g., `f7abaa3a-5e87-4354-bab6-f43320cd490f`) in the main graph, with their internal definitions stored in `definitions.subgraphs`.
 
-**DO NOT assume missing nodes are simple duplicators.** Always inspect the subgraph definition in `definitions.subgraphs` inside the workflow JSON.
+### When to Keep vs Flatten Subgraphs
+
+| Approach | When to Use | Trade-off |
+|----------|------------|-----------|
+| **Keep subgraphs** | User wants visual similarity to original; frontend editing is important | Frontend must support subgraph expansion; harder to validate from CLI |
+| **Flatten subgraphs** | Backend validation needed; subgraph contains cloud nodes that must be replaced | More nodes in main graph ("duplicate nodes"), but easier to debug |
+
+**Default preference:** Keep the subgraph structure if the original workflow used it. Users prefer the clean main graph.
+
+### Subgraph JSON Structure
+
+```json
+{
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "f7abaa3a-...",
+        "nodes": [
+          {"id": 304, "type": "ImageFromBatch", "pos": [7550, 660], ...},
+          {"id": 306, "type": "GeminiNode", ...}
+        ],
+        "links": [
+          {"id": 125, "origin_id": -10, "origin_slot": 0, "target_id": 304, "target_slot": 0, "type": "IMAGE"},
+          {"id": 282, "origin_id": 304, "origin_slot": 0, "target_id": 306, "target_slot": 0, "type": "IMAGE"}
+        ],
+        "inputNode": {"id": -10, "bounding": [...]},
+        "outputNode": {"id": -20, "bounding": [...]}
+      }
+    ]
+  }
+}
+```
+
+Key points:
+- `-10` = subgraph **input** pseudo-node. Links from `-10[N]` receive the N-th input of the subgraph instance.
+- `-20` = subgraph **output** pseudo-node. Links to `-20[N]` feed the N-th output of the subgraph instance.
+- Subgraph internal links use **dict format** (`{"origin_id": ..., "target_id": ...}`), not the main graph's array format.
+
+### Replacing Nodes Inside Subgraphs
+
+When converting a cloud API node (e.g., `GeminiNode`) to a local node (`GoogleGeminiDirect`) **inside a subgraph**:
+
+1. **Replace the `type`** in the subgraph's `nodes` array.
+2. **Rebuild `inputs`/`outputs`** to match the new node's `INPUT_TYPES` signature.
+3. **Remap internal links** — old slot indices won't match new slot indices.
+4. **Update `widgets_values`** to match the new node's widget order.
+5. **Remove unused subgraph inputs** — e.g., if the original Kling node accepted `model.resolution` but the local FAL Kling node doesn't, remove the `-10[2]` link and update the main graph to disconnect the external wire.
+
+### Frontend-Only Nodes to Remove for Backend Validation
+
+| Node | Type | Why Remove |
+|------|------|-----------|
+| `PrimitiveNode` | comfy-core frontend | Not a real backend node; its value is injected by the frontend |
+| `Reroute` | core frontend | Pass-through node; frontend collapses it before sending to backend |
+
+If you keep them in the saved workflow JSON (for frontend editing), the frontend will handle them. But when **flattening for backend validation** or **building a prompt payload**, strip them out and wire their targets directly to their sources (or set widget values on the target nodes).
 
 ### Common Pattern: "Crop Images" Subgraph
 
@@ -77,13 +132,6 @@ A frequent comfy-core subgraph is **"Crop Images"**, which takes a single image 
 - `ImageCrop+` → 4 instances with positions: `top-left`, `top-right`, `bottom-left`, `bottom-right`
 
 If this subgraph is missing, flatten it by creating the individual nodes directly in the main workflow and rewiring the 4 outputs to the respective `SaveImage` nodes.
-
-### Other Missing Nodes to Watch For
-
-| Missing Node | What It Actually Does | Local Replacement |
-|--------------|----------------------|-------------------|
-| `PrimitiveNode` (comfy-core) | Provides shared widget values to multiple nodes | Remove if the target nodes already have correct `widgets_values`; otherwise use `PrimitiveStringMultiline` |
-| UUID subgraphs | Varies — inspect `definitions.subgraphs` | Flatten into individual nodes |
 
 ## Workflow JSON Structure Differences
 

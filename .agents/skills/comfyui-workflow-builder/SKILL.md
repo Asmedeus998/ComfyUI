@@ -71,13 +71,54 @@ Use these to update `extra_pnginfo["workflow"]["nodes"][i]["widgets_values"]` so
 
 ## Workflow JSON Format
 
-### Link Format
+### Link Format (Main Graph)
 
 ```json
 [link_id, origin_node_id, origin_slot_index, target_node_id, target_slot_index, "TYPE"]
 ```
 
 Example: `[1, 2, 0, 4, 1, "STRING"]` = Node 2 output slot 0 → Node 4 input slot 1.
+
+### Link Format (Inside Subgraphs)
+
+Subgraphs use **dict links** with `origin_id` / `target_id` instead of arrays:
+
+```json
+{"id": 125, "origin_id": -10, "origin_slot": 0, "target_id": 304, "target_slot": 0, "type": "IMAGE"}
+```
+
+- `-10` = subgraph input pseudo-node (receives external inputs)
+- `-20` = subgraph output pseudo-node (feeds external outputs)
+- `origin_slot` / `target_slot` map to the slot indices on those pseudo-nodes
+
+### Subgraph Structure
+
+```json
+{
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "f7abaa3a-...",
+        "nodes": [...],
+        "links": [
+          {"origin_id": -10, "origin_slot": 0, "target_id": 304, "target_slot": 0}
+        ],
+        "inputNode": {"id": -10, "bounding": [x, y, w, h]},
+        "outputNode": {"id": -20, "bounding": [x, y, w, h]}
+      }
+    ]
+  }
+}
+```
+
+**Flattening subgraphs for backend validation:** The ComfyUI frontend expands subgraphs before sending to `/prompt`. To validate from CLI, you must manually flatten:
+
+1. For each subgraph instance in the main graph, copy its internal nodes with **new unique IDs**.
+2. Remap internal links: replace old IDs with new IDs.
+3. Remap external links:
+   - Main graph link `A → Subgraph[N]` → find subgraph link `-10[N] → B`, then create `A → B(new_id)`.
+   - Main graph link `Subgraph[N] → A` → find subgraph link `B → -20[N]`, then create `B(new_id) → A`.
+4. Remove the subgraph instance node and its `definitions` entry.
 
 ### Node Input Slots
 

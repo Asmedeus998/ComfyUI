@@ -132,15 +132,69 @@ If other display names appear in workflows, add them to the `MODEL_MAP` in `scri
 
 ---
 
+## FALKlingImage2Video (from comfyui-local-gemini)
+
+Replaces: `KlingFirstLastFrameNode` (cloud API node that calls ComfyUI proxy)
+
+Calls **FAL AI** Kling Video v3 Pro endpoint directly: `POST https://fal.run/fal-ai/kling-video/v3/pro/image-to-video`
+
+### Inputs
+
+| Name | Type | Required | Widget | Notes |
+|------|------|----------|--------|-------|
+| `api_key` | STRING | yes | yes (0) | Leave empty; use `FAL_KEY` env var |
+| `prompt` | STRING | yes | yes (1) | Multiline prompt. Usually connected from `GoogleGeminiDirect` |
+| `first_frame` | IMAGE | yes | no | Start frame image tensor |
+| `end_frame` | IMAGE | yes | no | End frame image tensor |
+| `duration` | INT | yes | yes (2) | 3–15 seconds. Default 5 |
+| `generate_audio` | BOOLEAN | yes | yes (3) | Default `True` |
+| `cfg_scale` | FLOAT | yes | yes (4) | 0.0–1.0, step 0.1. Default 0.5 |
+| `negative_prompt` | STRING | no | yes (5) | Default `"blur, distort, and low quality"` |
+| `model` | COMBO | yes | yes (6) | Visual compatibility only. FAL endpoint is fixed to v3 Pro. Default `"kling-v3"` |
+| `resolution` | COMBO | yes | yes (7) | Visual compatibility only. FAL infers aspect from image. Default `"1080p"` |
+| `seed` | INT | yes | yes (8) | Visual compatibility only. Default 1 |
+
+**Widget order (9 values):**
+```
+[0] api_key
+[1] prompt        (empty when connected)
+[2] duration
+[3] generate_audio
+[4] cfg_scale
+[5] negative_prompt
+[6] model
+[7] resolution
+[8] seed
+```
+
+### Outputs
+| Name | Type | Slot |
+|------|------|------|
+| `video` | VIDEO | 0 |
+
+### How It Works
+1. Converts `first_frame` and `end_frame` IMAGE tensors to base64 data URIs (PNG)
+2. Sends both images + prompt to FAL AI Kling v3 Pro image-to-video endpoint
+3. Downloads the resulting MP4 from FAL's temporary storage URL
+4. Wraps in `InputImpl.VideoFromFile` for ComfyUI `VIDEO` type
+
+### Important Notes
+- **Authorization**: Uses `Authorization: Key <FAL_KEY>` header (NOT Bearer token)
+- **Images**: Sent as base64 data URIs in the JSON payload — no separate upload needed
+- **Dummy parameters**: `model`, `resolution`, and `seed` are exposed for visual compatibility with the original `KlingFirstLastFrameNode` but do not affect the FAL API call (the endpoint is fixed to v3 Pro and infers aspect ratio from the start image)
+
+---
+
 ## KlingOmniProImageToVideoNode
 
 **No direct local equivalent is currently installed.**
 
 ### Alternatives
-1. **LTX-2.3 local pipeline** — Use the subgraph from `template_image_speech_to_video_local_api.json`. Requires models:
+1. **FAL Kling v3 Pro** — Use `FALKlingImage2Video` (installed in `comfyui-local-gemini`). Requires `FAL_KEY` env var.
+2. **LTX-2.3 local pipeline** — Use the subgraph from `template_image_speech_to_video_local_api.json`. Requires models:
    - `ltx-2.3-22b-dev-fp8.safetensors` (checkpoints)
    - `gemma_3_12B_it_fp4_mixed.safetensors` (text_encoders)
    - `ltx-2.3-spatial-upscaler-x2-1.1.safetensors` (latent_upscale_models)
    - LoRAs: `gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors`, `ltx-2.3-22b-distilled-lora-384.safetensors`, `ltx-2.3-id-lora-talkvid-3k.safetensors`
-2. **Custom direct-API node** — Build a node similar to `GoogleGeminiDirect` that calls Kling API directly.
-3. **Keep as cloud node** — If local replacement is not a hard requirement, leave `KlingOmniProImageToVideoNode` in the workflow.
+3. **Custom direct-API node** — Build a node similar to `GoogleGeminiDirect` that calls Kling API directly.
+4. **Keep as cloud node** — If local replacement is not a hard requirement, leave `KlingOmniProImageToVideoNode` in the workflow.
