@@ -392,6 +392,8 @@ class UserManager():
 
         @routes.post("/userdata/{file:.+}")
         async def post_userdata(request):
+            file = request.match_info.get("file", "")
+            logging.info(f"[USERDATA POST] file={file}")
             """
             Upload or update a user data file.
 
@@ -422,6 +424,38 @@ class UserManager():
 
             overwrite = request.query.get("overwrite", 'true') != "false"
             full_info = request.query.get('full_info', 'false').lower() == "true"
+
+            # Workflow subdirectory heuristic:
+            # If saving a workflow to workflows/root, check if a file with the same
+            # name exists in exactly one subdirectory. If so, redirect the save there.
+            # This fixes a frontend bug where workflows loaded from subdirectories
+            # (e.g. via drag & drop) lose their path context and save to root.
+            if file.startswith('workflows/') and file.endswith('.json'):
+                user_root = self.get_request_user_filepath(request, None, create_dir=False)
+                workflows_dir = os.path.join(user_root, 'workflows')
+                basename = os.path.basename(path)
+                if os.path.isdir(workflows_dir):
+                    matches = []
+                    for root, dirs, files in os.walk(workflows_dir):
+                        if root != workflows_dir:
+                            dirs[:] = []
+                        if basename in files:
+                            matches.append(os.path.join(root, basename))
+                    # Filter out the root match if there are subdirectory matches
+                    root_match = None
+                    subdir_matches = []
+                    for m in matches:
+                        if os.path.dirname(m) == workflows_dir:
+                            root_match = m
+                        else:
+                            subdir_matches.append(m)
+                    if len(subdir_matches) == 1:
+                        redirected_path = subdir_matches[0]
+                        if redirected_path != path:
+                            logging.info(f"Redirecting workflow save from '{path}' to '{redirected_path}' (found in single subdirectory)")
+                            path = redirected_path
+                    elif len(subdir_matches) > 1:
+                        logging.info(f"Workflow save not redirecting: found in {len(subdir_matches)} subdirectories: {subdir_matches}")
 
             if not overwrite and os.path.exists(path):
                 return web.Response(status=409, text="File already exists")

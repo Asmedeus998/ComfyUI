@@ -347,3 +347,63 @@ async def test_move_userdata_nested_file(aiohttp_client, app, tmp_path):
     assert not os.path.exists(tmp_path / "workflows" / "UGC" / "source.json")
     with open(tmp_path / "workflows" / "UGC" / "dest.json", "r") as f:
         assert f.read() == "test content"
+
+
+async def test_post_userdata_workflow_redirect_single_subdir(aiohttp_client, app, tmp_path):
+    """When saving a workflow to root and it exists in exactly one subdirectory, redirect there."""
+    os.makedirs(tmp_path / "workflows" / "dog")
+    with open(tmp_path / "workflows" / "dog" / "test.json", "w") as f:
+        f.write('{"workflow": true}')
+
+    client = await aiohttp_client(app)
+    content = b'{"workflow": true, "updated": 1}'
+    resp = await client.post("/userdata/workflows/test.json", data=content)
+
+    assert resp.status == 200
+    assert await resp.text() == '"workflows/dog/test.json"'
+
+    # Verify root file was NOT created and subdirectory file WAS overwritten
+    assert not os.path.exists(tmp_path / "workflows" / "test.json")
+    with open(tmp_path / "workflows" / "dog" / "test.json", "rb") as f:
+        assert f.read() == content
+
+
+async def test_post_userdata_workflow_no_redirect_multiple_subdirs(aiohttp_client, app, tmp_path):
+    """When the same filename exists in multiple subdirectories, stay in root."""
+    os.makedirs(tmp_path / "workflows" / "dog")
+    os.makedirs(tmp_path / "workflows" / "cat")
+    with open(tmp_path / "workflows" / "dog" / "test.json", "w") as f:
+        f.write('{"workflow": 1}')
+    with open(tmp_path / "workflows" / "cat" / "test.json", "w") as f:
+        f.write('{"workflow": 2}')
+
+    client = await aiohttp_client(app)
+    content = b'{"workflow": 3}'
+    resp = await client.post("/userdata/workflows/test.json", data=content)
+
+    assert resp.status == 200
+    assert await resp.text() == '"workflows/test.json"'
+
+    # Verify file was saved to root, subdirs untouched
+    assert os.path.exists(tmp_path / "workflows" / "test.json")
+    with open(tmp_path / "workflows" / "dog" / "test.json", "r") as f:
+        assert f.read() == '{"workflow": 1}'
+    with open(tmp_path / "workflows" / "cat" / "test.json", "r") as f:
+        assert f.read() == '{"workflow": 2}'
+
+
+async def test_post_userdata_workflow_no_redirect_no_match(aiohttp_client, app, tmp_path):
+    """When the filename does not exist anywhere, save to root."""
+    os.makedirs(tmp_path / "workflows" / "dog")
+    with open(tmp_path / "workflows" / "dog" / "other.json", "w") as f:
+        f.write('{"workflow": true}')
+
+    client = await aiohttp_client(app)
+    content = b'{"workflow": true}'
+    resp = await client.post("/userdata/workflows/test.json", data=content)
+
+    assert resp.status == 200
+    assert await resp.text() == '"workflows/test.json"'
+
+    # Verify file was saved to root
+    assert os.path.exists(tmp_path / "workflows" / "test.json")
