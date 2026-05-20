@@ -115,6 +115,64 @@ When converting a cloud API node (e.g., `GeminiNode`) to a local node (`GoogleGe
 4. **Update `widgets_values`** to match the new node's widget order.
 5. **Remove unused subgraph inputs** — e.g., if the original Kling node accepted `model.resolution` but the local FAL Kling node doesn't, remove the `-10[2]` link and update the main graph to disconnect the external wire.
 
+### Execution Order: Parallel vs Sequential for API Subgraphs
+
+When multiple subgraphs each call external APIs (Gemini, Kling, ElevenLabs, etc.), ComfyUI runs them in **parallel by default** because they have no inter-dependencies. This is fastest but can cause:
+- **API rate-limiting** (429 errors from concurrent calls)
+- **Nondeterministic output order** (scheduler may run 7→3→6→4→1→5→2)
+- **Harder debugging** when one subgraph fails
+
+**Sequential chaining** forces `1 → 2 → 3 → 4 → 5 → 6 → 7` order.
+
+#### Parallel (Default — No Changes Needed)
+```
+BatchImagesNode ──→ Subgraph 1 (Gemini prompt → Kling video)
+              ──→ Subgraph 2 (Gemini prompt → Kling video)
+              ──→ Subgraph 3 (Gemini prompt → Kling video)
+```
+All Gemini prompts generate simultaneously. All Kling videos generate simultaneously.
+
+#### Sequential (Chained Trigger Inputs)
+```
+BatchImagesNode ──→ Subgraph 1 ──→ Subgraph 2 ──→ Subgraph 3
+              (trigger)          (trigger)          (trigger)
+```
+Subgraph 1 runs to completion, then Subgraph 2, then Subgraph 3.
+
+**How to implement sequential chaining:**
+
+1. **Add `trigger` to every API node inside the subgraph** that should wait:
+   ```python
+   "optional": {
+       "trigger": ("*", {}),  # ignored by the node; only creates dependency
+   }
+   ```
+   Both `GoogleGeminiDirect` and `FALKlingImage2Video` need this if you want the **entire** subgraph to wait. If you only chain Kling, the Gemini prompts still run in parallel.
+
+2. **Wire the subgraph's trigger input to all those nodes**:
+   ```json
+   // Subgraph definition: trigger input feeds both Gemini and Kling
+   {"name": "trigger", "type": "*", "linkIds": [400, 450]}
+   
+   // Link 400: -10[3] → Kling slot 11
+   // Link 450: -10[3] → Gemini slot 9
+   ```
+
+3. **Chain subgraphs in the main graph**:
+   - Subgraph 1 `trigger` ← connect to `BatchImagesNode` (or any upstream node)
+   - Subgraph 2 `trigger` ← connect to Subgraph 1 `VIDEO` output
+   - Subgraph 3 `trigger` ← connect to Subgraph 2 `VIDEO` output
+   - ...and so on
+
+4. **Critical:** Subgraph 1's trigger **must** have a real external connection. If left disconnected, ComfyUI's frontend prunes the input during expansion and the internal trigger links disappear. Use `type: "*"` on the trigger input so it can accept `IMAGE` from `BatchImagesNode` as its dummy start signal.
+
+**When to use which:**
+| Scenario | Recommendation |
+|----------|---------------|
+| Fastest total time; APIs support concurrency | **Parallel** (default) |
+| Avoiding rate limits; deterministic order; debugging | **Sequential** |
+| Mix: parallel Gemini (cheap) + sequential Kling (expensive) | Chain trigger **only to Kling**, leave Gemini unchained |
+
 ### Frontend-Only Nodes to Remove for Backend Validation
 
 | Node | Type | Why Remove |
