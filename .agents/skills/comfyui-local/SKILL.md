@@ -30,6 +30,9 @@ Common `comfy_api_nodes` to replace:
 Local custom nodes live in `/home/yumeko/github/ComfyUI/custom_nodes/` and are installed separately. Currently available local API nodes:
 - `comfyui-local-gemini` → `GoogleGeminiDirect`
 - `comfyui-local-gemini` → `ElevenLabsDirectTTS`, `ElevenLabsDirectVoiceSelector`
+- `comfyui-local-gemini` → `FALKlingImage2Video`, `FALKlingOmniVideo`
+
+**Important:** `comfyui-local-gemini` is a **separate git repository** (`custom_nodes/comfyui-local-gemini/`) with its own remote. Changes to its `nodes.py` must be committed and pushed independently from the main ComfyUI repo. The main repo's `custom_nodes/` directory is gitignored, so changes there do not appear in the main ComfyUI commit.
 
 ## Node Mapping
 
