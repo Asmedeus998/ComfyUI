@@ -407,3 +407,23 @@ async def test_post_userdata_workflow_no_redirect_no_match(aiohttp_client, app, 
 
     # Verify file was saved to root
     assert os.path.exists(tmp_path / "workflows" / "test.json")
+
+
+async def test_post_userdata_workflow_redirect_allows_overwrite(aiohttp_client, app, tmp_path):
+    """When redirecting to an existing file, overwrite is allowed even if the
+    frontend sent overwrite=false (the user opened this workflow from the subdir)."""
+    os.makedirs(tmp_path / "workflows" / "dog")
+    with open(tmp_path / "workflows" / "dog" / "test.json", "w") as f:
+        f.write('{"workflow": true}')
+
+    client = await aiohttp_client(app)
+    content = b'{"workflow": true, "updated": 1}'
+    # Frontend sends overwrite=false because it thinks it's a new file at root
+    resp = await client.post("/userdata/workflows/test.json?overwrite=false", data=content)
+
+    assert resp.status == 200
+    assert await resp.text() == '"workflows/dog/test.json"'
+
+    # Verify subdirectory file was overwritten
+    with open(tmp_path / "workflows" / "dog" / "test.json", "rb") as f:
+        assert f.read() == content

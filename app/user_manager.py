@@ -454,6 +454,9 @@ class UserManager():
                         if redirected_path != path:
                             logging.info(f"Redirecting workflow save from '{path}' to '{redirected_path}' (found in single subdirectory)")
                             path = redirected_path
+                            # Allow overwrite when redirecting to an existing file;
+                            # the user opened this workflow from the subdirectory.
+                            overwrite = True
                     elif len(subdir_matches) > 1:
                         logging.info(f"Workflow save not redirecting: found in {len(subdir_matches)} subdirectories: {subdir_matches}")
 
