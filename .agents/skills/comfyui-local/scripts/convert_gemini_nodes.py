@@ -172,6 +172,26 @@ def convert_node(node: dict) -> dict:
     return new_node, node["id"]
 
 
+def _detect_subgraphs(data: dict) -> list:
+    """Detect comfy-core subgraphs that may not exist in local setups."""
+    warnings = []
+    node_types = {n.get("type", "") for n in data.get("nodes", [])}
+    
+    for sg in data.get("definitions", {}).get("subgraphs", []):
+        sg_id = sg.get("id", "")
+        sg_name = sg.get("name", "")
+        if sg_id in node_types:
+            warnings.append(f"  - Subgraph '{sg_name}' ({sg_id}) is used in the workflow.")
+        else:
+            warnings.append(f"  - Subgraph '{sg_name}' ({sg_id}) is defined but NOT used (may have been removed).")
+    
+    # Also detect PrimitiveNode which is often missing
+    if "PrimitiveNode" in node_types:
+        warnings.append("  - PrimitiveNode (comfy-core) is used. Verify it's available or replace with PrimitiveStringMultiline.")
+    
+    return warnings
+
+
 def convert_workflow(data: dict) -> dict:
     """Convert all Gemini comfy_api_nodes in a workflow to local equivalents."""
     converted_count = 0
@@ -204,6 +224,17 @@ def convert_workflow(data: dict) -> dict:
                 link[2] = 1
 
     print(f"Converted {converted_count} Gemini node(s).")
+    
+    # Warn about subgraphs and other missing comfy-core nodes
+    subgraph_warnings = _detect_subgraphs(data)
+    if subgraph_warnings:
+        print("\nWARNING: The following comfy-core nodes/subgraphs were detected.")
+        print("They may not be available in local setups and could cause runtime errors:")
+        for w in subgraph_warnings:
+            print(w)
+        print("\nIf a subgraph is missing, inspect its definition in 'definitions.subgraphs'")
+        print("and flatten it into individual nodes (e.g. GetImageSize + SimpleMath+ + ImageCrop+).")
+    
     return data
 
 

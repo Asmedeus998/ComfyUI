@@ -70,6 +70,7 @@ If other display names appear in workflows, add them to the `MODEL_MAP` in `scri
 - **Image generation config**: `aspect_ratio` and `resolution` are sent to the API as `imageConfig` inside `generationConfig` when `response_modalities` is `IMAGE` or `IMAGE+TEXT`.
 - **System prompt**: Defaults to `GEMINI_IMAGE_SYS_PROMPT` if not overridden.
 - **Seed**: The `seed` value is NOT sent to the Gemini API (the original comfy_api_nodes also did not send it). It exists only for ComfyUI's `control_after_generate` frontend feature. The hidden `seed_control` widget (index 4) controls auto-increment/decrement/randomize behavior.
+- **Hidden widget caution**: `widgets_values` has **9 entries** but only **8 map to actual inputs**. Index 4 (`seed_control`) is invisible. When manually building a `prompt` dict for the `/prompt` REST API, map inputs sequentially but **skip `widgets_values[4]`** for `GoogleGeminiDirect` nodes.
 
 ---
 
