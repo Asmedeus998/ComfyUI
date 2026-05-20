@@ -30,3 +30,4 @@ uv.lock
 .db
 user/__manager/
 user/default/comfy.settings.json
+ComfyUI_frontend/

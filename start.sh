@@ -34,9 +34,6 @@ uv pip install -r requirements.txt
 # uv pip install voxcpm || echo "[!] voxcpm skipped (optional)"
 uv pip install librosa soundfile || echo "[!] Optional audio packages skipped"
 
-# ─── Patch frontend for nested workflow support ──────────────────────
-bash scripts/patch-frontend-workflow-subdir.sh || true
-
 # ─── Run ComfyUI ─────────────────────────────────────────────────────
 echo "[+] Starting ComfyUI..."
 echo "    URL: http://127.0.0.1:8195"
