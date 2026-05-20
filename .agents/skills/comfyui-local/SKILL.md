@@ -38,7 +38,7 @@ Local custom nodes live in `/home/yumeko/github/ComfyUI/custom_nodes/` and are i
 | `GeminiImage2Node` | `GoogleGeminiDirect` | Maps `prompt`→`prompt`, `images`→`images`. Preserves **both** STRING and IMAGE outputs. See `references/node-mapping.md` for full widget index mapping. |
 | `GeminiNanoBanana2` | `GoogleGeminiDirect` | Same as above. `thinking_level` is dropped (not supported in direct API). Merges multiple IMAGE outputs into the single `image` output. |
 | `GeminiNanoBanana2V2` | `GoogleGeminiDirect` | Same as above. |
-| `KlingOmniProImageToVideoNode` | **No direct local equivalent installed** | Options: (1) Use LTX-2.3 local video generation subgraph (see example workflow), (2) Build a custom direct-API node for Kling, (3) Keep as cloud node if local replacement is not required. |
+| `KlingOmniProImageToVideoNode` | `FALKlingOmniVideo` | Wraps FAL `kling-video/o3/pro/reference-to-video`. Supports `reference_images`, `subject_description`, and up to 3 scene storyboards via `scene_N_text/duration`. Drops cloud-only widgets: `model`, `resolution`, `mode`. See full mapping in `references/node-mapping.md`. |
 
 ## Conversion Steps
 
@@ -47,7 +47,7 @@ Local custom nodes live in `/home/yumeko/github/ComfyUI/custom_nodes/` and are i
 3. **Replace each node** in the JSON:
    - Change `type` from the old node ID to the new local node ID.
    - Update `inputs` to match the local node's signature (names and types).
-   - Update `widgets_values` to match the local node's widget order. **IMPORTANT:** The original nodes have `control_after_generate` on `seed`, which adds a hidden widget value. The conversion script handles this automatically.
+   - Update `widgets_values` to match the local node's widget order. **CRITICAL:** See [Widget Mapping Mechanics](#widget-mapping-mechanics) below.
    - Update `outputs` — **preserve all IMAGE links** by merging them into the single `image` output.
 4. **Preserve links** by keeping the same `link` IDs on connections that still exist.
 5. **Add API key widgets** if the local node requires them. Leave them empty and instruct the user to set env vars (`GOOGLE_GEMINI_API_KEY`, `ELEVENLABS_API_KEY`).
@@ -60,6 +60,7 @@ Local custom nodes live in `/home/yumeko/github/ComfyUI/custom_nodes/` and are i
 Local API nodes support env vars so keys are not saved in workflow JSON:
 - `GOOGLE_GEMINI_API_KEY` → used by `GoogleGeminiDirect`
 - `ELEVENLABS_API_KEY` → used by `ElevenLabsDirectTTS`
+- `FAL_KEY` → used by `FALKlingImage2Video` and `FALKlingOmniVideo`
 
 Always leave the `api_key` widget empty in the workflow when using env vars.
 
@@ -190,6 +191,69 @@ A frequent comfy-core subgraph is **"Crop Images"**, which takes a single image 
 - `ImageCrop+` → 4 instances with positions: `top-left`, `top-right`, `bottom-left`, `bottom-right`
 
 If this subgraph is missing, flatten it by creating the individual nodes directly in the main workflow and rewiring the 4 outputs to the respective `SaveImage` nodes.
+
+## Widget Mapping Mechanics
+
+ComfyUI's frontend maps `widgets_values` to node inputs using a specific set of rules. Getting this wrong causes backend validation errors like `Failed to convert an input value to a INT value` because strings end up in numeric slots.
+
+### The Three Rules
+
+1. **Only inputs with `"widget": {"name": "..."}` markers consume `widgets_values` slots.**
+   Connection-only inputs (like `images`, `trigger`) must NOT have a `widget` marker and do NOT consume a slot.
+
+2. **Hidden widgets consume slots too.**
+   Any input with `"control_after_generate": True` in its `INPUT_TYPES` config (e.g., `seed`) causes the frontend to auto-insert a hidden control widget immediately after it in `widgets_values`. The hidden value is at index `parent_widget_index + 1`.
+
+3. **Optional widget inputs MUST stay in the JSON `inputs` array.**
+   If you remove an optional widget input from the `inputs` array (to "clean up" the JSON), the frontend cannot map values to it. The remaining values shift and land in the wrong slots.
+
+### Example: Correct vs Broken `widgets_values`
+
+**Node:** `FALKlingOmniVideo` — 12 visible widgets + 1 hidden `seed_control` = 13 values.
+
+```
+Visible widget inputs (in inputs array order):
+  [0] api_key              (widget)
+  [1] subject_description  (widget)
+  [2] aspect_ratio         (widget)
+  [3] duration             (widget)
+  [4] generate_audio       (widget)
+  [5] seed                 (widget)  ← has control_after_generate
+  [6] reference_images     (NO widget — connection only)
+  [7] scene_1_text         (widget)
+  [8] scene_1_duration     (widget)
+  [9] scene_2_text         (widget)
+  [10] scene_2_duration    (widget)
+  [11] scene_3_text        (widget)
+  [12] scene_3_duration    (widget)
+
+widgets_values mapping:
+  [0] → api_key
+  [1] → subject_description
+  [2] → aspect_ratio
+  [3] → duration
+  [4] → generate_audio
+  [5] → seed
+  [6] → seed_control (hidden, inserted after seed)
+  [7] → scene_1_text
+  [8] → scene_1_duration
+  [9] → scene_2_text
+  [10] → scene_2_duration
+  [11] → scene_3_text
+  [12] → scene_3_duration
+```
+
+**Common mistake:** Removing optional scene inputs from the `inputs` array and using only 12 `widgets_values`. The frontend then maps `scene_1_text` to `seed_control`'s slot and every subsequent value shifts by one, causing type mismatches.
+
+### Building a `/prompt` API payload manually
+
+When flattening a workflow JSON into a `prompt` dict for the `/prompt` REST API:
+
+1. Iterate the node's `inputs` array in order.
+2. For each input with a `widget` marker, consume the next `widgets_values`.
+3. If the widget name is `seed` AND the node type is known to have `control_after_generate`, **skip the next `widgets_values` entry** (that's the hidden `seed_control`).
+4. For inputs without a `widget` marker but with a `link`, resolve the link to `[origin_node_id, origin_slot]`.
+5. For nodes with no `inputs` array at all (e.g., `LoadImage` with only `widgets_values`), use `object_info` to map `widgets_values[0]` → the first required input name.
 
 ## Workflow JSON Structure Differences
 
