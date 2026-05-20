@@ -2274,7 +2274,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              400
+              400,
+              450
             ],
             "localized_name": "trigger",
             "pos": [
@@ -2562,6 +2563,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 450
               }
             ],
             "outputs": [
@@ -2905,6 +2912,14 @@
             "target_id": 310,
             "target_slot": 11,
             "type": "*"
+          },
+          {
+            "id": 450,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 306,
+            "target_slot": 9,
+            "type": "*"
           }
         ],
         "extra": {
@@ -2985,7 +3000,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              401
+              401,
+              451
             ],
             "localized_name": "trigger",
             "pos": [
@@ -3273,6 +3289,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 451
               }
             ],
             "outputs": [
@@ -3618,6 +3640,14 @@
             "target_id": 343,
             "target_slot": 11,
             "type": "*"
+          },
+          {
+            "id": 451,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 342,
+            "target_slot": 9,
+            "type": "*"
           }
         ],
         "extra": {
@@ -3698,7 +3728,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              402
+              402,
+              452
             ],
             "localized_name": "trigger",
             "pos": [
@@ -3986,6 +4017,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 452
               }
             ],
             "outputs": [
@@ -4331,6 +4368,14 @@
             "target_id": 351,
             "target_slot": 11,
             "type": "*"
+          },
+          {
+            "id": 452,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 350,
+            "target_slot": 9,
+            "type": "*"
           }
         ],
         "extra": {
@@ -4411,7 +4456,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              403
+              403,
+              453
             ],
             "localized_name": "trigger",
             "pos": [
@@ -4699,6 +4745,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 453
               }
             ],
             "outputs": [
@@ -5044,6 +5096,14 @@
             "target_id": 359,
             "target_slot": 11,
             "type": "*"
+          },
+          {
+            "id": 453,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 358,
+            "target_slot": 9,
+            "type": "*"
           }
         ],
         "extra": {
@@ -5124,7 +5184,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              404
+              404,
+              454
             ],
             "localized_name": "trigger",
             "pos": [
@@ -5412,6 +5473,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 454
               }
             ],
             "outputs": [
@@ -5757,6 +5824,14 @@
             "target_id": 367,
             "target_slot": 11,
             "type": "*"
+          },
+          {
+            "id": 454,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 366,
+            "target_slot": 9,
+            "type": "*"
           }
         ],
         "extra": {
@@ -5837,7 +5912,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              405
+              405,
+              455
             ],
             "localized_name": "trigger",
             "pos": [
@@ -6125,6 +6201,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 455
               }
             ],
             "outputs": [
@@ -6470,6 +6552,14 @@
             "target_id": 375,
             "target_slot": 11,
             "type": "*"
+          },
+          {
+            "id": 455,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 374,
+            "target_slot": 9,
+            "type": "*"
           }
         ],
         "extra": {
@@ -6550,7 +6640,8 @@
             "name": "trigger",
             "type": "*",
             "linkIds": [
-              406
+              406,
+              456
             ],
             "localized_name": "trigger",
             "pos": [
@@ -6838,6 +6929,12 @@
                   "name": "system_prompt"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "type": "*",
+                "link": 456
               }
             ],
             "outputs": [
@@ -7182,6 +7279,14 @@
             "origin_slot": 3,
             "target_id": 383,
             "target_slot": 11,
+            "type": "*"
+          },
+          {
+            "id": 456,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 382,
+            "target_slot": 9,
             "type": "*"
           }
         ],
