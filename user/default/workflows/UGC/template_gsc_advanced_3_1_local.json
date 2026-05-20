@@ -214,7 +214,7 @@
       "widgets_values": [
         "",
         "Character with product",
-        "Nano Banana 2 (Gemini 3.1 Flash Image)",
+        "gemini-3.1-flash-image-preview",
         580794941702187,
         "randomize",
         "9:16",
@@ -539,50 +539,50 @@
         {
           "name": "scene_1_text",
           "type": "STRING",
+          "link": null,
           "widget": {
             "name": "scene_1_text"
-          },
-          "link": null
+          }
         },
         {
           "name": "scene_1_duration",
           "type": "INT",
+          "link": null,
           "widget": {
             "name": "scene_1_duration"
-          },
-          "link": null
+          }
         },
         {
           "name": "scene_2_text",
           "type": "STRING",
+          "link": null,
           "widget": {
             "name": "scene_2_text"
-          },
-          "link": null
+          }
         },
         {
           "name": "scene_2_duration",
           "type": "INT",
+          "link": null,
           "widget": {
             "name": "scene_2_duration"
-          },
-          "link": null
+          }
         },
         {
           "name": "scene_3_text",
           "type": "STRING",
+          "link": null,
           "widget": {
             "name": "scene_3_text"
-          },
-          "link": null
+          }
         },
         {
           "name": "scene_3_duration",
           "type": "INT",
+          "link": null,
           "widget": {
             "name": "scene_3_duration"
-          },
-          "link": null
+          }
         }
       ],
       "outputs": [
@@ -605,6 +605,7 @@
         9,
         true,
         85124566,
+        "randomize",
         "\"My skin hits different\"",
         3,
         "\"I love this shit\", ambient sounds",
