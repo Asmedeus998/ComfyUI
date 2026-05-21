@@ -31,4 +31,5 @@ uv.lock
 user/__manager/
 user/default/comfy.settings.json
 ComfyUI_frontend/
-SESSION_SUMMARY.mdSESSION_SUMMARY.md
+
+SESSION_SUMMARY.md
