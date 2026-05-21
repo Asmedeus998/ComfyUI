@@ -137,7 +137,30 @@ git push --no-verify origin master
 
 | Node Pack | Status | Notes |
 | --------- | ------ | ----- |
-
-| `snicolast/ComfyUI-IndexTTS2` | ✅ Installed | Voice cloning + emotion control. Requires `wetext` (not `pynini`). Models in `Huggingface/IndexTTS2/` → `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`. Patched for `transformers 5.8.1` compat (missing `OffloadedCache`, `ExtensionsTrie`, `LlamaConfig` positional args, etc.). |
-| `comfyui_ipadapter_plus` | ✅ Installed | IPAdapter for SDXL. Requires `clip_vision/` + `ipadapter/` models. |
+| `cg-use-everywhere` | ✅ Installed | Allows connecting nodes without physical links (wireless connections). |
+| `comfyui-advanced-controlnet` | ✅ Installed | ControlNet scheduling across timesteps and batched latents. |
+| `comfyui-art-venture` | ✅ Installed | Image processing utilities and art-focused nodes. |
+| `ComfyUI_Comfyroll_CustomNodes` | ✅ Installed | General utility nodes by Suzie1 and RockOfFire. |
+| `comfyui_controlnet_aux` | ✅ Installed | Plug-and-play ControlNet preprocessors (OpenPose, Canny, Depth, etc.). |
+| `ComfyUI-Crystools` | ✅ Installed | Dev tools: resource monitor, progress bar, pipe nodes. |
+| `comfyui-easy-use` | ✅ Installed | Simplified node workflows and pipe systems. |
+| `comfyui_essentials` | ✅ Installed | Essential nodes missing from ComfyUI core. |
+| `comfyui-ic-light` | ✅ Installed | IC-Light relighting models. |
+| `ComfyUI-Image-Filters` | ✅ Installed | Image processing and filter nodes. |
+| `comfyui-impact-pack` | ✅ Installed | Detection, segmentation, and detailer nodes (FaceDetailer, etc.). |
+| `comfyui-impact-subpack` | ✅ Installed | Complements Impact Pack with additional detectors. |
+| `ComfyUI-IndexTTS2` | ✅ Installed | Voice cloning + emotion control. Requires `wetext` (not `pynini`). Models in `Huggingface/IndexTTS2/` → `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`. Patched for `transformers 5.8.1` compat. |
 | `ComfyUI-Inspire-Pack` | ✅ Installed | Various utility nodes. |
+| `comfyui_ipadapter_plus` | ✅ Installed | IPAdapter for SDXL. Requires `clip_vision/` + `ipadapter/` models. |
+| `comfyui-kjnodes` | ✅ Installed | Utility, model optimization, and QoL nodes. |
+| `comfyui-local-gemini` | ✅ Installed | **Private direct API nodes** for Google Gemini, ElevenLabs TTS, FAL Kling, and **FAL Seedance 2.0**. Uses user's own API keys. Separate git repo (gitignored). |
+| `comfyui-multi-subtitle` | ✅ Installed | Whisper-based multi-language subtitle generation. |
+| `comfyui_tinyterranodes` | ✅ Installed | Small utility node collection. |
+| `comfyui_ultimatesdupscale` | ✅ Installed | Ultimate SD Upscale for high-res image generation. |
+| `comfyui-various` | ✅ Installed | General-purpose utility nodes. |
+| `comfyui-video-matting` | ✅ Installed | Robust Video Matting (RVM) for background removal. |
+| `comfyui-voxcpm-pipeline` | ✅ Installed | VoxCPM voice cloning TTS pipeline. |
+| `comfyui-wd14-tagger` | ✅ Installed | WD14 image tagging for prompt generation. |
+| `comfyui-ycyy-lorainfo` | ✅ Installed | LoRA metadata display and info nodes. |
+| `efficiency-nodes-comfyui` | ✅ Installed | Efficiency-focused workflow nodes (KSampler variants, etc.). |
+| `rgthree-comfy` | ✅ Installed | rgthree's utility nodes: progress bars, display nodes, bookmarks. |
