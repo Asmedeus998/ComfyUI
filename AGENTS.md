@@ -78,6 +78,61 @@
   1. Rename the file from `.app.json` → `.json`
   2. Edit the JSON and set `"linearMode": false` under the `extra` object
 
+## Frontend Development (Local Fork)
+
+This repo uses a **local frontend fork** at `ComfyUI_frontend/` (gitignored, pushed to `origin/master` on the frontend repo).
+
+### Build & Deploy Pipeline
+
+```bash
+cd ComfyUI_frontend
+rm -rf dist/ .nx/cache
+NX_SKIP_NX_CACHE=true pnpm build          # outputs to dist/
+rm -rf comfyui_frontend_package/comfyui_frontend_package/static/*
+cp -r dist/* comfyui_frontend_package/comfyui_frontend_package/static/
+```
+
+### Critical: Stale Venv Static Files
+
+`uv pip install -e ./ComfyUI_frontend/comfyui_frontend_package` does **NOT** create a true editable install for package data. Python resolves `importlib.resources.files(comfyui_frontend_package)` to `.venv/lib/python3.14/site-packages/comfyui_frontend_package/`, which contains **stale copied static files** from the first install.
+
+**Symptom:** Patches are in source → build output has patches → browser still runs old JS.
+
+**Verify where Python serves from:**
+```bash
+uv run python3 -c "import importlib.resources, comfyui_frontend_package; print(importlib.resources.files(comfyui_frontend_package) / 'static')"
+# If this points to site-packages instead of the source, it's stale.
+```
+
+**Fix:** Delete the stale copy and symlink to the source static directory:
+```bash
+rm -rf .venv/lib/python3.14/site-packages/comfyui_frontend_package/static
+ln -s /home/yumeko/github/ComfyUI/ComfyUI_frontend/comfyui_frontend_package/comfyui_frontend_package/static \
+  .venv/lib/python3.14/site-packages/comfyui_frontend_package/static
+```
+
+**Verify served files:**
+```bash
+curl -s http://127.0.0.1:8195/ | grep -o 'src="[^"]*index-[^"]*"' | head -1
+curl -sI http://127.0.0.1:8195/assets/dialogService-XXXX.js | head -1
+```
+
+### Frontend Debugging Checklist
+
+1. Source patched? `grep "patch" src/...`
+2. Build has patch? `grep "patch" dist/assets/*.js`
+3. Package static dir has patch? `grep "patch" comfyui_frontend_package/.../static/assets/*.js`
+4. **Python serves from source?** (see stale venv check above)
+5. Browser loaded new JS? Check `index.html` references correct hashed filenames.
+
+### Committing Frontend Changes
+
+The frontend fork uses `husky` / `lint-staged` / `knip` pre-commit hooks that are broken on Node v20. Always commit with `--no-verify`:
+```bash
+git commit --no-verify -m "message"
+git push --no-verify origin master
+```
+
 ## Known Custom Nodes
 
 | Node Pack | Status | Notes |
