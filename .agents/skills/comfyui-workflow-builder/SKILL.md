@@ -18,6 +18,7 @@ Build, modify, and debug ComfyUI custom nodes, workflows, and frontend extension
 | JS frontend extensions, widget updates after execution | → [frontend-extensions.md](./references/frontend-extensions.md) |
 | Testing via `/prompt` API, debugging checklist, common pitfalls | → [testing-debugging.md](./references/testing-debugging.md) |
 | Audio tensor ↔ WAV conversion helpers | → [scripts/audio_helpers.py](./scripts/audio_helpers.py) |
+| OpenAI GPT Image slot indices, cloud-to-local conversion | → [openai-slots.md](./references/openai-slots.md) |
 | Seedance slot indices, workflow preservation during conversion | → [seedance-slots.md](./references/seedance-slots.md) |
 
 ### Common Tasks
@@ -25,7 +26,7 @@ Build, modify, and debug ComfyUI custom nodes, workflows, and frontend extension
 - **Creating a new node** → Read [node-backend.md](./references/node-backend.md), then [testing-debugging.md](./references/testing-debugging.md#testing-via-comfyui-api-not-just-direct-python)
 - **Fixing `tuple index out of range`** → Check [workflow-format.md#node-input-slots](./references/workflow-format.md#node-input-slots) and [testing-debugging.md#common-pitfalls](./references/testing-debugging.md#common-pitfalls)
 - **Adding a display widget after execution** → Read [frontend-extensions.md](./references/frontend-extensions.md)
-- **Converting cloud workflows to local** → Read [seedance-slots.md#preserving-workflow-structure-during-conversion](./references/seedance-slots.md#preserving-workflow-structure-during-conversion)
+- **Converting cloud workflows to local** → Read [openai-slots.md](./references/openai-slots.md) or [seedance-slots.md#preserving-workflow-structure-during-conversion](./references/seedance-slots.md#preserving-workflow-structure-during-conversion)
 - **Wiring subgraphs sequentially** → Read [workflow-format.md#subgraph-execution-patterns](./references/workflow-format.md#subgraph-execution-patterns)
 - **Building a `/prompt` payload manually** → Read [testing-debugging.md#step-2-build-the-prompt-payload](./references/testing-debugging.md#step-2-build-the-prompt-payload)
 

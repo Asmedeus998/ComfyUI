@@ -21,6 +21,8 @@ Replace ComfyUI's built-in `comfy_api_nodes` (cloud API nodes that require Comfy
 
 | Cloud Node | Local Replacement | Details |
 |-----------|-------------------|---------|
+| `OpenAIGPTImage1` | `OpenAIGPTImageDirect` | → [node-mapping.md](./references/node-mapping.md#openaigptimagedirect-from-comfyui-local-gemini) |
+| `OpenAIGPTImageNodeV2` | `OpenAIGPTImageDirect` | → [node-mapping.md](./references/node-mapping.md#openaigptimagedirect-from-comfyui-local-gemini) |
 | `GeminiImage2Node` | `GoogleGeminiDirect` | → [node-mapping.md](./references/node-mapping.md#googlegeminidirect-from-comfyui-local-gemini) |
 | `GeminiNanoBanana2` | `GoogleGeminiDirect` | → [node-mapping.md](./references/node-mapping.md#googlegeminidirect-from-comfyui-local-gemini) |
 | `KlingOmniProImageToVideoNode` | `FALKlingOmniVideo` | → [node-mapping.md](./references/node-mapping.md#falklingomnivideo-from-comfyui-local-gemini) |
@@ -39,6 +41,7 @@ Replace ComfyUI's built-in `comfy_api_nodes` (cloud API nodes that require Comfy
 ## Environment Variables for API Keys
 
 Local API nodes support env vars so keys are not saved in workflow JSON:
+- `OPENAI_API_KEY` → used by `OpenAIGPTImageDirect`
 - `GOOGLE_GEMINI_API_KEY` → used by `GoogleGeminiDirect`
 - `ELEVENLABS_API_KEY` → used by `ElevenLabsDirectTTS`
 - `FAL_KEY` → used by `FALKlingImage2Video`, `FALKlingOmniVideo`, and all `FALSeedance*` nodes
@@ -58,4 +61,5 @@ Local custom nodes live in `/home/yumeko/github/ComfyUI/custom_nodes/` and are i
 | Script | Purpose |
 |--------|---------|
 | `scripts/convert_gemini_nodes.py` | Auto-convert Gemini-related comfy_api_nodes to `GoogleGeminiDirect` |
+| `scripts/convert_openai_nodes.py` | Auto-convert OpenAI GPT Image comfy_api_nodes to `OpenAIGPTImageDirect` |
 | `scripts/convert_seedance_to_local.py` | Auto-convert ByteDance Seedance 2.0 comfy_api_nodes to local FAL equivalents |
