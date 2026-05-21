@@ -64,3 +64,114 @@ new_widgets = old_widgets + [""]  # append empty api_key
 3. **No price badge** — Local nodes do not display ComfyUI's cloud pricing UI.
 4. **Model validation** is enforced locally before the API call (e.g., custom resolutions only for `gpt-image-2`, transparent background not supported for `gpt-image-2`).
 5. **Image downscaling** — Input images are downscaled to ≤2048×2048 pixels before upload.
+
+## GPT-Image-2 Custom Resolution Constraints
+
+When `size="Custom"` and `model="gpt-image-2"`, both dimensions must satisfy **all** of the following:
+
+| Constraint | Rule |
+|------------|------|
+| **Minimum edge** | `≥ 1024` (both `custom_width` **and** `custom_height`) |
+| **Maximum edge** | `≤ 3840` |
+| **Multiple of 16** | Both values must be divisible by 16 |
+| **Aspect ratio** | Long / short edge must not exceed `3:1` |
+| **Total pixels** | Between `655,360` and `8,294,400` |
+
+### Common Valid Sizes
+
+| Dimensions | Ratio | Total Pixels | Use Case |
+|------------|-------|--------------|----------|
+| `1024 × 1024` | 1:1 | 1,048,576 | Square |
+| `1536 × 1024` | 1.5:1 | 1,572,864 | Landscape |
+| `2048 × 1152` | 16:9 | 2,359,296 | Wide video |
+| `3072 × 1024` | 3:1 | 3,145,728 | Cinematic panorama / reference board |
+| `2048 × 2048` | 1:1 | 4,194,304 | 2K square |
+
+> ⚠️ **Common pitfall**: `custom_height` also has `min: 1024`, not just `custom_width`. A size like `1536 × 512` will fail validation even though the ratio is 3:1, because 512 < 1024. Use `3072 × 1024` instead for a 3:1 board.
+
+## Building Workflows — Widget Values Checklist
+
+When constructing `widgets_values` for `OpenAIGPTImageDirect` manually, always provide **exactly 11 values** in this order:
+
+```python
+[
+    "your prompt here",  # [0] prompt
+    42,                  # [1] seed
+    "fixed",             # [2] seed_control (hidden — required because control_after_generate=True)
+    "high",              # [3] quality
+    "auto",              # [4] background
+    "Custom",            # [5] size
+    1,                   # [6] n
+    "gpt-image-2",       # [7] model
+    3072,                # [8] custom_width
+    1024,                # [9] custom_height
+    "",                  # [10] api_key
+]
+```
+
+**Failure modes if you forget `seed_control`:**
+- `n` receives `"gpt-image-2"` → "invalid literal for int()"
+- `model` receives `3072` → "Value not in list"
+- `custom_width` receives `1024` (shifted from custom_height) → passes but wrong size
+
+---
+
+## Two API Modes: Generations vs. Edits
+
+The same `OpenAIGPTImageDirect` node switches endpoints automatically based on whether `image` is connected:
+
+| | **Generations (Text-to-Image)** | **Edits (Image-to-Image)** |
+|---|---|---|
+| **Trigger** | `image` input is **disconnected** | `image` input is **connected** |
+| **Endpoint** | `POST /v1/images/generations` | `POST /v1/images/edits` |
+| **Required params** | `model`, `prompt` | `image` file, `model`, `prompt` |
+
+### Parameters Supported by Each Endpoint
+
+| Parameter | Generations | Edits | Node Exposed? |
+|-----------|:-----------:|:-----:|:-------------:|
+| `model` | ✓ | ✓ | ✓ |
+| `prompt` | ✓ | ✓ | ✓ |
+| `n` | ✓ | ✓ | ✓ |
+| `size` | ✓ | ✓ | ✓ |
+| `quality` | ✓ | ✓ | ✓ |
+| `background` | ✓ | ✓ | ✓ |
+| `moderation` | ✓ | ✓ | Hardcoded `"low"` |
+| `output_format` | ✓ (`png`/`jpeg`/`webp`) | ✗ | ❌ **Not exposed** |
+| `output_compression` | ✓ (`0-100` for jpeg/webp) | ✗ | ❌ **Not exposed** |
+| `image` | ✗ | ✓ (required) | ✓ (slot 10) |
+| `mask` | ✗ | ✓ (optional) | ✓ (slot 11) |
+
+### Endpoint-Specific Behaviors
+
+**Generations (`/v1/images/generations`)**
+- `background`: `"transparent"` is **NOT supported** for `gpt-image-2` (node enforces this locally)
+- `size="Custom"` with `custom_width`/`custom_height` is **only supported** by `gpt-image-2` (node enforces this)
+- `output_format` and `output_compression` are **accepted by the API but NOT exposed** by the ComfyUI node — output is always PNG
+
+**Edits (`/v1/images/edits`)**
+- `image` is **required** — one or more reference image files (PNG/JPG/WEBP, ≤25MB each for GPT image models)
+- `mask` is **optional** — must be PNG with alpha channel, same dimensions as `image`
+- Input images are **automatically downscaled** to ≤2048×2048 before upload
+- For `gpt-image-2`, input images are always processed at **high fidelity** (no `input_fidelity` parameter)
+- `n` is sent as string `"1"` in form data (the node does this automatically)
+
+### Switching Modes in a Workflow
+
+```
+# Text-to-Image (Generations)
+Prompt → OpenAIGPTImageDirect (image input disconnected) → IMAGE
+
+# Image-to-Image (Edits)
+LoadImage.IMAGE ──→ OpenAIGPTImageDirect.image (slot 10)
+Prompt ───────────→ OpenAIGPTImageDirect.prompt (slot 0)
+                    └──→ IMAGE
+
+# Inpainting (Edits with mask)
+LoadImage.IMAGE ──→ OpenAIGPTImageDirect.image (slot 10)
+LoadImage.MASK ───→ OpenAIGPTImageDirect.mask (slot 11)
+Prompt ───────────→ OpenAIGPTImageDirect.prompt (slot 0)
+                    └──→ IMAGE
+```
+
+> **Important**: The node determines the endpoint at runtime. If `image` is `None`, it hits `/generations`. If `image` is provided, it hits `/edits`. The same widget values are sent to both endpoints (with `output_format`/`output_compression` omitted since the node doesn't expose them).
