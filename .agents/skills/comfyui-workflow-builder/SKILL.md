@@ -17,7 +17,7 @@ Build, modify, and debug ComfyUI custom nodes, workflows, and frontend extension
 | Workflow JSON format, links, subgraphs, slot indices | → [workflow-format.md](./references/workflow-format.md) |
 | JS frontend extensions, widget updates after execution | → [frontend-extensions.md](./references/frontend-extensions.md) |
 | Testing via `/prompt` API, debugging checklist, common pitfalls | → [testing-debugging.md](./references/testing-debugging.md) |
-| Audio tensor ↔ WAV conversion helpers | → [audio-helpers.md](./references/audio-helpers.md) |
+| Audio tensor ↔ WAV conversion helpers | → [scripts/audio_helpers.py](./scripts/audio_helpers.py) |
 | Seedance slot indices, workflow preservation during conversion | → [seedance-slots.md](./references/seedance-slots.md) |
 
 ### Common Tasks

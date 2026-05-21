@@ -1,12 +1,19 @@
-# Audio Helpers
+"""Audio conversion helpers for ComfyUI custom nodes.
 
-```python
+Usage:
+    from audio_helpers import wav_to_audio, audio_to_wav
+"""
+
 import soundfile as sf
 import numpy as np
 import torch
 
-def _wav_to_audio(path: str) -> dict:
-    """Load WAV → ComfyUI AUDIO dict."""
+
+def wav_to_audio(path: str) -> dict:
+    """Load WAV file → ComfyUI AUDIO dict.
+
+    Returns {"waveform": tensor, "sample_rate": int}
+    """
     data, sr = sf.read(path, dtype="float32")
     if data.ndim == 1:
         data = data[np.newaxis, :]
@@ -15,8 +22,12 @@ def _wav_to_audio(path: str) -> dict:
     data = data[np.newaxis, ...]
     return {"waveform": torch.from_numpy(data), "sample_rate": sr}
 
-def _audio_to_wav(audio_dict: dict, path: str) -> str:
-    """ComfyUI AUDIO dict → WAV file."""
+
+def audio_to_wav(audio_dict: dict, path: str) -> str:
+    """ComfyUI AUDIO dict → WAV file.
+
+    Returns the output path.
+    """
     wav = audio_dict["waveform"]
     sr = int(audio_dict.get("sample_rate", 22050))
     if isinstance(wav, torch.Tensor):
@@ -28,4 +39,3 @@ def _audio_to_wav(audio_dict: dict, path: str) -> str:
         wav = wav[np.newaxis, :]
     sf.write(path, wav.T, sr)
     return path
-```
