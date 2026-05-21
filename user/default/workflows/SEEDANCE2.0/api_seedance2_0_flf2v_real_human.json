@@ -20,13 +20,42 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
           "link": 62
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
         }
       ],
       "outputs": [],
       "properties": {
+        "Node name for S&R": "SaveVideo",
         "cnr_id": "comfy-core",
         "ver": "0.19.3",
         "ue_properties": {
@@ -57,13 +86,24 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "image",
           "name": "image",
           "type": "IMAGE",
           "link": 32
+        },
+        {
+          "localized_name": "group_id",
+          "name": "group_id",
+          "type": "STRING",
+          "widget": {
+            "name": "group_id"
+          },
+          "link": null
         }
       ],
       "outputs": [
         {
+          "localized_name": "asset_id",
           "name": "asset_id",
           "type": "STRING",
           "links": [
@@ -72,6 +112,7 @@
           ]
         },
         {
+          "localized_name": "group_id",
           "name": "group_id",
           "type": "STRING",
           "links": [
@@ -109,9 +150,29 @@
       "flags": {},
       "order": 0,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -119,6 +180,7 @@
           ]
         },
         {
+          "localized_name": "MASK",
           "name": "MASK",
           "type": "MASK",
           "links": null
@@ -156,6 +218,7 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "source",
           "name": "source",
           "type": "*",
           "link": 10
@@ -163,6 +226,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": null
@@ -261,6 +325,7 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "source",
           "name": "source",
           "type": "*",
           "link": 30
@@ -268,6 +333,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": [
@@ -333,25 +399,100 @@
       ],
       "size": [
         450,
-        437
+        429
       ],
       "flags": {},
       "order": 11,
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "first_frame",
           "name": "first_frame",
           "shape": 7,
           "type": "IMAGE",
           "link": null
         },
         {
+          "localized_name": "last_frame",
           "name": "last_frame",
           "shape": 7,
           "type": "IMAGE",
           "link": null
         },
         {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "model.prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "model.prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "model.resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "model.resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ratio",
+          "name": "model.ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "model.ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "model.duration",
+          "type": "INT",
+          "widget": {
+            "name": "model.duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "model.generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "model.generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "first_frame_asset_id",
           "name": "first_frame_asset_id",
           "shape": 7,
           "type": "STRING",
@@ -361,6 +502,7 @@
           "link": 61
         },
         {
+          "localized_name": "last_frame_asset_id",
           "name": "last_frame_asset_id",
           "shape": 7,
           "type": "STRING",
@@ -372,6 +514,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "VIDEO",
           "name": "VIDEO",
           "type": "VIDEO",
           "links": [
@@ -421,13 +564,24 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "image",
           "name": "image",
           "type": "IMAGE",
           "link": 57
+        },
+        {
+          "localized_name": "group_id",
+          "name": "group_id",
+          "type": "STRING",
+          "widget": {
+            "name": "group_id"
+          },
+          "link": null
         }
       ],
       "outputs": [
         {
+          "localized_name": "asset_id",
           "name": "asset_id",
           "type": "STRING",
           "links": [
@@ -435,6 +589,7 @@
           ]
         },
         {
+          "localized_name": "group_id",
           "name": "group_id",
           "type": "STRING",
           "links": [
@@ -472,9 +627,29 @@
       "flags": {},
       "order": 4,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -482,6 +657,7 @@
           ]
         },
         {
+          "localized_name": "MASK",
           "name": "MASK",
           "type": "MASK",
           "links": null
@@ -519,6 +695,7 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "source",
           "name": "source",
           "type": "*",
           "link": 58
@@ -526,6 +703,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": null
@@ -564,6 +742,7 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "source",
           "name": "source",
           "type": "*",
           "link": 59
@@ -571,6 +750,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": [
@@ -674,7 +854,7 @@
       41,
       0,
       36,
-      3,
+      11,
       "STRING"
     ],
     [
@@ -682,7 +862,7 @@
       18,
       0,
       36,
-      2,
+      10,
       "STRING"
     ],
     [
@@ -749,8 +929,8 @@
     "ds": {
       "scale": 0.4587947771324021,
       "offset": [
-        -291.93644367013053,
-        -4275.379920319845
+        -215.64961185665612,
+        -4279.7391678520435
       ]
     },
     "frontendVersion": "1.43.16",

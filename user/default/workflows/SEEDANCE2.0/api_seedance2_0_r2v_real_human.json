@@ -18,9 +18,29 @@
       "flags": {},
       "order": 0,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
+          "localized_name": "IMAGE",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -28,13 +48,19 @@
           ]
         },
         {
+          "localized_name": "MASK",
           "name": "MASK",
           "type": "MASK",
           "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "real_human_demo.png",
@@ -57,13 +83,24 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "image",
           "name": "image",
           "type": "IMAGE",
           "link": 1
+        },
+        {
+          "localized_name": "group_id",
+          "name": "group_id",
+          "type": "STRING",
+          "widget": {
+            "name": "group_id"
+          },
+          "link": null
         }
       ],
       "outputs": [
         {
+          "localized_name": "asset_id",
           "name": "asset_id",
           "type": "STRING",
           "links": [
@@ -71,6 +108,7 @@
           ]
         },
         {
+          "localized_name": "group_id",
           "name": "group_id",
           "type": "STRING",
           "links": [
@@ -79,7 +117,12 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "ByteDanceCreateImageAsset"
+        "Node name for S&R": "ByteDanceCreateImageAsset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         ""
@@ -102,7 +145,13 @@
       "inputs": [],
       "outputs": [],
       "title": "Note: group_id",
-      "properties": {},
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
       "widgets_values": [
         "### Group ID Explanation  \n- **Purpose**: Groups same-person real-human assets for backend recognition.  \n- **Generation**: Auto-generated after the first verification via the \"ByteDance Create Image/Video Asset\" node.  \n- **Usage**: Save the Group ID. For future same-person assets, entering this ID skips verification."
       ],
@@ -125,6 +174,7 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "source",
           "name": "source",
           "type": "*",
           "link": 2
@@ -132,6 +182,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": [
@@ -141,7 +192,12 @@
       ],
       "title": "Preview as Text (asset_id)",
       "properties": {
-        "Node name for S&R": "PreviewAny"
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         null,
@@ -165,6 +221,7 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "source",
           "name": "source",
           "type": "*",
           "link": 3
@@ -172,6 +229,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": null
@@ -179,7 +237,12 @@
       ],
       "title": "Preview as Text (group_id)",
       "properties": {
-        "Node name for S&R": "PreviewAny"
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         null,
@@ -196,14 +259,69 @@
       ],
       "size": [
         400,
-        437
+        429
       ],
       "flags": {},
       "order": 8,
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "model.prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "model.prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "model.resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "model.resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ratio",
+          "name": "model.ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "model.ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "model.duration",
+          "type": "INT",
+          "widget": {
+            "name": "model.duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "model.generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "model.generate_audio"
+          },
+          "link": null
+        },
+        {
           "label": "image_1",
+          "localized_name": "model.reference_images.image_1",
           "name": "model.reference_images.image_1",
           "shape": 7,
           "type": "IMAGE",
@@ -211,6 +329,7 @@
         },
         {
           "label": "video_1",
+          "localized_name": "model.reference_videos.video_1",
           "name": "model.reference_videos.video_1",
           "shape": 7,
           "type": "VIDEO",
@@ -218,6 +337,7 @@
         },
         {
           "label": "audio_1",
+          "localized_name": "model.reference_audios.audio_1",
           "name": "model.reference_audios.audio_1",
           "shape": 7,
           "type": "AUDIO",
@@ -225,6 +345,7 @@
         },
         {
           "label": "asset_1",
+          "localized_name": "model.reference_assets.asset_1",
           "name": "model.reference_assets.asset_1",
           "shape": 7,
           "type": "STRING",
@@ -232,14 +353,44 @@
         },
         {
           "label": "asset_2",
+          "localized_name": "model.reference_assets.asset_2",
           "name": "model.reference_assets.asset_2",
           "shape": 7,
           "type": "STRING",
+          "link": null
+        },
+        {
+          "localized_name": "auto_downscale",
+          "name": "model.auto_downscale",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "model.auto_downscale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
           "link": null
         }
       ],
       "outputs": [
         {
+          "localized_name": "VIDEO",
           "name": "VIDEO",
           "type": "VIDEO",
           "links": [
@@ -248,7 +399,12 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "ByteDance2ReferenceNode"
+        "Node name for S&R": "ByteDance2ReferenceNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "Seedance 2.0",
@@ -281,13 +437,48 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
           "link": 5
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
         }
       ],
       "outputs": [],
-      "properties": {},
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
       "widgets_values": [
         "video/Seedance2.0",
         "auto",
@@ -310,7 +501,13 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "properties": {},
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
       "widgets_values": [
         "### [How to Use Real-Human Assets for Seedance2.0](https://docs.comfy.org/tutorials/partner-nodes/bytedance/seedance-2-0-real-human)\n\nTo comply with the model provider’s legal requirements, real-human assets must be verified before use.  \n\n1. **First-Time Asset Upload & Verification**: Use \"Load Image\" to upload a real-human image. Run the workflow; the \"ByteDance Create Image Asset\" or \"ByteDance Create Video Asset\" node generates a verification link. Complete verification to obtain an Asset ID and a Group ID.  \n2. **Reuse the Same Person’s Assets**: Save the Group ID. For future uploads of the same person’s images/videos, enter the saved Group ID in the \"Create Image/Video Asset\" node to skip verification, since the person is already verified.  \n3. **Video Generation**: Use the Asset ID in the \"ByteDance Seedance 2.0\" node to generate a video with a real human as a reference.\n---\n- A Group ID verified by a single account is usable only by that account and does not support cross-account use.\n- Please ensure the image/video used to create assets contains only one character\n"
       ],
@@ -333,18 +530,30 @@
       "mode": 4,
       "inputs": [
         {
+          "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "group_id",
+          "name": "group_id",
+          "type": "STRING",
+          "widget": {
+            "name": "group_id"
+          },
           "link": null
         }
       ],
       "outputs": [
         {
+          "localized_name": "asset_id",
           "name": "asset_id",
           "type": "STRING",
           "links": []
         },
         {
+          "localized_name": "group_id",
           "name": "group_id",
           "type": "STRING",
           "links": []
@@ -383,7 +592,13 @@
       "inputs": [],
       "outputs": [],
       "title": "Note: Input Limit",
-      "properties": {},
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
       "widgets_values": [
         "The `image` and `video` inputs do not support real humans.\nTo use real human images or videos, first generate an asset ID via **ByteDance Create Image/Video Asset**.\n\nAsset limits:\n- Images: up to 9\n- Videos: up to 3\n- Audio: up to 3"
       ],
@@ -421,7 +636,7 @@
       4,
       0,
       6,
-      3,
+      9,
       "STRING"
     ],
     [
@@ -462,17 +677,18 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909091,
+      "scale": 0.5644739300537773,
       "offset": [
-        2086.0163003407242,
-        -116.06439010893317
+        2610.0358953407244,
+        101.30560889106681
       ]
     },
     "frontendVersion": "1.43.16",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
-    "VHS_KeepIntermediate": true
+    "VHS_KeepIntermediate": true,
+    "ue_links": []
   },
   "version": 0.4
 }

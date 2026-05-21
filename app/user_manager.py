@@ -466,6 +466,11 @@ class UserManager():
             try:
                 body = await request.read()
 
+                # Debug: log whether workflow save is pretty-printed or minified
+                # if file.endswith('.json'):
+                #     preview = body[:200].decode('utf-8', errors='replace').replace('\n', '\\n')
+                #     logging.info(f"[SAVE DEBUG] {file} -> first 200 chars: {preview}")
+
                 dir_name = os.path.dirname(path)
                 fd, tmp_path = tempfile.mkstemp(dir=dir_name)
                 try:

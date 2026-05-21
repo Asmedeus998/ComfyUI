@@ -8,20 +8,94 @@
       "id": 343,
       "type": "ByteDance2TextToVideoNode",
       "pos": [
-        20,
-        8270
+        -91,
+        8282
       ],
       "size": [
         426.0666809082031,
-        582.0333251953125
+        333
       ],
       "flags": {},
       "order": 0,
       "mode": 0,
       "showAdvanced": false,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "model.prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "model.prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "model.resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "model.resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "ratio",
+          "name": "model.ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "model.ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "model.duration",
+          "type": "INT",
+          "widget": {
+            "name": "model.duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "model.generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "model.generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
+          "localized_name": "VIDEO",
           "name": "VIDEO",
           "type": "VIDEO",
           "links": [
@@ -30,7 +104,12 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "ByteDance2TextToVideoNode"
+        "Node name for S&R": "ByteDance2TextToVideoNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "Seedance 2.0",
@@ -62,13 +141,48 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
           "link": 641
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
         }
       ],
       "outputs": [],
-      "properties": {},
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
       "widgets_values": [
         "video/Seedance2.0_t2v",
         "auto",
@@ -92,10 +206,10 @@
     "ue_links": [],
     "workflowRendererVersion": "Vue-corrected",
     "ds": {
-      "scale": 1,
+      "scale": 0.9090909090909091,
       "offset": [
-        170.7727525655639,
-        -8154.530973774232
+        538.3747525655642,
+        -8015.561973774231
       ]
     },
     "frontendVersion": "1.43.16",
