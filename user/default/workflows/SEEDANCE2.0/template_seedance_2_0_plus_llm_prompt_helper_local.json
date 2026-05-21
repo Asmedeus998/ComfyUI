@@ -1,0 +1,827 @@
+{
+  "id": "9994178c-856f-479e-8ba6-cda3daf4a117",
+  "revision": 0,
+  "last_node_id": 366,
+  "last_link_id": 667,
+  "nodes": [
+    {
+      "id": 344,
+      "type": "SaveVideo",
+      "pos": [
+        2435.357980203047,
+        184.6530689138516
+      ],
+      "size": [
+        520,
+        370
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 653
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "ue_properties": {
+          "input_ue_unconnectable": {},
+          "version": "7.7",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "video/Seedance2.0_r2v",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 352,
+      "type": "LoadImage",
+      "pos": [
+        -880,
+        240
+      ],
+      "size": [
+        290,
+        370
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            650,
+            664
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "ue_properties": {
+          "input_ue_unconnectable": {},
+          "version": "7.7",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "freezer.png",
+        "image"
+      ]
+    },
+    {
+      "id": 356,
+      "type": "LoadImage",
+      "pos": [
+        -490,
+        240
+      ],
+      "size": [
+        290,
+        370
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            649,
+            663
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "ue_properties": {
+          "input_ue_unconnectable": {},
+          "version": "7.7",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "snowboarder.png",
+        "image"
+      ]
+    },
+    {
+      "id": 359,
+      "type": "FALSeedanceReference2Video",
+      "pos": [
+        1795.9592596227799,
+        183.28757500611846
+      ],
+      "size": [
+        580,
+        453
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "showAdvanced": false,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 667
+        },
+        {
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        },
+        {
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 649
+        },
+        {
+          "name": "image_2",
+          "type": "IMAGE",
+          "link": 650
+        },
+        {
+          "name": "image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_4",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_5",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_6",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_7",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_8",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_9",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": [
+            653
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedanceReference2Video",
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3",
+        "ue_properties": {
+          "input_ue_unconnectable": {},
+          "widget_ue_connectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "**Final Prompt**\n\nA realistic 3-inch miniature snowboarder wearing a vibrant snowsuit and goggles, rapidly carving down a frosted slope, leaping and weaving to avoid giant ice cubes and bags of frozen peas. Low-angle macro tracking shot, pushing forward quickly to keep pace with the subject. The interior of a brightly lit freezer, towering frost-covered boxes and icy metallic racks creating a miniature alpine landscape. Photorealistic macro cinematography, high-speed action sports lighting, shallow depth of field. Constraints: no scale distortion, consistent character proportions, no camera cuts, no morphing. Continuous 10-second fluid motion.\n\n***\n\n**Director's Notes:**\n*   **Camera:** Using a \"low-angle macro tracking shot\" tells the model to treat this like a miniature action movie, keeping the camera physically close to the tiny subject. \n*   **Scene specifics:** Giving the obstacles specific names (\"giant ice cubes,\" \"bags of frozen peas\") helps the AI generate a recognizable, realistic freezer environment rather than abstract white shapes.\n*   **Constraints:** Added specific scale constraints so the model doesn't suddenly make the snowboarder human-sized mid-video.",
+        "720p",
+        "9:16",
+        15,
+        true,
+        2013987435,
+        "randomize",
+        false,
+        false
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 360,
+      "type": "GoogleGeminiDirect",
+      "pos": [
+        670,
+        190
+      ],
+      "size": [
+        460,
+        780
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "name": "response_modalities",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_modalities"
+          },
+          "link": null
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 666
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            655
+          ]
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleGeminiDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "Create a ~15-second cinematic action sequence of a tiny snowboarder racing at high speed through a freezer environment designed like a chaotic obstacle course. The camera stays low and tightly behind him in one continuous shot with no cuts, maintaining constant forward motion.\n\nFocus on intensity and unpredictability: unstable terrain, falling and shifting objects, frequent near-collisions, and moments where he nearly loses balance but quickly recovers. The scene should feel dynamic, reactive, and alive, with realistic physics and environmental interaction rather than smooth or controlled movement.",
+        "gemini-3.1-pro-preview",
+        66746703903294,
+        "fixed",
+        "auto",
+        "1K",
+        "IMAGE+TEXT",
+        "You are a cinematic prompt generator. Your task is to convert user ideas into structured prompts for high-fidelity video generation using a strict format and physically grounded cinematic logic. Always output using exactly these five sections in this order: Subject, Action, Camera, Style, Constraints. Do not include any extra commentary, explanations, or text outside these sections.\n\nSubject: Define a single dominant subject unless the user explicitly requests multiple. Describe the subject in precise visual detail including physical traits, clothing, and distinguishing features. Maintain subject identity consistently throughout the entire sequence and do not introduce new primary subjects.\n\nAction: This is the most important section. All motion must be physically grounded and follow clear cause-and-effect logic. Structure the entire sequence as a continuous timeline using explicit timestamps formatted like 0.0–X.Xs. Actions must flow as a chain: start, progression, escalation, peak, recovery, continuation. The subject must remain in continuous motion unless explicitly stated otherwise. Include environmental interaction where the subject affects surroundings (collisions, displacement, shifting objects), and those surroundings react accordingly. Incorporate instability, loss of balance, and recovery where appropriate. Add micro-detail layering such as particles, fabric movement, subtle adjustments, and secondary reactions. Avoid vague, symbolic, or abstract actions. No teleportation or discontinuity.\n\nCamera: Always specify shot size, angle, and movement. Ensure the camera maintains spatial continuity with no cuts unless explicitly requested. The subject must remain clearly visible and trackable at all times. Camera motion must feel physically plausible, including inertia and subtle shake when appropriate (e.g., at high speed). The camera should enhance depth using foreground, midground, and background parallax.\n\nStyle: Use exactly one strong visual anchor such as a film stock, cinematic style, or artist reference. Do not combine multiple styles. This style must consistently influence lighting, color, texture, and depth of field across the entire sequence.\n\nConstraints: Always include negative prompts such as no distortion, no flicker, no artifacts, no extra limbs or deformities. Include temporal definition specifying total duration and pacing of the shot. Enforce continuity rules including stable lighting direction, coherent shadows, preserved subject identity, and no morphing unless explicitly requested. Include any explicit constraints provided by the user (e.g., snowboard only, no skis or poles).\n\nCinematic principles must always be enforced: physical realism (weight, inertia, momentum), environmental interaction (surfaces and objects react to motion), depth and parallax (layered scene behavior), lighting continuity, and clear visual readability of the subject. Motion should escalate in intensity over time when appropriate.\n\nHard rules: never output anything outside the five required sections, never omit timestamps in the Action section, never introduce multiple subjects unless requested, never use abstract or symbolic motion, never include impossible camera behavior, and never stack multiple styles."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 361,
+      "type": "PreviewAny",
+      "pos": [
+        1206.0614840928872,
+        187.4403607629091
+      ],
+      "size": [
+        460,
+        550
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 655
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            667
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 363,
+      "type": "PreviewImage",
+      "pos": [
+        230,
+        260
+      ],
+      "size": [
+        230,
+        304
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 665
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 365,
+      "type": "MarkdownNote",
+      "pos": [
+        -1383.1023761137237,
+        135.33979307166885
+      ],
+      "size": [
+        370,
+        818.3499755859375
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "# Workflow Instructions\n\n1. Upload Reference Images  (e.g., location, subject, or style).\n\n2. (Optional) Use the LLM for Prompt Generation  \nThe LLM can help generate a Seedance 2.0–style prompt based on your inputs.  \n- Select the Seedance node and press Ctrl + B to bypass it (so it doesn’t run).  \n- Click Run to execute the LLM.\n\n3. Guide Google Gemini  \nWhen using the Google Gemini node, provide a clear description of what you want, including the duration (time).  \nGemini will generate a Seedance 2.0–style prompt based on your input.\n\n4. Review and Apply the Prompt  \n- Once you’re happy with the generated prompt, select the Google Gemini node and press Ctrl + B to bypass it.  \n- Go back to the Seedance node and press Ctrl + B again to enable it.  \n- Paste the generated prompt into the prompt field.\n\n5. Adjust Settings  \nSet your desired resolution, aspect ratio, and video duration in the Seedance node.\n\n6. Generate the Video  \nRun the workflow again to generate your final output.\n"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 366,
+      "type": "ImageStitch",
+      "pos": [
+        -130,
+        260
+      ],
+      "size": [
+        270,
+        186.64999389648438
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image1",
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 663
+        },
+        {
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 664
+        },
+        {
+          "localized_name": "direction",
+          "name": "direction",
+          "type": "COMBO",
+          "widget": {
+            "name": "direction"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "match_image_size",
+          "name": "match_image_size",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "match_image_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "spacing_width",
+          "name": "spacing_width",
+          "type": "INT",
+          "widget": {
+            "name": "spacing_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "spacing_color",
+          "name": "spacing_color",
+          "type": "COMBO",
+          "widget": {
+            "name": "spacing_color"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            665,
+            666
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageStitch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "right",
+        true,
+        0,
+        "white"
+      ]
+    }
+  ],
+  "links": [
+    [
+      649,
+      356,
+      0,
+      359,
+      9,
+      "IMAGE"
+    ],
+    [
+      650,
+      352,
+      0,
+      359,
+      10,
+      "IMAGE"
+    ],
+    [
+      653,
+      359,
+      0,
+      344,
+      0,
+      "VIDEO"
+    ],
+    [
+      655,
+      360,
+      0,
+      361,
+      0,
+      "STRING"
+    ],
+    [
+      663,
+      356,
+      0,
+      366,
+      0,
+      "IMAGE"
+    ],
+    [
+      664,
+      352,
+      0,
+      366,
+      1,
+      "IMAGE"
+    ],
+    [
+      665,
+      366,
+      0,
+      363,
+      0,
+      "IMAGE"
+    ],
+    [
+      666,
+      366,
+      0,
+      360,
+      7,
+      "IMAGE"
+    ],
+    [
+      667,
+      361,
+      0,
+      359,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "LLM",
+      "bounding": [
+        640,
+        100,
+        1054.2587669146694,
+        944.5034801612671
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Reference Images",
+      "bounding": [
+        -980,
+        100,
+        1590.8887888228949,
+        580.4792451483988
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Seedance 2.0",
+      "bounding": [
+        1740,
+        100,
+        1254.2917698408892,
+        931.3079389592615
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.2937859796289685,
+      "offset": [
+        2860.5128753295644,
+        1065.2382932975158
+      ]
+    },
+    "frontendVersion": "1.43.16",
+    "workflowRendererVersion": "Vue-corrected",
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "ue_links": []
+  },
+  "version": 0.4
+}

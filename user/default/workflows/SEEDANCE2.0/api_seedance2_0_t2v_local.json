@@ -1,0 +1,222 @@
+{
+  "id": "9994178c-856f-479e-8ba6-cda3daf4a117",
+  "revision": 0,
+  "last_node_id": 346,
+  "last_link_id": 642,
+  "nodes": [
+    {
+      "id": 343,
+      "type": "FALSeedanceText2Video",
+      "pos": [
+        -91,
+        8282
+      ],
+      "size": [
+        426.0666809082031,
+        333
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "showAdvanced": false,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": [
+            641
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedanceText2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "[Style] Magical dreamspace couture fantasy, 8K ultra-clear, Photorealistic, High-fashion Editorial, floating veil architecture, liquid nebula hall, unreal palace interior, soft starlight mist, Hollywood fantasy dissolve, Unreal Engine 5 atmospheric fluid.\n\nProtagonist note:\nA female fashion model, mid-20s, editorial silhouette: shoulder-length auburn hair in loose waves, tall lean build, calm confident posture.\n\n[Duration] 5 seconds.\n\n[Scene] A vast palace hall suspended inside a glowing nebula; translucent curtains hang without support; shallow mirror pools reflect a sky that belongs to no real world.\n\n[00:00-00:02] Shot 1: Veil drift.\nCamera: medium-wide glide through hanging translucent curtains and mirror pools.\nAction: She moves slowly through the hall; the hanging curtains and mirror pools react to her passing.\nEffect: Starlight begins collecting inside the air around her path, gathering into luminous dust between curtains rather than inside clothing.\n\n[00:02-00:04] Shot 2: Dust release.\nCamera: medium on upper body, surrounding curtains, and the mirror pool edge.\nAction: She turns and the nearby suspended curtain field swings outward in one elegant arc.\nEffect: The curtain light tears into streams of glowing dust and translucent vapor layers, visibly transforming from architecture-soft fabric into cosmic particulate.\n\n[00:04-00:05] Shot 3: Nebula fade.\nCamera: slow crane back to reveal the full impossible hall.\nAction: She stands at the center while the new dust-streams move upward through the curtains.\nEffect: Curtains, pools, columns, and nebula light all dissolve into a soft cosmic watercolor haze, as if the entire palace were evaporating into magical stardust.",
+        "720p",
+        "16:9",
+        5,
+        true,
+        675586000,
+        "randomize",
+        false,
+        false
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 344,
+      "type": "SaveVideo",
+      "pos": [
+        470,
+        8270
+      ],
+      "size": [
+        540,
+        610
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 641
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "video/Seedance2.0_t2v",
+        "auto",
+        "auto"
+      ]
+    }
+  ],
+  "links": [
+    [
+      641,
+      343,
+      0,
+      344,
+      0,
+      "VIDEO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "workflowRendererVersion": "Vue-corrected",
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": [
+        538.3747525655642,
+        -8015.561973774231
+      ]
+    },
+    "frontendVersion": "1.43.16",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
