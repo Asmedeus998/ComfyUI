@@ -13,7 +13,7 @@
       ],
       "size": [
         630,
-        938
+        996.0833740234375
       ],
       "flags": {},
       "order": 2,
@@ -151,6 +151,14 @@
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "localized_name": "api_key",
           "name": "api_key",
           "type": "STRING",
           "widget": {
@@ -159,6 +167,7 @@
           "link": null
         },
         {
+          "localized_name": "model",
           "name": "model",
           "type": "COMBO",
           "widget": {
@@ -167,6 +176,7 @@
           "link": null
         },
         {
+          "localized_name": "prompt",
           "name": "prompt",
           "type": "STRING",
           "widget": {
@@ -175,6 +185,7 @@
           "link": null
         },
         {
+          "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
           "widget": {
@@ -183,6 +194,7 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
           "name": "aspect_ratio",
           "type": "COMBO",
           "widget": {
@@ -191,6 +203,7 @@
           "link": null
         },
         {
+          "localized_name": "duration",
           "name": "duration",
           "type": "INT",
           "widget": {
@@ -199,21 +212,18 @@
           "link": null
         },
         {
+          "localized_name": "seed",
           "name": "seed",
           "type": "INT",
           "widget": {
             "name": "seed"
           },
           "link": null
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 2
         }
       ],
       "outputs": [
         {
+          "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
           "links": [
@@ -236,7 +246,7 @@
         "720p",
         "auto",
         6,
-        880926991,
+        1588705081,
         "randomize"
       ]
     }
@@ -255,7 +265,7 @@
       3,
       0,
       1,
-      7,
+      0,
       "IMAGE"
     ]
   ],
@@ -265,8 +275,8 @@
     "ds": {
       "scale": 0.9747082742914984,
       "offset": [
-        1778.3334854578752,
-        857.9947795219653
+        1457.2117629327217,
+        506.09461713817745
       ]
     },
     "workflowRendererVersion": "LG",
@@ -275,7 +285,8 @@
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
-    "ue_links": []
+    "ue_links": [],
+    "links_added_by_ue": []
   },
   "version": 0.4
 }

@@ -127,14 +127,14 @@
     },
     {
       "id": 2,
-      "type": "GrokVideoExtendDirect",
+      "type": "GrokVideoExtendNode",
       "pos": [
         1299.9999067086246,
         319.99999250705633
       ],
       "size": [
         410,
-        240
+        213
       ],
       "flags": {},
       "order": 1,
@@ -147,15 +147,6 @@
           "link": 1
         },
         {
-          "localized_name": "api_key",
-          "name": "api_key",
-          "type": "STRING",
-          "widget": {
-            "name": "api_key"
-          },
-          "link": null
-        },
-        {
           "localized_name": "prompt",
           "name": "prompt",
           "type": "STRING",
@@ -165,11 +156,20 @@
           "link": null
         },
         {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
           "localized_name": "duration",
-          "name": "duration",
+          "name": "model.duration",
           "type": "INT",
           "widget": {
-            "name": "duration"
+            "name": "model.duration"
           },
           "link": null
         },
@@ -185,8 +185,8 @@
       ],
       "outputs": [
         {
-          "localized_name": "video",
-          "name": "video",
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
           "type": "VIDEO",
           "links": [
             2
@@ -194,7 +194,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "GrokVideoExtendDirect",
+        "Node name for S&R": "GrokVideoExtendNode",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
@@ -202,12 +202,14 @@
         }
       },
       "widgets_values": [
-        "",
         "Begin in deep space, camera slowly ascends, pulls back and orbits forward from a ring space station, revealing a vast futuristic space city with brilliant nebulae and flying starships, epic sci-fi style; background music is grand orchestral score, quiet and low at first, strings and vocals rise with the camera, drums and brass erupt at climax, magnificent and awe-inspiring.",
+        "grok-imagine-video",
         6,
-        956419610,
+        1577960711,
         "randomize"
-      ]
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -234,8 +236,8 @@
     "ds": {
       "scale": 0.9453020032523787,
       "offset": [
-        -631.3045621394684,
-        -66.79622813267733
+        -669.3876296418534,
+        -87.95348785622447
       ]
     },
     "frontendVersion": "1.43.16",
@@ -243,8 +245,7 @@
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
-    "ue_links": [],
-    "links_added_by_ue": []
+    "ue_links": []
   },
   "version": 0.4
 }
