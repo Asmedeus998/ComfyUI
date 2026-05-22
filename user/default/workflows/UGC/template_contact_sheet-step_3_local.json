@@ -606,7 +606,7 @@
         990
       ],
       "flags": {},
-      "order": 19,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -669,7 +669,7 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
       "order": 12,
@@ -700,6 +700,7 @@
         {
           "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 364
         }
@@ -720,6 +721,10 @@
           [
             "310",
             "duration"
+          ],
+          [
+            "310",
+            "resolution"
           ],
           [
             "310",
@@ -784,7 +789,8 @@
         }
       },
       "widgets_values": [
-        5
+        5,
+        "fixed"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -845,7 +851,7 @@
         990
       ],
       "flags": {},
-      "order": 20,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -908,10 +914,10 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -937,7 +943,9 @@
           "link": 351
         },
         {
+          "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 358
         }
@@ -958,6 +966,10 @@
           [
             "343",
             "duration"
+          ],
+          [
+            "343",
+            "resolution"
           ],
           [
             "343",
@@ -997,7 +1009,7 @@
         990
       ],
       "flags": {},
-      "order": 21,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1060,10 +1072,10 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1089,7 +1101,9 @@
           "link": 352
         },
         {
+          "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 359
         }
@@ -1110,6 +1124,10 @@
           [
             "351",
             "duration"
+          ],
+          [
+            "351",
+            "resolution"
           ],
           [
             "351",
@@ -1149,7 +1167,7 @@
         990
       ],
       "flags": {},
-      "order": 22,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1212,10 +1230,10 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1241,7 +1259,9 @@
           "link": 353
         },
         {
+          "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 360
         }
@@ -1262,6 +1282,10 @@
           [
             "359",
             "duration"
+          ],
+          [
+            "359",
+            "resolution"
           ],
           [
             "359",
@@ -1301,7 +1325,7 @@
         990
       ],
       "flags": {},
-      "order": 23,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1364,10 +1388,10 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
-      "order": 16,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1393,7 +1417,9 @@
           "link": 354
         },
         {
+          "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 361
         }
@@ -1414,6 +1440,10 @@
           [
             "367",
             "duration"
+          ],
+          [
+            "367",
+            "resolution"
           ],
           [
             "367",
@@ -1453,7 +1483,7 @@
         990
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1516,10 +1546,10 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
-      "order": 17,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1545,7 +1575,9 @@
           "link": 355
         },
         {
+          "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 362
         }
@@ -1566,6 +1598,10 @@
           [
             "375",
             "duration"
+          ],
+          [
+            "375",
+            "resolution"
           ],
           [
             "375",
@@ -1668,10 +1704,10 @@
       ],
       "size": [
         470,
-        250
+        292
       ],
       "flags": {},
-      "order": 18,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1697,7 +1733,9 @@
           "link": 356
         },
         {
+          "localized_name": "trigger",
           "name": "trigger",
+          "shape": 7,
           "type": "*",
           "link": 363
         }
@@ -1717,6 +1755,10 @@
           [
             "383",
             "duration"
+          ],
+          [
+            "383",
+            "resolution"
           ],
           [
             "383",
@@ -2206,7 +2248,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2496,6 +2538,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 323
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 450
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -2504,6 +2561,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -2512,6 +2570,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -2520,6 +2579,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -2528,6 +2588,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -2536,6 +2597,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -2544,6 +2606,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -2552,40 +2615,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 323
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 450
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -2621,13 +2677,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 400
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -2636,6 +2712,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -2644,16 +2721,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -2662,6 +2730,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -2670,6 +2739,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -2678,6 +2748,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -2686,6 +2757,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -2694,6 +2766,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -2702,28 +2775,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 400
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -2743,6 +2813,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -2838,7 +2909,7 @@
             "origin_id": 304,
             "origin_slot": 0,
             "target_id": 310,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -2846,7 +2917,7 @@
             "origin_id": 305,
             "origin_slot": 0,
             "target_id": 310,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -2854,7 +2925,7 @@
             "origin_id": 306,
             "origin_slot": 0,
             "target_id": 310,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -2862,7 +2933,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 310,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -2870,7 +2941,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 310,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -2902,7 +2973,7 @@
             "origin_id": 386,
             "origin_slot": 0,
             "target_id": 306,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -2910,7 +2981,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 310,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -2918,7 +2989,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 306,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -2932,7 +3003,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3222,6 +3293,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 326
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 451
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -3230,6 +3316,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -3238,6 +3325,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -3246,6 +3334,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -3254,6 +3343,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -3262,6 +3352,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -3270,6 +3361,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -3278,40 +3370,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 326
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 451
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -3347,13 +3432,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 401
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -3362,6 +3467,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -3370,16 +3476,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -3388,6 +3485,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -3396,6 +3494,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -3404,6 +3503,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -3412,6 +3512,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -3420,6 +3521,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -3428,28 +3530,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 401
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -3469,6 +3568,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -3566,7 +3666,7 @@
             "origin_id": 340,
             "origin_slot": 0,
             "target_id": 343,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -3574,7 +3674,7 @@
             "origin_id": 341,
             "origin_slot": 0,
             "target_id": 343,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -3582,7 +3682,7 @@
             "origin_id": 342,
             "origin_slot": 0,
             "target_id": 343,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -3590,7 +3690,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 343,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -3598,7 +3698,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 343,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -3630,7 +3730,7 @@
             "origin_id": 387,
             "origin_slot": 0,
             "target_id": 342,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -3638,7 +3738,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 343,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -3646,7 +3746,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 342,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -3660,7 +3760,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3950,6 +4050,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 329
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 452
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -3958,6 +4073,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -3966,6 +4082,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -3974,6 +4091,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -3982,6 +4100,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -3990,6 +4109,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -3998,6 +4118,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -4006,40 +4127,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 329
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 452
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -4075,13 +4189,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 402
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -4090,6 +4224,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -4098,16 +4233,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -4116,6 +4242,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -4124,6 +4251,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -4132,6 +4260,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -4140,6 +4269,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -4148,6 +4278,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -4156,28 +4287,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 402
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -4197,6 +4325,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -4294,7 +4423,7 @@
             "origin_id": 348,
             "origin_slot": 0,
             "target_id": 351,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -4302,7 +4431,7 @@
             "origin_id": 349,
             "origin_slot": 0,
             "target_id": 351,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -4310,7 +4439,7 @@
             "origin_id": 350,
             "origin_slot": 0,
             "target_id": 351,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -4318,7 +4447,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 351,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -4326,7 +4455,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 351,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -4358,7 +4487,7 @@
             "origin_id": 388,
             "origin_slot": 0,
             "target_id": 350,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -4366,7 +4495,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 351,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -4374,7 +4503,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 350,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -4388,7 +4517,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4678,6 +4807,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 332
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 453
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -4686,6 +4830,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -4694,6 +4839,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -4702,6 +4848,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -4710,6 +4857,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -4718,6 +4866,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -4726,6 +4875,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -4734,40 +4884,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 332
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 453
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -4803,13 +4946,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 403
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -4818,6 +4981,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -4826,16 +4990,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -4844,6 +4999,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -4852,6 +5008,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -4860,6 +5017,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -4868,6 +5026,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -4876,6 +5035,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -4884,28 +5044,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 403
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -4925,6 +5082,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -5022,7 +5180,7 @@
             "origin_id": 356,
             "origin_slot": 0,
             "target_id": 359,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -5030,7 +5188,7 @@
             "origin_id": 357,
             "origin_slot": 0,
             "target_id": 359,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -5038,7 +5196,7 @@
             "origin_id": 358,
             "origin_slot": 0,
             "target_id": 359,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -5046,7 +5204,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 359,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -5054,7 +5212,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 359,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -5086,7 +5244,7 @@
             "origin_id": 389,
             "origin_slot": 0,
             "target_id": 358,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -5094,7 +5252,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 359,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -5102,7 +5260,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 358,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -5116,7 +5274,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5406,6 +5564,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 333
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 454
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -5414,6 +5587,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -5422,6 +5596,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -5430,6 +5605,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -5438,6 +5614,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -5446,6 +5623,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -5454,6 +5632,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -5462,40 +5641,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 333
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 454
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -5531,13 +5703,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 404
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -5546,6 +5738,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -5554,16 +5747,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -5572,6 +5756,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -5580,6 +5765,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -5588,6 +5774,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -5596,6 +5783,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -5604,6 +5792,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -5612,28 +5801,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 404
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -5653,6 +5839,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -5750,7 +5937,7 @@
             "origin_id": 364,
             "origin_slot": 0,
             "target_id": 367,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -5758,7 +5945,7 @@
             "origin_id": 365,
             "origin_slot": 0,
             "target_id": 367,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -5766,7 +5953,7 @@
             "origin_id": 366,
             "origin_slot": 0,
             "target_id": 367,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -5774,7 +5961,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 367,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -5782,7 +5969,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 367,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -5798,7 +5985,7 @@
             "origin_id": 390,
             "origin_slot": 0,
             "target_id": 366,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -5822,7 +6009,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 367,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -5830,7 +6017,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 366,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -5844,7 +6031,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6134,6 +6321,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 338
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 455
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -6142,6 +6344,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -6150,6 +6353,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -6158,6 +6362,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -6166,6 +6371,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -6174,6 +6380,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -6182,6 +6389,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -6190,40 +6398,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 338
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 455
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -6259,13 +6460,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 405
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -6274,6 +6495,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -6282,16 +6504,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -6300,6 +6513,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -6308,6 +6522,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -6316,6 +6531,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -6324,6 +6540,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -6332,6 +6549,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -6340,28 +6558,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 405
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -6381,6 +6596,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -6478,7 +6694,7 @@
             "origin_id": 372,
             "origin_slot": 0,
             "target_id": 375,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -6486,7 +6702,7 @@
             "origin_id": 373,
             "origin_slot": 0,
             "target_id": 375,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -6494,7 +6710,7 @@
             "origin_id": 374,
             "origin_slot": 0,
             "target_id": 375,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -6502,7 +6718,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 375,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -6510,7 +6726,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 375,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -6542,7 +6758,7 @@
             "origin_id": 391,
             "origin_slot": 0,
             "target_id": 374,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -6550,7 +6766,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 375,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -6558,7 +6774,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 374,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -6572,7 +6788,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 395,
-          "lastLinkId": 357,
+          "lastLinkId": 364,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6862,6 +7078,21 @@
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "images",
+                "name": "images",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 341
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 456
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -6870,6 +7101,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -6878,6 +7110,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -6886,6 +7119,7 @@
                 "link": null
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -6894,6 +7128,7 @@
                 "link": null
               },
               {
+                "localized_name": "aspect_ratio",
                 "name": "aspect_ratio",
                 "type": "COMBO",
                 "widget": {
@@ -6902,6 +7137,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -6910,6 +7146,7 @@
                 "link": null
               },
               {
+                "localized_name": "response_modalities",
                 "name": "response_modalities",
                 "type": "COMBO",
                 "widget": {
@@ -6918,40 +7155,33 @@
                 "link": null
               },
               {
-                "name": "images",
-                "type": "IMAGE",
-                "link": 341
-              },
-              {
+                "localized_name": "system_prompt",
                 "name": "system_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "system_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 456
               }
             ],
             "outputs": [
               {
+                "localized_name": "response",
                 "name": "response",
                 "type": "STRING",
+                "slot_index": 0,
                 "links": [
                   203,
                   284
-                ],
-                "slot_index": 0
+                ]
               },
               {
+                "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "links": [],
-                "slot_index": 1
+                "slot_index": 1,
+                "links": []
               }
             ],
             "properties": {
@@ -6987,13 +7217,33 @@
             ],
             "size": [
               340,
-              252
+              374
             ],
             "flags": {},
             "order": 4,
             "mode": 0,
             "inputs": [
               {
+                "localized_name": "first_frame",
+                "name": "first_frame",
+                "type": "IMAGE",
+                "link": 282
+              },
+              {
+                "localized_name": "end_frame",
+                "name": "end_frame",
+                "type": "IMAGE",
+                "link": 283
+              },
+              {
+                "localized_name": "trigger",
+                "name": "trigger",
+                "shape": 7,
+                "type": "*",
+                "link": 406
+              },
+              {
+                "localized_name": "api_key",
                 "name": "api_key",
                 "type": "STRING",
                 "widget": {
@@ -7002,6 +7252,7 @@
                 "link": null
               },
               {
+                "localized_name": "prompt",
                 "name": "prompt",
                 "type": "STRING",
                 "widget": {
@@ -7010,16 +7261,7 @@
                 "link": 284
               },
               {
-                "name": "first_frame",
-                "type": "IMAGE",
-                "link": 282
-              },
-              {
-                "name": "end_frame",
-                "type": "IMAGE",
-                "link": 283
-              },
-              {
+                "localized_name": "duration",
                 "name": "duration",
                 "type": "INT",
                 "widget": {
@@ -7028,6 +7270,7 @@
                 "link": 285
               },
               {
+                "localized_name": "generate_audio",
                 "name": "generate_audio",
                 "type": "BOOLEAN",
                 "widget": {
@@ -7036,6 +7279,7 @@
                 "link": null
               },
               {
+                "localized_name": "cfg_scale",
                 "name": "cfg_scale",
                 "type": "FLOAT",
                 "widget": {
@@ -7044,6 +7288,7 @@
                 "link": null
               },
               {
+                "localized_name": "model",
                 "name": "model",
                 "type": "COMBO",
                 "widget": {
@@ -7052,6 +7297,7 @@
                 "link": null
               },
               {
+                "localized_name": "resolution",
                 "name": "resolution",
                 "type": "COMBO",
                 "widget": {
@@ -7060,6 +7306,7 @@
                 "link": 286
               },
               {
+                "localized_name": "seed",
                 "name": "seed",
                 "type": "INT",
                 "widget": {
@@ -7068,28 +7315,25 @@
                 "link": null
               },
               {
+                "localized_name": "negative_prompt",
                 "name": "negative_prompt",
+                "shape": 7,
                 "type": "STRING",
                 "widget": {
                   "name": "negative_prompt"
                 },
                 "link": null
-              },
-              {
-                "localized_name": "trigger",
-                "name": "trigger",
-                "type": "*",
-                "link": 406
               }
             ],
             "outputs": [
               {
+                "localized_name": "video",
                 "name": "video",
                 "type": "VIDEO",
+                "slot_index": 0,
                 "links": [
                   293
-                ],
-                "slot_index": 0
+                ]
               }
             ],
             "properties": {
@@ -7109,6 +7353,7 @@
               "kling-v3",
               "1080p",
               1,
+              "blur, distort, and low quality",
               "blur, distort, and low quality"
             ],
             "color": "#432",
@@ -7206,7 +7451,7 @@
             "origin_id": 380,
             "origin_slot": 0,
             "target_id": 383,
-            "target_slot": 2,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -7214,7 +7459,7 @@
             "origin_id": 381,
             "origin_slot": 0,
             "target_id": 383,
-            "target_slot": 3,
+            "target_slot": 1,
             "type": "IMAGE"
           },
           {
@@ -7222,7 +7467,7 @@
             "origin_id": 382,
             "origin_slot": 0,
             "target_id": 383,
-            "target_slot": 1,
+            "target_slot": 4,
             "type": "STRING"
           },
           {
@@ -7230,7 +7475,7 @@
             "origin_id": -10,
             "origin_slot": 1,
             "target_id": 383,
-            "target_slot": 4,
+            "target_slot": 5,
             "type": "INT"
           },
           {
@@ -7238,7 +7483,7 @@
             "origin_id": -10,
             "origin_slot": 2,
             "target_id": 383,
-            "target_slot": 8,
+            "target_slot": 9,
             "type": "COMBO"
           },
           {
@@ -7270,7 +7515,7 @@
             "origin_id": 392,
             "origin_slot": 0,
             "target_id": 382,
-            "target_slot": 7,
+            "target_slot": 0,
             "type": "IMAGE"
           },
           {
@@ -7278,7 +7523,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 383,
-            "target_slot": 11,
+            "target_slot": 2,
             "type": "*"
           },
           {
@@ -7286,7 +7531,7 @@
             "origin_id": -10,
             "origin_slot": 3,
             "target_id": 382,
-            "target_slot": 9,
+            "target_slot": 1,
             "type": "*"
           }
         ],
@@ -7299,10 +7544,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.972504678587241,
+      "scale": 0.6038488917096088,
       "offset": [
-        -5451.120898340182,
-        -1795.1315538550682
+        -4939.415641153189,
+        -728.7701208696832
       ]
     },
     "frontendVersion": "1.43.16",
