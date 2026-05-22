@@ -2,18 +2,18 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 12,
-  "last_link_id": 12,
+  "last_link_id": 13,
   "nodes": [
     {
       "id": 2,
       "type": "LoadVideo",
       "pos": [
-        52,
-        1057
+        73.29600000000005,
+        979.802
       ],
       "size": [
         300,
-        180
+        621.3333129882812
       ],
       "flags": {},
       "order": 0,
@@ -55,7 +55,7 @@
         }
       },
       "widgets_values": [
-        "",
+        "Cyreneが だいあるのーとやるだけ 【Honkai：Star Rail MMD】 #cyrene [qHuRzb7u7is].mp4",
         "image"
       ]
     },
@@ -71,7 +71,7 @@
         328
       ],
       "flags": {},
-      "order": 8,
+      "order": 1,
       "mode": 0,
       "inputs": [
         {
@@ -79,7 +79,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 12
+          "link": null
         },
         {
           "localized_name": "video",
@@ -175,7 +175,7 @@
         300
       ],
       "flags": {},
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -219,7 +219,7 @@
         200
       ],
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -263,7 +263,7 @@
         738.4000244140625
       ],
       "flags": {},
-      "order": 7,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -293,12 +293,12 @@
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 1,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -337,12 +337,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -360,12 +360,12 @@
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 2,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -404,12 +404,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -427,12 +427,12 @@
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -471,12 +471,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -494,12 +494,12 @@
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -538,12 +538,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -566,7 +566,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -643,12 +643,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "BatchImagesNode",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "BatchImagesNode"
+        }
       },
       "widgets_values": []
     },
@@ -664,7 +664,7 @@
         72
       ],
       "flags": {},
-      "order": 6,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -680,18 +680,17 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            11,
-            12
+            11
           ]
         }
       ],
       "properties": {
+        "Node name for S&R": "ImageListToImageBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "ImageListToImageBatch"
+        }
       },
       "widgets_values": []
     }
@@ -760,24 +759,16 @@
       6,
       0,
       "IMAGE"
-    ],
-    [
-      12,
-      12,
-      0,
-      3,
-      0,
-      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.7513148009015777,
       "offset": [
-        114.21000000000015,
-        -220.92000000000002
+        781.7654431329825,
+        -249.52141513011264
       ]
     },
     "frontendVersion": "1.44.18",
