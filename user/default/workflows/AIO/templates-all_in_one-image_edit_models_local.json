@@ -116,7 +116,7 @@
         "",
         "1K",
         1,
-        1348453434,
+        2119055088,
         "randomize",
         "auto"
       ]
@@ -255,12 +255,12 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        980265847505738,
+        130037169207612,
         "randomize",
         "auto",
         "1K",
         "IMAGE+TEXT",
-        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
       ]
     },
     {
@@ -386,7 +386,7 @@
         2048,
         2048,
         1,
-        59745170,
+        130204168,
         "randomize"
       ]
     },
@@ -452,7 +452,7 @@
         "collapsed": false
       },
       "order": 11,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "image",
@@ -581,7 +581,7 @@
       },
       "widgets_values": [
         "",
-        832145622,
+        895013239,
         "randomize",
         "high",
         "auto",
@@ -597,8 +597,8 @@
       "id": 134,
       "type": "SaveImage",
       "pos": [
-        7030.665862416976,
-        -2617.3335025370197
+        7030,
+        -2620
       ],
       "size": [
         333.3333435058594,
@@ -606,7 +606,7 @@
       ],
       "flags": {},
       "order": 18,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1474,7 +1474,7 @@
         }
       },
       "widgets_values": [
-        "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n## Model Links (for Local Users)\n\n**diffusion_models**\n\n- [flux-2-klein-base-4b-fp8.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4b-fp8/resolve/main/flux-2-klein-base-4b-fp8.safetensors)\n- [flux2_dev_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors)\n- [qwen_image_edit_2511_bf16.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_bf16.safetensors)\n\n**vae**\n\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors)\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n- [mistral_3_small_flux2_bf16.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/text_encoders/mistral_3_small_flux2_bf16.safetensors)\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n\n## Model Storage Location\n\n```\n\ud83d\udcc2 ComfyUI/\n\u251c\u2500\u2500 \ud83d\udcc2 models/\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 diffusion_models/\n\u2502   \u2502   \u251c\u2500\u2500 flux-2-klein-base-4b-fp8.safetensors\n\u2502   \u2502   \u251c\u2500\u2500 flux2_dev_fp8mixed.safetensors\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_edit_2511_bf16.safetensors\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 vae/\n\u2502   \u2502   \u251c\u2500\u2500 flux2-vae.safetensors\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_vae.safetensors\n\u2502   \u2514\u2500\u2500 \ud83d\udcc2 text_encoders/\n\u2502       \u251c\u2500\u2500 qwen_3_4b.safetensors\n\u2502       \u251c\u2500\u2500 mistral_3_small_flux2_bf16.safetensors\n\u2502       \u2514\u2500\u2500 qwen_2.5_vl_7b_fp8_scaled.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud will be updated after the stable release; nightly-supported models may not be included yet, please wait for the next stable release.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/Comfy-Org/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+        "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n## Model Links (for Local Users)\n\n**diffusion_models**\n\n- [flux-2-klein-base-4b-fp8.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4b-fp8/resolve/main/flux-2-klein-base-4b-fp8.safetensors)\n- [flux2_dev_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors)\n- [qwen_image_edit_2511_bf16.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_bf16.safetensors)\n\n**vae**\n\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors)\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n- [mistral_3_small_flux2_bf16.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/text_encoders/mistral_3_small_flux2_bf16.safetensors)\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   ├── flux-2-klein-base-4b-fp8.safetensors\n│   │   ├── flux2_dev_fp8mixed.safetensors\n│   │   └── qwen_image_edit_2511_bf16.safetensors\n│   ├── 📂 vae/\n│   │   ├── flux2-vae.safetensors\n│   │   └── qwen_image_vae.safetensors\n│   └── 📂 text_encoders/\n│       ├── qwen_3_4b.safetensors\n│       ├── mistral_3_small_flux2_bf16.safetensors\n│       └── qwen_2.5_vl_7b_fp8_scaled.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud will be updated after the stable release; nightly-supported models may not be included yet, please wait for the next stable release.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/Comfy-Org/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
       ],
       "color": "#222",
       "bgcolor": "#000"
@@ -2028,7 +2028,7 @@
               }
             },
             "widgets_values": [
-              223124904355907,
+              155235748511812,
               "randomize"
             ]
           },
@@ -3482,8 +3482,8 @@
           "bounding": [
             -1160,
             325,
-            100,
-            116.66666666666667
+            128,
+            148
           ]
         },
         "outputNode": {
@@ -3491,8 +3491,8 @@
           "bounding": [
             450,
             325,
-            100,
-            50
+            128,
+            68
           ]
         },
         "inputs": [
@@ -3506,8 +3506,8 @@
             "localized_name": "pixels",
             "label": "image",
             "pos": [
-              -1290,
-              412
+              -1056,
+              349
             ]
           },
           {
@@ -3518,8 +3518,8 @@
               168
             ],
             "pos": [
-              -1290,
-              432
+              -1056,
+              369
             ]
           },
           {
@@ -3530,8 +3530,8 @@
               293
             ],
             "pos": [
-              -1290,
-              452
+              -1056,
+              389
             ]
           },
           {
@@ -3542,8 +3542,8 @@
               294
             ],
             "pos": [
-              -1290,
-              472
+              -1056,
+              409
             ]
           },
           {
@@ -3554,8 +3554,8 @@
               295
             ],
             "pos": [
-              -1290,
-              492
+              -1056,
+              429
             ]
           }
         ],
@@ -3569,8 +3569,8 @@
             ],
             "localized_name": "IMAGE",
             "pos": [
-              562,
-              412
+              474,
+              349
             ]
           }
         ],
@@ -3584,8 +3584,8 @@
               260.0001270534065
             ],
             "size": [
-              222.34375,
-              120
+              225,
+              144
             ],
             "flags": {},
             "order": 11,
@@ -3660,8 +3660,8 @@
               70.00010623089011
             ],
             "size": [
-              222.34375,
-              60
+              225,
+              72
             ],
             "flags": {},
             "order": 14,
@@ -3718,8 +3718,8 @@
               220.0002756504557
             ],
             "size": [
-              317.39583333333337,
-              66.66666666666667
+              317.3999938964844,
+              80
             ],
             "flags": {},
             "order": 15,
@@ -3783,8 +3783,8 @@
               160.00018712095806
             ],
             "size": [
-              222.34375,
-              68.88020833333334
+              225,
+              80
             ],
             "flags": {},
             "order": 0,
@@ -3839,8 +3839,8 @@
               230.00034230955058
             ],
             "size": [
-              298.17708333333337,
-              70
+              298.1833190917969,
+              80
             ],
             "flags": {},
             "order": 4,
@@ -3904,8 +3904,8 @@
               -39.99969274393903
             ],
             "size": [
-              272.35677083333337,
-              124.53125
+              272.3500061035156,
+              144
             ],
             "flags": {},
             "order": 6,
@@ -4052,8 +4052,8 @@
               82.00028310960391
             ],
             "size": [
-              298.17708333333337,
-              125.546875
+              298.1833190917969,
+              144
             ],
             "flags": {},
             "order": 7,
@@ -4136,8 +4136,8 @@
               -41.999768360772265
             ],
             "size": [
-              298.17708333333337,
-              98.88020833333334
+              298.1833190917969,
+              112
             ],
             "flags": {},
             "order": 5,
@@ -4210,7 +4210,7 @@
               -49.99979400581957
             ],
             "size": [
-              222.34375,
+              225,
               82
             ],
             "flags": {},
@@ -4255,7 +4255,7 @@
               }
             },
             "widgets_values": [
-              555265527761,
+              234074562811061,
               "randomize"
             ]
           },
@@ -4267,8 +4267,8 @@
               270.0001937125014
             ],
             "size": [
-              210,
-              60
+              225,
+              72
             ],
             "flags": {},
             "order": 3,
@@ -4326,7 +4326,7 @@
             ],
             "size": [
               270,
-              120
+              144
             ],
             "flags": {},
             "order": 10,
@@ -4402,7 +4402,7 @@
             ],
             "size": [
               270,
-              122.21354166666667
+              144
             ],
             "flags": {},
             "order": 13,
@@ -4484,8 +4484,8 @@
               370.0004450700214
             ],
             "size": [
-              187.5,
-              60
+              225,
+              72
             ],
             "flags": {
               "collapsed": false
@@ -4543,8 +4543,8 @@
               460.00021453501785
             ],
             "size": [
-              204.134765625,
-              60
+              225,
+              72
             ],
             "flags": {},
             "order": 8,
@@ -4601,8 +4601,8 @@
               540.0002633687767
             ],
             "size": [
-              187.5,
-              80
+              225,
+              96
             ],
             "flags": {},
             "order": 12,
@@ -4944,8 +4944,8 @@
           "bounding": [
             -412.6162343565087,
             327.2321295314722,
-            118.83138020833334,
-            149.99999999999997
+            150.63333129882812,
+            188
           ]
         },
         "outputNode": {
@@ -4953,8 +4953,8 @@
           "bounding": [
             1631.0466138212807,
             305.6854343585077,
-            100,
-            50
+            128,
+            68
           ]
         },
         "inputs": [
@@ -4967,8 +4967,8 @@
             ],
             "label": "image 1",
             "pos": [
-              -370.5418249778104,
-              414.67855543776665
+              -285.9829030576806,
+              351.2321295314722
             ]
           },
           {
@@ -4981,8 +4981,8 @@
             ],
             "label": "image 2 (optional)",
             "pos": [
-              -370.5418249778104,
-              434.67855543776665
+              -285.9829030576806,
+              371.2321295314722
             ]
           },
           {
@@ -4995,8 +4995,8 @@
             ],
             "label": "image 3 (optional)",
             "pos": [
-              -370.5418249778104,
-              454.67855543776665
+              -285.9829030576806,
+              391.2321295314722
             ]
           },
           {
@@ -5007,8 +5007,8 @@
               23
             ],
             "pos": [
-              -370.5418249778104,
-              474.67855543776665
+              -285.9829030576806,
+              411.2321295314722
             ]
           },
           {
@@ -5019,8 +5019,8 @@
               296
             ],
             "pos": [
-              -370.5418249778104,
-              494.67855543776665
+              -285.9829030576806,
+              431.2321295314722
             ]
           },
           {
@@ -5031,8 +5031,8 @@
               297
             ],
             "pos": [
-              -370.5418249778104,
-              514.6785554377666
+              -285.9829030576806,
+              451.2321295314722
             ]
           },
           {
@@ -5043,8 +5043,8 @@
               298
             ],
             "pos": [
-              -370.5418249778104,
-              534.6785554377666
+              -285.9829030576806,
+              471.2321295314722
             ]
           }
         ],
@@ -5057,8 +5057,8 @@
               24
             ],
             "pos": [
-              1979.2559365855368,
-              388.8225212302092
+              1655.0466138212807,
+              329.6854343585077
             ]
           }
         ],
@@ -5073,7 +5073,7 @@
             ],
             "size": [
               270,
-              66.66666666666667
+              80
             ],
             "flags": {},
             "order": 8,
@@ -5134,8 +5134,8 @@
               462.6708272714378
             ],
             "size": [
-              396.1328125,
-              70
+              396.1333312988281,
+              80
             ],
             "flags": {},
             "order": 9,
@@ -5201,8 +5201,8 @@
               -23.32912410388758
             ],
             "size": [
-              396.1328125,
-              98.88020833333334
+              396.1333312988281,
+              112
             ],
             "flags": {},
             "order": 2,
@@ -5275,8 +5275,8 @@
               315.68566369721907
             ],
             "size": [
-              309.66145833333337,
-              68.88020833333334
+              309.6666564941406,
+              104
             ],
             "flags": {},
             "order": 3,
@@ -5339,8 +5339,8 @@
               185.6856978769069
             ],
             "size": [
-              309.66145833333337,
-              68.88020833333334
+              309.6666564941406,
+              104
             ],
             "flags": {},
             "order": 10,
@@ -5404,7 +5404,7 @@
             ],
             "size": [
               270,
-              66.66666666666667
+              104
             ],
             "flags": {},
             "order": 4,
@@ -5466,7 +5466,7 @@
             ],
             "size": [
               270,
-              220.15625
+              331.3999938964844
             ],
             "flags": {},
             "order": 0,
@@ -5496,7 +5496,7 @@
             ],
             "size": [
               420,
-              184.16666666666669
+              212
             ],
             "flags": {},
             "order": 5,
@@ -5588,7 +5588,7 @@
             ],
             "size": [
               280,
-              88
+              92
             ],
             "flags": {},
             "order": 1,
@@ -5616,8 +5616,8 @@
               -14.314437010788577
             ],
             "size": [
-              426.6276041666667,
-              215.55989583333334
+              426.6333312988281,
+              215.56666564941406
             ],
             "flags": {},
             "order": 11,
@@ -5709,8 +5709,8 @@
               645.6857644052271
             ],
             "size": [
-              187.5,
-              60
+              225,
+              72
             ],
             "flags": {},
             "order": 6,
@@ -5880,7 +5880,7 @@
               }
             },
             "widgets_values": [
-              872476060543055,
+              282923787561101,
               "randomize",
               40,
               4,
@@ -5897,8 +5897,8 @@
               -44.31419999093161
             ],
             "size": [
-              187.5,
-              60
+              225,
+              72
             ],
             "flags": {
               "collapsed": false
@@ -5957,8 +5957,8 @@
               630.0003713388207
             ],
             "size": [
-              194.98332824707032,
-              40
+              225,
+              48
             ],
             "flags": {},
             "order": 13,
@@ -6011,8 +6011,8 @@
               200.00033858328683
             ],
             "size": [
-              396.1328125,
-              125.546875
+              396.1333312988281,
+              144
             ],
             "flags": {},
             "order": 14,
@@ -6356,13 +6356,6 @@
   },
   "config": {},
   "extra": {
-    "ds": {
-      "scale": 0.6651208121063793,
-      "offset": [
-        -5368.188578140839,
-        3551.0635040179886
-      ]
-    },
     "frontendVersion": "1.43.16",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": false,
@@ -6370,7 +6363,14 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ue_links": [],
-    "links_added_by_ue": []
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.28211377172786134,
+      "offset": [
+        -1548.5556662744652,
+        4219.913645196293
+      ]
+    }
   },
   "version": 0.4
 }
