@@ -260,7 +260,7 @@
         "auto",
         "1K",
         "IMAGE+TEXT",
-        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
       ]
     },
     {
@@ -710,9 +710,24 @@
         {
           "label": "image",
           "localized_name": "pixels",
-          "name": "pixels",
+          "name": "image_1",
           "type": "IMAGE",
           "link": 303
+        },
+        {
+          "name": "image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_4",
+          "type": "IMAGE",
+          "link": null
         },
         {
           "name": "text",
@@ -1390,6 +1405,21 @@
           "name": "image",
           "type": "IMAGE",
           "link": 300
+        },
+        {
+          "name": "image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_4",
+          "type": "IMAGE",
+          "link": null
         }
       ],
       "outputs": [
@@ -1474,7 +1504,7 @@
         }
       },
       "widgets_values": [
-        "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n## Model Links (for Local Users)\n\n**diffusion_models**\n\n- [flux-2-klein-base-4b-fp8.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4b-fp8/resolve/main/flux-2-klein-base-4b-fp8.safetensors)\n- [flux2_dev_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors)\n- [qwen_image_edit_2511_bf16.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_bf16.safetensors)\n\n**vae**\n\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors)\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n- [mistral_3_small_flux2_bf16.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/text_encoders/mistral_3_small_flux2_bf16.safetensors)\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 diffusion_models/\n│   │   ├── flux-2-klein-base-4b-fp8.safetensors\n│   │   ├── flux2_dev_fp8mixed.safetensors\n│   │   └── qwen_image_edit_2511_bf16.safetensors\n│   ├── 📂 vae/\n│   │   ├── flux2-vae.safetensors\n│   │   └── qwen_image_vae.safetensors\n│   └── 📂 text_encoders/\n│       ├── qwen_3_4b.safetensors\n│       ├── mistral_3_small_flux2_bf16.safetensors\n│       └── qwen_2.5_vl_7b_fp8_scaled.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud will be updated after the stable release; nightly-supported models may not be included yet, please wait for the next stable release.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/Comfy-Org/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+        "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n## Model Links (for Local Users)\n\n**diffusion_models**\n\n- [flux-2-klein-base-4b-fp8.safetensors](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4b-fp8/resolve/main/flux-2-klein-base-4b-fp8.safetensors)\n- [flux2_dev_fp8mixed.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors)\n- [qwen_image_edit_2511_bf16.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_bf16.safetensors)\n\n**vae**\n\n- [flux2-vae.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors)\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n- [mistral_3_small_flux2_bf16.safetensors](https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/text_encoders/mistral_3_small_flux2_bf16.safetensors)\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n\n## Model Storage Location\n\n```\n\ud83d\udcc2 ComfyUI/\n\u251c\u2500\u2500 \ud83d\udcc2 models/\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 diffusion_models/\n\u2502   \u2502   \u251c\u2500\u2500 flux-2-klein-base-4b-fp8.safetensors\n\u2502   \u2502   \u251c\u2500\u2500 flux2_dev_fp8mixed.safetensors\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_edit_2511_bf16.safetensors\n\u2502   \u251c\u2500\u2500 \ud83d\udcc2 vae/\n\u2502   \u2502   \u251c\u2500\u2500 flux2-vae.safetensors\n\u2502   \u2502   \u2514\u2500\u2500 qwen_image_vae.safetensors\n\u2502   \u2514\u2500\u2500 \ud83d\udcc2 text_encoders/\n\u2502       \u251c\u2500\u2500 qwen_3_4b.safetensors\n\u2502       \u251c\u2500\u2500 mistral_3_small_flux2_bf16.safetensors\n\u2502       \u2514\u2500\u2500 qwen_2.5_vl_7b_fp8_scaled.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud will be updated after the stable release; nightly-supported models may not be included yet, please wait for the next stable release.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/Comfy-Org/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
       ],
       "color": "#222",
       "bgcolor": "#000"
@@ -1760,6 +1790,36 @@
             "pos": [
               -700.1333501682827,
               715.1000311059306
+            ]
+          },
+          {
+            "name": "image_2",
+            "type": "IMAGE",
+            "linkIds": [],
+            "label": "reference_image_2",
+            "pos": [
+              -700.1333501682827,
+              735.1000311059306
+            ]
+          },
+          {
+            "name": "image_3",
+            "type": "IMAGE",
+            "linkIds": [],
+            "label": "reference_image_3",
+            "pos": [
+              -700.1333501682827,
+              755.1000311059306
+            ]
+          },
+          {
+            "name": "image_4",
+            "type": "IMAGE",
+            "linkIds": [],
+            "label": "reference_image_4",
+            "pos": [
+              -700.1333501682827,
+              775.1000311059306
             ]
           }
         ],
@@ -2137,7 +2197,10 @@
                 "type": "VAE",
                 "links": [
                   148,
-                  176
+                  176,
+                  198,
+                  201,
+                  204
                 ]
               }
             ],
@@ -2524,7 +2587,7 @@
                 "name": "CONDITIONING",
                 "type": "CONDITIONING",
                 "links": [
-                  191
+                  196
                 ]
               },
               {
@@ -2532,7 +2595,7 @@
                 "name": "CONDITIONING_1",
                 "type": "CONDITIONING",
                 "links": [
-                  192
+                  197
                 ]
               }
             ],
@@ -2711,13 +2774,13 @@
                 "localized_name": "positive",
                 "name": "positive",
                 "type": "CONDITIONING",
-                "link": 191
+                "link": 205
               },
               {
                 "localized_name": "negative",
                 "name": "negative",
                 "type": "CONDITIONING",
-                "link": 192
+                "link": 206
               },
               {
                 "localized_name": "cfg",
@@ -2835,6 +2898,384 @@
               1024,
               1024
             ]
+          },
+          {
+            "id": 88,
+            "type": "ImageScaleToTotalPixels",
+            "pos": [
+              -350,
+              850
+            ],
+            "size": [
+              240,
+              120
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 193
+              },
+              {
+                "name": "upscale_method",
+                "type": "COMBO",
+                "link": null
+              },
+              {
+                "name": "megapixels",
+                "type": "FLOAT",
+                "link": null
+              },
+              {
+                "name": "resolution_steps",
+                "type": "INT",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  194
+                ]
+              }
+            ],
+            "widgets_values": [
+              "lanczos",
+              1.0,
+              64
+            ]
+          },
+          {
+            "id": 89,
+            "type": "ed93255a-5adb-40b7-8cf9-272380b1957f",
+            "pos": [
+              50,
+              800
+            ],
+            "size": [
+              240,
+              148
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "positive",
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 196
+              },
+              {
+                "label": "negative",
+                "name": "conditioning_1",
+                "type": "CONDITIONING",
+                "link": 197
+              },
+              {
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": 193
+              },
+              {
+                "name": "vae",
+                "type": "VAE",
+                "link": 198
+              }
+            ],
+            "outputs": [
+              {
+                "label": "positive",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  199
+                ]
+              },
+              {
+                "label": "negative",
+                "name": "CONDITIONING_1",
+                "type": "CONDITIONING",
+                "links": [
+                  200
+                ]
+              }
+            ],
+            "properties": {
+              "proxyWidgets": [],
+              "cnr_id": "comfy-core",
+              "ver": "0.8.2",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65,
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.8",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": []
+          },
+          {
+            "id": 90,
+            "type": "ImageScaleToTotalPixels",
+            "pos": [
+              -350,
+              1010
+            ],
+            "size": [
+              240,
+              120
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 194
+              },
+              {
+                "name": "upscale_method",
+                "type": "COMBO",
+                "link": null
+              },
+              {
+                "name": "megapixels",
+                "type": "FLOAT",
+                "link": null
+              },
+              {
+                "name": "resolution_steps",
+                "type": "INT",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  195
+                ]
+              }
+            ],
+            "widgets_values": [
+              "lanczos",
+              1.0,
+              64
+            ]
+          },
+          {
+            "id": 91,
+            "type": "ed93255a-5adb-40b7-8cf9-272380b1957f",
+            "pos": [
+              50,
+              960
+            ],
+            "size": [
+              240,
+              148
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "positive",
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 199
+              },
+              {
+                "label": "negative",
+                "name": "conditioning_1",
+                "type": "CONDITIONING",
+                "link": 200
+              },
+              {
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": 194
+              },
+              {
+                "name": "vae",
+                "type": "VAE",
+                "link": 201
+              }
+            ],
+            "outputs": [
+              {
+                "label": "positive",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  202
+                ]
+              },
+              {
+                "label": "negative",
+                "name": "CONDITIONING_1",
+                "type": "CONDITIONING",
+                "links": [
+                  203
+                ]
+              }
+            ],
+            "properties": {
+              "proxyWidgets": [],
+              "cnr_id": "comfy-core",
+              "ver": "0.8.2",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65,
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.8",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": []
+          },
+          {
+            "id": 92,
+            "type": "ImageScaleToTotalPixels",
+            "pos": [
+              -350,
+              1170
+            ],
+            "size": [
+              240,
+              120
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 195
+              },
+              {
+                "name": "upscale_method",
+                "type": "COMBO",
+                "link": null
+              },
+              {
+                "name": "megapixels",
+                "type": "FLOAT",
+                "link": null
+              },
+              {
+                "name": "resolution_steps",
+                "type": "INT",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  196
+                ]
+              }
+            ],
+            "widgets_values": [
+              "lanczos",
+              1.0,
+              64
+            ]
+          },
+          {
+            "id": 93,
+            "type": "ed93255a-5adb-40b7-8cf9-272380b1957f",
+            "pos": [
+              50,
+              1120
+            ],
+            "size": [
+              240,
+              148
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "positive",
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 202
+              },
+              {
+                "label": "negative",
+                "name": "conditioning_1",
+                "type": "CONDITIONING",
+                "link": 203
+              },
+              {
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": 195
+              },
+              {
+                "name": "vae",
+                "type": "VAE",
+                "link": 204
+              }
+            ],
+            "outputs": [
+              {
+                "label": "positive",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  205
+                ]
+              },
+              {
+                "label": "negative",
+                "name": "CONDITIONING_1",
+                "type": "CONDITIONING",
+                "links": [
+                  206
+                ]
+              }
+            ],
+            "properties": {
+              "proxyWidgets": [],
+              "cnr_id": "comfy-core",
+              "ver": "0.8.2",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65,
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.8",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": []
           }
         ],
         "groups": [
@@ -3077,16 +3518,112 @@
             "type": "CONDITIONING"
           },
           {
-            "id": 191,
+            "id": 193,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 88,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 194,
+            "origin_id": -10,
+            "origin_slot": 6,
+            "target_id": 90,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 195,
+            "origin_id": -10,
+            "origin_slot": 7,
+            "target_id": 92,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 196,
             "origin_id": 79,
+            "origin_slot": 0,
+            "target_id": 89,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 197,
+            "origin_id": 79,
+            "origin_slot": 1,
+            "target_id": 89,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 198,
+            "origin_id": 72,
+            "origin_slot": 0,
+            "target_id": 89,
+            "target_slot": 3,
+            "type": "VAE"
+          },
+          {
+            "id": 199,
+            "origin_id": 89,
+            "origin_slot": 0,
+            "target_id": 91,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 200,
+            "origin_id": 89,
+            "origin_slot": 1,
+            "target_id": 91,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 201,
+            "origin_id": 72,
+            "origin_slot": 0,
+            "target_id": 91,
+            "target_slot": 3,
+            "type": "VAE"
+          },
+          {
+            "id": 202,
+            "origin_id": 91,
+            "origin_slot": 0,
+            "target_id": 93,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 203,
+            "origin_id": 91,
+            "origin_slot": 1,
+            "target_id": 93,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 204,
+            "origin_id": 72,
+            "origin_slot": 0,
+            "target_id": 93,
+            "target_slot": 3,
+            "type": "VAE"
+          },
+          {
+            "id": 205,
+            "origin_id": 93,
             "origin_slot": 0,
             "target_id": 63,
             "target_slot": 1,
             "type": "CONDITIONING"
           },
           {
-            "id": 192,
-            "origin_id": 79,
+            "id": 206,
+            "origin_id": 93,
             "origin_slot": 1,
             "target_id": 63,
             "target_slot": 2,
@@ -3498,16 +4035,49 @@
         "inputs": [
           {
             "id": "fc74acd5-30a9-410b-abb5-4a4171ba3d25",
-            "name": "pixels",
+            "name": "image_1",
             "type": "IMAGE",
             "linkIds": [
               175
             ],
             "localized_name": "pixels",
-            "label": "image",
+            "label": "image_1",
             "pos": [
               -1056,
               349
+            ]
+          },
+          {
+            "name": "image_2",
+            "type": "IMAGE",
+            "linkIds": [],
+            "localized_name": "image_2",
+            "label": "image_2",
+            "pos": [
+              -1056,
+              369
+            ]
+          },
+          {
+            "name": "image_3",
+            "type": "IMAGE",
+            "linkIds": [],
+            "localized_name": "image_3",
+            "label": "image_3",
+            "pos": [
+              -1056,
+              389
+            ]
+          },
+          {
+            "name": "image_4",
+            "type": "IMAGE",
+            "linkIds": [],
+            "localized_name": "image_4",
+            "label": "image_4",
+            "pos": [
+              -1056,
+              409
             ]
           },
           {
@@ -3677,7 +4247,7 @@
                 "localized_name": "conditioning",
                 "name": "conditioning",
                 "type": "CONDITIONING",
-                "link": 166
+                "link": 305
               }
             ],
             "outputs": [
@@ -3864,7 +4434,10 @@
                 "slot_index": 0,
                 "links": [
                   127,
-                  159
+                  159,
+                  297,
+                  299,
+                  301
                 ]
               }
             ],
@@ -4570,7 +5143,7 @@
                 "name": "CONDITIONING",
                 "type": "CONDITIONING",
                 "links": [
-                  166
+                  302
                 ]
               }
             ],
@@ -4659,6 +5232,375 @@
               }
             },
             "widgets_values": []
+          },
+          {
+            "id": 141,
+            "type": "ImageScaleToTotalPixels",
+            "pos": [
+              -600,
+              400
+            ],
+            "size": [
+              210,
+              100
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 296
+              },
+              {
+                "name": "upscale_method",
+                "type": "COMBO",
+                "link": null
+              },
+              {
+                "name": "megapixels",
+                "type": "FLOAT",
+                "link": null
+              },
+              {
+                "name": "resolution_steps",
+                "type": "INT",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  297
+                ]
+              }
+            ],
+            "widgets_values": [
+              "lanczos",
+              1.0,
+              64
+            ]
+          },
+          {
+            "id": 142,
+            "type": "VAEEncode",
+            "pos": [
+              -350,
+              400
+            ],
+            "size": [
+              140,
+              46
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": 296
+              },
+              {
+                "name": "vae",
+                "type": "VAE",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "LATENT",
+                "type": "LATENT",
+                "links": [
+                  297
+                ]
+              }
+            ]
+          },
+          {
+            "id": 143,
+            "type": "ReferenceLatent",
+            "pos": [
+              -150,
+              400
+            ],
+            "size": [
+              180,
+              46
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 302
+              },
+              {
+                "name": "latent",
+                "type": "LATENT",
+                "link": 297
+              }
+            ],
+            "outputs": [
+              {
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  303
+                ]
+              }
+            ]
+          },
+          {
+            "id": 144,
+            "type": "ImageScaleToTotalPixels",
+            "pos": [
+              -600,
+              540
+            ],
+            "size": [
+              210,
+              100
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 298
+              },
+              {
+                "name": "upscale_method",
+                "type": "COMBO",
+                "link": null
+              },
+              {
+                "name": "megapixels",
+                "type": "FLOAT",
+                "link": null
+              },
+              {
+                "name": "resolution_steps",
+                "type": "INT",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  299
+                ]
+              }
+            ],
+            "widgets_values": [
+              "lanczos",
+              1.0,
+              64
+            ]
+          },
+          {
+            "id": 145,
+            "type": "VAEEncode",
+            "pos": [
+              -350,
+              540
+            ],
+            "size": [
+              140,
+              46
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": 298
+              },
+              {
+                "name": "vae",
+                "type": "VAE",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "LATENT",
+                "type": "LATENT",
+                "links": [
+                  299
+                ]
+              }
+            ]
+          },
+          {
+            "id": 146,
+            "type": "ReferenceLatent",
+            "pos": [
+              -150,
+              540
+            ],
+            "size": [
+              180,
+              46
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 303
+              },
+              {
+                "name": "latent",
+                "type": "LATENT",
+                "link": 299
+              }
+            ],
+            "outputs": [
+              {
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  304
+                ]
+              }
+            ]
+          },
+          {
+            "id": 147,
+            "type": "ImageScaleToTotalPixels",
+            "pos": [
+              -600,
+              680
+            ],
+            "size": [
+              210,
+              100
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 300
+              },
+              {
+                "name": "upscale_method",
+                "type": "COMBO",
+                "link": null
+              },
+              {
+                "name": "megapixels",
+                "type": "FLOAT",
+                "link": null
+              },
+              {
+                "name": "resolution_steps",
+                "type": "INT",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  301
+                ]
+              }
+            ],
+            "widgets_values": [
+              "lanczos",
+              1.0,
+              64
+            ]
+          },
+          {
+            "id": 148,
+            "type": "VAEEncode",
+            "pos": [
+              -350,
+              680
+            ],
+            "size": [
+              140,
+              46
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": 300
+              },
+              {
+                "name": "vae",
+                "type": "VAE",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "name": "LATENT",
+                "type": "LATENT",
+                "links": [
+                  301
+                ]
+              }
+            ]
+          },
+          {
+            "id": 149,
+            "type": "ReferenceLatent",
+            "pos": [
+              -150,
+              680
+            ],
+            "size": [
+              180,
+              46
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": 304
+              },
+              {
+                "name": "latent",
+                "type": "LATENT",
+                "link": 301
+              }
+            ],
+            "outputs": [
+              {
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": [
+                  305
+                ]
+              }
+            ]
           }
         ],
         "groups": [
@@ -4817,14 +5759,6 @@
             "type": "IMAGE"
           },
           {
-            "id": 166,
-            "origin_id": 43,
-            "origin_slot": 0,
-            "target_id": 138,
-            "target_slot": 1,
-            "type": "CONDITIONING"
-          },
-          {
             "id": 167,
             "origin_id": 12,
             "origin_slot": 0,
@@ -4835,7 +5769,7 @@
           {
             "id": 168,
             "origin_id": -10,
-            "origin_slot": 1,
+            "origin_slot": 4,
             "target_id": 6,
             "target_slot": 1,
             "type": "STRING"
@@ -4899,7 +5833,7 @@
           {
             "id": 293,
             "origin_id": -10,
-            "origin_slot": 2,
+            "origin_slot": 5,
             "target_id": 12,
             "target_slot": 0,
             "type": "COMBO"
@@ -4907,7 +5841,7 @@
           {
             "id": 294,
             "origin_id": -10,
-            "origin_slot": 3,
+            "origin_slot": 6,
             "target_id": 38,
             "target_slot": 0,
             "type": "COMBO"
@@ -4915,10 +5849,90 @@
           {
             "id": 295,
             "origin_id": -10,
-            "origin_slot": 4,
+            "origin_slot": 7,
             "target_id": 10,
             "target_slot": 0,
             "type": "COMBO"
+          },
+          {
+            "id": 296,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 141,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 297,
+            "origin_id": 10,
+            "origin_slot": 0,
+            "target_id": 142,
+            "target_slot": 1,
+            "type": "VAE"
+          },
+          {
+            "id": 298,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 144,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 299,
+            "origin_id": 10,
+            "origin_slot": 0,
+            "target_id": 145,
+            "target_slot": 1,
+            "type": "VAE"
+          },
+          {
+            "id": 300,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 147,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 301,
+            "origin_id": 10,
+            "origin_slot": 0,
+            "target_id": 148,
+            "target_slot": 1,
+            "type": "VAE"
+          },
+          {
+            "id": 302,
+            "origin_id": 43,
+            "origin_slot": 0,
+            "target_id": 143,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 303,
+            "origin_id": 143,
+            "origin_slot": 0,
+            "target_id": 146,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 304,
+            "origin_id": 146,
+            "origin_slot": 0,
+            "target_id": 149,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 305,
+            "origin_id": 149,
+            "origin_slot": 0,
+            "target_id": 138,
+            "target_slot": 1,
+            "type": "CONDITIONING"
           }
         ],
         "extra": {
@@ -5977,7 +6991,6 @@
                 "name": "IMAGE",
                 "type": "IMAGE",
                 "links": [
-                  7,
                   13,
                   14,
                   28
