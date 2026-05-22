@@ -146,10 +146,13 @@ print(f'A: {len(a)} chars, B: {len(b)} chars')
 | `Reference audio not found` | Empty string passed to path arg | Check link connections, verify node outputs |
 | `Required input missing: source` | `PreviewAny` node disconnected during conversion | Rewire `LoadImage` output to BOTH the new FAL node AND the orphaned `PreviewAny` sink |
 | `Failed to validate prompt` | Stale per-node link references after global `links` mutation | Call `sync_links_to_nodes(wf)` to rebuild `input.link` and `output.links` from global `links` array |
+| `Failed to convert an input value to a INT value` | Empty string `''` in `widgets_values` for an INT widget | Ensure numeric widgets have actual numbers, not strings. Use defensive type coercion in the node function. |
+| `Prompt has no outputs` | Workflow has no `SaveImage`, `PreviewImage`, or `OUTPUT_NODE = True` nodes | Add a `PreviewImage` or `SaveImage` node downstream to produce results. |
+| Batch order looks wrong | `BatchImagesNode` or `ImageListToImageBatch` slot wiring | Use `BatchImagePreview` node to verify index numbers before sending to API. |
 
 ## Debugging Checklist
 
-1. **Backend schema**: `curl -s http://127.0.0.1:8188/object_info/NodeName | python -m json.tool`
+1. **Backend schema**: `curl -s http://127.0.0.1:8195/object_info/NodeName | python -m json.tool`
 2. **Frontend cache**: `Ctrl+Shift+R` hard refresh
 3. **Tmux logs**: `tmux capture-pane -p -t comfyui-dev -S -1000 | tail -50`
 4. **Slot indices**: Compare workflow JSON `slot_index` against `/object_info` `input_order`

@@ -44,4 +44,4 @@ Add to `custom_nodes/<pack>/__init__.py`:
 WEB_DIRECTORY = "./js"
 ```
 
-Verify loaded: `curl http://127.0.0.1:8188/extensions | grep <pack>`
+Verify loaded: `curl http://127.0.0.1:8195/extensions | grep <pack>`

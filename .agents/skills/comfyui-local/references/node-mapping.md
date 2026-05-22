@@ -643,3 +643,214 @@ LoadImage ──→ FALSeedanceReference2Video.image_1  (slot 9)
 - `api_seedance2_0_flf2v_real_human.json` → `FALSeedanceImage2Video` + asset chain cleanup
 - `api_seedance2_0_r2v_real_human.json` → `FALSeedanceReference2Video` + asset chain cleanup
 - `template_seedance_2_0_plus_llm_prompt_helper.json` → `FALSeedanceReference2Video` + `GoogleGeminiDirect`
+
+---
+
+## GrokImageEditDirect (from comfyui-local-gemini)
+
+Calls **xAI** Grok image editing API directly: `POST https://api.x.ai/v1/images/generations`
+
+### Inputs
+
+| Name | Type | Required | Widget | Notes |
+|------|------|----------|--------|-------|
+| `api_key` | STRING | yes | yes (0) | Leave empty; use `XAI_API_KEY` env var |
+| `model` | COMBO | yes | yes (1) | `grok-imagine-image-quality`, `grok-imagine-image-pro`, `grok-imagine-image` |
+| `prompt` | STRING | yes | yes (2) | Multiline |
+| `resolution` | COMBO | yes | yes (3) | `1K`, `2K` |
+| `number_of_images` | INT | yes | yes (4) | 1–10 |
+| `seed` | INT | yes | yes (5) | Default 0 |
+| `aspect_ratio` | COMBO | yes | yes (6) | `auto`, `1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `9:16`, `16:9`, `9:19.5`, `19.5:9`, `9:20`, `20:9`, `1:2`, `2:1` |
+| `images` | IMAGE | no | no | Batched input images (unrolled first) |
+| `image_1` | IMAGE | no | no | Individual image |
+| `image_2` | IMAGE | no | no | Individual image |
+| `image_3` | IMAGE | no | no | Individual image |
+
+**Widget order (7 values):**
+```
+[0] api_key
+[1] model
+[2] prompt
+[3] resolution
+[4] number_of_images
+[5] seed
+[6] aspect_ratio
+```
+
+### Outputs
+| Name | Type | Slot |
+|------|------|------|
+| `image` | IMAGE | 0 |
+
+### Important Notes
+- **Images payload format**: Must be `{"url": "data:image/png;base64,..."}` (object with `url` key), NOT a plain string.
+- **Max 3 images** total (batched + individual combined).
+- `seed` is only sent if `seed > 0`.
+- `aspect_ratio` is only sent if not `"auto"`.
+
+---
+
+## GrokVideoDirect (from comfyui-local-gemini)
+
+Calls **xAI** Grok video generation API directly: `POST https://api.x.ai/v1/videos/generations`
+
+### Inputs
+
+| Name | Type | Required | Widget | Notes |
+|------|------|----------|--------|-------|
+| `api_key` | STRING | yes | yes (0) | Leave empty; use `XAI_API_KEY` env var |
+| `model` | COMBO | yes | yes (1) | `grok-imagine-video` |
+| `prompt` | STRING | yes | yes (2) | Multiline |
+| `resolution` | COMBO | yes | yes (3) | `480p`, `720p` |
+| `aspect_ratio` | COMBO | yes | yes (4) | `auto`, `16:9`, `4:3`, `3:2`, `1:1`, `2:3`, `3:4`, `9:16` |
+| `duration` | INT | yes | yes (5) | 1–15 seconds |
+| `seed` | INT | yes | yes (6) | Default 0 |
+| `images` | IMAGE | no | no | Batched input (uses first frame only) |
+| `image_1` | IMAGE | no | no | Individual image |
+
+**Widget order (7 values):** `[api_key, model, prompt, resolution, aspect_ratio, duration, seed]`
+
+### Outputs
+| Name | Type | Slot |
+|------|------|------|
+| `video` | VIDEO | 0 |
+
+---
+
+## GrokVideoReferenceDirect (from comfyui-local-gemini)
+
+Calls **xAI** Grok video generation with reference images: `POST https://api.x.ai/v1/videos/generations`
+
+### Inputs
+
+| Name | Type | Required | Widget | Notes |
+|------|------|----------|--------|-------|
+| `api_key` | STRING | yes | yes (0) | Leave empty; use `XAI_API_KEY` env var |
+| `model` | COMBO | yes | yes (1) | `grok-imagine-video` |
+| `prompt` | STRING | yes | yes (2) | Multiline |
+| `resolution` | COMBO | yes | yes (3) | `480p`, `720p` |
+| `aspect_ratio` | COMBO | yes | yes (4) | Fixed aspect ratios |
+| `duration` | INT | yes | yes (5) | 1–15 seconds |
+| `seed` | INT | yes | yes (6) | Default 0 |
+| `images` | IMAGE | no | no | Batched reference images |
+| `image_1`..`image_7` | IMAGE | no | no | Individual reference images |
+
+**Widget order (7 values):** `[api_key, model, prompt, resolution, aspect_ratio, duration, seed]`
+
+### Outputs
+| Name | Type | Slot |
+|------|------|------|
+| `video` | VIDEO | 0 |
+
+### Important Notes
+- Up to **7 reference images** total.
+- Images sent as `reference_images` array with `{"url": "data:image/png;base64,..."}` objects.
+
+---
+
+## FALSeedreamImageDirect (from comfyui-local-gemini)
+
+Calls **FAL AI** Seedream image generation/editing endpoint directly.
+
+### Inputs
+
+| Name | Type | Required | Widget | Notes |
+|------|------|----------|--------|-------|
+| `api_key` | STRING | yes | yes (0) | Leave empty; use `FAL_KEY` env var |
+| `model` | COMBO | yes | yes (1) | Model list from `_FAL_SEEDREAM_ENDPOINTS` |
+| `prompt` | STRING | yes | yes (2) | Multiline |
+| `size_preset` | COMBO | yes | yes (3) | Preset sizes |
+| `width` | INT | yes | yes (4) | 512–6240 |
+| `height` | INT | yes | yes (5) | 512–4992 |
+| `max_images` | INT | yes | yes (6) | 1–6 |
+| `seed` | INT | yes | yes (7) | Default 0 |
+| `images` | IMAGE | no | no | Batched input images |
+| `image_1`..`image_9` | IMAGE | no | no | Individual images |
+
+**Widget order (8 values):** `[api_key, model, prompt, size_preset, width, height, max_images, seed]`
+
+### Outputs
+| Name | Type | Slot |
+|------|------|------|
+| `image` | IMAGE | 0 |
+
+### Important Notes
+- If any images are provided, routes to `/<endpoint>/edit`.
+- If no images, routes to `/<endpoint>/text-to-image`.
+- Supports up to 9 images total.
+
+---
+
+## KimiCliDirect (from comfyui-local-gemini)
+
+Calls **kimi-cli** via subprocess (no API key needed — uses user's existing `kimi` auth).
+
+### Inputs
+
+| Name | Type | Required | Widget | Notes |
+|------|------|----------|--------|-------|
+| `prompt` | STRING | yes | yes (0) | Multiline prompt text |
+| `images` | IMAGE | no | no | Batched images (saved to temp, referenced via `@path`) |
+| `video` | VIDEO | no | no | Video input (saved to temp, passed via `--video`) |
+| `system_prompt` | STRING | no | yes (1) | Prepended to prompt |
+| `model` | STRING | no | yes (2) | kimi model name; empty = use config default |
+| `timeout` | INT | no | yes (3) | 60–1200s. Default 300. Auto-bumps to 600 if video attached. |
+
+**Widget order (4 values):** `[prompt, system_prompt, model, timeout]`
+
+### Outputs
+| Name | Type | Slot |
+|------|------|------|
+| `response` | STRING | 0 |
+| `thinking` | STRING | 1 |
+
+### How It Works
+1. Saves `images` to temp PNGs
+2. Saves `video` to temp MP4 via `video.save_to(temp_path, format="mp4", codec="h264")`
+3. Spawns: `kimi --print --output-format stream-json --yolo [--model <model>] [--video <path>]`
+4. Prompt (with `@path` image mentions) sent via stdin
+5. Parses JSONL from stdout; extracts `text` and `think` blocks
+6. Cleans up temp files
+
+### Important Notes
+- **No `--image` flag in kimi-cli** — images are referenced via `@/path/to/image.png` in the prompt text, and the agent's ReadMediaFile tool loads them.
+- **Video timeout**: Always ≥600s when video is attached.
+- **Subprocess approach**: Clean separation from ComfyUI's Python process; no dependency conflicts.
+- `kimi-cli` must be installed and authenticated (`kimi login`).
+
+---
+
+## BatchImagePreview (from comfyui-local-gemini)
+
+Utility node that draws index numbers (`0`, `1`, `2`…) on each image in a batched tensor.
+
+### Inputs
+| Name | Type | Required |
+|------|------|----------|
+| `images` | IMAGE | yes |
+
+### Outputs
+| Name | Type |
+|------|------|
+| `images` | IMAGE |
+
+**Usage:** Connect output to `PreviewImage` or `SaveImage` to see/save individually numbered images.
+
+---
+
+## BatchImageSelect (from comfyui-local-gemini)
+
+Utility node that selects specific images from a batch by zero-based indices.
+
+### Inputs
+| Name | Type | Required |
+|------|------|----------|
+| `images` | IMAGE | yes |
+| `indices` | STRING | yes | Comma-separated indices, e.g. `"0,2,4"` |
+
+### Outputs
+| Name | Type |
+|------|------|
+| `images` | IMAGE |
+
+**Usage:** Use before API nodes to send only selected images (e.g. `KimiCliDirect` or `GoogleGeminiDirect`).
