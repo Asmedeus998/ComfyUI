@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 176,
-  "last_link_id": 351,
+  "last_node_id": 179,
+  "last_link_id": 355,
   "nodes": [
     {
       "id": 28,
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        2033771448,
+        2077474965,
         "randomize",
         "auto"
       ]
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        617917934181725,
+        915412329488387,
         "randomize",
         "auto",
         "1K",
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        22800807,
+        1608937378,
         "randomize"
       ]
     },
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        175217037,
+        1269669375,
         "randomize",
         "high",
         "auto",
@@ -1698,12 +1698,12 @@
       "id": 164,
       "type": "LoadImage",
       "pos": [
-        2800.379041100813,
-        -2673.225570644985
+        2558.8107003737487,
+        -2853.857753350808
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
@@ -1868,12 +1868,12 @@
       "id": 169,
       "type": "LoadImage",
       "pos": [
-        2801.450751716599,
-        -2597.995187552731
+        2525.061749263111,
+        -2743.8067085321304
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
@@ -1935,12 +1935,12 @@
       "id": 172,
       "type": "LoadImage",
       "pos": [
-        2825.9359592349483,
-        -2787.788847251375
+        2558.2521222130663,
+        -2948.8344077360844
       ],
       "size": [
         225,
-        8
+        54
       ],
       "flags": {
         "collapsed": true
@@ -2002,14 +2002,16 @@
       "id": 173,
       "type": "LoadImage",
       "pos": [
-        2836.8288615838137,
-        -3217.4518753855887
+        2571.519160588733,
+        -3127.234706367127
       ],
       "size": [
-        290,
-        370
+        225,
+        54
       ],
-      "flags": {},
+      "flags": {
+        "collapsed": true
+      },
       "order": 7,
       "mode": 0,
       "inputs": [
@@ -2067,8 +2069,8 @@
       "id": 174,
       "type": "BatchImagesNode",
       "pos": [
-        3352.42678445674,
-        -3131.3305815373315
+        2941.1077178133596,
+        -3111.743959316218
       ],
       "size": [
         225,
@@ -2167,8 +2169,8 @@
       "id": 175,
       "type": "ImageListToImageBatch",
       "pos": [
-        3478.221833118505,
-        -3429.2355059024417
+        3173.5410430122975,
+        -3340.007560228481
       ],
       "size": [
         225,
@@ -2209,8 +2211,8 @@
       "id": 176,
       "type": "BatchImagePreview",
       "pos": [
-        3742.074265750013,
-        -3294.0686730735674
+        3190.6306678602223,
+        -3168.8546455772453
       ],
       "size": [
         305.29998779296875,
@@ -2225,35 +2227,60 @@
           "name": "images",
           "type": "IMAGE",
           "link": 351
-        },
-        {
-          "localized_name": "columns",
-          "name": "columns",
-          "type": "INT",
-          "widget": {
-            "name": "columns"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "preview",
-          "name": "preview",
+          "localized_name": "images",
+          "name": "images",
           "type": "IMAGE",
-          "links": null
+          "links": [
+            352
+          ]
         }
       ],
       "properties": {
+        "Node name for S&R": "BatchImagePreview",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "BatchImagePreview"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
-      "widgets_values": [
-        4
-      ]
+      "widgets_values": []
+    },
+    {
+      "id": 177,
+      "type": "PreviewImage",
+      "pos": [
+        3566.846598318917,
+        -3085.6906639519066
+      ],
+      "size": [
+        225,
+        426.5
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 352
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -2472,6 +2499,14 @@
       176,
       0,
       "IMAGE"
+    ],
+    [
+      352,
+      176,
+      0,
+      177,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
@@ -2482,8 +2517,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 176,
-          "lastLinkId": 351,
+          "lastNodeId": 179,
+          "lastLinkId": 355,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2869,7 +2904,7 @@
               }
             },
             "widgets_values": [
-              668317246709929,
+              729341811718783,
               "randomize"
             ]
           },
@@ -4488,8 +4523,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 176,
-          "lastLinkId": 351,
+          "lastNodeId": 179,
+          "lastLinkId": 355,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4854,8 +4889,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 176,
-          "lastLinkId": 351,
+          "lastNodeId": 179,
+          "lastLinkId": 355,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5678,7 +5713,7 @@
               }
             },
             "widgets_values": [
-              960212749456865,
+              7746209200320,
               "randomize"
             ]
           },
@@ -6937,8 +6972,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 176,
-          "lastLinkId": 351,
+          "lastNodeId": 179,
+          "lastLinkId": 355,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -7885,7 +7920,7 @@
               }
             },
             "widgets_values": [
-              1058479086783678,
+              460754711397040,
               "randomize",
               40,
               4,
@@ -8369,10 +8404,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.611590904484147,
+      "scale": 0.740024994425818,
       "offset": [
-        -2312.6697009768222,
-        3765.6379209477846
+        -2549.7284842693302,
+        3777.178523944153
       ]
     }
   },
