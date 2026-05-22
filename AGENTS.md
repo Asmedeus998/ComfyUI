@@ -59,6 +59,8 @@
   - `clip_vision/` → `models/clip_vision` (CLIP Vision encoders for IPAdapter, e.g. `CLIP-ViT-H-14-laion2B-s32B-b79K.bin`)
   - `ipadapter/` → `models/ipadapter` (IPAdapter models, e.g. `ip-adapter_sdxl_vit-h.safetensors`)
   - `text_encoders/` → `models/text_encoders`
+  - `vae/` → `models/vae`
+  - `diffusion_models/` → `models/diffusion_models`
   - `latent_upscale_models/` → `models/latent_upscale_models`
   - `LORA/` → `models/loras`
 - **Custom-node-internal models** (e.g. IndexTTS2): Some nodes store their own checkpoints inside the custom node folder (e.g. `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`). For these:
