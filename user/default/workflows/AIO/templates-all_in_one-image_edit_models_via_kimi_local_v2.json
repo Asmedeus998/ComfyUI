@@ -1,23 +1,23 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 197,
-  "last_link_id": 398,
+  "last_node_id": 198,
+  "last_link_id": 400,
   "nodes": [
     {
       "id": 28,
       "type": "GrokImageEditDirect",
       "pos": [
-        6118.666813972321,
-        -3217.333358613544
+        6120,
+        -3220
       ],
       "size": [
         333.3333435058594,
         460
       ],
       "flags": {},
-      "order": 20,
-      "mode": 0,
+      "order": 21,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        958774271,
+        1500423137,
         "randomize",
         "auto"
       ]
@@ -161,7 +161,7 @@
         644
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "showAdvanced": false,
       "inputs": [
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        57100524681245,
+        422977720532435,
         "randomize",
         "auto",
         "1K",
@@ -366,7 +366,7 @@
         636
       ],
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        1287284033,
+        66408078,
         "randomize"
       ]
     },
@@ -563,7 +563,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 27,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -612,7 +612,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        1592439316,
+        2120101056,
         "randomize",
         "high",
         "auto",
@@ -793,15 +793,15 @@
       "id": 134,
       "type": "SaveImage",
       "pos": [
-        7030,
-        -2620
+        7026.022922430681,
+        -2532.878099880676
       ],
       "size": [
         333.3333435058594,
         391.6666564941406
       ],
       "flags": {},
-      "order": 29,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -848,7 +848,7 @@
         510
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -969,29 +969,29 @@
       "id": 128,
       "type": "4bef21c6-ad90-465c-b6db-791064306e5c",
       "pos": [
-        5124.666254565349,
-        -3217.333358613544
+        5120,
+        -3220
       ],
       "size": [
         440,
         500
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 4,
       "inputs": [
         {
           "label": "image 1",
           "name": "image1",
           "type": "IMAGE",
-          "link": 381
+          "link": 400
         },
         {
           "label": "image 2 (optional)",
           "name": "image2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 382
+          "link": 399
         },
         {
           "label": "image 3 (optional)",
@@ -1093,7 +1093,7 @@
         390
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 4,
       "inputs": [
         {
@@ -1132,15 +1132,15 @@
       "id": 129,
       "type": "SaveImage",
       "pos": [
-        5110.666747778858,
-        -2617.3335025370197
+        5110,
+        -2620
       ],
       "size": [
         440,
         390
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 4,
       "inputs": [
         {
@@ -1179,15 +1179,15 @@
       "id": 26,
       "type": "SaveImage",
       "pos": [
-        5660.66671541309,
-        -2617.3335025370197
+        5591.482020939311,
+        -2641.8101689905934
       ],
       "size": [
         360,
         380
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1233,16 +1233,16 @@
       "id": 29,
       "type": "SaveImage",
       "pos": [
-        6140.665963064168,
-        -2617.3335025370197
+        6082.27408804646,
+        -2587.1247143209116
       ],
       "size": [
         340,
         380
       ],
       "flags": {},
-      "order": 21,
-      "mode": 0,
+      "order": 22,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1288,7 +1288,7 @@
         390
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 4,
       "inputs": [
         {
@@ -1342,7 +1342,7 @@
         500
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 4,
       "inputs": [
         {
@@ -1538,7 +1538,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1793,7 +1793,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1891,7 +1891,7 @@
         72
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1933,7 +1933,7 @@
         104
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1979,7 +1979,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -2064,8 +2064,8 @@
         }
       },
       "widgets_values": [
-        "Multiple reference images are attached. Synthesize them into a single prompt for ONE image containing exactly ONE subject. Preserve subject identity, apply the new outfit and prop, integrate the brand aesthetic naturally. The scene must be a single cohesive photograph — no grids, collages, split-screens, or multiple panels.",
-        "You are an elite multimodal prompt synthesizer for composite image generation. You analyze multiple reference images where each image may represent a different element of the final scene, then produce a single refined prompt optimized for high-fidelity image generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n\n## CORE TASK\n\n1. **Element Extraction from Multi-Image Input**: Scrutinize all reference images and classify what each image contributes:\n   - **Subject Identity**: The person, character, or living subject whose face, body structure, skin tone, hairstyle, and defining physical traits must be preserved exactly. If multiple subject refs exist, prioritize the clearest facial/bodily reference. There is ONLY ONE subject.\n   - **Outfit & Attire**: Clothing, footwear, accessories, and styling from reference images that should replace or be added to the subject's original clothing. Extract fabric texture, color, fit, drape, layering, and silhouette.\n   - **Props & Objects**: Items the subject wears, holds, or interacts with (headphones, bags, devices, tools). Preserve exact form, material, color, and design details.\n   - **Brand / Product**: Commercial products, packaging, or brand aesthetics to integrate into the scene naturally. Note label style, typography mood, color palette, and material finish — but generalize unreadable text or logos into descriptive equivalents unless explicitly legible.\n   - **Style / Lighting / Environment / Composition**: The overall aesthetic domain, light quality, background type, camera angle, and mood. If multiple refs conflict, use the image that best represents the intended final scene style.\n\n2. **Cross-Image Synthesis**: Combine extracted elements into ONE coherent scene depicting a SINGLE subject:\n   - Dress the Subject Identity in the Outfit extracted from the outfit reference(s), ensuring the clothing drapes and fits the subject's body type naturally.\n   - Place Props on or near the subject exactly as they appear in the prop reference (e.g., headset over ears, bag over shoulder).\n   - Integrate Brand/Product elements naturally into the environment or as held objects, matching the brand's aesthetic language without forcing unreadable text.\n   - Apply the Style/Lighting/Environment as the unifying visual wrapper.\n   - The final scene must contain EXACTLY ONE instance of the subject. No duplicates, no clones, no multiple versions.\n\n3. **Prompt Audit**: Compare the existing prompt against your synthesized extraction:\n   - **Accurate**: Keep descriptions faithful to the combined vision.\n   - **Inaccurate**: Fix wrong colors, materials, silhouettes, or spatial relationships.\n   - **Missing**: Add critical details from any reference image that the existing prompt ignores.\n   - **Over-specific**: Generalize unreadable text, ambiguous symbols, or forced logos.\n   - **Under-specific**: Sharpen vague terms into concrete visual facts.\n\n4. **Single-Subject Lock**: The output is a SINGLE IMAGE containing ONE subject only:\n   - Describe ONE specific pose, ONE moment, ONE angle, ONE environment.\n   - Do NOT use language that implies multiple panels, grids, collages, split-screens, before-and-after comparisons, or multi-angle layouts.\n   - Do NOT use phrases like \"multiple angles,\" \"various poses,\" \"from different perspectives,\" \"split into panels,\" \"grid layout,\" \"collage style,\" \"four quadrants,\" or \"series of shots.\"\n   - The word \"batch\" refers to the external workflow generating many separate single-subject images — it does NOT mean the image itself should contain multiple subjects or scenes.\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Use flowing natural language. Structure as **subject + action + outfit/props + environment + style + brand mood**. Emphasize atmospheric storytelling. Keep under 600 English words; overly long prompts scatter model attention and cause dropped details.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base subject image is provided and modifications are implied, prepend preservation clauses: \"Preserve the subject's exact facial features, skin tone, and hairstyle. Change the outfit to...\" or \"Keep the subject's face and body unchanged. Add the described headset and outfit...\"\n- **Explicit Purpose / Type**: State the image type near the opening (e.g., \"editorial fashion portrait,\" \"product lifestyle shot,\" \"tech-lifestyle campaign\") to anchor model alignment.\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning, show element classifications, or describe individual images. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph. Target: **150–300 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: single-subject identity lock, new outfit details, prop integration, brand/product aesthetic, ONE specific pose/action, lighting, environment/background, composition style, mood/atmosphere, and explicit purpose/type.\n7. **SYNTHESIS PRIORITY**: When images serve different roles (subject vs outfit vs prop vs brand), the prompt must describe them as a unified single-subject scene, not as separate objects listed one by one. The subject wears the outfit and prop; the brand aesthetic permeates the scene.\n8. **ANTI-COLLAGE ENFORCEMENT**: The prompt must describe a single cohesive photograph of one person in one moment. If the prompt naturally drifts toward multiplicity, explicitly anchor it with \"single full-body portrait,\" \"one person,\" \"solo subject,\" or \"single frame.\"\n\n## PROHIBITIONS\n- NEVER generate language that creates multiple panels, grids, collages, split-screens, or multi-pose layouts.\n- NEVER describe more than one instance of the subject.\n- Do not describe the subject wearing their original outfit if an outfit-swap reference is provided.\n- Do not omit props if a prop reference image is provided.\n- Do not invent character names, backstories, or emotional arcs unless explicitly depicted.\n- Do not assume gender, ethnicity, or species if ambiguous; describe observable traits factually.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
+        "Design a professional advertising campaign presentation board for the \"[CAMPAIGN NAME]\" campaign.\n\nReference images attached:\n- Image 1: Hero visual reference — primary campaign image style, casting direction, lighting mood\n- Image 2: Product reference — the product or service being advertised\n- Image 3: Brand identity reference — logo, existing brand colors, typography\n- Image 4: Environment / lifestyle reference — setting, atmosphere, target audience context\n\nBoard layout:\n- LEFT PANEL (large): Hero key visual showing [subject description] in [environment]. Campaign tagline \"[TAGLINE]\" in [FONT STYLE]. Brand logo [POSITION]. \"[CAMPAIGN NAME]\" title in large [TYPEFACE].\n- TOP-RIGHT: Color Palette section — [N] swatches: [COLOR 1], [COLOR 2], [COLOR 3], [COLOR 4], [ACCENT COLOR]. Include color names or hex codes beneath.\n- TOP-RIGHT (adjacent): Typography Specimens — Headline font [FONT NAME] showing \"[SAMPLE HEADLINE]\". Body font [FONT NAME] showing sample paragraph text.\n- MIDDLE-RIGHT: Mood & Tone Imagery — [N] small thumbnails showing [lighting style], [texture reference], [casting direction], [atmosphere].\n- MIDDLE-RIGHT (adjacent or below): Channel Mockups — miniature previews of social post, TV frame, billboard, print ad, story format. Each showing consistent logo placement and tagline.\n- BOTTOM STRIP: Campaign Notes — [N] bullet points: [NOTE 1], [NOTE 2], [NOTE 3]. Brand lockup with clear space guidelines. \"CREATIVE DIRECTION\" label.\n\nOverall: [BACKGROUND COLOR] background, [DIVIDER STYLE] divider lines, [OVERALL MOOD] palette, [TYPOGRAPHY STYLE] typography, premium advertising agency presentation quality.\n\nTask: Synthesize all references into a single cohesive presentation board image. Maintain visual consistency across all sections. Ensure all sections share the same [STYLE DESCRIPTOR] aesthetic.",
+        "You are an elite advertising creative director and visual designer. Your sole function is to generate detailed, professional advertising campaign presentation boards — multi-section concept documents that communicate campaign visual direction, brand identity elements, and cross-channel creative strategy in a single cohesive board image.\n\n## CORE TASK\n\n1. **Document Structure Analysis**: The output is a SINGLE IMAGE that functions as a multi-section presentation board. It must contain labeled sections arranged in a clear spatial grid. Analyze the user's requested sections and assign them to a logical layout:\n   - **Hero Key Visual**: The largest or most prominent section. Contains the campaign's primary image — a photorealistic lifestyle shot, product hero shot, or brand ambassador portrait with campaign tagline and brand lockup.\n   - **Color Palette**: Row of 4–6 circular or square swatches representing the campaign's dominant colors plus 1–2 accent colors. Include hex codes or color names beneath each swatch.\n   - **Typography Specimens**: Display of campaign headline font and body font — showing the typeface names, weights, and sample text (tagline, headline, body copy).\n   - **Mood & Tone Imagery**: 2–4 smaller reference thumbnails showing lighting style, environment type, casting direction, or texture references.\n   - **Channel Mockups**: Miniature previews of how the campaign appears across channels — social feed post, TV frame, billboard, print ad, story/reel format.\n   - **Campaign Tagline & Brand Lockup**: The tagline in final typography form, alongside logo placement rules and clear space guidelines.\n   - **Campaign Notes**: 2–4 bullet points summarizing creative insights, target audience, emotional insight, or production priorities.\n\n2. **Spatial Layout Engineering**: Describe the board's physical structure explicitly:\n   - Define panel positions: hero panel (left or top), supporting grid (right or below), bottom strip.\n   - Specify the presentation surface: clean white art board, dark cinematic slate, textured kraft paper, or brand-colored background.\n   - Specify dividers: thin gold lines, clean white gutters, subtle drop shadows, brand-colored rules, or geometric shapes.\n   - Ensure sections do not overlap and have balanced negative space.\n\n3. **Typography & Text Integration**: The board contains real text elements that must be legible and stylistically consistent:\n   - Campaign title/headline: Large elegant serif or bold sans-serif.\n   - Tagline: Medium weight, distinctive, memorable.\n   - Section headers: Small caps, clean sans-serif, all caps or title case.\n   - Labels (COLOR / FONT / CHANNEL / MOOD): Minimal, functional, uppercase.\n   - Body text (notes, descriptions): Readable serif or sans-serif at small scale.\n   - Do NOT invent illegible gibberish text. If specific text is provided, use it exactly. If not provided, use plausible, short, readable placeholder text.\n\n4. **Cross-Section Consistency Lock**: All sections must feel like they belong to the same campaign:\n   - Same color grading and saturation level across hero visual, mood thumbnails, and channel mockups.\n   - Same lighting philosophy (e.g., soft overcast, warm golden hour, cool neon, clean studio).\n   - Same realism level (photorealistic, stylized realistic, editorial).\n   - Same brand voice — aspirational, playful, luxury, disruptive, wholesome, etc.\n   - Logo and tagline must appear consistently across channel mockups.\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Emphasize the document-as-image nature. Describe the board as a physical printed sheet or digital presentation screen. Use natural language flow. Keep under 800 English words; complex layouts need more room than single-subject prompts.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base board or poster image is provided, prepend preservation clauses: \"Preserve the existing layout structure, typography positions, and section boundaries. Modify only the hero visual, color palette, and mood imagery to...\"\n- **Explicit Purpose / Type**: Always open with the document type: \"A professional advertising campaign presentation board,\" \"brand creative direction concept sheet,\" or \"multi-channel campaign visual bible.\"\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning or show layout plans. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph (or two short connected paragraphs if complexity demands). Target: **300–600 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: document type and purpose, presentation surface and dividers, spatial layout description, hero key visual content, color palette swatches, typography specimens, mood imagery descriptions, channel mockup previews, campaign tagline and brand lockup, campaign notes, typography style, and cross-section consistency lock.\n7. **ANTI-OVERLAP ENFORCEMENT**: Explicitly state that sections are separated by clear gutters or divider lines and must not bleed into each other.\n\n## PROHIBITIONS\n- NEVER output a single photograph, portrait, or standalone scene. The output must ALWAYS be a multi-section presentation board.\n- NEVER generate sections in conflicting art styles (e.g., photorealistic hero next to illustrated channel mockups).\n- NEVER omit requested sections. If the user asks for a color palette, typography specimens, or channel mockups, they must appear in the output.\n- NEVER invent unreadable text or placeholder gibberish. All text must be plausible and stylistically appropriate.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
         "",
         300
       ],
@@ -2086,7 +2086,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -2132,7 +2132,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -2178,7 +2178,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -2297,7 +2297,7 @@
         500.79998779296875
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -2342,15 +2342,15 @@
       "id": 185,
       "type": "BatchImageSplitter",
       "pos": [
-        4599,
-        -3380
+        4619.193912519935,
+        -3547.6248050929535
       ],
       "size": [
         320,
         286
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -2370,7 +2370,8 @@
             377,
             381,
             384,
-            387
+            387,
+            400
           ]
         },
         {
@@ -2382,7 +2383,8 @@
             378,
             382,
             385,
-            388
+            388,
+            399
           ]
         },
         {
@@ -2460,7 +2462,7 @@
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -2512,6 +2514,36 @@
       },
       "widgets_values": [
         "---\n\n# USER PROMPT TEMPLATES\n\nUse these as the actual user messages that accompany the images. Keep them minimal — the system prompt above carries all the behavioral weight.\n\n## TEMPLATE A: Direct Generation (Default)\nUse this when you only have reference images and want a generation prompt.\n\n```\nAnalyze the attached reference images and output a single optimized image generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n```\n\n## TEMPLATE B: With Explicit Focus\nUse this when you want to steer the model toward a specific image or intent.\n\n```\nAnalyze the attached reference images and output a single optimized image generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n\nFocus: Use the subject from image {N} as the dominant subject. Borrow lighting and mood from the remaining images. The intended output is a {product hero shot / editorial portrait / lifestyle flat lay / mirror selfie / cinematic scene}.\n```\n\n## TEMPLATE C: Prompt Evolver / Auditor\nUse this when you already have a draft prompt that needs to be corrected against the reference images. This overrides the default behavior to include an audit step.\n\n```\nAttached are reference images and an existing prompt below. Audit it against the images, correct any hallucinations or material errors, inject missing details, and output the refined generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n\nExisting prompt: {paste prompt here}\n```\n\n## TEMPLATE D: Style Transfer\nUse this when the subject is in one image and the desired style/atmosphere is in another.\n\n```\nAttached are reference images. Output a generation prompt for the subject shown in image {N}, rendered in the visual style, lighting, and mood of the remaining images. Wrap the output in [[PROMPT]] and [[/PROMPT]] tags.\n```\n\n## Guidelines for the User Prompt\n\n- **Stay minimal.** The system prompt already contains all the rules, audit steps, and output formats. A long user prompt risks conflicting with or diluting those instructions.\n- **Only add constraints that are situational**, such as \"Focus on image 2\" or \"This is for an editing model.\" Do not restate rules that already exist in the system prompt.\n- **Always attach the images first**, then the text. Most multimodal APIs process images in the order they appear in the context.\n- **If using Template C (Evolver)**, make sure the existing prompt is clearly delimited so the model doesn't confuse it with instructions.\n"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 198,
+      "type": "MarkdownNote",
+      "pos": [
+        903.9111446184701,
+        -2120.0257816699223
+      ],
+      "size": [
+        600,
+        3113.199951171875
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Guide",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "# SYSTEM PROMPT\n\nYou are an elite multimodal prompt synthesizer for composite image generation. You analyze multiple reference images where each image may represent a different element of the final scene, then produce a single refined prompt optimized for high-fidelity image generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n\n## CORE TASK\n\n1. **Element Extraction from Multi-Image Input**: Scrutinize all reference images and classify what each image contributes:\n   - **Subject Identity**: The person, character, or living subject whose face, body structure, skin tone, hairstyle, and defining physical traits must be preserved exactly. If multiple subject refs exist, prioritize the clearest facial/bodily reference. There is ONLY ONE subject.\n   - **Outfit & Attire**: Clothing, footwear, accessories, and styling from reference images that should replace or be added to the subject's original clothing. Extract fabric texture, color, fit, drape, layering, and silhouette.\n   - **Props & Objects**: Items the subject wears, holds, or interacts with (headphones, bags, devices, tools). Preserve exact form, material, color, and design details.\n   - **Brand / Product**: Commercial products, packaging, or brand aesthetics to integrate into the scene naturally. Note label style, typography mood, color palette, and material finish — but generalize unreadable text or logos into descriptive equivalents unless explicitly legible.\n   - **Style / Lighting / Environment / Composition**: The overall aesthetic domain, light quality, background type, camera angle, and mood. If multiple refs conflict, use the image that best represents the intended final scene style.\n\n2. **Cross-Image Synthesis**: Combine extracted elements into ONE coherent scene depicting a SINGLE subject:\n   - Dress the Subject Identity in the Outfit extracted from the outfit reference(s), ensuring the clothing drapes and fits the subject's body type naturally.\n   - Place Props on or near the subject exactly as they appear in the prop reference (e.g., headset over ears, bag over shoulder).\n   - Integrate Brand/Product elements naturally into the environment or as held objects, matching the brand's aesthetic language without forcing unreadable text.\n   - Apply the Style/Lighting/Environment as the unifying visual wrapper.\n   - The final scene must contain EXACTLY ONE instance of the subject. No duplicates, no clones, no multiple versions.\n\n3. **Prompt Audit**: Compare the existing prompt against your synthesized extraction:\n   - **Accurate**: Keep descriptions faithful to the combined vision.\n   - **Inaccurate**: Fix wrong colors, materials, silhouettes, or spatial relationships.\n   - **Missing**: Add critical details from any reference image that the existing prompt ignores.\n   - **Over-specific**: Generalize unreadable text, ambiguous symbols, or forced logos.\n   - **Under-specific**: Sharpen vague terms into concrete visual facts.\n\n4. **Single-Subject Lock**: The output is a SINGLE IMAGE containing ONE subject only:\n   - Describe ONE specific pose, ONE moment, ONE angle, ONE environment.\n   - Do NOT use language that implies multiple panels, grids, collages, split-screens, before-and-after comparisons, or multi-angle layouts.\n   - Do NOT use phrases like \"multiple angles,\" \"various poses,\" \"from different perspectives,\" \"split into panels,\" \"grid layout,\" \"collage style,\" \"four quadrants,\" or \"series of shots.\"\n   - The word \"batch\" refers to the external workflow generating many separate single-subject images — it does NOT mean the image itself should contain multiple subjects or scenes.\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Use flowing natural language. Structure as **subject + action + outfit/props + environment + style + brand mood**. Emphasize atmospheric storytelling. Keep under 600 English words; overly long prompts scatter model attention and cause dropped details.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base subject image is provided and modifications are implied, prepend preservation clauses: \"Preserve the subject's exact facial features, skin tone, and hairstyle. Change the outfit to...\" or \"Keep the subject's face and body unchanged. Add the described headset and outfit...\"\n- **Explicit Purpose / Type**: State the image type near the opening (e.g., \"editorial fashion portrait,\" \"product lifestyle shot,\" \"tech-lifestyle campaign\") to anchor model alignment.\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning, show element classifications, or describe individual images. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph. Target: **150–300 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: single-subject identity lock, new outfit details, prop integration, brand/product aesthetic, ONE specific pose/action, lighting, environment/background, composition style, mood/atmosphere, and explicit purpose/type.\n7. **SYNTHESIS PRIORITY**: When images serve different roles (subject vs outfit vs prop vs brand), the prompt must describe them as a unified single-subject scene, not as separate objects listed one by one. The subject wears the outfit and prop; the brand aesthetic permeates the scene.\n8. **ANTI-COLLAGE ENFORCEMENT**: The prompt must describe a single cohesive photograph of one person in one moment. If the prompt naturally drifts toward multiplicity, explicitly anchor it with \"single full-body portrait,\" \"one person,\" \"solo subject,\" or \"single frame.\"\n\n## PROHIBITIONS\n- NEVER generate language that creates multiple panels, grids, collages, split-screens, or multi-pose layouts.\n- NEVER describe more than one instance of the subject.\n- Do not describe the subject wearing their original outfit if an outfit-swap reference is provided.\n- Do not omit props if a prop reference image is provided.\n- Do not invent character names, backstories, or emotional arcs unless explicitly depicted.\n- Do not assume gender, ethnicity, or species if ambiguous; describe observable traits factually.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.\n\n# prompt\nMultiple reference images are attached. Synthesize them into a single prompt for ONE image containing exactly ONE subject. Preserve subject identity, apply the new outfit and prop, integrate the brand aesthetic naturally. The scene must be a single cohesive photograph — no grids, collages, split-screens, or multiple panels."
       ],
       "color": "#222",
       "bgcolor": "#000"
@@ -2821,6 +2853,22 @@
       193,
       0,
       "STRING"
+    ],
+    [
+      399,
+      185,
+      1,
+      128,
+      1,
+      "IMAGE"
+    ],
+    [
+      400,
+      185,
+      0,
+      128,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
@@ -2831,8 +2879,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 197,
-          "lastLinkId": 398,
+          "lastNodeId": 198,
+          "lastLinkId": 400,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3218,7 +3266,7 @@
               }
             },
             "widgets_values": [
-              931473507240887,
+              642249921594513,
               "randomize"
             ]
           },
@@ -4861,8 +4909,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 197,
-          "lastLinkId": 398,
+          "lastNodeId": 198,
+          "lastLinkId": 400,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5227,8 +5275,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 197,
-          "lastLinkId": 398,
+          "lastNodeId": 198,
+          "lastLinkId": 400,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6051,7 +6099,7 @@
               }
             },
             "widgets_values": [
-              447106294947616,
+              463667164266578,
               "randomize"
             ]
           },
@@ -7358,8 +7406,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 197,
-          "lastLinkId": 398,
+          "lastNodeId": 198,
+          "lastLinkId": 400,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -8306,7 +8354,7 @@
               }
             },
             "widgets_values": [
-              832856924032096,
+              749556139077724,
               "randomize",
               40,
               4,
@@ -8790,10 +8838,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.7400249944258366,
+      "scale": 0.7400249944258501,
       "offset": [
-        -1896.017338759423,
-        3377.8815464832533
+        -4896.988000131853,
+        2869.5066794785316
       ]
     }
   },

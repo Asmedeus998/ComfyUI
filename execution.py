@@ -481,6 +481,7 @@ async def execute(server, dynprompt, caches, current_item, extra_data, executed,
         else:
             get_progress_state().start_progress(unique_id)
             input_data_all, missing_keys, v3_data = get_input_data(inputs, class_def, unique_id, execution_list, dynprompt, extra_data)
+            # print(f"[EXECUTE] Node {unique_id} ({class_type}) - inputs: {list(inputs.keys())}")
             if server.client_id is not None:
                 server.last_node_id = display_node_id
                 server.send_sync("executing", { "node": unique_id, "display_node": display_node_id, "prompt_id": prompt_id }, server.client_id)
