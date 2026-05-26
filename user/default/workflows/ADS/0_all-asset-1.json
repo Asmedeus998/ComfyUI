@@ -1,0 +1,2254 @@
+{
+  "id": "58f78c8c-912a-4108-8626-4348be1fab82",
+  "revision": 0,
+  "last_node_id": 198,
+  "last_link_id": 401,
+  "nodes": [
+    {
+      "id": 28,
+      "type": "GrokImageEditDirect",
+      "pos": [
+        5000,
+        -3370
+      ],
+      "size": [
+        333.3333435058594,
+        460
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 384
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 385
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 386
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 320
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "number_of_images",
+          "name": "number_of_images",
+          "type": "INT",
+          "widget": {
+            "name": "number_of_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GrokImageEditDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "grok-imagine-image",
+        "",
+        "1K",
+        1,
+        1614551913,
+        "randomize",
+        "auto"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "GoogleGeminiDirect",
+      "pos": [
+        4560,
+        -3370
+      ],
+      "size": [
+        330,
+        644
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "showAdvanced": false,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 370
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 319
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_modalities",
+          "name": "response_modalities",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_modalities"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleGeminiDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "",
+        "gemini-3-pro-image-preview",
+        729709185080805,
+        "randomize",
+        "auto",
+        "1K",
+        "IMAGE+TEXT",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ]
+    },
+    {
+      "id": 130,
+      "type": "FALSeedreamImageDirect",
+      "pos": [
+        5440,
+        -3370
+      ],
+      "size": [
+        333.3333435058594,
+        636
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 374
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 321
+        },
+        {
+          "localized_name": "size_preset",
+          "name": "size_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "size_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_images",
+          "name": "max_images",
+          "type": "INT",
+          "widget": {
+            "name": "max_images"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            289
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedreamImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "seedream-4-5-251128",
+        "",
+        "2048x2048 (1:1)",
+        2048,
+        2048,
+        1,
+        399430482,
+        "randomize"
+      ]
+    },
+    {
+      "id": 131,
+      "type": "SaveImage",
+      "pos": [
+        5420,
+        -2610
+      ],
+      "size": [
+        333.3333435058594,
+        391.6666564941406
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 289
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "Save Seedream Image",
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Seedream_4.5"
+      ]
+    },
+    {
+      "id": 133,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5870,
+        -3340
+      ],
+      "size": [
+        333.3333435058594,
+        604
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 387
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 388
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 389
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 390
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 322
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            292
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        1240627320,
+        "randomize",
+        "high",
+        "auto",
+        "auto",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 134,
+      "type": "SaveImage",
+      "pos": [
+        5990,
+        -2650
+      ],
+      "size": [
+        333.3333435058594,
+        391.6666564941406
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 292
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "Save GPT Image 2 Image",
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "GPT_Image_2"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "SaveImage",
+      "pos": [
+        4470,
+        -2790
+      ],
+      "size": [
+        360,
+        380
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "Save Nano Banana Pro Image",
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.5.1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Nano_Banana_Pro"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "SaveImage",
+      "pos": [
+        4960,
+        -2740
+      ],
+      "size": [
+        340,
+        380
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "Save Grok Image",
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Grok"
+      ]
+    },
+    {
+      "id": 164,
+      "type": "LoadImage",
+      "pos": [
+        1120.891466758435,
+        -2634.6566917561704
+      ],
+      "size": [
+        225,
+        368
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            348
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "clothes.png",
+        "image"
+      ]
+    },
+    {
+      "id": 166,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        3355.527342402187,
+        -2354.1416436004897
+      ],
+      "size": [
+        413.2833251953125,
+        415.29998779296875
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": 366
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            395
+          ]
+        }
+      ],
+      "title": "Prompt - custom",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 169,
+      "type": "LoadImage",
+      "pos": [
+        1443.6148096870038,
+        -2633.049564265705
+      ],
+      "size": [
+        225,
+        344
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            349
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "qiuyuan_1.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 172,
+      "type": "LoadImage",
+      "pos": [
+        1430.9061563633418,
+        -3083.2002480185847
+      ],
+      "size": [
+        225,
+        344
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            347
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "brown_moisturizer_bottle.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 173,
+      "type": "LoadImage",
+      "pos": [
+        1151.092528104954,
+        -3115.811965554447
+      ],
+      "size": [
+        225,
+        344
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            346
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "2224676468181779595_2224676465782639550.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 174,
+      "type": "BatchImagesNode",
+      "pos": [
+        1814.3879595979756,
+        -3126.043106621997
+      ],
+      "size": [
+        225,
+        216
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image0",
+          "localized_name": "images.image0",
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 346
+        },
+        {
+          "label": "image1",
+          "localized_name": "images.image1",
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 347
+        },
+        {
+          "label": "image2",
+          "localized_name": "images.image2",
+          "name": "images.image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 348
+        },
+        {
+          "label": "image3",
+          "localized_name": "images.image3",
+          "name": "images.image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 349
+        },
+        {
+          "label": "image4",
+          "localized_name": "images.image4",
+          "name": "images.image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image5",
+          "localized_name": "images.image5",
+          "name": "images.image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image6",
+          "localized_name": "images.image6",
+          "name": "images.image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image7",
+          "localized_name": "images.image7",
+          "name": "images.image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            350
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 175,
+      "type": "ImageListToImageBatch",
+      "pos": [
+        2090,
+        -3360
+      ],
+      "size": [
+        225,
+        72
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 350
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            351
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageListToImageBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 176,
+      "type": "BatchImagePreview",
+      "pos": [
+        2743.97393246817,
+        -3537.745901308855
+      ],
+      "size": [
+        305.29998779296875,
+        104
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 351
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            365,
+            370,
+            372,
+            391
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagePreview",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 180,
+      "type": "KimiCliDirect",
+      "pos": [
+        2401.512099627901,
+        -3146.7971445674766
+      ],
+      "size": [
+        393.8666687011719,
+        797.2666625976562
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 365
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            361,
+            364
+          ]
+        },
+        {
+          "localized_name": "thinking",
+          "name": "thinking",
+          "type": "STRING",
+          "links": [
+            362
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KimiCliDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Design a 3D CGI animation character model sheet for \"[PROJECT NAME].\"\n\nReference images attached for character design, costume, prop, and target style.\n\nRequired sections: Hero character line-up (both characters), expression sheet (3 per character), action pose gallery (6 poses), prop detail callouts (4–6 items), color palette & material swatches, scale reference, character bio panels.\n\nStyle: Clean white art board, thin light grey gutters, [AESTHETIC] 3D CGI character design, soft diffused lighting, appealing rounded shapes, production-ready quality.\n\nTask: Generate a single character bible image. All sections must share consistent 3D art style, lighting, and proportions. No section overlap. Professional animation studio presentation quality.",
+        "You are an elite 3D CGI animation character designer. Your sole function is to generate detailed, professional character design bibles — multi-section pre-production documents that communicate character identity, personality, expressions, action range, props, and materials in a single cohesive document image.\n\n## CORE TASK\n\n1. **Document Structure Analysis**: The output is a SINGLE IMAGE that functions as a multi-section character bible page. It must contain labeled sections arranged in a clear spatial grid. Analyze the user's requested sections and assign them to a logical layout:\n   - **Hero Character Line-Up**: The largest or most prominent section. Both characters standing side by side at full scale on a clean neutral background. Must show complete costumes, proportions, and silhouette readability. Front 3/4 view is ideal for appeal.\n   - **Expression Sheet**: Grid of 3–6 facial expressions per character on clean white backgrounds. Common expressions: Happy, Sad, Angry, Surprised, Determined, Playful. Must maintain identical face shape, eye size, and proportions across all expressions.\n   - **Action Pose Gallery**: 4–8 dynamic full-body poses showing the character's movement vocabulary — running, jumping, crouching, gesturing, interacting with props. Must maintain identical body proportions and costume details across all poses.\n   - **Prop Detail Callouts**: Close-up panels of key props and costume accessories — hats, weapons, tools, jewelry, footwear, fabric texture swatches. Include material descriptions.\n   - **Color Palette & Materials**: Row of circular or square swatches representing skin, hair, primary costume, accent color, prop wood/metal, plus material samples (fabric weave, skin subsurface, metal reflectivity, wood grain).\n   - **Scale Reference**: Both characters shown next to a familiar object or each other to establish height difference and world scale.\n   - **Character Bios**: Small info panels with icons or labels for Age, Role, Personality Traits, Likes, Dislikes. Use short punchy phrases.\n\n2. **Spatial Layout Engineering**: Describe the bible's physical structure explicitly:\n   - Define panel positions: left column (hero line-up + bios), top-right grid (expressions), middle-right grid (action poses), bottom strip (props + palette + scale).\n   - Specify the presentation surface: clean white art board, subtle warm grey, or very light cream. NEVER dark or textured backgrounds that fight the characters.\n   - Specify dividers: thin light grey lines, clean white gutters, or subtle drop shadows. Avoid heavy decorative dividers.\n   - Ensure sections do not overlap and have balanced negative space. Characters should \"breathe\" in their panels.\n\n3. **Typography & Text Integration**: The bible contains real text elements that must be legible and stylistically consistent:\n   - Character names: Large friendly rounded sans-serif or playful serif.\n   - Section headers: Small caps, clean sans-serif, all caps, minimal.\n   - Labels (FRONT / HAPPY / JUMP / PROP 1): Functional, uppercase, small.\n   - Bio text: Readable sans-serif at small scale. Short phrases only.\n   - Do NOT invent illegible gibberish text. If specific text is provided, use it exactly. If not provided, use plausible, short, readable placeholder text.\n\n4. **Cross-Section Consistency Lock**: All sections must show the EXACT SAME character:\n   - Same face shape, eye size, nose shape, ear position across turnaround, expressions, and action poses.\n   - Same body proportions — height, limb length, torso shape, hand size.\n   - Same costume details — fabric folds, button placement, logo position, scarf knot style.\n   - Same material properties — skin subsurface scattering, fabric softness, metal shine, wood grain.\n   - Same lighting direction across all panels (typically soft diffused top-left key light).\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Emphasize the document-as-image nature. Describe the bible as a physical printed sheet or digital design screen. Use natural language flow. Keep under 800 English words; complex layouts need more room than single-subject prompts.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base bible or character sketch is provided, prepend preservation clauses: \"Preserve the existing layout structure, section boundaries, and typography positions. Modify only the character face design to...\" or \"Keep the bible framework intact. Update the action poses and expression sheet to...\"\n- **Explicit Purpose / Type**: Always open with the document type: \"A professional 3D CGI animation character design bible,\" \"Pixar-quality character model sheet,\" or \"animated film pre-production character guide.\"\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning or show layout plans. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph (or two short connected paragraphs if complexity demands). Target: **300–600 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: document type and purpose, presentation surface and dividers, spatial layout description, hero line-up content, expression sheet descriptions, action pose gallery, prop detail callouts, color palette and material swatches, scale reference, character bios, typography style, and cross-section consistency lock.\n7. **ANTI-OVERLAP ENFORCEMENT**: Explicitly state that sections are separated by clear gutters or divider lines and must not bleed into each other.\n\n## PROHIBITIONS\n- NEVER output a single character portrait or standalone scene. The output must ALWAYS be a multi-section character bible.\n- NEVER generate characters in conflicting art styles (e.g., realistic hero next to cartoon expressions).\n- NEVER omit requested sections. If the user asks for an expression sheet, action poses, or prop details, they must appear.\n- NEVER invent unreadable text or placeholder gibberish. All text must be plausible and stylistically appropriate.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
+        "",
+        300
+      ],
+      "color": "#2F4F4F",
+      "bgcolor": "#3D6B6B"
+    },
+    {
+      "id": 181,
+      "type": "PreviewAny",
+      "pos": [
+        2982.932800905174,
+        -2998.504845717068
+      ],
+      "size": [
+        225,
+        152
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 362
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 182,
+      "type": "PreviewAny",
+      "pos": [
+        2983.4903783930868,
+        -3209.746783601242
+      ],
+      "size": [
+        225,
+        152
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 361
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 183,
+      "type": "RegexExtract",
+      "pos": [
+        2842.494880664672,
+        -2767.706173182858
+      ],
+      "size": [
+        400,
+        332
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 364
+        },
+        {
+          "localized_name": "regex_pattern",
+          "name": "regex_pattern",
+          "type": "STRING",
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "case_insensitive",
+          "name": "case_insensitive",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "multiline",
+          "name": "multiline",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "multiline"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "dotall",
+          "name": "dotall",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "dotall"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "group_index",
+          "name": "group_index",
+          "type": "INT",
+          "widget": {
+            "name": "group_index"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            363,
+            366
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RegexExtract",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "string": true
+          },
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
+        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
+        "First Group",
+        true,
+        true,
+        true,
+        1
+      ]
+    },
+    {
+      "id": 184,
+      "type": "PreviewAny",
+      "pos": [
+        3368.73424275907,
+        -3108.6124441175775
+      ],
+      "size": [
+        383.9166564941406,
+        500.79998779296875
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 363
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 185,
+      "type": "BatchImageSplitter",
+      "pos": [
+        3500,
+        -3700
+      ],
+      "size": [
+        320,
+        286
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 391
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": [
+            373,
+            377,
+            381,
+            384,
+            387
+          ]
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": [
+            374,
+            378,
+            382,
+            385,
+            388
+          ]
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": [
+            375,
+            379,
+            386,
+            389
+          ]
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": [
+            376,
+            380,
+            390
+          ]
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImageSplitter",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 193,
+      "type": "Reroute",
+      "pos": [
+        3659.2639017354522,
+        -2447.7235294212765
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 395
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    }
+  ],
+  "links": [
+    [
+      20,
+      25,
+      1,
+      26,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      28,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      289,
+      130,
+      0,
+      131,
+      0,
+      "IMAGE"
+    ],
+    [
+      292,
+      133,
+      0,
+      134,
+      0,
+      "IMAGE"
+    ],
+    [
+      316,
+      193,
+      0,
+      3,
+      3,
+      "STRING"
+    ],
+    [
+      317,
+      193,
+      0,
+      90,
+      4,
+      "STRING"
+    ],
+    [
+      318,
+      193,
+      0,
+      128,
+      3,
+      "STRING"
+    ],
+    [
+      319,
+      193,
+      0,
+      25,
+      12,
+      "STRING"
+    ],
+    [
+      320,
+      193,
+      0,
+      28,
+      6,
+      "STRING"
+    ],
+    [
+      321,
+      193,
+      0,
+      130,
+      12,
+      "STRING"
+    ],
+    [
+      322,
+      193,
+      0,
+      133,
+      6,
+      "STRING"
+    ],
+    [
+      346,
+      173,
+      0,
+      174,
+      0,
+      "IMAGE"
+    ],
+    [
+      347,
+      172,
+      0,
+      174,
+      1,
+      "IMAGE"
+    ],
+    [
+      348,
+      164,
+      0,
+      174,
+      2,
+      "IMAGE"
+    ],
+    [
+      349,
+      169,
+      0,
+      174,
+      3,
+      "IMAGE"
+    ],
+    [
+      350,
+      174,
+      0,
+      175,
+      0,
+      "IMAGE"
+    ],
+    [
+      351,
+      175,
+      0,
+      176,
+      0,
+      "IMAGE"
+    ],
+    [
+      361,
+      180,
+      0,
+      182,
+      0,
+      "STRING"
+    ],
+    [
+      362,
+      180,
+      1,
+      181,
+      0,
+      "STRING"
+    ],
+    [
+      363,
+      183,
+      0,
+      184,
+      0,
+      "STRING"
+    ],
+    [
+      364,
+      180,
+      0,
+      183,
+      0,
+      "STRING"
+    ],
+    [
+      365,
+      176,
+      0,
+      180,
+      0,
+      "IMAGE"
+    ],
+    [
+      366,
+      183,
+      0,
+      166,
+      0,
+      "STRING"
+    ],
+    [
+      370,
+      176,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ],
+    [
+      384,
+      185,
+      0,
+      28,
+      1,
+      "IMAGE"
+    ],
+    [
+      385,
+      185,
+      1,
+      28,
+      2,
+      "IMAGE"
+    ],
+    [
+      386,
+      185,
+      2,
+      28,
+      3,
+      "IMAGE"
+    ],
+    [
+      387,
+      185,
+      0,
+      133,
+      1,
+      "IMAGE"
+    ],
+    [
+      388,
+      185,
+      1,
+      133,
+      2,
+      "IMAGE"
+    ],
+    [
+      389,
+      185,
+      2,
+      133,
+      3,
+      "IMAGE"
+    ],
+    [
+      390,
+      185,
+      3,
+      133,
+      4,
+      "IMAGE"
+    ],
+    [
+      391,
+      176,
+      0,
+      185,
+      0,
+      "IMAGE"
+    ],
+    [
+      395,
+      166,
+      0,
+      193,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.43.16",
+    "workflowRendererVersion": "LG",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.1948717100000121,
+      "offset": [
+        -627.6988578147796,
+        4976.840647875728
+      ]
+    }
+  },
+  "version": 0.4
+}

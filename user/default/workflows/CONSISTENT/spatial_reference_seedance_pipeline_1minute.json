@@ -1,0 +1,2528 @@
+{
+  "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
+  "revision": 0,
+  "last_node_id": 125,
+  "last_link_id": 223,
+  "nodes": [
+    {
+      "id": 101,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        -1400,
+        -400
+      ],
+      "size": [
+        420,
+        576
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            202,
+            203,
+            204
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Scene reference board for a 90s apartment living room at night. Layout: deep charcoal #1a1a1a background with thin white separators. Top half split into two main panels: left panel is CAMERA A — FRONT VIEW facing window/entrance angle, showing wide shot of L-shaped tan sectional sofa with grey knit throw blanket, wooden coffee table with remote control, black mug, ashtray, Rolling Stone magazines stack, chrome-base lava lamp with blue-green wax blobs on left side, warm table lamp on right side, large rain-streaked city window behind sofa showing city bokeh lights, Nirvana black smiley face poster on left wall. Right panel is CAMERA B — REVERSE VIEW from window facing into room, showing CRT television with grey static screen prominent on right, tall bookshelf filled with VHS tapes, cool blue backlight from window behind camera, deep shadow. Bottom half: 6 numbered close-up prop detail tiles in a row: 1.LAVA LAMP chrome base with blue-green wax blobs glowing, 2.COFFEE TABLE wooden surface with remote, black mug, ashtray, magazines, 3.NIRVANA POSTER black smiley face on textured wall, 4.CRT TELEVISION static noise screen with VHS stack beside, 5.WINDOW/RAIN water streaks on glass with city bokeh lights behind, 6.THROW BLANKET grey knit fabric draped over sofa corner showing worn upholstery. Footer text: ASPECT 16:9 MAIN PANELS, COLOR TEMP 2700K PRACTICAL EXT 4100K CITY NIGHT, LENS 24mm EQUIV, FORMAT 35MM ANALOG GRAIN. Cinematic film photography, warm amber shadow fill, deep chiaroscuro lighting, hyper-detailed interior, production design reference quality.",
+        42,
+        "fixed",
+        "high",
+        "auto",
+        "Custom",
+        1,
+        "gpt-image-2",
+        3072,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 102,
+      "type": "PreviewImage",
+      "pos": [
+        -900,
+        -400
+      ],
+      "size": [
+        380,
+        280
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 202
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 111,
+      "type": "LoadImage",
+      "pos": [
+        -2200,
+        -400
+      ],
+      "size": [
+        380,
+        340
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            207
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "spatial_reference_board.png",
+        "image"
+      ]
+    },
+    {
+      "id": 112,
+      "type": "PreviewImage",
+      "pos": [
+        -1800,
+        -388.30769740000005
+      ],
+      "size": [
+        380,
+        280
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 207
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 113,
+      "type": "MarkdownNote",
+      "pos": [
+        -2200,
+        -650
+      ],
+      "size": [
+        600,
+        180
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## 📎 Reference Example Only\n\nThe image below is the **original reference board** from @iancu_ai's Higgsfield workflow — shown here as a visual guide for what the GPT-Image-2 prompt should produce.\n\n**This image is NOT wired into the pipeline.** The actual board fed to Seedance is generated fresh by `OpenAIGPTImageDirect` above."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 107,
+      "type": "MarkdownNote",
+      "pos": [
+        -1400,
+        -650
+      ],
+      "size": [
+        800,
+        200
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "# 🎬 Spatial Reference Board → Seedance 2.0 Pipeline\n\n**Technique**: Generate a spatially annotated reference board via GPT-Image-2 (text-to-image), then feed it to Seedance as a reference image. Prop numbers in prompts = exact positions.\n\n**Key**: The board is generated fresh each time — no pre-made image wired into the pipeline."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 108,
+      "type": "MarkdownNote",
+      "pos": [
+        -800,
+        -150
+      ],
+      "size": [
+        520,
+        280
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## Segment 1 (15s) — Positions 1→2→3\n\n- **Position 1 — Sofa**: Character enters, sits on sectional\n- **Position 2 — Lava Lamp (Prop ①)**: Rises, crosses, crouches, touches glass. Blue-green wax light fills face\n- **Position 3 — CRT Television (Prop ④)**: Moves across room, stops at set\n\n*Reference board = spatial anchor. Prop numbers = exact positions.*"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 109,
+      "type": "MarkdownNote",
+      "pos": [
+        -800,
+        450
+      ],
+      "size": [
+        520,
+        280
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## Segment 2 (15s) — Positions 3→4\n\n- **CRT Television (Prop ④) → OFF**: Kills screen. Room loses blue static glow\n- **Back to Sofa — Coffee Mug (Prop ②)**: Returns to sectional, picks up mug, one sip. Rain outside\n\n*Each segment = separate generation. Same ref board = same room geometry.*"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 110,
+      "type": "MarkdownNote",
+      "pos": [
+        300,
+        -450
+      ],
+      "size": [
+        550,
+        250.20001220703125
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## 🛠 Setup Instructions\n\n1. Set `OPENAI_API_KEY` and `FAL_KEY` env vars (or paste in nodes)\n2. Queue prompt — GPT-Image-2 generates the board first\n3. Both Seedance segments receive the generated board automatically\n4. Outputs save as `segment_1_sofa_to_tv` and `segment_2_tv_off_to_mug`\n5. Stitch in video editor, overlay generated ref board on top half"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 103,
+      "type": "FALSeedanceReference2Video",
+      "pos": [
+        -200,
+        -150
+      ],
+      "size": [
+        420,
+        632
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 203
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            205,
+            208,
+            211
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedanceReference2Video",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "Cinematic film shot in a 90s apartment living room at night. A person enters from frame left, walks across the hardwood floor to the L-shaped tan sectional sofa and pauses. They stand and cross the room to the low wooden side table, leaning down near the chrome-base lava lamp with blue-green wax blobs (Prop 1, left side of room), adjusting the warm glass dome. The camera pushes in as the colorful wax light reflects across the space. They walk toward the CRT television with static screen (Prop 4, right side near bookshelf). Camera tracks the movement smoothly across the room. Warm amber practical lighting, deep shadows, 35mm film grain, 2700K interior, rain-streaked city window visible. Continuous motion, no cuts.",
+        "720p",
+        "16:9",
+        15,
+        false,
+        99999,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 104,
+      "type": "FALSeedanceImage2Video",
+      "pos": [
+        -194.1436000000001,
+        447.0718
+      ],
+      "size": [
+        420,
+        632
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 209
+        },
+        {
+          "localized_name": "end_image",
+          "name": "end_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 210
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            206,
+            212,
+            214
+          ]
+        }
+      ],
+      "title": "FAL Seedance Image-to-Video (Direct) #2",
+      "properties": {
+        "Node name for S&R": "FALSeedanceImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "api_key": true,
+            "prompt": true,
+            "resolution": true,
+            "aspect_ratio": true,
+            "duration": true,
+            "generate_audio": true,
+            "seed": true,
+            "watermark": true,
+            "fast": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "The person turns off the CRT television and walks back across the room to the sectional sofa, sits down, and picks up the black coffee mug from the wooden coffee table. They hold the mug while looking out the rain-streaked city window. Warm amber practical lighting, deep shadows, 35mm film grain, 2700K interior.",
+        "720p",
+        "16:9",
+        15,
+        false,
+        88888,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 105,
+      "type": "SaveVideo",
+      "pos": [
+        379.06140000000005,
+        -135.35900000000004
+      ],
+      "size": [
+        320,
+        353.8833312988281
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 205
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "segment_1_sofa_to_tv",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 106,
+      "type": "SaveVideo",
+      "pos": [
+        300,
+        450
+      ],
+      "size": [
+        320,
+        353.8833312988281
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 206
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "segment_2_tv_off_to_mug",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 114,
+      "type": "VideoLastFrame",
+      "pos": [
+        255.34100999999987,
+        243.69648999999973
+      ],
+      "size": [
+        225,
+        72
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 208
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            209
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoLastFrame",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 115,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        -1400,
+        450
+      ],
+      "size": [
+        420,
+        576
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            210
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true,
+            "seed": true,
+            "quality": true,
+            "background": true,
+            "size": true,
+            "n": true,
+            "model": true,
+            "custom_width": true,
+            "custom_height": true,
+            "api_key": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Cinematic film still, 90s apartment living room at night. A person sits on the L-shaped tan sectional sofa facing the rain-streaked city window, holding a black coffee mug in both hands. Warm amber table lamp glow on the right side. Chrome-base lava lamp with blue-green wax blobs glowing on the left side table. CRT television is turned off showing black screen on the right side near bookshelf. Nirvana black smiley face poster on the left wall. Wooden coffee table with magazines and remote control in foreground. Deep shadows, 35mm film grain, warm 2700K interior lighting, photorealistic.",
+        77777,
+        "fixed",
+        "high",
+        "auto",
+        "1536x1024",
+        1,
+        "gpt-image-2",
+        1536,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 116,
+      "type": "VideoConcat",
+      "pos": [
+        750.5360999999999,
+        253.55179999999996
+      ],
+      "size": [
+        225,
+        144
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "type": "VIDEO",
+          "link": 211
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "type": "VIDEO",
+          "link": 212
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": 222
+        },
+        {
+          "localized_name": "video_4",
+          "name": "video_4",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": 223
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            213,
+            222,
+            223
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoConcat",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 117,
+      "type": "SaveVideo",
+      "pos": [
+        1115.2226999999998,
+        252.48699999999994
+      ],
+      "size": [
+        225,
+        300.4333190917969
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 213
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true,
+            "format": true,
+            "codec": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "combined_segments",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 118,
+      "type": "VideoLastFrame",
+      "pos": [
+        255,
+        650
+      ],
+      "size": [
+        225,
+        72
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 214
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            215
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoLastFrame",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 119,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        -1400,
+        850
+      ],
+      "size": [
+        420,
+        576
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            216
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true,
+            "seed": true,
+            "quality": true,
+            "background": true,
+            "size": true,
+            "n": true,
+            "model": true,
+            "custom_width": true,
+            "custom_height": true,
+            "api_key": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Cinematic film still, 90s apartment living room at night. A person sits on the L-shaped tan sectional sofa, holding an open Rolling Stone magazine in both hands, looking down at the spread. The camera is positioned over their shoulder showing the magazine pages. Warm amber table lamp glow. Chrome-base lava lamp with blue-green wax blobs on the left. CRT television turned off on the right. Nirvana poster on the wall. Deep shadows, 35mm film grain, 2700K interior.",
+        66666,
+        "fixed",
+        "high",
+        "auto",
+        "1536x1024",
+        1,
+        "gpt-image-2",
+        1536,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 120,
+      "type": "FALSeedanceImage2Video",
+      "pos": [
+        -194,
+        850
+      ],
+      "size": [
+        295.7833251953125,
+        412
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 215
+        },
+        {
+          "localized_name": "end_image",
+          "name": "end_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 216
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            217,
+            218,
+            222
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedanceImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "api_key": true,
+            "prompt": true,
+            "resolution": true,
+            "aspect_ratio": true,
+            "duration": true,
+            "generate_audio": true,
+            "seed": true,
+            "watermark": true,
+            "fast": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "The person takes a slow sip from the black coffee mug, then places it back on the wooden coffee table. They reach for a Rolling Stone magazine from the stack, flip through a few pages, and pause on a spread. The camera slowly pushes in over their shoulder. Warm amber practical lighting, deep shadows, 35mm film grain, 2700K interior, rain-streaked city window visible.",
+        "720p",
+        "16:9",
+        15,
+        false,
+        55555,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 121,
+      "type": "SaveVideo",
+      "pos": [
+        379,
+        850
+      ],
+      "size": [
+        225,
+        148
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 217
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true,
+            "format": true,
+            "codec": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "segment_3_magazine",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 122,
+      "type": "VideoLastFrame",
+      "pos": [
+        255,
+        1050
+      ],
+      "size": [
+        225,
+        72
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 218
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            219
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoLastFrame",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 123,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        -1400,
+        1250
+      ],
+      "size": [
+        420,
+        576
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            220
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true,
+            "seed": true,
+            "quality": true,
+            "background": true,
+            "size": true,
+            "n": true,
+            "model": true,
+            "custom_width": true,
+            "custom_height": true,
+            "api_key": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Cinematic film still, wide shot of a 90s apartment living room at night. A person is relaxed on the L-shaped tan sectional sofa, legs covered by a grey knit throw blanket, looking out the large rain-streaked city window. Camera pulled back to show the entire room. Wooden coffee table with mug and magazines in foreground. Chrome-base lava lamp glowing blue-green on left side table. CRT television off on right. Warm amber practical lighting, deep shadows, 35mm film grain, 2700K interior.",
+        44444,
+        "fixed",
+        "high",
+        "auto",
+        "1536x1024",
+        1,
+        "gpt-image-2",
+        1536,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 124,
+      "type": "FALSeedanceImage2Video",
+      "pos": [
+        -194,
+        1250
+      ],
+      "size": [
+        295.7833251953125,
+        412
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 219
+        },
+        {
+          "localized_name": "end_image",
+          "name": "end_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 220
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            221,
+            223
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedanceImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "api_key": true,
+            "prompt": true,
+            "resolution": true,
+            "aspect_ratio": true,
+            "duration": true,
+            "generate_audio": true,
+            "seed": true,
+            "watermark": true,
+            "fast": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "The person sets the magazine down on the coffee table and leans back into the L-shaped tan sectional sofa, pulling the grey knit throw blanket over their legs. They look out the rain-streaked city window as the camera slowly pulls back to a wide shot of the entire 90s apartment living room at night. The lava lamp continues to glow with blue-green wax blobs. Warm amber practical lighting, deep shadows, 35mm film grain.",
+        "720p",
+        "16:9",
+        15,
+        false,
+        33333,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 125,
+      "type": "SaveVideo",
+      "pos": [
+        379,
+        1250
+      ],
+      "size": [
+        225,
+        148
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 221
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true,
+            "format": true,
+            "codec": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "segment_4_conclusion",
+        "auto",
+        "auto"
+      ]
+    }
+  ],
+  "links": [
+    [
+      202,
+      101,
+      0,
+      102,
+      0,
+      "IMAGE"
+    ],
+    [
+      203,
+      101,
+      0,
+      103,
+      1,
+      "IMAGE"
+    ],
+    [
+      205,
+      103,
+      0,
+      105,
+      0,
+      "VIDEO"
+    ],
+    [
+      206,
+      104,
+      0,
+      106,
+      0,
+      "VIDEO"
+    ],
+    [
+      207,
+      111,
+      0,
+      112,
+      0,
+      "IMAGE"
+    ],
+    [
+      208,
+      103,
+      0,
+      114,
+      0,
+      null
+    ],
+    [
+      209,
+      114,
+      0,
+      104,
+      0,
+      null
+    ],
+    [
+      210,
+      115,
+      0,
+      104,
+      1,
+      null
+    ],
+    [
+      211,
+      103,
+      0,
+      116,
+      0,
+      null
+    ],
+    [
+      212,
+      104,
+      0,
+      116,
+      1,
+      null
+    ],
+    [
+      213,
+      116,
+      0,
+      117,
+      0,
+      null
+    ],
+    [
+      214,
+      104,
+      0,
+      118,
+      0,
+      null
+    ],
+    [
+      215,
+      118,
+      0,
+      120,
+      0,
+      null
+    ],
+    [
+      216,
+      119,
+      0,
+      120,
+      1,
+      null
+    ],
+    [
+      217,
+      120,
+      0,
+      121,
+      0,
+      null
+    ],
+    [
+      218,
+      120,
+      0,
+      122,
+      0,
+      null
+    ],
+    [
+      219,
+      122,
+      0,
+      124,
+      0,
+      null
+    ],
+    [
+      220,
+      123,
+      0,
+      124,
+      1,
+      null
+    ],
+    [
+      221,
+      124,
+      0,
+      125,
+      0,
+      null
+    ],
+    [
+      222,
+      120,
+      0,
+      116,
+      2,
+      null
+    ],
+    [
+      223,
+      124,
+      0,
+      116,
+      3,
+      null
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "📎 Reference Example (NOT wired to pipeline)",
+      "bounding": [
+        -2250,
+        -500,
+        700,
+        450
+      ],
+      "color": "#555555",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "1. Board Generation — GPT-Image-2 T2I",
+      "bounding": [
+        -1450,
+        -450,
+        650,
+        350
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "2. Segment 1 — Sofa → Lava Lamp → CRT TV",
+      "bounding": [
+        -250,
+        -200,
+        900,
+        500
+      ],
+      "color": "#8f5c2a",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "3. Segment 2 — CRT OFF → Sofa → Coffee Mug",
+      "bounding": [
+        -250,
+        400,
+        900,
+        500
+      ],
+      "color": "#2a6b3d",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.42409761837248516,
+      "offset": [
+        1666.5053596917012,
+        449.18003856422143
+      ]
+    },
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4
+}

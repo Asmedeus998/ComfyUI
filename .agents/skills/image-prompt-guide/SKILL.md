@@ -16,6 +16,7 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 - **TV Commercial Storyboard**: Generating **structured production tables** for TV advertisements with embedded shot thumbnails, dialogue/voiceover, SFX, audio, camera, transitions, and durations. Polished photorealistic frames — NOT sketches.
 - **Cinematic Lifestyle Storyboard**: Generating **photorealistic multi-panel mood boards** depicting one character across quiet, contemplative daily life scenes. Cinematic film-still quality with poetic captions — NOT sketches or commercial photography.
 - **Environment Reference Lock (I2V Scene Anchor)**: Generating **spatial consistency boards** with multi-angle room views, prop detail callouts, and technical specs to anchor backgrounds for image-to-video generation.
+- **3D CGI Animation Character Bible**: Generating **character design bibles** for animated films and ads — hero line-ups, expression sheets, action pose galleries, prop details, color palettes & materials, scale references, and character bios. Pixar-quality 3D CGI with strict cross-section consistency locks.
 - Targeting multiple backend models from a single prompt output.
 - Debugging why generated images contain **collages, grids, multiple panels, or duplicate subjects** when they should be single-subject photographs.
 - Debugging why **presentation boards** have overlapping sections, missing panels, inconsistent art styles, or gibberish typography.
@@ -23,6 +24,7 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 - Debugging why **commercial storyboards** look like rough sketches instead of photorealistic frames, miss audio columns, have weak CTAs, inconsistent branding, or duration mismatches.
 - Debugging why **lifestyle storyboards** have character face drift between panels, mood breaks (one panel suddenly bright/cheerful), sketch/illustration quality instead of photorealism, missing captions, or commercial photography drift.
 - Debugging why **environment lock boards** have spatial drift between camera views, missing prop callouts, inconsistent lighting, or absent technical spec bars.
+- Debugging why **3D CGI character bibles** have character drift between turnaround/expression/action sections, missing prop details, flat rendering in some panels, inconsistent materials, or missing scale references.
 - Fixing why generated images ignore outfit swaps, omit props, or fail to integrate brand aesthetics.
 
 ## Core Patterns
@@ -38,6 +40,7 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 | **TV Commercial Storyboard** | Structured production table | Polished photorealistic commercial shot list with embedded thumbnails, dialogue/VO, SFX, audio, camera, transitions, durations, and summary strip. **Photorealistic, table format, grid required.** | [`reference/tv-commercial-storyboard.md`](reference/tv-commercial-storyboard.md) |
 | **Cinematic Lifestyle Storyboard** | Multi-panel photo grid | Photorealistic character-driven daily life montage with cinematic film stills, poetic captions, and mood-locked color grade. **Photorealistic, NOT sketches, grid required.** | [`reference/cinematic-lifestyle-storyboard.md`](reference/cinematic-lifestyle-storyboard.md) |
 | **Environment Reference Lock** | Multi-section reference board | Spatial anchor for I2V: multi-angle room views, prop detail callouts, technical spec bar. **Locks background consistency for video generation.** | [`reference/environment-reference-lock.md`](reference/environment-reference-lock.md) |
+| **3D CGI Animation Character Bible** | Multi-section design document | Pre-production character bible with hero line-ups, expression sheets, action poses, prop details, color palette & materials, scale reference, and bios. **Pixar-quality 3D CGI with strict consistency locks.** | [`reference/3d-cgi-animation-character-bible.md`](reference/3d-cgi-animation-character-bible.md) |
 | **Prompt Audit** | Refined prompt | Multiple refs + Existing prompt. Corrected and enriched prompt. | Depends on target pattern above |
 
 ## Critical Distinction
@@ -84,6 +87,7 @@ The synthesized prompt must always be wrapped in:
 | TV Commercial Storyboard | **500–900 words** as one or two connected paragraphs |
 | Cinematic Lifestyle Storyboard | **500–900 words** as one or two connected paragraphs |
 | Environment Reference Lock | **300–600 words** as one or two connected paragraphs |
+| 3D CGI Animation Character Bible | **300–600 words** as one or two connected paragraphs |
 
 No markdown, no bullets, no line breaks inside the prompt body.
 
@@ -160,6 +164,7 @@ All system prompts, user templates, anti-patterns, and examples live in the refe
 - **[`reference/tv-commercial-storyboard.md`](reference/tv-commercial-storyboard.md)** — Master system prompt, 3 user templates, 5 common anti-patterns with fixes, model-specific notes, and good/bad examples for TV advertisement storyboard workflows.
 - **[`reference/cinematic-lifestyle-storyboard.md`](reference/cinematic-lifestyle-storyboard.md)** — Master system prompt, 3 user templates, 5 common anti-patterns with fixes, model-specific notes, good/bad examples, and 3-step workflow integration notes for character-driven narrative montage workflows.
 - **[`reference/environment-reference-lock.md`](reference/environment-reference-lock.md)** — Master system prompt, 3 user templates, 4 common anti-patterns with fixes, model-specific notes, good/bad examples, and I2V connection notes for spatial consistency board workflows.
+- **[`reference/3d-cgi-animation-character-bible.md`](reference/3d-cgi-animation-character-bible.md)** — Master system prompt, 3 user templates, 6 common anti-patterns with fixes, model-specific notes, and good/bad examples for 3D CGI animation character design bible workflows.
 
 ## Usage in ComfyUI
 

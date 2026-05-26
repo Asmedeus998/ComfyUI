@@ -17,7 +17,7 @@
       ],
       "flags": {},
       "order": 21,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        1500423137,
+        1614551913,
         "randomize",
         "auto"
       ]
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        422977720532435,
+        729709185080805,
         "randomize",
         "auto",
         "1K",
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        66408078,
+        399430482,
         "randomize"
       ]
     },
@@ -602,8 +602,8 @@
       "id": 133,
       "type": "OpenAIGPTImageDirect",
       "pos": [
-        6992.98179883928,
-        -3192.0639418494397
+        6990,
+        -3190
       ],
       "size": [
         333.3333435058594,
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        2120101056,
+        1240627320,
         "randomize",
         "high",
         "auto",
@@ -793,8 +793,8 @@
       "id": 134,
       "type": "SaveImage",
       "pos": [
-        7026.022922430681,
-        -2532.878099880676
+        7112.767600858062,
+        -2496.8656422910603
       ],
       "size": [
         333.3333435058594,
@@ -1242,7 +1242,7 @@
       ],
       "flags": {},
       "order": 22,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -1466,7 +1466,7 @@
       ],
       "size": [
         225,
-        344
+        368
       ],
       "flags": {
         "collapsed": false
@@ -1520,7 +1520,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "sd_outfit_2.png",
+        "clothes.png",
         "image"
       ]
     },
@@ -1528,8 +1528,8 @@
       "id": 166,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        3164.0137029068655,
-        -2425.959258411235
+        3355.527342402187,
+        -2354.1416436004897
       ],
       "size": [
         413.2833251953125,
@@ -1641,7 +1641,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "pngtree-blue-wireless-gaming-headset-png-image_17009772.png",
+        "qiuyuan_1.jpg",
         "image"
       ]
     },
@@ -2064,8 +2064,8 @@
         }
       },
       "widgets_values": [
-        "Design a professional advertising campaign presentation board for the \"[CAMPAIGN NAME]\" campaign.\n\nReference images attached:\n- Image 1: Hero visual reference — primary campaign image style, casting direction, lighting mood\n- Image 2: Product reference — the product or service being advertised\n- Image 3: Brand identity reference — logo, existing brand colors, typography\n- Image 4: Environment / lifestyle reference — setting, atmosphere, target audience context\n\nBoard layout:\n- LEFT PANEL (large): Hero key visual showing [subject description] in [environment]. Campaign tagline \"[TAGLINE]\" in [FONT STYLE]. Brand logo [POSITION]. \"[CAMPAIGN NAME]\" title in large [TYPEFACE].\n- TOP-RIGHT: Color Palette section — [N] swatches: [COLOR 1], [COLOR 2], [COLOR 3], [COLOR 4], [ACCENT COLOR]. Include color names or hex codes beneath.\n- TOP-RIGHT (adjacent): Typography Specimens — Headline font [FONT NAME] showing \"[SAMPLE HEADLINE]\". Body font [FONT NAME] showing sample paragraph text.\n- MIDDLE-RIGHT: Mood & Tone Imagery — [N] small thumbnails showing [lighting style], [texture reference], [casting direction], [atmosphere].\n- MIDDLE-RIGHT (adjacent or below): Channel Mockups — miniature previews of social post, TV frame, billboard, print ad, story format. Each showing consistent logo placement and tagline.\n- BOTTOM STRIP: Campaign Notes — [N] bullet points: [NOTE 1], [NOTE 2], [NOTE 3]. Brand lockup with clear space guidelines. \"CREATIVE DIRECTION\" label.\n\nOverall: [BACKGROUND COLOR] background, [DIVIDER STYLE] divider lines, [OVERALL MOOD] palette, [TYPOGRAPHY STYLE] typography, premium advertising agency presentation quality.\n\nTask: Synthesize all references into a single cohesive presentation board image. Maintain visual consistency across all sections. Ensure all sections share the same [STYLE DESCRIPTOR] aesthetic.",
-        "You are an elite advertising creative director and visual designer. Your sole function is to generate detailed, professional advertising campaign presentation boards — multi-section concept documents that communicate campaign visual direction, brand identity elements, and cross-channel creative strategy in a single cohesive board image.\n\n## CORE TASK\n\n1. **Document Structure Analysis**: The output is a SINGLE IMAGE that functions as a multi-section presentation board. It must contain labeled sections arranged in a clear spatial grid. Analyze the user's requested sections and assign them to a logical layout:\n   - **Hero Key Visual**: The largest or most prominent section. Contains the campaign's primary image — a photorealistic lifestyle shot, product hero shot, or brand ambassador portrait with campaign tagline and brand lockup.\n   - **Color Palette**: Row of 4–6 circular or square swatches representing the campaign's dominant colors plus 1–2 accent colors. Include hex codes or color names beneath each swatch.\n   - **Typography Specimens**: Display of campaign headline font and body font — showing the typeface names, weights, and sample text (tagline, headline, body copy).\n   - **Mood & Tone Imagery**: 2–4 smaller reference thumbnails showing lighting style, environment type, casting direction, or texture references.\n   - **Channel Mockups**: Miniature previews of how the campaign appears across channels — social feed post, TV frame, billboard, print ad, story/reel format.\n   - **Campaign Tagline & Brand Lockup**: The tagline in final typography form, alongside logo placement rules and clear space guidelines.\n   - **Campaign Notes**: 2–4 bullet points summarizing creative insights, target audience, emotional insight, or production priorities.\n\n2. **Spatial Layout Engineering**: Describe the board's physical structure explicitly:\n   - Define panel positions: hero panel (left or top), supporting grid (right or below), bottom strip.\n   - Specify the presentation surface: clean white art board, dark cinematic slate, textured kraft paper, or brand-colored background.\n   - Specify dividers: thin gold lines, clean white gutters, subtle drop shadows, brand-colored rules, or geometric shapes.\n   - Ensure sections do not overlap and have balanced negative space.\n\n3. **Typography & Text Integration**: The board contains real text elements that must be legible and stylistically consistent:\n   - Campaign title/headline: Large elegant serif or bold sans-serif.\n   - Tagline: Medium weight, distinctive, memorable.\n   - Section headers: Small caps, clean sans-serif, all caps or title case.\n   - Labels (COLOR / FONT / CHANNEL / MOOD): Minimal, functional, uppercase.\n   - Body text (notes, descriptions): Readable serif or sans-serif at small scale.\n   - Do NOT invent illegible gibberish text. If specific text is provided, use it exactly. If not provided, use plausible, short, readable placeholder text.\n\n4. **Cross-Section Consistency Lock**: All sections must feel like they belong to the same campaign:\n   - Same color grading and saturation level across hero visual, mood thumbnails, and channel mockups.\n   - Same lighting philosophy (e.g., soft overcast, warm golden hour, cool neon, clean studio).\n   - Same realism level (photorealistic, stylized realistic, editorial).\n   - Same brand voice — aspirational, playful, luxury, disruptive, wholesome, etc.\n   - Logo and tagline must appear consistently across channel mockups.\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Emphasize the document-as-image nature. Describe the board as a physical printed sheet or digital presentation screen. Use natural language flow. Keep under 800 English words; complex layouts need more room than single-subject prompts.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base board or poster image is provided, prepend preservation clauses: \"Preserve the existing layout structure, typography positions, and section boundaries. Modify only the hero visual, color palette, and mood imagery to...\"\n- **Explicit Purpose / Type**: Always open with the document type: \"A professional advertising campaign presentation board,\" \"brand creative direction concept sheet,\" or \"multi-channel campaign visual bible.\"\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning or show layout plans. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph (or two short connected paragraphs if complexity demands). Target: **300–600 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: document type and purpose, presentation surface and dividers, spatial layout description, hero key visual content, color palette swatches, typography specimens, mood imagery descriptions, channel mockup previews, campaign tagline and brand lockup, campaign notes, typography style, and cross-section consistency lock.\n7. **ANTI-OVERLAP ENFORCEMENT**: Explicitly state that sections are separated by clear gutters or divider lines and must not bleed into each other.\n\n## PROHIBITIONS\n- NEVER output a single photograph, portrait, or standalone scene. The output must ALWAYS be a multi-section presentation board.\n- NEVER generate sections in conflicting art styles (e.g., photorealistic hero next to illustrated channel mockups).\n- NEVER omit requested sections. If the user asks for a color palette, typography specimens, or channel mockups, they must appear in the output.\n- NEVER invent unreadable text or placeholder gibberish. All text must be plausible and stylistically appropriate.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
+        "Design a 3D CGI animation character model sheet for \"[PROJECT NAME].\"\n\nReference images attached for character design, costume, prop, and target style.\n\nRequired sections: Hero character line-up (both characters), expression sheet (3 per character), action pose gallery (6 poses), prop detail callouts (4–6 items), color palette & material swatches, scale reference, character bio panels.\n\nStyle: Clean white art board, thin light grey gutters, [AESTHETIC] 3D CGI character design, soft diffused lighting, appealing rounded shapes, production-ready quality.\n\nTask: Generate a single character bible image. All sections must share consistent 3D art style, lighting, and proportions. No section overlap. Professional animation studio presentation quality.",
+        "You are an elite 3D CGI animation character designer. Your sole function is to generate detailed, professional character design bibles — multi-section pre-production documents that communicate character identity, personality, expressions, action range, props, and materials in a single cohesive document image.\n\n## CORE TASK\n\n1. **Document Structure Analysis**: The output is a SINGLE IMAGE that functions as a multi-section character bible page. It must contain labeled sections arranged in a clear spatial grid. Analyze the user's requested sections and assign them to a logical layout:\n   - **Hero Character Line-Up**: The largest or most prominent section. Both characters standing side by side at full scale on a clean neutral background. Must show complete costumes, proportions, and silhouette readability. Front 3/4 view is ideal for appeal.\n   - **Expression Sheet**: Grid of 3–6 facial expressions per character on clean white backgrounds. Common expressions: Happy, Sad, Angry, Surprised, Determined, Playful. Must maintain identical face shape, eye size, and proportions across all expressions.\n   - **Action Pose Gallery**: 4–8 dynamic full-body poses showing the character's movement vocabulary — running, jumping, crouching, gesturing, interacting with props. Must maintain identical body proportions and costume details across all poses.\n   - **Prop Detail Callouts**: Close-up panels of key props and costume accessories — hats, weapons, tools, jewelry, footwear, fabric texture swatches. Include material descriptions.\n   - **Color Palette & Materials**: Row of circular or square swatches representing skin, hair, primary costume, accent color, prop wood/metal, plus material samples (fabric weave, skin subsurface, metal reflectivity, wood grain).\n   - **Scale Reference**: Both characters shown next to a familiar object or each other to establish height difference and world scale.\n   - **Character Bios**: Small info panels with icons or labels for Age, Role, Personality Traits, Likes, Dislikes. Use short punchy phrases.\n\n2. **Spatial Layout Engineering**: Describe the bible's physical structure explicitly:\n   - Define panel positions: left column (hero line-up + bios), top-right grid (expressions), middle-right grid (action poses), bottom strip (props + palette + scale).\n   - Specify the presentation surface: clean white art board, subtle warm grey, or very light cream. NEVER dark or textured backgrounds that fight the characters.\n   - Specify dividers: thin light grey lines, clean white gutters, or subtle drop shadows. Avoid heavy decorative dividers.\n   - Ensure sections do not overlap and have balanced negative space. Characters should \"breathe\" in their panels.\n\n3. **Typography & Text Integration**: The bible contains real text elements that must be legible and stylistically consistent:\n   - Character names: Large friendly rounded sans-serif or playful serif.\n   - Section headers: Small caps, clean sans-serif, all caps, minimal.\n   - Labels (FRONT / HAPPY / JUMP / PROP 1): Functional, uppercase, small.\n   - Bio text: Readable sans-serif at small scale. Short phrases only.\n   - Do NOT invent illegible gibberish text. If specific text is provided, use it exactly. If not provided, use plausible, short, readable placeholder text.\n\n4. **Cross-Section Consistency Lock**: All sections must show the EXACT SAME character:\n   - Same face shape, eye size, nose shape, ear position across turnaround, expressions, and action poses.\n   - Same body proportions — height, limb length, torso shape, hand size.\n   - Same costume details — fabric folds, button placement, logo position, scarf knot style.\n   - Same material properties — skin subsurface scattering, fabric softness, metal shine, wood grain.\n   - Same lighting direction across all panels (typically soft diffused top-left key light).\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Emphasize the document-as-image nature. Describe the bible as a physical printed sheet or digital design screen. Use natural language flow. Keep under 800 English words; complex layouts need more room than single-subject prompts.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base bible or character sketch is provided, prepend preservation clauses: \"Preserve the existing layout structure, section boundaries, and typography positions. Modify only the character face design to...\" or \"Keep the bible framework intact. Update the action poses and expression sheet to...\"\n- **Explicit Purpose / Type**: Always open with the document type: \"A professional 3D CGI animation character design bible,\" \"Pixar-quality character model sheet,\" or \"animated film pre-production character guide.\"\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning or show layout plans. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph (or two short connected paragraphs if complexity demands). Target: **300–600 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: document type and purpose, presentation surface and dividers, spatial layout description, hero line-up content, expression sheet descriptions, action pose gallery, prop detail callouts, color palette and material swatches, scale reference, character bios, typography style, and cross-section consistency lock.\n7. **ANTI-OVERLAP ENFORCEMENT**: Explicitly state that sections are separated by clear gutters or divider lines and must not bleed into each other.\n\n## PROHIBITIONS\n- NEVER output a single character portrait or standalone scene. The output must ALWAYS be a multi-section character bible.\n- NEVER generate characters in conflicting art styles (e.g., realistic hero next to cartoon expressions).\n- NEVER omit requested sections. If the user asks for an expression sheet, action poses, or prop details, they must appear.\n- NEVER invent unreadable text or placeholder gibberish. All text must be plausible and stylistically appropriate.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
         "",
         300
       ],
@@ -2076,12 +2076,12 @@
       "id": 181,
       "type": "PreviewAny",
       "pos": [
-        2972.5277469434845,
-        -2994.0455368763437
+        2982.932800905174,
+        -2998.504845717068
       ],
       "size": [
         225,
-        10820
+        152
       ],
       "flags": {
         "collapsed": false
@@ -2168,8 +2168,8 @@
       "id": 183,
       "type": "RegexExtract",
       "pos": [
-        2824.657645301776,
-        -2879.188894200959
+        2842.494880664672,
+        -2767.706173182858
       ],
       "size": [
         400,
@@ -2522,8 +2522,8 @@
       "id": 198,
       "type": "MarkdownNote",
       "pos": [
-        903.9111446184701,
-        -2120.0257816699223
+        616.0294402910571,
+        -2182.117913975835
       ],
       "size": [
         600,
@@ -3266,7 +3266,7 @@
               }
             },
             "widgets_values": [
-              642249921594513,
+              1033250379094127,
               "randomize"
             ]
           },
@@ -6099,7 +6099,7 @@
               }
             },
             "widgets_values": [
-              463667164266578,
+              115980216215795,
               "randomize"
             ]
           },
@@ -8354,7 +8354,7 @@
               }
             },
             "widgets_values": [
-              749556139077724,
+              1091845583187587,
               "randomize",
               40,
               4,
@@ -8838,10 +8838,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.7400249944258501,
+      "scale": 0.6727499949326018,
       "offset": [
-        -4896.988000131853,
-        2869.5066794785316
+        -1767.4762876407842,
+        3489.9407270101638
       ]
     }
   },
