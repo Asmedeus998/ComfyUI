@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 194,
-  "last_link_id": 397,
+  "last_node_id": 197,
+  "last_link_id": 398,
   "nodes": [
     {
       "id": 28,
@@ -16,8 +16,8 @@
         460
       ],
       "flags": {},
-      "order": 22,
-      "mode": 4,
+      "order": 20,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        652464592,
+        958774271,
         "randomize",
         "auto"
       ]
@@ -153,16 +153,16 @@
       "id": 25,
       "type": "GoogleGeminiDirect",
       "pos": [
-        5676.666531032258,
-        -3217.333358613544
+        5680,
+        -3220
       ],
       "size": [
         330,
         644
       ],
       "flags": {},
-      "order": 20,
-      "mode": 4,
+      "order": 18,
+      "mode": 0,
       "showAdvanced": false,
       "inputs": [
         {
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        737467101430049,
+        57100524681245,
         "randomize",
         "auto",
         "1K",
@@ -366,7 +366,7 @@
         636
       ],
       "flags": {},
-      "order": 28,
+      "order": 26,
       "mode": 4,
       "inputs": [
         {
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        611378677,
+        1287284033,
         "randomize"
       ]
     },
@@ -555,15 +555,15 @@
       "id": 131,
       "type": "SaveImage",
       "pos": [
-        6590,
-        -2620
+        6540,
+        -2460
       ],
       "size": [
         333.3333435058594,
         391.6666564941406
       ],
       "flags": {},
-      "order": 29,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -612,8 +612,8 @@
       "flags": {
         "collapsed": false
       },
-      "order": 30,
-      "mode": 4,
+      "order": 28,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        2070833384,
+        1592439316,
         "randomize",
         "high",
         "auto",
@@ -801,8 +801,8 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 31,
-      "mode": 4,
+      "order": 29,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -848,7 +848,7 @@
         510
       ],
       "flags": {},
-      "order": 24,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -977,7 +977,7 @@
         500
       ],
       "flags": {},
-      "order": 26,
+      "order": 24,
       "mode": 4,
       "inputs": [
         {
@@ -1093,7 +1093,7 @@
         390
       ],
       "flags": {},
-      "order": 25,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -1140,7 +1140,7 @@
         390
       ],
       "flags": {},
-      "order": 27,
+      "order": 25,
       "mode": 4,
       "inputs": [
         {
@@ -1187,8 +1187,8 @@
         380
       ],
       "flags": {},
-      "order": 21,
-      "mode": 4,
+      "order": 19,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -1241,8 +1241,8 @@
         380
       ],
       "flags": {},
-      "order": 23,
-      "mode": 4,
+      "order": 21,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -1288,7 +1288,7 @@
         390
       ],
       "flags": {},
-      "order": 18,
+      "order": 16,
       "mode": 4,
       "inputs": [
         {
@@ -1342,7 +1342,7 @@
         500
       ],
       "flags": {},
-      "order": 19,
+      "order": 17,
       "mode": 4,
       "inputs": [
         {
@@ -1466,7 +1466,7 @@
       ],
       "size": [
         225,
-        340
+        344
       ],
       "flags": {
         "collapsed": false
@@ -1528,8 +1528,8 @@
       "id": 166,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        3000.505712080311,
-        -2461.0932068533048
+        3164.0137029068655,
+        -2425.959258411235
       ],
       "size": [
         413.2833251953125,
@@ -1538,7 +1538,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1587,7 +1587,7 @@
       ],
       "size": [
         225,
-        340
+        344
       ],
       "flags": {
         "collapsed": false
@@ -1641,7 +1641,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "de2d6c30-fad7-458c-b40f-9b1980571c4f.jpg",
+        "pngtree-blue-wireless-gaming-headset-png-image_17009772.png",
         "image"
       ]
     },
@@ -1654,7 +1654,7 @@
       ],
       "size": [
         225,
-        340
+        344
       ],
       "flags": {
         "collapsed": false
@@ -1721,7 +1721,7 @@
       ],
       "size": [
         225,
-        340
+        344
       ],
       "flags": {
         "collapsed": false
@@ -1793,7 +1793,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1891,7 +1891,7 @@
         72
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1933,7 +1933,7 @@
         104
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1979,7 +1979,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -2064,8 +2064,8 @@
         }
       },
       "widgets_values": [
-        "Analyze these reference images and generate a unified fashion shoot prompt that captures the collection's aesthetic. Create one master prompt for AI image generation.",
-        "You are an elite fashion photography prompt generator.\n\nSTRICT OUTPUT RULES:\n1. Analyze the reference images internally. DO NOT output your analysis, thinking, or reasoning.\n2. DO NOT use markdown, bullet points, headers, bold text, or lists.\n3. Output ONLY a single flowing paragraph prompt (150-250 words).\n4. The prompt must be wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n5. NOTHING outside the [[PROMPT]] tags will be used.\n6. The prompt itself must include: subject, full outfit details, pose/expression, lighting, background, photography style, mood/atmosphere.\n7. Use vivid fashion-industry language: editorial photography, fashion campaign, lookbook, haute couture, street style, cinematic lighting, softbox, golden hour, minimalist backdrop, textured fabric, sharp focus, depth of field.",
+        "Multiple reference images are attached. Synthesize them into a single prompt for ONE image containing exactly ONE subject. Preserve subject identity, apply the new outfit and prop, integrate the brand aesthetic naturally. The scene must be a single cohesive photograph — no grids, collages, split-screens, or multiple panels.",
+        "You are an elite multimodal prompt synthesizer for composite image generation. You analyze multiple reference images where each image may represent a different element of the final scene, then produce a single refined prompt optimized for high-fidelity image generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n\n## CORE TASK\n\n1. **Element Extraction from Multi-Image Input**: Scrutinize all reference images and classify what each image contributes:\n   - **Subject Identity**: The person, character, or living subject whose face, body structure, skin tone, hairstyle, and defining physical traits must be preserved exactly. If multiple subject refs exist, prioritize the clearest facial/bodily reference. There is ONLY ONE subject.\n   - **Outfit & Attire**: Clothing, footwear, accessories, and styling from reference images that should replace or be added to the subject's original clothing. Extract fabric texture, color, fit, drape, layering, and silhouette.\n   - **Props & Objects**: Items the subject wears, holds, or interacts with (headphones, bags, devices, tools). Preserve exact form, material, color, and design details.\n   - **Brand / Product**: Commercial products, packaging, or brand aesthetics to integrate into the scene naturally. Note label style, typography mood, color palette, and material finish — but generalize unreadable text or logos into descriptive equivalents unless explicitly legible.\n   - **Style / Lighting / Environment / Composition**: The overall aesthetic domain, light quality, background type, camera angle, and mood. If multiple refs conflict, use the image that best represents the intended final scene style.\n\n2. **Cross-Image Synthesis**: Combine extracted elements into ONE coherent scene depicting a SINGLE subject:\n   - Dress the Subject Identity in the Outfit extracted from the outfit reference(s), ensuring the clothing drapes and fits the subject's body type naturally.\n   - Place Props on or near the subject exactly as they appear in the prop reference (e.g., headset over ears, bag over shoulder).\n   - Integrate Brand/Product elements naturally into the environment or as held objects, matching the brand's aesthetic language without forcing unreadable text.\n   - Apply the Style/Lighting/Environment as the unifying visual wrapper.\n   - The final scene must contain EXACTLY ONE instance of the subject. No duplicates, no clones, no multiple versions.\n\n3. **Prompt Audit**: Compare the existing prompt against your synthesized extraction:\n   - **Accurate**: Keep descriptions faithful to the combined vision.\n   - **Inaccurate**: Fix wrong colors, materials, silhouettes, or spatial relationships.\n   - **Missing**: Add critical details from any reference image that the existing prompt ignores.\n   - **Over-specific**: Generalize unreadable text, ambiguous symbols, or forced logos.\n   - **Under-specific**: Sharpen vague terms into concrete visual facts.\n\n4. **Single-Subject Lock**: The output is a SINGLE IMAGE containing ONE subject only:\n   - Describe ONE specific pose, ONE moment, ONE angle, ONE environment.\n   - Do NOT use language that implies multiple panels, grids, collages, split-screens, before-and-after comparisons, or multi-angle layouts.\n   - Do NOT use phrases like \"multiple angles,\" \"various poses,\" \"from different perspectives,\" \"split into panels,\" \"grid layout,\" \"collage style,\" \"four quadrants,\" or \"series of shots.\"\n   - The word \"batch\" refers to the external workflow generating many separate single-subject images — it does NOT mean the image itself should contain multiple subjects or scenes.\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Use flowing natural language. Structure as **subject + action + outfit/props + environment + style + brand mood**. Emphasize atmospheric storytelling. Keep under 600 English words; overly long prompts scatter model attention and cause dropped details.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base subject image is provided and modifications are implied, prepend preservation clauses: \"Preserve the subject's exact facial features, skin tone, and hairstyle. Change the outfit to...\" or \"Keep the subject's face and body unchanged. Add the described headset and outfit...\"\n- **Explicit Purpose / Type**: State the image type near the opening (e.g., \"editorial fashion portrait,\" \"product lifestyle shot,\" \"tech-lifestyle campaign\") to anchor model alignment.\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning, show element classifications, or describe individual images. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph. Target: **150–300 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: single-subject identity lock, new outfit details, prop integration, brand/product aesthetic, ONE specific pose/action, lighting, environment/background, composition style, mood/atmosphere, and explicit purpose/type.\n7. **SYNTHESIS PRIORITY**: When images serve different roles (subject vs outfit vs prop vs brand), the prompt must describe them as a unified single-subject scene, not as separate objects listed one by one. The subject wears the outfit and prop; the brand aesthetic permeates the scene.\n8. **ANTI-COLLAGE ENFORCEMENT**: The prompt must describe a single cohesive photograph of one person in one moment. If the prompt naturally drifts toward multiplicity, explicitly anchor it with \"single full-body portrait,\" \"one person,\" \"solo subject,\" or \"single frame.\"\n\n## PROHIBITIONS\n- NEVER generate language that creates multiple panels, grids, collages, split-screens, or multi-pose layouts.\n- NEVER describe more than one instance of the subject.\n- Do not describe the subject wearing their original outfit if an outfit-swap reference is provided.\n- Do not omit props if a prop reference image is provided.\n- Do not invent character names, backstories, or emotional arcs unless explicitly depicted.\n- Do not assume gender, ethnicity, or species if ambiguous; describe observable traits factually.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
         "",
         300
       ],
@@ -2081,12 +2081,12 @@
       ],
       "size": [
         225,
-        8
+        10820
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -2122,8 +2122,8 @@
       "id": 182,
       "type": "PreviewAny",
       "pos": [
-        2941.5999014044655,
-        -3204.3415607640004
+        2983.4903783930868,
+        -3209.746783601242
       ],
       "size": [
         225,
@@ -2132,7 +2132,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -2178,7 +2178,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -2297,7 +2297,7 @@
         500.79998779296875
       ],
       "flags": {},
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -2350,7 +2350,7 @@
         286
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -2449,98 +2449,6 @@
       "widgets_values": []
     },
     {
-      "id": 188,
-      "type": "PreviewAny",
-      "pos": [
-        2411.4903206967538,
-        -2091.1791355554315
-      ],
-      "size": [
-        225,
-        152
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "source",
-          "name": "source",
-          "type": "*",
-          "link": 396
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewAny",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": 192,
-      "type": "PreviewAny",
-      "pos": [
-        2395.9149603706956,
-        -1794.1914994462256
-      ],
-      "size": [
-        225,
-        152
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "source",
-          "name": "source",
-          "type": "*",
-          "link": 397
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewAny",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
       "id": 193,
       "type": "Reroute",
       "pos": [
@@ -2552,7 +2460,7 @@
         26
       ],
       "flags": {},
-      "order": 17,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -2579,108 +2487,34 @@
       }
     },
     {
-      "id": 194,
-      "type": "KimiCliDirect",
+      "id": 197,
+      "type": "MarkdownNote",
       "pos": [
-        1734.470698705904,
-        -2255.7974202563255
+        424.96872517357303,
+        -3888.531897446027
       ],
       "size": [
-        393.8666687011719,
-        797.2666625976562
+        600,
+        1280.199951171875
       ],
       "flags": {},
-      "order": 10,
+      "order": 4,
       "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "video",
-          "name": "video",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        },
-        {
-          "localized_name": "prompt",
-          "name": "prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "prompt"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "system_prompt",
-          "name": "system_prompt",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "system_prompt"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "model",
-          "name": "model",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "model"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "timeout",
-          "name": "timeout",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "timeout"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "response",
-          "name": "response",
-          "type": "STRING",
-          "links": [
-            396
-          ]
-        },
-        {
-          "localized_name": "thinking",
-          "name": "thinking",
-          "type": "STRING",
-          "links": [
-            397
-          ]
-        }
-      ],
+      "inputs": [],
+      "outputs": [],
+      "title": "Guide",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
-          "version": "7.8",
+          "version": "7.7",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "KimiCliDirect"
+        }
       },
       "widgets_values": [
-        "Analyze these reference images and generate a unified fashion shoot prompt that captures the collection's aesthetic. Create one master prompt for AI image generation.",
-        "You are an elite fashion photography prompt generator.\n\nSTRICT OUTPUT RULES:\n1. Analyze the reference images internally. DO NOT output your analysis, thinking, or reasoning.\n2. DO NOT use markdown, bullet points, headers, bold text, or lists.\n3. Output ONLY a single flowing paragraph prompt (150-250 words).\n4. The prompt must be wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n5. NOTHING outside the [[PROMPT]] tags will be used.\n6. The prompt itself must include: subject, full outfit details, pose/expression, lighting, background, photography style, mood/atmosphere.\n7. Use vivid fashion-industry language: editorial photography, fashion campaign, lookbook, haute couture, street style, cinematic lighting, softbox, golden hour, minimalist backdrop, textured fabric, sharp focus, depth of field.",
-        "",
-        300
+        "---\n\n# USER PROMPT TEMPLATES\n\nUse these as the actual user messages that accompany the images. Keep them minimal — the system prompt above carries all the behavioral weight.\n\n## TEMPLATE A: Direct Generation (Default)\nUse this when you only have reference images and want a generation prompt.\n\n```\nAnalyze the attached reference images and output a single optimized image generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n```\n\n## TEMPLATE B: With Explicit Focus\nUse this when you want to steer the model toward a specific image or intent.\n\n```\nAnalyze the attached reference images and output a single optimized image generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n\nFocus: Use the subject from image {N} as the dominant subject. Borrow lighting and mood from the remaining images. The intended output is a {product hero shot / editorial portrait / lifestyle flat lay / mirror selfie / cinematic scene}.\n```\n\n## TEMPLATE C: Prompt Evolver / Auditor\nUse this when you already have a draft prompt that needs to be corrected against the reference images. This overrides the default behavior to include an audit step.\n\n```\nAttached are reference images and an existing prompt below. Audit it against the images, correct any hallucinations or material errors, inject missing details, and output the refined generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n\nExisting prompt: {paste prompt here}\n```\n\n## TEMPLATE D: Style Transfer\nUse this when the subject is in one image and the desired style/atmosphere is in another.\n\n```\nAttached are reference images. Output a generation prompt for the subject shown in image {N}, rendered in the visual style, lighting, and mood of the remaining images. Wrap the output in [[PROMPT]] and [[/PROMPT]] tags.\n```\n\n## Guidelines for the User Prompt\n\n- **Stay minimal.** The system prompt already contains all the rules, audit steps, and output formats. A long user prompt risks conflicting with or diluting those instructions.\n- **Only add constraints that are situational**, such as \"Focus on image 2\" or \"This is for an editing model.\" Do not restate rules that already exist in the system prompt.\n- **Always attach the images first**, then the text. Most multimodal APIs process images in the order they appear in the context.\n- **If using Template C (Evolver)**, make sure the existing prompt is clearly delimited so the model doesn't confuse it with instructions.\n"
       ],
-      "color": "#2F4F4F",
-      "bgcolor": "#3D6B6B"
+      "color": "#222",
+      "bgcolor": "#000"
     }
   ],
   "links": [
@@ -2987,22 +2821,6 @@
       193,
       0,
       "STRING"
-    ],
-    [
-      396,
-      194,
-      0,
-      188,
-      0,
-      "STRING"
-    ],
-    [
-      397,
-      194,
-      1,
-      192,
-      0,
-      "STRING"
     ]
   ],
   "groups": [],
@@ -3013,8 +2831,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 194,
-          "lastLinkId": 397,
+          "lastNodeId": 197,
+          "lastLinkId": 398,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3400,7 +3218,7 @@
               }
             },
             "widgets_values": [
-              438699232734381,
+              931473507240887,
               "randomize"
             ]
           },
@@ -5043,8 +4861,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 194,
-          "lastLinkId": 397,
+          "lastNodeId": 197,
+          "lastLinkId": 398,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5409,8 +5227,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 194,
-          "lastLinkId": 397,
+          "lastNodeId": 197,
+          "lastLinkId": 398,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6233,7 +6051,7 @@
               }
             },
             "widgets_values": [
-              805957732783360,
+              447106294947616,
               "randomize"
             ]
           },
@@ -7540,8 +7358,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 194,
-          "lastLinkId": 397,
+          "lastNodeId": 197,
+          "lastLinkId": 398,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -8488,7 +8306,7 @@
               }
             },
             "widgets_values": [
-              866515733459315,
+              832856924032096,
               "randomize",
               40,
               4,
@@ -8972,10 +8790,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.379749833583245,
+      "scale": 0.7400249944258366,
       "offset": [
-        -504.7137410965232,
-        3617.220005018745
+        -1896.017338759423,
+        3377.8815464832533
       ]
     }
   },
