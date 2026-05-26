@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 115,
-  "last_link_id": 210,
+  "last_node_id": 117,
+  "last_link_id": 213,
   "nodes": [
     {
       "id": 101,
@@ -183,7 +183,7 @@
         }
       },
       "widgets_values": [
-        "Scene reference board for a 90s apartment living room at night. Layout: deep charcoal #1a1a1a background with thin white separators. Top half split into two main panels: left panel is CAMERA A \u2014 FRONT VIEW facing window/entrance angle, showing wide shot of L-shaped tan sectional sofa with grey knit throw blanket, wooden coffee table with remote control, black mug, ashtray, Rolling Stone magazines stack, chrome-base lava lamp with blue-green wax blobs on left side, warm table lamp on right side, large rain-streaked city window behind sofa showing city bokeh lights, Nirvana black smiley face poster on left wall. Right panel is CAMERA B \u2014 REVERSE VIEW from window facing into room, showing CRT television with grey static screen prominent on right, tall bookshelf filled with VHS tapes, cool blue backlight from window behind camera, deep shadow. Bottom half: 6 numbered close-up prop detail tiles in a row: 1.LAVA LAMP chrome base with blue-green wax blobs glowing, 2.COFFEE TABLE wooden surface with remote, black mug, ashtray, magazines, 3.NIRVANA POSTER black smiley face on textured wall, 4.CRT TELEVISION static noise screen with VHS stack beside, 5.WINDOW/RAIN water streaks on glass with city bokeh lights behind, 6.THROW BLANKET grey knit fabric draped over sofa corner showing worn upholstery. Footer text: ASPECT 16:9 MAIN PANELS, COLOR TEMP 2700K PRACTICAL EXT 4100K CITY NIGHT, LENS 24mm EQUIV, FORMAT 35MM ANALOG GRAIN. Cinematic film photography, warm amber shadow fill, deep chiaroscuro lighting, hyper-detailed interior, production design reference quality.",
+        "Scene reference board for a 90s apartment living room at night. Layout: deep charcoal #1a1a1a background with thin white separators. Top half split into two main panels: left panel is CAMERA A — FRONT VIEW facing window/entrance angle, showing wide shot of L-shaped tan sectional sofa with grey knit throw blanket, wooden coffee table with remote control, black mug, ashtray, Rolling Stone magazines stack, chrome-base lava lamp with blue-green wax blobs on left side, warm table lamp on right side, large rain-streaked city window behind sofa showing city bokeh lights, Nirvana black smiley face poster on left wall. Right panel is CAMERA B — REVERSE VIEW from window facing into room, showing CRT television with grey static screen prominent on right, tall bookshelf filled with VHS tapes, cool blue backlight from window behind camera, deep shadow. Bottom half: 6 numbered close-up prop detail tiles in a row: 1.LAVA LAMP chrome base with blue-green wax blobs glowing, 2.COFFEE TABLE wooden surface with remote, black mug, ashtray, magazines, 3.NIRVANA POSTER black smiley face on textured wall, 4.CRT TELEVISION static noise screen with VHS stack beside, 5.WINDOW/RAIN water streaks on glass with city bokeh lights behind, 6.THROW BLANKET grey knit fabric draped over sofa corner showing worn upholstery. Footer text: ASPECT 16:9 MAIN PANELS, COLOR TEMP 2700K PRACTICAL EXT 4100K CITY NIGHT, LENS 24mm EQUIV, FORMAT 35MM ANALOG GRAIN. Cinematic film photography, warm amber shadow fill, deep chiaroscuro lighting, hyper-detailed interior, production design reference quality.",
         42,
         "fixed",
         "high",
@@ -208,7 +208,7 @@
         280
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -310,7 +310,7 @@
         280
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -360,7 +360,7 @@
         }
       },
       "widgets_values": [
-        "## \ud83d\udcce Reference Example Only\n\nThe image below is the **original reference board** from @iancu_ai's Higgsfield workflow \u2014 shown here as a visual guide for what the GPT-Image-2 prompt should produce.\n\n**This image is NOT wired into the pipeline.** The actual board fed to Seedance is generated fresh by `OpenAIGPTImageDirect` above."
+        "## 📎 Reference Example Only\n\nThe image below is the **original reference board** from @iancu_ai's Higgsfield workflow — shown here as a visual guide for what the GPT-Image-2 prompt should produce.\n\n**This image is NOT wired into the pipeline.** The actual board fed to Seedance is generated fresh by `OpenAIGPTImageDirect` above."
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -392,7 +392,7 @@
         }
       },
       "widgets_values": [
-        "# \ud83c\udfac Spatial Reference Board \u2192 Seedance 2.0 Pipeline\n\n**Technique**: Generate a spatially annotated reference board via GPT-Image-2 (text-to-image), then feed it to Seedance as a reference image. Prop numbers in prompts = exact positions.\n\n**Key**: The board is generated fresh each time \u2014 no pre-made image wired into the pipeline."
+        "# 🎬 Spatial Reference Board → Seedance 2.0 Pipeline\n\n**Technique**: Generate a spatially annotated reference board via GPT-Image-2 (text-to-image), then feed it to Seedance as a reference image. Prop numbers in prompts = exact positions.\n\n**Key**: The board is generated fresh each time — no pre-made image wired into the pipeline."
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -424,7 +424,7 @@
         }
       },
       "widgets_values": [
-        "## Segment 1 (15s) \u2014 Positions 1\u21922\u21923\n\n- **Position 1 \u2014 Sofa**: Character enters, sits on sectional\n- **Position 2 \u2014 Lava Lamp (Prop \u2460)**: Rises, crosses, crouches, touches glass. Blue-green wax light fills face\n- **Position 3 \u2014 CRT Television (Prop \u2463)**: Moves across room, stops at set\n\n*Reference board = spatial anchor. Prop numbers = exact positions.*"
+        "## Segment 1 (15s) — Positions 1→2→3\n\n- **Position 1 — Sofa**: Character enters, sits on sectional\n- **Position 2 — Lava Lamp (Prop ①)**: Rises, crosses, crouches, touches glass. Blue-green wax light fills face\n- **Position 3 — CRT Television (Prop ④)**: Moves across room, stops at set\n\n*Reference board = spatial anchor. Prop numbers = exact positions.*"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -456,7 +456,7 @@
         }
       },
       "widgets_values": [
-        "## Segment 2 (15s) \u2014 Positions 3\u21924\n\n- **CRT Television (Prop \u2463) \u2192 OFF**: Kills screen. Room loses blue static glow\n- **Back to Sofa \u2014 Coffee Mug (Prop \u2461)**: Returns to sectional, picks up mug, one sip. Rain outside\n\n*Each segment = separate generation. Same ref board = same room geometry.*"
+        "## Segment 2 (15s) — Positions 3→4\n\n- **CRT Television (Prop ④) → OFF**: Kills screen. Room loses blue static glow\n- **Back to Sofa — Coffee Mug (Prop ②)**: Returns to sectional, picks up mug, one sip. Rain outside\n\n*Each segment = separate generation. Same ref board = same room geometry.*"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -488,7 +488,7 @@
         }
       },
       "widgets_values": [
-        "## \ud83d\udee0 Setup Instructions\n\n1. Set `OPENAI_API_KEY` and `FAL_KEY` env vars (or paste in nodes)\n2. Queue prompt \u2014 GPT-Image-2 generates the board first\n3. Both Seedance segments receive the generated board automatically\n4. Outputs save as `segment_1_sofa_to_tv` and `segment_2_tv_off_to_mug`\n5. Stitch in video editor, overlay generated ref board on top half"
+        "## 🛠 Setup Instructions\n\n1. Set `OPENAI_API_KEY` and `FAL_KEY` env vars (or paste in nodes)\n2. Queue prompt — GPT-Image-2 generates the board first\n3. Both Seedance segments receive the generated board automatically\n4. Outputs save as `segment_1_sofa_to_tv` and `segment_2_tv_off_to_mug`\n5. Stitch in video editor, overlay generated ref board on top half"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -505,7 +505,7 @@
         632
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -668,7 +668,8 @@
           "slot_index": 0,
           "links": [
             205,
-            208
+            208,
+            211
           ]
         }
       ],
@@ -707,9 +708,22 @@
         632
       ],
       "flags": {},
-      "order": 7,
+      "order": 13,
       "mode": 0,
       "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 209
+        },
+        {
+          "localized_name": "end_image",
+          "name": "end_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 210
+        },
         {
           "localized_name": "api_key",
           "name": "api_key",
@@ -727,13 +741,6 @@
             "name": "prompt"
           },
           "link": null
-        },
-        {
-          "localized_name": "image",
-          "name": "image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 209
         },
         {
           "localized_name": "resolution",
@@ -797,13 +804,6 @@
             "name": "fast"
           },
           "link": null
-        },
-        {
-          "localized_name": "end_image",
-          "name": "end_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 210
         }
       ],
       "outputs": [
@@ -813,7 +813,8 @@
           "type": "VIDEO",
           "slot_index": 0,
           "links": [
-            206
+            206,
+            212
           ]
         }
       ],
@@ -861,7 +862,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -927,7 +928,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -985,26 +986,27 @@
       "id": 114,
       "type": "VideoLastFrame",
       "pos": [
-        189.31009999999992,
-        132.5712999999998
+        255.34100999999987,
+        243.69648999999973
       ],
       "size": [
         225,
         72
       ],
       "flags": {},
-      "order": 8,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "video",
           "name": "video",
-          "shape": 7,
           "type": "VIDEO",
           "link": 208
         }
       ],
       "outputs": [
         {
+          "localized_name": "image",
           "name": "image",
           "type": "IMAGE",
           "slot_index": 0,
@@ -1035,7 +1037,7 @@
         576
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1223,6 +1225,137 @@
         1024,
         ""
       ]
+    },
+    {
+      "id": 116,
+      "type": "VideoConcat",
+      "pos": [
+        750.5360999999999,
+        253.55179999999996
+      ],
+      "size": [
+        225,
+        144
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "type": "VIDEO",
+          "link": 211
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "type": "VIDEO",
+          "link": 212
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_4",
+          "name": "video_4",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            213
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoConcat",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 117,
+      "type": "SaveVideo",
+      "pos": [
+        1115.2226999999998,
+        252.48699999999994
+      ],
+      "size": [
+        225,
+        300.4333190917969
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 213
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true,
+            "format": true,
+            "codec": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "combined_segments",
+        "auto",
+        "auto"
+      ]
     }
   ],
   "links": [
@@ -1271,27 +1404,54 @@
       103,
       0,
       114,
-      0
+      0,
+      null
     ],
     [
       209,
       114,
       0,
       104,
-      2
+      0,
+      null
     ],
     [
       210,
       115,
       0,
       104,
-      10
+      1,
+      null
+    ],
+    [
+      211,
+      103,
+      0,
+      116,
+      0,
+      null
+    ],
+    [
+      212,
+      104,
+      0,
+      116,
+      1,
+      null
+    ],
+    [
+      213,
+      116,
+      0,
+      117,
+      0,
+      null
     ]
   ],
   "groups": [
     {
       "id": 1,
-      "title": "\ud83d\udcce Reference Example (NOT wired to pipeline)",
+      "title": "📎 Reference Example (NOT wired to pipeline)",
       "bounding": [
         -2250,
         -500,
@@ -1303,7 +1463,7 @@
     },
     {
       "id": 2,
-      "title": "1. Board Generation \u2014 GPT-Image-2 T2I",
+      "title": "1. Board Generation — GPT-Image-2 T2I",
       "bounding": [
         -1450,
         -450,
@@ -1315,7 +1475,7 @@
     },
     {
       "id": 3,
-      "title": "2. Segment 1 \u2014 Sofa \u2192 Lava Lamp \u2192 CRT TV",
+      "title": "2. Segment 1 — Sofa → Lava Lamp → CRT TV",
       "bounding": [
         -250,
         -200,
@@ -1327,7 +1487,7 @@
     },
     {
       "id": 4,
-      "title": "3. Segment 2 \u2014 CRT OFF \u2192 Sofa \u2192 Coffee Mug",
+      "title": "3. Segment 2 — CRT OFF → Sofa → Coffee Mug",
       "bounding": [
         -250,
         400,
@@ -1341,10 +1501,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6830134553650711,
+      "scale": 0.6209213230591557,
       "offset": [
-        1689.303598201389,
-        219.04664212675473
+        1719.047121084701,
+        487.6678454932211
       ]
     },
     "ue_links": [],
