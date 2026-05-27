@@ -1,7 +1,7 @@
 {
   "id": "185548e3-b0ac-4f7a-9c94-9e69e7532a08",
   "revision": 0,
-  "last_node_id": 29,
+  "last_node_id": 30,
   "last_link_id": 26,
   "nodes": [
     {
@@ -286,7 +286,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -384,7 +384,7 @@
         72
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -426,7 +426,7 @@
         104
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -469,7 +469,7 @@
         426.5
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -502,7 +502,7 @@
         108
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -555,7 +555,7 @@
         426.5
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -657,7 +657,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -910,7 +910,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1008,7 +1008,7 @@
         72
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1050,7 +1050,7 @@
         104
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1092,7 +1092,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1199,7 +1199,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1245,7 +1245,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1274,7 +1274,7 @@
       "widgets_values": [
         null,
         null,
-        false
+        null
       ]
     },
     {
@@ -1291,7 +1291,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1410,7 +1410,7 @@
         500.79998779296875
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1507,6 +1507,36 @@
         "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o].mp4",
         "image"
       ]
+    },
+    {
+      "id": 30,
+      "type": "MarkdownNote",
+      "pos": [
+        12955.792966979001,
+        28696.625233473937
+      ],
+      "size": [
+        694.2666625976562,
+        420.0666809082031
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Model Links",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "reference\n\nhttps://docs.byteplus.com/en/docs/ModelArk/2222480"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
     }
   ],
   "links": [
@@ -1692,10 +1722,10 @@
   "extra": {
     "ue_links": [],
     "ds": {
-      "scale": 0.7400249944258194,
+      "scale": 0.5559917313492256,
       "offset": [
-        -14606.285022521704,
-        -34370.92189998025
+        -12500.750228508694,
+        -28511.370679867447
       ]
     },
     "links_added_by_ue": []
