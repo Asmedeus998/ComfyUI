@@ -1,8 +1,8 @@
 {
   "id": "185548e3-b0ac-4f7a-9c94-9e69e7532a08",
   "revision": 0,
-  "last_node_id": 34,
-  "last_link_id": 30,
+  "last_node_id": 35,
+  "last_link_id": 31,
   "nodes": [
     {
       "id": 2,
@@ -286,7 +286,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -384,7 +384,7 @@
         72
       ],
       "flags": {},
-      "order": 12,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -426,7 +426,7 @@
         104
       ],
       "flags": {},
-      "order": 14,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -469,7 +469,7 @@
         426.5
       ],
       "flags": {},
-      "order": 16,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -502,7 +502,7 @@
         108
       ],
       "flags": {},
-      "order": 17,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -555,7 +555,7 @@
         426.5
       ],
       "flags": {},
-      "order": 19,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -657,7 +657,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 23,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -910,7 +910,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 11,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1008,7 +1008,7 @@
         72
       ],
       "flags": {},
-      "order": 13,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1050,7 +1050,7 @@
         104
       ],
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1092,7 +1092,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 18,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1114,14 +1114,21 @@
           "name": "video_1",
           "shape": 7,
           "type": "VIDEO",
-          "link": 27
+          "link": null
         },
         {
           "localized_name": "video_2",
           "name": "video_2",
           "shape": 7,
           "type": "VIDEO",
-          "link": 28
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
         },
         {
           "localized_name": "prompt",
@@ -1213,7 +1220,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 22,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1259,7 +1266,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 20,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1295,8 +1302,8 @@
       "id": 23,
       "type": "RegexExtract",
       "pos": [
-        15399.039891311451,
-        29431.3246751169
+        15422.39077885025,
+        29273.959998225004
       ],
       "size": [
         400,
@@ -1305,7 +1312,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 21,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1379,7 +1386,7 @@
           "type": "STRING",
           "links": [
             10,
-            24
+            31
           ]
         }
       ],
@@ -1410,59 +1417,6 @@
         true,
         true,
         1
-      ]
-    },
-    {
-      "id": 24,
-      "type": "PreviewAny",
-      "pos": [
-        15925.27925340585,
-        29090.41840418218
-      ],
-      "size": [
-        383.9166564941406,
-        500.79998779296875
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "source",
-          "name": "source",
-          "type": "*",
-          "link": 24
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewAny",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.7",
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.18.1",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
       ]
     },
     {
@@ -1518,7 +1472,7 @@
         }
       },
       "widgets_values": [
-        "Sakura vs Togame Full Fight \uff5c Wind Breaker \uff5c \u30a6\u30a4\u30f3\u30c9\u30d6\u30ec\u30a4\u30ab\u30fc [DQ6WAHp7R-o].mp4",
+        "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o].mp4",
         "image"
       ]
     },
@@ -1534,7 +1488,7 @@
         420.0666809082031
       ],
       "flags": {},
-      "order": 4,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1553,134 +1507,30 @@
       "bgcolor": "#000"
     },
     {
-      "id": 31,
-      "type": "LoadVideo",
-      "pos": [
-        14541.62438102589,
-        29650.902365635444
-      ],
-      "size": [
-        225,
-        488
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "file",
-          "name": "file",
-          "type": "COMBO",
-          "widget": {
-            "name": "file"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "choose file to upload",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "VIDEO",
-          "name": "VIDEO",
-          "type": "VIDEO",
-          "links": [
-            27
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadVideo",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "image"
-      ]
-    },
-    {
-      "id": 32,
-      "type": "LoadVideo",
-      "pos": [
-        14541.62438102589,
-        29850.902365635444
-      ],
-      "size": [
-        225,
-        488
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "file",
-          "name": "file",
-          "type": "COMBO",
-          "widget": {
-            "name": "file"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "choose file to upload",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "VIDEO",
-          "name": "VIDEO",
-          "type": "VIDEO",
-          "links": [
-            28
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadVideo",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "image"
-      ]
-    },
-    {
       "id": 33,
       "type": "PromptTemplateLoader",
       "pos": [
-        15399.039891311451,
-        29650.902365635444
+        14363.478791764795,
+        29649.887109655494
       ],
       "size": [
         400,
-        100
+        104
       ],
       "flags": {},
-      "order": 27,
+      "order": 10,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
           "localized_name": "text",
@@ -1707,17 +1557,27 @@
       "id": 34,
       "type": "PromptTemplateLoader",
       "pos": [
-        15399.039891311451,
-        29850.902365635444
+        14378.750028553734,
+        29465.023507284768
       ],
       "size": [
         400,
-        100
+        104
       ],
       "flags": {},
-      "order": 28,
+      "order": 11,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
           "localized_name": "text",
@@ -1737,7 +1597,53 @@
         }
       },
       "widgets_values": [
-        "video/seedance video prompt engineer: D - Multi-Image + Multi-Video \u2014 Full Reference Synthesis"
+        "video/seedance video prompt engineer: D - Multi-Image + Multi-Video — Full Reference Synthesis"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "PreviewAny",
+      "pos": [
+        15958.393388495699,
+        29231.37330436134
+      ],
+      "size": [
+        225,
+        152
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
       ]
     }
   ],
@@ -1911,35 +1817,11 @@
       "STRING"
     ],
     [
-      24,
-      23,
-      0,
-      24,
-      0,
-      "STRING"
-    ],
-    [
-      27,
-      31,
-      0,
-      20,
-      2,
-      "VIDEO"
-    ],
-    [
-      28,
-      32,
-      0,
-      20,
-      3,
-      "VIDEO"
-    ],
-    [
       29,
       33,
       0,
       20,
-      4,
+      6,
       "STRING"
     ],
     [
@@ -1949,6 +1831,14 @@
       20,
       5,
       "STRING"
+    ],
+    [
+      31,
+      23,
+      0,
+      35,
+      0,
+      "STRING"
     ]
   ],
   "groups": [],
@@ -1956,10 +1846,10 @@
   "extra": {
     "ue_links": [],
     "ds": {
-      "scale": 0.5559917313492256,
+      "scale": 0.5054470284992966,
       "offset": [
-        -12500.750228508694,
-        -28511.370679867447
+        -13317.167058678908,
+        -28572.550556923892
       ]
     },
     "links_added_by_ue": []
