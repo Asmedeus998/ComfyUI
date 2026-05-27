@@ -281,25 +281,25 @@ Wrap the final prompt in [[PROMPT]] tags.
 Analyze the attached reference images and videos.
 
 Reference mapping (SLOT FORMAT — swap any images into these slots):
-- Image 1: Fighter A character reference — [describe face, hair, body type, distinguishing features]
-- Image 2: Fighter A costume reference — [describe the complete outfit: top, bottom, accessories, shoes]
-- Image 3: Fighter B character reference — [describe face, hair, body type, distinguishing features]
-- Image 4: Fighter B costume reference — [describe the complete outfit: top, bottom, accessories, shoes]
-- Image 5: Product / brand / prop reference — [describe the item to integrate into the scene]
-- Image 6: Environment / background reference — [describe the setting]
-- Video 1: Fight choreography reference — [describe the combat sequence, motion style, pacing]
-- Video 2 (optional): Camera motion reference — [describe if using separate camera reference]
+- Image 1: Fighter A character reference — [describe face, hair color and style, body type, skin tone, distinguishing features]
+- Image 2: Fighter A costume reference — [describe the complete outfit layer by layer: top, bottom, outerwear, footwear, accessories, jewelry, colors, fabrics]
+- Image 3: Fighter B character reference — [describe face, hair color and style, body type, skin tone, distinguishing features]
+- Image 4: Fighter B costume reference — [describe the complete outfit layer by layer: top, bottom, outerwear, footwear, accessories, jewelry, colors, fabrics]
+- Image 5: Product / brand / prop reference — [describe the item to integrate: shape, color, material, logo, size]
+- Image 6: Environment / background reference — [describe the setting: indoor/outdoor, architecture, lighting, atmosphere]
+- Video 1: Fight choreography reference — [describe the combat sequence: martial art style, pacing, key beats, blocking, striking, aerial maneuvers]
+- Video 2 (optional): Camera motion reference — [describe camera work: orbit, tracking, push-in, handheld, etc.]
 
 CRITICAL OUTFIT INSTRUCTIONS — DO NOT IGNORE:
-Fighter A MUST have the EXACT face, hair color, hair style, and body proportions from Image 1. However she MUST wear the COMPLETE outfit from Image 2 ONLY. Do NOT keep any clothing from Image 1. Replace her entire outfit with the exact garments shown in Image 2.
+Fighter A MUST have the EXACT face, hair color, hair style, eye shape, nose shape, ear position, and body proportions from Image 1. However she MUST wear the COMPLETE outfit from Image 2 ONLY. Do NOT keep any clothing from Image 1. Replace her entire outfit with the exact garments shown in Image 2. List every garment explicitly.
 
-Fighter B MUST have the EXACT face, hair, and body proportions from Image 3. However she MUST wear the COMPLETE outfit from Image 4 ONLY. Do NOT keep any clothing from Image 3. Replace her entire outfit with the exact garments shown in Image 4.
+Fighter B MUST have the EXACT face, hair, and body proportions from Image 3. However she MUST wear the COMPLETE outfit from Image 4 ONLY. Do NOT keep any clothing from Image 3. Replace her entire outfit with the exact garments shown in Image 4. List every garment explicitly.
 
 The two fighters must be visually distinct — different hair colors, different faces, different outfits. Do not merge their designs. Do not swap their costumes.
 
 The product or prop from Image 5 must appear naturally in the scene — held, worn, placed on a surface, or integrated into the action. Environment from Image 6.
 
-Task: Generate a cinematic action storyboard prompt for a [N]-panel grid fight sequence between Fighter A and Fighter B. Rough gestural pencil sketch style with RED camera arrows, BLUE body motion arrows, GREEN prop-object arcs, ORANGE impact marks, PURPLE timing marks. Per-panel metadata. Spatial continuity. Escalating sequence from standoff to climax. Wrap the final prompt in [[PROMPT]] tags.
+Task: Generate a cinematic action storyboard prompt for a 12-panel 3x4 grid fight sequence between Fighter A and Fighter B. Rough gestural pencil sketch style with visible construction lines. RED arrows for camera movement, BLUE arrows for body motion paths, GREEN arcs for prop or cloth trajectories, ORANGE marks for impact zones, PURPLE marks for timing pauses and acceleration bursts. Every panel must include per-panel metadata: shot name, one-line shot note, camera angle and movement, action description, focus point. Spatial continuity between panels. Escalating sequence: opening standoff, first strike, counter, escalation, climax impact, resolution. Wrap the final prompt in [[PROMPT]] tags.
 ```
 
 ---

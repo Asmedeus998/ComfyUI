@@ -183,7 +183,7 @@
       },
       "widgets_values": [
         "",
-        150416313,
+        826474271,
         "randomize",
         "high",
         "auto",
@@ -1746,7 +1746,7 @@
       },
       "widgets_values": [
         "",
-        748919046,
+        1288296241,
         "randomize",
         "high",
         "auto",
@@ -2385,7 +2385,7 @@
         }
       },
       "widgets_values": [
-        "character/3d cgi animation character bible: A1 - Single Character Bible (Recommended for Solo Characters)"
+        "character/3d cgi animation character bible: A3 - Single Character Bible with Outfit Swap"
       ]
     },
     {
@@ -2691,18 +2691,18 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
         "ue_properties": {
           "widget_ue_connectable": {
             "prompt": true
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "OpenAIGPTImageDirect"
+        }
       },
       "widgets_values": [
         "",
-        2132215211,
+        754091404,
         "randomize",
         "high",
         "auto",
@@ -2748,12 +2748,12 @@
       "outputs": [],
       "title": "Save GPT Image 2 Image",
       "properties": {
+        "Node name for S&R": "SaveImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "SaveImage",
         "cnr_id": "comfy-core",
         "ver": "0.14.1"
       },
@@ -2800,12 +2800,12 @@
       ],
       "title": "Prompt - custom",
       "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "PrimitiveStringMultiline",
         "cnr_id": "comfy-core",
         "ver": "0.14.1"
       },
@@ -2925,12 +2925,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "KimiCliDirect",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "KimiCliDirect"
+        }
       },
       "widgets_values": [
         "",
@@ -2974,12 +2974,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PreviewAny",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PreviewAny"
+        }
       },
       "widgets_values": [
         null,
@@ -3020,12 +3020,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PreviewAny",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PreviewAny"
+        }
       },
       "widgets_values": [
         null,
@@ -3126,6 +3126,7 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "RegexExtract",
         "ue_properties": {
           "widget_ue_connectable": {
             "string": true
@@ -3133,7 +3134,6 @@
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "RegexExtract",
         "cnr_id": "comfy-core",
         "ver": "0.12.3",
         "enableTabs": false,
@@ -3185,12 +3185,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PreviewAny",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "PreviewAny",
         "cnr_id": "comfy-core",
         "ver": "0.18.1",
         "enableTabs": false,
@@ -3286,12 +3286,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
         "character/3d cgi animation character bible: system_prompt"
@@ -3333,15 +3333,15 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
-        "character/3d cgi animation character bible: A1 - Single Character Bible (Recommended for Solo Characters)"
+        "character/3d cgi animation character bible: A3 - Single Character Bible with Outfit Swap"
       ]
     },
     {
@@ -3378,12 +3378,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "BatchImagePreview",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "BatchImagePreview"
+        }
       },
       "widgets_values": []
     },
@@ -3470,12 +3470,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "BatchImagesNode",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "BatchImagesNode"
+        }
       },
       "widgets_values": []
     },
@@ -3562,12 +3562,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "BatchImageSplitter",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "BatchImageSplitter"
+        }
       },
       "widgets_values": []
     },
@@ -3654,12 +3654,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "BatchImageSplitter",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "BatchImageSplitter"
+        }
       },
       "widgets_values": []
     }
@@ -4235,10 +4235,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 1.31099941915013,
+      "scale": 0.8954302432553323,
       "offset": [
-        -6787.40995204652,
-        3250.369623931101
+        -3778.3632793236748,
+        2998.6180252668114
       ]
     }
   },
