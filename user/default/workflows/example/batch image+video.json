@@ -1,8 +1,8 @@
 {
   "id": "185548e3-b0ac-4f7a-9c94-9e69e7532a08",
   "revision": 0,
-  "last_node_id": 30,
-  "last_link_id": 26,
+  "last_node_id": 34,
+  "last_link_id": 30,
   "nodes": [
     {
       "id": 2,
@@ -1110,13 +1110,27 @@
           "link": 18
         },
         {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": 27
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": 28
+        },
+        {
           "localized_name": "prompt",
           "name": "prompt",
           "type": "STRING",
           "widget": {
             "name": "prompt"
           },
-          "link": null
+          "link": 30
         },
         {
           "localized_name": "system_prompt",
@@ -1126,7 +1140,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": null
+          "link": 29
         },
         {
           "localized_name": "model",
@@ -1504,7 +1518,7 @@
         }
       },
       "widgets_values": [
-        "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o].mp4",
+        "Sakura vs Togame Full Fight \uff5c Wind Breaker \uff5c \u30a6\u30a4\u30f3\u30c9\u30d6\u30ec\u30a4\u30ab\u30fc [DQ6WAHp7R-o].mp4",
         "image"
       ]
     },
@@ -1537,6 +1551,194 @@
       ],
       "color": "#222",
       "bgcolor": "#000"
+    },
+    {
+      "id": 31,
+      "type": "LoadVideo",
+      "pos": [
+        14541.62438102589,
+        29650.902365635444
+      ],
+      "size": [
+        225,
+        488
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "file",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "LoadVideo",
+      "pos": [
+        14541.62438102589,
+        29850.902365635444
+      ],
+      "size": [
+        225,
+        488
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "file",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            28
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        15399.039891311451,
+        29650.902365635444
+      ],
+      "size": [
+        400,
+        100
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "video/seedance video prompt engineer: system_prompt"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        15399.039891311451,
+        29850.902365635444
+      ],
+      "size": [
+        400,
+        100
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "video/seedance video prompt engineer: D - Multi-Image + Multi-Video \u2014 Full Reference Synthesis"
+      ]
     }
   ],
   "links": [
@@ -1714,6 +1916,38 @@
       0,
       24,
       0,
+      "STRING"
+    ],
+    [
+      27,
+      31,
+      0,
+      20,
+      2,
+      "VIDEO"
+    ],
+    [
+      28,
+      32,
+      0,
+      20,
+      3,
+      "VIDEO"
+    ],
+    [
+      29,
+      33,
+      0,
+      20,
+      4,
+      "STRING"
+    ],
+    [
+      30,
+      34,
+      0,
+      20,
+      5,
       "STRING"
     ]
   ],

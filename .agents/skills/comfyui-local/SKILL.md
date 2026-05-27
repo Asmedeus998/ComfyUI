@@ -61,7 +61,7 @@ These nodes do NOT have comfy_api_nodes equivalents — they are unique local ca
 | `GrokVideoReferenceDirect` | `local_api/grok` | xAI Grok video with up to 7 reference images. |
 | `GrokVideoExtendDirect` | `local_api/grok` | xAI Grok video extension (continues existing video). |
 | `FALSeedreamImageDirect` | `local_api/fal_seedream` | FAL Seedream image generation + editing. Supports `images` batched input + `image_1`..`image_9`. |
-| `KimiCliDirect` | `local_api/kimi` | **Subprocess-based** kimi-cli integration. Text/image/video prompts using user's existing kimi auth. Returns `response` + `thinking`. |
+| `KimiCliDirect` | `local_api/kimi` | **Subprocess-based** kimi-cli integration. Text/image/video prompts using user's existing kimi auth. Supports `images` batched input + up to 4 video inputs (`video`, `video_1`, `video_2`, `video_3`). Returns `response` + `thinking`. |
 | `BatchImagePreview` | `local_api/utils` | Draws index numbers on each image in a batched tensor. Output connected to `PreviewImage` or `SaveImage` for individual numbered files. |
 | `BatchImageSelect` | `local_api/utils` | Selects specific indices from a batched IMAGE tensor (e.g. `"2,4"` returns images 2 and 4). |
 
