@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 126,
-  "last_link_id": 226,
+  "last_node_id": 127,
+  "last_link_id": 228,
   "nodes": [
     {
       "id": 111,
@@ -111,8 +111,8 @@
       "id": 108,
       "type": "MarkdownNote",
       "pos": [
-        -800,
-        -150
+        -872.4729499999999,
+        -338.4296699999999
       ],
       "size": [
         520,
@@ -1130,101 +1130,154 @@
     },
     {
       "id": 122,
-      "type": "ImageBatch",
+      "type": "ImageGridCrop",
       "pos": [
         800,
         -150
       ],
       "size": [
-        234.61666870117188,
-        96
+        320,
+        388
       ],
       "flags": {},
       "order": 15,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "image1",
-          "name": "image1",
+          "localized_name": "image",
+          "name": "image",
           "type": "IMAGE",
           "link": 218
         },
         {
-          "localized_name": "image2",
-          "name": "image2",
-          "type": "IMAGE",
-          "link": 219
+          "localized_name": "rows",
+          "name": "rows",
+          "type": "INT",
+          "widget": {
+            "name": "rows"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cols",
+          "name": "cols",
+          "type": "INT",
+          "widget": {
+            "name": "cols"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "margin",
+          "name": "margin",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "margin"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "save_panels",
+          "name": "save_panels",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "save_panels"
+          },
+          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "IMAGE",
-          "name": "IMAGE",
+          "localized_name": "image_1",
+          "name": "image_1",
           "type": "IMAGE",
           "slot_index": 0,
+          "links": [
+            219
+          ]
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "type": "IMAGE",
+          "slot_index": 1,
           "links": [
             220
           ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageBatch",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 123,
-      "type": "ImageBatch",
-      "pos": [
-        1050,
-        -150
-      ],
-      "size": [
-        234.61666870117188,
-        96
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "image1",
-          "name": "image1",
-          "type": "IMAGE",
-          "link": 220
         },
         {
-          "localized_name": "image2",
-          "name": "image2",
+          "localized_name": "image_3",
+          "name": "image_3",
           "type": "IMAGE",
-          "link": 221
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "IMAGE",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
+          "slot_index": 2,
           "links": [
-            222
+            227
           ]
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "type": "IMAGE",
+          "slot_index": 3,
+          "links": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "type": "IMAGE",
+          "slot_index": 4,
+          "links": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "type": "IMAGE",
+          "slot_index": 5,
+          "links": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "slot_index": 6,
+          "links": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "type": "IMAGE",
+          "slot_index": 7,
+          "links": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "type": "IMAGE",
+          "slot_index": 8,
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "ImageBatch",
+        "Node name for S&R": "ImageGridCrop",
         "ue_properties": {
-          "widget_ue_connectable": {},
+          "widget_ue_connectable": {
+            "rows": true,
+            "cols": true,
+            "margin": true,
+            "save_panels": true
+          },
           "version": "7.8",
           "input_ue_unconnectable": {}
         }
       },
-      "widgets_values": []
+      "widgets_values": [
+        3,
+        3,
+        0,
+        false
+      ]
     },
     {
       "id": 124,
@@ -1527,6 +1580,104 @@
         "auto",
         "auto"
       ]
+    },
+    {
+      "id": 123,
+      "type": "ImageBatch",
+      "pos": [
+        1200,
+        -200
+      ],
+      "size": [
+        234.61666870117188,
+        96
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image1",
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 219
+        },
+        {
+          "localized_name": "image2",
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 220
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            228
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 127,
+      "type": "ImageBatch",
+      "pos": [
+        1450,
+        -200
+      ],
+      "size": [
+        234.61666870117188,
+        96
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image1",
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 228
+        },
+        {
+          "localized_name": "image2",
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 227
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            222
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1627,46 +1778,6 @@
       "IMAGE"
     ],
     [
-      218,
-      111,
-      0,
-      122,
-      0,
-      "IMAGE"
-    ],
-    [
-      219,
-      111,
-      0,
-      122,
-      1,
-      "IMAGE"
-    ],
-    [
-      220,
-      122,
-      0,
-      123,
-      0,
-      "IMAGE"
-    ],
-    [
-      221,
-      111,
-      0,
-      123,
-      1,
-      "IMAGE"
-    ],
-    [
-      222,
-      123,
-      0,
-      124,
-      0,
-      "IMAGE"
-    ],
-    [
       223,
       103,
       0,
@@ -1697,6 +1808,54 @@
       126,
       0,
       "VIDEO"
+    ],
+    [
+      218,
+      111,
+      0,
+      122,
+      0,
+      "IMAGE"
+    ],
+    [
+      219,
+      122,
+      0,
+      123,
+      0,
+      "IMAGE"
+    ],
+    [
+      220,
+      122,
+      1,
+      123,
+      1,
+      "IMAGE"
+    ],
+    [
+      227,
+      122,
+      2,
+      127,
+      1,
+      "IMAGE"
+    ],
+    [
+      228,
+      123,
+      0,
+      127,
+      0,
+      "IMAGE"
+    ],
+    [
+      222,
+      127,
+      0,
+      124,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1740,10 +1899,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6830134553650712,
+      "scale": 0.6209213230591556,
       "offset": [
-        1436.3582755918935,
-        471.79994047277773
+        2295.0822075918827,
+        731.3848704727792
       ]
     },
     "ue_links": [],
