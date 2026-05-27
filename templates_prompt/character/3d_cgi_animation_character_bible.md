@@ -182,6 +182,31 @@ Reference images for content updates:
 Task: Update the bible content while keeping the framework intact. Replace hero line-up with new character design. Refresh expression sheet and action poses. Update prop details. Maintain the same [AESTHETIC] 3D CGI style and professional typography. Output a prompt describing the updated single bible image.
 ```
 
+### Template D: Character Bible with Environment / Atmospheric Background
+
+```
+Design a professional 3D CGI animation character design bible for "[PROJECT NAME]." This is a SINGLE-CHARACTER bible set within an atmospheric environment. Do NOT generate a second character.
+
+Reference images attached:
+- Image 1: Main character reference — [character description: age, build, costume, key features]
+- Image 2: Environment / background reference — [atmosphere: bamboo forest, ink-wash mountains, moonlit temple, cherry blossom garden, etc.]
+- Image 3: Prop reference — [key prop: weapon, tool, accessory]
+- Image 4: Style reference — [target aesthetic: Pixar, anime-CGI, claymation, etc.]
+
+Bible layout:
+- LEFT COLUMN (large): Hero line-up showing ONE character standing at full scale against the environment background. The character is [height/build] wearing [costume]. The background incorporates the atmosphere from the environment reference — [describe: misty bamboo, moonlit peaks, falling petals, etc.]. Title "[PROJECT NAME]" at top. "CHARACTER DESIGN BIBLE" label.
+- TOP-RIGHT: Expression Sheet — 6 facial expressions for this ONE character: [EXPRESSION 1], [EXPRESSION 2], [EXPRESSION 3], [EXPRESSION 4], [EXPRESSION 5], [EXPRESSION 6]. Each expression is shown as a portrait inset against a subtle vignette of the environment background. Small uppercase labels beneath each.
+- MIDDLE-RIGHT: Action Pose Gallery — 6 dynamic full-body poses: [POSE 1], [POSE 2], [POSE 3], [POSE 4], [POSE 5], [POSE 6]. The character interacts with the environment — standing on rocks, beneath bamboo, near waterfalls, etc. Maintain identical proportions and costume.
+- BOTTOM-RIGHT: Key Details — close-up panels of [PROP 1], [PROP 2], [COSTUME DETAIL 1], [COSTUME DETAIL 2], [COSTUME DETAIL 3], [FOOTWEAR]. Include material texture.
+- BOTTOM-LEFT: Character Bio — Age, Role, Personality, Likes, Dislikes for this ONE character. Icon-style layout on a subtle background texture.
+- BOTTOM-CENTER: Color Palette & Materials — skin, hair, cloth, accent, wood, metal, environment tone swatches with material name labels.
+- BOTTOM-RIGHT: Scale Reference — character next to [SCALE OBJECT] within the environment showing world scale.
+
+Overall: [ENVIRONMENT DESCRIPTOR] background inspired by the attached environment reference — atmospheric depth, mist layers, ink-wash gradients, or cinematic lighting. Thin light grey divider lines, [AESTHETIC DESCRIPTOR] 3D CGI style, soft appealing lighting with environmental color bounce, subsurface skin scattering, fabric micro-detail, Pixar-quality appeal.
+
+Task: Synthesize all references into a single cohesive SINGLE-CHARACTER bible image. The environment background must be visible in the hero line-up and expression portraits, creating an immersive pre-production document. Maintain absolute character consistency across turnaround, expressions, and action poses. ONLY ONE character appears in this bible. Prop and style references must NOT be interpreted as second characters. All sections share the same 3D CGI art style, lighting, and material quality.
+```
+
 ---
 
 ## Common Anti-Patterns
