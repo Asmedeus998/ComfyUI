@@ -275,6 +275,33 @@ The rest of the storyboard structure (grid, annotations, metadata format) remain
 Wrap the final prompt in [[PROMPT]] tags.
 ```
 
+### Template I: Dual-Subject Fight with Outfit Swap + Product Placement
+
+```
+Analyze the attached reference images and videos.
+
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Fighter A character reference — [describe face, hair, body type, distinguishing features]
+- Image 2: Fighter A costume reference — [describe the complete outfit: top, bottom, accessories, shoes]
+- Image 3: Fighter B character reference — [describe face, hair, body type, distinguishing features]
+- Image 4: Fighter B costume reference — [describe the complete outfit: top, bottom, accessories, shoes]
+- Image 5: Product / brand / prop reference — [describe the item to integrate into the scene]
+- Image 6: Environment / background reference — [describe the setting]
+- Video 1: Fight choreography reference — [describe the combat sequence, motion style, pacing]
+- Video 2 (optional): Camera motion reference — [describe if using separate camera reference]
+
+CRITICAL OUTFIT INSTRUCTIONS — DO NOT IGNORE:
+Fighter A MUST have the EXACT face, hair color, hair style, and body proportions from Image 1. However she MUST wear the COMPLETE outfit from Image 2 ONLY. Do NOT keep any clothing from Image 1. Replace her entire outfit with the exact garments shown in Image 2.
+
+Fighter B MUST have the EXACT face, hair, and body proportions from Image 3. However she MUST wear the COMPLETE outfit from Image 4 ONLY. Do NOT keep any clothing from Image 3. Replace her entire outfit with the exact garments shown in Image 4.
+
+The two fighters must be visually distinct — different hair colors, different faces, different outfits. Do not merge their designs. Do not swap their costumes.
+
+The product or prop from Image 5 must appear naturally in the scene — held, worn, placed on a surface, or integrated into the action. Environment from Image 6.
+
+Task: Generate a cinematic action storyboard prompt for a [N]-panel grid fight sequence between Fighter A and Fighter B. Rough gestural pencil sketch style with RED camera arrows, BLUE body motion arrows, GREEN prop-object arcs, ORANGE impact marks, PURPLE timing marks. Per-panel metadata. Spatial continuity. Escalating sequence from standoff to climax. Wrap the final prompt in [[PROMPT]] tags.
+```
+
 ---
 
 ## Common Anti-Patterns
