@@ -1,7 +1,7 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 127,
+  "last_node_id": 129,
   "last_link_id": 228,
   "nodes": [
     {
@@ -84,7 +84,7 @@
         280
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -175,15 +175,15 @@
       "id": 103,
       "type": "FALSeedanceReference2Video",
       "pos": [
-        -200,
-        -150
+        -145.58949000000004,
+        73.29999999999993
       ],
       "size": [
         420,
         632
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -386,7 +386,7 @@
         632
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 2,
       "inputs": [
         {
@@ -532,15 +532,15 @@
       "id": 105,
       "type": "SaveVideo",
       "pos": [
-        379.06140000000005,
-        -135.35900000000004
+        412.57191,
+        1.0409999999999116
       ],
       "size": [
         320,
         353.8833312988281
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -606,7 +606,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 2,
       "inputs": [
         {
@@ -664,7 +664,7 @@
       "id": 114,
       "type": "VideoLastFrame",
       "pos": [
-        255.34100999999987,
+        256.95151999999985,
         243.69648999999973
       ],
       "size": [
@@ -672,7 +672,7 @@
         72
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 2,
       "inputs": [
         {
@@ -715,7 +715,7 @@
         144
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 2,
       "inputs": [
         {
@@ -778,7 +778,7 @@
         300.4333190917969
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 2,
       "inputs": [
         {
@@ -843,10 +843,10 @@
       ],
       "size": [
         420,
-        300
+        372
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -859,6 +859,27 @@
         {
           "localized_name": "video",
           "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
           "link": null
@@ -952,7 +973,7 @@
         332
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1099,36 +1120,6 @@
       ]
     },
     {
-      "id": 121,
-      "type": "MarkdownNote",
-      "pos": [
-        -3453.1682308888903,
-        111.10164572222232
-      ],
-      "size": [
-        694.2666625976562,
-        420.0666809082031
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Model Links",
-      "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "reference\n\nhttps://docs.byteplus.com/en/docs/ModelArk/2222480"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
       "id": 122,
       "type": "ImageGridCrop",
       "pos": [
@@ -1140,7 +1131,7 @@
         388
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1283,15 +1274,15 @@
       "id": 124,
       "type": "CR Image Grid Panel",
       "pos": [
-        1300,
-        -150
+        1832.3999999999999,
+        -274.3
       ],
       "size": [
         320,
         292
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1402,15 +1393,15 @@
       "id": 125,
       "type": "VideoDebugOverlay",
       "pos": [
-        1300,
-        100
+        1459.5,
+        236.39999999999995
       ],
       "size": [
         320,
         260
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1522,10 +1513,10 @@
       ],
       "size": [
         320,
-        300
+        438.8166809082031
       ],
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1585,15 +1576,15 @@
       "id": 123,
       "type": "ImageBatch",
       "pos": [
-        1200,
-        -200
+        1185.7,
+        -267.1
       ],
       "size": [
         234.61666870117188,
         96
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1634,15 +1625,15 @@
       "id": 127,
       "type": "ImageBatch",
       "pos": [
-        1450,
-        -200
+        1495.1,
+        -198.89999999999998
       ],
       "size": [
         234.61666870117188,
         96
       ],
       "flags": {},
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1750,7 +1741,7 @@
       120,
       0,
       118,
-      2,
+      5,
       "STRING"
     ],
     [
@@ -1863,7 +1854,7 @@
       "id": 3,
       "title": "2. Segment 1 — Sofa → Lava Lamp → CRT TV",
       "bounding": [
-        -250,
+        -248.38949,
         -200,
         900,
         500
@@ -1899,10 +1890,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6209213230591556,
+      "scale": 0.9090909090909094,
       "offset": [
-        2295.0822075918827,
-        731.3848704727792
+        -510.1895711362742,
+        452.9237102381047
       ]
     },
     "ue_links": [],
