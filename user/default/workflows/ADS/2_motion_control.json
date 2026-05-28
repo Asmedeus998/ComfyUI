@@ -1882,6 +1882,15 @@
           }
         },
         {
+          "localized_name": "fbx_path",
+          "name": "fbx_path",
+          "type": "STRING",
+          "link": 458,
+          "widget": {
+            "name": "fbx_path"
+          }
+        },
+        {
           "localized_name": "image",
           "name": "image",
           "type": "STRING",
