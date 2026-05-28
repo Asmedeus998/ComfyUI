@@ -1,7 +1,7 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 235,
+  "last_node_id": 236,
   "last_link_id": 470,
   "nodes": [
     {
@@ -1791,6 +1791,149 @@
         "storyboard-debug",
         "auto",
         "auto"
+      ]
+    },
+    {
+      "id": 236,
+      "type": "Mesh2MotionExplore",
+      "pos": [
+        1300,
+        -2552
+      ],
+      "size": [
+        320,
+        380
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "show_skeleton",
+          "name": "show_skeleton",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "show_skeleton"
+          }
+        },
+        {
+          "localized_name": "mirror_animations",
+          "name": "mirror_animations",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "mirror_animations"
+          }
+        },
+        {
+          "localized_name": "preview_output",
+          "name": "preview_output",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "preview_output"
+          }
+        },
+        {
+          "localized_name": "checker_room",
+          "name": "checker_room",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "checker_room"
+          }
+        },
+        {
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "localized_name": "fps",
+          "name": "fps",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "fps"
+          }
+        },
+        {
+          "localized_name": "reference_video_path",
+          "name": "reference_video_path",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "reference_video_path"
+          }
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "image"
+          }
+        },
+        {
+          "localized_name": "video_frames",
+          "name": "video_frames",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "video_frames"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "localized_name": "info",
+          "name": "info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Mesh2MotionExplore",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        false,
+        false,
+        false,
+        false,
+        1024,
+        1024,
+        24,
+        "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o]_15s.mp4",
+        "",
+        ""
       ]
     }
   ],
