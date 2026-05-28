@@ -13,7 +13,7 @@
       ],
       "size": [
         387.9333190917969,
-        612
+        1746.4000244140625
       ],
       "flags": {},
       "order": 0,
@@ -1239,13 +1239,6 @@
   },
   "config": {},
   "extra": {
-    "ds": {
-      "scale": 1,
-      "offset": [
-        2523.3371480069554,
-        -3024.597378507455
-      ]
-    },
     "frontendVersion": "1.44.18",
     "workflowRendererVersion": "LG",
     "prompt": {
@@ -1645,7 +1638,14 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ue_links": [],
-    "links_added_by_ue": []
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.3736041821213471,
+      "offset": [
+        4829.597019910578,
+        -3060.217488562207
+      ]
+    }
   },
   "version": 0.4
 }

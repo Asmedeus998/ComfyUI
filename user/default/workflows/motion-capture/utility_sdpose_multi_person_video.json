@@ -1019,6 +1019,7 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "CreateVideo",
         "ue_properties": {
           "widget_ue_connectable": {
             "fps": true
@@ -1026,7 +1027,6 @@
           "version": "7.8",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "CreateVideo",
         "cnr_id": "comfy-core",
         "ver": "0.15.1"
       },
@@ -1544,7 +1544,7 @@
             ],
             "size": [
               270,
-              106
+              144
             ],
             "flags": {},
             "order": 3,
@@ -2685,14 +2685,7 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ue_links": [],
-    "links_added_by_ue": [],
-    "ds": {
-      "scale": 0.5497693123887815,
-      "offset": [
-        3275.5301545237,
-        -3205.9052671873283
-      ]
-    }
+    "links_added_by_ue": []
   },
   "version": 0.4
 }
