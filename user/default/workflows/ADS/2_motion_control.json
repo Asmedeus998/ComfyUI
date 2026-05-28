@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 236,
-  "last_link_id": 470,
+  "last_node_id": 243,
+  "last_link_id": 462,
   "nodes": [
     {
       "id": 133,
@@ -1414,7 +1414,8 @@
           "type": "VIDEO",
           "links": [
             406,
-            454
+            454,
+            455
           ]
         }
       ],
@@ -1935,6 +1936,513 @@
         "",
         ""
       ]
+    },
+    {
+      "id": 237,
+      "type": "VideoToImageBatch",
+      "pos": [
+        1008.7686853611289,
+        -3152.3041572397233
+      ],
+      "size": [
+        250,
+        120
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 455
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            456,
+            457
+          ],
+          "slot_index": 0
+        },
+        {
+          "localized_name": "frame_count",
+          "name": "frame_count",
+          "type": "INT",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoToImageBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 238,
+      "type": "SimplePersonMask",
+      "pos": [
+        1308.768685361129,
+        -3152.3041572397233
+      ],
+      "size": [
+        250,
+        150
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 456
+        },
+        {
+          "localized_name": "width_ratio",
+          "name": "width_ratio",
+          "type": "FLOAT",
+          "link": null,
+          "widget": {
+            "name": "width_ratio"
+          }
+        },
+        {
+          "localized_name": "height_ratio",
+          "name": "height_ratio",
+          "type": "FLOAT",
+          "link": null,
+          "widget": {
+            "name": "height_ratio"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "masks",
+          "name": "masks",
+          "type": "MASK",
+          "links": [
+            458
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SimplePersonMask",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        0.7,
+        0.9
+      ]
+    },
+    {
+      "id": 239,
+      "type": "LoadGVHMRModels",
+      "pos": [
+        1608.768685361129,
+        -3152.3041572397233
+      ],
+      "size": [
+        280,
+        120
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "model_path_override",
+          "name": "model_path_override",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "model_path_override"
+          }
+        },
+        {
+          "localized_name": "cache_model",
+          "name": "cache_model",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "cache_model"
+          }
+        },
+        {
+          "localized_name": "load_dpvo",
+          "name": "load_dpvo",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "load_dpvo"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "config",
+          "name": "config",
+          "type": "GVHMR_CONFIG",
+          "links": [
+            459
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadGVHMRModels",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        false,
+        false
+      ]
+    },
+    {
+      "id": 240,
+      "type": "GVHMRInference",
+      "pos": [
+        1158.768685361129,
+        -2952.3041572397233
+      ],
+      "size": [
+        320,
+        280
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 457
+        },
+        {
+          "localized_name": "masks",
+          "name": "masks",
+          "type": "MASK",
+          "link": 458
+        },
+        {
+          "localized_name": "config",
+          "name": "config",
+          "type": "GVHMR_CONFIG",
+          "link": 459
+        },
+        {
+          "localized_name": "intrinsics",
+          "name": "intrinsics",
+          "type": "INTRINSICS",
+          "link": null
+        },
+        {
+          "localized_name": "static_camera",
+          "name": "static_camera",
+          "type": "BOOLEAN",
+          "link": null,
+          "widget": {
+            "name": "static_camera"
+          }
+        },
+        {
+          "localized_name": "focal_length_mm",
+          "name": "focal_length_mm",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "focal_length_mm"
+          }
+        },
+        {
+          "localized_name": "bbox_scale",
+          "name": "bbox_scale",
+          "type": "FLOAT",
+          "link": null,
+          "widget": {
+            "name": "bbox_scale"
+          }
+        },
+        {
+          "localized_name": "vo_method",
+          "name": "vo_method",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "vo_method"
+          }
+        },
+        {
+          "localized_name": "vo_scale",
+          "name": "vo_scale",
+          "type": "FLOAT",
+          "link": null,
+          "widget": {
+            "name": "vo_scale"
+          }
+        },
+        {
+          "localized_name": "vo_step",
+          "name": "vo_step",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "vo_step"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "npz_path",
+          "name": "npz_path",
+          "type": "STRING",
+          "links": [
+            460
+          ],
+          "slot_index": 0
+        },
+        {
+          "localized_name": "visualization",
+          "name": "visualization",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "localized_name": "info",
+          "name": "info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GVHMRInference",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        true,
+        0,
+        1.2,
+        "simple_vo",
+        0.5,
+        8
+      ]
+    },
+    {
+      "id": 241,
+      "type": "SaveSMPLAsRiggedFBX",
+      "pos": [
+        1158.768685361129,
+        -2602.3041572397233
+      ],
+      "size": [
+        320,
+        220
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "motion_npz_path",
+          "name": "motion_npz_path",
+          "type": "STRING",
+          "link": 460
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "model"
+          }
+        },
+        {
+          "localized_name": "fps",
+          "name": "fps",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "fps"
+          }
+        },
+        {
+          "localized_name": "filename",
+          "name": "filename",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "filename"
+          }
+        },
+        {
+          "localized_name": "output_fbx_path",
+          "name": "output_fbx_path",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "output_fbx_path"
+          }
+        },
+        {
+          "localized_name": "axis_up",
+          "name": "axis_up",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "axis_up"
+          }
+        },
+        {
+          "localized_name": "axis_forward",
+          "name": "axis_forward",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "axis_forward"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "fbx_path",
+          "name": "fbx_path",
+          "type": "STRING",
+          "links": [
+            461
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveSMPLAsRiggedFBX",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "SMPL_NEUTRAL.pkl",
+        24,
+        "captured_motion",
+        "",
+        "Y",
+        "-Z"
+      ]
+    },
+    {
+      "id": 242,
+      "type": "CopyToMesh2MotionCustoms",
+      "pos": [
+        1158.768685361129,
+        -2332.3041572397233
+      ],
+      "size": [
+        280,
+        80
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source_path",
+          "name": "source_path",
+          "type": "STRING",
+          "link": 461
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "destination_path",
+          "name": "destination_path",
+          "type": "STRING",
+          "links": [
+            462
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CopyToMesh2MotionCustoms",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 243,
+      "type": "PreviewAny",
+      "pos": [
+        1508.768685361129,
+        -2332.3041572397233
+      ],
+      "size": [
+        250,
+        80
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "STRING",
+          "link": 462
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -2209,6 +2717,70 @@
       234,
       0,
       "VIDEO"
+    ],
+    [
+      455,
+      203,
+      0,
+      237,
+      0,
+      "VIDEO"
+    ],
+    [
+      456,
+      237,
+      0,
+      238,
+      0,
+      "IMAGE"
+    ],
+    [
+      457,
+      237,
+      0,
+      240,
+      0,
+      "IMAGE"
+    ],
+    [
+      458,
+      238,
+      0,
+      240,
+      1,
+      "MASK"
+    ],
+    [
+      459,
+      239,
+      0,
+      240,
+      2,
+      "GVHMR_CONFIG"
+    ],
+    [
+      460,
+      240,
+      0,
+      241,
+      0,
+      "STRING"
+    ],
+    [
+      461,
+      241,
+      0,
+      242,
+      0,
+      "STRING"
+    ],
+    [
+      462,
+      242,
+      0,
+      243,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
