@@ -2,7 +2,7 @@
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
   "last_node_id": 239,
-  "last_link_id": 457,
+  "last_link_id": 458,
   "nodes": [
     {
       "id": 133,
@@ -2009,7 +2009,9 @@
           "localized_name": "fbx_path",
           "name": "fbx_path",
           "type": "STRING",
-          "links": [],
+          "links": [
+            458
+          ],
           "slot_index": 0
         },
         {
@@ -2414,6 +2416,14 @@
       1,
       239,
       0,
+      "STRING"
+    ],
+    [
+      458,
+      237,
+      0,
+      236,
+      8,
       "STRING"
     ]
   ],
