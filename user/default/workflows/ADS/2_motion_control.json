@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 244,
-  "last_link_id": 464,
+  "last_node_id": 245,
+  "last_link_id": 465,
   "nodes": [
     {
       "id": 133,
@@ -2086,7 +2086,9 @@
           "localized_name": "visualization",
           "name": "visualization",
           "type": "IMAGE",
-          "links": [],
+          "links": [
+            465
+          ],
           "slot_index": 1
         },
         {
@@ -2509,6 +2511,58 @@
         "",
         ""
       ]
+    },
+    {
+      "id": 245,
+      "type": "ImagesToVideo",
+      "pos": [
+        1558.768685361129,
+        -2902.3041572397233
+      ],
+      "size": [
+        250,
+        100
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 465
+        },
+        {
+          "localized_name": "fps",
+          "name": "fps",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "fps"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagesToVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        24
+      ]
     }
   ],
   "links": [
@@ -2863,6 +2917,14 @@
       244,
       0,
       "STRING"
+    ],
+    [
+      465,
+      239,
+      1,
+      245,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
