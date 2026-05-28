@@ -1,8 +1,8 @@
 {
   "id": "7f5e0c56-93b4-4937-b7f2-efd0f1853e33",
   "revision": 0,
-  "last_node_id": 699,
-  "last_link_id": 1754,
+  "last_node_id": 702,
+  "last_link_id": 1757,
   "nodes": [
     {
       "id": 676,
@@ -175,7 +175,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            1739
+            1739,
+            1757
           ]
         },
         {
@@ -297,7 +298,7 @@
         100
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -355,7 +356,7 @@
         144
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -526,7 +527,7 @@
         170
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -701,7 +702,7 @@
         104
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -772,7 +773,7 @@
         710
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -828,7 +829,7 @@
         }
       },
       "widgets_values": [
-        "motion-capture/multi-person",
+        "motion-capture/multi-person-debug",
         "auto",
         "auto"
       ]
@@ -895,6 +896,143 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 700,
+      "type": "SaveVideo",
+      "pos": [
+        -756.6460995520592,
+        4272.452259988135
+      ],
+      "size": [
+        480,
+        710
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 1756
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "motion-capture/multi-person",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 701,
+      "type": "CreateVideo",
+      "pos": [
+        -1443.8527994808662,
+        4295.45316755541
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1757
+        },
+        {
+          "localized_name": "audio",
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "fps",
+          "name": "fps",
+          "type": "FLOAT",
+          "widget": {
+            "name": "fps"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            1756
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "fps": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "CreateVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.15.1"
+      },
+      "widgets_values": [
+        30
+      ]
     }
   ],
   "links": [
@@ -1001,6 +1139,22 @@
       687,
       0,
       "IMAGE"
+    ],
+    [
+      1756,
+      701,
+      0,
+      700,
+      0,
+      "VIDEO"
+    ],
+    [
+      1757,
+      675,
+      0,
+      701,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1010,8 +1164,8 @@
       "bounding": [
         -1560,
         3330,
-        1370,
-        920
+        1404.559950095148,
+        1511.1570411012126
       ],
       "color": "#3f789e",
       "flags": {}
@@ -1024,8 +1178,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 2,
-          "lastNodeId": 699,
-          "lastLinkId": 1754,
+          "lastNodeId": 702,
+          "lastLinkId": 1757,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2533,10 +2687,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.8854089752952565,
+      "scale": 0.5497693123887815,
       "offset": [
-        1593.627883425302,
-        -3043.6566046954026
+        3275.5301545237,
+        -3205.9052671873283
       ]
     }
   },
