@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 233,
-  "last_link_id": 451,
+  "last_node_id": 235,
+  "last_link_id": 454,
   "nodes": [
     {
       "id": 133,
@@ -167,7 +167,8 @@
           "name": "image",
           "type": "IMAGE",
           "links": [
-            292
+            292,
+            453
           ]
         }
       ],
@@ -183,14 +184,14 @@
       },
       "widgets_values": [
         "",
-        826474271,
+        1337098176,
         "randomize",
         "high",
         "auto",
-        "auto",
+        "1536x1024",
         1,
         "gpt-image-2",
-        1024,
+        1536,
         1024,
         ""
       ]
@@ -199,8 +200,8 @@
       "id": 134,
       "type": "SaveImage",
       "pos": [
-        3825.4447530492744,
-        -3252.6796365375562
+        3811.4249970700203,
+        -2674.3647023933295
       ],
       "size": [
         333.3333435058594,
@@ -1416,7 +1417,8 @@
           "name": "VIDEO",
           "type": "VIDEO",
           "links": [
-            406
+            406,
+            454
           ]
         }
       ],
@@ -1429,7 +1431,7 @@
         }
       },
       "widgets_values": [
-        "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o].mp4",
+        "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o]_15s.mp4",
         "image"
       ]
     },
@@ -1582,7 +1584,7 @@
         "collapsed": false
       },
       "order": 44,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1746,7 +1748,7 @@
       },
       "widgets_values": [
         "",
-        1288296241,
+        866914758,
         "randomize",
         "high",
         "auto",
@@ -1771,7 +1773,7 @@
       ],
       "flags": {},
       "order": 46,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1820,7 +1822,7 @@
         "collapsed": false
       },
       "order": 38,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "value",
@@ -1872,7 +1874,7 @@
       ],
       "flags": {},
       "order": 28,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -2000,7 +2002,7 @@
         "collapsed": false
       },
       "order": 34,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -2046,7 +2048,7 @@
         "collapsed": false
       },
       "order": 32,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -2092,7 +2094,7 @@
         "collapsed": false
       },
       "order": 33,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "string",
@@ -2211,7 +2213,7 @@
       ],
       "flags": {},
       "order": 39,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -2264,7 +2266,7 @@
       ],
       "flags": {},
       "order": 42,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "",
@@ -2307,7 +2309,7 @@
       ],
       "flags": {},
       "order": 9,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -2354,7 +2356,7 @@
       ],
       "flags": {},
       "order": 10,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -2401,7 +2403,7 @@
       ],
       "flags": {},
       "order": 25,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -2446,7 +2448,7 @@
         "collapsed": false
       },
       "order": 21,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "label": "image0",
@@ -2538,7 +2540,7 @@
         "collapsed": false
       },
       "order": 45,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -2702,7 +2704,7 @@
       },
       "widgets_values": [
         "",
-        754091404,
+        71501294,
         "randomize",
         "high",
         "auto",
@@ -2727,7 +2729,7 @@
       ],
       "flags": {},
       "order": 47,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -2776,7 +2778,7 @@
         "collapsed": false
       },
       "order": 40,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "value",
@@ -2828,7 +2830,7 @@
       ],
       "flags": {},
       "order": 30,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -2956,7 +2958,7 @@
         "collapsed": false
       },
       "order": 37,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -3002,7 +3004,7 @@
         "collapsed": false
       },
       "order": 35,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -3048,7 +3050,7 @@
         "collapsed": false
       },
       "order": 36,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "string",
@@ -3167,7 +3169,7 @@
       ],
       "flags": {},
       "order": 41,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -3220,7 +3222,7 @@
       ],
       "flags": {},
       "order": 43,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "",
@@ -3263,7 +3265,7 @@
       ],
       "flags": {},
       "order": 11,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -3310,7 +3312,7 @@
       ],
       "flags": {},
       "order": 12,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -3357,7 +3359,7 @@
       ],
       "flags": {},
       "order": 26,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -3402,7 +3404,7 @@
         "collapsed": false
       },
       "order": 22,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "label": "image0",
@@ -3492,7 +3494,7 @@
       ],
       "flags": {},
       "order": 29,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -3584,7 +3586,7 @@
       ],
       "flags": {},
       "order": 31,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -3662,6 +3664,234 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 234,
+      "type": "StoryboardVideoOverlay",
+      "pos": [
+        3804.9288773107914,
+        -3874.419977060123
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 454
+        },
+        {
+          "localized_name": "storyboard",
+          "name": "storyboard",
+          "type": "IMAGE",
+          "link": 453
+        },
+        {
+          "localized_name": "rows",
+          "name": "rows",
+          "type": "INT",
+          "widget": {
+            "name": "rows"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cols",
+          "name": "cols",
+          "type": "INT",
+          "widget": {
+            "name": "cols"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "segment_duration",
+          "name": "segment_duration",
+          "type": "FLOAT",
+          "widget": {
+            "name": "segment_duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "layout_mode",
+          "name": "layout_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "layout_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "highlight_color",
+          "name": "highlight_color",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "highlight_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overlay_scale",
+          "name": "overlay_scale",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "overlay_scale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overlay_position",
+          "name": "overlay_position",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "overlay_position"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "split_ratio",
+          "name": "split_ratio",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "split_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "border_thickness",
+          "name": "border_thickness",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "border_thickness"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "margin",
+          "name": "margin",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "margin"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": [
+            452
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StoryboardVideoOverlay",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "rows": true,
+            "cols": true,
+            "segment_duration": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        3,
+        4,
+        2,
+        "split_bottom",
+        "red",
+        0.25,
+        "bottom-right",
+        0.4,
+        2,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "type": "SaveVideo",
+      "pos": [
+        3820.6912780785183,
+        -3358.624616808664
+      ],
+      "size": [
+        320,
+        555.3666381835938
+      ],
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 452
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true,
+            "format": true,
+            "codec": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "storyboard-debug",
+        "auto",
+        "auto"
+      ]
     }
   ],
   "links": [
@@ -4184,6 +4414,30 @@
       219,
       2,
       "IMAGE"
+    ],
+    [
+      452,
+      234,
+      0,
+      235,
+      0,
+      "VIDEO"
+    ],
+    [
+      453,
+      133,
+      0,
+      234,
+      1,
+      "IMAGE"
+    ],
+    [
+      454,
+      203,
+      0,
+      234,
+      0,
+      "VIDEO"
     ]
   ],
   "groups": [
@@ -4235,10 +4489,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 1.4420993610651578,
+      "scale": 0.2853116706110349,
       "offset": [
-        -3246.6815545490135,
-        3443.3366823259353
+        621.0745549217887,
+        4749.216866128408
       ]
     }
   },

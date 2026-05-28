@@ -254,6 +254,46 @@ The rest of the video content must remain unchanged. Preserve original motions, 
 Wrap the final prompt in [[PROMPT]] tags.
 ```
 
+### Template I: Storyboard Panel Sequence → Video Segment (Option B)
+
+```
+Analyze the attached reference images and videos.
+
+Reference mapping:
+- Image 1: Storyboard grid — A grid of rough sketch panels showing the shot sequence for the full scene. This 15-second segment covers only panels [list panel numbers, e.g., 1 through 3].
+- Image 2: Character A reference — [describe appearance, outfit, distinguishing features]
+- Image 3: Character B reference — [describe appearance, outfit, distinguishing features]
+- Image 4 (optional): Environment / scene reference — [describe setting, lighting, atmosphere]
+- Video 1: Motion / choreography reference — [describe the fight/action movement]
+- Video 2 (optional): Camera motion reference — [describe if using separate camera reference]
+
+Task: Generate a Seedance 2.0 video prompt that converts the specified storyboard panels into a single continuous 15-second video segment.
+
+CRITICAL — Panel Timing Structure:
+You MUST divide the 15-second segment into timed sections corresponding to each storyboard panel. Use this exact structure:
+
+0-5 seconds: [Describe the first panel in cinematic detail — camera shot type, character action, environment, lighting, mood]
+5-10 seconds: [Describe the second panel in cinematic detail — camera shot type, character action, environment, lighting, mood]
+10-15 seconds: [Describe the third panel in cinematic detail — camera shot type, character action, environment, lighting, mood]
+
+Each timed section must include:
+- Camera: shot size (wide/medium/close-up), camera movement (static/pan/dolly/push-in/handheld), angle
+- Action: specific verbs for what each character is doing, direction of movement, impact/timing
+- Environment: spatial setting, background elements, depth
+- Lighting / atmosphere: color palette, time of day, light sources, mood
+- Transition logic: how this shot flows into the next (continuous motion, match cut, whip pan, etc.)
+
+Character Lock:
+- Character A must visually match Image 2 exactly — same face, hair, body type, outfit
+- Character B must visually match Image 3 exactly — same face, hair, body type, outfit
+- If Image 4 is provided, the environment must match it
+- The motion choreography must follow Video 1's dynamic — same timing, weight, impact style
+
+Anti-collage rule: Do NOT describe the storyboard grid itself as a scene element. The storyboard is ONLY a shot plan. The final video must look like a seamless cinematic sequence, not a grid of images.
+
+Write as a single flowing paragraph. No markdown, no bullet points, no headers within the prompt body. Target 400–700 words. Wrap the final prompt in [[PROMPT]] tags.
+```
+
 ---
 
 ## Common Anti-Patterns

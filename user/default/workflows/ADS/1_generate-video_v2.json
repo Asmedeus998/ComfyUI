@@ -66,7 +66,7 @@
         }
       },
       "widgets_values": [
-        "## Segment 1 (15s) — Positions 1→2→3\n\n"
+        "## Segment 1 (15s) \u2014 Positions 1\u21922\u21923\n\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -98,7 +98,7 @@
         }
       },
       "widgets_values": [
-        "## Segment 2 (15s) — Positions 3→4\n\n"
+        "## Segment 2 (15s) \u2014 Positions 3\u21924\n\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1049,7 +1049,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance video prompt engineer: D - Multi-Image + Multi-Video — Full Reference Synthesis"
+        "video/seedance video prompt engineer: I - Storyboard Panel Sequence \u2192 Video Segment (Option B)"
       ]
     },
     {
@@ -1553,7 +1553,7 @@
         }
       },
       "widgets_values": [
-        "Sakura vs Togame Full Fight ｜ Wind Breaker ｜ ウインドブレイカー [DQ6WAHp7R-o].mp4",
+        "Sakura vs Togame Full Fight \uff5c Wind Breaker \uff5c \u30a6\u30a4\u30f3\u30c9\u30d6\u30ec\u30a4\u30ab\u30fc [DQ6WAHp7R-o].mp4",
         "image"
       ]
     },
@@ -1688,9 +1688,11 @@
         3,
         4,
         5,
+        "split_bottom",
         "red",
         0.25,
         "bottom-right",
+        0.65,
         2,
         0
       ]
@@ -1993,7 +1995,7 @@
   "groups": [
     {
       "id": 3,
-      "title": "2. Segment 1 — Sofa → Lava Lamp → CRT TV",
+      "title": "2. Segment 1 \u2014 Sofa \u2192 Lava Lamp \u2192 CRT TV",
       "bounding": [
         -250,
         -200,
@@ -2005,7 +2007,7 @@
     },
     {
       "id": 4,
-      "title": "3. Segment 2 — CRT OFF → Sofa → Coffee Mug",
+      "title": "3. Segment 2 \u2014 CRT OFF \u2192 Sofa \u2192 Coffee Mug",
       "bounding": [
         -250,
         400,
@@ -2017,7 +2019,7 @@
     },
     {
       "id": 5,
-      "title": "🧠 Prompt Pipeline (Kimi)",
+      "title": "\ud83e\udde0 Prompt Pipeline (Kimi)",
       "bounding": [
         -2710,
         -310,
