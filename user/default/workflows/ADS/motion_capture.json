@@ -1,8 +1,8 @@
 {
   "id": "motion-capture-minimal-v1",
   "revision": 0,
-  "last_node_id": 6,
-  "last_link_id": 5,
+  "last_node_id": 7,
+  "last_link_id": 7,
   "nodes": [
     {
       "id": 1,
@@ -417,7 +417,9 @@
           "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
-          "links": [],
+          "links": [
+            7
+          ],
           "slot_index": 0
         }
       ],
@@ -431,6 +433,70 @@
       },
       "widgets_values": [
         24
+      ]
+    },
+    {
+      "id": 7,
+      "type": "SaveVideo",
+      "pos": [
+        400,
+        900
+      ],
+      "size": [
+        320,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 7
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "format"
+          }
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "codec"
+          }
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "motion_capture_preview",
+        "mp4",
+        "h264"
       ]
     }
   ],
@@ -482,6 +548,14 @@
       6,
       0,
       "IMAGE"
+    ],
+    [
+      7,
+      6,
+      0,
+      7,
+      0,
+      "VIDEO"
     ]
   ],
   "groups": [],
