@@ -3649,6 +3649,20 @@
           "shape": 7,
           "type": "IMAGE",
           "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
         }
       ],
       "outputs": [
@@ -3695,6 +3709,18 @@
           "name": "image_6",
           "type": "IMAGE",
           "links": []
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
         }
       ],
       "properties": {
@@ -3772,6 +3798,20 @@
           "shape": 7,
           "type": "IMAGE",
           "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
         }
       ],
       "outputs": [
@@ -3822,15 +3862,27 @@
           "name": "image_6",
           "type": "IMAGE",
           "links": []
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
         }
       ],
       "properties": {
+        "Node name for S&R": "SlotImageBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SlotImageBatch"
+        }
       },
       "widgets_values": [],
       "color": "#232",
@@ -3889,12 +3941,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -3956,12 +4008,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -4033,6 +4085,20 @@
           "shape": 7,
           "type": "IMAGE",
           "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
         }
       ],
       "outputs": [
@@ -4081,15 +4147,27 @@
           "name": "image_6",
           "type": "IMAGE",
           "links": []
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
         }
       ],
       "properties": {
+        "Node name for S&R": "SlotImageBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SlotImageBatch"
+        }
       },
       "widgets_values": [],
       "color": "#232",
@@ -4148,12 +4226,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -4215,12 +4293,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "LoadImage",
         "cnr_id": "comfy-core",
         "ver": "0.19.3"
       },
@@ -4292,6 +4370,20 @@
           "shape": 7,
           "type": "IMAGE",
           "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
         }
       ],
       "outputs": [
@@ -4340,15 +4432,27 @@
           "name": "image_6",
           "type": "IMAGE",
           "links": []
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
         }
       ],
       "properties": {
+        "Node name for S&R": "SlotImageBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SlotImageBatch"
+        }
       },
       "widgets_values": [],
       "color": "#232",
