@@ -3070,7 +3070,7 @@
         }
       },
       "widgets_values": [
-        "character/ad character reference sheet: A - Full Ad Character Reference Sheet (Recommended)"
+        "character/ad character reference sheet: C - Character + Outfit Swap Sheet"
       ]
     },
     {
@@ -5160,10 +5160,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.2357947691000356,
+      "scale": 1.1918176537729073,
       "offset": [
-        -451.67275929514636,
-        4900.169426634448
+        -5383.328640175519,
+        2771.19590922261
       ]
     }
   },

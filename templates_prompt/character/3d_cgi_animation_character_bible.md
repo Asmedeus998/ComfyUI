@@ -17,11 +17,11 @@ System prompt and user templates for creating **3D CGI animation character desig
 
 **A single image that IS a multi-section character design document.** A polished pre-production bible containing labeled sections arranged in a clear spatial grid — hero line-up, expression sheet, action poses, prop details, color palette & materials, scale reference, and character bios.
 
-| Element | Description |
-|---------|-------------|
-| **Sections** | Hero line-up, expression sheet, action pose gallery, prop detail callouts, color palette & materials, scale reference, character bios |
-| **Text in Image** | Medium-Heavy — character names, section headers, prop labels, personality keywords, material names |
-| **Consistency Challenge** | The SAME character must appear identical across ALL sections — same face, proportions, costume, and materials |
+| Element                   | Description                                                                                                                           |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sections**              | Hero line-up, expression sheet, action pose gallery, prop detail callouts, color palette & materials, scale reference, character bios |
+| **Text in Image**         | Medium-Heavy — character names, section headers, prop labels, personality keywords, material names                                    |
+| **Consistency Challenge** | The SAME character must appear identical across ALL sections — same face, proportions, costume, and materials                         |
 
 ---
 
@@ -42,7 +42,7 @@ You are an elite 3D CGI animation character designer. Your sole function is to a
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
    - The reference images use a **fixed 7-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
-   - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5"). 
+   - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5").
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
    - **Example**: If you receive only Image 1 (1-CHAR / character) and Image 7 (7-CREATIVE / creative reference), refer to them as "Image 1" and "Image 7" in your prompt. Do NOT call the creative reference "Image 2" just because it happens to be the second image in the batch.
    - **Empty slots**: If a slot is not provided, simply omit it from your prompt. Do not invent or hallucinate references for missing slots.
@@ -301,26 +301,32 @@ Wrap the final prompt in [[PROMPT]] tags.
 ## Common Anti-Patterns
 
 ### Character Drift Between Sections
+
 **Symptom:** Expression sheet shows a different face shape than the hero line-up.  
 **Fix:** Add explicit cross-section consistency lock: "The SAME character appears in every section — identical face shape, eye size, nose shape, ear position, body proportions, and costume details."
 
 ### Outfit Ignored (Original Clothing Kept)
+
 **Symptom:** Character reference shows a red dress, outfit reference shows a blue suit, but the generated bible still shows the red dress.  
 **Fix:** Add aggressive outfit swap language: "The character wears ONLY the outfit from Image 2. Do NOT keep any clothing from Image 1. List every garment from Image 2 explicitly."
 
 ### Section Overlap
+
 **Symptom:** Expression panels bleed into action poses; text overlaps character art.  
 **Fix:** Describe dividers explicitly: "thin light grey lines separating every section," "clean white gutters," "sections do not overlap."
 
 ### Missing Sections
+
 **Symptom:** User asked for prop details but the bible omits them.  
 **Fix:** List all requested sections explicitly in the task. Add: "Do NOT omit any requested section."
 
 ### Illegible Text / Gibberish Typography
+
 **Symptom:** Character names or labels are unreadable squiggles.  
 **Fix:** Specify typography style explicitly: "Large friendly rounded sans-serif letters," "small uppercase functional labels." Provide exact text strings when possible.
 
 ### Invented Second Character
+
 **Symptom:** User asked for one character but the bible shows two because a prop reference was misread as a second character.  
 **Fix:** Add Character Count Lock: "This is a SINGLE-CHARACTER bible. Do NOT generate a second character from prop or style references."
 
@@ -328,29 +334,29 @@ Wrap the final prompt in [[PROMPT]] tags.
 
 ## Model-Specific Notes
 
-| Model | Character Bible Generation Tip |
-|-------|-------------------------------|
+| Model            | Character Bible Generation Tip                                                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Kimi / GPT-4** | Excellent at analyzing multiple reference images and synthesizing detailed bible layouts. Provide explicit reference mapping for best results. |
-| **GPT Image** | Good at complex grids but may struggle with very small text. Keep label text short and functional. |
-| **Seedream** | Good at Pixar-quality 3D appeal. Emphasize "Pixar," "soft appealing lighting," and "subsurface scattering." |
-| **Gemini** | Handles long prompts well. Can manage 600-word bible descriptions with full section breakdowns. |
-| **Grok / Qwen** | Best for editing existing bibles. Always preserve layout structure first, then modify character elements. |
+| **GPT Image**    | Good at complex grids but may struggle with very small text. Keep label text short and functional.                                             |
+| **Seedream**     | Good at Pixar-quality 3D appeal. Emphasize "Pixar," "soft appealing lighting," and "subsurface scattering."                                    |
+| **Gemini**       | Handles long prompts well. Can manage 600-word bible descriptions with full section breakdowns.                                                |
+| **Grok / Qwen**  | Best for editing existing bibles. Always preserve layout structure first, then modify character elements.                                      |
 
 ---
 
 ## Quick Reference: Character Bible Prompt Formula
 
 ```
-[Document Type: professional 3D CGI animation character design bible] + 
-[Presentation Surface: clean white art board, thin light grey dividers] + 
-[Reference Locks: face/hair/body from Image 1, outfit from Image 2, prop from Image 3, style from Image 4] + 
-[Hero Line-Up: full scale, front 3/4, complete costume, title] + 
-[Expression Sheet: 6 expressions, identical face, clean white bg, uppercase labels] + 
-[Action Pose Gallery: 6 poses, identical proportions and costume] + 
-[Prop Details: close-ups with material texture] + 
-[Color Palette & Materials: skin, hair, cloth, accent, metal swatches] + 
-[Scale Reference: character next to familiar object] + 
-[Character Bio: Age, Role, Personality, Likes, Dislikes] + 
-[Cross-Section Consistency Lock: same face, body, costume, materials, lighting] + 
+[Document Type: professional 3D CGI animation character design bible] +
+[Presentation Surface: clean white art board, thin light grey dividers] +
+[Reference Locks: face/hair/body from Image 1, outfit from Image 2, prop from Image 3, style from Image 4] +
+[Hero Line-Up: full scale, front 3/4, complete costume, title] +
+[Expression Sheet: 6 expressions, identical face, clean white bg, uppercase labels] +
+[Action Pose Gallery: 6 poses, identical proportions and costume] +
+[Prop Details: close-ups with material texture] +
+[Color Palette & Materials: skin, hair, cloth, accent, metal swatches] +
+[Scale Reference: character next to familiar object] +
+[Character Bio: Age, Role, Personality, Likes, Dislikes] +
+[Cross-Section Consistency Lock: same face, body, costume, materials, lighting] +
 [Anti-Overlap: clear gutters, no bleeding, sections breathe]
 ```
