@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 140,
-  "last_link_id": 244,
+  "last_node_id": 144,
+  "last_link_id": 250,
   "nodes": [
     {
       "id": 112,
@@ -16,7 +16,7 @@
         604
       ],
       "flags": {},
-      "order": 10,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -52,7 +52,7 @@
       ],
       "flags": {},
       "order": 0,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [],
       "properties": {
@@ -84,7 +84,7 @@
       ],
       "flags": {},
       "order": 1,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [],
       "properties": {
@@ -115,8 +115,8 @@
         676
       ],
       "flags": {},
-      "order": 14,
-      "mode": 0,
+      "order": 18,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -339,8 +339,8 @@
         632
       ],
       "flags": {},
-      "order": 17,
-      "mode": 2,
+      "order": 21,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "image",
@@ -493,8 +493,8 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 15,
-      "mode": 0,
+      "order": 19,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -559,8 +559,8 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 18,
-      "mode": 2,
+      "order": 22,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -625,8 +625,8 @@
         72
       ],
       "flags": {},
-      "order": 16,
-      "mode": 2,
+      "order": 20,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -668,8 +668,8 @@
         144
       ],
       "flags": {},
-      "order": 19,
-      "mode": 2,
+      "order": 23,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video_1",
@@ -731,8 +731,8 @@
         300.4333190917969
       ],
       "flags": {},
-      "order": 20,
-      "mode": 2,
+      "order": 24,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -799,8 +799,8 @@
         372
       ],
       "flags": {},
-      "order": 11,
-      "mode": 0,
+      "order": 15,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -927,8 +927,8 @@
         332
       ],
       "flags": {},
-      "order": 12,
-      "mode": 0,
+      "order": 16,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "string",
@@ -1038,7 +1038,7 @@
       ],
       "flags": {},
       "order": 2,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -1085,8 +1085,8 @@
         384
       ],
       "flags": {},
-      "order": 21,
-      "mode": 0,
+      "order": 25,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -1145,8 +1145,8 @@
       "id": 129,
       "type": "LoadImage",
       "pos": [
-        -4226.991758425783,
-        -200.49682860813493
+        -4252.291758425783,
+        -197.19682860813498
       ],
       "size": [
         225,
@@ -1185,7 +1185,8 @@
           "links": [
             231,
             225,
-            242
+            242,
+            247
           ]
         },
         {
@@ -1214,8 +1215,8 @@
       "id": 130,
       "type": "LoadImage",
       "pos": [
-        -3927.294047360556,
-        -164.14500768872506
+        -3930.924047360556,
+        -72.18500768872502
       ],
       "size": [
         225,
@@ -1252,7 +1253,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            232
+            232,
+            246
           ]
         },
         {
@@ -1281,8 +1283,8 @@
       "id": 132,
       "type": "BatchImagesNode",
       "pos": [
-        -3557.294047360556,
-        -174.14500768872506
+        -3564.9940473605557,
+        -147.74500768872508
       ],
       "size": [
         225,
@@ -1291,7 +1293,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1341,15 +1343,15 @@
       "id": 133,
       "type": "ImageListToImageBatch",
       "pos": [
-        -3203.739469025778,
-        -217.2772738081344
+        -3086.369469025778,
+        -324.96727380813445
       ],
       "size": [
         271.0833435058594,
         79.43333435058594
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1383,15 +1385,15 @@
       "id": 134,
       "type": "BatchImagePreview",
       "pos": [
-        -3197.9494690257775,
-        -41.07727380813509
+        -3138.109469025778,
+        -159.87727380813504
       ],
       "size": [
         305.29998779296875,
         104
       ],
       "flags": {},
-      "order": 9,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1434,8 +1436,8 @@
         420
       ],
       "flags": {},
-      "order": 22,
-      "mode": 0,
+      "order": 26,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -1595,7 +1597,7 @@
       ],
       "flags": {},
       "order": 5,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -1641,8 +1643,8 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 13,
-      "mode": 0,
+      "order": 17,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -1713,6 +1715,274 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 141,
+      "type": "SlotImageBatch",
+      "pos": [
+        -3750.315898182219,
+        -652.2615598744395
+      ],
+      "size": [
+        341.3333435058594,
+        420
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "character",
+          "name": "character",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 246
+        },
+        {
+          "localized_name": "costume",
+          "name": "costume",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prop",
+          "name": "prop",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "environment",
+          "name": "environment",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "product",
+          "name": "product",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "style",
+          "name": "style",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 247
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "batch",
+          "name": "batch",
+          "type": "IMAGE",
+          "links": [
+            248
+          ]
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "SlotImageBatch"
+      },
+      "widgets_values": [],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 142,
+      "type": "ImageListToImageBatch",
+      "pos": [
+        -3295.35589818222,
+        -596.2715598744405
+      ],
+      "size": [
+        271.0833435058594,
+        79.43333435058594
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 248
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            249
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "ImageListToImageBatch"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 143,
+      "type": "BatchImagePreview",
+      "pos": [
+        -2899.355898182219,
+        -557.7715598744405
+      ],
+      "size": [
+        305.29998779296875,
+        104
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 249
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            250
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "BatchImagePreview"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 144,
+      "type": "PreviewImage",
+      "pos": [
+        -2467.450776512218,
+        -976.6457694744403
+      ],
+      "size": [
+        380,
+        604
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 250
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PreviewImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1891,6 +2161,46 @@
       139,
       0,
       "STRING"
+    ],
+    [
+      246,
+      130,
+      0,
+      141,
+      1,
+      "IMAGE"
+    ],
+    [
+      247,
+      129,
+      0,
+      141,
+      7,
+      "IMAGE"
+    ],
+    [
+      248,
+      141,
+      0,
+      142,
+      0,
+      "IMAGE"
+    ],
+    [
+      249,
+      142,
+      0,
+      143,
+      0,
+      "IMAGE"
+    ],
+    [
+      250,
+      143,
+      0,
+      144,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1946,10 +2256,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 2.5937424601000023,
+      "scale": 0.2176291357901487,
       "offset": [
-        4277.12957484957,
-        172.76585612862453
+        5025.0316487040045,
+        1693.8046163954687
       ]
     },
     "ue_links": [],
