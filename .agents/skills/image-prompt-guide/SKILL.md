@@ -1,6 +1,6 @@
 ---
 name: image-prompt-guide
-description: Reference system prompt and best practices for multi-image prompt synthesis. Use when building or tuning an AI agent that analyzes multiple reference images and videos, audits an existing generated prompt, and outputs a refined prompt optimized for image or video generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, Qwen image edit, and Dreamina Seedance 2.0. Covers Reference Element Fusion (single-subject composite), Art Director Presentation Boards, Cinematic Action Storyboards, TV Commercial Storyboards, Cinematic Lifestyle Storyboards, Environment Reference Locks (I2V scene anchors), 3D CGI Animation Character Bibles, Seedance Video Prompt Engineering, Seedance Ad Video Prompt Engineering, single-subject locks, anti-collage enforcement, cross-model compatibility, and domain-agnostic prompt engineering. All templates follow a universal 6-slot reference mapping standard.
+description: Reference system prompt and best practices for multi-image prompt synthesis. Use when building or tuning an AI agent that analyzes multiple reference images and videos, audits an existing generated prompt, and outputs a refined prompt optimized for image or video generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, Qwen image edit, and Dreamina Seedance 2.0. Covers Reference Element Fusion (single-subject composite), Art Director Presentation Boards, Cinematic Action Storyboards, TV Commercial Storyboards, Cinematic Lifestyle Storyboards, Environment Reference Locks (I2V scene anchors), 3D CGI Animation Character Bibles, Seedance Video Prompt Engineering, Seedance Ad Video Prompt Engineering, single-subject locks, anti-collage enforcement, cross-model compatibility, and domain-agnostic prompt engineering. All templates follow a universal 6+1-slot reference mapping standard — 6 core semantic slots plus 1 optional creative/freeform slot.
 ---
 
 # Image Prompt Guide
@@ -59,9 +59,11 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 
 ## Universal Reference Slot Standard
 
-All templates in `templates_prompt/` follow a **strict 6-slot reference mapping standard**. This ensures that when a user swaps templates in the ComfyUI `PromptTemplateLoader` dropdown, the images wired to `Image 1` through `Image 6` (and videos wired to `Video 1`–`Video 3`) always carry the **same semantic meaning**. The LLM never has to guess what a reference image represents.
+All templates in `templates_prompt/` follow a **strict 6+1-slot reference mapping standard**. This ensures that when a user swaps templates in the ComfyUI `PromptTemplateLoader` dropdown, the images wired to `Image 1` through `Image 6` (and videos wired to `Video 1`–`Video 3`) always carry the **same semantic meaning**. The LLM never has to guess what a reference image represents.
 
-### The 6 Image Slots
+Image 7 is an **optional extended slot** for unstructured creative inspiration — landing pages, mood boards, composite references, or any visual that doesn't fit the 6 core semantics. It is explicitly freeform: the LLM interprets color, layout, typography, mood, and composition holistically rather than locking a single element.
+
+### The 6 Core Image Slots + 1 Creative Slot
 
 Every user prompt template must open with:
 
@@ -73,6 +75,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 ```
 
 ### Slot Semantics (Fixed Across All Templates)
@@ -85,16 +88,18 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 | **Image 4** | Environment / scene / background | Setting, architecture, lighting, atmosphere, spatial context |
 | **Image 5** | Product / brand / commercial element | Product hero shot, logo, brand color, packaging, commercial visual lock |
 | **Image 6** | Style / aesthetic / mood / material | Art direction, color palette, material quality, mood tone, CGI style |
+| **Image 7** | Creative / freeform / composite | Landing page, mood board, unstructured inspiration — holistic creative direction (optional) |
 
 ### Rules for Template Authors
 
-1. **Always include all 6 slots** in every template, even if some are not applicable. Mark unused slots with `(optional — not used in this template)`.
-2. **Never redefine slot semantics.** Image 1 is always "Character / subject reference" — never "Logo reference" or "Background reference."
+1. **Always include all 6 core slots** in every template, even if some are not applicable. Mark unused slots with `(optional — not used in this template)`.
+2. **Always include Image 7** in every template, marked as `(optional — not used if no creative reference provided)`.
+3. **Never redefine slot semantics.** Image 1 is always "Character / subject reference" — never "Logo reference" or "Background reference." Image 7 is always "Creative / freeform / composite reference."
 3. **Video slots are flexible** but should follow the convention:
    - Video 1: Primary motion / choreography / action reference
    - Video 2: Camera motion reference
    - Video 3: VFX, pacing, timing, or transition reference
-4. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly."
+4. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly." For Image 7, use holistic locks: "The overall visual approach follows the creative reference in Image 7 — adopt its color palette, layout energy, and compositional style."
 5. **Template naming** in `PromptTemplateLoader` uses the format: `category/file_name: Template Letter - Template Name`. The system prompt uses `category/file_name: system_prompt`.
 
 ### New Template Checklist
@@ -104,9 +109,10 @@ When creating a new template in `templates_prompt/`:
 - [ ] File is a `.md` in the correct subfolder (`video/`, `storyboard/`, `character/`, `presentation/`)
 - [ ] Contains `## The System Prompt` section with a code block for `PromptTemplateLoader: system_prompt`
 - [ ] Contains `### Template A: Name` (or A1, A2, B, C, etc.) with a code block for `PromptTemplateLoader: A - Name`
-- [ ] Every user template code block starts with the **exact** 6-slot `Reference mapping (SLOT FORMAT — swap any images into these slots):` block
-- [ ] All 6 image slots use the **exact** universal semantics listed above
-- [ ] Unused slots are marked `(optional — not used in this template)`
+- [ ] Every user template code block starts with the **exact** 6+1-slot `Reference mapping (SLOT FORMAT — swap any images into these slots):` block
+- [ ] All 6 core image slots + Image 7 use the **exact** universal semantics listed above
+- [ ] Unused core slots are marked `(optional — not used in this template)`
+- [ ] Image 7 is marked `(optional — not used if no creative reference provided)`
 - [ ] Prompt output is wrapped in `[[PROMPT]]` / `[[/PROMPT]]` tags
 - [ ] No markdown, bullets, or line breaks inside the prompt body
 - [ ] Word count guidance is provided per pattern

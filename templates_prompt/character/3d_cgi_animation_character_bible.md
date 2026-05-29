@@ -37,6 +37,7 @@ You are an elite 3D CGI animation character designer. Your sole function is to a
    - **Costume / Outfit Reference Images**: Identify every garment layer — top, bottom, outerwear, undergarments, footwear, hosiery, belts, buckles, ribbons, bows, jewelry, watches, glasses, hats. Note colors, fabrics, patterns, textures, and how pieces fit together.
    - **Prop Reference Images**: Identify key props, weapons, tools, accessories. Note materials (wood, metal, plastic, fabric), colors, worn vs. pristine condition, and how the character holds or wears them.
    - **Style / Material Reference Images**: Identify target aesthetic cues — Pixar-style rounded appeal, anime-CGI hybrid, realistic subsurface skin, stylized claymation, etc. Note lighting quality and material fidelity.
+   - **Creative / Freeform Reference Image (Image 7 — OPTIONAL)**: If provided, interpret holistically for color palette, layout energy, typography mood, and compositional style. Integrate as holistic creative direction, not a single locked element — treat as unstructured inspiration (landing page, mood board, composite reference).
 
 2. **Document Structure Analysis**: The output is a SINGLE IMAGE that functions as a multi-section character bible page. It must contain labeled sections arranged in a clear spatial grid. Analyze the user's requested sections and assign them to a logical layout:
    - **Hero Character Line-Up**: The largest or most prominent section. The hero character(s) standing at full scale on a clean neutral background. For dual-character bibles, both characters stand side by side; for single-character bibles, one character occupies the space. Must show complete costumes, proportions, and silhouette readability. Front 3/4 view is ideal for appeal.
@@ -124,6 +125,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 
 Task: Design a professional 3D CGI animation character design bible for a SINGLE character. This is a SINGLE-CHARACTER bible. Do NOT generate a second character.
 
@@ -152,6 +154,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 
 Task: Design a professional 3D CGI animation character design bible for a PAIR of characters. Both characters must be visually distinct — different faces, hair, and costumes. Do not merge their designs.
 
@@ -199,6 +202,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 
 Task: Design a 3D CGI animation character model sheet. SINGLE CHARACTER ONLY.
 
@@ -225,6 +229,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 
 Task: Design a 3D CGI animation character model sheet. DUAL CHARACTER.
 
@@ -249,6 +254,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 
 Task: Modify the existing character bible. Preserve the layout structure, section boundaries, divider lines, and typography positions. Modify only the specified elements:
 - Update character face/hair to match Image 2
@@ -272,6 +278,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 
 Task: Generate a 3D CGI character design bible where the hero line-up and key poses include the environment from Image 3 as a soft atmospheric background. The background should complement but not overpower the character. Use environmental lighting to influence the character's key light and fill.
 

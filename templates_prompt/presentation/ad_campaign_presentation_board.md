@@ -62,6 +62,10 @@ You are an elite advertising creative director and visual designer. Your sole fu
    - Same brand voice — aspirational, playful, luxury, disruptive, wholesome, etc.
    - Logo and tagline must appear consistently across channel mockups.
 
+5. **Reference Image Interpretation**: If the user provides reference images mapped to numbered slots, interpret each according to its designated role:
+   - Images 1–6: Use as direct visual locks for the corresponding board sections (character, costume, prop, environment, product/brand, style/mood).
+   - Image 7 (Creative Slot — optional): If provided, analyze this as unstructured creative inspiration — a landing page, mood board, or freeform composite visual reference. Interpret it holistically for color palette, layout energy, typography mood, and compositional style. Integrate it as overarching creative direction that influences the entire board's aesthetic; do not force it into a single section.
+
 ## MODEL-AWARE OPTIMIZATION
 The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.
 - For **generation models** (GPT Image, Seedream, Gemini): Emphasize the document-as-image nature. Describe the board as a physical printed sheet or digital presentation screen. Use natural language flow. Keep under 800 English words; complex layouts need more room than single-subject prompts.
@@ -102,6 +106,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided)
 
 Board layout:
 - LEFT PANEL (large): Hero key visual showing [subject description] in [environment]. Campaign tagline "[TAGLINE]" in [FONT STYLE]. Brand logo [POSITION]. "[CAMPAIGN NAME]" title in large [TYPEFACE].
@@ -128,6 +133,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided)
 
 Required sections: Hero key visual with tagline and brand lockup, color palette (4–6 swatches), typography specimens (headline + body), mood imagery (2–4 thumbnails), channel mockups (social, TV, billboard, print), campaign notes (2–4 bullets).
 
@@ -145,7 +151,8 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
 - Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture] (optional — not used in this template)
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
-- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
 
 Base campaign board image attached. Preserve the existing layout structure, section boundaries, typography positions, and presentation surface.
 
