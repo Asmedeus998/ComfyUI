@@ -19,7 +19,7 @@
         "collapsed": false
       },
       "order": 53,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -184,7 +184,7 @@
       },
       "widgets_values": [
         "",
-        298620835,
+        662569457,
         "randomize",
         "high",
         "auto",
@@ -209,7 +209,7 @@
       ],
       "flags": {},
       "order": 54,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -258,7 +258,7 @@
         "collapsed": false
       },
       "order": 0,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "image",
@@ -325,7 +325,7 @@
         "collapsed": false
       },
       "order": 41,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "value",
@@ -379,7 +379,7 @@
         "collapsed": false
       },
       "order": 1,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "image",
@@ -446,7 +446,7 @@
         "collapsed": false
       },
       "order": 2,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "image",
@@ -511,7 +511,7 @@
       ],
       "flags": {},
       "order": 19,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -553,7 +553,7 @@
       ],
       "flags": {},
       "order": 22,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -597,7 +597,7 @@
       ],
       "flags": {},
       "order": 25,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -654,6 +654,26 @@
           "link": 404
         },
         {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "slot_map"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "slot_labels"
+          },
+          "link": null
+        },
+        {
           "localized_name": "model",
           "name": "model",
           "shape": 7,
@@ -705,6 +725,8 @@
         "",
         "",
         "",
+        300,
+        "",
         300
       ],
       "color": "#2F4F4F",
@@ -725,7 +747,7 @@
         "collapsed": false
       },
       "order": 33,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -771,7 +793,7 @@
         "collapsed": false
       },
       "order": 31,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -817,7 +839,7 @@
         "collapsed": false
       },
       "order": 32,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "string",
@@ -936,7 +958,7 @@
       ],
       "flags": {},
       "order": 40,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -989,7 +1011,7 @@
       ],
       "flags": {},
       "order": 46,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "",
@@ -1027,7 +1049,7 @@
       ],
       "flags": {},
       "order": 3,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -1074,7 +1096,7 @@
       ],
       "flags": {},
       "order": 4,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -1180,7 +1202,7 @@
         "collapsed": false
       },
       "order": 6,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "image",
@@ -1409,7 +1431,7 @@
       },
       "widgets_values": [
         "",
-        980369601,
+        1540729164,
         "randomize",
         "high",
         "auto",
@@ -1592,6 +1614,26 @@
           "link": 422
         },
         {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "slot_map"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "slot_labels"
+          },
+          "link": null
+        },
+        {
           "localized_name": "model",
           "name": "model",
           "shape": 7,
@@ -1642,6 +1684,8 @@
       "widgets_values": [
         "",
         "",
+        "",
+        300,
         "",
         300
       ],
@@ -2201,7 +2245,7 @@
         "collapsed": false
       },
       "order": 49,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -2365,7 +2409,7 @@
       },
       "widgets_values": [
         "",
-        1491953665,
+        729995388,
         "randomize",
         "high",
         "auto",
@@ -2390,7 +2434,7 @@
       ],
       "flags": {},
       "order": 51,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -2439,7 +2483,7 @@
         "collapsed": false
       },
       "order": 42,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "value",
@@ -2491,7 +2535,7 @@
       ],
       "flags": {},
       "order": 27,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -2548,6 +2592,26 @@
           "link": 437
         },
         {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "slot_map"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "slot_labels"
+          },
+          "link": null
+        },
+        {
           "localized_name": "model",
           "name": "model",
           "shape": 7,
@@ -2599,6 +2663,8 @@
         "",
         "",
         "",
+        300,
+        "",
         300
       ],
       "color": "#2F4F4F",
@@ -2619,7 +2685,7 @@
         "collapsed": false
       },
       "order": 36,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -2665,7 +2731,7 @@
         "collapsed": false
       },
       "order": 34,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -2711,7 +2777,7 @@
         "collapsed": false
       },
       "order": 35,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "string",
@@ -2830,7 +2896,7 @@
       ],
       "flags": {},
       "order": 43,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -2883,7 +2949,7 @@
       ],
       "flags": {},
       "order": 47,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "",
@@ -2926,7 +2992,7 @@
       ],
       "flags": {},
       "order": 9,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "template",
@@ -2957,7 +3023,7 @@
         }
       },
       "widgets_values": [
-        "character/3d cgi animation character bible: system_prompt"
+        "character/ad character reference sheet: system_prompt"
       ]
     },
     {
@@ -2973,7 +3039,7 @@
       ],
       "flags": {},
       "order": 10,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "template",
@@ -3004,7 +3070,7 @@
         }
       },
       "widgets_values": [
-        "character/3d cgi animation character bible: A3 - Single Character Bible with Outfit Swap"
+        "character/ad character reference sheet: A - Full Ad Character Reference Sheet (Recommended)"
       ]
     },
     {
@@ -3020,7 +3086,7 @@
       ],
       "flags": {},
       "order": 23,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -3065,7 +3131,7 @@
         "collapsed": false
       },
       "order": 20,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "label": "image0",
@@ -3247,7 +3313,7 @@
       ],
       "flags": {},
       "order": 28,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -3599,7 +3665,7 @@
       ],
       "flags": {},
       "order": 16,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -3721,6 +3787,18 @@
           "name": "creative_video",
           "type": "VIDEO",
           "links": null
+        },
+        {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "type": "STRING",
+          "links": null
         }
       ],
       "properties": {
@@ -3748,7 +3826,7 @@
       ],
       "flags": {},
       "order": 26,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -3874,6 +3952,18 @@
           "name": "creative_video",
           "type": "VIDEO",
           "links": null
+        },
+        {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "type": "STRING",
+          "links": null
         }
       ],
       "properties": {
@@ -3903,7 +3993,7 @@
         "collapsed": false
       },
       "order": 12,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "image",
@@ -3970,7 +4060,7 @@
         "collapsed": false
       },
       "order": 13,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "image",
@@ -4035,7 +4125,7 @@
       ],
       "flags": {},
       "order": 17,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -4158,6 +4248,18 @@
           "localized_name": "creative_video",
           "name": "creative_video",
           "type": "VIDEO",
+          "links": null
+        },
+        {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "type": "STRING",
           "links": null
         }
       ],
@@ -4443,6 +4545,18 @@
           "localized_name": "creative_video",
           "name": "creative_video",
           "type": "VIDEO",
+          "links": null
+        },
+        {
+          "localized_name": "slot_map",
+          "name": "slot_map",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "slot_labels",
+          "name": "slot_labels",
+          "type": "STRING",
           "links": null
         }
       ],
@@ -5046,10 +5160,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.37974983358329684,
+      "scale": 0.2357947691000356,
       "offset": [
-        -614.6403050827626,
-        4335.80236727924
+        -451.67275929514636,
+        4900.169426634448
       ]
     }
   },
