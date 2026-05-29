@@ -129,11 +129,13 @@ The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Goog
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character/subject reference — [describe what Image 1 shows]
-- Image 2: Costume/outfit reference — [describe what Image 2 shows]
-- Image 3: Weapon/prop reference — [describe what Image 3 shows]
-- Image 4: Environment/scene reference — [describe what Image 4 shows]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Motion reference — [describe the action/movement in the video: fight, dance, stunt, etc.]
 - Video 2 (optional): Camera motion reference — [describe if using a separate video for camera work]
 - Video 3 (optional): Impact/timing reference — [describe if using a separate video for heavy beats or rhythm]
@@ -148,9 +150,13 @@ Grid: [4×3 landscape / 2×3 / 3×4 portrait / etc.]. Rough gestural sketch styl
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character reference — [describe]
-- Image 2: Environment reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Camera motion reference — [describe the camera movement: orbit, dolly, crane, drone, handheld, etc.]
 - Video 2 (optional): Action/motion reference — [describe character action if using a separate video for motion]
 
@@ -166,11 +172,13 @@ Grid: [specify]. Rough sketch style. Full annotation system. Wrap the final prom
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character front view / main subject — [describe]
-- Image 2: Character side/back view or costume detail — [describe]
-- Image 3: Weapon / prop / accessory — [describe]
-- Image 4: Scene background / environment — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Core choreography reference — [describe the action/movement]
 - Video 2 (optional): Camera motion reference — [describe the camera work]
 - Video 3 (optional): Impact/timing reference — [describe heavy beats or rhythm]
@@ -185,11 +193,13 @@ Grid: 4×3 landscape (12 panels). Rough gestural pencil/ink sketches. Full annot
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Fighter A reference — [describe]
-- Image 2: Fighter B reference (if duel) — [describe, or omit for solo]
-- Image 3: Weapon/prop reference — [describe]
-- Image 4: Environment reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Fight choreography reference — [describe the combat sequence]
 - Video 2 (optional): Camera reference — [describe]
 
@@ -203,10 +213,13 @@ Annotations must show: BLUE for body motion paths, GREEN for weapon arcs, ORANGE
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Vehicle reference — [describe]
-- Image 2: Driver/pilot character reference — [describe]
-- Image 3: Environment / track reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Stunt motion reference — [describe the vehicle stunt or chase]
 - Video 2 (optional): Camera reference — [describe]
 
@@ -220,10 +233,13 @@ Annotation color key adapted for vehicles: RED (camera), BLUE (vehicle trajector
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Performer reference — [describe]
-- Image 2: Costume reference — [describe]
-- Image 3: Stage/environment reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Dance/performance reference — [describe the choreography]
 - Video 2 (optional): Camera reference — [describe]
 
@@ -237,12 +253,16 @@ Annotations: BLUE for body flow and spin trajectories, GREEN for costume/cloth m
 ```
 Analyze the attached reference videos and images.
 
-Reference mapping:
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Opening action clip — [describe the existing sequence]
 - Video 2: Closing action clip — [describe the target ending]
 - Video 3 (optional): Motion style reference — [describe]
-- Image 1: Character reference — [describe]
-- Image 2: Environment reference — [describe]
 
 Task: Generate a cinematic action storyboard prompt for a bridge sequence that connects Video 1 to Video 2. Design [N] panels that seamlessly continue the action from Video 1's ending pose into Video 2's opening pose. The bridge must preserve character consistency, spatial continuity, and the motion language of the original clips.
 
@@ -258,12 +278,15 @@ Grid: [specify]. Rough sketch style. Full annotations. Spatial continuity enforc
 ```
 Analyze the attached reference videos and images.
 
-Reference mapping:
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Base action to adapt — [describe the choreography to modify]
 - Video 2 (optional): New motion reference — [describe replacement motion]
-- Image 1: Character reference — [describe]
-- Image 2: New prop/weapon reference — [describe if replacing]
-- Image 3: New environment reference — [describe if changing setting]
 
 Task: Generate a cinematic action storyboard prompt that adapts the base action from Video 1 with the following modifications:
 - Add: [new action beats to insert]
@@ -283,12 +306,12 @@ Wrap the final prompt in [[PROMPT]] tags.
 Analyze the attached reference images and videos.
 
 Reference mapping (SLOT FORMAT — swap any images into these slots):
-- Image 1: Fighter A character reference — [describe face, hair color and style, body type, skin tone, distinguishing features]
-- Image 2: Fighter A costume reference — [describe the complete outfit layer by layer: top, bottom, outerwear, footwear, accessories, jewelry, colors, fabrics]
-- Image 3: Fighter B character reference — [describe face, hair color and style, body type, skin tone, distinguishing features]
-- Image 4: Fighter B costume reference — [describe the complete outfit layer by layer: top, bottom, outerwear, footwear, accessories, jewelry, colors, fabrics]
-- Image 5: Product / brand / prop reference — [describe the item to integrate: shape, color, material, logo, size]
-- Image 6: Environment / background reference — [describe the setting: indoor/outdoor, architecture, lighting, atmosphere]
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: **PRIMARY — Full fight choreography source video. I will TRANSCRIBE this frame by frame.**
 - Video 2 (optional): Camera motion reference — [describe camera work: orbit, tracking, push-in, handheld, etc.]
 

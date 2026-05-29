@@ -106,11 +106,13 @@ You are an elite video generation prompt engineer specializing in Dreamina Seeda
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character/subject reference — [describe what Image 1 shows]
-- Image 2: Costume/outfit reference — [describe what Image 2 shows]
-- Image 3: Prop or style reference — [describe what Image 3 shows]
-- Image 4: Scene/environment reference — [describe what Image 4 shows]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Motion reference — [describe the action/movement in the video]
 - Video 2 (optional): Camera motion reference — [describe if using a separate video for camera]
 - Video 3 (optional): VFX reference — [describe if using a separate video for effects]
@@ -127,9 +129,13 @@ Include: subject lock, detailed motion description, environment, aesthetic style
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Scene/location reference — [describe what Image 1 shows]
-- Image 2: Subject reference — [describe what Image 2 shows]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Camera motion reference — [describe the camera movement: orbit, dolly, crane, drone, handheld, etc.]
 - Video 2 (optional): Motion reference — [describe character action if using a separate video for motion]
 
@@ -145,8 +151,13 @@ Include: subject, action, environment, aesthetic, and detailed camera movement d
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character/subject reference — [describe what Image 1 shows]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture] (optional — not used in this template)
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: VFX reference — [describe the special effect: particles, energy, transformation, glow, etc.]
 - Video 2 (optional): Motion reference — [describe if the action should follow a separate motion reference]
 - Video 3 (optional): Camera motion reference — [describe if camera should follow a separate reference]
@@ -163,11 +174,13 @@ Include: subject, action, VFX description, environment, aesthetic, and camera wo
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character front view / main subject — [describe]
-- Image 2: Character side/back view or costume detail — [describe]
-- Image 3: Prop / product / accessory — [describe]
-- Image 4: Scene background / environment — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Motion reference — [describe the action/movement]
 - Video 2 (optional): Camera motion reference — [describe the camera work]
 - Video 3 (optional): VFX reference — [describe the special effects]
@@ -182,10 +195,13 @@ Write a cinematic, flowing scene description. Be specific about every visual ele
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character A reference — [describe]
-- Image 2: Character B reference — [describe]
-- Image 3: Scene/environment reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [Character A: describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [Character A's garments, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [Character B: describe face, hair, body type, skin tone, distinguishing features]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Interaction motion reference — [describe]
 - Video 2 (optional): Camera motion reference — [describe]
 
@@ -201,7 +217,13 @@ Include: subject descriptions for both characters, interaction/motion, environme
 ```
 Analyze the attached reference videos.
 
-Reference mapping:
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features] (optional — not used in this template)
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture] (optional — not used in this template)
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Base video to extend — [describe the existing content]
 - Video 2 (optional): Style/motion reference for the extension — [describe if the new segment should adopt motion from another video]
 
@@ -219,11 +241,16 @@ Include: subject consistency, motion continuity, environment match, aesthetic lo
 ```
 Analyze the attached reference videos and images.
 
-Reference mapping:
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features] (optional — not used in this template)
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Opening clip — [describe]
 - Video 2: Middle clip or transition style reference — [describe]
 - Video 3: Closing clip — [describe]
-- Image 1: Scene reference (if needed) — [describe]
 
 Task: Generate a Seedance 2.0 video prompt for a transition segment that bridges Video 1 into Video 3. If Video 2 is provided, use it as a motion or transition-style reference for the bridge segment. The connecting footage should logically and visually link the end of Video 1 to the beginning of Video 3. Preserve character consistency, environment continuity, and camera style across the bridge.
 
@@ -237,10 +264,15 @@ Include: subject, bridging action, environment, aesthetic, camera movement, and 
 ```
 Analyze the attached reference videos and images.
 
-Reference mapping:
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [new element to add or replace — describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture] (optional — not used in this template)
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Video 1: Base video to edit — [describe]
 - Video 2 (optional): Reference for new motion/camera style — [describe]
-- Image 1: New element reference (if adding/replacing) — [describe]
 
 Task: Generate a Seedance 2.0 video editing prompt for Video 1.
 - Add: [Element to add] at [timestamp/location description]
@@ -259,11 +291,14 @@ Wrap the final prompt in [[PROMPT]] tags.
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Storyboard grid — A grid of rough sketch panels showing the shot sequence for the full scene. This 15-second segment covers only panels [list panel numbers, e.g., 1 through 3].
-- Image 2: Character A reference — [describe appearance, outfit, distinguishing features]
-- Image 3: Character B reference — [describe appearance, outfit, distinguishing features]
-- Image 4 (optional): Environment / scene reference — [describe setting, lighting, atmosphere]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [Character A: describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [Character A's garments, colors, fabrics, materials] (optional — not used in this template)
+- Image 3: Prop / accessory / secondary subject reference — [Character B: describe face, hair, body type, skin tone, distinguishing features]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
+- Storyboard grid: A grid of rough sketch panels showing the shot sequence for the full scene. This 15-second segment covers only panels [list panel numbers, e.g., 1 through 3].
 - Video 1: Motion / choreography reference — [describe the fight/action movement]
 - Video 2 (optional): Camera motion reference — [describe if using separate camera reference]
 

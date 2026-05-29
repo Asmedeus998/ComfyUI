@@ -117,11 +117,13 @@ The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Goog
 ```
 Analyze the attached reference images.
 
-Reference mapping:
-- Image 1: Main character reference — [describe face, hair, body, and original clothing shown in the image]
-- Image 2: Costume / outfit reference — [describe the complete outfit if using a separate clothing reference]
-- Image 3: Prop / accessory reference — [describe key prop, weapon, tool, or accessory]
-- Image 4: Style / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, tool, or accessory]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 
 Task: Design a professional 3D CGI animation character design bible for a SINGLE character. This is a SINGLE-CHARACTER bible. Do NOT generate a second character.
 
@@ -143,13 +145,13 @@ Wrap the final prompt in [[PROMPT]] tags.
 ```
 Analyze the attached reference images.
 
-Reference mapping:
-- Image 1: Character A reference — [describe face, hair, body, original clothing]
-- Image 2: Character B reference — [describe face, hair, body, original clothing]
-- Image 3: Costume reference for Character A — [complete outfit description if separate from character ref]
-- Image 4: Costume reference for Character B — [complete outfit description if separate from character ref]
-- Image 5: Prop / accessory reference — [key prop]
-- Image 6: Style reference — [target aesthetic]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features for Character A]
+- Image 2: Costume / outfit / product reference — [describe garments, colors, fabrics, materials for Character A or B]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, tool, or Character B]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 
 Task: Design a professional 3D CGI animation character design bible for a PAIR of characters. Both characters must be visually distinct — different faces, hair, and costumes. Do not merge their designs.
 
@@ -190,11 +192,13 @@ Wrap the final prompt in [[PROMPT]] tags.
 ```
 Analyze the attached reference images.
 
-Reference mapping:
-- Image 1: Main character reference — [describe]
-- Image 2: Costume reference — [describe if separate outfit]
-- Image 3: Prop reference — [describe]
-- Image 4: Style reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, tool, or accessory]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 
 Task: Design a 3D CGI animation character model sheet. SINGLE CHARACTER ONLY.
 
@@ -214,11 +218,13 @@ Wrap the final prompt in [[PROMPT]] tags.
 ```
 Analyze the attached reference images.
 
-Reference mapping:
-- Image 1: Character A reference — [describe]
-- Image 2: Character B reference — [describe]
-- Image 3: Prop reference — [describe]
-- Image 4: Style reference — [describe]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features for Character A]
+- Image 2: Costume / outfit / product reference — [describe garments, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, weapon, tool, or Character B]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 
 Task: Design a 3D CGI animation character model sheet. DUAL CHARACTER.
 
@@ -236,11 +242,13 @@ Wrap the final prompt in [[PROMPT]] tags.
 ```
 Analyze the attached reference images.
 
-Reference mapping:
-- Image 1: Existing bible base — [describe what to preserve]
-- Image 2: New character face reference — [describe updated face/hair]
-- Image 3: New costume reference — [describe updated outfit]
-- Image 4: New prop reference — [describe updated prop]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe existing bible base or face/hair to preserve]
+- Image 2: Costume / outfit / product reference — [describe updated outfit or costume reference]
+- Image 3: Prop / accessory / secondary subject reference — [describe updated prop or accessory]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 
 Task: Modify the existing character bible. Preserve the layout structure, section boundaries, divider lines, and typography positions. Modify only the specified elements:
 - Update character face/hair to match Image 2
@@ -257,11 +265,13 @@ Wrap the final prompt in [[PROMPT]] tags.
 ```
 Analyze the attached reference images.
 
-Reference mapping:
-- Image 1: Character reference — [describe face, hair, body]
-- Image 2: Costume reference — [describe complete outfit]
-- Image 3: Environment reference — [describe setting, lighting, atmosphere]
-- Image 4: Style reference — [describe target aesthetic]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 
 Task: Generate a 3D CGI character design bible where the hero line-up and key poses include the environment from Image 3 as a soft atmospheric background. The background should complement but not overpower the character. Use environmental lighting to influence the character's key light and fill.
 

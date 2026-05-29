@@ -115,6 +115,14 @@ The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Goog
 ### Template A: Full Lifestyle Montage with All Panels Defined (Recommended)
 
 ```
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+
 Generate a cinematic lifestyle storyboard grid — a 3×3 photorealistic daily life montage of one character.
 
 Title: "[TITLE TEXT]" in [TYPOGRAPHY STYLE] at the top.
@@ -144,6 +152,14 @@ Overall: Photorealistic cinematic film stills. 35mm photography aesthetic. [COLO
 ### Template B: Minimal Template with Auto-Scenes
 
 ```
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+
 Generate a cinematic lifestyle storyboard grid for a character-driven daily life montage.
 
 Grid: 3×3. 9 panels. Clean white background. Thin borders. Small panel numbers.
@@ -164,6 +180,14 @@ Reference images attached for character face, costume, and mood reference.
 ### Template C: Editing an Existing Board (for Grok / Qwen)
 
 ```
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — (optional — not used in this template)
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+
 Base lifestyle storyboard image attached. Preserve the grid structure, white background, panel borders, caption layout, and overall mood.
 
 Reference images for character update and new scene locations attached.

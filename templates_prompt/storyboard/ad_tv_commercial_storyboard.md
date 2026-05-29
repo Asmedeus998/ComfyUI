@@ -122,6 +122,14 @@ The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Goog
 ```
 Generate a TV commercial storyboard document for a [DURATION]-second product advertisement.
 
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+
 Header: Product "[PRODUCT NAME]", campaign theme "[TAGLINE]", Scene [X] of [Y], duration [DURATION] seconds, total commercial [TOTAL DURATION] ([SCENES] scenes), media type [TV COMMERCIAL / SOCIAL AD / PRODUCT VIDEO], visual style [STYLE], pacing [FAST / MODERATE / SLOW]. Include [COLOR] brand logo [POSITION].
 
 Scene objective: [One sentence goal].
@@ -144,6 +152,14 @@ Art quality: Photorealistic commercial frames. Cinematic lighting. Premium produ
 ```
 Generate a TV commercial storyboard document for a [DURATION]-second product advertisement.
 
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+
 Header: Product "[PRODUCT NAME]", campaign theme "[TAGLINE]", Scene [X] of [Y], media type TV COMMERCIAL, visual style [STYLE], pacing [PACING]. Include brand logo.
 
 Scene objective: [One sentence goal].
@@ -157,16 +173,20 @@ Per shot provide: shot number, name, timecode, visual description, VO line, SFX,
 Bottom strip: KEY MESSAGE, VISUAL NOTES, BRANDING ELEMENTS, NEXT SCENE PREVIEW.
 
 Art quality: Photorealistic commercial frames. Cinematic product photography. Premium lifestyle shots. Professional typography and text overlays.
-
-Reference images attached for product, lifestyle context, and brand style.
 ```
 
 ### Template C: Editing an Existing Board (for Grok / Qwen)
 
 ```
-Base commercial storyboard image attached. Preserve the table structure, column headers, header bar, bottom summary strip, and document layout.
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 
-Reference images for product update, new lifestyle shots, and revised branding attached.
+Base commercial storyboard image attached. Preserve the table structure, column headers, header bar, bottom summary strip, and document layout.
 
 Task: Modify the shot thumbnails, dialogue/voiceover text, and product imagery within each row to match the new campaign. Keep the same table format, column headers, duration column styling, and bottom strip structure. Update the header with new product name, campaign theme, and scene info. Maintain branding consistency across all shots. Output a prompt describing the updated commercial storyboard.
 ```

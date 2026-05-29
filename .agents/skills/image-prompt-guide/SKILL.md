@@ -1,6 +1,6 @@
 ---
 name: image-prompt-guide
-description: Reference system prompt and best practices for multi-image prompt synthesis. Use when building or tuning an AI agent that analyzes multiple reference images, audits an existing generated prompt, and outputs a refined prompt optimized for image generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit. Covers Reference Element Fusion (single-subject composite), Art Director Presentation Boards (multi-section documents), Cinematic Action Storyboards (multi-panel rough sketch grids with motion annotations), TV Commercial Storyboards (structured production tables with audio-visual metadata), Cinematic Lifestyle Storyboards (photorealistic character-driven daily life montages), Environment Reference Locks (I2V scene anchors), single-subject locks, anti-collage enforcement, cross-model compatibility, and domain-agnostic prompt engineering.
+description: Reference system prompt and best practices for multi-image prompt synthesis. Use when building or tuning an AI agent that analyzes multiple reference images and videos, audits an existing generated prompt, and outputs a refined prompt optimized for image or video generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, Qwen image edit, and Dreamina Seedance 2.0. Covers Reference Element Fusion (single-subject composite), Art Director Presentation Boards, Cinematic Action Storyboards, TV Commercial Storyboards, Cinematic Lifestyle Storyboards, Environment Reference Locks (I2V scene anchors), 3D CGI Animation Character Bibles, Seedance Video Prompt Engineering, Seedance Ad Video Prompt Engineering, single-subject locks, anti-collage enforcement, cross-model compatibility, and domain-agnostic prompt engineering. All templates follow a universal 6-slot reference mapping standard.
 ---
 
 # Image Prompt Guide
@@ -41,6 +41,8 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 | **Cinematic Lifestyle Storyboard** | Multi-panel photo grid | Photorealistic character-driven daily life montage with cinematic film stills, poetic captions, and mood-locked color grade. **Photorealistic, NOT sketches, grid required.** | [`reference/cinematic-lifestyle-storyboard.md`](reference/cinematic-lifestyle-storyboard.md) |
 | **Environment Reference Lock** | Multi-section reference board | Spatial anchor for I2V: multi-angle room views, prop detail callouts, technical spec bar. **Locks background consistency for video generation.** | [`reference/environment-reference-lock.md`](reference/environment-reference-lock.md) |
 | **3D CGI Animation Character Bible** | Multi-section design document | Pre-production character bible with hero line-ups, expression sheets, action poses, prop details, color palette & materials, scale reference, and bios. **Pixar-quality 3D CGI with strict consistency locks.** | [`reference/3d-cgi-animation-character-bible.md`](reference/3d-cgi-animation-character-bible.md) |
+| **Seedance Video Prompt Engineer** | Video generation prompt | Single continuous video segment prompt for Dreamina Seedance 2.0. Subject + motion + camera + audio + reference locks. **150–800 words, flowing paragraph.** | [`templates_prompt/video/seedance_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_video_prompt_engineer.md) |
+| **Seedance Ad Video Prompt Engineer** | Advertisement video prompt | Commercial video segment prompt with product placement, branding, CTA, and timed narrative arcs for Seedance 2.0. **200–700 words, flowing paragraph.** | [`templates_prompt/video/seedance_ad_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_ad_video_prompt_engineer.md) |
 | **Prompt Audit** | Refined prompt | Multiple refs + Existing prompt. Corrected and enriched prompt. | Depends on target pattern above |
 
 ## Critical Distinction
@@ -54,6 +56,60 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 | **Annotations** | None | Minimal | Heavy colored arrows (camera, body, prop, impact, timing) | None — audio/camera metadata in table cells instead | None — poetic captions below panels instead | None — prop callout panels instead |
 | **Word Count** | 150–300 words | 300–600 words | 400–800 words | 500–900 words | 500–900 words | 300–600 words |
 | **Anti-Pattern** | Collages / grids | Section overlap / missing panels | Polish drift / character drift / missing arrows | Sketch drift / missing audio / weak CTA / bad branding | Face drift / mood break / sketch quality / missing captions | Spatial drift / missing callouts / no spec bar |
+
+## Universal Reference Slot Standard
+
+All templates in `templates_prompt/` follow a **strict 6-slot reference mapping standard**. This ensures that when a user swaps templates in the ComfyUI `PromptTemplateLoader` dropdown, the images wired to `Image 1` through `Image 6` (and videos wired to `Video 1`–`Video 3`) always carry the **same semantic meaning**. The LLM never has to guess what a reference image represents.
+
+### The 6 Image Slots
+
+Every user prompt template must open with:
+
+```
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
+```
+
+### Slot Semantics (Fixed Across All Templates)
+
+| Slot | Meaning | Always Maps To |
+|------|---------|---------------|
+| **Image 1** | Primary subject / character | Face, hair, body proportions, skin tone, distinguishing features |
+| **Image 2** | Costume / outfit / product packaging | Clothing, garments, product shape, colors, fabrics, materials |
+| **Image 3** | Prop / accessory / secondary subject | Weapons, tools, jewelry, secondary character, additional visual element |
+| **Image 4** | Environment / scene / background | Setting, architecture, lighting, atmosphere, spatial context |
+| **Image 5** | Product / brand / commercial element | Product hero shot, logo, brand color, packaging, commercial visual lock |
+| **Image 6** | Style / aesthetic / mood / material | Art direction, color palette, material quality, mood tone, CGI style |
+
+### Rules for Template Authors
+
+1. **Always include all 6 slots** in every template, even if some are not applicable. Mark unused slots with `(optional — not used in this template)`.
+2. **Never redefine slot semantics.** Image 1 is always "Character / subject reference" — never "Logo reference" or "Background reference."
+3. **Video slots are flexible** but should follow the convention:
+   - Video 1: Primary motion / choreography / action reference
+   - Video 2: Camera motion reference
+   - Video 3: VFX, pacing, timing, or transition reference
+4. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly."
+5. **Template naming** in `PromptTemplateLoader` uses the format: `category/file_name: Template Letter - Template Name`. The system prompt uses `category/file_name: system_prompt`.
+
+### New Template Checklist
+
+When creating a new template in `templates_prompt/`:
+
+- [ ] File is a `.md` in the correct subfolder (`video/`, `storyboard/`, `character/`, `presentation/`)
+- [ ] Contains `## The System Prompt` section with a code block for `PromptTemplateLoader: system_prompt`
+- [ ] Contains `### Template A: Name` (or A1, A2, B, C, etc.) with a code block for `PromptTemplateLoader: A - Name`
+- [ ] Every user template code block starts with the **exact** 6-slot `Reference mapping (SLOT FORMAT — swap any images into these slots):` block
+- [ ] All 6 image slots use the **exact** universal semantics listed above
+- [ ] Unused slots are marked `(optional — not used in this template)`
+- [ ] Prompt output is wrapped in `[[PROMPT]]` / `[[/PROMPT]]` tags
+- [ ] No markdown, bullets, or line breaks inside the prompt body
+- [ ] Word count guidance is provided per pattern
 
 ## Quick Reference
 

@@ -95,11 +95,13 @@ The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Goog
 ```
 Design a professional advertising campaign presentation board for the "[CAMPAIGN NAME]" campaign.
 
-Reference images attached:
-- Image 1: Hero visual reference — primary campaign image style, casting direction, lighting mood
-- Image 2: Product reference — the product or service being advertised
-- Image 3: Brand identity reference — logo, existing brand colors, typography
-- Image 4: Environment / lifestyle reference — setting, atmosphere, target audience context
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 
 Board layout:
 - LEFT PANEL (large): Hero key visual showing [subject description] in [environment]. Campaign tagline "[TAGLINE]" in [FONT STYLE]. Brand logo [POSITION]. "[CAMPAIGN NAME]" title in large [TYPEFACE].
@@ -119,7 +121,13 @@ Task: Synthesize all references into a single cohesive presentation board image.
 ```
 Design a professional advertising campaign concept board for "[CAMPAIGN NAME]."
 
-Reference images attached for hero visual, product, brand identity, and lifestyle context.
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 
 Required sections: Hero key visual with tagline and brand lockup, color palette (4–6 swatches), typography specimens (headline + body), mood imagery (2–4 thumbnails), channel mockups (social, TV, billboard, print), campaign notes (2–4 bullets).
 
@@ -131,12 +139,15 @@ Task: Generate a single presentation board image. All sections must share consis
 ### Template C: Editing an Existing Board (for Grok / Qwen)
 
 ```
-Base campaign board image attached. Preserve the existing layout structure, section boundaries, typography positions, and presentation surface.
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character] (optional — not used in this template)
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture] (optional — not used in this template)
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 
-Reference images for content updates:
-- Image 1: New hero visual reference
-- Image 2: Revised product reference
-- Image 3: Updated brand identity / color palette reference
+Base campaign board image attached. Preserve the existing layout structure, section boundaries, typography positions, and presentation surface.
 
 Task: Update the board content while keeping the framework intact. Replace hero visual. Refresh color palette. Update channel mockups with new product imagery. Maintain the same [STYLE] aesthetic and professional typography style. Output a prompt describing the updated single board image.
 ```

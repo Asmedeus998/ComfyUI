@@ -148,11 +148,13 @@ You are an elite advertisement video prompt engineer specializing in Dreamina Se
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character reference — [describe appearance, outfit, distinguishing features]
-- Image 2: Product reference — [describe packaging, color, shape, size, label]
-- Image 3 (optional): Scene/environment reference — [describe setting: office, bathroom, bedroom, etc.]
-- Image 4 (optional): Brand color/logo reference — [describe brand colors, typography style]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing reference — [describe editing rhythm, transition style]
@@ -176,9 +178,13 @@ Include: subject lock, product lock with placement rules, detailed consumer acti
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character reference — [describe appearance, outfit, distinguishing features]
-- Image 2: Product reference — [describe packaging, color, texture, freshness cues]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 3: Scene/environment reference — [describe setting: library, kitchen, dark room, dramatic space]
 - Image 4 (optional): Brand/style reference — [describe brand aesthetic, color palette]
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing]
@@ -206,11 +212,13 @@ Include: subject lock, product lock with hero lighting, dramatic consumer action
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character reference — [describe appearance, outfit, lifestyle aesthetic]
-- Image 2: Product reference — [describe how the product fits into the lifestyle]
-- Image 3: Environment reference — [describe aspirational setting: modern home, beach, café, garden]
-- Image 4 (optional): Mood/color reference — [describe color palette, lighting mood]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing reference — [describe relaxed, aspirational editing rhythm]
@@ -235,11 +243,13 @@ Include: subject lock, product lock with natural placement, lifestyle action des
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Product reference — [describe design, features, color, materials, LED indicators]
-- Image 2: Character reference — [describe user appearance, professional/casual]
-- Image 3: Before/problem reference — [describe the old way, inefficiency, clutter]
-- Image 4 (optional): Environment reference — [describe modern kitchen, office, workshop]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Video 1: Motion reference — [describe product demonstration motion]
 - Video 2 (optional): Camera motion reference — [describe product showcase camera work]
 - Video 3 (optional): Transformation reference — [describe before/after transition]
@@ -264,11 +274,13 @@ Include: product lock with feature highlights, user action, before/after contras
 ```
 Analyze the attached reference images and videos.
 
-Reference mapping:
-- Image 1: Character A reference — [describe appearance, emotional state]
-- Image 2: Character B reference (optional) — [describe relationship character]
-- Image 3: Product/brand reference — [describe subtle product placement or symbolic object]
-- Image 4: Environment reference — [describe emotional setting: home, hospital, school, street]
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Video 1: Motion reference — [describe emotional interaction: hugging, helping, sharing, reacting]
 - Video 2 (optional): Camera motion reference — [describe intimate, emotional camera work]
 - Video 3 (optional): Mood reference — [describe emotional tone, color grade]
@@ -293,13 +305,16 @@ Include: character locks with emotional direction, product placement with subtle
 ```
 Analyze the attached reference videos and images.
 
-Reference mapping:
+Reference mapping (SLOT FORMAT — swap any images into these slots):
+- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
+- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
+- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
+- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
+- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
+- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Video 1: Opening ad clip — [describe the ending frame/scene of the first segment]
 - Video 2: Closing ad clip — [describe the opening frame/scene of the final segment]
 - Video 3 (optional): Motion/camera reference — [describe transition style or motion reference]
-- Image 1: Character reference — [describe appearance for consistency]
-- Image 2: Product reference — [describe product for consistency]
-- Image 3: Environment reference — [describe scene for continuity]
 
 Task: Generate a Seedance 2.0 video prompt for a transition segment that bridges Video 1 into Video 2. The connecting footage should logically and visually link the end of Video 1 to the beginning of Video 2 while maintaining commercial narrative flow.
 
