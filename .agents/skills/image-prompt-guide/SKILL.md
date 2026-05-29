@@ -103,6 +103,59 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 6. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly." For Image 7, use holistic locks: "The overall visual approach follows the creative reference in Image 7 — adopt its color palette, layout energy, and compositional style."
 7. **Template naming** in `PromptTemplateLoader` uses the format: `category/file_name: Template Letter - Template Name`. The system prompt uses `category/file_name: system_prompt`.
 
+### Slot Numbering & Batch Position (CRITICAL)
+
+**The batch position does NOT equal the slot number.** `SlotImageBatch` outputs a sparse batch containing only the filled slots. If a user provides:
+- Slot 1 (character) and Slot 7 (creative)
+
+The batch has **2 images** at positions `[0, 1]`, but they are **Image 1** and **Image 7**, not Image 1 and Image 2.
+
+**All system prompts MUST include this instruction** (copy verbatim):
+
+```
+2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
+   - The reference images use a **fixed 7-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE**.
+   - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
+   - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5").
+   - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
+   - **Example**: If you receive only Image 1 (1-CHAR / character) and Image 7 (7-CREATIVE / creative reference), refer to them as "Image 1" and "Image 7" in your prompt. Do NOT call the creative reference "Image 2" just because it happens to be the second image in the batch.
+   - **Empty slots**: If a slot is not provided, simply omit it from your prompt. Do not invent or hallucinate references for missing slots.
+```
+
+**All reference integration sections MUST start with**:
+```
+   - **ALWAYS refer to images by their SLOT NUMBER** (Image 1, Image 2, Image 7, etc.), never by batch position. If you received Image 1 and Image 7, write "as shown in Image 1" and "as shown in Image 7" — never "as shown in Image 2" for the creative reference.
+```
+
+### SlotImageBatch → KimiCliDirect Wiring
+
+To prevent Kimi from mislabeling images due to sparse batch positions:
+
+**`SlotImageBatch` outputs:**
+- `batch` — batched IMAGE tensor with yellow slot labels burned into previews
+- `image_1` … `image_7` — individual images for direct wiring to Seedance / other nodes
+- `slot_map` — **STRING** human-readable text mapping batch positions to slot numbers
+- `slot_labels` — **STRING** newline-separated slot numbers (e.g. `1\n7`) for exact @path labeling
+- `creative_video` — VIDEO passthrough for unstructured motion references
+
+**`KimiCliDirect` inputs:**
+- `images` — batched IMAGE from `SlotImageBatch.batch`
+- `slot_map` — STRING from `SlotImageBatch.slot_map`, prepended to the prompt before `system_prompt`
+- `slot_labels` — STRING from `SlotImageBatch.slot_labels`, used to label each `@path` with its slot number instead of batch position
+- `system_prompt` — loaded from `PromptTemplateLoader: system_prompt`
+- `prompt` — loaded from `PromptTemplateLoader: A - Template Name`
+
+**Required wiring:**
+```
+SlotImageBatch.batch        → KimiCliDirect.images
+SlotImageBatch.slot_map     → KimiCliDirect.slot_map
+SlotImageBatch.slot_labels  → KimiCliDirect.slot_labels
+PromptTemplateLoader (system) → KimiCliDirect.system_prompt
+PromptTemplateLoader (user)   → KimiCliDirect.prompt
+```
+
+Without `slot_map` + `slot_labels`, Kimi will default to positional counting (`Image 1`, `Image 2`) which breaks when slots are sparse (e.g. only slot 1 and slot 7 are filled).
+
 ### New Template Checklist
 
 When creating a new template in `templates_prompt/`:
@@ -115,6 +168,8 @@ When creating a new template in `templates_prompt/`:
 - [ ] Unused core slots are marked `(optional — not used in this template)`
 - [ ] Image 7 is marked `(optional — not used if no creative reference provided)`
 - [ ] Video slots mention pacing / mood / creative reference for Video 3
+- [ ] System prompt contains the **Slot Format & Image Numbering** section with the exact 6-bullet text (subset handling, slot-number referencing, anti-positional-counting, Image 1+7 example, empty-slot guidance)
+- [ ] System prompt's reference integration section starts with **"ALWAYS refer to images by their SLOT NUMBER"**
 - [ ] Prompt output is wrapped in `[[PROMPT]]` / `[[/PROMPT]]` tags
 - [ ] No markdown, bullets, or line breaks inside the prompt body
 - [ ] Word count guidance is provided per pattern
