@@ -1,15 +1,15 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 18,
-  "last_link_id": 20,
+  "last_node_id": 20,
+  "last_link_id": 26,
   "nodes": [
     {
       "id": 3,
       "type": "KimiCliDirect",
       "pos": [
-        700,
-        350
+        527.3433484098442,
+        278.5558683075218
       ],
       "size": [
         400,
@@ -24,7 +24,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 19
+          "link": 24
         },
         {
           "localized_name": "video",
@@ -61,7 +61,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": null
+          "link": 26
         },
         {
           "localized_name": "system_prompt",
@@ -71,7 +71,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": null
+          "link": 25
         },
         {
           "localized_name": "model",
@@ -133,12 +133,12 @@
       "id": 4,
       "type": "PreviewAny",
       "pos": [
-        1200,
-        350
+        1007.3260101079667,
+        154.53942878632907
       ],
       "size": [
-        450,
-        300
+        2025.86669921875,
+        1632.050048828125
       ],
       "flags": {},
       "order": 7,
@@ -170,7 +170,7 @@
       "widgets_values": [
         null,
         null,
-        null
+        false
       ]
     },
     {
@@ -236,7 +236,7 @@
           "localized_name": "images",
           "name": "images",
           "type": "IMAGE",
-          "link": 14
+          "link": 23
         }
       ],
       "outputs": [],
@@ -253,103 +253,18 @@
       "widgets_values": []
     },
     {
-      "id": 14,
-      "type": "BatchImagePreview",
-      "pos": [
-        460.6974171105819,
-        -292.5863752698875
-      ],
-      "size": [
-        305.29998779296875,
-        104
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 15
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            14,
-            19
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "BatchImagePreview",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 15,
-      "type": "ImageListToImageBatch",
-      "pos": [
-        64.697417110581,
-        -331.0863752698875
-      ],
-      "size": [
-        271.0833435058594,
-        79.43333435058594
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 16
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "IMAGE",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            15
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageListToImageBatch",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": []
-    },
-    {
       "id": 16,
       "type": "SlotImageBatch",
       "pos": [
-        -390.2625828894181,
-        -387.07637526988657
+        133.66104952208923,
+        -181.87295257537954
       ],
       "size": [
         341.3333435058594,
         420
       ],
       "flags": {},
-      "order": 2,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -422,7 +337,8 @@
           "name": "batch",
           "type": "IMAGE",
           "links": [
-            16
+            23,
+            24
           ]
         },
         {
@@ -490,8 +406,8 @@
       "id": 17,
       "type": "LoadImage",
       "pos": [
-        -892.2384431329822,
-        67.98835599641802
+        -427.0374854559387,
+        266.29517449336294
       ],
       "size": [
         225,
@@ -557,8 +473,8 @@
       "id": 18,
       "type": "LoadImage",
       "pos": [
-        -570.8707320677552,
-        193.00017691582804
+        -421.7678610174207,
+        -199.14037394655156
       ],
       "size": [
         225,
@@ -619,6 +535,98 @@
         "GPT_Image_2_subject_1_00002_.png",
         "image"
       ]
+    },
+    {
+      "id": 19,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        107.42585412886504,
+        566.9348745491544
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer: system_prompt"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        146.37101452576707,
+        355.60073868026797
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer: C - Lifestyle Aspirational Ad (Fashion/Home/Wellness)"
+      ]
     }
   ],
   "links": [
@@ -639,30 +647,6 @@
       "STRING"
     ],
     [
-      14,
-      14,
-      0,
-      13,
-      0,
-      "IMAGE"
-    ],
-    [
-      15,
-      15,
-      0,
-      14,
-      0,
-      "IMAGE"
-    ],
-    [
-      16,
-      16,
-      0,
-      15,
-      0,
-      "IMAGE"
-    ],
-    [
       17,
       18,
       0,
@@ -679,22 +663,46 @@
       "IMAGE"
     ],
     [
-      19,
-      14,
+      23,
+      16,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      24,
+      16,
       0,
       3,
       0,
       "IMAGE"
+    ],
+    [
+      25,
+      19,
+      0,
+      3,
+      6,
+      "STRING"
+    ],
+    [
+      26,
+      20,
+      0,
+      3,
+      5,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4164382071821681,
+      "scale": 0.5038902306904254,
       "offset": [
-        2186.9423894983147,
-        554.8194059682157
+        747.3942227480504,
+        671.9915928986659
       ]
     },
     "frontendVersion": "1.44.18",
