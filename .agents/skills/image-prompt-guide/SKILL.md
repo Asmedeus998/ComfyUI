@@ -95,12 +95,13 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 1. **Always include all 6 core slots** in every template, even if some are not applicable. Mark unused slots with `(optional — not used in this template)`.
 2. **Always include Image 7** in every template, marked as `(optional — not used if no creative reference provided)`.
 3. **Never redefine slot semantics.** Image 1 is always "Character / subject reference" — never "Logo reference" or "Background reference." Image 7 is always "Creative / freeform / composite reference."
-3. **Video slots are flexible** but should follow the convention:
+4. **Video slots are flexible** but should follow the convention:
    - Video 1: Primary motion / choreography / action reference
    - Video 2: Camera motion reference
-   - Video 3: VFX, pacing, timing, or transition reference
-4. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly." For Image 7, use holistic locks: "The overall visual approach follows the creative reference in Image 7 — adopt its color palette, layout energy, and compositional style."
-5. **Template naming** in `PromptTemplateLoader` uses the format: `category/file_name: Template Letter - Template Name`. The system prompt uses `category/file_name: system_prompt`.
+   - Video 3: VFX, pacing, timing, transition, or creative mood reference
+5. **Creative video passthrough**: `SlotImageBatch` provides a `creative_video` input (VIDEO type) that passes straight through to downstream video nodes. Use this for unstructured motion references — mood clips, pacing inspiration, or B-roll that informs the overall energy without locking a specific action.
+6. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly." For Image 7, use holistic locks: "The overall visual approach follows the creative reference in Image 7 — adopt its color palette, layout energy, and compositional style."
+7. **Template naming** in `PromptTemplateLoader` uses the format: `category/file_name: Template Letter - Template Name`. The system prompt uses `category/file_name: system_prompt`.
 
 ### New Template Checklist
 
@@ -113,6 +114,7 @@ When creating a new template in `templates_prompt/`:
 - [ ] All 6 core image slots + Image 7 use the **exact** universal semantics listed above
 - [ ] Unused core slots are marked `(optional — not used in this template)`
 - [ ] Image 7 is marked `(optional — not used if no creative reference provided)`
+- [ ] Video slots mention pacing / mood / creative reference for Video 3
 - [ ] Prompt output is wrapped in `[[PROMPT]]` / `[[/PROMPT]]` tags
 - [ ] No markdown, bullets, or line breaks inside the prompt body
 - [ ] Word count guidance is provided per pattern

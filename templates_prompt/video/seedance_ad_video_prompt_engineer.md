@@ -160,7 +160,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
-- Video 3 (optional): Pacing reference — [describe editing rhythm, transition style]
+- Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
 
 Task: Generate a Seedance 2.0 video prompt for a 15-second problem-solution advertisement segment.
 
@@ -193,7 +193,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 4 (optional): Brand/style reference — [describe brand aesthetic, color palette]
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
-- Video 3 (optional): Lighting/mood reference — [describe dramatic lighting style]
+- Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
 
 Task: Generate a Seedance 2.0 video prompt for a 15-second dramatic cinematic product reveal advertisement segment.
 
@@ -226,7 +226,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
-- Video 3 (optional): Pacing reference — [describe relaxed, aspirational editing rhythm]
+- Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
 
 Task: Generate a Seedance 2.0 video prompt for a 15-second lifestyle aspirational advertisement segment.
 
