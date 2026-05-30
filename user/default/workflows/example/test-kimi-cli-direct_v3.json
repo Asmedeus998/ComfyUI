@@ -1,7 +1,7 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 38,
+  "last_node_id": 39,
   "last_link_id": 54,
   "nodes": [
     {
@@ -865,18 +865,18 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "SaveText"
+        }
       },
       "widgets_values": [
         "",
         "kimi-txt-debug-v3",
         "overwrite",
-        true,
+        false,
         "txt"
       ]
     },
@@ -951,18 +951,18 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "SaveText"
+        }
       },
       "widgets_values": [
         "",
         "kimi-txt-debug-v3-templates-prompt",
         "overwrite",
-        true,
+        false,
         "txt"
       ]
     }
@@ -1069,10 +1069,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8115202554292439,
+      "scale": 0.5542792537594732,
       "offset": [
-        -1014.8181815363964,
-        -20.896785894834444
+        85.36020233705045,
+        401.50889622350286
       ]
     },
     "frontendVersion": "1.44.18",

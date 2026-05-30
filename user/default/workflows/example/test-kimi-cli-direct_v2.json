@@ -835,7 +835,7 @@
         "",
         "kimi-txt-debug-v2",
         "overwrite",
-        true,
+        false,
         "txt"
       ]
     },
@@ -921,7 +921,7 @@
         "",
         "kimi-txt-debug-v2-templates-prompt",
         "overwrite",
-        true,
+        false,
         "txt"
       ]
     }
@@ -1028,10 +1028,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.892672280972169,
+      "scale": 0.8115202554292448,
       "offset": [
-        -611.5939786963035,
-        434.00204503706624
+        -360.0115796602109,
+        1579.7662194618886
       ]
     },
     "frontendVersion": "1.44.18",
