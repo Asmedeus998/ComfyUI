@@ -1,15 +1,15 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 33,
-  "last_link_id": 49,
+  "last_node_id": 36,
+  "last_link_id": 52,
   "nodes": [
     {
       "id": 21,
       "type": "KimiCliDirect",
       "pos": [
-        1109.8569680110804,
-        466.0739196751192
+        1191.043481297987,
+        448.0324722780289
       ],
       "size": [
         393.8666687011719,
@@ -100,7 +100,8 @@
           "name": "response",
           "type": "STRING",
           "links": [
-            36
+            50,
+            52
           ]
         },
         {
@@ -434,50 +435,6 @@
       "widgets_values": []
     },
     {
-      "id": 30,
-      "type": "PreviewAny",
-      "pos": [
-        1655.2780520117071,
-        523.6538611088716
-      ],
-      "size": [
-        2025.86669921875,
-        1632.050048828125
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "source",
-          "name": "source",
-          "type": "*",
-          "link": 36
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewAny",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
       "id": 31,
       "type": "KimiCliDirect",
       "pos": [
@@ -573,7 +530,8 @@
           "name": "response",
           "type": "STRING",
           "links": [
-            40
+            40,
+            51
           ]
         },
         {
@@ -604,8 +562,8 @@
       "id": 32,
       "type": "PreviewAny",
       "pos": [
-        1687.6954718258621,
-        -945.1804924807051
+        1680.9180685963015,
+        -828.6091569322626
       ],
       "size": [
         1471.1666259765625,
@@ -783,13 +741,246 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SlotImageBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SlotImageBatch"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": []
+    },
+    {
+      "id": 34,
+      "type": "easy saveText",
+      "pos": [
+        1621.3461194448935,
+        -1149.2485510233341
+      ],
+      "size": [
+        270,
+        228
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 51
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overwrite",
+          "name": "overwrite",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "overwrite"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy saveText",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "/home/yumeko/github/ComfyUI/output",
+        "kimi/txt-debug-v3",
+        "txt",
+        true
+      ]
+    },
+    {
+      "id": 35,
+      "type": "easy saveText",
+      "pos": [
+        1829.4579537374555,
+        583.6557147511178
+      ],
+      "size": [
+        270,
+        228
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "link": 50
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "output_file_path",
+          "name": "output_file_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_file_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_name",
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "file_extension",
+          "name": "file_extension",
+          "type": "COMBO",
+          "widget": {
+            "name": "file_extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overwrite",
+          "name": "overwrite",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "overwrite"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy saveText",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "/home/yumeko/github/ComfyUI/output",
+        "kimi/txt-debug-v3-templates-prompt",
+        "txt",
+        true
+      ]
+    },
+    {
+      "id": 36,
+      "type": "PreviewAny",
+      "pos": [
+        1768.8666205540494,
+        899.5881113121585
+      ],
+      "size": [
+        1471.1666259765625,
+        534.6333618164062
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
     }
   ],
   "links": [
@@ -815,14 +1006,6 @@
       0,
       21,
       6,
-      "STRING"
-    ],
-    [
-      36,
-      21,
-      0,
-      30,
-      0,
       "STRING"
     ],
     [
@@ -872,16 +1055,40 @@
       31,
       0,
       "IMAGE"
+    ],
+    [
+      50,
+      21,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      51,
+      31,
+      0,
+      34,
+      0,
+      "STRING"
+    ],
+    [
+      52,
+      21,
+      0,
+      36,
+      0,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5542792537594714,
+      "scale": 0.7377456867538572,
       "offset": [
-        822.7111574822264,
-        612.8179109367115
+        -762.0386399415064,
+        1389.082673642688
       ]
     },
     "frontendVersion": "1.44.18",

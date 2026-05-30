@@ -1,8 +1,8 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 24,
-  "last_link_id": 37,
+  "last_node_id": 28,
+  "last_link_id": 43,
   "nodes": [
     {
       "id": 3,
@@ -16,7 +16,7 @@
         508
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -100,16 +100,15 @@
           "name": "response",
           "type": "STRING",
           "links": [
-            3
+            3,
+            43
           ]
         },
         {
           "localized_name": "thinking",
           "name": "thinking",
           "type": "STRING",
-          "links": [
-            4
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -133,15 +132,15 @@
       "id": 4,
       "type": "PreviewAny",
       "pos": [
-        1041.6047601624384,
-        177.9933104025466
+        1030.1238390915628,
+        591.3064689540707
       ],
       "size": [
         1023.8499755859375,
         436.7166748046875
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -149,50 +148,6 @@
           "name": "source",
           "type": "*",
           "link": 3
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewAny",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": 5,
-      "type": "PreviewAny",
-      "pos": [
-        1200,
-        700
-      ],
-      "size": [
-        450,
-        200
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "source",
-          "name": "source",
-          "type": "*",
-          "link": 4
         }
       ],
       "outputs": [
@@ -493,7 +448,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -501,7 +456,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 34
+          "link": 39
         },
         {
           "localized_name": "video",
@@ -577,7 +532,8 @@
           "name": "response",
           "type": "STRING",
           "links": [
-            27
+            27,
+            42
           ]
         },
         {
@@ -609,14 +565,14 @@
       "type": "PreviewAny",
       "pos": [
         1065.0910741543712,
-        -1169.9443662039316
+        -1146.5315186836312
       ],
       "size": [
         1471.1666259765625,
         534.6333618164062
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -734,8 +690,8 @@
           "type": "IMAGE",
           "links": [
             33,
-            34,
-            35
+            35,
+            39
           ]
         },
         {
@@ -796,6 +752,176 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 27,
+      "type": "SaveText",
+      "pos": [
+        1096.7459383411456,
+        -1519.5359322667928
+      ],
+      "size": [
+        400,
+        272
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 42
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "SaveText"
+      },
+      "widgets_values": [
+        "",
+        "kimi-txt-debug-v2",
+        "overwrite",
+        true,
+        "txt"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "SaveText",
+      "pos": [
+        1150.383007995281,
+        221.50795184764468
+      ],
+      "size": [
+        400,
+        272
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 43
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "SaveText"
+      },
+      "widgets_values": [
+        "",
+        "kimi-txt-debug-v2",
+        "overwrite",
+        true,
+        "txt"
+      ]
     }
   ],
   "links": [
@@ -804,14 +930,6 @@
       3,
       0,
       4,
-      0,
-      "STRING"
-    ],
-    [
-      4,
-      3,
-      1,
-      5,
       0,
       "STRING"
     ],
@@ -856,14 +974,6 @@
       "IMAGE"
     ],
     [
-      34,
-      24,
-      0,
-      21,
-      0,
-      "IMAGE"
-    ],
-    [
       35,
       24,
       0,
@@ -886,16 +996,40 @@
       24,
       7,
       "IMAGE"
+    ],
+    [
+      39,
+      24,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      21,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      43,
+      3,
+      0,
+      28,
+      0,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.28443289883353,
+      "scale": 0.9819395090693855,
       "offset": [
-        1521.1323775475637,
-        1502.8394310968574
+        -711.4557665316272,
+        -0.516742108403605
       ]
     },
     "frontendVersion": "1.44.18",
