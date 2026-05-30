@@ -433,7 +433,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer: C - Lifestyle Aspirational Ad (Fashion/Home/Wellness)"
+        "video/seedance ad video prompt engineer: A - Problem-Solution Ad (Health/Beauty/Office)"
       ]
     },
     {
@@ -1028,10 +1028,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8115202554292448,
+      "scale": 1.5814233987513402,
       "offset": [
-        -360.0115796602109,
-        1579.7662194618886
+        54.99686265969521,
+        -53.111113968125174
       ]
     },
     "frontendVersion": "1.44.18",
