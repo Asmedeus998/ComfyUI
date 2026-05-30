@@ -1392,7 +1392,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": null
+          "link": 270
         },
         {
           "localized_name": "resolution",
@@ -1554,7 +1554,7 @@
         "ver": "0.18.1"
       },
       "widgets_values": [
-        "video-segment-1",
+        "video-segment-2",
         "auto",
         "auto"
       ]
@@ -1644,7 +1644,9 @@
           "name": "STRING",
           "type": "STRING",
           "slot_index": 0,
-          "links": []
+          "links": [
+            270
+          ]
         }
       ],
       "properties": {
@@ -1820,6 +1822,14 @@
       116,
       1,
       "VIDEO"
+    ],
+    [
+      270,
+      149,
+      0,
+      147,
+      14,
+      "STRING"
     ]
   ],
   "groups": [

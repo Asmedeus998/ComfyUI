@@ -1,22 +1,22 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 28,
-  "last_link_id": 43,
+  "last_node_id": 38,
+  "last_link_id": 53,
   "nodes": [
     {
       "id": 3,
       "type": "KimiCliDirect",
       "pos": [
-        527.3433484098442,
-        278.5558683075218
+        1230,
+        50
       ],
       "size": [
         400,
         508
       ],
       "flags": {},
-      "order": 6,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -132,15 +132,15 @@
       "id": 4,
       "type": "PreviewAny",
       "pos": [
-        1030.1238390915628,
-        591.3064689540707
+        1730,
+        360
       ],
       "size": [
         1023.8499755859375,
         436.7166748046875
       ],
       "flags": {},
-      "order": 8,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -173,46 +173,11 @@
       ]
     },
     {
-      "id": 13,
-      "type": "PreviewImage",
-      "pos": [
-        1084.7078706648022,
-        -504.9473530943517
-      ],
-      "size": [
-        380,
-        604
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 33
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.18.1"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 17,
       "type": "LoadImage",
       "pos": [
-        -427.0374854559387,
-        266.29517449336294
+        -592.837412304767,
+        1277.6747282712145
       ],
       "size": [
         225,
@@ -278,8 +243,8 @@
       "id": 18,
       "type": "LoadImage",
       "pos": [
-        -421.7678610174207,
-        -199.14037394655156
+        -587.5677878662491,
+        812.2391798312999
       ],
       "size": [
         225,
@@ -345,8 +310,8 @@
       "id": 19,
       "type": "PromptTemplateLoader",
       "pos": [
-        107.42585412886504,
-        566.9348745491544
+        810,
+        340
       ],
       "size": [
         270,
@@ -392,8 +357,8 @@
       "id": 20,
       "type": "PromptTemplateLoader",
       "pos": [
-        146.37101452576707,
-        355.60073868026797
+        850,
+        130
       ],
       "size": [
         270,
@@ -440,15 +405,15 @@
       "id": 21,
       "type": "KimiCliDirect",
       "pos": [
-        519.6699901537445,
-        -1227.5243076376842
+        1520,
+        -1290
       ],
       "size": [
         393.8666687011719,
         797.2666625976562
       ],
       "flags": {},
-      "order": 7,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -564,15 +529,15 @@
       "id": 22,
       "type": "PreviewAny",
       "pos": [
-        1065.0910741543712,
-        -1146.5315186836312
+        2070,
+        -1210
       ],
       "size": [
         1471.1666259765625,
         534.6333618164062
       ],
       "flags": {},
-      "order": 10,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -608,15 +573,15 @@
       "id": 24,
       "type": "SlotImageBatch",
       "pos": [
-        162.37099652847994,
-        -226.30052615314685
+        -29.398151024939608,
+        985.0412558926207
       ],
       "size": [
         341.3333435058594,
         264
       ],
       "flags": {},
-      "order": 4,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -689,9 +654,10 @@
           "name": "batch",
           "type": "IMAGE",
           "links": [
-            33,
             35,
-            39
+            39,
+            48,
+            53
           ]
         },
         {
@@ -757,15 +723,15 @@
       "id": 27,
       "type": "SaveText",
       "pos": [
-        1096.7459383411456,
-        -1519.5359322667928
+        2100,
+        -1580
       ],
       "size": [
         400,
-        272
+        273.3333435058594
       ],
       "flags": {},
-      "order": 11,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -843,15 +809,15 @@
       "id": 28,
       "type": "SaveText",
       "pos": [
-        1150.383007995281,
-        221.50795184764468
+        1850,
+        -10
       ],
       "size": [
         400,
-        272
+        273.3333435058594
       ],
       "flags": {},
-      "order": 9,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -924,6 +890,702 @@
         false,
         "txt"
       ]
+    },
+    {
+      "id": 29,
+      "type": "KimiCliDirect",
+      "pos": [
+        1627.9804641110081,
+        1281.7454474918459
+      ],
+      "size": [
+        400,
+        508
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 48
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 44
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 45
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            46,
+            47
+          ]
+        },
+        {
+          "localized_name": "thinking",
+          "name": "thinking",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "KimiCliDirect"
+      },
+      "widgets_values": [
+        "Describe what you see in detail",
+        "",
+        "",
+        300
+      ],
+      "color": "#2F4F4F",
+      "bgcolor": "#3D6B6B"
+    },
+    {
+      "id": 30,
+      "type": "SaveText",
+      "pos": [
+        2247.980464111008,
+        1221.7454474918459
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 46
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "SaveText"
+      },
+      "widgets_values": [
+        "",
+        "kimi-txt-debug-v2-templates-prompt-30s",
+        "overwrite",
+        false,
+        "txt"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "PreviewAny",
+      "pos": [
+        2127.980464111008,
+        1591.7454474918459
+      ],
+      "size": [
+        1023.8499755859375,
+        436.7166748046875
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 47
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 32,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        1247.9804641110081,
+        1361.7454474918459
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            44
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 30s: G - 30s Problem-Solution Ad (Health/Beauty/Office)"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        1207.9804641110081,
+        1571.7454474918459
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            45
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 30s: system_prompt"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "KimiCliDirect",
+      "pos": [
+        1785.5795159880106,
+        2498.4448574532075
+      ],
+      "size": [
+        400,
+        508
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 53
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 49
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 50
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            51,
+            52
+          ]
+        },
+        {
+          "localized_name": "thinking",
+          "name": "thinking",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "KimiCliDirect"
+      },
+      "widgets_values": [
+        "Describe what you see in detail",
+        "",
+        "",
+        300
+      ],
+      "color": "#2F4F4F",
+      "bgcolor": "#3D6B6B"
+    },
+    {
+      "id": 35,
+      "type": "SaveText",
+      "pos": [
+        2405.579515988011,
+        2438.4448574532075
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 51
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "SaveText"
+      },
+      "widgets_values": [
+        "",
+        "kimi-txt-debug-v2-templates-prompt-60s",
+        "overwrite",
+        false,
+        "txt"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "PreviewAny",
+      "pos": [
+        2285.579515988011,
+        2808.4448574532075
+      ],
+      "size": [
+        1023.8499755859375,
+        436.7166748046875
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 37,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        1405.5795159880106,
+        2578.4448574532075
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            49
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 60s: J - 60s Problem-Solution Ad (Health/Beauty/Office/Tech)"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        1365.5795159880106,
+        2788.4448574532075
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            50
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 60s: system_prompt"
+      ]
     }
   ],
   "links": [
@@ -966,14 +1628,6 @@
       21,
       6,
       "STRING"
-    ],
-    [
-      33,
-      24,
-      0,
-      13,
-      0,
-      "IMAGE"
     ],
     [
       35,
@@ -1022,16 +1676,96 @@
       28,
       0,
       "STRING"
+    ],
+    [
+      44,
+      32,
+      0,
+      29,
+      5,
+      "STRING"
+    ],
+    [
+      45,
+      33,
+      0,
+      29,
+      6,
+      "STRING"
+    ],
+    [
+      46,
+      29,
+      0,
+      30,
+      0,
+      "STRING"
+    ],
+    [
+      47,
+      29,
+      0,
+      31,
+      0,
+      "STRING"
+    ],
+    [
+      48,
+      24,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      49,
+      37,
+      0,
+      34,
+      5,
+      "STRING"
+    ],
+    [
+      50,
+      38,
+      0,
+      34,
+      6,
+      "STRING"
+    ],
+    [
+      51,
+      34,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      52,
+      34,
+      0,
+      36,
+      0,
+      "STRING"
+    ],
+    [
+      53,
+      24,
+      0,
+      34,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.5814233987513402,
+      "scale": 0.41643820718217694,
       "offset": [
-        54.99686265969521,
-        -53.111113968125174
+        1547.747575663279,
+        -194.16753255642587
       ]
     },
     "frontendVersion": "1.44.18",
