@@ -1,8 +1,8 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 54,
-  "last_link_id": 77,
+  "last_node_id": 62,
+  "last_link_id": 87,
   "nodes": [
     {
       "id": 3,
@@ -16,7 +16,7 @@
         508
       ],
       "flags": {},
-      "order": 10,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -153,15 +153,15 @@
       "id": 4,
       "type": "PreviewAny",
       "pos": [
-        1730,
-        360
+        1701.0335620263313,
+        396.8663756028511
       ],
       "size": [
         1023.8499755859375,
         436.7166748046875
       ],
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -378,15 +378,15 @@
       "id": 24,
       "type": "SlotImageBatch",
       "pos": [
-        -29.398151024939608,
-        985.0412558926207
+        698.2169602157064,
+        1000.620761621269
       ],
       "size": [
         341.3333435058594,
         264
       ],
       "flags": {},
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -460,7 +460,8 @@
           "type": "IMAGE",
           "links": [
             35,
-            48
+            48,
+            82
           ]
         },
         {
@@ -534,7 +535,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 16,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -612,15 +613,15 @@
       "id": 29,
       "type": "KimiCliDirect",
       "pos": [
-        1627.9804641110081,
-        1281.7454474918459
+        1563.344610781334,
+        1099.807489971282
       ],
       "size": [
         400,
         508
       ],
       "flags": {},
-      "order": 9,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -728,7 +729,7 @@
             46,
             47,
             54,
-            55
+            86
           ]
         },
         {
@@ -759,15 +760,15 @@
       "id": 30,
       "type": "SaveText",
       "pos": [
-        2247.980464111008,
-        1221.7454474918459
+        2276.7075100353077,
+        1209.7758450233878
       ],
       "size": [
         400,
         273.3333435058594
       ],
       "flags": {},
-      "order": 11,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -853,7 +854,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 12,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -980,116 +981,6 @@
       ]
     },
     {
-      "id": 39,
-      "type": "RegexExtract",
-      "pos": [
-        3397.626324886865,
-        1633.7687776464459
-      ],
-      "size": [
-        320,
-        332
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "string",
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 55
-        },
-        {
-          "localized_name": "regex_pattern",
-          "name": "regex_pattern",
-          "type": "STRING",
-          "widget": {
-            "name": "regex_pattern"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "case_insensitive",
-          "name": "case_insensitive",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "case_insensitive"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "multiline",
-          "name": "multiline",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "multiline"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "dotall",
-          "name": "dotall",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "dotall"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "group_index",
-          "name": "group_index",
-          "type": "INT",
-          "widget": {
-            "name": "group_index"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "slot_index": 0,
-          "links": [
-            57
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "RegexExtract",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "string": true
-          },
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
-        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
-        "First Group",
-        true,
-        true,
-        true,
-        1
-      ]
-    },
-    {
       "id": 40,
       "type": "RegexExtract",
       "pos": [
@@ -1101,7 +992,7 @@
         332
       ],
       "flags": {},
-      "order": 13,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1211,7 +1102,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 17,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1286,92 +1177,6 @@
       ]
     },
     {
-      "id": 42,
-      "type": "SaveText",
-      "pos": [
-        3914.900975372974,
-        1522.8327358344873
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 57
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "kimi-txt-debug-v2-templates-prompt-30s-segment-2",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
       "id": 51,
       "type": "LoadImage",
       "pos": [
@@ -1438,15 +1243,15 @@
       "id": 52,
       "type": "VideoLastFrame",
       "pos": [
-        193.03947239950935,
-        21.638902309906257
+        64.44043761442185,
+        15.703562242902194
       ],
       "size": [
         225,
         100
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1544,6 +1349,554 @@
       "widgets_values": [
         "【Girls Fight】Raichi vs Anne【Blender】 [G6amQUnOPss].mp4",
         "image"
+      ]
+    },
+    {
+      "id": 55,
+      "type": "VideoLastFrame",
+      "pos": [
+        4068.928005685434,
+        542.3353605655097
+      ],
+      "size": [
+        225,
+        100
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 78
+        },
+        {
+          "localized_name": "burn_label",
+          "name": "burn_label",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "burn_label"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoLastFrame",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 56,
+      "type": "LoadVideo",
+      "pos": [
+        3390.9707430589356,
+        320.15712035220685
+      ],
+      "size": [
+        282.8333435058594,
+        590.816650390625
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "file",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            78
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "【Girls Fight】Raichi vs Anne【Blender】 [G6amQUnOPss].mp4",
+        "image"
+      ]
+    },
+    {
+      "id": 57,
+      "type": "KimiCliDirect",
+      "pos": [
+        4596.13639487923,
+        1072.6367637167964
+      ],
+      "size": [
+        400,
+        508
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 81
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 86
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 87
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            80,
+            84
+          ]
+        },
+        {
+          "localized_name": "thinking",
+          "name": "thinking",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true,
+            "system_prompt": true,
+            "model": true,
+            "timeout": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "KimiCliDirect"
+      },
+      "widgets_values": [
+        "Analyze the attached reference images and videos.\n\nReference mapping (SLOT FORMAT):\n- Image 1: Character / subject reference\n- Image 2: Costume / outfit / product reference\n- Image 3: Prop / accessory / secondary subject reference\n- Image 4: Environment / scene / background reference\n- Image 5: Product / brand / commercial element reference\n- Image 6: Style / aesthetic / mood / material reference\n- Image 7: Creative / freeform / composite reference (optional)\n- Image 8: Continuation frame — the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in Image 8.\n- Do NOT invent a new pose — describe what is literally visible in Image 8.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
+        "",
+        "",
+        300
+      ],
+      "color": "#2F4F4F",
+      "bgcolor": "#3D6B6B"
+    },
+    {
+      "id": 59,
+      "type": "PreviewAny",
+      "pos": [
+        5303.642474958243,
+        1026.2641642710869
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 60,
+      "type": "RegexExtract",
+      "pos": [
+        5316.2161331648995,
+        1467.7355441093923
+      ],
+      "size": [
+        320,
+        332
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 84
+        },
+        {
+          "localized_name": "regex_pattern",
+          "name": "regex_pattern",
+          "type": "STRING",
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "case_insensitive",
+          "name": "case_insensitive",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "multiline",
+          "name": "multiline",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "multiline"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "dotall",
+          "name": "dotall",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "dotall"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "group_index",
+          "name": "group_index",
+          "type": "INT",
+          "widget": {
+            "name": "group_index"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "string": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "RegexExtract"
+      },
+      "widgets_values": [
+        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
+        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
+        "First Group",
+        true,
+        true,
+        true,
+        1
+      ]
+    },
+    {
+      "id": 61,
+      "type": "SaveText",
+      "pos": [
+        5756.196097078454,
+        1351.6104883736818
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 83
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "SaveText"
+      },
+      "widgets_values": [
+        "",
+        "kimi-txt-debug-last_frame-templates-prompt-30s-segment-2",
+        "overwrite",
+        false,
+        "txt"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        3984.210261876981,
+        1556.7742652962702
+      ],
+      "size": [
+        270,
+        104
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            87
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 30s: system_prompt"
       ]
     }
   ],
@@ -1645,26 +1998,10 @@
       "STRING"
     ],
     [
-      55,
-      29,
-      0,
-      39,
-      0,
-      "STRING"
-    ],
-    [
       56,
       40,
       0,
       41,
-      0,
-      "STRING"
-    ],
-    [
-      57,
-      39,
-      0,
-      42,
       0,
       "STRING"
     ],
@@ -1699,16 +2036,80 @@
       3,
       5,
       "IMAGE"
+    ],
+    [
+      78,
+      56,
+      0,
+      55,
+      0,
+      "VIDEO"
+    ],
+    [
+      80,
+      57,
+      0,
+      59,
+      0,
+      "STRING"
+    ],
+    [
+      81,
+      55,
+      0,
+      57,
+      5,
+      "IMAGE"
+    ],
+    [
+      82,
+      24,
+      0,
+      57,
+      0,
+      "IMAGE"
+    ],
+    [
+      83,
+      60,
+      0,
+      61,
+      0,
+      "STRING"
+    ],
+    [
+      84,
+      57,
+      0,
+      60,
+      0,
+      "STRING"
+    ],
+    [
+      86,
+      29,
+      0,
+      57,
+      8,
+      "STRING"
+    ],
+    [
+      87,
+      62,
+      0,
+      57,
+      9,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7400249944258178,
+      "scale": 0.8140274938683998,
       "offset": [
-        463.7815363259403,
-        289.05207810790205
+        -2899.4452893774705,
+        -891.3976298879782
       ]
     },
     "frontendVersion": "1.44.18",
