@@ -362,8 +362,8 @@
       "id": 114,
       "type": "VideoLastFrame",
       "pos": [
-        -214.12265499999944,
-        679.5004959999991
+        -208.26625499999955,
+        733.6721959999991
       ],
       "size": [
         225,
@@ -413,7 +413,7 @@
         144
       ],
       "flags": {},
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -476,7 +476,7 @@
         300.4333190917969
       ],
       "flags": {},
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -541,7 +541,7 @@
       ],
       "size": [
         420,
-        372
+        444
       ],
       "flags": {},
       "order": 9,
@@ -580,6 +580,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -1282,7 +1303,7 @@
         676
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1505,7 +1526,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1681,7 +1702,7 @@
         340
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1720,12 +1741,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "LoadImage"
+        }
       },
       "widgets_values": [
         "screenshot_80.png",
@@ -1771,7 +1792,7 @@
       120,
       0,
       118,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -1795,7 +1816,7 @@
       138,
       0,
       118,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -1960,10 +1981,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7513148009015783,
+      "scale": 0.38554328942953203,
       "offset": [
-        4488.307061166221,
-        0.5418368535662452
+        2233.201948048727,
+        649.5270138777494
       ]
     },
     "ue_links": [],

@@ -1,8 +1,8 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 39,
-  "last_link_id": 54,
+  "last_node_id": 41,
+  "last_link_id": 56,
   "nodes": [
     {
       "id": 21,
@@ -16,7 +16,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -52,6 +52,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -234,7 +255,7 @@
         104
       ],
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -411,7 +432,7 @@
         604
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -446,7 +467,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -482,6 +503,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 56
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -570,7 +612,7 @@
         534.6333618164062
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -614,7 +656,7 @@
         264
       ],
       "flags": {},
-      "order": 4,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -762,7 +804,7 @@
         534.6333618164062
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -806,7 +848,7 @@
         272
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -892,7 +934,7 @@
         272
       ],
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -965,6 +1007,105 @@
         false,
         "txt"
       ]
+    },
+    {
+      "id": 40,
+      "type": "VideoLastFrame",
+      "pos": [
+        257.44849690835713,
+        -910.1827606837967
+      ],
+      "size": [
+        225,
+        72
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 55
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            56
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "VideoLastFrame"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 41,
+      "type": "LoadVideo",
+      "pos": [
+        -238.45053468922777,
+        -1086.1407219477194
+      ],
+      "size": [
+        282.8333435058594,
+        590.816650390625
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "file",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            55
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "Cyreneが だいあるのーとやるだけ 【Honkai：Star Rail MMD】 #cyrene [qHuRzb7u7is].mp4",
+        "image"
+      ]
     }
   ],
   "links": [
@@ -981,7 +1122,7 @@
       23,
       0,
       21,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -989,7 +1130,7 @@
       22,
       0,
       21,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -1063,16 +1204,32 @@
       38,
       0,
       "STRING"
+    ],
+    [
+      55,
+      41,
+      0,
+      40,
+      0,
+      "VIDEO"
+    ],
+    [
+      56,
+      40,
+      0,
+      31,
+      5,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5542792537594732,
+      "scale": 0.6706778970489629,
       "offset": [
-        85.36020233705045,
-        401.50889622350286
+        228.0883475781494,
+        1360.1849859367435
       ]
     },
     "frontendVersion": "1.44.18",

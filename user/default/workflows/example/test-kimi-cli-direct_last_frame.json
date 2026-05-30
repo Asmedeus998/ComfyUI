@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 54,
-  "last_link_id": 75,
+  "last_link_id": 76,
   "nodes": [
     {
       "id": 3,
@@ -721,6 +721,27 @@
           "widget": {
             "name": "timeout"
           },
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 76
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         }
       ],
@@ -1467,7 +1488,9 @@
           "name": "image",
           "type": "IMAGE",
           "slot_index": 0,
-          "links": []
+          "links": [
+            76
+          ]
         }
       ],
       "properties": {
@@ -1681,6 +1704,14 @@
       52,
       0,
       "VIDEO"
+    ],
+    [
+      76,
+      52,
+      0,
+      29,
+      9,
+      "IMAGE"
     ]
   ],
   "groups": [],

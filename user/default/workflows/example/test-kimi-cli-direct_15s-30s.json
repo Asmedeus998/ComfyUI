@@ -1,8 +1,8 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 51,
-  "last_link_id": 72,
+  "last_node_id": 53,
+  "last_link_id": 74,
   "nodes": [
     {
       "id": 3,
@@ -52,6 +52,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -449,6 +470,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -938,6 +980,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -1710,7 +1773,7 @@
       19,
       0,
       3,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -1718,7 +1781,7 @@
       20,
       0,
       3,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -1734,7 +1797,7 @@
       20,
       0,
       21,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -1790,7 +1853,7 @@
       32,
       0,
       29,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -1798,7 +1861,7 @@
       33,
       0,
       29,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -1870,10 +1933,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.17715610000000007,
+      "scale": 0.41772481694156555,
       "offset": [
-        5666.295281519648,
-        -657.2075436857232
+        1225.5465312780868,
+        552.7816239219117
       ]
     },
     "frontendVersion": "1.44.18",
