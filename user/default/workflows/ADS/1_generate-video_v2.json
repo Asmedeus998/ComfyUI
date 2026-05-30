@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 145,
-  "last_link_id": 264,
+  "last_node_id": 149,
+  "last_link_id": 269,
   "nodes": [
     {
       "id": 108,
@@ -40,8 +40,8 @@
       "id": 109,
       "type": "MarkdownNote",
       "pos": [
-        -800,
-        450
+        -860.0281,
+        567.1279999999998
       ],
       "size": [
         520,
@@ -72,15 +72,15 @@
       "id": 103,
       "type": "FALSeedanceReference2Video",
       "pos": [
-        -200,
-        -150
+        120.96000199999958,
+        -129.7368560000001
       ],
       "size": [
         420,
         676
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -293,172 +293,18 @@
       ]
     },
     {
-      "id": 104,
-      "type": "FALSeedanceImage2Video",
-      "pos": [
-        -194.1436000000001,
-        447.0718
-      ],
-      "size": [
-        420,
-        632
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "image",
-          "name": "image",
-          "type": "IMAGE",
-          "link": 209
-        },
-        {
-          "localized_name": "end_image",
-          "name": "end_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "api_key",
-          "name": "api_key",
-          "type": "STRING",
-          "widget": {
-            "name": "api_key"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "prompt",
-          "name": "prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "prompt"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "resolution",
-          "name": "resolution",
-          "type": "COMBO",
-          "widget": {
-            "name": "resolution"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "aspect_ratio",
-          "name": "aspect_ratio",
-          "type": "COMBO",
-          "widget": {
-            "name": "aspect_ratio"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "duration",
-          "name": "duration",
-          "type": "INT",
-          "widget": {
-            "name": "duration"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "generate_audio",
-          "name": "generate_audio",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "generate_audio"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "seed",
-          "name": "seed",
-          "type": "INT",
-          "widget": {
-            "name": "seed"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "watermark",
-          "name": "watermark",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "watermark"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "fast",
-          "name": "fast",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "fast"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "video",
-          "name": "video",
-          "type": "VIDEO",
-          "slot_index": 0,
-          "links": [
-            206,
-            212
-          ]
-        }
-      ],
-      "title": "FAL Seedance Image-to-Video (Direct) #2",
-      "properties": {
-        "Node name for S&R": "FALSeedanceImage2Video",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "api_key": true,
-            "prompt": true,
-            "resolution": true,
-            "aspect_ratio": true,
-            "duration": true,
-            "generate_audio": true,
-            "seed": true,
-            "watermark": true,
-            "fast": true
-          },
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "",
-        "",
-        "720p",
-        "16:9",
-        15,
-        false,
-        88888,
-        false,
-        false,
-        false
-      ]
-    },
-    {
       "id": 105,
       "type": "SaveVideo",
       "pos": [
-        379.06140000000005,
-        -135.35900000000004
+        593.0249739999997,
+        41.63604899999987
       ],
       "size": [
         320,
         353.8833312988281
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -513,84 +359,18 @@
       ]
     },
     {
-      "id": 106,
-      "type": "SaveVideo",
-      "pos": [
-        300,
-        450
-      ],
-      "size": [
-        320,
-        353.8833312988281
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "video",
-          "name": "video",
-          "type": "VIDEO",
-          "link": 206
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "format",
-          "name": "format",
-          "type": "COMBO",
-          "widget": {
-            "name": "format"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "codec",
-          "name": "codec",
-          "type": "COMBO",
-          "widget": {
-            "name": "codec"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveVideo",
-        "cnr_id": "comfy-core",
-        "ver": "0.18.1",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "video-segment-2",
-        "auto",
-        "auto"
-      ]
-    },
-    {
       "id": 114,
       "type": "VideoLastFrame",
       "pos": [
-        255.34100999999987,
-        243.69648999999973
+        -214.12265499999944,
+        679.5004959999991
       ],
       "size": [
         225,
         72
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -607,7 +387,7 @@
           "type": "IMAGE",
           "slot_index": 0,
           "links": [
-            209
+            266
           ]
         }
       ],
@@ -625,15 +405,15 @@
       "id": 116,
       "type": "VideoConcat",
       "pos": [
-        750.5360999999999,
-        253.55179999999996
+        1143.004750374859,
+        -45.751158214392866
       ],
       "size": [
         225,
         144
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -646,7 +426,7 @@
           "localized_name": "video_2",
           "name": "video_2",
           "type": "VIDEO",
-          "link": 212
+          "link": 269
         },
         {
           "localized_name": "video_3",
@@ -688,8 +468,8 @@
       "id": 117,
       "type": "SaveVideo",
       "pos": [
-        1115.2226999999998,
-        252.48699999999994
+        1408.43853830139,
+        -33.09772414242759
       ],
       "size": [
         225,
@@ -764,7 +544,7 @@
         372
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -850,7 +630,8 @@
           "slot_index": 0,
           "links": [
             215,
-            244
+            244,
+            268
           ]
         },
         {
@@ -884,15 +665,15 @@
       "id": 119,
       "type": "RegexExtract",
       "pos": [
-        -1660,
-        -210
+        -240.97963900000218,
+        41.561661999999615
       ],
       "size": [
         320,
         332
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -982,7 +763,7 @@
       },
       "widgets_values": [
         "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
-        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
+        "\\[\\[SEGMENT_1\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_1\\]\\]",
         "First Group",
         true,
         true,
@@ -1223,15 +1004,15 @@
       "id": 139,
       "type": "PreviewAny",
       "pos": [
-        -1671.9326289747937,
-        299.2475380732585
+        -1550.673719296753,
+        -11.19542991873368
       ],
       "size": [
         383.9333190917969,
         360.8333435058594
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1308,15 +1089,15 @@
       "id": 144,
       "type": "PreviewImage",
       "pos": [
-        -3168.9889325122176,
-        206.2255102255599
+        -3172.441203726611,
+        -132.0970687849633
       ],
       "size": [
-        380,
-        604
+        293.6666564941406,
+        210.4499969482422
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1343,15 +1124,15 @@
       "id": 145,
       "type": "SlotImageBatch",
       "pos": [
-        -3332.7406597496806,
-        -199.08019194188364
+        -3336.192930964074,
+        346.3786599322252
       ],
       "size": [
         341.3333435058594,
         264
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1426,7 +1207,8 @@
           "links": [
             256,
             262,
-            263
+            263,
+            267
           ]
         },
         {
@@ -1487,6 +1269,403 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 147,
+      "type": "FALSeedanceReference2Video",
+      "pos": [
+        110,
+        670
+      ],
+      "size": [
+        420,
+        676
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 267
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 266
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            265,
+            269
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "FALSeedanceReference2Video",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "720p",
+        "16:9",
+        15,
+        true,
+        99999,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 148,
+      "type": "SaveVideo",
+      "pos": [
+        610,
+        845.0040700000005
+      ],
+      "size": [
+        320,
+        353.8833312988281
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 265
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "SaveVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1"
+      },
+      "widgets_values": [
+        "video-segment-1",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 149,
+      "type": "RegexExtract",
+      "pos": [
+        -232.60126826163787,
+        879.3483191241878
+      ],
+      "size": [
+        320,
+        332
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 268
+        },
+        {
+          "localized_name": "regex_pattern",
+          "name": "regex_pattern",
+          "type": "STRING",
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "case_insensitive",
+          "name": "case_insensitive",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "multiline",
+          "name": "multiline",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "multiline"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "dotall",
+          "name": "dotall",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "dotall"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "group_index",
+          "name": "group_index",
+          "type": "INT",
+          "widget": {
+            "name": "group_index"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "string": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "RegexExtract"
+      },
+      "widgets_values": [
+        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
+        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
+        "First Group",
+        true,
+        true,
+        true,
+        1
+      ]
     }
   ],
   "links": [
@@ -1499,26 +1678,10 @@
       "VIDEO"
     ],
     [
-      206,
-      104,
-      0,
-      106,
-      0,
-      "VIDEO"
-    ],
-    [
       208,
       103,
       0,
       114,
-      0,
-      null
-    ],
-    [
-      209,
-      114,
-      0,
-      104,
       0,
       null
     ],
@@ -1528,14 +1691,6 @@
       0,
       116,
       0,
-      null
-    ],
-    [
-      212,
-      104,
-      0,
-      116,
-      1,
       null
     ],
     [
@@ -1625,27 +1780,67 @@
       103,
       0,
       "IMAGE"
+    ],
+    [
+      265,
+      147,
+      0,
+      148,
+      0,
+      "VIDEO"
+    ],
+    [
+      266,
+      114,
+      0,
+      147,
+      1,
+      "IMAGE"
+    ],
+    [
+      267,
+      145,
+      0,
+      147,
+      0,
+      "IMAGE"
+    ],
+    [
+      268,
+      118,
+      0,
+      149,
+      0,
+      "STRING"
+    ],
+    [
+      269,
+      147,
+      0,
+      116,
+      1,
+      "VIDEO"
     ]
   ],
   "groups": [
     {
       "id": 3,
-      "title": "2. Segment 1 — Sofa → Lava Lamp → CRT TV",
+      "title": "2. Segment 1",
       "bounding": [
         -250,
         -200,
-        900,
-        500
+        1199.3938089999997,
+        740.932296
       ],
       "color": "#8f5c2a",
       "flags": {}
     },
     {
       "id": 4,
-      "title": "3. Segment 2 — CRT OFF → Sofa → Coffee Mug",
+      "title": "4. combine video",
       "bounding": [
-        -250,
-        400,
+        1133.5114030556233,
+        -138.5478583074061,
         900,
         500
       ],
@@ -1658,8 +1853,8 @@
       "bounding": [
         -2710,
         -310,
-        1636.2238039999997,
-        1035.9903989999998
+        1667.6080877672098,
+        2420.0373131339584
       ],
       "color": "#5e3f78",
       "flags": {}
@@ -1675,15 +1870,27 @@
       ],
       "color": "#8f5c2a",
       "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "3. Segment 2",
+      "bounding": [
+        -249.542700373713,
+        577.3373649034626,
+        1224.1956629999995,
+        1042.097665999999
+      ],
+      "color": "#8f5c2a",
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8264462809917354,
+      "scale": 0.6830134553650709,
       "offset": [
-        -137.9005253630312,
-        545.82145276391
+        524.8632850997171,
+        440.5837501810659
       ]
     },
     "ue_links": [],
