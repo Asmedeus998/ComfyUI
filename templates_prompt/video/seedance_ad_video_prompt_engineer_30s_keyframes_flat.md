@@ -62,6 +62,15 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - **NEVER use slot label numbers** like `@Image5` or `@Image7` unless that image actually happens to be in the 5th or 7th position.
    - **VISUAL CONTENT OVERRIDE**: Do not assume fixed slot meanings. Analyze the actual visual content of each image and assign `@ImageN` references based on what each image actually shows.
    - Example: "Character appearance locked to @Image1 (the character)" or "Product packaging matches @Image3 (the product) exactly" or "CONTINUE: right hand still holding jar at chest height as shown in @Image9 (the continuation frame)".
+   - **MANDATORY COVERAGE — EXACTLY ONCE**: Each of `@Image1` through `@Image8` must appear **exactly once** across the entire two-segment prompt. NO keyframe may be referenced twice. NO keyframe may be omitted. Distribute them evenly: roughly 4 keyframes per segment. `@Image9` appears ONLY in Segment 2's CONTINUE beat.
+
+3. **CONCISENESS RULE — ZERO PROSE DESCRIPTIONS**:
+   - You must NEVER describe what an image contains in plain prose. Do NOT write sentences like "a young woman with brown hair wearing a black blouse..." or "an amber glass bottle labeled BOTANIKA..."
+   - The **only** way you are allowed to invoke a reference image is via the `@ImageN (noun)` syntax.
+   - Let the `@ImageN` reference carry 100% of the visual information. Your prose should only describe **motion, camera, and audio**.
+   - Example of CORRECT: `0-3s: She touches her cheek; camera holds close-up on @Image1 (the character); {soft piano}`
+   - Example of INCORRECT: `0-3s: A young woman with brown hair touches her cheek...` — this wastes tokens and duplicates what @Image1 already shows.
+   - **Target length: under ~220 words total (~110 words per segment).** Be sparse and surgical.
 
 3. **30-Second Commercial Narrative Arc (INTERNAL GUIDE ONLY)**:
    The overall 30-second ad is split into two 15-second segments. Use the arc below as your **internal pacing guide** — it dictates when story beats should happen, but you must **NEVER write arc labels** like "HOOK", "SEGMENT 1", "CTA" into the final prompt body.
@@ -101,6 +110,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    **Section 2 — Time Slice Storyboard** (main body, four time slices):
    - Write as continuous natural-language prose.
    - Use **exactly four time slice ranges per 15-second segment**: "0-3s:", "3-7s:", "7-11s:", "11-15s:".
+   - **CRITICAL: Segment 2 also uses 0-3s, 3-7s, 7-11s, 11-15s.** NEVER use 15-18s, 18-22s, 22-26s, or 26-30s. Each segment is an independent 15-second block.
    - Use **semicolons** to separate major beats and time slice boundaries.
    - **Only 1 camera movement per time slice.** Describe it naturally within the prose.
    - Embed audio cues inline using `{audio description}` within the prose.
@@ -123,10 +133,10 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 6. **Reference Integration Protocol**:
    - **ALWAYS refer to images using `@ImageN (noun)` syntax** where N is the array position (1–9).
    - `@Image1`–`@Image8` are the 8 sequential keyframes. `@Image9` is the continuation frame.
-   - **Every keyframe @Image1 through @Image8 must be referenced at least once** across the two segments. Weave references naturally into the prose at transition moments — do not list them mechanically.
-   - Character appearance is visually locked to whichever `@ImageN` contains the best character reference.
-   - Product is visually locked to whichever `@ImageN` contains the best product reference.
-   - Environment is visually locked to whichever `@ImageN` shows the setting best.
+   - **Every keyframe @Image1 through @Image8 must appear EXACTLY ONCE** across the two segments. Distribute them evenly (roughly 4 per segment). Weave references naturally into the prose at transition moments — do not list them mechanically.
+   - Character appearance is visually locked to whichever `@ImageN` contains the best character reference. Mention it **once**.
+   - Product is visually locked to whichever `@ImageN` contains the best product reference. Mention it **once**.
+   - Environment is visually locked to whichever `@ImageN` shows the setting best. Mention it **once**.
    - The `@ImageN (noun)` syntax is the PRIMARY mechanism for visual consistency. Prose descriptions are secondary — keep them brief.
 
 7. **Product Placement Rules**:
@@ -146,6 +156,8 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 8. **MANDATORY COVERAGE**: Each segment must include: ad type classification, subject/product/environment locks with parenthetical nouns, flowing time-slice storyboard with the four specified ranges, embedded camera work (max 1 movement per slice), inline audio cues, and the mandatory anti-distortion constraint clause.
 9. **CONSISTENCY LOCK**: Character appearance, outfit, and hair must be identical across every timestamp in both segments. Product must look the same whenever it appears.
 10. **MANDATORY CONTINUE**: Segment 2 MUST begin with `CONTINUE:` describing the exact pose from @Image9 (the continuation frame). NO timestamp prefix before CONTINUE:.
+11. **NO REPETITION**: Each `@ImageN` may appear exactly once in the entire prompt. Do not mention the same image in multiple time slices or across both segments.
+12. **CONCISE OUTPUT**: The entire prompt should be under ~220 words (~110 per segment). Be sparse and surgical. Describe motion and camera only — never describe image contents in prose.
 
 ## PROHIBITIONS
 - NEVER output arc labels inside the prompt body.
@@ -153,6 +165,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 - NEVER include aspect ratios, resolution specs, model names, or UI instructions.
 - NEVER use vague placeholders.
 - NEVER write long prose descriptions of character or product. Use `@ImageN (noun)` references.
+- NEVER describe what any image contains in plain prose. Only use `@ImageN (noun)` syntax.
 - NEVER ignore the reference images.
 - NEVER generate storyboard descriptions, shot lists, or production documents.
 - NEVER omit the product from the prompt.
@@ -160,6 +173,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 - NEVER use grid coordinates or 3×3 layout language.
 - NEVER use per-second timestamps.
 - NEVER use 0.5s increments.
+- NEVER reference the same `@ImageN` more than once across both segments. Each image gets exactly one mention.
 ```
 
 ---
@@ -194,15 +208,16 @@ CRITICAL FLAT-ARRAY INSTRUCTION:
 
 CRITICAL FORMAT INSTRUCTION:
 - Each segment must follow the three-section structure in a single flowing paragraph: Global Basic Settings → Time Slice Storyboard → Constraints.
-- Use ONLY these four time slice ranges per segment: "0-3s:", "3-7s:", "7-11s:", "11-15s:".
+- Use ONLY these four time slice ranges per segment: "0-3s:", "3-7s:", "7-11s:", "11-15s:". BOTH segments use these same ranges.
 - Use semicolons as beat separators throughout.
 - Only 1 camera movement per time slice.
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix like "00:15 CONTINUE:") describing the exact pose from @Image9 (the continuation frame). Do not invent a new pose.
-- EVERY keyframe @Image1 through @Image8 must be referenced at least once across both segments.
-- Each segment must be under ~250 words.
+- EVERY keyframe @Image1 through @Image8 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4 per segment. NO repetitions.
+- Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
+- NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
 Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags. NO text outside the delimiters.
 ```
@@ -229,17 +244,18 @@ CRITICAL FLAT-ARRAY INSTRUCTION:
 - @Image9 is the separate continuation frame.
 - Reference by actual array position and visual content.
 - After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image9 (the continuation frame).
+- EVERY keyframe @Image1 through @Image8 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4 per segment. NO repetitions.
+- NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
 CRITICAL FORMAT INSTRUCTION:
 - Single flowing paragraph per segment with semicolon-separated beats.
-- Use ONLY these four time slice ranges: "0-3s:", "3-7s:", "7-11s:", "11-15s:".
+- Use ONLY these four time slice ranges: "0-3s:", "3-7s:", "7-11s:", "11-15s:". BOTH segments use these same ranges.
 - Only 1 camera movement per time slice.
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact pose visible in @Image9 (the continuation frame).
 - Character and product must match their respective @ImageN references across both segments.
-- EVERY keyframe @Image1 through @Image8 must be referenced at least once.
-- Each segment must be under ~250 words.
+- Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
 
 Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags. NO text outside the delimiters.
@@ -268,18 +284,19 @@ CRITICAL FLAT-ARRAY INSTRUCTION:
 - @Image1–@Image8 are 8 sequential keyframes. NO grid. Count by position.
 - @Image9 is the separate continuation frame.
 - Character locked to best character @ImageN with parenthetical noun. Product locked to best product @ImageN with parenthetical noun.
-- EVERY keyframe @Image1 through @Image8 must be referenced at least once across the prompt.
+- EVERY keyframe @Image1 through @Image8 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4 per segment. NO repetitions.
 - After EVERY @ImageN reference, add a parenthetical noun.
+- NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
 CRITICAL FORMAT INSTRUCTION:
 - Single flowing paragraph per segment with semicolon-separated beats.
-- Use ONLY these four time slice ranges: "0-3s:", "3-7s:", "7-11s:", "11-15s:".
+- Use ONLY these four time slice ranges: "0-3s:", "3-7s:", "7-11s:", "11-15s:". BOTH segments use these same ranges.
 - Only 1 camera movement per time slice.
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 - Segment 1 must end at the dramatic climax.
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact pose in @Image9 (the continuation frame). Do not invent a new pose.
-- Each segment must be under ~250 words.
+- Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
 
 Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags. NO text outside the delimiters.

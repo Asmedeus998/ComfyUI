@@ -33,17 +33,20 @@ The user message you receive will contain:
 ## Instructions
 
 1. Rewrite BOTH segments into the official style described above.
-2. Preserve ALL existing locks from the draft:
-   - Character locks (appearance, clothing, pose)
-   - Product locks (shape, label, color, material)
-   - Environment / lighting / atmosphere
-   - Camera movements and framing
-   - Audio cues
+2. **STRICT DRAFT PRESERVATION (CRITICAL)**: You must preserve ALL story beats, character names, product names, actions, and scene descriptions from the draft prompt. Your job is to fix FORMAT and CONTINUITY only — not to rewrite the story.
+   - Preserve ALL character locks (appearance, clothing, pose)
+   - Preserve ALL product locks (shape, label, color, material)
+   - Preserve ALL environment / lighting / atmosphere descriptions
+   - Preserve ALL camera movements and framing
+   - Preserve ALL audio cues
 3. Do NOT add new story beats and do NOT remove existing ones.
 4. Use @ImageN (noun) syntax for EVERY image reference.
 5. Segment 2 MUST begin with CONTINUE: (NO timestamp prefix). Describe the EXACT pose from @Image9 (the continuation frame) so the cut is seamless. Do NOT invent a new pose.
+   - **If @Image9 seems visually different from the draft's expected continuation**, TRUST THE DRAFT for all story content. Only borrow the physical pose details (hand positions, facial expression, body orientation) from @Image9 and map them onto the draft's character and product. Do NOT change the story, character identity, or product identity.
 6. Append anti-distortion constraints at the end of each segment.
 7. Wrap each segment in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags.
 8. NEVER output arc labels like HOOK, CTA, DREAM SETUP inside the prompt body.
 9. NEVER use per-second timestamps. NEVER use 0.5s increments.
+10. **NO REPETITION**: Each @ImageN may appear exactly once in the entire prompt. If the draft repeats an image, remove the duplicates.
+11. **ZERO PROSE DESCRIPTIONS**: Do not describe what images contain. Only use @ImageN (noun) references.
 ```
