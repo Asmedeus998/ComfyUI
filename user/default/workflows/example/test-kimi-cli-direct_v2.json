@@ -1,8 +1,8 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 20,
-  "last_link_id": 26,
+  "last_node_id": 24,
+  "last_link_id": 37,
   "nodes": [
     {
       "id": 3,
@@ -13,10 +13,10 @@
       ],
       "size": [
         400,
-        372
+        508
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -24,7 +24,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 24
+          "link": 35
         },
         {
           "localized_name": "video",
@@ -133,15 +133,15 @@
       "id": 4,
       "type": "PreviewAny",
       "pos": [
-        1007.3260101079667,
-        154.53942878632907
+        1041.6047601624384,
+        177.9933104025466
       ],
       "size": [
-        2025.86669921875,
-        1632.050048828125
+        1023.8499755859375,
+        436.7166748046875
       ],
       "flags": {},
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -170,7 +170,7 @@
       "widgets_values": [
         null,
         null,
-        false
+        null
       ]
     },
     {
@@ -185,7 +185,7 @@
         200
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -221,8 +221,8 @@
       "id": 13,
       "type": "PreviewImage",
       "pos": [
-        892.6025387805828,
-        -711.4605848698873
+        1084.7078706648022,
+        -504.9473530943517
       ],
       "size": [
         380,
@@ -236,7 +236,7 @@
           "localized_name": "images",
           "name": "images",
           "type": "IMAGE",
-          "link": 23
+          "link": 33
         }
       ],
       "outputs": [],
@@ -251,156 +251,6 @@
         "ver": "0.18.1"
       },
       "widgets_values": []
-    },
-    {
-      "id": 16,
-      "type": "SlotImageBatch",
-      "pos": [
-        133.66104952208923,
-        -181.87295257537954
-      ],
-      "size": [
-        341.3333435058594,
-        420
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "character",
-          "name": "character",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 17
-        },
-        {
-          "localized_name": "costume",
-          "name": "costume",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "prop",
-          "name": "prop",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "environment",
-          "name": "environment",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "product",
-          "name": "product",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "style",
-          "name": "style",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "creative",
-          "name": "creative",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 18
-        },
-        {
-          "localized_name": "creative_video",
-          "name": "creative_video",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "batch",
-          "name": "batch",
-          "type": "IMAGE",
-          "links": [
-            23,
-            24
-          ]
-        },
-        {
-          "localized_name": "image_1",
-          "name": "image_1",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_2",
-          "name": "image_2",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_3",
-          "name": "image_3",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_4",
-          "name": "image_4",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_5",
-          "name": "image_5",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_6",
-          "name": "image_6",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_7",
-          "name": "image_7",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "localized_name": "creative_video",
-          "name": "creative_video",
-          "type": "VIDEO",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SlotImageBatch",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 17,
@@ -444,7 +294,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            18
+            37
           ]
         },
         {
@@ -511,7 +361,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            17
+            36
           ]
         },
         {
@@ -572,11 +422,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "video/seedance ad video prompt engineer: system_prompt"
@@ -613,20 +464,338 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            26
+            26,
+            29
           ]
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "video/seedance ad video prompt engineer: C - Lifestyle Aspirational Ad (Fashion/Home/Wellness)"
       ]
+    },
+    {
+      "id": 21,
+      "type": "KimiCliDirect",
+      "pos": [
+        519.6699901537445,
+        -1227.5243076376842
+      ],
+      "size": [
+        393.8666687011719,
+        797.2666625976562
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 34
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 29
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            27
+          ]
+        },
+        {
+          "localized_name": "thinking",
+          "name": "thinking",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KimiCliDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Describe what you see in detail and image list, like image 1 and image 2 and image 3 ",
+        "",
+        "",
+        "300"
+      ],
+      "color": "#2F4F4F",
+      "bgcolor": "#3D6B6B"
+    },
+    {
+      "id": 22,
+      "type": "PreviewAny",
+      "pos": [
+        1065.0910741543712,
+        -1169.9443662039316
+      ],
+      "size": [
+        1471.1666259765625,
+        534.6333618164062
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 24,
+      "type": "SlotImageBatch",
+      "pos": [
+        162.37099652847994,
+        -226.30052615314685
+      ],
+      "size": [
+        341.3333435058594,
+        264
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "character",
+          "name": "character",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "localized_name": "costume",
+          "name": "costume",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prop",
+          "name": "prop",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "environment",
+          "name": "environment",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "product",
+          "name": "product",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "style",
+          "name": "style",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 37
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "batch",
+          "name": "batch",
+          "type": "IMAGE",
+          "links": [
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SlotImageBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -647,38 +816,6 @@
       "STRING"
     ],
     [
-      17,
-      18,
-      0,
-      16,
-      1,
-      "IMAGE"
-    ],
-    [
-      18,
-      17,
-      0,
-      16,
-      7,
-      "IMAGE"
-    ],
-    [
-      23,
-      16,
-      0,
-      13,
-      0,
-      "IMAGE"
-    ],
-    [
-      24,
-      16,
-      0,
-      3,
-      0,
-      "IMAGE"
-    ],
-    [
       25,
       19,
       0,
@@ -693,16 +830,72 @@
       3,
       5,
       "STRING"
+    ],
+    [
+      27,
+      21,
+      0,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      20,
+      0,
+      21,
+      6,
+      "STRING"
+    ],
+    [
+      33,
+      24,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      24,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      24,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      36,
+      18,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ],
+    [
+      37,
+      17,
+      0,
+      24,
+      7,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5038902306904254,
+      "scale": 0.28443289883353,
       "offset": [
-        747.3942227480504,
-        671.9915928986659
+        1521.1323775475637,
+        1502.8394310968574
       ]
     },
     "frontendVersion": "1.44.18",
