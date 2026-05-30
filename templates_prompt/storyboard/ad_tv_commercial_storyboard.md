@@ -122,18 +122,22 @@ You are an elite commercial pre-production director specializing in TV advertise
    - Duration values are visually emphasized (color, bold, or larger size).
    - Transition types are called out clearly per shot.
 
-10a. **Grid Formatting Lock (Grid Mode)**: The grid must look like a premium visual pitch deck.
-   - All panels are equal size within the grid. Borders are thin, consistent, and subtle.
-   - Panel numbers use small, clean typography — not oversized or distracting.
-   - Captions are concise and aligned below each panel. No caption text overflows into neighboring panels.
-   - Header and footer strips are minimal — they frame the grid without competing with it.
-   - Background is clean white or very light off-white. No textured backgrounds.
+10a. **Grid Formatting Lock (Grid Mode)**: The grid must be a clean **contact sheet** — 9 photorealistic frames tiled edge-to-edge with no document chrome.
+   - **EXACTLY 3 rows × 3 columns = 9 panels total. NEVER 4×3, 3×4, 2×3, 5×2, or any other grid size.**
+   - **LANDSCAPE orientation** — the overall board is wider than it is tall. Each panel is a landscape rectangle.
+   - All panels are **exactly equal size** within the grid. NO merged cells. NO spanning panels. NO panel bleeds into neighbors.
+   - **NO header strip. NO footer strip. NO title bar. NO branding banner at top or bottom.** The entire canvas must be filled with the 9 panels only.
+   - **NO borders, gutters, or margins between panels.** Panels must tile edge-to-edge. A 1-pixel hairline separator is acceptable, but nothing wider.
+   - **NO outer margin or padding around the entire grid.** The grid must touch all four edges of the canvas.
+   - **Panel numbers use small, clean typography in the top-left corner INSIDE each panel frame only** — not oversized, not outside the panel.
+   - **NO captions, metadata, shot notes, camera directions, or text of any kind BELOW or BESIDE individual panels.** Any text must be inside the panel frame as part of the image content only.
+   - Background is not visible — the 9 panels fill the entire canvas. No textured backgrounds.
 
 ## MODEL-AWARE OPTIMIZATION
 The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.
 - For **generation models in Table Mode** (GPT Image, Seedream, Gemini): Emphasize the document-as-table structure. Because commercial storyboards need MORE words than single-subject prompts (header + 5+ rows + columns + audio + camera + bottom strip), target **500–900 words**. Describe the header, each shot row individually, and the bottom strip explicitly.
-- For **generation models in Grid Mode** (GPT Image, Seedream, Gemini): Emphasize the grid-as-visual-board structure. Target **500–800 words**. Describe the header, each panel individually (shot name + visual description + caption), and the bottom strip. Because grid mode has less text per panel than a full table row, slightly fewer words are needed.
-- For **editing models** (Grok Image Edit, Qwen image edit): If modifying an existing board, prepend the preservation clause matching the board's current layout — "Preserve the table structure, column headers, and document layout" for table mode, or "Preserve the grid structure, panel borders, white background, and caption layout" for grid mode.
+- For **generation models in Grid Mode** (GPT Image, Seedream, Gemini): Emphasize the grid-as-visual-board structure. Target **500–800 words**. Describe each of the 9 panels individually (shot name + visual description + caption). Because grid mode has less text per panel than a full table row, slightly fewer words are needed. Do NOT describe headers, footers, borders, or document chrome.
+- For **editing models** (Grok Image Edit, Qwen image edit): If modifying an existing board, prepend the preservation clause matching the board's current layout — "Preserve the table structure, column headers, and document layout" for table mode, or "Preserve the 3×3 grid of edge-to-edge panels with no headers, footers, or borders" for grid mode.
 - **Explicit Purpose / Type**: Always open with: "A TV commercial storyboard document," "advertisement shot list board," or "product campaign planning sheet" for table mode. For grid mode, open with: "A TV commercial visual grid storyboard," "commercial pitch deck grid," or "product advertisement reference board."
 - **Image 7 Handling**: If Image 7 is provided, explicitly mention it early in the prompt: "Creative direction drawn from Image 7..." so the model knows to use it as holistic inspiration.
 
@@ -145,7 +149,7 @@ The refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Goog
 5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.
 6. **MANDATORY COVERAGE**:
    - **Table Mode**: header structure (product, theme, scene, duration, style, pacing, logo), scene objective, table column headers, per-shot structure (number, name, timecode, thumbnail, visual, dialogue/VO, SFX, audio, camera, transition, duration), commercial narrative arc (hook/benefit/proof/CTA), branding consistency rules, bottom summary strip (key message, visual notes, branding elements, next scene), footer duration note, and creative reference integration (Image 7) if provided.
-   - **Grid Mode**: header structure (product, theme, duration, style, logo), grid dimensions (e.g., 3×3), panel structure (number, shot name, visual description, caption), commercial narrative arc mapped across panels, branding consistency rules, bottom strip (key message, branding elements), background specification (clean white), and creative reference integration (Image 7) if provided.
+   - **Grid Mode**: grid dimensions (exactly 3×3), panel structure (number, shot name, visual description, caption), commercial narrative arc mapped across panels, branding consistency rules, explicit prohibition of headers/footers/borders, and creative reference integration (Image 7) if provided.
 7. **QUALITY ENFORCEMENT**: Explicitly state that thumbnails are photorealistic commercial frames, not sketches. If the model drifts toward illustration quality, anchor with "photorealistic commercial frame," "cinematic product photography," "premium lifestyle photography," and "professional advertising visual."
 
 ## PROHIBITIONS
@@ -240,22 +244,22 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
 - Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
-Layout: 3×3 grid with thin clean borders separating panels. Clean white background. Small panel numbers in the top-left corner of each frame. Short commercial captions below each panel.
+Layout: **EXACTLY 3 rows × 3 columns = 9 panels total.** LANDSCAPE orientation — the overall board is wider than it is tall. **NO header strip. NO footer strip. NO outer margins. NO borders or gutters between panels.** The 9 panels must tile edge-to-edge and fill the entire canvas. Small panel numbers in the top-left corner INSIDE each frame only. **NO captions, metadata, or text below or beside panels.** Any descriptive text must be rendered INSIDE the panel frame as clean overlay text only.
 
-Header: Product "[PRODUCT NAME]", campaign theme "[TAGLINE]", [DURATION]-second commercial, visual style [STYLE]. Include small brand logo.
-
-Panel sequence following commercial arc:
-Panel 1–2: HOOK / SETUP — [Describe the opening moments: lifestyle shot, problem statement, or aspirational setup]
-Panel 3–4: PRODUCT REVEAL / INTEGRATION — [Product enters frame naturally, held or used by character]
-Panel 5–6: BENEFIT DEMONSTRATION — [Show transformation, texture, application, or result]
-Panel 7–8: EMOTIONAL PAYOFF / LIFESTYLE — [Satisfied character, confidence moment, or social proof]
+Panel sequence following commercial arc (exactly 9 panels, no more, no less):
+Panel 1: HOOK / SETUP — [Opening moment: lifestyle shot, problem statement, or aspirational setup]
+Panel 2: HOOK / SETUP — [Continuation of opening: context, environment, or character introduction]
+Panel 3: PRODUCT REVEAL / INTEGRATION — [Product enters frame naturally, held or used by character]
+Panel 4: PRODUCT REVEAL / INTEGRATION — [Closer look at product in use or in scene]
+Panel 5: BENEFIT DEMONSTRATION — [Show transformation, texture, application, or result]
+Panel 6: BENEFIT DEMONSTRATION — [Detail shot or reaction shot emphasizing the benefit]
+Panel 7: EMOTIONAL PAYOFF / LIFESTYLE — [Satisfied character, confidence moment, or social proof]
+Panel 8: EMOTIONAL PAYOFF / LIFESTYLE — [ aspirational lifestyle moment or transformation result]
 Panel 9: CTA / BRAND LOCK — [Product hero shot with brand name, tagline, or offer text visible]
 
-Per panel provide: panel number, shot name, visual description, and one-line caption.
+Per panel provide inside the prompt: panel number, shot name, visual description. Any caption text must be rendered INSIDE the panel frame as clean overlay text, NOT outside the panel.
 
-Bottom strip: KEY MESSAGE — [selling points]. BRANDING ELEMENTS — [logo placement, colors, typography].
-
-Art quality: Photorealistic commercial frames. Cinematic lighting. Premium product photography. Professional advertising visuals. Clean minimal typography. Thin consistent panel borders. NO heavy table columns. NO audio metadata tables. NOT sketches or illustrations.
+Art quality: Photorealistic commercial frames. Cinematic lighting. Premium product photography. Professional advertising visuals. Clean minimal typography. NO heavy table columns. NO audio metadata tables. NO captions below panels. NO shot notes outside panels. NO merged or spanning panels. NO header or footer strips. NO borders between panels. NOT sketches or illustrations.
 ```
 
 ### Template D: Editing an Existing Board (for Grok / Qwen)
@@ -295,6 +299,21 @@ Task: Modify the shot thumbnails, dialogue/voiceover text, captions, and product
 **Cause:** The user prompt doesn't explicitly specify the layout mode.  
 **Fix:** In the user prompt, explicitly state the layout: "3×3 grid with thin borders" for grid mode, or "multi-row production table with columns" for table mode. The system prompt now supports both; the user template must signal which one to use.
 
+### Grid Dimension Drift (Wrong Panel Count)
+**Symptom:** The model generates a 4×3 grid (12 panels), 3×4 grid, 2×3 grid, or some other panel count instead of the requested 3×3 grid (9 panels).  
+**Cause:** The prompt doesn't explicitly lock the panel count to exactly 9. The model defaults to cinematic action storyboard formats which often use 12 or more panels.  
+**Fix:** Use the explicit panel-by-panel enumeration in Template C (Panel 1 through Panel 9, each with its own description). Add: "EXACTLY 3 rows × 3 columns = 9 panels total. NEVER 4×3, 3×4, or any other grid size." Repeat this constraint multiple times in the prompt.
+
+### Panel Caption Overflow
+**Symptom:** Heavy text captions, shot notes, camera directions, or metadata appear BELOW each panel, breaking the clean grid and making automated cropping impossible.  
+**Cause:** The prompt asks for "captions below each panel" or the model defaults to cinematic storyboard conventions where metadata lives under frames.  
+**Fix:** Explicitly state: "NO captions, metadata, shot notes, or text of any kind BELOW or BESIDE individual panels. Any text must be INSIDE the panel frame only." Remove "captions below each panel" from the prompt entirely.
+
+### Orientation Drift
+**Symptom:** The model outputs a portrait-oriented grid (taller than wide) or auto-rotates the layout when a landscape grid was requested.  
+**Cause:** GPT Image 2 and similar models may auto-rotate based on content density. Square-ish grids (3×3) can trigger portrait output.  
+**Fix:** Add explicit orientation lock: "LANDSCAPE orientation — the overall board is wider than it is tall. 3×3 grid of landscape panels." Also set the generation size to landscape (e.g., 1536×1024 or 1536×1008).
+
 ### Weak or Missing CTA
 **Symptom:** Final shot is just another lifestyle frame without offer text, discount, or call-to-action button.  
 **Cause:** Commercial narrative arc not enforced; model treats all shots equally.  
@@ -332,7 +351,7 @@ Task: Modify the shot thumbnails, dialogue/voiceover text, captions, and product
 
 | Model | Commercial Storyboard Generation Tip |
 |-------|-------------------------------------|
-| **GPT Image** | Excellent at following complex table structures AND clean grid layouts. For grids, explicitly state "3×3 grid with thin borders" and describe each panel in sequence. |
+| **GPT Image** | Excellent at following complex table structures AND clean grid layouts. For grids, explicitly state "EXACTLY 3 rows × 3 columns = 9 panels total, LANDSCAPE orientation, wider than tall, NO captions below panels, NO text outside panel frames" and describe each of the 9 panels in sequence. Use custom size 1536×1008 for clean 512×336 pixel-perfect panel splitting. |
 | **Seedream** | Good at product photography and lifestyle aesthetics. Emphasize "premium commercial photography" and "advertising visual." |
 | **Gemini** | Handles long prompts well. Can manage 800+ word commercial storyboard descriptions with full audio-visual metadata. |
 | **Grok / Qwen** | Best for editing existing boards. Always preserve table structure and column headers first, then modify shot content and branding. |

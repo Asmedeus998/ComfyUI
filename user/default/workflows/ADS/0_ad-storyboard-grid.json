@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 246,
-  "last_link_id": 476,
+  "last_node_id": 248,
+  "last_link_id": 478,
   "nodes": [
     {
       "id": 133,
@@ -168,7 +168,8 @@
           "type": "IMAGE",
           "links": [
             292,
-            453
+            453,
+            477
           ]
         }
       ],
@@ -3354,7 +3355,7 @@
       },
       "widgets_values": [
         3,
-        4,
+        3,
         2,
         "split_bottom",
         "red",
@@ -4352,6 +4353,123 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 247,
+      "type": "ImageGridtoBatch",
+      "pos": [
+        3811,
+        -2200
+      ],
+      "size": [
+        315,
+        136
+      ],
+      "flags": {},
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 477
+        },
+        {
+          "localized_name": "columns",
+          "name": "columns",
+          "type": "INT",
+          "widget": {
+            "name": "columns"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "rows",
+          "name": "rows",
+          "type": "INT",
+          "widget": {
+            "name": "rows"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            478
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageGridtoBatch",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.0.0",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "columns": true,
+            "rows": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": 248,
+      "type": "SaveImage",
+      "pos": [
+        3811,
+        -2050
+      ],
+      "size": [
+        315,
+        270
+      ],
+      "flags": {},
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 478
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "Save Keyframe Panels",
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "keyframes/storyboard_panel"
+      ]
     }
   ],
   "links": [
@@ -4858,6 +4976,22 @@
       217,
       0,
       "IMAGE"
+    ],
+    [
+      477,
+      133,
+      0,
+      247,
+      0,
+      "IMAGE"
+    ],
+    [
+      478,
+      247,
+      0,
+      248,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -4909,10 +5043,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.20086298320163612,
+      "scale": 0.6934334949441341,
       "offset": [
-        2048.244152849499,
-        5151.329804430957
+        -2261.8818405211678,
+        4049.926476189468
       ]
     }
   },

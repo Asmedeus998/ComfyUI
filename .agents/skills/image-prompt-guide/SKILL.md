@@ -39,8 +39,8 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 | **Brand Campaign** | Single-subject photo | Subject ref + Product/Brand ref + Style ref. Lifestyle shot with brand aesthetic. | [`reference/reference-element-fusion.md`](reference/reference-element-fusion.md) |
 | **Art Director Presentation Board** | Multi-section document | Pre-production film bible with character turnarounds, prop sheets, environments, poster, color palette, mood text, materials, and notes. **Polished, realistic, grid required.** | [`reference/art-director-presentation-board.md`](reference/art-director-presentation-board.md) |
 | **Cinematic Action Storyboard** | Multi-panel sketch grid | Rough gestural planning board for action choreography with colored annotation arrows, per-panel camera/action/focus notes, and sequential beats. **Sketchy, unfinished, grid required.** | [`reference/cinematic-storyboard.md`](reference/cinematic-storyboard.md) |
-| **TV Commercial Storyboard** | Structured production table | Polished photorealistic commercial shot list with embedded thumbnails, dialogue/VO, SFX, audio, camera, transitions, durations, and summary strip. **Photorealistic, table format, grid required.** | [`reference/tv-commercial-storyboard.md`](reference/tv-commercial-storyboard.md) |
-| **Cinematic Lifestyle Storyboard** | Multi-panel photo grid | Photorealistic character-driven daily life montage with cinematic film stills, poetic captions, and mood-locked color grade. **Photorealistic, NOT sketches, grid required.** | [`reference/cinematic-lifestyle-storyboard.md`](reference/cinematic-lifestyle-storyboard.md) |
+| **TV Commercial Storyboard** | Structured production table OR 3×3 contact sheet | Polished photorealistic commercial shot list with embedded thumbnails, dialogue/VO, SFX, audio, camera, transitions, durations, and summary strip. **Photorealistic, table format OR 3×3 edge-to-edge contact sheet for keyframe extraction.** | [`reference/tv-commercial-storyboard.md`](reference/tv-commercial-storyboard.md) |
+| **Cinematic Lifestyle Storyboard** | 3×3 contact sheet | Photorealistic character-driven daily life montage with cinematic film stills, poetic captions inside panel frames, and mood-locked color grade. **Photorealistic, NOT sketches, 3×3 edge-to-edge contact sheet.** | [`reference/cinematic-lifestyle-storyboard.md`](reference/cinematic-lifestyle-storyboard.md) |
 | **Environment Reference Lock** | Multi-section reference board | Spatial anchor for I2V: multi-angle room views, prop detail callouts, technical spec bar. **Locks background consistency for video generation.** | [`reference/environment-reference-lock.md`](reference/environment-reference-lock.md) |
 | **3D CGI Animation Character Bible** | Multi-section design document | Pre-production character bible with hero line-ups, expression sheets, action poses, prop details, color palette & materials, scale reference, and bios. **Pixar-quality 3D CGI with strict consistency locks.** | [`character/3d-cgi-animation-character-bible.md`](character/3d-cgi-animation-character-bible.md) |
 | **Ad Character Reference Sheet** | Multi-section reference sheet | Stripped-down character reference for ad video generation — hero line-ups, ad expressions, product interaction poses, costume/prop details, color palette, turnaround. **NO bios, NO scale refs.** | [`character/ad-character-reference-sheet.md`](character/ad-character-reference-sheet.md) |
@@ -52,13 +52,13 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 
 | | Reference Element Fusion | Art Director Presentation Board | Cinematic Action Storyboard | TV Commercial Storyboard | Cinematic Lifestyle Storyboard | Environment Reference Lock |
 |--|-------------------------|--------------------------------|----------------------------|---------------------------|-------------------------------|---------------------------|
-| **Desired Output** | One photograph | One polished document / board | One rough planning sketch sheet | One structured production table | One photorealistic mood board | One spatial anchor board |
-| **Layout** | Single scene, no grids | Multi-section grid required | Multi-panel grid required | Multi-row table with columns | Multi-panel grid with captions | Multi-view + callouts + spec bar |
+| **Desired Output** | One photograph | One polished document / board | One rough planning sketch sheet | One structured production table OR 3×3 contact sheet | One photorealistic mood board / contact sheet | One spatial anchor board |
+| **Layout** | Single scene, no grids | Multi-section grid required | Multi-panel grid required | Multi-row table with columns OR 3×3 edge-to-edge grid | 3×3 contact sheet — edge-to-edge, no chrome | Multi-view + callouts + spec bar |
 | **Art Quality** | Photorealistic / finished | Polished, realistic renders | Rough, gestural, unfinished | Photorealistic / commercial-grade | Photorealistic / film-still / arthouse | Photorealistic / cinematic |
-| **Typography** | None or minimal | Heavy — titles, labels, credits | Light — shot names, notes per panel | Heavy — headers, VO text, offer text, durations | Light — poetic captions only | Medium — headers, prop labels, specs |
-| **Annotations** | None | Minimal | Heavy colored arrows (camera, body, prop, impact, timing) | None — audio/camera metadata in table cells instead | None — poetic captions below panels instead | None — prop callout panels instead |
+| **Typography** | None or minimal | Heavy — titles, labels, credits | Light — shot names, notes per panel | Heavy (table) or light (grid) — text inside panels only | Light — poetic captions inside panels only | Medium — headers, prop labels, specs |
+| **Annotations** | None | Minimal | Heavy colored arrows (camera, body, prop, impact, timing) | None — audio/camera metadata in table cells, or captions inside panels for grid mode | None — poetic captions inside panel frames only | None — prop callout panels instead |
 | **Word Count** | 150–300 words | 300–600 words | 400–800 words | 500–900 words | 500–900 words | 300–600 words |
-| **Anti-Pattern** | Collages / grids | Section overlap / missing panels | Polish drift / character drift / missing arrows | Sketch drift / missing audio / weak CTA / bad branding | Face drift / mood break / sketch quality / missing captions | Spatial drift / missing callouts / no spec bar |
+| **Anti-Pattern** | Collages / grids | Section overlap / missing panels | Polish drift / character drift / missing arrows | Sketch drift / missing audio / weak CTA / bad branding / caption overflow / grid dimension drift | Face drift / mood break / sketch quality / caption overflow / grid dimension drift | Spatial drift / missing callouts / no spec bar |
 
 ## Universal Reference Slot Standard
 
@@ -217,6 +217,27 @@ The synthesized prompt must always be wrapped in:
 
 No markdown, no bullets, no line breaks inside the prompt body.
 
+### 3×3 Contact-Sheet Grid Standard (for TV Commercial Grid Mode & Cinematic Lifestyle Storyboards)
+
+When generating **3×3 grids** that will be split into individual keyframes/panels, the prompt MUST enforce this contact-sheet standard to prevent headers, footers, and borders from breaking automated cropping:
+
+- [ ] **EXACTLY 3 rows × 3 columns = 9 panels total.** Never 4×3, 3×4, or any other grid size.
+- [ ] **LANDSCAPE orientation** — the overall board is wider than it is tall. Set generation size to landscape (e.g., 1536×1024).
+- [ ] **NO header strip.** NO title bar. NO branding banner at the top.
+- [ ] **NO footer strip.** NO key message bar. NO legal text strip at the bottom.
+- [ ] **NO borders, gutters, or margins between panels.** Panels must tile edge-to-edge. A 1-pixel hairline separator is acceptable.
+- [ ] **NO outer margin or padding** around the entire grid. The grid must touch all four edges of the canvas.
+- [ ] **Panel numbers** are small and subtle in the top-left corner **INSIDE** each panel frame only.
+- [ ] **NO captions, metadata, or text of any kind BELOW or BESIDE individual panels.** Any text must be inside the panel frame as part of the image content.
+- [ ] **Background is not visible** — the 9 panels fill the entire canvas.
+
+**Why this matters:** If the model generates a header bar (e.g., "Product BOTANIKA..."), a footer bar (e.g., "KEY MESSAGE..."), or white gutters between panels, a naive `1536÷3 / 1024÷3` split will cut through the text and produce unusable panels. The contact-sheet standard ensures clean `512×341` (or `512×336` with custom sizes) panels that require zero post-processing.
+
+**Anti-patterns to watch for:**
+- **Grid Dimension Drift**: Model generates 4×3 (12 panels) or 3×4 instead of 3×3. Fix: enumerate Panel 1 through Panel 9 explicitly.
+- **Panel Caption Overflow**: Text appears below panels instead of inside. Fix: state "NO captions below panels" and "all text inside panel frames only."
+- **Orientation Drift**: Model outputs portrait instead of landscape. Fix: add "LANDSCAPE orientation, wider than tall" and use landscape generation size.
+
 ### Anti-Collage Checklist (for REF only)
 
 If your **single-subject** outputs show split-screens, grids, or multi-panel layouts:
@@ -252,11 +273,12 @@ If your **storyboard** outputs look too polished, miss annotations, or have inco
 If your **commercial storyboard** outputs look like sketches, miss audio info, or lack a strong CTA:
 
 - [ ] Anchor quality: "photorealistic commercial frames," "cinematic product photography," "NOT sketches"
-- [ ] List all 8 columns explicitly: SHOT, VISUAL DESCRIPTION, DIALOGUE/VO, SFX, AUDIO/MUSIC, CAMERA, TRANSITION, DURATION
+- [ ] For **Table Mode**: List all 8 columns explicitly: SHOT, VISUAL DESCRIPTION, DIALOGUE/VO, SFX, AUDIO/MUSIC, CAMERA, TRANSITION, DURATION
+- [ ] For **Grid Mode (3×3 contact sheet)**: "EXACTLY 3 rows × 3 columns = 9 panels total, LANDSCAPE, NO headers, NO footers, NO borders, edge-to-edge panels"
 - [ ] Enforce CTA end card: final shot must contain offer text, discount, "ORDER NOW" button, brand logo, tagline
 - [ ] Add branding consistency rules: logo position, brand color, typography style
-- [ ] Verify durations sum correctly and footer states total scene + commercial duration
-- [ ] Include bottom summary strip: KEY MESSAGE, VISUAL NOTES, BRANDING ELEMENTS, NEXT SCENE PREVIEW
+- [ ] Verify durations sum correctly and footer states total scene + commercial duration (table mode only)
+- [ ] For grid mode: NO captions below panels — all text must be INSIDE panel frames
 
 ### Lifestyle Storyboard Checklist (for Cinematic Lifestyle Storyboards only)
 
@@ -265,9 +287,11 @@ If your **lifestyle storyboard** outputs have different faces per panel, sketch 
 - [ ] Character lock: Describe face, hair, clothing, and distinguishing features in extreme detail at the prompt start. Reference "the same man/woman" for every panel.
 - [ ] Mood lock: Define emotional temperature and color grade upfront. Add "ALL panels share the same mood and color grade."
 - [ ] Anti-sketch anchors: "photorealistic cinematic photographs," "film still," "shot on 35mm," "arthouse cinema aesthetic," "NOT sketches or illustrations"
-- [ ] Caption voice: "poetic, reflective, understated — one sentence reading like literary fiction or a diary entry"
+- [ ] Grid lock: "EXACTLY 3 rows × 3 columns = 9 panels total, LANDSCAPE, NO headers, NO footers, NO borders, edge-to-edge panels"
+- [ ] Caption voice: "poetic, reflective, understated — one sentence reading like literary fiction or a diary entry, rendered INSIDE the panel frame only"
 - [ ] Scene curation: Mix exterior and interior daily life scenes. Progress from external activity to internal reflection. Final panel is a close-up detail.
 - [ ] Anti-commercial: "NOT commercial photography or advertising. Candid, unposed moments. Natural lighting. Film grain."
+- [ ] Anti-caption-overflow: "NO captions below panels. NO text outside panel frames."
 
 ### Environment Lock Checklist (for I2V Scene Anchors only)
 
