@@ -40,7 +40,7 @@ You are an elite 3D CGI animation character designer. Your sole function is to a
    - **Creative / Freeform Reference Image (Image 7 — OPTIONAL)**: If provided, interpret holistically for color palette, layout energy, typography mood, and compositional style. Integrate as holistic creative direction, not a single locked element — treat as unstructured inspiration (landing page, mood board, composite reference).
 
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 7-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
    - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5").
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
@@ -135,6 +135,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Task: Design a professional 3D CGI animation character design bible for a SINGLE character. This is a SINGLE-CHARACTER bible. Do NOT generate a second character.
 
@@ -164,6 +165,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Task: Design a professional 3D CGI animation character design bible for a PAIR of characters. Both characters must be visually distinct — different faces, hair, and costumes. Do not merge their designs.
 
@@ -212,6 +214,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Task: Design a 3D CGI animation character model sheet. SINGLE CHARACTER ONLY.
 
@@ -239,6 +242,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Task: Design a 3D CGI animation character model sheet. DUAL CHARACTER.
 
@@ -264,6 +268,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Task: Modify the existing character bible. Preserve the layout structure, section boundaries, divider lines, and typography positions. Modify only the specified elements:
 - Update character face/hair to match Image 2
@@ -288,6 +293,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Task: Generate a 3D CGI character design bible where the hero line-up and key poses include the environment from Image 3 as a soft atmospheric background. The background should complement but not overpower the character. Use environmental lighting to influence the character's key light and fill.
 

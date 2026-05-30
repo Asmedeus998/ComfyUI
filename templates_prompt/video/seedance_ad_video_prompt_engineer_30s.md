@@ -49,10 +49,11 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 1. **Reference Analysis**: Carefully examine all provided reference materials.
    - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what.
+   - **Image 8 (Continuation Frame)**: If provided, this is the labeled ending frame from the previous segment (burned-in label: **8-LAST**). Use this as the exact visual starting point for the `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
    - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates.
 
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 7-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
    - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5").
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
@@ -109,6 +110,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 5. **CONTINUITY PROTOCOL (CRITICAL)**:
    - Segment 2's **very first timestamp (00:15.0)** MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's final timestamp (00:14.5).
+   - If an **8-LAST continuation frame** is provided, the `CONTINUE:` beat MUST describe the exact pose, hand positions, facial expression, and product placement shown in that frame. Do not invent a new pose — describe what is literally visible in Image 8.
    - Example: `00:15.0     CONTINUE: right hand still holding frosted glass jar at chest height; character begins slow turn toward camera; soft smile maintained; product remains in frame`
    - Character appearance, outfit, hair, accessories, and product MUST be identical across both segments. If the character wore a black satin blouse in Segment 1, they wear the exact same black satin blouse in Segment 2.
    - Environment lighting, color palette, and atmosphere must remain consistent. The cut between segments is invisible to the viewer.
@@ -166,6 +168,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
+- Image 8: Continuation frame — [describe the ending frame from Segment 1: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -178,6 +181,7 @@ Segment 2 (00:15–00:30): Benefit Demonstration → Transformation → Product 
 CRITICAL CONTINUITY INSTRUCTION:
 - Segment 1's final timestamp (00:14.5) must end with the character interacting with the product (e.g., holding it, applying it, reaching for it).
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and describe the exact same pose, hand positions, and product placement as Segment 1's ending.
+- If Image 8 (8-LAST) is provided, describe the literal pose visible in that frame. Do not invent a new pose.
 - Character must match Image 1 exactly across both segments. Product must match Image 2 exactly across both segments.
 
 Output format: Two segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Segment 1 timestamps run 00:00.0–00:14.5. Segment 2 timestamps run 00:15.0–00:29.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags.
@@ -196,6 +200,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
+- Image 8: Continuation frame — [describe the ending frame from Segment 1: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
@@ -208,6 +213,7 @@ Segment 2 (00:15–00:30): Benefit in Action → Effortless Usage → Product Cl
 CRITICAL CONTINUITY INSTRUCTION:
 - Segment 1's final timestamp (00:14.5) must end with the character naturally interacting with the product in the aspirational environment.
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and describe the exact same pose, hand positions, and product placement as Segment 1's ending.
+- If Image 8 (8-LAST) is provided, describe the literal pose visible in that frame. Do not invent a new pose.
 - Character must match Image 1 exactly across both segments. Product must match Image 2 exactly across both segments. Environment must match Image 4 if provided.
 
 Output format: Two segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Segment 1 timestamps run 00:00.0–00:14.5. Segment 2 timestamps run 00:15.0–00:29.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags.
@@ -226,6 +232,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
+- Image 8: Continuation frame — [describe the ending frame from Segment 1: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
 - Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
@@ -238,6 +245,7 @@ Segment 2 (00:15–00:30): Payoff — Satisfaction → Product Beauty Shot → B
 CRITICAL CONTINUITY INSTRUCTION:
 - Segment 1's final timestamp (00:14.5) must end at the dramatic climax — the character interacting with the product at the peak moment.
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and describe the exact same pose, hand positions, and product placement as Segment 1's ending, continuing the reaction/expression.
+- If Image 8 (8-LAST) is provided, describe the literal pose visible in that frame. Do not invent a new pose.
 - Character must match Image 1 exactly across both segments. Product must match Image 2 exactly across both segments. Environment must match Image 4 exactly.
 - Style: [Dramatic/Cinematic/High Contrast]. The product reveal must feel like a cinematic climax.
 

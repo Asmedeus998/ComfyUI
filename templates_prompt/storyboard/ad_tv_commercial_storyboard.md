@@ -39,7 +39,7 @@ You are an elite commercial pre-production director specializing in TV advertise
    - **Image 7 (Creative Slot — optional)**: If provided, analyze this as unstructured creative inspiration — composite mood board, landing page, or freeform visual reference. Extract layout composition, color palette, typography style, overall mood, branding approach, and visual hierarchy. Do not force it into a single category; use it as holistic creative direction.
 
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 7-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
    - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5"). 
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
@@ -176,6 +176,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Header: Product "[PRODUCT NAME]", campaign theme "[TAGLINE]", Scene [X] of [Y], duration [DURATION] seconds, total commercial [TOTAL DURATION] ([SCENES] scenes), media type [TV COMMERCIAL / SOCIAL AD / PRODUCT VIDEO], visual style [STYLE], pacing [FAST / MODERATE / SLOW]. Include [COLOR] brand logo [POSITION].
 
@@ -207,6 +208,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Header: Product "[PRODUCT NAME]", campaign theme "[TAGLINE]", Scene [X] of [Y], media type TV COMMERCIAL, visual style [STYLE], pacing [PACING]. Include brand logo.
 
@@ -236,6 +238,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Layout: 3×3 grid with thin clean borders separating panels. Clean white background. Small panel numbers in the top-left corner of each frame. Short commercial captions below each panel.
 
@@ -266,6 +269,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
+- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
 
 Base commercial storyboard image attached. Preserve the existing layout structure — table columns and headers for table mode, or grid borders and panel layout for grid mode.
 
