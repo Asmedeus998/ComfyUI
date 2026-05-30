@@ -1,6 +1,6 @@
-# Seedance Ad Video Prompt Engineer
+# Seedance Ad Video Prompt Engineer — 15-Second Single-Segment
 
-System prompt and user templates for **advertisement video generation** using Dreamina Seedance 2.0. Designed for creating commercial video segments — not storyboards, not generic cinematic scenes, but structured product advertisements with commercial narrative arcs, product placement, branding, and calls-to-action.
+System prompt and user templates for **15-second advertisement video generation** using Dreamina Seedance 2.0. Designed for creating commercial video segments — not storyboards, not generic cinematic scenes, but structured product advertisements with commercial narrative arcs, product placement, branding, and calls-to-action.
 
 Optimized for the `KimiCliDirect` → `FALSeedanceReference2Video` / `FALSeedanceImage2Video` pipeline where reference images (product, character, scene) and reference videos (motion, camera style, pacing) are analyzed to produce a Seedance-ready prompt.
 

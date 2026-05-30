@@ -29,7 +29,7 @@ Optimized for the `KimiCliDirect` → `FALSeedanceReference2Video` pipeline wher
 | **Commercial Arc** | Four-act arc across four segments: Setup → Development → Climax → Resolution/CTA |
 | **Subject Lock** | Character appearance, outfit, distinguishing features (from reference images) |
 | **Product Lock** | Product name, color, shape, packaging, placement, lighting (from reference images) |
-| **Motion Description** | Frame-by-frame action beats with body-part precision per segment |
+| **Motion Description** | Frame-by-frame action beats with body-part precision per segment (1.0s granularity) |
 | **Environment** | Spatial setting, time of day, lighting, atmosphere — must support the commercial mood |
 | **Camera Work** | Shot type, movement, perspective, transitions — commercial editing language |
 | **Audio Cues** | Music mood, ambient sound, SFX, voiceover tone |
@@ -103,27 +103,27 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
    - Camera overview: initial shot type, lens feel, overall movement approach
    - **For Segments 2–4 only**: Brief continuity note describing how this segment picks up from the previous segment's ending frame
 
-   **Part 2 — Precise Timestamped Motion Timeline (0.5s granularity):**
-   - Segment 1 timestamps from `00:00.0` to `00:14.5` in 0.5s steps.
-   - Segment 2 timestamps from `00:15.0` to `00:29.5` in 0.5s steps.
-   - Segment 3 timestamps from `00:30.0` to `00:44.5` in 0.5s steps.
-   - Segment 4 timestamps from `00:45.0` to `00:59.5` in 0.5s steps.
+   **Part 2 — Precise Timestamped Motion Timeline (1.0s granularity):**
+   - Segment 1 timestamps from `00:00.0` to `00:14.0` in 1.0s steps.
+   - Segment 2 timestamps from `00:15.0` to `00:29.0` in 1.0s steps.
+   - Segment 3 timestamps from `00:30.0` to `00:44.0` in 1.0s steps.
+   - Segment 4 timestamps from `00:45.0` to `00:59.0` in 1.0s steps.
    - Each line: `MM:SS.m     [body part] [specific action]; [facial expression]; [camera note]`
    - Body parts: right hand, left hand, both hands, head, eyes, mouth, body, shoulders, etc.
    - Facial expressions: gentle smile, eyes closed, soft gaze, surprised look, content expression, etc.
    - Camera notes: "camera slow push-in", "medium shot", "close-up on hands", "wide establishing", "orbit begins", etc.
    - Use semicolons (`;`) to separate multiple actions.
    - Product interactions must specify which hand and how.
-   - Motion transitions must be physically plausible over each 0.5s interval.
+   - Motion transitions must be physically plausible over each 1.0s interval.
 
    **Audio Cues (final paragraph or embedded in timestamps):**
    - Music mood, ambient sound, SFX, diegetic product sounds, voiceover tone.
    - Audio can evolve across segments (e.g., music swells at Segment 3 climax, resolves in Segment 4).
 
 5. **CONTINUITY PROTOCOL (CRITICAL)**:
-   - **Segment 2's first timestamp (00:15.0)** MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's final timestamp (00:14.5).
-   - **Segment 3's first timestamp (00:30.0)** MUST begin with the word `CONTINUE:` followed by an explicit description continuing from Segment 2's final timestamp (00:29.5).
-   - **Segment 4's first timestamp (00:45.0)** MUST begin with the word `CONTINUE:` followed by an explicit description continuing from Segment 3's final timestamp (00:44.5).
+   - **Segment 2's first timestamp (00:15.0)** MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's final timestamp (00:14.0).
+   - **Segment 3's first timestamp (00:30.0)** MUST begin with the word `CONTINUE:` followed by an explicit description continuing from Segment 2's final timestamp (00:29.0).
+   - **Segment 4's first timestamp (00:45.0)** MUST begin with the word `CONTINUE:` followed by an explicit description continuing from Segment 3's final timestamp (00:44.0).
    - Example: `00:15.0     CONTINUE: right hand still holding frosted glass jar at chest height; character begins slow turn toward camera; soft smile maintained; product remains in frame`
    - Character appearance, outfit, hair, accessories, and product MUST be identical across all four segments.
    - Environment lighting, color palette, and atmosphere must remain consistent. The cuts between segments are invisible to the viewer.
@@ -145,10 +145,10 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
 ## STRICT OUTPUT RULES
 1. **NO META OUTPUT**: Do not explain your reasoning. Output ONLY the final prompts.
 2. **NO ARC LABELS**: NEVER write "HOOK", "DREAM SETUP", "PRODUCT INTEGRATION", "CTA", "PAYOFF", "ACT 1", or any narrative arc labels inside the prompt body.
-3. **NO COARSE TIMESTAMPS**: NEVER use blocks like "From 0 to 4 seconds" or "0-4s: [description]". Motion must be broken into 0.5s granular lines.
+3. **NO COARSE TIMESTAMPS**: NEVER use blocks like "From 0 to 4 seconds" or "0-4s: [description]". Motion must be broken into 1.0s granular lines.
 4. **DELIMITERS**: Wrap Segment 1 in `[[SEGMENT_1]]` / `[[/SEGMENT_1]]`, Segment 2 in `[[SEGMENT_2]]` / `[[/SEGMENT_2]]`, Segment 3 in `[[SEGMENT_3]]` / `[[/SEGMENT_3]]`, and Segment 4 in `[[SEGMENT_4]]` / `[[/SEGMENT_4]]`.
 5. **NO EXTERNAL TEXT**: Nothing outside the segment delimiters will be parsed.
-6. **MANDATORY COVERAGE**: Each segment must include: ad type classification, subject description with reference locks, product description with reference locks, commercial environment and aesthetic, precise 0.5s timestamped motion timeline, camera work, and audio cues.
+6. **MANDATORY COVERAGE**: Each segment must include: ad type classification, subject description with reference locks, product description with reference locks, commercial environment and aesthetic, precise 1.0s timestamped motion timeline, camera work, and audio cues.
 7. **CONSISTENCY LOCK**: Character appearance, outfit, and hair must be identical across every timestamp in all four segments. Product must look the same whenever it appears.
 8. **MANDATORY CONTINUE**: Segments 2, 3, and 4 MUST begin their first timestamp with `CONTINUE:`.
 
@@ -157,7 +157,7 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
 - NEVER use coarse time blocks like "From 0 to 4 seconds" or "0-4s:".
 - NEVER output multiple prompt variants. Output ONE unified four-segment prompt.
 - NEVER include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.
-- NEVER use vague placeholders like "beautiful scene" or "high quality." Be specific about what the character does at every 0.5s beat.
+- NEVER use vague placeholders like "beautiful scene" or "high quality." Be specific about what the character does at every 1.0s beat.
 - NEVER ignore the reference images/video. Every visual detail from references must be locked into the corresponding timestamps.
 - NEVER generate storyboard descriptions, shot lists, or production documents.
 - NEVER omit the product from the prompt. Every ad prompt must explicitly describe the product and its placement.
@@ -193,15 +193,15 @@ Segment 3 (00:30–00:45): Product Solution — Deep demonstration, transformati
 Segment 4 (00:45–00:60): Resolution + CTA — Satisfaction, product hero shot, brand identity
 
 CRITICAL CONTINUITY INSTRUCTIONS:
-- Segment 1's final timestamp (00:14.5) must end with the character experiencing the problem (e.g., looking stressed, rubbing tired eyes).
+- Segment 1's final timestamp (00:14.0) must end with the character experiencing the problem (e.g., looking stressed, rubbing tired eyes).
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and describe the exact same pose continuing into the problem escalation.
-- Segment 2's final timestamp (00:29.5) must introduce or reach for the product.
+- Segment 2's final timestamp (00:29.0) must introduce or reach for the product.
 - Segment 3's first timestamp (00:30.0) MUST begin with "CONTINUE:" and show the product interaction beginning.
-- Segment 3's final timestamp (00:44.5) must show the transformation or benefit peak.
+- Segment 3's final timestamp (00:44.0) must show the transformation or benefit peak.
 - Segment 4's first timestamp (00:45.0) MUST begin with "CONTINUE:" and show the satisfied result state.
 - Character must match Image 1 exactly across all segments. Product must match Image 2 exactly across all segments.
 
-Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.5, Seg2 00:15.0–00:29.5, Seg3 00:30.0–00:44.5, Seg4 00:45.0–00:59.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
+Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (1.0s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.0, Seg2 00:15.0–00:29.0, Seg3 00:30.0–00:44.0, Seg4 00:45.0–00:59.0. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
 ```
 
 ### Template K: 60s Lifestyle Aspirational Ad (Fashion/Home/Wellness/Travel)
@@ -229,16 +229,16 @@ Segment 3 (00:30–00:45): Benefit Deep-Dive — Emotional reward, social proof,
 Segment 4 (00:45–00:60): Product Close-up + CTA — Hero shot, brand identity, call to action
 
 CRITICAL CONTINUITY INSTRUCTIONS:
-- Segment 1's final timestamp (00:14.5) must end with the character naturally engaging with the environment.
+- Segment 1's final timestamp (00:14.0) must end with the character naturally engaging with the environment.
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and show the product entering the scene naturally.
-- Segment 2's final timestamp (00:29.5) must show the character fully integrated with the product.
+- Segment 2's final timestamp (00:29.0) must show the character fully integrated with the product.
 - Segment 3's first timestamp (00:30.0) MUST begin with "CONTINUE:" and show the benefit experience beginning.
-- Segment 3's final timestamp (00:44.5) must show the peak emotional reward moment.
+- Segment 3's final timestamp (00:44.0) must show the peak emotional reward moment.
 - Segment 4's first timestamp (00:45.0) MUST begin with "CONTINUE:" and transition toward the product hero shot.
 - Character must match Image 1 exactly across all segments. Product must match Image 2 exactly across all segments. Environment must match Image 4 if provided.
 - Style: [Warm/Natural/Aspirational/Clean/Minimalist]. The ad should feel like a lifestyle magazine come to life.
 
-Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.5, Seg2 00:15.0–00:29.5, Seg3 00:30.0–00:44.5, Seg4 00:45.0–00:59.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
+Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (1.0s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.0, Seg2 00:15.0–00:29.0, Seg3 00:30.0–00:44.0, Seg4 00:45.0–00:59.0. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
 ```
 
 ### Template L: 60s Dramatic Reveal Ad (Food/Beverage/Luxury/Automotive)
@@ -266,16 +266,16 @@ Segment 3 (00:30–00:45): The Moment — Climax, product interaction, sensory p
 Segment 4 (00:45–00:60): Payoff + Brand — Satisfaction, beauty shots, logo, CTA
 
 CRITICAL CONTINUITY INSTRUCTIONS:
-- Segment 1's final timestamp (00:14.5) must end with the character approaching or discovering the product moment.
+- Segment 1's final timestamp (00:14.0) must end with the character approaching or discovering the product moment.
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and escalate the anticipation.
-- Segment 2's final timestamp (00:29.5) must reach the peak of tension just before the product interaction.
+- Segment 2's final timestamp (00:29.0) must reach the peak of tension just before the product interaction.
 - Segment 3's first timestamp (00:30.0) MUST begin with "CONTINUE:" and launch into the climax moment.
-- Segment 3's final timestamp (00:44.5) must show the peak sensory reaction.
+- Segment 3's final timestamp (00:44.0) must show the peak sensory reaction.
 - Segment 4's first timestamp (00:45.0) MUST begin with "CONTINUE:" and transition from reaction to appreciation.
 - Character must match Image 1 exactly across all segments. Product must match Image 2 exactly across all segments. Environment must match Image 4 exactly.
 - Style: [Dramatic/Cinematic/High Contrast]. The product reveal must feel like a cinematic climax.
 
-Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.5, Seg2 00:15.0–00:29.5, Seg3 00:30.0–00:44.5, Seg4 00:45.0–00:59.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
+Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (1.0s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.0, Seg2 00:15.0–00:29.0, Seg3 00:30.0–00:44.0, Seg4 00:45.0–00:59.0. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
 ```
 
 ### Template M: 60s Product Demo / Tutorial Ad (Tech/Appliances/Tools/Software)
@@ -303,16 +303,16 @@ Segment 3 (00:30–00:45): Deep Demonstration — Product in use, transformation
 Segment 4 (00:45–00:60): Result + CTA — Before/after, product hero shot, brand name, pricing/offer
 
 CRITICAL CONTINUITY INSTRUCTIONS:
-- Segment 1's final timestamp (00:14.5) must end with the character looking frustrated or inconvenienced.
+- Segment 1's final timestamp (00:14.0) must end with the character looking frustrated or inconvenienced.
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and show the product entering the frame.
-- Segment 2's final timestamp (00:29.5) must show the product ready to use.
+- Segment 2's final timestamp (00:29.0) must show the product ready to use.
 - Segment 3's first timestamp (00:30.0) MUST begin with "CONTINUE:" and start the demonstration.
-- Segment 3's final timestamp (00:44.5) must show the successful result of using the product.
+- Segment 3's final timestamp (00:44.0) must show the successful result of using the product.
 - Segment 4's first timestamp (00:45.0) MUST begin with "CONTINUE:" and show appreciation of the result.
 - Character must match Image 1 exactly across all segments. Product must match Image 5 exactly across all segments.
 - Style: [Clean/Modern/Tech-forward/Premium]. Product must be the visual hero.
 
-Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.5, Seg2 00:15.0–00:29.5, Seg3 00:30.0–00:44.5, Seg4 00:45.0–00:59.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
+Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (1.0s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.0, Seg2 00:15.0–00:29.0, Seg3 00:30.0–00:44.0, Seg4 00:45.0–00:59.0. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
 ```
 
 ### Template N: 60s Emotional Storytelling Ad (Charity/Insurance/Family/Healthcare)
@@ -340,16 +340,16 @@ Segment 3 (00:30–00:45): Resolution — Product/brand as the answer, transform
 Segment 4 (00:45–00:60): Warm Brand Moment — Emotional payoff, brand promise, tagline, CTA
 
 CRITICAL CONTINUITY INSTRUCTIONS:
-- Segment 1's final timestamp (00:14.5) must end with the emotional hook landing — a vulnerable or tender moment.
+- Segment 1's final timestamp (00:14.0) must end with the emotional hook landing — a vulnerable or tender moment.
 - Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and deepen the relationship or shared experience.
-- Segment 2's final timestamp (00:29.5) must show the stakes or need at their highest.
+- Segment 2's final timestamp (00:29.0) must show the stakes or need at their highest.
 - Segment 3's first timestamp (00:30.0) MUST begin with "CONTINUE:" and introduce the product/brand as the solution.
-- Segment 3's final timestamp (00:44.5) must show hope or transformation taking hold.
+- Segment 3's final timestamp (00:44.0) must show hope or transformation taking hold.
 - Segment 4's first timestamp (00:45.0) MUST begin with "CONTINUE:" and show the warm resolution.
 - Character A must match Image 1 exactly across all segments. Character B must match Image 2 if provided. Environment must match Image 4 exactly.
 - Style: [Heartfelt/Genuine/Cinematic/Documentary-feel]. Emotion first, product second.
 
-Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.5, Seg2 00:15.0–00:29.5, Seg3 00:30.0–00:44.5, Seg4 00:45.0–00:59.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
+Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (1.0s timestamped motion timeline). Timestamps: Seg1 00:00.0–00:14.0, Seg2 00:15.0–00:29.0, Seg3 00:30.0–00:44.0, Seg4 00:45.0–00:59.0. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags.
 ```
 
 ---
@@ -374,7 +374,7 @@ Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s 
 ### Coarse Timestamp Blocks
 
 **Symptom:** The prompt uses narrative blocks like "From 0 to 4 seconds, the DREAM SETUP: ..." or "0-4s: HOOK — [description]". This gives Seedance no precise motion control.  
-**Fix:** Demand frame-by-frame 0.5s timestamped beats in Part 2 of each segment. Every line must be `00:00.0     [body part] [action]; [expression]; [camera]`.
+**Fix:** Demand frame-by-frame 1.0s timestamped beats in Part 2 of each segment. Every line must be `00:00.0     [body part] [action]; [expression]; [camera]`.
 
 ### Missing Body Part Precision
 
@@ -418,12 +418,12 @@ Output format: Four segments, each with Part 1 (flowing prose) and Part 2 (0.5s 
 ```
 [Ad Type: Problem-Solution / Dramatic Reveal / Lifestyle / Demo / Emotional] +
 [Segment 1 — Part 1: Setup prose with subject/product/environment locks] +
-[Segment 1 — Part 2: 00:00.0–00:14.5 motion timeline] +
+[Segment 1 — Part 2: 00:00.0–00:14.0 motion timeline] +
 [Segment 2 — Part 1: Development prose with CONTINUE note] +
-[Segment 2 — Part 2: 00:15.0–00:29.5 motion timeline beginning with CONTINUE:] +
+[Segment 2 — Part 2: 00:15.0–00:29.0 motion timeline beginning with CONTINUE:] +
 [Segment 3 — Part 1: Climax prose with CONTINUE note] +
-[Segment 3 — Part 2: 00:30.0–00:44.5 motion timeline beginning with CONTINUE:] +
+[Segment 3 — Part 2: 00:30.0–00:44.0 motion timeline beginning with CONTINUE:] +
 [Segment 4 — Part 1: Resolution prose with CONTINUE note] +
-[Segment 4 — Part 2: 00:45.0–00:59.5 motion timeline beginning with CONTINUE:] +
+[Segment 4 — Part 2: 00:45.0–00:59.0 motion timeline beginning with CONTINUE:] +
 [Audio: evolving music mood, ambient sound, product sounds, voiceover tone]
 ```

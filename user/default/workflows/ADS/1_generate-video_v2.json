@@ -413,7 +413,7 @@
         144
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -476,7 +476,7 @@
         300.4333190917969
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -544,7 +544,7 @@
         372
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -673,7 +673,7 @@
         332
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -816,7 +816,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer: A - Problem-Solution Ad (Health/Beauty/Office)"
+        "video/seedance ad video prompt engineer 30s: G - 30s Problem-Solution Ad (Health/Beauty/Office)"
       ]
     },
     {
@@ -997,7 +997,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer: system_prompt"
+        "video/seedance ad video prompt engineer 30s: system_prompt"
       ]
     },
     {
@@ -1012,7 +1012,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1097,7 +1097,7 @@
         210.4499969482422
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1132,7 +1132,7 @@
         264
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1282,7 +1282,7 @@
         676
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1471,12 +1471,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "FALSeedanceReference2Video",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "FALSeedanceReference2Video",
         "cnr_id": "comfy-core",
         "ver": "0.18.1"
       },
@@ -1505,7 +1505,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1544,12 +1544,12 @@
       ],
       "outputs": [],
       "properties": {
+        "Node name for S&R": "SaveVideo",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "SaveVideo",
         "cnr_id": "comfy-core",
         "ver": "0.18.1"
       },
@@ -1650,14 +1650,14 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "RegexExtract",
         "ue_properties": {
           "widget_ue_connectable": {
             "string": true
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "RegexExtract"
+        }
       },
       "widgets_values": [
         "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
