@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 149,
-  "last_link_id": 269,
+  "last_node_id": 150,
+  "last_link_id": 271,
   "nodes": [
     {
       "id": 108,
@@ -80,7 +80,7 @@
         676
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -304,7 +304,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -370,7 +370,7 @@
         72
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -413,7 +413,7 @@
         144
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -476,7 +476,7 @@
         300.4333190917969
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -544,7 +544,7 @@
         372
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -673,7 +673,7 @@
         332
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1012,7 +1012,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1097,7 +1097,7 @@
         210.4499969482422
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1132,7 +1132,7 @@
         264
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1175,7 +1175,7 @@
           "name": "product",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 271
         },
         {
           "localized_name": "style",
@@ -1282,7 +1282,7 @@
         676
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1505,7 +1505,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1563,15 +1563,15 @@
       "id": 149,
       "type": "RegexExtract",
       "pos": [
-        -232.60126826163787,
-        879.3483191241878
+        -250.75746548233792,
+        1190.5974143361877
       ],
       "size": [
         320,
         332
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1667,6 +1667,69 @@
         true,
         true,
         1
+      ]
+    },
+    {
+      "id": 150,
+      "type": "LoadImage",
+      "pos": [
+        -4185.418989179719,
+        522.7579397889336
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            271
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "screenshot_80.png",
+        "image"
       ]
     }
   ],
@@ -1824,12 +1887,12 @@
       "VIDEO"
     ],
     [
-      270,
-      149,
+      271,
+      150,
       0,
-      147,
-      14,
-      "STRING"
+      145,
+      5,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1875,8 +1938,8 @@
       "bounding": [
         -4270.629533692773,
         -308.0254453738403,
-        1528.7730606118262,
-        972.729880438699
+        1482.0038502118264,
+        1288.4220506386987
       ],
       "color": "#8f5c2a",
       "flags": {}
@@ -1897,10 +1960,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6830134553650709,
+      "scale": 0.7513148009015783,
       "offset": [
-        524.8632850997171,
-        440.5837501810659
+        4488.307061166221,
+        0.5418368535662452
       ]
     },
     "ue_links": [],
