@@ -55,7 +55,8 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
    - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
-   - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5").
+   - **When referring to images in your output prompt, you MUST use the `@ImageN` syntax** (e.g., `@Image1`, `@Image7`, `@Image5`, `@Image8`). This syntax tells Seedance exactly which reference image to use for each visual element.
+   - Example: "Character appearance locked to @Image1" or "Product packaging matches @Image5 exactly" or "Environment atmosphere drawn from @Image7".
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
    - **Empty slots**: If a slot is not provided, simply omit it from your prompt. Do not invent or hallucinate references for missing slots.
 
@@ -85,25 +86,24 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 4. **Prompt Structure — Two Segments, Each with Two-Part Commercial Format:**
    Each segment prompt is divided into two distinct parts:
 
-   **Part 1 — Commercial Setup (flowing prose, 1-2 short paragraphs per segment):**
+   **Part 1 — Commercial Setup (concise prose, 1 short paragraph per segment):**
    - Ad type classification for the segment
-   - Subject lock: character description with reference locks from Image 1
-   - Product lock: product name, packaging, color, shape, placement
-   - Environment: spatial setting, time of day, lighting, atmosphere
-   - Aesthetic style: color palette, mood, film references
-   - Camera overview: initial shot type, lens feel, overall movement approach
-   - **For Segment 2 only**: Brief continuity note describing how this segment picks up from Segment 1's ending frame
+   - Subject lock: brief mention that character is locked to `@Image1`. Do NOT write a long prose description of the character — let `@Image1` carry the visual weight.
+   - Product lock: brief mention that product is locked to `@Image5` (or whichever slot holds the product). Do NOT describe the product in excessive detail — reference `@Image5`.
+   - Environment: brief mention of setting, locked to `@Image4` or `@Image7` as appropriate.
+   - Aesthetic style: color palette, mood, film references — drawn from `@Image6` and `@Image7`.
+   - Camera overview: initial shot type, lens feel, overall movement approach.
+   - **For Segment 2 only**: Brief continuity note describing how this segment picks up from Segment 1's ending frame.
 
-   **Part 2 — Precise Timestamped Motion Timeline (0.5s granularity):**
-   - Segment 1 timestamps from `00:00.0` to `00:14.5` in 0.5s steps.
-   - Segment 2 timestamps from `00:15.0` to `00:29.5` in 0.5s steps.
-   - Each line: `MM:SS.m     [body part] [specific action]; [facial expression]; [camera note]`
-   - Body parts: right hand, left hand, both hands, head, eyes, mouth, body, shoulders, etc.
-   - Facial expressions: gentle smile, eyes closed, soft gaze, surprised look, content expression, etc.
+   **Part 2 — Timestamped Motion Timeline (1-second granularity — LESS STRICT):**
+   - Segment 1 timestamps from `00:00` to `00:14` in **1-second steps**.
+   - Segment 2 timestamps from `00:15` to `00:29` in **1-second steps**.
+   - Each line: `MM:SS     [action description]; [facial expression]; [camera note]`
+   - Actions should describe the overall motion beat for that second — do NOT break into 0.5s micro-movements. Seedance handles motion interpolation naturally.
    - Camera notes: "camera slow push-in", "medium shot", "close-up on hands", "wide establishing", "orbit begins", etc.
    - Use semicolons (`;`) to separate multiple actions.
    - Product interactions must specify which hand and how.
-   - Motion transitions must be physically plausible over each 0.5s interval.
+   - Keep motion descriptions natural and flowing — avoid robotic step-by-step breakdowns.
 
    **Audio Cues (final paragraph or embedded in timestamps):**
    - Music mood, ambient sound, SFX, diegetic product sounds, voiceover tone.
@@ -117,11 +117,12 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - Camera style should feel continuous. If Segment 1 ended on a close-up, Segment 2 can pull back or hold — but never jarringly cut to an unrelated angle.
 
 6. **Reference Integration Protocol**:
-   - **ALWAYS refer to images by their SLOT NUMBER** (Image 1, Image 2, Image 7, etc.), never by batch position.
-   - Lock character appearance to Image 1 across BOTH segments.
-   - Lock product to its reference image across BOTH segments.
-   - Lock environment to its reference image across BOTH segments.
-   - When Image 7 (creative) is provided, adopt its color palette, lighting mood, and compositional energy across ALL timestamps in BOTH segments.
+   - **ALWAYS refer to images using `@ImageN` syntax** (`@Image1`, `@Image2`, `@Image7`, etc.), never by batch position.
+   - Character appearance is visually locked to `@Image1`. Mention `@Image1` in the subject lock and at least once per segment to reinforce the visual anchor.
+   - Product is visually locked to `@Image5` (or whichever slot contains the product). Mention `@Image5` when the product appears.
+   - Environment is visually locked to `@Image4` or `@Image7`. Mention the relevant `@Image` when describing the setting.
+   - When `@Image7` (creative) is provided, adopt its color palette, lighting mood, and compositional energy across ALL timestamps in BOTH segments.
+   - The `@ImageN` syntax is the PRIMARY mechanism for visual consistency. Prose descriptions are secondary — keep them brief.
 
 7. **Product Placement Rules**:
    - Product must be clearly visible for at least 3 seconds per segment (6+ seconds total across 30s).
@@ -132,7 +133,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 ## STRICT OUTPUT RULES
 1. **NO META OUTPUT**: Do not explain your reasoning. Output ONLY the final prompts.
 2. **NO ARC LABELS**: NEVER write "HOOK", "DREAM SETUP", "PRODUCT INTEGRATION", "CTA", "PAYOFF", "SEGMENT 1", or any narrative arc labels inside the prompt body.
-3. **NO COARSE TIMESTAMPS**: NEVER use blocks like "From 0 to 4 seconds" or "0-4s: [description]". Motion must be broken into 0.5s granular lines.
+3. **NO COARSE TIMESTAMPS**: NEVER use blocks like "From 0 to 4 seconds" or "0-4s: [description]". Motion must be broken into 1-second granular lines.
 4. **DELIMITERS**: Wrap Segment 1 in `[[SEGMENT_1]]` and `[[/SEGMENT_1]]`. Wrap Segment 2 in `[[SEGMENT_2]]` and `[[/SEGMENT_2]]`.
 5. **NO EXTERNAL TEXT**: Nothing outside the segment delimiters will be parsed.
 6. **MANDATORY COVERAGE**: Each segment must include: ad type classification, subject description with reference locks, product description with reference locks, commercial environment and aesthetic, precise 0.5s timestamped motion timeline, camera work, and audio cues.
@@ -144,7 +145,8 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 - NEVER use coarse time blocks like "From 0 to 4 seconds" or "0-4s:".
 - NEVER output multiple prompt variants. Output ONE unified two-segment prompt.
 - NEVER include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.
-- NEVER use vague placeholders like "beautiful scene" or "high quality." Be specific about what the character does at every 0.5s beat.
+- NEVER use vague placeholders like "beautiful scene" or "high quality." Be specific about what the character does at each timestamp.
+- NEVER write long prose descriptions of character appearance, outfit details, or product packaging. Use `@ImageN` references instead and let the reference images carry the visual information.
 - NEVER ignore the reference images/video. Every visual detail from references must be locked into the corresponding timestamps.
 - NEVER generate storyboard descriptions, shot lists, or production documents.
 - NEVER omit the product from the prompt. Every ad prompt must explicitly describe the product and its placement.
@@ -161,14 +163,14 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 Analyze the attached reference images and videos.
 
 Reference mapping (SLOT FORMAT — swap any images into these slots):
-- Image 1: Character / subject reference — [describe face, hair, body type, skin tone, distinguishing features]
-- Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
-- Image 3: Prop / accessory / secondary subject reference — [describe key prop, accessory, or second character]
-- Image 4: Environment / scene / background reference — [describe setting, lighting, atmosphere, architecture]
-- Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
-- Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
-- Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8: Continuation frame — [describe the ending frame from Segment 1: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
+- `@Image1`: Character / subject reference — use `@Image1` for character appearance lock
+- `@Image2`: Costume / outfit / product reference — use `@Image2` for outfit/product lock
+- `@Image3`: Prop / accessory / secondary subject reference — use `@Image3` when relevant
+- `@Image4`: Environment / scene / background reference — use `@Image4` for environment lock
+- `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
+- `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
+- `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
+- `@Image8`: Continuation frame — the ending frame from Segment 1 (labeled **8-LAST**)
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -179,12 +181,14 @@ Segment 1 (00:00–00:15): Hook → Problem Escalation → Product Introduction
 Segment 2 (00:15–00:30): Benefit Demonstration → Transformation → Product Hero Shot + CTA
 
 CRITICAL CONTINUITY INSTRUCTION:
-- Segment 1's final timestamp (00:14.5) must end with the character interacting with the product (e.g., holding it, applying it, reaching for it).
-- Segment 2's first timestamp (00:15.0) MUST begin with "CONTINUE:" and describe the exact same pose, hand positions, and product placement as Segment 1's ending.
-- If Image 8 (8-LAST) is provided, describe the literal pose visible in that frame. Do not invent a new pose.
-- Character must match Image 1 exactly across both segments. Product must match Image 2 exactly across both segments.
+- Segment 1's final timestamp (00:14) must end with the character interacting with the product.
+- Segment 2's first timestamp (00:15) MUST begin with "CONTINUE:" and describe the exact same pose, hand positions, and product placement as Segment 1's ending.
+- If `@Image8` (8-LAST) is provided, describe the literal pose visible in that frame. Do not invent a new pose.
+- Character appearance is locked to `@Image1` across both segments. Product is locked to `@Image5` across both segments.
+- Keep Part 1 prose concise — use `@ImageN` references rather than long descriptions.
+- Part 2 timestamps use 1-second granularity (00:00, 00:01, ... 00:29). Do NOT use 0.5s steps.
 
-Output format: Two segments, each with Part 1 (flowing prose) and Part 2 (0.5s timestamped motion timeline). Segment 1 timestamps run 00:00.0–00:14.5. Segment 2 timestamps run 00:15.0–00:29.5. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags.
+Output format: Two segments, each with Part 1 (concise prose with `@Image` locks) and Part 2 (1s timestamped motion timeline). Segment 1 timestamps run 00:00–00:14. Segment 2 timestamps run 00:15–00:29. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags.
 ```
 
 ### Template H: 30s Lifestyle Aspirational Ad (Fashion/Home/Wellness)
