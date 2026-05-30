@@ -824,11 +824,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SaveText"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "",
@@ -909,15 +910,16 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SaveText"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-v2",
+        "kimi-txt-debug-v2-templates-prompt",
         "overwrite",
         true,
         "txt"
@@ -1026,10 +1028,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9819395090693855,
+      "scale": 0.892672280972169,
       "offset": [
-        -711.4557665316272,
-        -0.516742108403605
+        -611.5939786963035,
+        434.00204503706624
       ]
     },
     "frontendVersion": "1.44.18",
