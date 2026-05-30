@@ -49,7 +49,7 @@
       ],
       "flags": {},
       "order": 1,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [],
       "properties": {
@@ -371,7 +371,7 @@
       ],
       "flags": {},
       "order": 17,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -426,7 +426,7 @@
       ],
       "flags": {},
       "order": 23,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video_1",
@@ -489,7 +489,7 @@
       ],
       "flags": {},
       "order": 24,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -1318,7 +1318,7 @@
       ],
       "flags": {},
       "order": 21,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -1541,7 +1541,7 @@
       ],
       "flags": {},
       "order": 22,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -1607,7 +1607,7 @@
       ],
       "flags": {},
       "order": 14,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "string",
@@ -1778,7 +1778,7 @@
       ],
       "flags": {},
       "order": 8,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "template",
@@ -1825,7 +1825,7 @@
       ],
       "flags": {},
       "order": 18,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -1975,7 +1975,7 @@
       ],
       "flags": {},
       "order": 19,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "string",
@@ -2090,7 +2090,7 @@
       ],
       "flags": {},
       "order": 20,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -2417,10 +2417,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.3310000000000004,
+      "scale": 0.2176291357901487,
       "offset": [
-        2996.07992034477,
-        247.4660539283547
+        3812.152197881355,
+        831.3538312669035
       ]
     },
     "ue_links": [],
