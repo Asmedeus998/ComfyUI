@@ -273,7 +273,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-last-frame-flat-array-templates-prompt",
+        "kimi-txt-debug-last-frame-flat-array",
         "overwrite",
         false,
         "txt"
@@ -1773,10 +1773,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3384621098933379,
+      "scale": 0.7980759505139854,
       "offset": [
-        995.9134657562497,
-        84.1684567517934
+        -1500.7353065744721,
+        146.66234850295564
       ]
     },
     "frontendVersion": "1.44.18",

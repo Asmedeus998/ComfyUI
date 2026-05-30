@@ -1773,7 +1773,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-30s",
+        "kimi-txt-debug-60s",
         "overwrite",
         false,
         "txt"
@@ -2022,10 +2022,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4177248169415666,
+      "scale": 0.9849732675807655,
       "offset": [
-        91.29317054290496,
-        2369.406346914681
+        -1556.0472994287377,
+        2883.234021488093
       ]
     },
     "frontendVersion": "1.44.18",
