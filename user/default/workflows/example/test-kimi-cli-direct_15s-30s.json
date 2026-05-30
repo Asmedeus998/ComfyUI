@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 51,
-  "last_link_id": 66,
+  "last_link_id": 72,
   "nodes": [
     {
       "id": 3,
@@ -16,7 +16,7 @@
         508
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -140,7 +140,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -413,7 +413,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -537,7 +537,7 @@
         534.6333618164062
       ],
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -581,7 +581,7 @@
         264
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -656,8 +656,7 @@
           "links": [
             35,
             39,
-            48,
-            53
+            48
           ]
         },
         {
@@ -731,7 +730,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 17,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -817,7 +816,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 15,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -903,7 +902,7 @@
         508
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1029,7 +1028,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1115,7 +1114,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 19,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1242,358 +1241,6 @@
       ]
     },
     {
-      "id": 34,
-      "type": "KimiCliDirect",
-      "pos": [
-        1785.5795159880106,
-        2498.4448574532075
-      ],
-      "size": [
-        400,
-        508
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 53
-        },
-        {
-          "localized_name": "video",
-          "name": "video",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        },
-        {
-          "localized_name": "video_1",
-          "name": "video_1",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        },
-        {
-          "localized_name": "video_2",
-          "name": "video_2",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        },
-        {
-          "localized_name": "video_3",
-          "name": "video_3",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        },
-        {
-          "localized_name": "prompt",
-          "name": "prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "prompt"
-          },
-          "link": 49
-        },
-        {
-          "localized_name": "system_prompt",
-          "name": "system_prompt",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "system_prompt"
-          },
-          "link": 50
-        },
-        {
-          "localized_name": "model",
-          "name": "model",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "model"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "timeout",
-          "name": "timeout",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "timeout"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "response",
-          "name": "response",
-          "type": "STRING",
-          "links": [
-            51,
-            52,
-            60,
-            61,
-            64,
-            65
-          ]
-        },
-        {
-          "localized_name": "thinking",
-          "name": "thinking",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KimiCliDirect",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "Describe what you see in detail",
-        "",
-        "",
-        300
-      ],
-      "color": "#2F4F4F",
-      "bgcolor": "#3D6B6B"
-    },
-    {
-      "id": 35,
-      "type": "SaveText",
-      "pos": [
-        2405.579515988011,
-        2438.4448574532075
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 51
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "kimi-txt-debug-v2-templates-prompt-60s",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
-      "id": 36,
-      "type": "PreviewAny",
-      "pos": [
-        2285.579515988011,
-        2808.4448574532075
-      ],
-      "size": [
-        1023.8499755859375,
-        436.7166748046875
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "source",
-          "name": "source",
-          "type": "*",
-          "link": 52
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewAny",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": 37,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        1405.5795159880106,
-        2578.4448574532075
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            49
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "video/seedance ad video prompt engineer 60s: J - 60s Problem-Solution Ad (Health/Beauty/Office/Tech)"
-      ]
-    },
-    {
-      "id": 38,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        1365.5795159880106,
-        2788.4448574532075
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            50
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "video/seedance ad video prompt engineer 60s: system_prompt"
-      ]
-    },
-    {
       "id": 39,
       "type": "RegexExtract",
       "pos": [
@@ -1605,7 +1252,7 @@
         332
       ],
       "flags": {},
-      "order": 21,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1715,7 +1362,7 @@
         332
       ],
       "flags": {},
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1825,7 +1472,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 28,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1911,7 +1558,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 29,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1986,790 +1633,6 @@
       ]
     },
     {
-      "id": 43,
-      "type": "RegexExtract",
-      "pos": [
-        3641.16445912697,
-        3292.512322649338
-      ],
-      "size": [
-        320,
-        332
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "string",
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 61
-        },
-        {
-          "localized_name": "regex_pattern",
-          "name": "regex_pattern",
-          "type": "STRING",
-          "widget": {
-            "name": "regex_pattern"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "case_insensitive",
-          "name": "case_insensitive",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "case_insensitive"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "multiline",
-          "name": "multiline",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "multiline"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "dotall",
-          "name": "dotall",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "dotall"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "group_index",
-          "name": "group_index",
-          "type": "INT",
-          "widget": {
-            "name": "group_index"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "slot_index": 0,
-          "links": [
-            59
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "RegexExtract",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "string": true
-          },
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
-        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
-        "First Group",
-        true,
-        true,
-        true,
-        1
-      ]
-    },
-    {
-      "id": 44,
-      "type": "RegexExtract",
-      "pos": [
-        3636.4510437584477,
-        2805.5761197744996
-      ],
-      "size": [
-        320,
-        332
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "string",
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 60
-        },
-        {
-          "localized_name": "regex_pattern",
-          "name": "regex_pattern",
-          "type": "STRING",
-          "widget": {
-            "name": "regex_pattern"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "case_insensitive",
-          "name": "case_insensitive",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "case_insensitive"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "multiline",
-          "name": "multiline",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "multiline"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "dotall",
-          "name": "dotall",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "dotall"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "group_index",
-          "name": "group_index",
-          "type": "INT",
-          "widget": {
-            "name": "group_index"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "slot_index": 0,
-          "links": [
-            58
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "RegexExtract",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "string": true
-          },
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
-        "\\[\\[SEGMENT_1\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_1\\]\\]",
-        "First Group",
-        true,
-        true,
-        true,
-        1
-      ]
-    },
-    {
-      "id": 45,
-      "type": "SaveText",
-      "pos": [
-        4119.128398069504,
-        2639.8255373774864
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 30,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 58
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "kimi-txt-debug-v2-templates-prompt-60s-segment-1",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
-      "id": 46,
-      "type": "SaveText",
-      "pos": [
-        4158.4391096130785,
-        3181.5762808373793
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 59
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "kimi-txt-debug-v2-templates-prompt-60s-segment-2",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
-      "id": 47,
-      "type": "RegexExtract",
-      "pos": [
-        3621.7345918692495,
-        3825.9634474097547
-      ],
-      "size": [
-        320,
-        332
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "string",
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 64
-        },
-        {
-          "localized_name": "regex_pattern",
-          "name": "regex_pattern",
-          "type": "STRING",
-          "widget": {
-            "name": "regex_pattern"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "case_insensitive",
-          "name": "case_insensitive",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "case_insensitive"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "multiline",
-          "name": "multiline",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "multiline"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "dotall",
-          "name": "dotall",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "dotall"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "group_index",
-          "name": "group_index",
-          "type": "INT",
-          "widget": {
-            "name": "group_index"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "slot_index": 0,
-          "links": [
-            62
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "RegexExtract",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "string": true
-          },
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "\\[\\[SEGMENT_3\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_3\\]\\]",
-        "\\[\\[SEGMENT_3\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_3\\]\\]",
-        "First Group",
-        true,
-        true,
-        true,
-        1
-      ]
-    },
-    {
-      "id": 48,
-      "type": "SaveText",
-      "pos": [
-        4217.4930779521055,
-        3809.8620402771994
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 62
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "kimi-txt-debug-v2-templates-prompt-60s-segment-3",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
-      "id": 49,
-      "type": "RegexExtract",
-      "pos": [
-        3625.7113494411783,
-        4324.5767658262685
-      ],
-      "size": [
-        320,
-        332
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "string",
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 65
-        },
-        {
-          "localized_name": "regex_pattern",
-          "name": "regex_pattern",
-          "type": "STRING",
-          "widget": {
-            "name": "regex_pattern"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "case_insensitive",
-          "name": "case_insensitive",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "case_insensitive"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "multiline",
-          "name": "multiline",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "multiline"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "dotall",
-          "name": "dotall",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "dotall"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "group_index",
-          "name": "group_index",
-          "type": "INT",
-          "widget": {
-            "name": "group_index"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "slot_index": 0,
-          "links": [
-            63
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "RegexExtract",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "string": true
-          },
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "\\[\\[SEGMENT_4\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_4\\]\\]",
-        "\\[\\[SEGMENT_4\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_4\\]\\]",
-        "First Group",
-        true,
-        true,
-        true,
-        1
-      ]
-    },
-    {
-      "id": 50,
-      "type": "SaveText",
-      "pos": [
-        4260.204190054796,
-        4373.08291003299
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 63
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "kimi-txt-debug-v2-templates-prompt-60s-segment-4",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
       "id": 51,
       "type": "LoadImage",
       "pos": [
@@ -2781,7 +1644,7 @@
         340
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -2820,11 +1683,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "LoadImage"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "screenshot_80.png",
@@ -2962,46 +1826,6 @@
       "IMAGE"
     ],
     [
-      49,
-      37,
-      0,
-      34,
-      5,
-      "STRING"
-    ],
-    [
-      50,
-      38,
-      0,
-      34,
-      6,
-      "STRING"
-    ],
-    [
-      51,
-      34,
-      0,
-      35,
-      0,
-      "STRING"
-    ],
-    [
-      52,
-      34,
-      0,
-      36,
-      0,
-      "STRING"
-    ],
-    [
-      53,
-      24,
-      0,
-      34,
-      0,
-      "IMAGE"
-    ],
-    [
       54,
       29,
       0,
@@ -3034,70 +1858,6 @@
       "STRING"
     ],
     [
-      58,
-      44,
-      0,
-      45,
-      0,
-      "STRING"
-    ],
-    [
-      59,
-      43,
-      0,
-      46,
-      0,
-      "STRING"
-    ],
-    [
-      60,
-      34,
-      0,
-      44,
-      0,
-      "STRING"
-    ],
-    [
-      61,
-      34,
-      0,
-      43,
-      0,
-      "STRING"
-    ],
-    [
-      62,
-      47,
-      0,
-      48,
-      0,
-      "STRING"
-    ],
-    [
-      63,
-      49,
-      0,
-      50,
-      0,
-      "STRING"
-    ],
-    [
-      64,
-      34,
-      0,
-      47,
-      0,
-      "STRING"
-    ],
-    [
-      65,
-      34,
-      0,
-      49,
-      0,
-      "STRING"
-    ],
-    [
       66,
       51,
       0,
@@ -3110,10 +1870,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7400249944258233,
+      "scale": 0.17715610000000007,
       "offset": [
-        1018.9007689905912,
-        -896.676868207923
+        5666.295281519648,
+        -657.2075436857232
       ]
     },
     "frontendVersion": "1.44.18",
