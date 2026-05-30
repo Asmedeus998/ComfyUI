@@ -231,9 +231,7 @@
       "outputs": [],
       "title": "Save GPT Image 2 Image",
       "properties": {
-        "Node name for S&R": "SaveImage",
-        "cnr_id": "comfy-core",
-        "ver": "0.14.1",
+        "Node name for S&R": "SaveKeyframePanels",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
@@ -4424,7 +4422,7 @@
     },
     {
       "id": 248,
-      "type": "SaveImage",
+      "type": "SaveKeyframePanels",
       "pos": [
         3811,
         -2050
@@ -4468,7 +4466,8 @@
         }
       },
       "widgets_values": [
-        "keyframes/storyboard_panel"
+        "keyframes/storyboard_panel",
+        true
       ]
     }
   ],
