@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 54,
-  "last_link_id": 76,
+  "last_link_id": 77,
   "nodes": [
     {
       "id": 3,
@@ -55,13 +55,34 @@
           "link": null
         },
         {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 77
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
           "localized_name": "prompt",
           "name": "prompt",
           "type": "STRING",
           "widget": {
             "name": "prompt"
           },
-          "link": 26
+          "link": null
         },
         {
           "localized_name": "system_prompt",
@@ -120,7 +141,7 @@
         }
       },
       "widgets_values": [
-        "Describe what you see in detail",
+        "Describe what you see in detail and image list you see",
         "",
         "",
         300
@@ -140,7 +161,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 12,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -354,53 +375,6 @@
       ]
     },
     {
-      "id": 20,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        850,
-        130
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            26
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "video/seedance ad video prompt engineer 15s: A - Problem-Solution Ad (Health/Beauty/Office)"
-      ]
-    },
-    {
       "id": 24,
       "type": "SlotImageBatch",
       "pos": [
@@ -412,7 +386,7 @@
         264
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -560,7 +534,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 13,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -646,7 +620,7 @@
         508
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -682,6 +656,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 76
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -721,27 +716,6 @@
           "widget": {
             "name": "timeout"
           },
-          "link": null
-        },
-        {
-          "localized_name": "image_1",
-          "name": "image_1",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 76
-        },
-        {
-          "localized_name": "image_2",
-          "name": "image_2",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "image_3",
-          "name": "image_3",
-          "shape": 7,
-          "type": "IMAGE",
           "link": null
         }
       ],
@@ -793,7 +767,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -879,7 +853,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 15,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -915,15 +889,15 @@
       "id": 32,
       "type": "PromptTemplateLoader",
       "pos": [
-        1247.9804641110081,
-        1361.7454474918459
+        1074.371691539951,
+        1380.0200551309044
       ],
       "size": [
         270,
         104
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -970,7 +944,7 @@
         104
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1017,7 +991,7 @@
         332
       ],
       "flags": {},
-      "order": 17,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1127,7 +1101,7 @@
         332
       ],
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1237,7 +1211,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1323,7 +1297,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1409,7 +1383,7 @@
         340
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1469,10 +1443,10 @@
       ],
       "size": [
         225,
-        72
+        100
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1480,6 +1454,15 @@
           "name": "video",
           "type": "VIDEO",
           "link": 75
+        },
+        {
+          "localized_name": "burn_label",
+          "name": "burn_label",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "burn_label"
+          },
+          "link": null
         }
       ],
       "outputs": [
@@ -1489,19 +1472,22 @@
           "type": "IMAGE",
           "slot_index": 0,
           "links": [
-            76
+            76,
+            77
           ]
         }
       ],
       "properties": {
+        "Node name for S&R": "VideoLastFrame",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "VideoLastFrame"
+        }
       },
-      "widgets_values": []
+      "widgets_values": [
+        true
+      ]
     },
     {
       "id": 54,
@@ -1515,7 +1501,7 @@
         590.816650390625
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1548,11 +1534,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadVideo",
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "LoadVideo"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "【Girls Fight】Raichi vs Anne【Blender】 [G6amQUnOPss].mp4",
@@ -1574,15 +1561,7 @@
       19,
       0,
       3,
-      6,
-      "STRING"
-    ],
-    [
-      26,
-      20,
-      0,
-      3,
-      5,
+      9,
       "STRING"
     ],
     [
@@ -1622,7 +1601,7 @@
       32,
       0,
       29,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -1630,7 +1609,7 @@
       33,
       0,
       29,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -1710,7 +1689,15 @@
       52,
       0,
       29,
-      9,
+      5,
+      "IMAGE"
+    ],
+    [
+      77,
+      52,
+      0,
+      3,
+      5,
       "IMAGE"
     ]
   ],
@@ -1718,10 +1705,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8140274938683995,
+      "scale": 0.7400249944258178,
       "offset": [
-        281.28606440161144,
-        284.643196117972
+        463.7815363259403,
+        289.05207810790205
       ]
     },
     "frontendVersion": "1.44.18",

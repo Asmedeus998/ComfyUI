@@ -367,7 +367,7 @@
       ],
       "size": [
         225,
-        72
+        100
       ],
       "flags": {},
       "order": 16,
@@ -378,6 +378,15 @@
           "name": "video",
           "type": "VIDEO",
           "link": 208
+        },
+        {
+          "localized_name": "burn_label",
+          "name": "burn_label",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "burn_label"
+          },
+          "link": null
         }
       ],
       "outputs": [
@@ -399,7 +408,9 @@
           "input_ue_unconnectable": {}
         }
       },
-      "widgets_values": []
+      "widgets_values": [
+        true
+      ]
     },
     {
       "id": 116,
@@ -1983,8 +1994,8 @@
     "ds": {
       "scale": 0.38554328942953203,
       "offset": [
-        2233.201948048727,
-        649.5270138777494
+        1963.4527321983273,
+        169.6846587592496
       ]
     },
     "ue_links": [],
