@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 60,
-  "last_link_id": 77,
+  "last_link_id": 79,
   "nodes": [
     {
       "id": 40,
@@ -150,7 +150,7 @@
         264
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -295,7 +295,7 @@
         508
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -566,8 +566,8 @@
       "id": 46,
       "type": "PromptTemplateLoader",
       "pos": [
-        1420,
-        -1040
+        1300.3039753154185,
+        -1042.3939204936914
       ],
       "size": [
         270,
@@ -593,7 +593,8 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            62
+            62,
+            79
           ]
         }
       ],
@@ -1515,7 +1516,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1591,7 +1592,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": null
+          "link": 79
         },
         {
           "localized_name": "model",
@@ -1660,7 +1661,7 @@
         534.6333618164062
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1704,7 +1705,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1790,7 +1791,7 @@
         200
       ],
       "flags": {},
-      "order": 2,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1841,12 +1842,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadKeyframeBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "LoadKeyframeBatch"
+        }
       },
       "widgets_values": [
         "output/keyframes",
@@ -2007,16 +2008,24 @@
       43,
       0,
       "IMAGE"
+    ],
+    [
+      79,
+      46,
+      0,
+      57,
+      9,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5054470284992957,
+      "scale": 0.4177248169415666,
       "offset": [
-        -33.42810873173989,
-        2484.69043548279
+        91.29317054290496,
+        2369.406346914681
       ]
     },
     "frontendVersion": "1.44.18",
