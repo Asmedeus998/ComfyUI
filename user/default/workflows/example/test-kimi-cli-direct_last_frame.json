@@ -984,8 +984,8 @@
       "id": 40,
       "type": "RegexExtract",
       "pos": [
-        3392.9129095183425,
-        1146.8325747716076
+        3332.414952912516,
+        1495.1045952321747
       ],
       "size": [
         320,
@@ -1591,6 +1591,7 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "KimiCliDirect",
         "ue_properties": {
           "widget_ue_connectable": {
             "prompt": true,
@@ -1600,8 +1601,7 @@
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "KimiCliDirect"
+        }
       },
       "widgets_values": [
         "Analyze the attached reference images and videos.\n\nReference mapping (SLOT FORMAT):\n- Image 1: Character / subject reference\n- Image 2: Costume / outfit / product reference\n- Image 3: Prop / accessory / secondary subject reference\n- Image 4: Environment / scene / background reference\n- Image 5: Product / brand / commercial element reference\n- Image 6: Style / aesthetic / mood / material reference\n- Image 7: Creative / freeform / composite reference (optional)\n- Image 8: Continuation frame — the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in Image 8.\n- Do NOT invent a new pose — describe what is literally visible in Image 8.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
@@ -1643,17 +1643,17 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PreviewAny",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PreviewAny"
+        }
       },
       "widgets_values": [
         null,
         null,
-        null
+        false
       ]
     },
     {
@@ -1747,14 +1747,14 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "RegexExtract",
         "ue_properties": {
           "widget_ue_connectable": {
             "string": true
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "RegexExtract"
+        }
       },
       "widgets_values": [
         "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
@@ -1837,16 +1837,16 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "SaveText"
+        }
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-last_frame-templates-prompt-30s-segment-2",
+        "kimi-txt-debug-last_frame-templates-prompt-30s-segment-2-refinement",
         "overwrite",
         false,
         "txt"
@@ -1864,7 +1864,7 @@
         104
       ],
       "flags": {},
-      "order": 4,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1888,15 +1888,15 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 30s: system_prompt"
+        "video/seedance ad video prompt refinement: system_prompt"
       ]
     }
   ],
@@ -2106,10 +2106,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8140274938683998,
+      "scale": 0.8140274938684013,
       "offset": [
-        -2899.4452893774705,
-        -891.3976298879782
+        -4668.40054071443,
+        -3705.224332872839
       ]
     },
     "frontendVersion": "1.44.18",

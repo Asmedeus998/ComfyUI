@@ -1,7 +1,7 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 153,
+  "last_node_id": 154,
   "last_link_id": 271,
   "nodes": [
     {
@@ -80,7 +80,7 @@
         676
       ],
       "flags": {},
-      "order": 13,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -304,7 +304,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -362,15 +362,15 @@
       "id": 114,
       "type": "VideoLastFrame",
       "pos": [
-        1160.789196544,
-        66.52194100899908
+        -208.26625499999955,
+        733.6721959999991
       ],
       "size": [
         225,
         100
       ],
       "flags": {},
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -417,15 +417,15 @@
       "id": 116,
       "type": "VideoConcat",
       "pos": [
-        1150,
-        1020
+        1143.004750374859,
+        -45.751158214392866
       ],
       "size": [
         225,
         144
       ],
       "flags": {},
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -480,15 +480,15 @@
       "id": 117,
       "type": "SaveVideo",
       "pos": [
-        1420,
-        1030
+        1408.43853830139,
+        -33.09772414242759
       ],
       "size": [
         225,
         300.4333190917969
       ],
       "flags": {},
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -556,7 +556,7 @@
         444
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -663,7 +663,9 @@
           "slot_index": 0,
           "links": [
             215,
-            244
+            244,
+            268,
+            274
           ]
         },
         {
@@ -705,7 +707,7 @@
         332
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -848,7 +850,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 15s: A - Problem-Solution Ad (Health/Beauty/Office)"
+        "video/seedance ad video prompt engineer 30s: G - 30s Problem-Solution Ad (Health/Beauty/Office)"
       ]
     },
     {
@@ -989,8 +991,8 @@
       "id": 138,
       "type": "PromptTemplateLoader",
       "pos": [
-        -2682.875648774829,
-        248.55891223112624
+        -2697.0233349208293,
+        199.04201072012623
       ],
       "size": [
         400,
@@ -1016,8 +1018,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            243,
-            274
+            243
           ]
         }
       ],
@@ -1030,7 +1031,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 15s: system_prompt"
+        "video/seedance ad video prompt engineer 30s: system_prompt"
       ]
     },
     {
@@ -1045,7 +1046,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1130,7 +1131,7 @@
         210.4499969482422
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1165,7 +1166,7 @@
         264
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1316,7 +1317,7 @@
         676
       ],
       "flags": {},
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1426,7 +1427,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": 277
+          "link": 278
         },
         {
           "localized_name": "resolution",
@@ -1539,7 +1540,7 @@
         353.8833312988281
       ],
       "flags": {},
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1605,7 +1606,7 @@
         332
       ],
       "flags": {},
-      "order": 23,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1765,18 +1766,65 @@
       ]
     },
     {
+      "id": 154,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        1150,
+        650
+      ],
+      "size": [
+        400,
+        104
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            275
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt refinement: system_prompt"
+      ]
+    },
+    {
       "id": 151,
       "type": "KimiCliDirect",
       "pos": [
-        1522.9634653239093,
-        -48.45241131255
+        1600,
+        300
       ],
       "size": [
         400,
         508
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1842,7 +1890,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": null
+          "link": 274
         },
         {
           "localized_name": "system_prompt",
@@ -1852,7 +1900,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": 274
+          "link": 275
         },
         {
           "localized_name": "model",
@@ -1881,8 +1929,8 @@
           "name": "response",
           "type": "STRING",
           "links": [
-            275,
-            276
+            276,
+            277
           ]
         },
         {
@@ -1906,7 +1954,7 @@
         }
       },
       "widgets_values": [
-        "Analyze the attached reference images and videos.\n\nReference mapping (SLOT FORMAT):\n- Image 1: Character / subject reference\n- Image 2: Costume / outfit / product reference\n- Image 3: Prop / accessory / secondary subject reference\n- Image 4: Environment / scene / background reference\n- Image 5: Product / brand / commercial element reference\n- Image 6: Style / aesthetic / mood / material reference\n- Image 7: Creative / freeform / composite reference (optional)\n- Image 8: Continuation frame — the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in Image 8.\n- Do NOT invent a new pose — describe what is literally visible in Image 8.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
+        "",
         "",
         "",
         300
@@ -1918,15 +1966,15 @@
       "id": 152,
       "type": "RegexExtract",
       "pos": [
-        2127.00075410912,
-        306.0226692268101
+        2100,
+        300
       ],
       "size": [
         315,
         332
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1936,7 +1984,7 @@
           "widget": {
             "name": "string"
           },
-          "link": 275
+          "link": 276
         },
         {
           "localized_name": "regex_pattern",
@@ -1999,7 +2047,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            277
+            278
           ]
         }
       ],
@@ -2020,8 +2068,8 @@
         }
       },
       "widgets_values": [
-        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
-        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
+        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
+        "\\[\\[SEGMENT_2\\]\\]([\\s\\S]*?)\\[\\[/SEGMENT_2\\]\\]",
         "First Group",
         true,
         true,
@@ -2033,22 +2081,22 @@
       "id": 153,
       "type": "PreviewAny",
       "pos": [
-        1983.1806005991202,
-        -98.87892788619047
+        2100,
+        500
       ],
       "size": [
         400,
         300
       ],
       "flags": {},
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
           "name": "source",
           "type": "*",
-          "link": 276
+          "link": 277
         }
       ],
       "outputs": [
@@ -2212,6 +2260,14 @@
       "IMAGE"
     ],
     [
+      268,
+      118,
+      0,
+      149,
+      0,
+      "STRING"
+    ],
+    [
       269,
       147,
       0,
@@ -2245,14 +2301,22 @@
     ],
     [
       274,
-      138,
+      118,
+      0,
+      151,
+      8,
+      null
+    ],
+    [
+      275,
+      154,
       0,
       151,
       9,
       null
     ],
     [
-      275,
+      276,
       151,
       0,
       152,
@@ -2260,7 +2324,7 @@
       null
     ],
     [
-      276,
+      277,
       151,
       0,
       153,
@@ -2268,7 +2332,7 @@
       null
     ],
     [
-      277,
+      278,
       152,
       0,
       147,
@@ -2293,8 +2357,8 @@
       "id": 4,
       "title": "4. combine video",
       "bounding": [
-        1140,
-        920,
+        1133.5114030556233,
+        -138.5478583074061,
         900,
         500
       ],
@@ -2336,27 +2400,15 @@
       ],
       "color": "#8f5c2a",
       "flags": {}
-    },
-    {
-      "id": 8,
-      "title": "2. Segment 1 + 2 PASS",
-      "bounding": [
-        1149.4545847976124,
-        -194.8498554409202,
-        1602.6028641609996,
-        915.420425134
-      ],
-      "color": "#8f5c2a",
-      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.564473930053778,
+      "scale": 0.38554328942953203,
       "offset": [
-        207.38844095680176,
-        416.4194232911099
+        518.7381819226287,
+        257.8719024026495
       ]
     },
     "ue_links": [],
