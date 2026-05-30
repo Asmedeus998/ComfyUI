@@ -19,7 +19,7 @@
         "collapsed": false
       },
       "order": 51,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -209,7 +209,7 @@
       ],
       "flags": {},
       "order": 52,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -258,7 +258,7 @@
         "collapsed": false
       },
       "order": 0,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "image",
@@ -325,7 +325,7 @@
         "collapsed": false
       },
       "order": 43,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "value",
@@ -379,7 +379,7 @@
         "collapsed": false
       },
       "order": 1,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "image",
@@ -446,7 +446,7 @@
         "collapsed": false
       },
       "order": 2,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "image",
@@ -511,7 +511,7 @@
       ],
       "flags": {},
       "order": 19,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -553,7 +553,7 @@
       ],
       "flags": {},
       "order": 22,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -597,7 +597,7 @@
       ],
       "flags": {},
       "order": 27,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -632,6 +632,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -725,7 +746,7 @@
         "collapsed": false
       },
       "order": 37,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -771,7 +792,7 @@
         "collapsed": false
       },
       "order": 35,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -817,7 +838,7 @@
         "collapsed": false
       },
       "order": 36,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "string",
@@ -936,7 +957,7 @@
       ],
       "flags": {},
       "order": 42,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "source",
@@ -989,7 +1010,7 @@
       ],
       "flags": {},
       "order": 46,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "",
@@ -1027,7 +1048,7 @@
       ],
       "flags": {},
       "order": 3,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "template",
@@ -1074,7 +1095,7 @@
       ],
       "flags": {},
       "order": 4,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "template",
@@ -1121,7 +1142,7 @@
       ],
       "flags": {},
       "order": 5,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "file",
@@ -1180,7 +1201,7 @@
         "collapsed": false
       },
       "order": 6,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "image",
@@ -1570,6 +1591,27 @@
           "name": "video_3",
           "shape": 7,
           "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -2437,6 +2479,27 @@
           "link": null
         },
         {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
           "localized_name": "prompt",
           "name": "prompt",
           "type": "STRING",
@@ -3155,7 +3218,7 @@
       ],
       "flags": {},
       "order": 53,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -3315,7 +3378,7 @@
       ],
       "flags": {},
       "order": 54,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -3415,7 +3478,7 @@
       ],
       "flags": {},
       "order": 16,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -3576,7 +3639,7 @@
       ],
       "flags": {},
       "order": 28,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -4433,7 +4496,7 @@
       201,
       0,
       180,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -4441,7 +4504,7 @@
       202,
       0,
       180,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -4489,7 +4552,7 @@
       216,
       0,
       209,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -4497,7 +4560,7 @@
       215,
       0,
       209,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -4585,7 +4648,7 @@
       229,
       0,
       222,
-      5,
+      8,
       "STRING"
     ],
     [
@@ -4593,7 +4656,7 @@
       228,
       0,
       222,
-      6,
+      9,
       "STRING"
     ],
     [
@@ -4846,10 +4909,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.24304420967397963,
+      "scale": 0.20086298320163612,
       "offset": [
-        -2934.5307594099554,
-        4476.567195505843
+        2048.244152849499,
+        5151.329804430957
       ]
     }
   },

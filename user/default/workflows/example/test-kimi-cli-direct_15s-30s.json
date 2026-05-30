@@ -17,7 +17,7 @@
       ],
       "flags": {},
       "order": 8,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -162,7 +162,7 @@
       ],
       "flags": {},
       "order": 11,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -340,7 +340,7 @@
       ],
       "flags": {},
       "order": 2,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -387,7 +387,7 @@
       ],
       "flags": {},
       "order": 3,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "template",
@@ -435,7 +435,7 @@
       ],
       "flags": {},
       "order": 9,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -580,7 +580,7 @@
       ],
       "flags": {},
       "order": 13,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "source",
@@ -773,7 +773,7 @@
       ],
       "flags": {},
       "order": 14,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "text",
@@ -859,7 +859,7 @@
       ],
       "flags": {},
       "order": 12,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "text",
@@ -1253,7 +1253,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 30s: G - 30s Problem-Solution Ad (Health/Beauty/Office)"
+        "video/seedance ad video prompt engineer 30s simple: S - 30s Simple Natural Language Ad (Health/Beauty/Office)"
       ]
     },
     {
@@ -1300,7 +1300,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 30s: system_prompt"
+        "video/seedance ad video prompt engineer 30s simple: system_prompt"
       ]
     },
     {
@@ -1933,10 +1933,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.41772481694156555,
+      "scale": 1.1918176537727245,
       "offset": [
-        1225.5465312780868,
-        552.7816239219117
+        -832.8776117736794,
+        -1164.6929068896875
       ]
     },
     "frontendVersion": "1.44.18",
