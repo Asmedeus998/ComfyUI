@@ -425,7 +425,7 @@
         }
       },
       "widgets_values": [
-        "Describe what you see in detail and image list, like image 1 and image 2 and image 3 ",
+        "Describe what you see in detail and image list you see",
         "",
         "",
         "300"
@@ -653,8 +653,8 @@
       "id": 60,
       "type": "LoadKeyframeBatch",
       "pos": [
-        -200,
-        1000
+        261.84230640763417,
+        -698.0868639634232
       ],
       "size": [
         315,
@@ -804,10 +804,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.21435888100000075,
+      "scale": 0.9849732675807673,
       "offset": [
-        2513.343189836171,
-        2193.527274778554
+        -850.8353053092419,
+        1482.8406423737413
       ]
     },
     "frontendVersion": "1.44.18",
