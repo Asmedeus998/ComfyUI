@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 63,
-  "last_link_id": 78,
+  "last_link_id": 80,
   "nodes": [
     {
       "id": 29,
@@ -16,7 +16,7 @@
         508
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -163,7 +163,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -249,7 +249,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -359,7 +359,8 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            45
+            45,
+            80
           ]
         }
       ],
@@ -387,7 +388,7 @@
         332
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -497,7 +498,7 @@
         332
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -818,7 +819,8 @@
           "name": "images",
           "type": "IMAGE",
           "links": [
-            48
+            48,
+            79
           ]
         },
         {
@@ -854,7 +856,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -862,7 +864,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 79
         },
         {
           "localized_name": "video",
@@ -930,7 +932,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": null
+          "link": 80
         },
         {
           "localized_name": "model",
@@ -999,7 +1001,7 @@
         534.6333618164062
       ],
       "flags": {},
-      "order": 5,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1043,7 +1045,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 6,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1206,16 +1208,32 @@
       63,
       0,
       "STRING"
+    ],
+    [
+      79,
+      60,
+      0,
+      61,
+      0,
+      "IMAGE"
+    ],
+    [
+      80,
+      33,
+      0,
+      61,
+      9,
+      "STRING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.3109994191500007,
+      "scale": 0.5054470284992966,
       "offset": [
-        -934.4791237023069,
-        -1162.5546224446668
+        -327.6907635836383,
+        -121.56958020481572
       ]
     },
     "frontendVersion": "1.44.18",

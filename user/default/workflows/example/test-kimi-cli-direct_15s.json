@@ -557,7 +557,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-v2",
+        "kimi-txt-debug-15s",
         "overwrite",
         false,
         "txt"
@@ -643,7 +643,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-v2-templates-prompt",
+        "kimi-txt-debug-15s-templates-prompt",
         "overwrite",
         false,
         "txt"
@@ -804,10 +804,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9849732675807673,
+      "scale": 0.9849732675807684,
       "offset": [
-        -850.8353053092419,
-        1482.8406423737413
+        -1581.5282979307926,
+        1977.55622930735
       ]
     },
     "frontendVersion": "1.44.18",
