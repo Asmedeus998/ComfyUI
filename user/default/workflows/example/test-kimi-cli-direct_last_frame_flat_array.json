@@ -16,7 +16,7 @@
         508
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -59,7 +59,7 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 77
+          "link": null
         },
         {
           "localized_name": "image_2",
@@ -153,15 +153,15 @@
       "id": 4,
       "type": "PreviewAny",
       "pos": [
-        1701.0335620263313,
-        396.8663756028511
+        1725.7575635293833,
+        343.63654705925023
       ],
       "size": [
         1023.8499755859375,
         436.7166748046875
       ],
       "flags": {},
-      "order": 15,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -252,7 +252,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 16,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -320,7 +320,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-v2-templates-prompt",
+        "kimi-txt-debug-last-frame-flat-array-templates-prompt",
         "overwrite",
         false,
         "txt"
@@ -330,15 +330,15 @@
       "id": 29,
       "type": "KimiCliDirect",
       "pos": [
-        1563.344610781334,
-        1099.807489971282
+        1003.0302541175333,
+        1944.8491329426834
       ],
       "size": [
         400,
         508
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -381,7 +381,7 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 76
+          "link": null
         },
         {
           "localized_name": "image_2",
@@ -477,15 +477,15 @@
       "id": 30,
       "type": "SaveText",
       "pos": [
-        2276.7075100353077,
-        1209.7758450233878
+        1713.0302541175333,
+        2054.8491329426834
       ],
       "size": [
         400,
         273.3333435058594
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -553,7 +553,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-v2-templates-prompt-30s",
+        "kimi-txt-debug-last-frame-flat-array-templates-prompt-30s",
         "overwrite",
         false,
         "txt"
@@ -563,15 +563,15 @@
       "id": 31,
       "type": "PreviewAny",
       "pos": [
-        2127.980464111008,
-        1591.7454474918459
+        1573.0302541175333,
+        2434.8491329426834
       ],
       "size": [
         1023.8499755859375,
         436.7166748046875
       ],
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -607,8 +607,8 @@
       "id": 32,
       "type": "PromptTemplateLoader",
       "pos": [
-        1074.371691539951,
-        1380.0200551309044
+        513.0302541175334,
+        2224.8491329426834
       ],
       "size": [
         270,
@@ -654,8 +654,8 @@
       "id": 33,
       "type": "PromptTemplateLoader",
       "pos": [
-        1207.9804641110081,
-        1571.7454474918459
+        653.0302541175333,
+        2414.8491329426834
       ],
       "size": [
         270,
@@ -701,15 +701,15 @@
       "id": 40,
       "type": "RegexExtract",
       "pos": [
-        3332.414952912516,
-        1495.1045952321747
+        2773.0302541175333,
+        2334.8491329426834
       ],
       "size": [
         320,
         332
       ],
       "flags": {},
-      "order": 13,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -811,8 +811,8 @@
       "id": 41,
       "type": "SaveText",
       "pos": [
-        3875.590263829399,
-        981.0819923745943
+        3313.0302541175333,
+        1824.8491329426834
       ],
       "size": [
         400,
@@ -887,7 +887,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-v2-templates-prompt-30s-segment-1",
+        "kimi-txt-debug-last-frame-flat-array-templates-prompt-30s-segment-1",
         "overwrite",
         false,
         "txt"
@@ -897,8 +897,8 @@
       "id": 52,
       "type": "VideoLastFrame",
       "pos": [
-        64.44043761442185,
-        15.703562242902194
+        800,
+        -40
       ],
       "size": [
         225,
@@ -930,10 +930,7 @@
           "name": "image",
           "type": "IMAGE",
           "slot_index": 0,
-          "links": [
-            76,
-            77
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -952,8 +949,8 @@
       "id": 54,
       "type": "LoadVideo",
       "pos": [
-        -525.8933501417289,
-        -27.722789234890868
+        210,
+        -80
       ],
       "size": [
         282.8333435058594,
@@ -1009,8 +1006,8 @@
       "id": 55,
       "type": "VideoLastFrame",
       "pos": [
-        4068.928005685434,
-        542.3353605655097
+        3273.0302541175333,
+        1624.8491329426834
       ],
       "size": [
         225,
@@ -1063,8 +1060,8 @@
       "id": 56,
       "type": "LoadVideo",
       "pos": [
-        3390.9707430589356,
-        320.15712035220685
+        2793.0302541175333,
+        1244.8491329426834
       ],
       "size": [
         282.8333435058594,
@@ -1120,15 +1117,15 @@
       "id": 57,
       "type": "KimiCliDirect",
       "pos": [
-        4596.13639487923,
-        1072.6367637167964
+        4033.0302541175333,
+        1914.8491329426834
       ],
       "size": [
         400,
         508
       ],
       "flags": {},
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1258,7 +1255,7 @@
         }
       },
       "widgets_values": [
-        "Analyze the attached reference images and videos.\n\nReference mapping (FLAT ARRAY — count by array position, NOT grid location):\n- @Image1 through @Image9: Nine sequential keyframes — identify what each shows (character, scene, product, action, closing shot)\n- @Image10: Continuation frame — the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n- Video 1 (optional): Motion reference\n- Video 2 (optional): Camera motion reference\n- Video 3 (optional): Pacing / mood / creative reference\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL FLAT-ARRAY INSTRUCTIONS:\n- The first 9 images are a flat array of sequential keyframes. There is NO 3×3 grid.\n- Count images by their position: 1st = @Image1, 2nd = @Image2, ..., 9th = @Image9.\n- The 10th image (@Image10) is the separate continuation frame from the previous segment.\n- Do NOT use grid coordinates like 'top-left panel' or 'middle row'.\n- Do NOT use slot label numbers like @Image5 or @Image7 unless that image is actually in the 5th or 7th position.\n- Analyze the actual visual content of each keyframe and assign @ImageN references based on what each image actually shows.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in @Image10.\n- Do NOT invent a new pose — describe what is literally visible in @Image10.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
+        "Analyze the attached reference images and videos.\n\nReference mapping (FLAT ARRAY — count by array position, NOT grid location):\n- @Image1 through @Image8: Eight sequential keyframes — identify what each shows (character, scene, product, action, closing shot)\n- @Image9: Continuation frame — the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n- Video 1 (optional): Motion reference\n- Video 2 (optional): Camera motion reference\n- Video 3 (optional): Pacing / mood / creative reference\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL FLAT-ARRAY INSTRUCTIONS:\n- The first 8 images are a flat array of sequential keyframes. There is NO 3×3 grid.\n- Count images by their position: 1st = @Image1, 2nd = @Image2, ..., 8th = @Image8.\n- The 9th image (@Image9) is the separate continuation frame from the previous segment.\n- Do NOT use grid coordinates like 'top-left panel' or 'middle row'.\n- Do NOT use slot label numbers like @Image5 or @Image7 unless that image is actually in the 5th or 7th position.\n- Analyze the actual visual content of each keyframe and assign @ImageN references based on what each image actually shows.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in @Image9.\n- Do NOT invent a new pose — describe what is literally visible in @Image9.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
         "",
         "",
         300
@@ -1270,8 +1267,8 @@
       "id": 59,
       "type": "PreviewAny",
       "pos": [
-        5303.642474958243,
-        1026.2641642710869
+        4743.030254117533,
+        1874.8491329426834
       ],
       "size": [
         400,
@@ -1314,8 +1311,8 @@
       "id": 60,
       "type": "RegexExtract",
       "pos": [
-        5316.2161331648995,
-        1467.7355441093923
+        4753.030254117533,
+        2314.8491329426834
       ],
       "size": [
         320,
@@ -1424,8 +1421,8 @@
       "id": 61,
       "type": "SaveText",
       "pos": [
-        5756.196097078454,
-        1351.6104883736818
+        5193.030254117533,
+        2194.8491329426834
       ],
       "size": [
         400,
@@ -1500,7 +1497,7 @@
       },
       "widgets_values": [
         "",
-        "kimi-txt-debug-last_frame-templates-prompt-30s-segment-2-refinement",
+        "kimi-txt-debug-last-frame-flat-array-templates-prompt-30s-segment-2-refinement",
         "overwrite",
         false,
         "txt"
@@ -1510,8 +1507,8 @@
       "id": 62,
       "type": "PromptTemplateLoader",
       "pos": [
-        3984.210261876981,
-        1556.7742652962702
+        3423.0302541175333,
+        2404.8491329426834
       ],
       "size": [
         270,
@@ -1557,8 +1554,8 @@
       "id": 63,
       "type": "LoadKeyframeBatch",
       "pos": [
-        -200,
-        1000
+        93.03025411753322,
+        1774.8491329426834
       ],
       "size": [
         315,
@@ -1627,7 +1624,7 @@
       "widgets_values": [
         "output/keyframes",
         "*.png",
-        0
+        8
       ]
     }
   ],
@@ -1729,22 +1726,6 @@
       "VIDEO"
     ],
     [
-      76,
-      52,
-      0,
-      29,
-      5,
-      "IMAGE"
-    ],
-    [
-      77,
-      52,
-      0,
-      3,
-      5,
-      "IMAGE"
-    ],
-    [
       78,
       56,
       0,
@@ -1809,14 +1790,39 @@
       "STRING"
     ]
   ],
-  "groups": [],
+  "groups": [
+    {
+      "id": 1,
+      "title": "last frame + refinement",
+      "bounding": [
+        93.40433741890796,
+        1023.2655399654814,
+        5675.817955326281,
+        2205.0812372942783
+      ],
+      "color": "#a1309b",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Custom Debug",
+      "bounding": [
+        155.0784689264557,
+        -301.24666763329026,
+        2686.2766928025585,
+        1170.494026664387
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.2101583410803629,
+      "scale": 0.1736845794052594,
       "offset": [
-        1652.9082580117592,
-        1063.085787518372
+        4020.0022696796,
+        1310.1843706060324
       ]
     },
     "frontendVersion": "1.44.18",
