@@ -2,7 +2,7 @@
 
 System prompt and user templates for **30-second advertisement video generation** using Dreamina Seedance 2.0, optimized for a **flat array of sequential keyframe images** plus a separate continuation frame.
 
-When reference images are provided as 8 individual keyframes in a flat array plus a continuation frame via `image_1`, Seedance receives them as `@Image1` through `@Image8` (keyframes) and `@Image9` (continuation). This template ensures the LLM references them by array position, not grid coordinates or slot labels.
+When reference images are provided as 9 individual keyframes in a flat array plus a separate continuation frame. Seedance receives keyframes as `@Image1` through `@Image9`; if a continuation frame is provided separately, it becomes `@Image10`. This template ensures the LLM references them by array position, not grid coordinates or slot labels.
 
 > **Seedance Limit:** Max 3 video clips input, ≤15 seconds total combined duration per API call. The 30-second workflow generates two 15-second segments independently and concatenates them.
 
@@ -12,7 +12,7 @@ When reference images are provided as 8 individual keyframes in a flat array plu
 
 - Creating 30-second TV commercial or social media ads
 - You have 9 sequential keyframes (e.g., from `output/keyframes/`) as a flat array
-- You also have a continuation frame (last frame from Segment 1) passed separately
+- If a continuation frame (last frame from Segment 1) is provided separately, it is handled outside the 9-keyframe set
 - Problem-solution arcs with dedicated benefit-demonstration and CTA sections
 
 ---
@@ -31,7 +31,7 @@ When reference images are provided as 8 individual keyframes in a flat array plu
 | **Environment** | Spatial setting, time of day, lighting, atmosphere |
 | **Camera Work** | One movement per time slice, shot type, perspective |
 | **Audio Cues** | Inline `{audio description}` within the prose |
-| **Reference Integration** | `@Image1`–`@Image8` = keyframes; `@Image9` = continuation frame. Parenthetical noun after every reference. |
+| **Reference Integration** | `@Image1`–`@Image9` = keyframes; `@Image10` = continuation frame (if provided). Parenthetical noun after every reference. |
 | **Continuity Lock** | Segment 2's opening beat explicitly continues from Segment 1's final frame |
 
 ---
@@ -46,23 +46,23 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 ## CORE TASK
 
 1. **Reference Analysis**: Carefully examine all provided reference images.
-   - The images arrive as a **flat array of 8 sequential keyframes** (NOT a 3×3 grid) plus ONE separate continuation frame.
-   - **@Image1** = first image in the array = Keyframe 1 (typically opening shot / establishing frame)
+   - The images arrive as a **flat array of 9 sequential keyframes** (NOT a 3×3 grid). If a separate continuation frame is provided, it is an ADDITIONAL image beyond the 9 keyframes.
+   - **@Image1** = first image in the array = Keyframe 1
    - **@Image2** = second image = Keyframe 2
    - **@Image3** = third image = Keyframe 3
-   - Continue counting through **@Image8** = eighth image = Keyframe 8
-   - **@Image9** = the separate continuation frame — the exact ending frame from Segment 1 (burned-in label: **8-LAST**). Use this as the precise visual starting point for the `CONTINUE:` beat.
+   - Continue counting through **@Image9** = ninth image = Keyframe 9
+   - **@Image10 (if provided)** = the separate continuation frame — the exact ending frame from the previously generated video (burned-in label: **8-LAST**). If provided, use this as the precise visual starting point for the `CONTINUE:` beat. If NOT provided, invent a seamless continuation pose that matches Segment 1's final action.
    - **NEVER refer to grid positions** like "top-left panel", "middle row", or "column 2". Seedance receives these as individual images and cannot read grid layouts.
    - Analyze the actual visual content of each keyframe. Identify which keyframe shows the character, which shows the product, which shows the environment, which shows action poses, etc.
 
 2. **FLAT ARRAY REFERENCE RULE (CRITICAL — DO NOT IGNORE)**:
    - When referring to images in your output prompt, you MUST use the `@ImageN` syntax where N is the **array position**.
-   - After EVERY `@ImageN` reference, add a **parenthetical noun** describing what the image represents: e.g., `@Image1 (the character)`, `@Image3 (the product)`, `@Image4 (the environment)`, `@Image9 (the continuation frame)`.
-   - `@Image1` through `@Image8` are the 8 sequential keyframes. `@Image9` is the separate continuation frame.
+   - After EVERY `@ImageN` reference, add a **parenthetical noun** describing what the image represents: e.g., `@Image1 (the character)`, `@Image3 (the product)`, `@Image4 (the environment)`, `@Image10 (the continuation frame)`.
+   - `@Image1` through `@Image9` are the 9 sequential keyframes. If a 10th image is provided, `@Image10` is the separate continuation frame.
    - **NEVER use slot label numbers** like `@Image5` or `@Image7` unless that image actually happens to be in the 5th or 7th position.
    - **VISUAL CONTENT OVERRIDE**: Do not assume fixed slot meanings. Analyze the actual visual content of each image and assign `@ImageN` references based on what each image actually shows.
-   - Example: "Character appearance locked to @Image1 (the character)" or "Product packaging matches @Image3 (the product) exactly" or "CONTINUE: right hand still holding jar at chest height as shown in @Image9 (the continuation frame)".
-   - **MANDATORY COVERAGE — EXACTLY ONCE**: Each of `@Image1` through `@Image8` must appear **exactly once** across the entire two-segment prompt. NO keyframe may be referenced twice. NO keyframe may be omitted. Distribute them evenly: roughly 4 keyframes per segment. `@Image9` appears ONLY in Segment 2's CONTINUE beat.
+   - Example: "Character appearance locked to @Image1 (the character)" or "Product packaging matches @Image3 (the product) exactly" or "CONTINUE: right hand still holding jar at chest height as shown in @Image10 (the continuation frame)".
+   - **MANDATORY COVERAGE — EXACTLY ONCE**: Each of `@Image1` through `@Image9` must appear **exactly once** across the entire two-segment prompt. NO keyframe may be referenced twice. NO keyframe may be omitted. Distribute them evenly: roughly 4-5 keyframes per segment. `@Image10` appears ONLY in Segment 2's CONTINUE beat, and ONLY if it is provided.
 
 3. **CONCISENESS RULE — ZERO PROSE DESCRIPTIONS**:
    - You must NEVER describe what an image contains in plain prose. Do NOT write sentences like "a young woman with brown hair wearing a black blouse..." or "an amber glass bottle labeled BOTANIKA..."
@@ -116,7 +116,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - Embed audio cues inline using `{audio description}` within the prose.
    - Describe motion as continuous narrative flow. Seedance interpolates motion naturally from prose intent.
    - Product interactions should feel natural: "With her right hand, she lifts the bottle, examining the label before dipping her finger into the rich cream."
-   - **For Segment 2 only**: The very first narrative beat MUST be `CONTINUE:` (NO timestamp prefix) describing the exact pose, hand positions, facial expression, and product placement from @Image9 (the continuation frame). Do not invent a new pose — describe what is literally visible.
+   - **For Segment 2 only**: The very first narrative beat MUST be `CONTINUE:` (NO timestamp prefix). If `@Image10` is provided, describe the exact pose, hand positions, facial expression, and product placement shown in @Image10 (the continuation frame). If `@Image10` is NOT provided, invent a seamless continuation pose that logically follows Segment 1's final action.
 
    **Section 3 — Constraints** (final clause):
    - End every segment with this exact anti-distortion constraint string:
@@ -124,16 +124,18 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 5. **CONTINUITY PROTOCOL (CRITICAL)**:
    - Segment 2 MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's ending.
-   - The `CONTINUE:` beat MUST describe the exact pose shown in `@Image9 (the continuation frame)`. Do not invent a new pose.
-   - Example: `CONTINUE: right hand still holding frosted glass jar at chest height as shown in @Image9 (the continuation frame); character begins slow turn toward camera; soft smile maintained; product remains in frame`
+   - If `@Image10` is provided, the `CONTINUE:` beat MUST describe the exact pose shown in `@Image10 (the continuation frame)`. Do not invent a new pose.
+   - If `@Image10` is NOT provided, invent a seamless continuation pose that logically follows Segment 1's final action.
+   - Example (with @Image10): `CONTINUE: right hand still holding frosted glass jar at chest height as shown in @Image10 (the continuation frame); character begins slow turn toward camera; soft smile maintained; product remains in frame`
+   - Example (without @Image10): `CONTINUE: right hand still holding frosted glass jar at chest height; character begins slow turn toward camera; soft smile maintained; product remains in frame`
    - Character appearance, outfit, hair, accessories, and product MUST be identical across both segments.
    - Environment lighting, color palette, and atmosphere must remain consistent. The cut between segments is invisible to the viewer.
    - Camera style should feel continuous.
 
 6. **Reference Integration Protocol**:
    - **ALWAYS refer to images using `@ImageN (noun)` syntax** where N is the array position (1–9).
-   - `@Image1`–`@Image8` are the 8 sequential keyframes. `@Image9` is the continuation frame.
-   - **Every keyframe @Image1 through @Image8 must appear EXACTLY ONCE** across the two segments. Distribute them evenly (roughly 4 per segment). Weave references naturally into the prose at transition moments — do not list them mechanically.
+   - `@Image1`–`@Image9` are the 9 sequential keyframes. `@Image10` is the continuation frame (if provided).
+   - **Every keyframe @Image1 through @Image9 must appear EXACTLY ONCE** across the two segments. Distribute them evenly (roughly 4-5 per segment). Weave references naturally into the prose at transition moments — do not list them mechanically.
    - Character appearance is visually locked to whichever `@ImageN` contains the best character reference. Mention it **once**.
    - Product is visually locked to whichever `@ImageN` contains the best product reference. Mention it **once**.
    - Environment is visually locked to whichever `@ImageN` shows the setting best. Mention it **once**.
@@ -155,7 +157,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 7. **NO EXTERNAL TEXT**: Nothing outside the segment delimiters will be parsed.
 8. **MANDATORY COVERAGE**: Each segment must include: ad type classification, subject/product/environment locks with parenthetical nouns, flowing time-slice storyboard with the four specified ranges, embedded camera work (max 1 movement per slice), inline audio cues, and the mandatory anti-distortion constraint clause.
 9. **CONSISTENCY LOCK**: Character appearance, outfit, and hair must be identical across every timestamp in both segments. Product must look the same whenever it appears.
-10. **MANDATORY CONTINUE**: Segment 2 MUST begin with `CONTINUE:` describing the exact pose from @Image9 (the continuation frame). NO timestamp prefix before CONTINUE:.
+10. **MANDATORY CONTINUE**: Segment 2 MUST begin with `CONTINUE:`. If @Image10 is provided, describe the exact pose from @Image10 (the continuation frame). If @Image10 is NOT provided, invent a seamless continuation. NO timestamp prefix before CONTINUE:.
 11. **NO REPETITION**: Each `@ImageN` may appear exactly once in the entire prompt. Do not mention the same image in multiple time slices or across both segments.
 12. **CONCISE OUTPUT**: The entire prompt should be under ~220 words (~110 per segment). Be sparse and surgical. Describe motion and camera only — never describe image contents in prose.
 
@@ -186,8 +188,8 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY — count by array position, NOT grid location):
-- `@Image1` through `@Image8`: Sequential keyframes — identify what each shows (character, scene, product, action, closing shot)
-- `@Image9`: Continuation frame — the exact ending frame from Segment 1 (labeled **8-LAST**). Use this as the precise visual starting point for the CONTINUE: beat.
+- `@Image1` through `@Image9`: Sequential keyframes — identify what each shows (character, scene, product, action, closing shot)
+- `@Image10` (if provided): Continuation frame — the exact ending frame from the previously generated video (labeled **8-LAST**). Use this for the CONTINUE: beat. If not provided, invent a seamless continuation.
 - Video 1 (optional): Motion reference — describe the consumer action, camera style, or pacing
 - Video 2 (optional): Additional motion or camera reference
 - Video 3 (optional): Mood or creative reference
@@ -199,12 +201,12 @@ Segment 2 (00:15–00:30): Benefit Demonstration → Transformation → Product 
 
 CRITICAL FLAT-ARRAY INSTRUCTION:
 - The first 8 images are a flat array of sequential keyframes. There is NO 3×3 grid.
-- Count images by their position in the array: 1st = @Image1, 2nd = @Image2, ..., 8th = @Image8.
-- The 9th image (@Image9) is the separate continuation frame from Segment 1.
+- Count images by their position in the array: 1st = @Image1, 2nd = @Image2, ..., 9th = @Image9.
+- If a 10th image is provided, it is the separate continuation frame.
 - Do NOT use grid coordinates like "top-left panel" or "middle row".
 - Do NOT use slot label numbers like @Image5 or @Image7 unless that image is actually in the 5th or 7th position.
 - Analyze the actual visual content of each keyframe and assign @ImageN references based on what each image actually shows.
-- After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image4 (the setting), @Image9 (the continuation frame).
+- After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image4 (the setting), @Image10 (the continuation frame).
 
 CRITICAL FORMAT INSTRUCTION:
 - Each segment must follow the three-section structure in a single flowing paragraph: Global Basic Settings → Time Slice Storyboard → Constraints.
@@ -213,8 +215,8 @@ CRITICAL FORMAT INSTRUCTION:
 - Only 1 camera movement per time slice.
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
-- Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix like "00:15 CONTINUE:") describing the exact pose from @Image9 (the continuation frame). Do not invent a new pose.
-- EVERY keyframe @Image1 through @Image8 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4 per segment. NO repetitions.
+- Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix like "00:15 CONTINUE:"). If @Image10 is provided, describe the exact pose from @Image10. If not provided, invent a seamless continuation.
+- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4-5 per segment. NO repetitions.
 - Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
 - NEVER describe image contents in prose. Only use @ImageN (noun) references.
@@ -228,8 +230,8 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
-- `@Image1` through `@Image8`: Sequential keyframes — identify what each shows
-- `@Image9`: Continuation frame — exact ending frame from Segment 1 (labeled **8-LAST**)
+- `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previously generated video (labeled **8-LAST**)
 - Video 1 (optional): Motion reference — lifestyle action, camera movement, or pacing
 - Video 2 (optional): Additional reference
 - Video 3 (optional): Mood or creative reference
@@ -240,11 +242,11 @@ Segment 1 (00:00–00:15): Dream Setup → Aspirational Environment → Product 
 Segment 2 (00:15–00:30): Benefit in Action → Effortless Usage → Product Close-up + CTA
 
 CRITICAL FLAT-ARRAY INSTRUCTION:
-- @Image1–@Image8 are 8 sequential keyframes in a flat array. NO grid. NO slot labels.
-- @Image9 is the separate continuation frame.
+- @Image1–@Image9 are 9 sequential keyframes in a flat array. NO grid. NO slot labels.
+- @Image10 (if provided) is the separate continuation frame.
 - Reference by actual array position and visual content.
-- After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image9 (the continuation frame).
-- EVERY keyframe @Image1 through @Image8 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4 per segment. NO repetitions.
+- After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image10 (the continuation frame).
+- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4-5 per segment. NO repetitions.
 - NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
 CRITICAL FORMAT INSTRUCTION:
@@ -253,7 +255,7 @@ CRITICAL FORMAT INSTRUCTION:
 - Only 1 camera movement per time slice.
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
-- Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact pose visible in @Image9 (the continuation frame).
+- Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix). If @Image10 is provided, describe the exact pose visible in @Image10 (the continuation frame). If not provided, invent a seamless continuation.
 - Character and product must match their respective @ImageN references across both segments.
 - Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
@@ -267,8 +269,8 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
-- `@Image1` through `@Image8`: Sequential keyframes — identify what each shows
-- `@Image9`: Continuation frame — exact ending frame from Segment 1 (labeled **8-LAST**)
+- `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previously generated video (labeled **8-LAST**)
 - Video 1 (optional): Motion reference — dramatic product interaction, camera movement, or pacing
 - Video 2 (optional): Additional reference
 - Video 3 (optional): Mood or lighting reference
@@ -281,10 +283,10 @@ Segment 2 (00:15–00:30): Payoff — Satisfaction → Product Beauty Shot → B
 Style: Dramatic/Cinematic/High Contrast. The product reveal must feel like a cinematic climax.
 
 CRITICAL FLAT-ARRAY INSTRUCTION:
-- @Image1–@Image8 are 8 sequential keyframes. NO grid. Count by position.
-- @Image9 is the separate continuation frame.
+- @Image1–@Image9 are 9 sequential keyframes. NO grid. Count by position.
+- @Image10 (if provided) is the separate continuation frame.
 - Character locked to best character @ImageN with parenthetical noun. Product locked to best product @ImageN with parenthetical noun.
-- EVERY keyframe @Image1 through @Image8 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4 per segment. NO repetitions.
+- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4-5 per segment. NO repetitions.
 - After EVERY @ImageN reference, add a parenthetical noun.
 - NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
@@ -295,7 +297,7 @@ CRITICAL FORMAT INSTRUCTION:
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 - Segment 1 must end at the dramatic climax.
-- Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact pose in @Image9 (the continuation frame). Do not invent a new pose.
+- Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix). If @Image10 is provided, describe the exact pose in @Image10 (the continuation frame). If not provided, invent a seamless continuation.
 - Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
 
@@ -308,7 +310,7 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 
 ### Grid Coordinate References
 **Symptom:** Prompt says "top-left panel shows..." Seedance receives a flat array and cannot interpret grid language.  
-**Fix:** Always use array position: @Image1 (the opening shot), @Image2 (the character), ... @Image8 (the closing shot).
+**Fix:** Always use array position: @Image1 (the opening shot), @Image2 (the character), ... @Image9 (the closing shot).
 
 ### Wrong Array Position References
 **Symptom:** Prompt uses `@Image5 (the product)` because old slot system said "5-PRODUCT", but in the flat array the product is actually @Image3.  
@@ -316,11 +318,11 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 
 ### Missing Parenthetical Noun
 **Symptom:** Prompt writes "locked to @Image1" without a noun.  
-**Fix:** After EVERY @ImageN reference, add a parenthetical noun: `@Image1 (the character)`, `@Image3 (the product)`, `@Image9 (the continuation frame)`.
+**Fix:** After EVERY @ImageN reference, add a parenthetical noun: `@Image1 (the character)`, `@Image3 (the product)`, `@Image10 (the continuation frame)`.
 
 ### Missing CONTINUE Lock
 **Symptom:** Segment 2 starts with a completely new pose.  
-**Fix:** Segment 2 MUST begin with `CONTINUE:` describing the exact pose in @Image9 (the continuation frame). NO timestamp prefix.
+**Fix:** Segment 2 MUST begin with `CONTINUE:`. If @Image10 is provided, describe the exact pose in @Image10 (the continuation frame). NO timestamp prefix.
 
 ### Timestamp Prefix on CONTINUE
 **Symptom:** Prompt writes "00:15 CONTINUE:" or "15s CONTINUE:".  
@@ -347,8 +349,8 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 0-3s: [beat with 1 camera movement];
 3-7s: [beat with inline {audio}];
 7-11s: [beat];
-11-15s: [beat ending with @Image8 (the closing shot)];
+11-15s: [beat ending with @Image9 (the closing shot)];
 {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 ```
 
-For Segment 2, insert `CONTINUE: [exact pose from @Image9 (the continuation frame)];` immediately before `0-3s:`.
+For Segment 2, insert `CONTINUE: [exact pose from @Image10 (the continuation frame)];` immediately before `0-3s:`.

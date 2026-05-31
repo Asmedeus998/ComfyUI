@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 63,
-  "last_link_id": 89,
+  "last_link_id": 90,
   "nodes": [
     {
       "id": 3,
@@ -334,7 +334,7 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 90
         },
         {
           "localized_name": "image_2",
@@ -952,7 +952,7 @@
         }
       },
       "widgets_values": [
-        "【Girls Fight】Raichi vs Anne【Blender】 [G6amQUnOPss].mp4",
+        "\u3010Girls Fight\u3011Raichi vs Anne\u3010Blender\u3011 [G6amQUnOPss].mp4",
         "image"
       ]
     },
@@ -994,7 +994,8 @@
           "type": "IMAGE",
           "slot_index": 0,
           "links": [
-            81
+            81,
+            90
           ]
         }
       ],
@@ -1063,7 +1064,7 @@
         }
       },
       "widgets_values": [
-        "【Girls Fight】Raichi vs Anne【Blender】 [G6amQUnOPss].mp4",
+        "\u3010Girls Fight\u3011Raichi vs Anne\u3010Blender\u3011 [G6amQUnOPss].mp4",
         "image"
       ]
     },
@@ -1209,7 +1210,7 @@
         }
       },
       "widgets_values": [
-        "Analyze the attached reference images and videos.\n\nReference mapping (FLAT ARRAY — count by array position, NOT grid location):\n- @Image1 through @Image8: Eight sequential keyframes — identify what each shows (character, scene, product, action, closing shot)\n- @Image9: Continuation frame — the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n- Video 1 (optional): Motion reference\n- Video 2 (optional): Camera motion reference\n- Video 3 (optional): Pacing / mood / creative reference\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL FLAT-ARRAY INSTRUCTIONS:\n- The first 8 images are a flat array of sequential keyframes. There is NO 3×3 grid.\n- Count images by their position: 1st = @Image1, 2nd = @Image2, ..., 8th = @Image8.\n- The 9th image (@Image9) is the separate continuation frame from the previous segment.\n- Do NOT use grid coordinates like 'top-left panel' or 'middle row'.\n- Do NOT use slot label numbers like @Image5 or @Image7 unless that image is actually in the 5th or 7th position.\n- Analyze the actual visual content of each keyframe and assign @ImageN references based on what each image actually shows.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in @Image9.\n- Do NOT invent a new pose — describe what is literally visible in @Image9.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
+        "Analyze the attached reference images and videos.\n\nReference mapping (FLAT ARRAY \u2014 count by array position, NOT grid location):\n- @Image1 through @Image8: Eight sequential keyframes \u2014 identify what each shows (character, scene, product, action, closing shot)\n- @Image9: Continuation frame \u2014 the exact ending frame from the previous segment (labeled 8-LAST). This MUST be used as the precise visual starting point.\n- Video 1 (optional): Motion reference\n- Video 2 (optional): Camera motion reference\n- Video 3 (optional): Pacing / mood / creative reference\n\nTask: Generate a Seedance 2.0 video prompt for a 15-second CONTINUATION segment (Segment 2).\n\nThis segment continues the action from where the previous 15-second segment ended.\n\nCRITICAL FLAT-ARRAY INSTRUCTIONS:\n- The first 8 images are a flat array of sequential keyframes. There is NO 3\u00d73 grid.\n- Count images by their position: 1st = @Image1, 2nd = @Image2, ..., 8th = @Image8.\n- The 9th image (@Image9) is the separate continuation frame from the previous segment.\n- Do NOT use grid coordinates like 'top-left panel' or 'middle row'.\n- Do NOT use slot label numbers like @Image5 or @Image7 unless that image is actually in the 5th or 7th position.\n- Analyze the actual visual content of each keyframe and assign @ImageN references based on what each image actually shows.\n\nCRITICAL CONTINUITY INSTRUCTIONS:\n- The very first timestamp (00:00.0) MUST begin with the word 'CONTINUE:' followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as shown in @Image9.\n- Do NOT invent a new pose \u2014 describe what is literally visible in @Image9.\n- Character appearance, outfit, hair, and accessories must be identical to the previous segment.\n- Product placement and lighting must remain consistent.\n- Environment and camera style should feel continuous.\n\nOutput format: Two-part prompt wrapped in [[PROMPT]] / [[/PROMPT]] tags. Part 1 is flowing prose. Part 2 is a precise 0.5s timestamped motion timeline from 00:00.0 to 00:14.5. NO arc labels anywhere.",
         "",
         "",
         300
@@ -1742,6 +1743,14 @@
       3,
       9,
       "STRING"
+    ],
+    [
+      90,
+      55,
+      0,
+      29,
+      5,
+      "IMAGE"
     ]
   ],
   "groups": [
