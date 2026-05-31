@@ -46,6 +46,7 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 | **Ad Character Reference Sheet** | Multi-section reference sheet | Stripped-down character reference for ad video generation — hero line-ups, ad expressions, product interaction poses, costume/prop details, color palette, turnaround. **NO bios, NO scale refs.** | [`character/ad-character-reference-sheet.md`](character/ad-character-reference-sheet.md) |
 | **Seedance Video Prompt Engineer** | Video generation prompt | Single continuous video segment prompt for Dreamina Seedance 2.0. Subject + motion + camera + audio + reference locks. **150–800 words, flowing paragraph.** | [`templates_prompt/video/seedance_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_video_prompt_engineer.md) |
 | **Seedance Ad Video Prompt Engineer** | Advertisement video prompt | Commercial video segment prompt with product placement, branding, CTA, and timed narrative arcs for Seedance 2.0. **200–700 words, flowing paragraph.** | [`templates_prompt/video/seedance_ad_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_ad_video_prompt_engineer.md) |
+| **Seedance Ad Video Prompt Engineer (Flat Keyframes)** | Advertisement video prompt | Same as above, but optimized for a **flat array of 9 sequential keyframes** (NOT a 3×3 grid). Enforces strict 1→9 sequential order, zero repetition, no visual-content reordering. **200–700 words, flowing paragraph.** | [`templates_prompt/video/seedance_ad_video_prompt_engineer_15s_keyframes_flat.md`](../../../templates_prompt/video/seedance_ad_video_prompt_engineer_15s_keyframes_flat.md) |
 | **Prompt Audit** | Refined prompt | Multiple refs + Existing prompt. Corrected and enriched prompt. | Depends on target pattern above |
 
 ## Critical Distinction
@@ -176,9 +177,40 @@ When creating a new template in `templates_prompt/`:
 - [ ] Video slots mention pacing / mood / creative reference for Video 3
 - [ ] System prompt contains the **Slot Format & Image Numbering** section with the exact 6-bullet text (subset handling, slot-number referencing, anti-positional-counting, Image 1+7 example, empty-slot guidance)
 - [ ] System prompt's reference integration section starts with **"ALWAYS refer to images by their SLOT NUMBER"**
-- [ ] Prompt output is wrapped in `[[PROMPT]]` / `[[/PROMPT]]` tags
+- [ ] **If flat-array keyframe template**: System prompt contains **"STRICT SEQUENTIAL ORDER MANDATE"** — no reordering by visual content, no "best character keyframe" language
+- [ ] **If flat-array keyframe template**: Every `@Image1` through `@Image9` appears **exactly once** in the example prompt and in all user templates
+- [ ] **If flat-array keyframe template**: `@Image10` (continuation frame) is isolated to `CONTINUE:` beats only
+- [ ] Prompt output is wrapped in `[[PROMPT]]` / `[[/PROMPT]]` tags (or `[[SEGMENT_N]]` for multi-segment)
 - [ ] No markdown, bullets, or line breaks inside the prompt body
 - [ ] Word count guidance is provided per pattern
+
+## Flat Array Keyframe Standard (Seedance Video Workflows)
+
+When building templates for **Dreamina Seedance 2.0 video generation** that accept a flat array of sequential keyframes, a separate strict standard applies. These templates live in `templates_prompt/video/seedance_ad_video_prompt_engineer_*_keyframes_flat.md`.
+
+> **Critical distinction from slot-based templates**: The 6+1+1 slot standard assigns images by **semantic role** (Image 1 = character, Image 2 = product, etc.). Flat-array templates assign images by **strict narrative sequence** (`@Image1` = opening frame, `@Image9` = closing frame). **Never mix these paradigms in one template.**
+
+### Core Rules (Non-Negotiable)
+
+1. **Strict Sequential Order**: Keyframes MUST be used in ascending array position. `@Image1` is always first, `@Image9` is always last. The LLM is strictly forbidden from analyzing visual content and reordering based on "best character" or "best product."
+2. **Zero Repetition**: Each `@ImageN` appears **exactly once** in the entire prompt. No image may be referenced in multiple time slices or across segments.
+3. **No Visual Content Override**: Unlike slot-based templates, flat-array templates do NOT allow the LLM to pick the "best" image for a role. The assignment is deterministic by position.
+4. **Continuation Frame Isolation**: `@Image10` (if provided) is a **separate continuation frame** (8-LAST). It appears ONLY in `CONTINUE:` beats for multi-segment workflows. It is never mixed into the 9-keyframe sequence.
+
+### Mandatory Segment Distribution
+
+| Duration | Segment 1 | Segment 2 | Segment 3 | Segment 4 |
+|----------|-----------|-----------|-----------|-----------|
+| **15s** | Global: `@Image1–@Image3`; 0-3s: `@Image4`; 3-7s: `@Image5`; 7-11s: `@Image6+@Image7`; 11-15s: `@Image8+@Image9` | — | — | — |
+| **30s** | Global + slices: `@Image1–@Image5` | `CONTINUE:` + global + slices: `@Image6–@Image9` (+ `@Image10`) | — | — |
+| **60s** | Global + slices: `@Image1–@Image2` | `CONTINUE:` + global + slices: `@Image3–@Image4` (+ `@Image10`) | `CONTINUE:` + global + slices: `@Image5–@Image6` (+ `@Image10`) | `CONTINUE:` + global + slices: `@Image7–@Image9` (+ `@Image10`) |
+
+### Flat Array vs Slot Format: When to Use Which
+
+| Paradigm | Use When | Image Count | Ordering |
+|----------|----------|-------------|----------|
+| **6+1+1 Slot Standard** | Single-image generation, reference element fusion, presentation boards, character bibles | 1–7 images | Semantic role (Image 1 = character, etc.) |
+| **Flat Array Keyframes** | Seedance video ad generation from sequential storyboard panels | Exactly 9 keyframes + optional `@Image10` | Strict narrative sequence 1→9 |
 
 ## Quick Reference
 
@@ -303,6 +335,19 @@ If your **environment board** outputs have shifting backgrounds or inconsistent 
 - [ ] Include technical spec bar: aspect, color temp, lens, format
 - [ ] Prioritize light-emitting props and interactive objects in the callouts
 - [ ] Add lighting lock: "Identical color temperature and weather across all panels"
+
+### Flat Array Keyframe Checklist (for Seedance Video Ad Templates only)
+
+If your **Seedance video ad prompt** references the same image twice, skips images, or reorders them:
+
+- [ ] Remove phrases: "best character keyframe," "best product keyframe," "analyze visual content and assign," "visual content override"
+- [ ] Enforce: "STRICT SEQUENTIAL ORDER MANDATE: @Image1 first, @Image2 second, through @Image9 last"
+- [ ] Enforce: "Each @ImageN appears exactly once. NO repetitions. NO omissions."
+- [ ] Verify the example prompt uses every `@Image1` through `@Image9` exactly once in ascending order
+- [ ] For 15s: Global = `@Image1–@Image3`, 0-3s = `@Image4`, 3-7s = `@Image5`, 7-11s = `@Image6+@Image7`, 11-15s = `@Image8+@Image9`
+- [ ] For 30s: Segment 1 = `@Image1–@Image5`, Segment 2 = `@Image6–@Image9`, CONTINUE = `@Image10`
+- [ ] For 60s: Seg 1 = `@Image1–@Image2`, Seg 2 = `@Image3–@Image4`, Seg 3 = `@Image5–@Image6`, Seg 4 = `@Image7–@Image9`, CONTINUE = `@Image10`
+- [ ] Ensure `@Image10` never appears in a 15s template (no continuation frame in single-segment)
 
 ## Full Documentation
 

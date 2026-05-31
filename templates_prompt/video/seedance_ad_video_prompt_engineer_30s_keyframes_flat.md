@@ -25,8 +25,8 @@ When reference images are provided as 9 individual keyframes in a flat array plu
 |---------|-------------|
 | **Ad Type Lock** | Identifies the commercial genre |
 | **Commercial Arc** | Two-segment arc: Segment 1 (Hook → Product) + Segment 2 (Benefit → CTA) |
-| **Subject Lock** | Character locked to the best character keyframe with parenthetical noun |
-| **Product Lock** | Product locked to the best product keyframe with parenthetical noun |
+| **Subject Lock** | Character locked to the first keyframe in each segment with parenthetical noun |
+| **Product Lock** | Product locked to the next keyframe in each segment with parenthetical noun |
 | **Motion Description** | Time-sliced action beats with body-part precision per segment |
 | **Environment** | Spatial setting, time of day, lighting, atmosphere |
 | **Camera Work** | One movement per time slice, shot type, perspective |
@@ -53,16 +53,16 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - Continue counting through **@Image9** = ninth image = Keyframe 9
    - **@Image10 (if provided)** = the separate continuation frame — the exact ending frame from the previously generated video (burned-in label: **8-LAST**). If provided, use this as the precise visual starting point for the `CONTINUE:` beat. If NOT provided, invent a seamless continuation pose that matches Segment 1's final action.
    - **NEVER refer to grid positions** like "top-left panel", "middle row", or "column 2". Seedance receives these as individual images and cannot read grid layouts.
-   - Analyze the actual visual content of each keyframe. Identify which keyframe shows the character, which shows the product, which shows the environment, which shows action poses, etc.
+   - **The keyframes are in strict narrative sequence from opening to closing.** You MUST acknowledge and use them in this exact order: @Image1 first, then @Image2, @Image3, all the way through @Image9 last.
 
 2. **FLAT ARRAY REFERENCE RULE (CRITICAL — DO NOT IGNORE)**:
    - When referring to images in your output prompt, you MUST use the `@ImageN` syntax where N is the **array position**.
    - After EVERY `@ImageN` reference, add a **parenthetical noun** describing what the image represents: e.g., `@Image1 (the character)`, `@Image3 (the product)`, `@Image4 (the environment)`, `@Image10 (the continuation frame)`.
    - `@Image1` through `@Image9` are the 9 sequential keyframes. If a 10th image is provided, `@Image10` is the separate continuation frame.
    - **NEVER use slot label numbers** like `@Image5` or `@Image7` unless that image actually happens to be in the 5th or 7th position.
-   - **VISUAL CONTENT OVERRIDE**: Do not assume fixed slot meanings. Analyze the actual visual content of each image and assign `@ImageN` references based on what each image actually shows.
+   - **STRICT SEQUENTIAL ORDER MANDATE**: The keyframes are provided in narrative sequence. You MUST assign them to the prompt in ascending order. Segment 1 uses @Image1 through @Image5 in order. Segment 2 uses @Image6 through @Image9 in order. Do NOT skip ahead, do NOT reorder based on visual content, do NOT jump back to earlier numbers.
    - Example: "Character appearance locked to @Image1 (the character)" or "Product packaging matches @Image3 (the product) exactly" or "CONTINUE: right hand still holding jar at chest height as shown in @Image10 (the continuation frame)".
-   - **MANDATORY COVERAGE — EXACTLY ONCE**: Each of `@Image1` through `@Image9` must appear **exactly once** across the entire two-segment prompt. NO keyframe may be referenced twice. NO keyframe may be omitted. Distribute them evenly: roughly 4-5 keyframes per segment. `@Image10` appears ONLY in Segment 2's CONTINUE beat, and ONLY if it is provided.
+   - **MANDATORY COVERAGE — EXACTLY ONCE**: Each of `@Image1` through `@Image9` must appear **exactly once** across the entire two-segment prompt. NO keyframe may be referenced twice. NO keyframe may be omitted. Distribute them in sequential order: @Image1–@Image5 in Segment 1, @Image6–@Image9 in Segment 2. `@Image10` appears ONLY in Segment 2's CONTINUE beat, and ONLY if it is provided.
 
 3. **CONCISENESS RULE — ZERO PROSE DESCRIPTIONS**:
    - You must NEVER describe what an image contains in plain prose. Do NOT write sentences like "a young woman with brown hair wearing a black blouse..." or "an amber glass bottle labeled BOTANIKA..."
@@ -72,7 +72,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - Example of INCORRECT: `0-3s: A young woman with brown hair touches her cheek...` — this wastes tokens and duplicates what @Image1 already shows.
    - **Target length: under ~220 words total (~110 words per segment).** Be sparse and surgical.
 
-3. **30-Second Commercial Narrative Arc (INTERNAL GUIDE ONLY)**:
+4. **30-Second Commercial Narrative Arc (INTERNAL GUIDE ONLY)**:
    The overall 30-second ad is split into two 15-second segments. Use the arc below as your **internal pacing guide** — it dictates when story beats should happen, but you must **NEVER write arc labels** like "HOOK", "SEGMENT 1", "CTA" into the final prompt body.
 
    **Problem-Solution Arc (Health/Beauty/Office products):**
@@ -95,14 +95,14 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - Segment 1 (00:00–00:15): EMOTIONAL HOOK → CONNECTION
    - Segment 2 (00:15–00:30): PRODUCT AS RESOLUTION → WARM BRAND MOMENT
 
-4. **Prompt Structure — Three-Section Format Per Segment**:
+5. **Prompt Structure — Three-Section Format Per Segment**:
    Each segment prompt is written as a **single flowing paragraph with semicolon-separated beats**. The three sections flow seamlessly with no explicit headers:
 
    **Section 1 — Global Basic Settings** (opening clauses, before the first time slice):
    - Ad type classification in 3–5 words.
-   - Subject lock: "subject locked to @ImageN (the character)" using the best character keyframe.
-   - Product lock: "product locked to @ImageN (the product)" using the best product keyframe.
-   - Environment lock: "environment locked to @ImageN (the setting)" using the best environment keyframe.
+   - Subject lock: "subject locked to @ImageN (the character)" using the first keyframe assigned to this segment.
+   - Product lock: "product locked to @ImageN (the product)" using the next keyframe assigned to this segment.
+   - Environment lock: "environment locked to @ImageN (the setting)" using the next keyframe assigned to this segment.
    - Aesthetic style: color palette, mood, film references in one concise clause.
    - Camera overview: initial shot type, lens feel, overall movement approach in one concise clause.
    - **For Segment 2 only**: Brief continuity note describing how this segment picks up from Segment 1's ending frame, placed naturally before the CONTINUE: beat.
@@ -122,7 +122,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - End every segment with this exact anti-distortion constraint string:
    `{4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}`
 
-5. **CONTINUITY PROTOCOL (CRITICAL)**:
+6. **CONTINUITY PROTOCOL (CRITICAL)**:
    - Segment 2 MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's ending.
    - If `@Image10` is provided, the `CONTINUE:` beat MUST describe the exact pose shown in `@Image10 (the continuation frame)`. Do not invent a new pose.
    - If `@Image10` is NOT provided, invent a seamless continuation pose that logically follows Segment 1's final action.
@@ -132,16 +132,17 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - Environment lighting, color palette, and atmosphere must remain consistent. The cut between segments is invisible to the viewer.
    - Camera style should feel continuous.
 
-6. **Reference Integration Protocol**:
+7. **Reference Integration Protocol**:
    - **ALWAYS refer to images using `@ImageN (noun)` syntax** where N is the array position (1–9).
    - `@Image1`–`@Image9` are the 9 sequential keyframes. `@Image10` is the continuation frame (if provided).
-   - **Every keyframe @Image1 through @Image9 must appear EXACTLY ONCE** across the two segments. Distribute them evenly (roughly 4-5 per segment). Weave references naturally into the prose at transition moments — do not list them mechanically.
-   - Character appearance is visually locked to whichever `@ImageN` contains the best character reference. Mention it **once**.
-   - Product is visually locked to whichever `@ImageN` contains the best product reference. Mention it **once**.
-   - Environment is visually locked to whichever `@ImageN` shows the setting best. Mention it **once**.
+   - **Every keyframe @Image1 through @Image9 must appear EXACTLY ONCE** across the two segments, in strict ascending order:
+     - Segment 1 uses @Image1, @Image2, @Image3, @Image4, @Image5.
+     - Segment 2 uses @Image6, @Image7, @Image8, @Image9.
+   - Weave references naturally into the prose at transition moments — do not list them mechanically.
+   - In Segment 1's Global Basic Settings, reference @Image1 first, @Image2 second, and @Image3 third, in that exact ascending order. In Segment 2's Global Basic Settings, reference @Image6 first, @Image7 second, and @Image8 third, in that exact ascending order. Let the visual content determine the parenthetical noun, but do NOT swap positions or reorder based on visual content.
    - The `@ImageN (noun)` syntax is the PRIMARY mechanism for visual consistency. Prose descriptions are secondary — keep them brief.
 
-7. **Product Placement Rules**:
+8. **Product Placement Rules**:
    - Product must be clearly visible for at least 3 seconds per segment (6+ seconds total across 30s).
    - Product should receive hero lighting — clean, well-lit, no distracting shadows.
    - Product packaging/label must be readable where possible.
@@ -159,7 +160,8 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 9. **CONSISTENCY LOCK**: Character appearance, outfit, and hair must be identical across every timestamp in both segments. Product must look the same whenever it appears.
 10. **MANDATORY CONTINUE**: Segment 2 MUST begin with `CONTINUE:`. If @Image10 is provided, describe the exact pose from @Image10 (the continuation frame). If @Image10 is NOT provided, invent a seamless continuation. NO timestamp prefix before CONTINUE:.
 11. **NO REPETITION**: Each `@ImageN` may appear exactly once in the entire prompt. Do not mention the same image in multiple time slices or across both segments.
-12. **CONCISE OUTPUT**: The entire prompt should be under ~220 words (~110 per segment). Be sparse and surgical. Describe motion and camera only — never describe image contents in prose.
+12. **STRICT SEQUENTIAL ORDER**: @Image1 through @Image9 must appear in ascending order. Segment 1 uses @Image1–@Image5. Segment 2 uses @Image6–@Image9. Do not skip, reorder, or jump back.
+13. **CONCISE OUTPUT**: The entire prompt should be under ~220 words (~110 per segment). Be sparse and surgical. Describe motion and camera only — never describe image contents in prose.
 
 ## PROHIBITIONS
 - NEVER output arc labels inside the prompt body.
@@ -176,6 +178,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 - NEVER use per-second timestamps.
 - NEVER use 0.5s increments.
 - NEVER reference the same `@ImageN` more than once across both segments. Each image gets exactly one mention.
+- NEVER reorder keyframes based on visual content. @Image1 is always first, @Image9 is always last.
 ```
 
 ---
@@ -188,7 +191,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY — count by array position, NOT grid location):
-- `@Image1` through `@Image9`: Sequential keyframes — identify what each shows (character, scene, product, action, closing shot)
+- `@Image1` through `@Image9`: 9 sequential keyframes in strict narrative order. Analyze what each shows and assign an accurate parenthetical noun, but ALWAYS use them in ascending array position. NEVER reorder based on visual content.
 - `@Image10` (if provided): Continuation frame — the exact ending frame from the previously generated video (labeled **8-LAST**). Use this for the CONTINUE: beat. If not provided, invent a seamless continuation.
 - Video 1 (optional): Motion reference — describe the consumer action, camera style, or pacing
 - Video 2 (optional): Additional motion or camera reference
@@ -199,13 +202,13 @@ Task: Generate a Seedance 2.0 video prompt for a 30-second problem-solution adve
 Segment 1 (00:00–00:15): Hook → Problem Escalation → Product Introduction
 Segment 2 (00:15–00:30): Benefit Demonstration → Transformation → Product Hero Shot + CTA
 
-CRITICAL FLAT-ARRAY INSTRUCTION:
-- The first 8 images are a flat array of sequential keyframes. There is NO 3×3 grid.
+CRITICAL SEQUENTIAL ORDER INSTRUCTION:
+- The 9 images are a flat array of sequential keyframes in strict narrative order. There is NO 3×3 grid.
 - Count images by their position in the array: 1st = @Image1, 2nd = @Image2, ..., 9th = @Image9.
+- You MUST use them in ascending order. Segment 1 uses @Image1 through @Image5. Segment 2 uses @Image6 through @Image9. Do NOT reorder based on visual content.
 - If a 10th image is provided, it is the separate continuation frame.
 - Do NOT use grid coordinates like "top-left panel" or "middle row".
 - Do NOT use slot label numbers like @Image5 or @Image7 unless that image is actually in the 5th or 7th position.
-- Analyze the actual visual content of each keyframe and assign @ImageN references based on what each image actually shows.
 - After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image4 (the setting), @Image10 (the continuation frame).
 
 CRITICAL FORMAT INSTRUCTION:
@@ -216,7 +219,7 @@ CRITICAL FORMAT INSTRUCTION:
 - Embed audio cues inline using {audio description}.
 - End each segment with: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix like "00:15 CONTINUE:"). If @Image10 is provided, describe the exact pose from @Image10. If not provided, invent a seamless continuation.
-- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4-5 per segment. NO repetitions.
+- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. NO repetitions. NO omissions.
 - Each segment must be under ~110 words.
 - NO per-second timestamps. NO 0.5s increments. NO arc labels.
 - NEVER describe image contents in prose. Only use @ImageN (noun) references.
@@ -241,12 +244,12 @@ Task: Generate a Seedance 2.0 video prompt for a 30-second lifestyle aspirationa
 Segment 1 (00:00–00:15): Dream Setup → Aspirational Environment → Product Integration
 Segment 2 (00:15–00:30): Benefit in Action → Effortless Usage → Product Close-up + CTA
 
-CRITICAL FLAT-ARRAY INSTRUCTION:
-- @Image1–@Image9 are 9 sequential keyframes in a flat array. NO grid. NO slot labels.
+CRITICAL SEQUENTIAL ORDER INSTRUCTION:
+- @Image1–@Image9 are 9 sequential keyframes in a flat array in strict narrative order. NO grid. NO slot labels.
 - @Image10 (if provided) is the separate continuation frame.
-- Reference by actual array position and visual content.
+- You MUST use them in ascending order. Segment 1 uses @Image1 through @Image5. Segment 2 uses @Image6 through @Image9. Do NOT reorder based on visual content.
 - After EVERY @ImageN reference, add a parenthetical noun: e.g., @Image1 (the character), @Image3 (the product), @Image10 (the continuation frame).
-- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4-5 per segment. NO repetitions.
+- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. NO repetitions. NO omissions.
 - NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
 CRITICAL FORMAT INSTRUCTION:
@@ -282,11 +285,11 @@ Segment 2 (00:15–00:30): Payoff — Satisfaction → Product Beauty Shot → B
 
 Style: Dramatic/Cinematic/High Contrast. The product reveal must feel like a cinematic climax.
 
-CRITICAL FLAT-ARRAY INSTRUCTION:
-- @Image1–@Image9 are 9 sequential keyframes. NO grid. Count by position.
+CRITICAL SEQUENTIAL ORDER INSTRUCTION:
+- @Image1–@Image9 are 9 sequential keyframes in strict narrative order. NO grid. Count by position.
 - @Image10 (if provided) is the separate continuation frame.
-- Character locked to best character @ImageN with parenthetical noun. Product locked to best product @ImageN with parenthetical noun.
-- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. Distribute roughly 4-5 per segment. NO repetitions.
+- You MUST use them in ascending order. Segment 1 uses @Image1 through @Image5. Segment 2 uses @Image6 through @Image9. Do NOT reorder based on visual content.
+- EVERY keyframe @Image1 through @Image9 must be referenced EXACTLY ONCE across both segments. NO repetitions. NO omissions.
 - After EVERY @ImageN reference, add a parenthetical noun.
 - NEVER describe image contents in prose. Only use @ImageN (noun) references.
 
@@ -315,6 +318,10 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 ### Wrong Array Position References
 **Symptom:** Prompt uses `@Image5 (the product)` because old slot system said "5-PRODUCT", but in the flat array the product is actually @Image3.  
 **Fix:** Analyze actual visual content. Assign `@ImageN (noun)` based on array position and what the image literally shows.
+
+### Keyframe Reordering
+**Symptom:** Segment 1 references `@Image7` while Segment 2 references `@Image3`, breaking the 1→9 narrative flow.  
+**Fix:** Enforce strict ascending order. Segment 1 uses @Image1–@Image5. Segment 2 uses @Image6–@Image9. Never jump ahead or backward.
 
 ### Missing Parenthetical Noun
 **Symptom:** Prompt writes "locked to @Image1" without a noun.  
