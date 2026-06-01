@@ -1,7 +1,7 @@
 {
   "id": "185548e3-b0ac-4f7a-9c94-9e69e7532a08",
   "revision": 0,
-  "last_node_id": 58,
+  "last_node_id": 59,
   "last_link_id": 64,
   "nodes": [
     {
@@ -286,7 +286,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 13,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -384,7 +384,7 @@
         72
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 4,
       "inputs": [
         {
@@ -426,7 +426,7 @@
         104
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 4,
       "inputs": [
         {
@@ -469,7 +469,7 @@
         426.5
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -502,7 +502,7 @@
         108
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -555,7 +555,7 @@
         426.5
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 4,
       "inputs": [
         {
@@ -742,7 +742,7 @@
         448
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 4,
       "inputs": [
         {
@@ -902,7 +902,7 @@
         555.3666381835938
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 4,
       "inputs": [
         {
@@ -970,7 +970,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1379,7 +1379,7 @@
         79.43333435058594
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1421,7 +1421,7 @@
         104
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1463,7 +1463,7 @@
         288
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1623,7 +1623,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1709,7 +1709,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1777,12 +1777,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
         "storyboard/cinematic lifestyle storyboard: system_prompt"
@@ -1824,16 +1824,39 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
         "storyboard/ad tv commercial storyboard: C - Visual Grid Storyboard for Social Media / Ad Pitches (Grid Mode)"
       ]
+    },
+    {
+      "id": 59,
+      "type": "MarkdownNote",
+      "pos": [
+        13949.668962395375,
+        29948.13308367023
+      ],
+      "size": [
+        382.98333740234375,
+        88
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# GPT IMAGE 2 LIMIT 4 IMAGE"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2027,10 +2050,10 @@
   "extra": {
     "ue_links": [],
     "ds": {
-      "scale": 0.6115909044841528,
+      "scale": 0.4177248169415703,
       "offset": [
-        -14070.230236848858,
-        -30006.473631266013
+        -12375.045583229243,
+        -29246.290060993357
       ]
     },
     "links_added_by_ue": []
