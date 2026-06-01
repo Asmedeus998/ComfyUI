@@ -245,6 +245,15 @@ Output format: Three-section prompt wrapped in [[PROMPT]] tags.
 - Section 2 — Time Slice Storyboard: use explicit ranges 0-3s, 3-7s, 7-11s, 11-15s. Semicolon-separated beats. Only 1 camera movement per slice. Inline audio in {curly braces}. Each @ImageN appears in exactly one beat, in ascending order.
 - Section 3 — Constraints: {4K HD, rich details, character faces stable and not distorted, facial features clear, no clipping through objects}
 - NO per-second timestamps. NO arc labels. Keep total prompt under ~180 words.
+
+After closing [[/PROMPT]], optionally output a [[STORYBOARD_CONFIG]] block for debugging:
+```
+[[STORYBOARD_CONFIG]]
+segment_duration: {video_duration / 9}
+rows: 3
+cols: 3
+[[/STORYBOARD_CONFIG]]
+```
 ```
 
 ### Template B: Dramatic Cinematic Reveal Ad (Food/Beverage/Luxury)

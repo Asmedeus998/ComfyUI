@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 157,
-  "last_link_id": 281,
+  "last_node_id": 158,
+  "last_link_id": 283,
   "nodes": [
     {
       "id": 103,
@@ -16,7 +16,7 @@
         748
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -220,7 +220,8 @@
           "type": "VIDEO",
           "slot_index": 0,
           "links": [
-            205
+            205,
+            283
           ]
         }
       ],
@@ -259,7 +260,7 @@
         384
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -474,7 +475,7 @@
         332
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -679,7 +680,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -946,13 +947,13 @@
           "localized_name": "video",
           "name": "video",
           "type": "VIDEO",
-          "link": null
+          "link": 283
         },
         {
           "localized_name": "storyboard",
           "name": "storyboard",
           "type": "IMAGE",
-          "link": null
+          "link": 282
         },
         {
           "localized_name": "rows",
@@ -1063,6 +1064,7 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "StoryboardVideoOverlay",
         "ue_properties": {
           "widget_ue_connectable": {
             "rows": true,
@@ -1071,13 +1073,12 @@
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "StoryboardVideoOverlay"
+        }
       },
       "widgets_values": [
         3,
         3,
-        2,
+        0,
         "split_bottom",
         "red",
         0.25,
@@ -1099,7 +1100,7 @@
         555.3666381835938
       ],
       "flags": {},
-      "order": 54,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1138,6 +1139,7 @@
       ],
       "outputs": [],
       "properties": {
+        "Node name for S&R": "SaveVideo",
         "ue_properties": {
           "widget_ue_connectable": {
             "filename_prefix": true,
@@ -1146,13 +1148,74 @@
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "SaveVideo"
+        }
       },
       "widgets_values": [
         "video-15s-debug",
         "auto",
         "auto"
+      ]
+    },
+    {
+      "id": 158,
+      "type": "LoadImage",
+      "pos": [
+        364.5753498984669,
+        645.9537520220172
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            282
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ads_frame_00003_.png",
+        "image"
       ]
     }
   ],
@@ -1252,6 +1315,22 @@
       103,
       1,
       "IMAGE"
+    ],
+    [
+      282,
+      158,
+      0,
+      156,
+      1,
+      "IMAGE"
+    ],
+    [
+      283,
+      103,
+      0,
+      156,
+      0,
+      "VIDEO"
     ]
   ],
   "groups": [
@@ -1273,8 +1352,8 @@
       "bounding": [
         316.45288072788145,
         -186.99070572110247,
-        900,
-        500
+        975.4543261120002,
+        1605.8774670790003
       ],
       "color": "#2a6b3d",
       "flags": {}
@@ -1307,10 +1386,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909107,
+      "scale": 0.6830134553650712,
       "offset": [
-        527.0239564879394,
-        402.83559208977425
+        832.2349434762983,
+        433.7782523959812
       ]
     },
     "ue_links": [],
