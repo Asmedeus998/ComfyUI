@@ -2,7 +2,7 @@
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
   "last_node_id": 252,
-  "last_link_id": 487,
+  "last_link_id": 488,
   "nodes": [
     {
       "id": 133,
@@ -26,21 +26,21 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 488
         },
         {
           "localized_name": "image_1",
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 485
+          "link": null
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 486
+          "link": null
         },
         {
           "localized_name": "image_3",
@@ -54,7 +54,7 @@
           "name": "image_4",
           "shape": 7,
           "type": "IMAGE",
-          "link": 487
+          "link": null
         },
         {
           "localized_name": "mask",
@@ -4521,23 +4521,21 @@
           "localized_name": "batch",
           "name": "batch",
           "type": "IMAGE",
-          "links": []
+          "links": [
+            488
+          ]
         },
         {
           "localized_name": "image_1",
           "name": "image_1",
           "type": "IMAGE",
-          "links": [
-            485
-          ]
+          "links": []
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "type": "IMAGE",
-          "links": [
-            486
-          ]
+          "links": []
         },
         {
           "localized_name": "image_3",
@@ -4549,9 +4547,7 @@
           "localized_name": "image_4",
           "name": "image_4",
           "type": "IMAGE",
-          "links": [
-            487
-          ]
+          "links": []
         },
         {
           "localized_name": "image_5",
@@ -4585,12 +4581,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SlotImageBatch",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "SlotImageBatch"
+        }
       },
       "widgets_values": []
     }
@@ -5101,27 +5097,11 @@
       "IMAGE"
     ],
     [
-      485,
+      488,
       252,
-      1,
+      0,
       133,
-      1,
-      "IMAGE"
-    ],
-    [
-      486,
-      252,
-      2,
-      133,
-      2,
-      "IMAGE"
-    ],
-    [
-      487,
-      252,
-      4,
-      133,
-      4,
+      0,
       "IMAGE"
     ]
   ],
@@ -5176,8 +5156,8 @@
     "ds": {
       "scale": 0.7627768444385506,
       "offset": [
-        -1974.2924078289534,
-        3964.0511088795843
+        -1959.8714142183035,
+        3454.0723348302367
       ]
     }
   },
