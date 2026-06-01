@@ -1,0 +1,1312 @@
+{
+  "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
+  "revision": 0,
+  "last_node_id": 157,
+  "last_link_id": 280,
+  "nodes": [
+    {
+      "id": 103,
+      "type": "FALSeedanceReference2Video",
+      "pos": [
+        -579.9935388699986,
+        -230.4855300699997
+      ],
+      "size": [
+        420,
+        748
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 276
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "audio",
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "audio_1",
+          "name": "audio_1",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "audio_2",
+          "name": "audio_2",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 216
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            205
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALSeedanceReference2Video",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "",
+        "720p",
+        "16:9",
+        15,
+        true,
+        99999,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 105,
+      "type": "SaveVideo",
+      "pos": [
+        -92.33883006999919,
+        -55.21519086999994
+      ],
+      "size": [
+        320,
+        384
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 205
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "video-15s",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 118,
+      "type": "KimiCliDirect",
+      "pos": [
+        -2154.9223829999996,
+        -280.51926300000014
+      ],
+      "size": [
+        420,
+        444
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 275
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_3",
+          "name": "video_3",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 277
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 214
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 243
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            215,
+            244
+          ]
+        },
+        {
+          "localized_name": "thinking",
+          "name": "thinking",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KimiCliDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true,
+            "system_prompt": true,
+            "model": true,
+            "timeout": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "You are an elite advertisement video prompt engineer specializing in Dreamina Seedance 2.0 commercial generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create COMMERCIAL VIDEO SEGMENTS — structured advertisements with product placement, branding, and calls-to-action — NOT generic cinematic scenes and NOT storyboard documents.\n\n## CORE TASK\n\n1. **Reference Analysis**: Carefully examine all provided reference materials.\n   - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what (e.g., Image 1 = character front view, Image 5 = product packaging, Image 6 = scene/background, Image 7 = brand logo/color reference).\n   - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates (e.g., Video 1 = product interaction motion, Video 2 = camera movement style, Video 3 = pacing/transition reference).\n\n2. **Commercial Narrative Arc (MANDATORY)**:\n   Every ad prompt MUST follow a proven advertising structure adapted to the 15-second segment format. Choose the arc that fits the ad type:\n\n   **Problem-Solution Arc (Health/Beauty/Office products):**\n   - 0-3s: HOOK — Relatable problem moment (tired eyes, dry skin, stress, clutter)\n   - 3-7s: PROBLEM ESCALATION — Show the pain point affecting daily life\n   - 7-11s: PRODUCT REVEAL — Product appears, user interacts with it, applies/uses it\n   - 11-14s: TRANSFORMATION / RELIEF — Result, satisfaction, improved state\n   - 14-15s: CTA — Product hero shot with brand name visible\n\n   **Dramatic Reveal Arc (Food/Beverage/Luxury):**\n   - 0-3s: ATMOSPHERE — Cinematic setup, mood, environment, character enters\n   - 3-7s: BUILD-UP — Anticipation, character approaches product, dramatic lighting\n   - 7-11s: THE MOMENT — Product interaction (eating, drinking, unboxing), sensory reaction\n   - 11-14s: PAYOFF — Emotional/physical satisfaction, product beauty shot\n   - 14-15s: CTA — Brand logo, product packaging, tagline\n\n   **Lifestyle Aspirational Arc (Fashion/Home/Lifestyle):**\n   - 0-4s: DREAM SETUP — Beautiful environment, aspirational character moment\n   - 4-8s: PRODUCT INTEGRATION — Product appears naturally in the lifestyle context\n   - 8-12s: BENEFIT IN ACTION — Character using/enjoying the product effortlessly\n   - 12-15s: CTA — Product close-up with brand identity, tagline, or offer\n\n   **Product Demo Arc (Tech/Appliances/Tools):**\n   - 0-3s: PROBLEM STATEMENT — Show inefficiency, old way, frustration\n   - 3-8s: PRODUCT INTRODUCTION — Product enters, features visible, sleek design\n   - 8-13s: DEMONSTRATION — Product in use, transformation happening, before/after\n   - 13-15s: CTA — Product hero shot, brand name, key benefit text\n\n3. **Prompt Architecture (Seedance Ad Formula)**:\n   Construct the prompt following Seedance 2.0's proven structure with commercial additions:\n\n   **REQUIRED — Subject + Product + Motion:**\n   - Define WHO clearly: appearance, clothing, distinguishing features. Lock to reference images.\n   - Define WHAT PRODUCT: name, packaging, color, shape, size. Lock to reference images.\n   - Define WHAT THEY ARE DOING: specific consumer action verbs — applying, drinking, eating, using, interacting, reacting. Movement direction, speed, posture changes.\n   - Use natural, descriptive language. Seedance understands \"she slowly unscrews the cap and tilts the bottle\" better than \"product use animation.\"\n\n   **REQUIRED — Commercial Environment + Aesthetics:**\n   - Environment: spatial setting that supports the ad narrative (office, kitchen, library, bedroom, street). Time of day, weather, architectural details.\n   - Aesthetics: color palette tied to brand mood (cool blues for health, warm ambers for food, clean whites for tech). Lighting style (fluorescent office, golden hour, dramatic chiaroscuro, soft beauty light).\n   - Product lighting: product must be hero-lit — clean, visible, appealing. No shadows obscuring the product.\n\n   **ADVANCED — Camera + Movement/Cut + Audio:**\n   - Camera: commercial shot language — wide establishing, medium two-shot, close-up detail, product hero, extreme close-up reaction. Lens feel (shallow depth of field for product beauty, anamorphic for cinematic ads).\n   - Movement/Cut: commercial editing pace — quick cuts for energy, slow push-in for intimacy, match cuts for product transitions, whip pans for dynamism.\n   - Audio: ambient sound design (office hum, kitchen sounds, nature), music mood (upbeat for problem-solution, dramatic orchestral for cinematic, gentle acoustic for lifestyle), diegetic product sounds (spray, pour, crunch, click).\n\n4. **Reference Integration Protocol**:\n   - When images provide subject references, explicitly lock those visual attributes: \"The character wears the exact same cream-colored trench coat and red scarf as shown in Image 1.\"\n   - When images provide product references, lock product details: \"The product is the same amber glass bottle with white pump dispenser shown in Image 2, positioned center-frame under soft key light.\"\n   - When videos provide motion reference, describe the commercial action in words: \"The character performs the same surprised-then-delighted reaction sequence as the woman in Video 1 — eyes widening, then a slow satisfied smile.\"\n   - When videos provide camera motion reference: \"The camera executes the same slow orbit around the product as shown in Video 2, starting wide and tightening to a beauty close-up.\"\n   - When multiple videos are provided for track completion: \"Video 1 shows [ending frame/scene]. Video 2 shows [opening frame/scene]. The generated bridge segment must seamlessly transition from the end of Video 1 to the beginning of Video 2, preserving character consistency and commercial editing pace.\"\n   - Respect the Seedance 3-video / 15-second limit. If the user provides more than 3 videos, prioritize the most relevant 3 for the generation task.\n\n5. **Text Rendering Awareness (if applicable)**:\n   - If the ad requires on-screen text (slogans, product names, offer text, subtitles):\n     - Content: exact text strings\n     - Positioning: bottom-center for subtitles, top-left for logos, center for hero text\n     - Style: font aesthetic tied to brand, color, outline, animation (fade in, typewriter, pop, slide)\n   - Note: Seedance automatically identifies context for font matching, but explicit guidance improves accuracy.\n\n6. **Product Placement Rules**:\n   - Product must be clearly visible for at least 3 seconds within the 15-second segment.\n   - Product should receive hero lighting — clean, well-lit, no distracting shadows.\n   - Product packaging/label must be readable where possible.\n   - Product interaction must look natural and appealing — never awkward or forced.\n   - For food/beverage: show texture, steam, condensation, freshness cues.\n   - For beauty/health: show application motion, absorption, skin glow, transformation.\n   - For tech/appliances: show sleek design, clean lines, modern materials, LED indicators.\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output as a single flowing paragraph. Target: **200–500 words** for simple ad segments; **400–700 words** for complex multi-reference ad segments.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must include: ad type classification, commercial narrative arc timing, subject description with reference locks, product description with reference locks, consumer action/motion, environment with lighting, camera work, audio cues, and product placement rules.\n7. **NATURAL LANGUAGE**: Write in fluent, cinematic prose with commercial awareness. Avoid technical animation jargon. Seedance performs best with descriptive, scene-direction-style descriptions.\n\n## PROHIBITIONS\n- NEVER output multiple prompt variants. Output ONE unified prompt.\n- NEVER include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- NEVER use vague placeholders like \"beautiful scene\" or \"high quality.\" Be specific about what the character does, how the product is used, and in what environment.\n- NEVER ignore the reference images/video. The prompt must explicitly incorporate visual details from the references.\n- NEVER generate storyboard descriptions, shot lists, or production documents. The output is a VIDEO GENERATION PROMPT for a single continuous 15-second ad segment.\n- NEVER omit the product from the prompt. Every ad prompt must explicitly describe the product and its placement.\n- NEVER omit the commercial narrative arc. The prompt must guide Seedance through a clear ad structure with timed beats.",
+        "",
+        300
+      ]
+    },
+    {
+      "id": 119,
+      "type": "RegexExtract",
+      "pos": [
+        -941.9331798700003,
+        -59.187012070000215
+      ],
+      "size": [
+        320,
+        332
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "string",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 215
+        },
+        {
+          "localized_name": "regex_pattern",
+          "name": "regex_pattern",
+          "type": "STRING",
+          "widget": {
+            "name": "regex_pattern"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "case_insensitive",
+          "name": "case_insensitive",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "case_insensitive"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "multiline",
+          "name": "multiline",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "multiline"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "dotall",
+          "name": "dotall",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "dotall"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "group_index",
+          "name": "group_index",
+          "type": "INT",
+          "widget": {
+            "name": "group_index"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            216
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RegexExtract",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "string": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
+        "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
+        "First Group",
+        true,
+        true,
+        true,
+        1
+      ]
+    },
+    {
+      "id": 120,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        -2686.573415,
+        73.44975999999963
+      ],
+      "size": [
+        400,
+        160
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            214
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 15s keyframes flat: A - Problem-Solution Ad (Health/Beauty/Office)"
+      ]
+    },
+    {
+      "id": 138,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        -2668.678358920829,
+        349.62469572012606
+      ],
+      "size": [
+        400,
+        336
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            243
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "video/seedance ad video prompt engineer 15s keyframes flat: system_prompt"
+      ]
+    },
+    {
+      "id": 139,
+      "type": "PreviewAny",
+      "pos": [
+        -1602.7037192967532,
+        112.22457008126628
+      ],
+      "size": [
+        383.9333190917969,
+        360.8333435058594
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "source",
+          "name": "source",
+          "type": "*",
+          "link": 244
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 140,
+      "type": "MarkdownNote",
+      "pos": [
+        -4932.676445787988,
+        -539.013760132321
+      ],
+      "size": [
+        520,
+        541.7999877929688
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote",
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "## 📋 Universal Reference Slot Map\n\n| Slot | Meaning | Wire This |\n|------|---------|-----------|\n| **Image 1** | Character / subject | Face, hair, body, distinguishing features |\n| **Image 2** | Costume / outfit / product | Clothing, packaging, colors, fabrics |\n| **Image 3** | Prop / accessory / 2nd subject | Weapons, tools, jewelry, secondary character |\n| **Image 4** | Environment / background | Setting, architecture, lighting, atmosphere |\n| **Image 5** | Product / brand / commercial | Product hero, logo, brand color, packaging |\n| **Image 6** | Style / aesthetic / mood | Art direction, color palette, material quality |\n\n> All templates in `templates_prompt/` follow this standard.\n> Swap templates without rewiring — slots keep the same meaning.\n"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 144,
+      "type": "PreviewImage",
+      "pos": [
+        -3259.2476927266116,
+        138.95176421503646
+      ],
+      "size": [
+        293.6666564941406,
+        474.5
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 279
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 150,
+      "type": "LoadImage",
+      "pos": [
+        -3825.7921061797188,
+        140.1007637889341
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            277
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "screenshot_80.png",
+        "image"
+      ]
+    },
+    {
+      "id": 155,
+      "type": "LoadKeyframeBatch",
+      "pos": [
+        -3827.322264629942,
+        -202.1467248757757
+      ],
+      "size": [
+        315,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "directory",
+          "name": "directory",
+          "type": "STRING",
+          "widget": {
+            "name": "directory"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "pattern",
+          "name": "pattern",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "pattern"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_images",
+          "name": "max_images",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_images"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            275,
+            276,
+            279
+          ]
+        },
+        {
+          "localized_name": "count",
+          "name": "count",
+          "type": "INT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadKeyframeBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "output/keyframes",
+        "*.png",
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "type": "StoryboardVideoOverlay",
+      "pos": [
+        453.2511635120595,
+        -79.96469208977521
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "storyboard",
+          "name": "storyboard",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "rows",
+          "name": "rows",
+          "type": "INT",
+          "widget": {
+            "name": "rows"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cols",
+          "name": "cols",
+          "type": "INT",
+          "widget": {
+            "name": "cols"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "segment_duration",
+          "name": "segment_duration",
+          "type": "FLOAT",
+          "widget": {
+            "name": "segment_duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "layout_mode",
+          "name": "layout_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "layout_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "highlight_color",
+          "name": "highlight_color",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "highlight_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overlay_scale",
+          "name": "overlay_scale",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "overlay_scale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "overlay_position",
+          "name": "overlay_position",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "overlay_position"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "split_ratio",
+          "name": "split_ratio",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "split_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "border_thickness",
+          "name": "border_thickness",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "border_thickness"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "margin",
+          "name": "margin",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "margin"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": [
+            280
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "rows": true,
+            "cols": true,
+            "segment_duration": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "StoryboardVideoOverlay"
+      },
+      "widgets_values": [
+        3,
+        3,
+        2,
+        "split_bottom",
+        "red",
+        0.25,
+        "bottom-right",
+        0.4,
+        2,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "type": "SaveVideo",
+      "pos": [
+        837.8203542797858,
+        -71.47998183831555
+      ],
+      "size": [
+        320,
+        555.3666381835938
+      ],
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 280
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": true,
+            "format": true,
+            "codec": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "SaveVideo"
+      },
+      "widgets_values": [
+        "video-15s-debug",
+        "auto",
+        "auto"
+      ]
+    }
+  ],
+  "links": [
+    [
+      205,
+      103,
+      0,
+      105,
+      0,
+      "VIDEO"
+    ],
+    [
+      214,
+      120,
+      0,
+      118,
+      8,
+      "STRING"
+    ],
+    [
+      215,
+      118,
+      0,
+      119,
+      0,
+      "STRING"
+    ],
+    [
+      216,
+      119,
+      0,
+      103,
+      17,
+      "STRING"
+    ],
+    [
+      243,
+      138,
+      0,
+      118,
+      9,
+      "STRING"
+    ],
+    [
+      244,
+      118,
+      0,
+      139,
+      0,
+      "STRING"
+    ],
+    [
+      275,
+      155,
+      0,
+      118,
+      0,
+      "IMAGE"
+    ],
+    [
+      276,
+      155,
+      0,
+      103,
+      0,
+      "IMAGE"
+    ],
+    [
+      277,
+      150,
+      0,
+      118,
+      5,
+      "IMAGE"
+    ],
+    [
+      279,
+      155,
+      0,
+      144,
+      0,
+      "IMAGE"
+    ],
+    [
+      280,
+      156,
+      0,
+      157,
+      0,
+      "VIDEO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 3,
+      "title": "2. Segment 1",
+      "bounding": [
+        -950.9535408699982,
+        -300.7486740699996,
+        1199.3938089999997,
+        740.932296
+      ],
+      "color": "#8f5c2a",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "4. debug video",
+      "bounding": [
+        316.45288072788145,
+        -186.99070572110247,
+        900,
+        500
+      ],
+      "color": "#2a6b3d",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "🧠 Prompt Pipeline (Kimi)",
+      "bounding": [
+        -2710,
+        -310,
+        1667.6080877672098,
+        2420.0373131339584
+      ],
+      "color": "#5e3f78",
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "1. load storyboard + characters + video reference",
+      "bounding": [
+        -4270.629533692773,
+        -308.0254453738403,
+        1482.0038502118264,
+        1288.4220506386987
+      ],
+      "color": "#8f5c2a",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909107,
+      "offset": [
+        527.0239564879394,
+        402.83559208977425
+      ]
+    },
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4
+}

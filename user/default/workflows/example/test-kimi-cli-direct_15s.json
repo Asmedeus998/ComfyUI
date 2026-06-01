@@ -1,8 +1,8 @@
 {
   "id": "test-kimi-cli-direct",
   "revision": 0,
-  "last_node_id": 60,
-  "last_link_id": 78,
+  "last_node_id": 61,
+  "last_link_id": 79,
   "nodes": [
     {
       "id": 3,
@@ -16,7 +16,7 @@
         508
       ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -59,7 +59,7 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 79
         },
         {
           "localized_name": "image_2",
@@ -161,7 +161,7 @@
         436.7166748046875
       ],
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -300,7 +300,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -445,7 +445,7 @@
         534.6333618164062
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -489,7 +489,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -575,7 +575,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -724,6 +724,69 @@
         "*.png",
         0
       ]
+    },
+    {
+      "id": 61,
+      "type": "LoadImage",
+      "pos": [
+        781.7353742042483,
+        604.2944546726395
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            79
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "screenshot_80.png",
+        "image"
+      ]
     }
   ],
   "links": [
@@ -798,16 +861,24 @@
       28,
       0,
       "STRING"
+    ],
+    [
+      79,
+      61,
+      0,
+      3,
+      5,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9849732675807684,
+      "scale": 0.8140274938684042,
       "offset": [
-        -1581.5282979307926,
-        1977.55622930735
+        -193.03577890842797,
+        -10.220992482949336
       ]
     },
     "frontendVersion": "1.44.18",
