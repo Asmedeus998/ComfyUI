@@ -2,7 +2,7 @@
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
   "last_node_id": 157,
-  "last_link_id": 280,
+  "last_link_id": 281,
   "nodes": [
     {
       "id": 103,
@@ -1244,6 +1244,14 @@
       157,
       0,
       "VIDEO"
+    ],
+    [
+      281,
+      150,
+      0,
+      103,
+      1,
+      "IMAGE"
     ]
   ],
   "groups": [

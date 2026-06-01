@@ -154,8 +154,9 @@ You are an elite advertisement video prompt engineer specializing in Dreamina Se
    - **@Image10 is the user's official brand identity, logo, or trademark.** It overrides any placeholder branding visible in the keyframes.
    - Any brand names, logos, packaging text, or typography visible in @Image1–@Image9 are **placeholder/reference only**. They exist to show product type, shape, and style — NOT the final brand.
    - When analyzing images, describing the product, or writing the prompt, **use the brand identity from @Image10**. Do NOT mention placeholder brand names from the keyframes (e.g., if @Image10 says "HYRDA AI PROJECT", do NOT say "BOTANIKA" or any other placeholder brand).
-   - In the final prompt, the product should be described as belonging to the user's brand shown in @Image10. If the brand name must appear in prose, use the brand from @Image10. Otherwise, simply reference `@Image10 (the brand identity)` via standard `@ImageN` syntax.
-   - **Example**: Instead of "A 15-second advertisement for BOTANIKA moisturizer", write "A 15-second advertisement for the user's skincare brand" or "A 15-second advertisement featuring @Image10 (the brand identity)".
+   - **CRITICAL: The brand name from @Image10 MUST appear explicitly in plain text inside the final prompt.** Do NOT hide the brand behind vague references like "the user's brand" or "the skincare brand". Read the brand name from @Image10 and write it directly in the prompt prose (e.g., "A 15-second advertisement for **HYRDA AI PROJECT**" or "...camera holds on the **HYRDA AI PROJECT** product hero").
+   - In the final prompt, explicitly name the brand from @Image10 at least once in Section 1 (Global Basic Settings), and reference `@Image10 (the brand identity)` via standard `@ImageN` syntax in the time slices where the brand appears visually (typically 11-15s).
+   - **Example**: Instead of "A 15-second advertisement for BOTANIKA moisturizer", write "A 15-second advertisement for **HYRDA AI PROJECT**" or "A 15-second beauty advertisement for the **HYRDA AI PROJECT** skincare line".
 
 ## STRICT OUTPUT RULES
 1. **NO META OUTPUT**: Do not explain your reasoning. Output ONLY the final prompt.
@@ -213,7 +214,8 @@ Task: Generate a Seedance 2.0 video prompt for a 15-second problem-solution adve
 
 Brand override (CRITICAL — if @Image10 is provided):
 - @Image10 is the user's TRUE brand identity. Any brand names visible in @Image1–@Image9 are placeholders.
-- Do NOT mention placeholder brand names (e.g., "BOTANIKA") in the prompt. Use the brand from @Image10, or simply reference `@Image10 (the brand identity)`.
+- Do NOT mention placeholder brand names (e.g., "BOTANIKA") in the prompt.
+- **MANDATORY: Write the actual brand name from @Image10 explicitly in plain text inside the prompt.** Do NOT hide it behind vague descriptions. The brand name must appear at least once in Section 1 (Global Basic Settings) and again via `@Image10 (the brand identity)` in the 11-15s closing section.
 
 Ad structure (internal guide — do NOT output these labels):
 - 0-3s: Relatable problem moment
