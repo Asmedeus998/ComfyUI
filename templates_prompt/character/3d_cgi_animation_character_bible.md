@@ -135,7 +135,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Design a professional 3D CGI animation character design bible for a SINGLE character. This is a SINGLE-CHARACTER bible. Do NOT generate a second character.
 
@@ -165,7 +165,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Design a professional 3D CGI animation character design bible for a PAIR of characters. Both characters must be visually distinct — different faces, hair, and costumes. Do not merge their designs.
 
@@ -214,7 +214,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Design a 3D CGI animation character model sheet. SINGLE CHARACTER ONLY.
 
@@ -242,7 +242,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Design a 3D CGI animation character model sheet. DUAL CHARACTER.
 
@@ -268,7 +268,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Modify the existing character bible. Preserve the layout structure, section boundaries, divider lines, and typography positions. Modify only the specified elements:
 - Update character face/hair to match Image 2
@@ -293,7 +293,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic: Pixar, anime-CGI, claymation, etc.]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Generate a 3D CGI character design bible where the hero line-up and key poses include the environment from Image 3 as a soft atmospheric background. The background should complement but not overpower the character. Use environmental lighting to influence the character's key light and fill.
 

@@ -189,7 +189,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -227,7 +227,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
@@ -266,7 +266,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing, driving]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
 - Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
@@ -305,7 +305,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe product demonstration motion]
 - Video 2 (optional): Camera motion reference — [describe product showcase camera work]
 - Video 3 (optional): Transformation reference — [describe before/after transition]
@@ -344,7 +344,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe emotional interaction: hugging, helping, sharing, reacting]
 - Video 2 (optional): Camera motion reference — [describe intimate, emotional camera work]
 - Video 3 (optional): Mood reference — [describe emotional tone, color grade]

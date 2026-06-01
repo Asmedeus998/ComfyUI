@@ -142,7 +142,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone] (optional — not used in this template)
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Generate a single-image advertisement character reference sheet for a commercial video character.
 
@@ -183,7 +183,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 3: Prop / accessory / product interaction reference — [describe key prop, product, or accessory] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality] (optional — not used in this template)
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Generate a minimal advertisement character reference sheet focusing on face and costume lock for video consistency.
 
@@ -214,7 +214,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 3: Prop / accessory / product reference — [describe product or prop the character interacts with] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood reference — [describe target aesthetic: photorealistic beauty, soft lifestyle, premium luxury, etc.] (optional — not used in this template)
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Generate an advertisement character reference sheet where the character from Image 1 wears the outfit from Image 2.
 
@@ -246,7 +246,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 2: Costume / outfit / product reference — [describe garments, packaging, colors, fabrics, materials]
 - Image 3: Prop / accessory / product reference — [describe key prop, product, or accessory] (optional — not used in this template)
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration] (optional — not used if no creative reference provided)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 
 Task: Edit the existing character reference sheet. Preserve the layout structure, section boundaries, and typography positions. Update the character design while keeping the sheet framework intact.
 

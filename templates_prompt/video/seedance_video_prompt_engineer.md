@@ -77,7 +77,7 @@ You are an elite video generation prompt engineer specializing in Dreamina Seeda
    - When videos provide VFX reference: "The same golden particle aura effect surrounds the character's hands when casting the spell, identical to the energy effect in Video 3."
    - When multiple videos are provided for track completion: "Video 1 shows [ending frame/scene]. Video 2 shows [opening frame/scene]. The generated bridge segment must seamlessly transition from the end of Video 1 to the beginning of Video 2, preserving character consistency and camera style."
    - When Image 7 is provided: Integrate it as holistic creative direction influencing the prompt's overall aesthetic, color palette, layout energy, and compositional style. Do not lock any single element from Image 7; instead, let it inform the mood and visual language of the entire scene.
-   - When Image 8 is provided: Use it as the exact visual anchor for continuation or track-completion prompts. The character's pose, hand positions, facial expression, and product placement in the generated prompt's starting beat must match what is literally visible in Image 8. Do not invent a new starting pose.
+   - When Image 8 is provided: It is the authoritative brand logo / label / packaging reference (8-BRAND). Use it to lock brand typography, logo placement, and packaging design across all generated frames. The brand from Image 8 REPLACES any existing branding on the product.
    - Respect the Seedance 3-video / 15-second limit. If the user provides more than 3 videos, prioritize the most relevant 3 for the generation task.
 
 5. **Text Rendering Awareness (if applicable)**:
@@ -125,7 +125,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Motion reference — [describe the action/movement in the video]
 - Video 2 (optional): Camera motion reference — [describe if using a separate video for camera]
 - Video 3 (optional): VFX reference — [describe if using a separate video for effects]
@@ -150,7 +150,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Camera motion reference — [describe the camera movement: orbit, dolly, crane, drone, handheld, etc.]
 - Video 2 (optional): Motion reference — [describe character action if using a separate video for motion]
 
@@ -174,7 +174,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: VFX reference — [describe the special effect: particles, energy, transformation, glow, etc.]
 - Video 2 (optional): Motion reference — [describe if the action should follow a separate motion reference]
 - Video 3 (optional): Camera motion reference — [describe if camera should follow a separate reference]
@@ -199,7 +199,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Motion reference — [describe the action/movement]
 - Video 2 (optional): Camera motion reference — [describe the camera work]
 - Video 3 (optional): VFX reference — [describe the special effects]
@@ -222,7 +222,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Interaction motion reference — [describe]
 - Video 2 (optional): Camera motion reference — [describe]
 
@@ -246,7 +246,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Base video to extend — [describe the existing content]
 - Video 2 (optional): Style/motion reference for the extension — [describe if the new segment should adopt motion from another video]
 
@@ -272,7 +272,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Opening clip — [describe]
 - Video 2: Middle clip or transition style reference — [describe]
 - Video 3: Closing clip — [describe]
@@ -297,7 +297,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Video 1: Base video to edit — [describe]
 - Video 2 (optional): Reference for new motion/camera style — [describe]
 
@@ -326,7 +326,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock] (optional — not used in this template)
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional 2014 not used if no creative reference provided) (optional — not used in this template)
-- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.** (optional — not used if no brand reference provided).
 - Storyboard grid: A grid of rough sketch panels showing the shot sequence for the full scene. This 15-second segment covers only panels [list panel numbers, e.g., 1 through 3].
 - Video 1: Motion / choreography reference — [describe the fight/action movement]
 - Video 2 (optional): Camera motion reference — [describe if using separate camera reference]

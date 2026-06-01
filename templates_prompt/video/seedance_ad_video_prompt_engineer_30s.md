@@ -172,7 +172,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5 (product)`: Product / brand / commercial element reference — use `@Image5 (product)` for product lock
 - `@Image6 (style)`: Style / aesthetic / mood / material reference — use `@Image6 (style)` for style lock
 - `@Image7 (creative)`: Creative / freeform / composite reference — use `@Image7 (creative)` for creative direction (optional)
-- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -209,7 +209,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5 (product)`: Product / brand / commercial element reference — use `@Image5 (product)` for product lock
 - `@Image6 (style)`: Style / aesthetic / mood / material reference — use `@Image6 (style)` for style lock
 - `@Image7 (creative)`: Creative / freeform / composite reference — use `@Image7 (creative)` for creative direction (optional)
-- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
@@ -246,7 +246,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5 (product)`: Product / brand / commercial element reference — use `@Image5 (product)` for product lock
 - `@Image6 (style)`: Style / aesthetic / mood / material reference — use `@Image6 (style)` for style lock
 - `@Image7 (creative)`: Creative / freeform / composite reference — use `@Image7 (creative)` for creative direction (optional)
-- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**). **CRITICAL: If provided, this brand REPLACES all existing branding on the product.**
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
 - Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
