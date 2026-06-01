@@ -50,7 +50,7 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
    - **@Image1** = first image in the array = Keyframe 1
    - **@Image2** = second image = Keyframe 2
    - Continue counting through **@Image9** = ninth image = Keyframe 9
-   - **@Image10 (if provided)** = the separate continuation frame — the exact ending frame from the immediately preceding segment (burned-in label: **8-LAST**). Use this as the precise visual starting point for the next segment's `CONTINUE:` beat.
+   - **@Image10 (if provided)** = the separate continuation frame — the exact ending frame from the immediately preceding segment. Use this as the precise visual starting point for the next segment's `CONTINUE:` beat.
    - **NEVER refer to grid positions** like "top-left panel", "middle row", or "column 2". Seedance receives these as individual images and cannot read grid layouts.
    - **The keyframes are in strict narrative sequence from opening to closing.** You MUST acknowledge and use them in this exact order: @Image1 first, then @Image2, @Image3, all the way through @Image9 last.
 
@@ -144,7 +144,7 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
    - **Segment 3** MUST begin with `CONTINUE:` continuing from Segment 2's final action.
    - **Segment 4** MUST begin with `CONTINUE:` continuing from Segment 3's final action.
    - `CONTINUE:` must have **NO timestamp prefix** — it opens the segment's narrative directly.
-   - If an **8-LAST continuation frame** is provided for a segment, the corresponding `CONTINUE:` beat MUST describe the exact pose, hand positions, facial expression, and product placement shown in that frame. Do not invent a new pose — describe what is literally visible in `@Image10 (the continuation frame)`.
+   - If an **8-BRAND brand reference** is provided for a segment, the corresponding brand logo and packaging from Image 8 must be consistently applied across all frames where the product or brand appears.
    - Character appearance, outfit, hair, accessories, and product MUST be identical across all four segments.
    - Environment lighting, color palette, and atmosphere must remain consistent. The cuts between segments are invisible to the viewer.
    - Camera style should feel continuous across all segments.
@@ -215,7 +215,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY — count by array position, NOT grid location):
 - `@Image1` through `@Image9`: 9 sequential keyframes in strict narrative order. Analyze what each shows and assign an accurate parenthetical noun, but ALWAYS use them in ascending array position. NEVER reorder based on visual content.
-- `@Image10` (if provided): Continuation frame — the exact ending frame from the previous segment (labeled **8-LAST**). Use this for the CONTINUE: beat. If not provided, invent a seamless continuation.
+- `@Image10` (if provided): Continuation frame — the exact ending frame from the previous segment. Use this for the CONTINUE: beat. If not provided, invent a seamless continuation.
 - Video 1 (optional): Motion reference — describe the consumer action, camera style, or pacing
 - Video 2 (optional): Additional motion or camera reference
 - Video 3 (optional): Mood or creative reference
@@ -263,7 +263,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
 - `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
-- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment (labeled **8-LAST**)
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment
 - Video 1 (optional): Motion reference — lifestyle action, camera movement, or pacing
 - Video 2 (optional): Additional reference
 - Video 3 (optional): Mood or creative reference
@@ -308,7 +308,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
 - `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
-- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment (labeled **8-LAST**)
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment
 - Video 1 (optional): Motion reference — dramatic product interaction, camera movement, or pacing
 - Video 2 (optional): Additional reference
 - Video 3 (optional): Mood or lighting reference
@@ -355,7 +355,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
 - `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
-- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment (labeled **8-LAST**)
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment
 - Video 1 (optional): Motion reference — product demonstration
 - Video 2 (optional): Camera reference
 - Video 3 (optional): Transformation reference
@@ -396,7 +396,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
 - `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
-- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment (labeled **8-LAST**)
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previous segment
 - Video 1 (optional): Motion reference — emotional interaction
 - Video 2 (optional): Camera reference
 - Video 3 (optional): Mood reference

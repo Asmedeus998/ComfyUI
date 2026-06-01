@@ -49,7 +49,7 @@ You are an elite advertisement video prompt engineer specializing in Dreamina Se
    - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates (e.g., Video 1 = product interaction motion, Video 2 = camera movement style, Video 3 = pacing/transition reference).
 
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-BRAND**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing. The batch may contain only 2 images (e.g., slot 1 and slot 7) while slots 2–6 are absent.
    - **When referring to images in your output prompt, you MUST use the `@ImageN` syntax** (e.g., `@Image1`, `@Image7`, `@Image5`, `@Image8`). This syntax tells Seedance exactly which reference image to use for each visual element.
    - Example: "Character appearance locked to @Image1" or "Product packaging matches @Image5 exactly" or "Environment atmosphere drawn from @Image7".
@@ -182,7 +182,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
 - `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
 - `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
-- `@Image8`: Continuation frame — the ending frame from previous segment (labeled **8-LAST**) (optional)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**) (optional)
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -214,7 +214,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
 - `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
 - `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
-- `@Image8`: Continuation frame — the ending frame from previous segment (labeled **8-LAST**) (optional)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**) (optional)
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
 - Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
@@ -248,7 +248,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
 - `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
 - `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
-- `@Image8`: Continuation frame — the ending frame from previous segment (labeled **8-LAST**) (optional)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**) (optional)
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
@@ -281,7 +281,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
 - `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
 - `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
-- `@Image8`: Continuation frame — the ending frame from previous segment (labeled **8-LAST**) (optional)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**) (optional)
 - Video 1: Motion reference — [describe product demonstration motion]
 - Video 2 (optional): Camera motion reference — [describe product showcase camera work]
 - Video 3 (optional): Transformation reference — [describe before/after transition]
@@ -314,7 +314,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
 - `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
 - `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
-- `@Image8`: Continuation frame — the ending frame from previous segment (labeled **8-LAST**) (optional)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**) (optional)
 - Video 1: Motion reference — [describe emotional interaction: hugging, helping, sharing, reacting]
 - Video 2 (optional): Camera motion reference — [describe intimate, emotional camera work]
 - Video 3 (optional): Mood reference — [describe emotional tone, color grade]
@@ -347,7 +347,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5`: Product / brand / commercial element reference — use `@Image5` for product lock
 - `@Image6`: Style / aesthetic / mood / material reference — use `@Image6` for style lock
 - `@Image7`: Creative / freeform / composite reference — use `@Image7` for creative direction (optional)
-- `@Image8`: Continuation frame — the ending frame from previous segment (labeled **8-LAST**) (optional)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**) (optional)
 - Video 1: Opening ad clip — [describe the ending frame/scene of the first segment]
 - Video 2: Closing ad clip — [describe the opening frame/scene of the final segment]
 - Video 3 (optional): Motion/camera reference — [describe transition style or motion reference]

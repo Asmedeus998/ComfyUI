@@ -1,6 +1,6 @@
 ---
 name: image-prompt-guide
-description: Reference system prompt and best practices for multi-image prompt synthesis. Use when building or tuning an AI agent that analyzes multiple reference images and videos, audits an existing generated prompt, and outputs a refined prompt optimized for image or video generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, Qwen image edit, and Dreamina Seedance 2.0. Covers Reference Element Fusion (single-subject composite), Art Director Presentation Boards, Cinematic Action Storyboards, TV Commercial Storyboards, Cinematic Lifestyle Storyboards, Environment Reference Locks (I2V scene anchors), 3D CGI Animation Character Bibles, Ad Character Reference Sheets, Seedance Video Prompt Engineering, Seedance Ad Video Prompt Engineering, single-subject locks, anti-collage enforcement, cross-model compatibility, and domain-agnostic prompt engineering. All templates follow a universal 6+1+1-slot reference mapping standard — 6 core semantic slots plus 1 optional creative/freeform slot plus 1 optional continuation frame slot (8-LAST).
+description: Reference system prompt and best practices for multi-image prompt synthesis. Use when building or tuning an AI agent that analyzes multiple reference images and videos, audits an existing generated prompt, and outputs a refined prompt optimized for image or video generation across OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, Qwen image edit, and Dreamina Seedance 2.0. Covers Reference Element Fusion (single-subject composite), Art Director Presentation Boards, Cinematic Action Storyboards, TV Commercial Storyboards, Cinematic Lifestyle Storyboards, Environment Reference Locks (I2V scene anchors), 3D CGI Animation Character Bibles, Ad Character Reference Sheets, Seedance Video Prompt Engineering, Seedance Ad Video Prompt Engineering, single-subject locks, anti-collage enforcement, cross-model compatibility, and domain-agnostic prompt engineering. All templates follow a universal 6+1+1-slot reference mapping standard — 6 core semantic slots plus 1 optional creative/freeform slot plus 1 optional brand slot (8-BRAND).
 ---
 
 # Image Prompt Guide
@@ -80,7 +80,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5: Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6: Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7: Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional — not used if no creative reference provided)
-- Image 8: Continuation frame — [describe the ending frame from previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**) (optional — not used in this template)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**) (optional — not used if no brand reference provided)
 ```
 
 ### Slot Semantics (Fixed Across All Templates)
@@ -94,20 +94,20 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 | **Image 5** | Product / brand / commercial element | Product hero shot, logo, brand color, packaging, commercial visual lock |
 | **Image 6** | Style / aesthetic / mood / material | Art direction, color palette, material quality, mood tone, CGI style |
 | **Image 7** | Creative / freeform / composite | Landing page, mood board, unstructured inspiration — holistic creative direction (optional) |
-| **Image 8** | Continuation frame / last frame | Ending frame from previous segment — exact pose, expression, product placement for `CONTINUE:` beats (optional) |
+| **Image 8** | Brand logo / label / packaging | Brand logo, typography style, label design, or packaging element for consistent brand lock across all frames (optional) |
 
 ### Rules for Template Authors
 
 1. **Always include all 6 core slots** in every template, even if some are not applicable. Mark unused slots with `(optional — not used in this template)`.
 2. **Always include Image 7** in every template, marked as `(optional — not used if no creative reference provided)`.
-3. **Always include Image 8** in every template, marked as `(optional — not used in this template)`. For multi-segment video templates, this becomes the labeled continuation frame (8-LAST).
-4. **Never redefine slot semantics.** Image 1 is always "Character / subject reference" — never "Logo reference" or "Background reference." Image 7 is always "Creative / freeform / composite reference." Image 8 is always "Continuation frame / last frame reference."
+3. **Always include Image 8** in every template, marked as `(optional — not used if no brand reference provided)`. For multi-segment video workflows, continuation frames are handled separately via individual image inputs (`image_1`, `image_2`, `image_3`) or the `creative_video` passthrough.
+4. **Never redefine slot semantics.** Image 1 is always "Character / subject reference" — never "Logo reference" or "Background reference." Image 7 is always "Creative / freeform / composite reference." Image 8 is always "Brand logo / label / packaging reference."
 5. **Video slots are flexible** but should follow the convention:
    - Video 1: Primary motion / choreography / action reference
    - Video 2: Camera motion reference
    - Video 3: VFX, pacing, timing, transition, or creative mood reference
 6. **Creative video passthrough**: `SlotImageBatch` provides a `creative_video` input (VIDEO type) that passes straight through to downstream video nodes. Use this for unstructured motion references — mood clips, pacing inspiration, or B-roll that informs the overall energy without locking a specific action.
-7. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly." For Image 7, use holistic locks: "The overall visual approach follows the creative reference in Image 7 — adopt its color palette, layout energy, and compositional style." For Image 8 (continuation frame), use temporal locks: "The CONTINUE: beat must describe the exact pose visible in Image 8 — do not invent a new pose."
+7. **Explicit reference locks** must follow the slot mapping in the prompt body: "The character must match Image 1 exactly" / "The product must match Image 2 exactly" / "The environment must match Image 4 exactly." For Image 7, use holistic locks: "The overall visual approach follows the creative reference in Image 7 — adopt its color palette, layout energy, and compositional style." For Image 8 (brand), use brand locks: "The brand logo and packaging must match Image 8 exactly — use the same typography, colors, and logo placement across all frames where the brand appears."
 8. **Template naming** in `PromptTemplateLoader` uses the format: `category/file_name: Template Letter - Template Name`. The system prompt uses `category/file_name: system_prompt`.
 
 ### Slot Numbering & Batch Position (CRITICAL)
@@ -121,7 +121,7 @@ The batch has **2 images** at positions `[0, 1]`, but they are **Image 1** and *
 
 ```
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-BRAND**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
    - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1", "Image 7", "Image 5").
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
@@ -195,7 +195,7 @@ When building templates for **Dreamina Seedance 2.0 video generation** that acce
 1. **Strict Sequential Order**: Keyframes MUST be used in ascending array position. `@Image1` is always first, `@Image9` is always last. The LLM is strictly forbidden from analyzing visual content and reordering based on "best character" or "best product."
 2. **Zero Repetition**: Each `@ImageN` appears **exactly once** in the entire prompt. No image may be referenced in multiple time slices or across segments.
 3. **No Visual Content Override**: Unlike slot-based templates, flat-array templates do NOT allow the LLM to pick the "best" image for a role. The assignment is deterministic by position.
-4. **Continuation Frame Isolation**: `@Image10` (if provided) is a **separate continuation frame** (8-LAST). It appears ONLY in `CONTINUE:` beats for multi-segment workflows. It is never mixed into the 9-keyframe sequence.
+4. **Continuation Frame Isolation**: `@Image10` (if provided) is a **separate continuation frame**. It appears ONLY in `CONTINUE:` beats for multi-segment workflows. It is never mixed into the 9-keyframe sequence. Continuation frames are handled independently of the 8-slot semantic batch.
 
 ### Mandatory Segment Distribution
 

@@ -49,11 +49,11 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
 
 1. **Reference Analysis**: Carefully examine all provided reference materials.
    - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what.
-   - **Image 8 (Continuation Frame)**: If provided, this is the labeled ending frame from the immediately preceding segment (burned-in label: **8-LAST**). Use this as the exact visual starting point for the next segment's `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
+   - **Continuation Frame**: If provided as a separate image input (labeled **CONT-FRAME**), this is the ending frame from the immediately preceding segment. Use this as the exact visual starting point for the next segment's `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
    - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates.
 
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-BRAND**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
    - **When referring to images in your output prompt, you MUST use the SLOT NUMBER from the label** (e.g., "Image 1 (character)", "Image 7 (creative)", "Image 5 (product)").
    - **NEVER use positional counting** like "the first image", "the second image", or "Image 2" when the label says 7-CREATIVE. The batch position does NOT determine the image number — the slot label does.
@@ -129,7 +129,7 @@ The four segments combine into a seamless 60-second advertisement via VideoConca
    - **Segment 3** MUST begin its Time Slice Storyboard paragraph with `CONTINUE:` continuing from Segment 2's final time slice.
    - **Segment 4** MUST begin its Time Slice Storyboard paragraph with `CONTINUE:` continuing from Segment 3's final time slice.
    - `CONTINUE:` must have **NO timestamp prefix** — it opens the paragraph directly.
-   - If an **8-LAST continuation frame** is provided for a segment, the corresponding `CONTINUE:` beat MUST describe the exact pose, hand positions, facial expression, and product placement shown in that frame. Do not invent a new pose — describe what is literally visible in Image 8 (continuation frame).
+   - If an **8-BRAND brand reference** is provided for a segment, the corresponding brand logo and packaging from Image 8 must be consistently applied across all frames where the product or brand appears.
    - Example: `CONTINUE: right hand still holding frosted glass jar at chest height; character begins slow turn toward camera; soft smile maintained; product remains in frame`
    - Character appearance, outfit, hair, accessories, and product MUST be identical across all four segments.
    - Environment lighting, color palette, and atmosphere must remain consistent. The cuts between segments are invisible to the viewer.
@@ -189,7 +189,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8 (continuation): Continuation frame — [describe the ending frame from the previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -208,7 +208,7 @@ CRITICAL CONTINUITY INSTRUCTIONS:
 - Segment 3's Time Slice Storyboard MUST begin with "CONTINUE:" and show the product interaction beginning.
 - Segment 3's final time slice (11-15s) must show the transformation or benefit peak.
 - Segment 4's Time Slice Storyboard MUST begin with "CONTINUE:" and show the satisfied result state.
-- If Image 8 (continuation frame) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
+- If a continuation frame (CONT-FRAME) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
 - Character must match Image 1 (character) exactly across all segments. Product must match Image 2 (costume) exactly across all segments.
 
 Output format: Four segments, each with Section 1 (Global Basic Settings), Section 2 (Time Slice Storyboard with 0-3s / 3-7s / 7-11s / 11-15s ranges and semicolon-separated beats), and Section 3 (Constraints). Segments 2–4 MUST begin with CONTINUE: in Section 2. NO arc labels anywhere. Wrap segments in [[SEGMENT_1]] / [[/SEGMENT_1]], [[SEGMENT_2]] / [[/SEGMENT_2]], [[SEGMENT_3]] / [[/SEGMENT_3]], and [[SEGMENT_4]] / [[/SEGMENT_4]] tags. Keep each segment under ~250 words.
@@ -227,7 +227,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8 (continuation): Continuation frame — [describe the ending frame from the previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
@@ -246,7 +246,7 @@ CRITICAL CONTINUITY INSTRUCTIONS:
 - Segment 3's Time Slice Storyboard MUST begin with "CONTINUE:" and show the benefit experience beginning.
 - Segment 3's final time slice (11-15s) must show the peak emotional reward moment.
 - Segment 4's Time Slice Storyboard MUST begin with "CONTINUE:" and transition toward the product hero shot.
-- If Image 8 (continuation frame) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
+- If a continuation frame (CONT-FRAME) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
 - Character must match Image 1 (character) exactly across all segments. Product must match Image 2 (costume) exactly across all segments. Environment must match Image 4 (environment) if provided.
 - Style: [Warm/Natural/Aspirational/Clean/Minimalist]. The ad should feel like a lifestyle magazine come to life.
 
@@ -266,7 +266,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8 (continuation): Continuation frame — [describe the ending frame from the previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing, driving]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
 - Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
@@ -285,7 +285,7 @@ CRITICAL CONTINUITY INSTRUCTIONS:
 - Segment 3's Time Slice Storyboard MUST begin with "CONTINUE:" and launch into the climax moment.
 - Segment 3's final time slice (11-15s) must show the peak sensory reaction.
 - Segment 4's Time Slice Storyboard MUST begin with "CONTINUE:" and transition from reaction to appreciation.
-- If Image 8 (continuation frame) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
+- If a continuation frame (CONT-FRAME) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
 - Character must match Image 1 (character) exactly across all segments. Product must match Image 2 (costume) exactly across all segments. Environment must match Image 4 (environment) exactly.
 - Style: [Dramatic/Cinematic/High Contrast]. The product reveal must feel like a cinematic climax.
 
@@ -305,7 +305,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8 (continuation): Continuation frame — [describe the ending frame from the previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe product demonstration motion]
 - Video 2 (optional): Camera motion reference — [describe product showcase camera work]
 - Video 3 (optional): Transformation reference — [describe before/after transition]
@@ -324,7 +324,7 @@ CRITICAL CONTINUITY INSTRUCTIONS:
 - Segment 3's Time Slice Storyboard MUST begin with "CONTINUE:" and start the demonstration.
 - Segment 3's final time slice (11-15s) must show the successful result of using the product.
 - Segment 4's Time Slice Storyboard MUST begin with "CONTINUE:" and show appreciation of the result.
-- If Image 8 (continuation frame) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
+- If a continuation frame (CONT-FRAME) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
 - Character must match Image 1 (character) exactly across all segments. Product must match Image 5 (product) exactly across all segments.
 - Style: [Clean/Modern/Tech-forward/Premium]. Product must be the visual hero.
 
@@ -344,7 +344,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - Image 5 (product): Product / brand / commercial element reference — [describe product, logo, brand element, or additional visual lock]
 - Image 6 (style): Style / aesthetic / mood / material reference — [describe target aesthetic, color palette, material quality, or mood tone]
 - Image 7 (creative): Creative / freeform / composite reference — [describe landing page, mood board, or unstructured visual inspiration for holistic creative direction] (optional)
-- Image 8 (continuation): Continuation frame — [describe the ending frame from the previous segment: character pose, hand positions, facial expression, product placement] (labeled **8-LAST**)
+- Image 8: Brand logo / label / packaging reference — [describe brand logo, typography style, label design, or packaging element] (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe emotional interaction: hugging, helping, sharing, reacting]
 - Video 2 (optional): Camera motion reference — [describe intimate, emotional camera work]
 - Video 3 (optional): Mood reference — [describe emotional tone, color grade]
@@ -363,7 +363,7 @@ CRITICAL CONTINUITY INSTRUCTIONS:
 - Segment 3's Time Slice Storyboard MUST begin with "CONTINUE:" and introduce the product/brand as the solution.
 - Segment 3's final time slice (11-15s) must show hope or transformation taking hold.
 - Segment 4's Time Slice Storyboard MUST begin with "CONTINUE:" and show the warm resolution.
-- If Image 8 (continuation frame) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
+- If a continuation frame (CONT-FRAME) is provided for any segment, describe the literal pose visible in that frame for the corresponding CONTINUE: beat. Do not invent a new pose.
 - Character A must match Image 1 (character) exactly across all segments. Character B must match Image 2 (costume) if provided. Environment must match Image 4 (environment) exactly.
 - Style: [Heartfelt/Genuine/Cinematic/Documentary-feel]. Emotion first, product second.
 
@@ -431,7 +431,7 @@ Output format: Four segments, each with Section 1 (Global Basic Settings), Secti
 | Model | Ad Video Prompt Engineering Tip |
 |-------|--------------------------------|
 | **Kimi / GPT-4** | Excellent at analyzing video + image references and synthesizing flowing prose storyboards. Provide explicit reference mapping and continuity instructions for best results. With four segments, explicitly remind the model to maintain energy and ideas through Segments 3 and 4. |
-| **Seedance (R2V)** | When using generated prompts with multiple image inputs, ensure the prompt explicitly references the image content at specific beats so Seedance knows which visual elements to lock. Continuation frames (last frame of previous segment as image_1 for next segment) dramatically improve temporal consistency. |
+| **Seedance (R2V)** | When using generated prompts with multiple image inputs, ensure the prompt explicitly references the image content at specific beats so Seedance knows which visual elements to lock. Brand reference images (8-BRAND) ensure consistent logo and packaging across all frames. |
 | **Seedance (I2V)** | Not recommended for multi-segment workflows — use Reference2Video with the last frame as image_1 plus original references to prevent drift. |
 
 ---

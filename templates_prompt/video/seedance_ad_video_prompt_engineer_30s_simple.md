@@ -48,7 +48,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 1. **Reference Analysis**: Carefully examine all provided reference materials.
    - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what.
-   - **Image 8 (Continuation Frame)**: If provided, this is the labeled ending frame from the previous segment (burned-in label: **8-LAST**). Use this as the exact visual starting point for the `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
+   - **Continuation Frame**: If provided as a separate image input (labeled **CONT-FRAME**), this is the ending frame from the previous segment. Use this as the exact visual starting point for the `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
    - **Videos**: Analyze motion patterns, camera movement, pacing, transitions, visual effects, and overall commercial editing language.
 
 2. **ARRAY-POSITION REFERENCE RULE (CRITICAL — DO NOT IGNORE)**:
@@ -109,7 +109,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 5. **CONTINUITY PROTOCOL (CRITICAL)**:
    - Segment 2 MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's final moment.
-   - If an **8-LAST continuation frame** is provided, the `CONTINUE:` beat MUST describe the exact pose, hand positions, facial expression, and product placement shown in that frame.
+   - If a **continuation frame (CONT-FRAME)** is provided, the `CONTINUE:` beat MUST describe the exact pose, hand positions, facial expression, and product placement shown in that frame.
    - Example: `CONTINUE: right hand still touching her cheek, left hand holding the product jar at waist height; character begins a slow pivot toward camera; soft hopeful smile sustained.`
    - Character appearance, outfit, hair, accessories, and product MUST be identical across both segments.
    - Environment lighting, color palette, and atmosphere must remain consistent. The cut between segments is invisible to the viewer.
@@ -184,7 +184,7 @@ CRITICAL ARRAY-POSITION INSTRUCTION:
 CRITICAL CONTINUITY INSTRUCTION:
 - Segment 1's final moment must end with the character interacting with the product.
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact same pose, hand positions, and product placement as Segment 1's ending.
-- If an 8-LAST continuation frame is provided, describe the literal pose visible in that frame.
+- If an 8-BRAND brand reference is provided, describe the brand logo, typography, and packaging visible in that image.
 - Character appearance is locked to @Image1 (the character) across both segments. Product is locked to @Image2 (the product) across both segments.
 
 CRITICAL FORMAT INSTRUCTION:
@@ -225,7 +225,7 @@ CRITICAL ARRAY-POSITION INSTRUCTION:
 CRITICAL CONTINUITY INSTRUCTION:
 - Segment 1's final moment must end with the character naturally interacting with the product.
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact same pose, hand positions, and product placement as Segment 1's ending.
-- If an 8-LAST continuation frame is provided, describe the literal pose visible in that frame.
+- If an 8-BRAND brand reference is provided, describe the brand logo, typography, and packaging visible in that image.
 - Character must match @Image1 (the character) exactly across both segments. Product must match @Image2 (the product) exactly across both segments.
 
 CRITICAL FORMAT INSTRUCTION:
@@ -268,7 +268,7 @@ CRITICAL ARRAY-POSITION INSTRUCTION:
 CRITICAL CONTINUITY INSTRUCTION:
 - Segment 1's final moment must end at the dramatic climax — the character interacting with the product at the peak moment.
 - Segment 2 MUST begin with "CONTINUE:" (NO timestamp prefix) describing the exact same pose, hand positions, and product placement as Segment 1's ending, continuing the reaction/expression.
-- If an 8-LAST continuation frame is provided, describe the literal pose visible in that frame.
+- If an 8-BRAND brand reference is provided, describe the brand logo, typography, and packaging visible in that image.
 - Character must match @Image1 (the character) exactly across both segments. Product must match @Image2 (the product) exactly across both segments.
 - Style: Dramatic/Cinematic/High Contrast. The product reveal must feel like a cinematic climax.
 
@@ -345,7 +345,7 @@ Output format: Two segments wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGM
 | Model | Ad Video Prompt Engineering Tip |
 |-------|--------------------------------|
 | **Kimi / GPT-4** | Excellent at analyzing video + image references and synthesizing cinematic scene descriptions. Provide explicit reference mapping and continuity instructions for best results. |
-| **Seedance (R2V)** | When using generated prompts with multiple image inputs, ensure the prompt explicitly references the image content so Seedance knows which visual elements to lock. Continuation frames (last frame of Segment 1 as image_1 for Segment 2) dramatically improve temporal consistency. |
+| **Seedance (R2V)** | When using generated prompts with multiple image inputs, ensure the prompt explicitly references the image content so Seedance knows which visual elements to lock. Brand reference images (8-BRAND) ensure consistent logo and packaging across all frames. |
 | **Seedance (I2V)** | Not recommended for Segment 2 in a 30s workflow — use Reference2Video with the last frame as image_1 plus original references to prevent drift. |
 
 ---

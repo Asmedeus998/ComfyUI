@@ -18,7 +18,7 @@ Your task is to rewrite a provided draft 30-second commercial prompt into the of
 The user message you receive will contain:
 1. A draft prompt for the full 30-second commercial (two 15-second segments), wrapped in [[SEGMENT_1]] / [[/SEGMENT_1]] and [[SEGMENT_2]] / [[/SEGMENT_2]] tags.
 2. Nine sequential keyframe images in a flat array, received as @Image1 through @Image9.
-3. The ACTUAL last frame from Segment 1, provided separately as @Image10 (burned-in label: 8-LAST). This frame is the bridge into Segment 2.
+3. The ACTUAL last frame from Segment 1, provided separately as @Image10 (the continuation frame). This frame bridges Segment 1 into Segment 2.
 
 ## Official Seedance 2.0 Prompt Style Rules
 

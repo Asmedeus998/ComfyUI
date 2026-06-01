@@ -49,11 +49,11 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 1. **Reference Analysis**: Carefully examine all provided reference materials.
    - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what.
-   - **Image 8 (Continuation Frame)**: If provided, this is the labeled ending frame from the previous segment (burned-in label: **8-LAST**). Use this as the exact visual starting point for the `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
+   - **Continuation Frame**: If provided as a separate image input (labeled **CONT-FRAME**), this is the ending frame from the previous segment. Use this as the exact visual starting point for the `CONTINUE:` beat. Describe the character's pose, hand positions, facial expression, and product placement as shown in this frame.
    - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates.
 
 2. **Slot Format & Image Numbering (CRITICAL — DO NOT IGNORE)**:
-   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-LAST**.
+   - The reference images use a **fixed 8-slot semantic system**. Each image has a slot label burned into its top-left corner: **1-CHAR, 2-COSTUME, 3-PROP, 4-ENV, 5-PRODUCT, 6-STYLE, 7-CREATIVE, 8-BRAND**.
    - You will receive a **SUBSET** of these slots — not always all 7. Some slots may be empty/missing.
    - **When referring to images in your output prompt, you MUST use the `@ImageN` syntax** (e.g., `@Image1 (character)`, `@Image7 (creative)`, `@Image5 (product)`, `@Image8 (continuation)`). This syntax tells Seedance exactly which reference image to use for each visual element. The parenthetical noun is mandatory.
    - Example: "Character appearance locked to @Image1 (character)" or "Product packaging matches @Image5 (product) exactly" or "Environment atmosphere drawn from @Image7 (creative)".
@@ -111,7 +111,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
 
 5. **CONTINUITY PROTOCOL (CRITICAL)**:
    - Segment 2's **very first beat** MUST begin with the word `CONTINUE:` followed by an explicit description of the character's pose, hand positions, facial expression, and product placement as a **direct continuation** of Segment 1's final time slice.
-   - If an **8-LAST continuation frame** is provided, the `CONTINUE:` beat MUST describe the exact pose, hand positions, facial expression, and product placement shown in that frame. Do not invent a new pose — describe what is literally visible in `@Image8 (continuation)`.
+   - If an **8-BRAND brand reference** is provided, the brand logo and packaging from Image 8 must be consistently applied across all frames where the product or brand appears.
    - Example: `CONTINUE: right hand still holding frosted glass jar at chest height; character begins slow turn toward camera; soft smile maintained; product remains in frame`
    - **Segment 2 `CONTINUE:` has NO timestamp prefix.** It is the opening of the time slice storyboard, not a timestamped line.
    - Character appearance, outfit, hair, accessories, and product MUST be identical across both segments. If the character wore a black satin blouse in Segment 1, they wear the exact same black satin blouse in Segment 2.
@@ -172,7 +172,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5 (product)`: Product / brand / commercial element reference — use `@Image5 (product)` for product lock
 - `@Image6 (style)`: Style / aesthetic / mood / material reference — use `@Image6 (style)` for style lock
 - `@Image7 (creative)`: Creative / freeform / composite reference — use `@Image7 (creative)` for creative direction (optional)
-- `@Image8 (continuation)`: Continuation frame — the ending frame from Segment 1 (labeled **8-LAST**)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe the consumer action: applying, drinking, using, reacting]
 - Video 2 (optional): Camera motion reference — [describe commercial camera work]
 - Video 3 (optional): Pacing / mood / creative reference — [describe editing rhythm, transition style]
@@ -209,7 +209,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5 (product)`: Product / brand / commercial element reference — use `@Image5 (product)` for product lock
 - `@Image6 (style)`: Style / aesthetic / mood / material reference — use `@Image6 (style)` for style lock
 - `@Image7 (creative)`: Creative / freeform / composite reference — use `@Image7 (creative)` for creative direction (optional)
-- `@Image8 (continuation)`: Continuation frame — the ending frame from Segment 1 (labeled **8-LAST**)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe the lifestyle action: walking, lounging, applying, enjoying]
 - Video 2 (optional): Camera motion reference — [describe smooth, elegant camera movement]
 - Video 3 (optional): Pacing / mood / creative reference — [describe relaxed, aspirational editing rhythm]
@@ -246,7 +246,7 @@ Reference mapping (SLOT FORMAT — swap any images into these slots):
 - `@Image5 (product)`: Product / brand / commercial element reference — use `@Image5 (product)` for product lock
 - `@Image6 (style)`: Style / aesthetic / mood / material reference — use `@Image6 (style)` for style lock
 - `@Image7 (creative)`: Creative / freeform / composite reference — use `@Image7 (creative)` for creative direction (optional)
-- `@Image8 (continuation)`: Continuation frame — the ending frame from Segment 1 (labeled **8-LAST**)
+- `@Image8`: Brand logo / label / packaging reference — the brand image uploaded for brand lock (labeled **8-BRAND**)
 - Video 1: Motion reference — [describe the dramatic product interaction: eating, drinking, unboxing]
 - Video 2 (optional): Camera motion reference — [describe dramatic camera: orbit, push-in, dolly]
 - Video 3 (optional): Pacing / mood / creative reference — [describe dramatic lighting style]
@@ -321,7 +321,7 @@ Output format: Two segments, each with Section 1 (concise prose with `@Image` lo
 | Model | Ad Video Prompt Engineering Tip |
 |-------|--------------------------------|
 | **Kimi / GPT-4** | Excellent at analyzing video + image references and synthesizing detailed flowing prose time slices. Provide explicit reference mapping and continuity instructions for best results. |
-| **Seedance (R2V)** | When using generated prompts with multiple image inputs, ensure the prompt explicitly references the image content at specific time slices so Seedance knows which visual elements to lock. Continuation frames (last frame of Segment 1 as image_1 for Segment 2) dramatically improve temporal consistency. |
+| **Seedance (R2V)** | When using generated prompts with multiple image inputs, ensure the prompt explicitly references the image content at specific time slices so Seedance knows which visual elements to lock. Brand reference images (8-BRAND) ensure consistent logo and packaging across all frames. |
 | **Seedance (I2V)** | Not recommended for Segment 2 in a 30s workflow — use Reference2Video with the last frame as image_1 plus original references to prevent drift. |
 
 ---

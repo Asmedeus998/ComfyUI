@@ -51,7 +51,7 @@ The two segments combine into a seamless 30-second advertisement via VideoConcat
    - **@Image2** = second image = Keyframe 2
    - **@Image3** = third image = Keyframe 3
    - Continue counting through **@Image9** = ninth image = Keyframe 9
-   - **@Image10 (if provided)** = the separate continuation frame — the exact ending frame from the previously generated video (burned-in label: **8-LAST**). If provided, use this as the precise visual starting point for the `CONTINUE:` beat. If NOT provided, invent a seamless continuation pose that matches Segment 1's final action.
+   - **@Image10 (if provided)** = the separate continuation frame — the exact ending frame from the previously generated video. If provided, use this as the precise visual starting point for the `CONTINUE:` beat. If NOT provided, invent a seamless continuation pose that matches Segment 1's final action.
    - **NEVER refer to grid positions** like "top-left panel", "middle row", or "column 2". Seedance receives these as individual images and cannot read grid layouts.
    - **The keyframes are in strict narrative sequence from opening to closing.** You MUST acknowledge and use them in this exact order: @Image1 first, then @Image2, @Image3, all the way through @Image9 last.
 
@@ -215,7 +215,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY — count by array position, NOT grid location):
 - `@Image1` through `@Image9`: 9 sequential keyframes in strict narrative order. Analyze what each shows and assign an accurate parenthetical noun, but ALWAYS use them in ascending array position. NEVER reorder based on visual content.
-- `@Image10` (if provided): Continuation frame — the exact ending frame from the previously generated video (labeled **8-LAST**). Use this for the CONTINUE: beat. If not provided, invent a seamless continuation.
+- `@Image10` (if provided): Continuation frame — the exact ending frame from the previously generated video. Use this for the CONTINUE: beat. If not provided, invent a seamless continuation.
 - Video 1 (optional): Motion reference — describe the consumer action, camera style, or pacing
 - Video 2 (optional): Additional motion or camera reference
 - Video 3 (optional): Mood or creative reference
@@ -256,7 +256,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
 - `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
-- `@Image10` (if provided): Continuation frame — exact ending frame from the previously generated video (labeled **8-LAST**)
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previously generated video
 - Video 1 (optional): Motion reference — lifestyle action, camera movement, or pacing
 - Video 2 (optional): Additional reference
 - Video 3 (optional): Mood or creative reference
@@ -295,7 +295,7 @@ Analyze the attached reference keyframe images and continuation frame.
 
 Reference mapping (FLAT ARRAY):
 - `@Image1` through `@Image9`: Sequential keyframes — identify what each shows
-- `@Image10` (if provided): Continuation frame — exact ending frame from the previously generated video (labeled **8-LAST**)
+- `@Image10` (if provided): Continuation frame — exact ending frame from the previously generated video
 - Video 1 (optional): Motion reference — dramatic product interaction, camera movement, or pacing
 - Video 2 (optional): Additional reference
 - Video 3 (optional): Mood or lighting reference
