@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 251,
-  "last_link_id": 483,
+  "last_node_id": 252,
+  "last_link_id": 487,
   "nodes": [
     {
       "id": 133,
@@ -33,14 +33,14 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 458
+          "link": 485
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 459
+          "link": 486
         },
         {
           "localized_name": "image_3",
@@ -54,7 +54,7 @@
           "name": "image_4",
           "shape": 7,
           "type": "IMAGE",
-          "link": 460
+          "link": 487
         },
         {
           "localized_name": "mask",
@@ -543,7 +543,7 @@
       "id": 176,
       "type": "BatchImagePreview",
       "pos": [
-        1908.768685361129,
+        1962.512844349299,
         -3472.3041572397233
       ],
       "size": [
@@ -569,7 +569,7 @@
           "links": [
             365,
             372,
-            457
+            484
           ]
         }
       ],
@@ -3465,178 +3465,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 238,
-      "type": "SlotImageBatch",
-      "pos": [
-        2450.9981769207025,
-        -3719.629468477506
-      ],
-      "size": [
-        341.3333435058594,
-        420
-      ],
-      "flags": {},
-      "order": 36,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 457
-        },
-        {
-          "localized_name": "character",
-          "name": "character",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "costume",
-          "name": "costume",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "prop",
-          "name": "prop",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "environment",
-          "name": "environment",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "product",
-          "name": "product",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "style",
-          "name": "style",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "creative",
-          "name": "creative",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "brand",
-          "name": "brand",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "creative_video",
-          "name": "creative_video",
-          "shape": 7,
-          "type": "VIDEO",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "batch",
-          "name": "batch",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_1",
-          "name": "image_1",
-          "type": "IMAGE",
-          "links": [
-            458
-          ]
-        },
-        {
-          "localized_name": "image_2",
-          "name": "image_2",
-          "type": "IMAGE",
-          "links": [
-            459
-          ]
-        },
-        {
-          "localized_name": "image_3",
-          "name": "image_3",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_4",
-          "name": "image_4",
-          "type": "IMAGE",
-          "links": [
-            460
-          ]
-        },
-        {
-          "localized_name": "image_5",
-          "name": "image_5",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_6",
-          "name": "image_6",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "image_7",
-          "name": "image_7",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "localized_name": "brand",
-          "name": "brand",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "localized_name": "creative_video",
-          "name": "creative_video",
-          "type": "VIDEO",
-          "links": null
-        },
-        {
-          "localized_name": "slot_labels",
-          "name": "slot_labels",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SlotImageBatch",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 239,
       "type": "LoadImage",
       "pos": [
@@ -4601,6 +4429,170 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 252,
+      "type": "SlotImageBatch",
+      "pos": [
+        2775.1004474720744,
+        -3668.0098295900743
+      ],
+      "size": [
+        341.3333435058594,
+        288
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 484
+        },
+        {
+          "localized_name": "character",
+          "name": "character",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "costume",
+          "name": "costume",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prop",
+          "name": "prop",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "environment",
+          "name": "environment",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "product",
+          "name": "product",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "style",
+          "name": "style",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative",
+          "name": "creative",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "brand",
+          "name": "brand",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "batch",
+          "name": "batch",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": [
+            485
+          ]
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": [
+            486
+          ]
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": [
+            487
+          ]
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "brand",
+          "name": "brand",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "creative_video",
+          "name": "creative_video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "SlotImageBatch"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -4997,38 +4989,6 @@
       "VIDEO"
     ],
     [
-      457,
-      176,
-      0,
-      238,
-      0,
-      "IMAGE"
-    ],
-    [
-      458,
-      238,
-      1,
-      133,
-      1,
-      "IMAGE"
-    ],
-    [
-      459,
-      238,
-      2,
-      133,
-      2,
-      "IMAGE"
-    ],
-    [
-      460,
-      238,
-      4,
-      133,
-      4,
-      "IMAGE"
-    ],
-    [
       471,
       239,
       0,
@@ -5131,6 +5091,38 @@
       249,
       8,
       "IMAGE"
+    ],
+    [
+      484,
+      176,
+      0,
+      252,
+      0,
+      "IMAGE"
+    ],
+    [
+      485,
+      252,
+      1,
+      133,
+      1,
+      "IMAGE"
+    ],
+    [
+      486,
+      252,
+      2,
+      133,
+      2,
+      "IMAGE"
+    ],
+    [
+      487,
+      252,
+      4,
+      133,
+      4,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -5182,10 +5174,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.6303940863128511,
+      "scale": 0.7627768444385506,
       "offset": [
-        -2303.0940016865684,
-        3988.845992472629
+        -1974.2924078289534,
+        3964.0511088795843
       ]
     }
   },
