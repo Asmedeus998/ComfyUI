@@ -1,8 +1,8 @@
 {
   "id": "185548e3-b0ac-4f7a-9c94-9e69e7532a08",
   "revision": 0,
-  "last_node_id": 56,
-  "last_link_id": 61,
+  "last_node_id": 58,
+  "last_link_id": 64,
   "nodes": [
     {
       "id": 2,
@@ -959,98 +959,6 @@
       ]
     },
     {
-      "id": 41,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        14790.162861030132,
-        31047.808544743784
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            59
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "video/seedance ad video prompt engineer 15s keyframes flat: system_prompt"
-      ]
-    },
-    {
-      "id": 42,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        14749.531896603996,
-        30826.295491719662
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 4,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "video/seedance ad video prompt engineer 15s keyframes flat: A - Problem-Solution Ad (Health/Beauty/Office)"
-      ]
-    },
-    {
       "id": 43,
       "type": "KimiCliDirect",
       "pos": [
@@ -1128,7 +1036,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": null
+          "link": 64
         },
         {
           "localized_name": "system_prompt",
@@ -1138,7 +1046,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": 59
+          "link": 63
         },
         {
           "localized_name": "model",
@@ -1207,7 +1115,7 @@
         340
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1235,7 +1143,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            56
+            62
           ]
         },
         {
@@ -1272,7 +1180,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1339,7 +1247,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1406,7 +1314,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1552,7 +1460,7 @@
       ],
       "size": [
         341.3333435058594,
-        264
+        288
       ],
       "flags": {},
       "order": 15,
@@ -1612,7 +1520,14 @@
           "name": "creative",
           "shape": 7,
           "type": "IMAGE",
-          "link": 56
+          "link": null
+        },
+        {
+          "localized_name": "brand",
+          "name": "brand",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 62
         },
         {
           "localized_name": "creative_video",
@@ -1670,6 +1585,12 @@
         {
           "localized_name": "image_7",
           "name": "image_7",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "localized_name": "brand",
+          "name": "brand",
           "type": "IMAGE",
           "links": null
         },
@@ -1761,12 +1682,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "SaveText"
+        }
       },
       "widgets_values": [
         "",
@@ -1807,17 +1728,111 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PreviewAny",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PreviewAny"
+        }
       },
       "widgets_values": [
         null,
         null,
         null
+      ]
+    },
+    {
+      "id": 57,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        14810,
+        31090
+      ],
+      "size": [
+        536.9166870117188,
+        174.35000610351562
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            63
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "storyboard/cinematic lifestyle storyboard: system_prompt"
+      ]
+    },
+    {
+      "id": 58,
+      "type": "PromptTemplateLoader",
+      "pos": [
+        14800,
+        30840
+      ],
+      "size": [
+        400,
+        104
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "template",
+          "name": "template",
+          "type": "COMBO",
+          "widget": {
+            "name": "template"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            64
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "PromptTemplateLoader"
+      },
+      "widgets_values": [
+        "storyboard/ad tv commercial storyboard: C - Visual Grid Storyboard for Social Media / Ad Pitches (Grid Mode)"
       ]
     }
   ],
@@ -1967,14 +1982,6 @@
       "IMAGE"
     ],
     [
-      56,
-      46,
-      0,
-      54,
-      7,
-      "IMAGE"
-    ],
-    [
       57,
       43,
       0,
@@ -1991,11 +1998,27 @@
       "STRING"
     ],
     [
-      59,
-      41,
+      62,
+      46,
+      0,
+      54,
+      8,
+      "IMAGE"
+    ],
+    [
+      63,
+      57,
       0,
       43,
       9,
+      "STRING"
+    ],
+    [
+      64,
+      58,
+      0,
+      43,
+      8,
       "STRING"
     ]
   ],
@@ -2004,10 +2027,10 @@
   "extra": {
     "ue_links": [],
     "ds": {
-      "scale": 0.3797498335832451,
+      "scale": 0.6115909044841528,
       "offset": [
-        -12532.180364981168,
-        -29171.56411111259
+        -14070.230236848858,
+        -30006.473631266013
       ]
     },
     "links_added_by_ue": []
