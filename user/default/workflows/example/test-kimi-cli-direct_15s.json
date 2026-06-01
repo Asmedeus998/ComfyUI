@@ -2,7 +2,7 @@
   "id": "test-kimi-cli-direct",
   "revision": 0,
   "last_node_id": 61,
-  "last_link_id": 79,
+  "last_link_id": 80,
   "nodes": [
     {
       "id": 3,
@@ -343,7 +343,7 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 80
         },
         {
           "localized_name": "image_2",
@@ -729,8 +729,8 @@
       "id": 61,
       "type": "LoadImage",
       "pos": [
-        781.7353742042483,
-        604.2944546726395
+        510.6881778110652,
+        -291.9418954449658
       ],
       "size": [
         282.8333435058594,
@@ -765,7 +765,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            79
+            79,
+            80
           ]
         },
         {
@@ -776,12 +777,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "LoadImage"
+        }
       },
       "widgets_values": [
         "screenshot_80.png",
@@ -869,16 +870,24 @@
       3,
       5,
       "IMAGE"
+    ],
+    [
+      80,
+      61,
+      0,
+      21,
+      5,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8140274938684042,
+      "scale": 0.505447028499298,
       "offset": [
-        -193.03577890842797,
-        -10.220992482949336
+        505.5071379871098,
+        1256.4140263173897
       ]
     },
     "frontendVersion": "1.44.18",
