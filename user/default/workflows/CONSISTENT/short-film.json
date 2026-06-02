@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 158,
-  "last_link_id": 283,
+  "last_node_id": 167,
+  "last_link_id": 293,
   "nodes": [
     {
       "id": 103,
@@ -16,7 +16,7 @@
         748
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -24,7 +24,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 276
+          "link": 291
         },
         {
           "localized_name": "image_1",
@@ -147,7 +147,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": 216
+          "link": 292
         },
         {
           "localized_name": "resolution",
@@ -260,7 +260,7 @@
         384
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -309,7 +309,7 @@
         }
       },
       "widgets_values": [
-        "video-15s",
+        "shortfilm-15s",
         "auto",
         "auto"
       ]
@@ -327,14 +327,14 @@
       ],
       "flags": {},
       "order": 5,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "localized_name": "images",
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 275
+          "link": null
         },
         {
           "localized_name": "video",
@@ -467,8 +467,8 @@
       "id": 119,
       "type": "RegexExtract",
       "pos": [
-        -941.9331798700003,
-        -59.187012070000215
+        -1503.1637046699993,
+        -193.64849196999995
       ],
       "size": [
         320,
@@ -476,7 +476,7 @@
       ],
       "flags": {},
       "order": 7,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "localized_name": "string",
@@ -548,9 +548,7 @@
           "name": "STRING",
           "type": "STRING",
           "slot_index": 0,
-          "links": [
-            216
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -586,7 +584,7 @@
       ],
       "flags": {},
       "order": 0,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "localized_name": "template",
@@ -634,7 +632,7 @@
       ],
       "flags": {},
       "order": 1,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "localized_name": "template",
@@ -672,8 +670,8 @@
       "id": 139,
       "type": "PreviewAny",
       "pos": [
-        -1602.7037192967532,
-        112.22457008126628
+        -1887.2164158967526,
+        275.916806481266
       ],
       "size": [
         383.9333190917969,
@@ -681,7 +679,7 @@
       ],
       "flags": {},
       "order": 8,
-      "mode": 0,
+      "mode": 2,
       "inputs": [
         {
           "localized_name": "source",
@@ -722,57 +720,25 @@
       ]
     },
     {
-      "id": 140,
-      "type": "MarkdownNote",
-      "pos": [
-        -4932.676445787988,
-        -539.013760132321
-      ],
-      "size": [
-        520,
-        541.7999877929688
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "MarkdownNote",
-        "cnr_id": "comfy-core",
-        "ver": "0.18.1",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "## 📋 Universal Reference Slot Map\n\n| Slot | Meaning | Wire This |\n|------|---------|-----------|\n| **Image 1** | Character / subject | Face, hair, body, distinguishing features |\n| **Image 2** | Costume / outfit / product | Clothing, packaging, colors, fabrics |\n| **Image 3** | Prop / accessory / 2nd subject | Weapons, tools, jewelry, secondary character |\n| **Image 4** | Environment / background | Setting, architecture, lighting, atmosphere |\n| **Image 5** | Product / brand / commercial | Product hero, logo, brand color, packaging |\n| **Image 6** | Style / aesthetic / mood | Art direction, color palette, material quality |\n\n> All templates in `templates_prompt/` follow this standard.\n> Swap templates without rewiring — slots keep the same meaning.\n"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 144,
       "type": "PreviewImage",
       "pos": [
-        -3259.2476927266116,
-        138.95176421503646
+        -3118.693360034,
+        308.9762582679996
       ],
       "size": [
         293.6666564941406,
         474.5
       ],
       "flags": {},
-      "order": 6,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
           "name": "images",
           "type": "IMAGE",
-          "link": 279
+          "link": 290
         }
       ],
       "outputs": [],
@@ -789,83 +755,6 @@
       "widgets_values": []
     },
     {
-      "id": 155,
-      "type": "LoadKeyframeBatch",
-      "pos": [
-        -3827.322264629942,
-        -202.1467248757757
-      ],
-      "size": [
-        315,
-        200
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "directory",
-          "name": "directory",
-          "type": "STRING",
-          "widget": {
-            "name": "directory"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "pattern",
-          "name": "pattern",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "pattern"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "max_images",
-          "name": "max_images",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "max_images"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            275,
-            276,
-            279
-          ]
-        },
-        {
-          "localized_name": "count",
-          "name": "count",
-          "type": "INT",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadKeyframeBatch",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "output/keyframes",
-        "*.png",
-        0
-      ]
-    },
-    {
       "id": 156,
       "type": "StoryboardVideoOverlay",
       "pos": [
@@ -877,7 +766,7 @@
         448
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -890,7 +779,7 @@
           "localized_name": "storyboard",
           "name": "storyboard",
           "type": "IMAGE",
-          "link": 282
+          "link": 293
         },
         {
           "localized_name": "rows",
@@ -1034,10 +923,10 @@
       ],
       "size": [
         320,
-        555.3666381835938
+        555.8333129882812
       ],
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1088,24 +977,24 @@
         }
       },
       "widgets_values": [
-        "video-15s-debug",
+        "shortfilm-15s-debug",
         "auto",
         "auto"
       ]
     },
     {
-      "id": 158,
+      "id": 159,
       "type": "LoadImage",
       "pos": [
-        364.5753498984669,
-        645.9537520220172
+        -4210,
+        -200
       ],
       "size": [
         282.8333435058594,
         340
       ],
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -1133,7 +1022,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            282
+            286
           ]
         },
         {
@@ -1152,9 +1041,356 @@
         }
       },
       "widgets_values": [
-        "ads_frame_00003_.png",
+        "short.png",
         "image"
       ]
+    },
+    {
+      "id": 160,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -4270,
+        270
+      ],
+      "size": [
+        413.2833251953125,
+        415.29998779296875
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            287
+          ]
+        }
+      ],
+      "title": "Prompt - custom",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "Create a cinematic 3x3 storyboard sheet based on the provided first-frame reference image.\n\nStyle requirements:\nKeep the same visual style as the reference image: cinematic brick-style tactical characters, dark snowy night, broken concrete ruins, heavy falling snow, cold blue cinematic lighting, subtle red emergency rim light, shallow depth of field, tactical armor, and a tense covert-operation mood. Keep the two main characters visually consistent across all 9 panels. There is only one guard at the side door, and the guard wears white clothing so they are clearly visible in the dark environment. No blood, no gore. The result should look like a high-quality action-film storyboard, not an exaggerated comic page.\n\nStoryboard layout:\nA single 3x3 grid, 9 panels total. Each panel shows a different shot from the same 14-second sequence. Add small, unobtrusive time labels in the corner of each panel.\n\nPanel 1, 0-1.5s:\nExtreme wide establishing shot. In a dark snowy night, the main character and partner crouch low and move through broken concrete rubble. Heavy snow fills the air. A dimly lit side door is visible far in the background.\n\nPanel 2, 1.5-3s:\nMedium-wide tracking shot. The two tactical characters move carefully past shattered concrete, broken walls, and twisted steel bars. The main character raises one hand, silently signaling the partner to stop.\n\nPanel 3, 3-4.5s:\nClose shot. The main character presses against a damaged wall and peeks around the corner. In the blurred background, the side door and the silhouette of one white-clothed guard are visible under weak light.\n\nPanel 4, 4.5-7s:\nTwo-character close-up. The main character turns slightly toward the partner and whispers: “One guard at the side door. Wait for my signal.” The partner nods subtly, gripping their weapon, focused and tense.\n\nPanel 5, 7-8.5s:\nLow-angle tracking shot. The main character moves fast and silently along the base of the wall, almost like a shadow. Snow streaks across the lens, and the armor edges catch cold blue light.\n\nPanel 6, 8.5-11s:\nSide backlight shot near a lamp post. The main character slips behind the side door area and silently approaches the white-clothed guard. The guard remains unaware.\n\nPanel 7, 11-12s:\nAction close-up. There is only one guard beside the side door, wearing white clothing and standing out clearly in the dark snowy night. The main character suddenly approaches from behind, restrains the guard, and quickly subdues them. The action is clean, controlled, tactical, non-graphic, and not exaggerated.\n\nPanel 8, 12-13s:\nExtreme close-up. After subduing the white-clothed guard, the main character crouches in the shadow beside the side door, turns toward the partner, and gives a clear hand signal with one hand. Focus the image on the “signal” action. Do not include any radio response or extra complicated plot elements.\n\nPanel 9, 13-14s:\nExplosive final shot. The partner kicks open the main door. Snow, dust, and broken door fragments burst outward. Bright white light floods from inside the building. The partner shouts: “FBI!”\n\nComposition notes:\nThe story should read clearly from left to right and top to bottom. The tension should build across the sequence: quiet infiltration in panels 1-6, sudden takedown in panel 7, clear signal in panel 8, explosive door breach in panel 9. Keep the environment, costumes, lighting, and character designs consistent with the reference image."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 162,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        -3784.0877705347766,
+        -189.6017300597655
+      ],
+      "size": [
+        333.3333435058594,
+        604
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 286
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 287
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            289,
+            290,
+            291,
+            293
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        676880000,
+        "randomize",
+        "high",
+        "auto",
+        "1536x1024",
+        1,
+        "gpt-image-2",
+        1536,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 163,
+      "type": "SaveImage",
+      "pos": [
+        -3370,
+        -190
+      ],
+      "size": [
+        333.3333435058594,
+        391.6666564941406
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 289
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "title": "Save GPT Image 2 Image",
+      "properties": {
+        "Node name for S&R": "SaveKeyframePanels",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "short_frames"
+      ]
+    },
+    {
+      "id": 167,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -1535.3418266371718,
+        739.2898671858575
+      ],
+      "size": [
+        413.2833251953125,
+        415.29998779296875
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            292
+          ]
+        }
+      ],
+      "title": "Prompt - custom",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "0-1.5s:\nExtreme wide establishing shot. In a dark snowy night, the main character and partner crouch low and move through broken concrete rubble. Heavy snow fills the air. A dimly lit side door is visible far in the background.\n\n5-3s:\nMedium-wide tracking shot. The two tactical characters move carefully past shattered concrete, broken walls, and twisted steel bars. The main character raises one hand, silently signaling the partner to stop.\n\n3-4.5s:\nClose shot. The main character presses against a damaged wall and peeks around the corner. In the blurred background, the side door and the silhouette of one white-clothed guard are visible under weak light.\n\n4.5-7s:\nTwo-character close-up. The main character turns slightly toward the partner and whispers: “One guard at the side door. Wait for my signal.” The partner nods subtly, gripping their weapon, focused and tense.\n\n7-8.5s:\nLow-angle tracking shot. The main character moves fast and silently along the base of the wall, almost like a shadow. Snow streaks across the lens, and the armor edges catch cold blue light.\n\n8.5-11s:\nSide backlight shot near a lamp post. The main character slips behind the side door area and silently approaches the white-clothed guard. The guard remains unaware.\n\n11-12s:\nAction close-up. There is only one guard beside the side door, wearing white clothing and standing out clearly in the dark snowy night. The main character suddenly approaches from behind, restrains the guard, and quickly subdues them. The action is clean, controlled, tactical, non-graphic, and not exaggerated.\n\n12-13s:\nExtreme close-up. After subduing the white-clothed guard, the main character crouches in the shadow beside the side door, turns toward the partner, and gives a clear hand signal with one hand. Focus the image on the “signal” action. Do not include any radio response or extra complicated plot elements.\n\n13-14s:\nExplosive final shot. The partner kicks open the main door. Snow, dust, and broken door fragments burst outward. Bright white light floods from inside the building. The partner shouts: “FBI!”"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
     }
   ],
   "links": [
@@ -1183,14 +1419,6 @@
       "STRING"
     ],
     [
-      216,
-      119,
-      0,
-      103,
-      17,
-      "STRING"
-    ],
-    [
       243,
       138,
       0,
@@ -1205,30 +1433,6 @@
       139,
       0,
       "STRING"
-    ],
-    [
-      275,
-      155,
-      0,
-      118,
-      0,
-      "IMAGE"
-    ],
-    [
-      276,
-      155,
-      0,
-      103,
-      0,
-      "IMAGE"
-    ],
-    [
-      279,
-      155,
-      0,
-      144,
-      0,
-      "IMAGE"
     ],
     [
       280,
@@ -1247,20 +1451,68 @@
       "IMAGE"
     ],
     [
-      282,
-      158,
-      0,
-      156,
-      1,
-      "IMAGE"
-    ],
-    [
       283,
       103,
       0,
       156,
       0,
       "VIDEO"
+    ],
+    [
+      286,
+      159,
+      0,
+      162,
+      1,
+      "IMAGE"
+    ],
+    [
+      287,
+      160,
+      0,
+      162,
+      6,
+      "STRING"
+    ],
+    [
+      289,
+      162,
+      0,
+      163,
+      0,
+      "IMAGE"
+    ],
+    [
+      290,
+      162,
+      0,
+      144,
+      0,
+      "IMAGE"
+    ],
+    [
+      291,
+      162,
+      0,
+      103,
+      0,
+      "IMAGE"
+    ],
+    [
+      292,
+      167,
+      0,
+      103,
+      17,
+      "STRING"
+    ],
+    [
+      293,
+      162,
+      0,
+      156,
+      1,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1316,10 +1568,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3855432894295319,
+      "scale": 0.3855432894295321,
       "offset": [
-        5772.529103854797,
-        976.7805008681815
+        5564.828284831901,
+        1246.190193081951
       ]
     },
     "ue_links": [],
