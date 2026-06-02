@@ -44,9 +44,11 @@ Concise index for the **Prompt Synthesizer / Evolver / Auditor** agent used in C
 | **Environment Reference Lock** | Multi-section reference board | Spatial anchor for I2V: multi-angle room views, prop detail callouts, technical spec bar. **Locks background consistency for video generation.** | [`reference/environment-reference-lock.md`](reference/environment-reference-lock.md) |
 | **3D CGI Animation Character Bible** | Multi-section design document | Pre-production character bible with hero line-ups, expression sheets, action poses, prop details, color palette & materials, scale reference, and bios. **Pixar-quality 3D CGI with strict consistency locks.** | [`character/3d-cgi-animation-character-bible.md`](character/3d-cgi-animation-character-bible.md) |
 | **Ad Character Reference Sheet** | Multi-section reference sheet | Stripped-down character reference for ad video generation — hero line-ups, ad expressions, product interaction poses, costume/prop details, color palette, turnaround. **NO bios, NO scale refs.** | [`character/ad-character-reference-sheet.md`](character/ad-character-reference-sheet.md) |
+| **Short-Film Template Loader** | Video + storyboard prompt pair | Narrative short-film with separated visual locks and story concept. Timestamped shot blocks for video, 5-section storyboard grids for images. | [`templates_prompt/video/seedance_short_film_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_video_prompt_engineer.md) + [`templates_prompt/storyboard/short_film_storyboard_grid.md`](../../../templates_prompt/storyboard/short_film_storyboard_grid.md) |
 | **Seedance Video Prompt Engineer** | Video generation prompt | Single continuous video segment prompt for Dreamina Seedance 2.0. Subject + motion + camera + audio + reference locks. **150–800 words, flowing paragraph.** | [`templates_prompt/video/seedance_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_video_prompt_engineer.md) |
 | **Seedance Ad Video Prompt Engineer** | Advertisement video prompt | Commercial video segment prompt with product placement, branding, CTA, and timed narrative arcs for Seedance 2.0. **200–700 words, flowing paragraph.** | [`templates_prompt/video/seedance_ad_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_ad_video_prompt_engineer.md) |
 | **Seedance Ad Video Prompt Engineer (Flat Keyframes)** | Advertisement video prompt | Same as above, but optimized for a **flat array of 9 sequential keyframes** (NOT a 3×3 grid). Enforces strict 1→9 sequential order, zero repetition, no visual-content reordering. **200–700 words, flowing paragraph.** | [`templates_prompt/video/seedance_ad_video_prompt_engineer_15s_keyframes_flat.md`](../../../templates_prompt/video/seedance_ad_video_prompt_engineer_15s_keyframes_flat.md) |
+| **Short-Film Template Loader** | Video + storyboard prompt pair | Narrative short-film generation with **separated visual locks and story concept**. Reference images provide character/costume/style ONLY; a user-provided text node supplies the narrative. Outputs timestamped shot blocks for video and 5-section storyboard grids for reference images. | [`templates_prompt/video/seedance_short_film_video_prompt_engineer.md`](../../../templates_prompt/video/seedance_short_film_video_prompt_engineer.md) + [`templates_prompt/storyboard/short_film_storyboard_grid.md`](../../../templates_prompt/storyboard/short_film_storyboard_grid.md) |
 | **Prompt Audit** | Refined prompt | Multiple refs + Existing prompt. Corrected and enriched prompt. | Depends on target pattern above |
 
 ## Critical Distinction
@@ -246,6 +248,8 @@ The synthesized prompt must always be wrapped in:
 | Environment Reference Lock | **300–600 words** as one or two connected paragraphs |
 | 3D CGI Animation Character Bible | **300–600 words** as one or two connected paragraphs |
 | Ad Character Reference Sheet | **300–600 words** as one or two connected paragraphs |
+| **Short-Film Video Prompt** | **200–500 words** as 9 timestamped shot blocks |
+| **Short-Film Storyboard Grid** | **300–600 words** as 5 sections (style + 9 panels + composition notes) |
 
 No markdown, no bullets, no line breaks inside the prompt body.
 
@@ -335,6 +339,100 @@ If your **environment board** outputs have shifting backgrounds or inconsistent 
 - [ ] Include technical spec bar: aspect, color temp, lens, format
 - [ ] Prioritize light-emitting props and interactive objects in the callouts
 - [ ] Add lighting lock: "Identical color temperature and weather across all panels"
+
+### Short-Film Template Loader Standard
+
+When building templates for **narrative short-film generation** that separate visual identity from story content, this standard applies. These templates live in `templates_prompt/video/seedance_short_film_video_prompt_engineer.md` and `templates_prompt/storyboard/short_film_storyboard_grid.md`.
+
+> **Critical distinction from other templates**: The short-film template loader uses reference images **ONLY for visual locks** (character appearance, costume, art style). The **narrative is supplied separately** via a user-editable text node. This prevents the LLM from simply describing what it sees in the reference image and enables any story genre — isekai, zombie apocalypse, meta-fiction, etc. — while keeping the visual identity consistent.
+
+#### Architecture
+
+```
+PromptTemplateLoader ──┐
+                        ├──→ JoinStrings ──→ KimiCliDirect ──→ RegexExtract ──→ Seedance / GPT Image
+Story Concept text ────┘
+```
+
+- **PromptTemplateLoader**: Provides the output format instructions (timestamped blocks for video, 5-section grid for storyboard).
+- **Story Concept** (`PrimitiveStringMultiline`): User types any narrative concept.
+- **JoinStrings** (`comfyui-kjnodes`): Combines template + concept with `\n\n` delimiter.
+- **KimiCliDirect**: Receives the combined text + reference images.
+
+#### Visual Lock vs Narrative Separation Rules
+
+1. **Reference images = VISUAL ONLY**: The system prompt must instruct the LLM to extract character appearance, costume, prop, and environment aesthetic from the reference images — but **NOT** the scene content or narrative.
+2. **Story concept = NARRATIVE ONLY**: The user-provided text node supplies what happens. The LLM must follow this story, not invent one based on the reference image.
+3. **Example**: If the reference shows a LEGO soldier in snow, but the story concept says "human vs zombie in a mall," the output must show a LEGO-style character fighting zombies in a mall — not a soldier in snow.
+
+#### Video Prompt Format (9 Timestamped Shot Blocks)
+
+The video generation prompt must follow this exact structure:
+
+```
+0-1.5s:
+[Shot type]. [1–2 sentences describing action and visuals].
+
+1.5-3s:
+[Shot type]. [1–2 sentences].
+
+3-4.5s:
+...
+
+(continues through 13-14s)
+```
+
+- **9 blocks total**, covering 0–14 seconds.
+- Each block: time header on its own line, followed by 1–2 sentences.
+- Shot types to cycle through: extreme wide establishing, medium-wide tracking, close, two-character close-up, low-angle tracking, side backlight, action close-up, extreme close-up, explosive final.
+- No flowing prose paragraphs. No narrative arc labels. No markdown bullets.
+
+#### Storyboard Grid Format (5 Sections)
+
+The image generation prompt for the reference grid must follow this exact structure:
+
+```
+Create a cinematic 3x3 storyboard sheet based on the provided reference image.
+
+Style requirements:
+[1–2 sentences: visual style, lighting, color palette, character consistency rule]
+
+Storyboard layout:
+A single 3x3 grid, 9 panels total. Each panel shows a different shot from the same 14-second sequence. Add small, unobtrusive time labels in the corner of each panel.
+
+Panel 1, 0-1.5s:
+[Shot type]. [1–2 sentences].
+
+Panel 2, 1.5-3s:
+...
+
+(continues through Panel 9, 13-14s)
+
+Composition notes:
+[1–2 sentences about narrative tension build and consistency reminder]
+```
+
+- **Section 1**: Opening line (fixed text).
+- **Section 2**: Style requirements (1–2 sentences).
+- **Section 3**: Storyboard layout (fixed text).
+- **Section 4**: 9 panels with `Panel N, X-Ys:` format. Each panel: shot type + 1–2 sentences.
+- **Section 5**: Composition notes (1–2 sentences).
+
+#### User Template Structure
+
+User templates in the short-film loader must:
+
+1. Open with: `Analyze the attached reference images and videos.`
+2. Include the visual-lock instruction: `Use the reference images for visual style, character appearance, costume, and prop ONLY. Do not copy the scene or narrative from the reference images.`
+3. Include the story-concept placeholder: `Story concept: [provided by user]`
+4. End with the task + `Wrap in [[PROMPT]] tags.`
+
+**No reference mapping block is required** in short-film templates. The LLM derives visual locks directly from the images without slot-based semantics.
+
+#### Workflow File
+
+The canonical ComfyUI workflow is at:
+`user/default/workflows/CONSISTENT/short-film-kimi.json`
 
 ### Flat Array Keyframe Checklist (for Seedance Video Ad Templates only)
 
