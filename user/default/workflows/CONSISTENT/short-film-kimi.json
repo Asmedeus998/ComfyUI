@@ -392,7 +392,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": 214
+          "link": 301
         },
         {
           "localized_name": "system_prompt",
@@ -459,7 +459,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS — structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
+        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS \u2014 structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
         "",
         300
       ]
@@ -619,7 +619,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance short film video prompt engineer: B - Character + Scene — Build a Narrative Segment from Scratch"
+        "video/seedance short film video prompt engineer: B - Character + Scene \u2014 Build a Narrative Segment from Scratch"
       ]
     },
     {
@@ -1304,7 +1304,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": 295
+          "link": 303
         },
         {
           "localized_name": "system_prompt",
@@ -1371,7 +1371,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3×3 short-film storyboard grid.",
+        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3\u00d73 short-film storyboard grid.",
         "",
         300
       ]
@@ -2389,7 +2389,7 @@
     },
     {
       "id": 5,
-      "title": "🧠 Prompt Pipeline (Kimi)",
+      "title": "\ud83e\udde0 Prompt Pipeline (Kimi)",
       "bounding": [
         -2710,
         -310,
