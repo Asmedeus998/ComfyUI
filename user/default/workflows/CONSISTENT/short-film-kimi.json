@@ -17,7 +17,7 @@
       ],
       "flags": {},
       "order": 22,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -261,7 +261,7 @@
       ],
       "flags": {},
       "order": 23,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -770,7 +770,7 @@
       ],
       "flags": {},
       "order": 24,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -930,7 +930,7 @@
       ],
       "flags": {},
       "order": 25,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -1169,7 +1169,7 @@
       },
       "widgets_values": [
         "",
-        1853237706,
+        1713512227,
         "randomize",
         "high",
         "auto",
@@ -2415,10 +2415,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.4641000000000006,
+      "scale": 0.38554328942953164,
       "offset": [
-        3078.243732839438,
-        -912.9970773501553
+        2632.9431020190655,
+        1027.86590152965
       ]
     },
     "ue_links": [],
