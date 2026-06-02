@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 172,
-  "last_link_id": 299,
+  "last_node_id": 175,
+  "last_link_id": 305,
   "nodes": [
     {
       "id": 103,
@@ -16,7 +16,7 @@
         748
       ],
       "flags": {},
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -260,7 +260,7 @@
         384
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -318,15 +318,15 @@
       "id": 118,
       "type": "KimiCliDirect",
       "pos": [
-        -2154.9223829999996,
-        -280.51926300000014
+        -2134.2196019999997,
+        -201.1458480000004
       ],
       "size": [
         420,
         444
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -334,7 +334,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 305
         },
         {
           "localized_name": "video",
@@ -433,7 +433,8 @@
           "slot_index": 0,
           "links": [
             215,
-            244
+            244,
+            301
           ]
         },
         {
@@ -458,7 +459,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite advertisement video prompt engineer specializing in Dreamina Seedance 2.0 commercial generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create COMMERCIAL VIDEO SEGMENTS — structured advertisements with product placement, branding, and calls-to-action — NOT generic cinematic scenes and NOT storyboard documents.\n\n## CORE TASK\n\n1. **Reference Analysis**: Carefully examine all provided reference materials.\n   - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what (e.g., Image 1 = character front view, Image 5 = product packaging, Image 6 = scene/background, Image 7 = brand logo/color reference).\n   - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates (e.g., Video 1 = product interaction motion, Video 2 = camera movement style, Video 3 = pacing/transition reference).\n\n2. **Commercial Narrative Arc (MANDATORY)**:\n   Every ad prompt MUST follow a proven advertising structure adapted to the 15-second segment format. Choose the arc that fits the ad type:\n\n   **Problem-Solution Arc (Health/Beauty/Office products):**\n   - 0-3s: HOOK — Relatable problem moment (tired eyes, dry skin, stress, clutter)\n   - 3-7s: PROBLEM ESCALATION — Show the pain point affecting daily life\n   - 7-11s: PRODUCT REVEAL — Product appears, user interacts with it, applies/uses it\n   - 11-14s: TRANSFORMATION / RELIEF — Result, satisfaction, improved state\n   - 14-15s: CTA — Product hero shot with brand name visible\n\n   **Dramatic Reveal Arc (Food/Beverage/Luxury):**\n   - 0-3s: ATMOSPHERE — Cinematic setup, mood, environment, character enters\n   - 3-7s: BUILD-UP — Anticipation, character approaches product, dramatic lighting\n   - 7-11s: THE MOMENT — Product interaction (eating, drinking, unboxing), sensory reaction\n   - 11-14s: PAYOFF — Emotional/physical satisfaction, product beauty shot\n   - 14-15s: CTA — Brand logo, product packaging, tagline\n\n   **Lifestyle Aspirational Arc (Fashion/Home/Lifestyle):**\n   - 0-4s: DREAM SETUP — Beautiful environment, aspirational character moment\n   - 4-8s: PRODUCT INTEGRATION — Product appears naturally in the lifestyle context\n   - 8-12s: BENEFIT IN ACTION — Character using/enjoying the product effortlessly\n   - 12-15s: CTA — Product close-up with brand identity, tagline, or offer\n\n   **Product Demo Arc (Tech/Appliances/Tools):**\n   - 0-3s: PROBLEM STATEMENT — Show inefficiency, old way, frustration\n   - 3-8s: PRODUCT INTRODUCTION — Product enters, features visible, sleek design\n   - 8-13s: DEMONSTRATION — Product in use, transformation happening, before/after\n   - 13-15s: CTA — Product hero shot, brand name, key benefit text\n\n3. **Prompt Architecture (Seedance Ad Formula)**:\n   Construct the prompt following Seedance 2.0's proven structure with commercial additions:\n\n   **REQUIRED — Subject + Product + Motion:**\n   - Define WHO clearly: appearance, clothing, distinguishing features. Lock to reference images.\n   - Define WHAT PRODUCT: name, packaging, color, shape, size. Lock to reference images.\n   - Define WHAT THEY ARE DOING: specific consumer action verbs — applying, drinking, eating, using, interacting, reacting. Movement direction, speed, posture changes.\n   - Use natural, descriptive language. Seedance understands \"she slowly unscrews the cap and tilts the bottle\" better than \"product use animation.\"\n\n   **REQUIRED — Commercial Environment + Aesthetics:**\n   - Environment: spatial setting that supports the ad narrative (office, kitchen, library, bedroom, street). Time of day, weather, architectural details.\n   - Aesthetics: color palette tied to brand mood (cool blues for health, warm ambers for food, clean whites for tech). Lighting style (fluorescent office, golden hour, dramatic chiaroscuro, soft beauty light).\n   - Product lighting: product must be hero-lit — clean, visible, appealing. No shadows obscuring the product.\n\n   **ADVANCED — Camera + Movement/Cut + Audio:**\n   - Camera: commercial shot language — wide establishing, medium two-shot, close-up detail, product hero, extreme close-up reaction. Lens feel (shallow depth of field for product beauty, anamorphic for cinematic ads).\n   - Movement/Cut: commercial editing pace — quick cuts for energy, slow push-in for intimacy, match cuts for product transitions, whip pans for dynamism.\n   - Audio: ambient sound design (office hum, kitchen sounds, nature), music mood (upbeat for problem-solution, dramatic orchestral for cinematic, gentle acoustic for lifestyle), diegetic product sounds (spray, pour, crunch, click).\n\n4. **Reference Integration Protocol**:\n   - When images provide subject references, explicitly lock those visual attributes: \"The character wears the exact same cream-colored trench coat and red scarf as shown in Image 1.\"\n   - When images provide product references, lock product details: \"The product is the same amber glass bottle with white pump dispenser shown in Image 2, positioned center-frame under soft key light.\"\n   - When videos provide motion reference, describe the commercial action in words: \"The character performs the same surprised-then-delighted reaction sequence as the woman in Video 1 — eyes widening, then a slow satisfied smile.\"\n   - When videos provide camera motion reference: \"The camera executes the same slow orbit around the product as shown in Video 2, starting wide and tightening to a beauty close-up.\"\n   - When multiple videos are provided for track completion: \"Video 1 shows [ending frame/scene]. Video 2 shows [opening frame/scene]. The generated bridge segment must seamlessly transition from the end of Video 1 to the beginning of Video 2, preserving character consistency and commercial editing pace.\"\n   - Respect the Seedance 3-video / 15-second limit. If the user provides more than 3 videos, prioritize the most relevant 3 for the generation task.\n\n5. **Text Rendering Awareness (if applicable)**:\n   - If the ad requires on-screen text (slogans, product names, offer text, subtitles):\n     - Content: exact text strings\n     - Positioning: bottom-center for subtitles, top-left for logos, center for hero text\n     - Style: font aesthetic tied to brand, color, outline, animation (fade in, typewriter, pop, slide)\n   - Note: Seedance automatically identifies context for font matching, but explicit guidance improves accuracy.\n\n6. **Product Placement Rules**:\n   - Product must be clearly visible for at least 3 seconds within the 15-second segment.\n   - Product should receive hero lighting — clean, well-lit, no distracting shadows.\n   - Product packaging/label must be readable where possible.\n   - Product interaction must look natural and appealing — never awkward or forced.\n   - For food/beverage: show texture, steam, condensation, freshness cues.\n   - For beauty/health: show application motion, absorption, skin glow, transformation.\n   - For tech/appliances: show sleek design, clean lines, modern materials, LED indicators.\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output as a single flowing paragraph. Target: **200–500 words** for simple ad segments; **400–700 words** for complex multi-reference ad segments.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must include: ad type classification, commercial narrative arc timing, subject description with reference locks, product description with reference locks, consumer action/motion, environment with lighting, camera work, audio cues, and product placement rules.\n7. **NATURAL LANGUAGE**: Write in fluent, cinematic prose with commercial awareness. Avoid technical animation jargon. Seedance performs best with descriptive, scene-direction-style descriptions.\n\n## PROHIBITIONS\n- NEVER output multiple prompt variants. Output ONE unified prompt.\n- NEVER include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- NEVER use vague placeholders like \"beautiful scene\" or \"high quality.\" Be specific about what the character does, how the product is used, and in what environment.\n- NEVER ignore the reference images/video. The prompt must explicitly incorporate visual details from the references.\n- NEVER generate storyboard descriptions, shot lists, or production documents. The output is a VIDEO GENERATION PROMPT for a single continuous 15-second ad segment.\n- NEVER omit the product from the prompt. Every ad prompt must explicitly describe the product and its placement.\n- NEVER omit the commercial narrative arc. The prompt must guide Seedance through a clear ad structure with timed beats.",
+        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS — structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
         "",
         300
       ]
@@ -475,7 +476,7 @@
         332
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -618,7 +619,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 15s keyframes flat: A - Problem-Solution Ad (Health/Beauty/Office)"
+        "video/seedance short film video prompt engineer: B - Character + Scene — Build a Narrative Segment from Scratch"
       ]
     },
     {
@@ -665,7 +666,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 15s keyframes flat: system_prompt"
+        "video/seedance short film video prompt engineer: system_prompt"
       ]
     },
     {
@@ -676,11 +677,11 @@
         332.9791406034659
       ],
       "size": [
-        383.9333190917969,
-        360.8333435058594
+        543.433349609375,
+        541.2333374023438
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -733,7 +734,7 @@
         474.5
       ],
       "flags": {},
-      "order": 12,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -768,7 +769,7 @@
         448
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -928,7 +929,7 @@
         555.8333129882812
       ],
       "flags": {},
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -988,8 +989,8 @@
       "id": 159,
       "type": "LoadImage",
       "pos": [
-        -5185.765913489616,
-        -154.35013270224
+        -5167.131913489616,
+        -186.29413270223995
       ],
       "size": [
         282.8333435058594,
@@ -1024,7 +1025,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            286
+            286,
+            304
           ]
         },
         {
@@ -1061,7 +1063,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 7,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1213,7 +1215,8 @@
             289,
             290,
             291,
-            293
+            293,
+            305
           ]
         }
       ],
@@ -1229,7 +1232,7 @@
       },
       "widgets_values": [
         "",
-        676880000,
+        1076446186,
         "randomize",
         "high",
         "auto",
@@ -1253,7 +1256,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 11,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1287,58 +1290,6 @@
       ]
     },
     {
-      "id": 167,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -2396.96467663717,
-        832.6994471858573
-      ],
-      "size": [
-        413.2833251953125,
-        415.29998779296875
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "value",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "title": "Prompt - custom",
-      "properties": {
-        "Node name for S&R": "PrimitiveStringMultiline",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.14.1"
-      },
-      "widgets_values": [
-        "0-1.5s:\nExtreme wide establishing shot. In a dark snowy night, the main character and partner crouch low and move through broken concrete rubble. Heavy snow fills the air. A dimly lit side door is visible far in the background.\n\n5-3s:\nMedium-wide tracking shot. The two tactical characters move carefully past shattered concrete, broken walls, and twisted steel bars. The main character raises one hand, silently signaling the partner to stop.\n\n3-4.5s:\nClose shot. The main character presses against a damaged wall and peeks around the corner. In the blurred background, the side door and the silhouette of one white-clothed guard are visible under weak light.\n\n4.5-7s:\nTwo-character close-up. The main character turns slightly toward the partner and whispers: “One guard at the side door. Wait for my signal.” The partner nods subtly, gripping their weapon, focused and tense.\n\n7-8.5s:\nLow-angle tracking shot. The main character moves fast and silently along the base of the wall, almost like a shadow. Snow streaks across the lens, and the armor edges catch cold blue light.\n\n8.5-11s:\nSide backlight shot near a lamp post. The main character slips behind the side door area and silently approaches the white-clothed guard. The guard remains unaware.\n\n11-12s:\nAction close-up. There is only one guard beside the side door, wearing white clothing and standing out clearly in the dark snowy night. The main character suddenly approaches from behind, restrains the guard, and quickly subdues them. The action is clean, controlled, tactical, non-graphic, and not exaggerated.\n\n12-13s:\nExtreme close-up. After subduing the white-clothed guard, the main character crouches in the shadow beside the side door, turns toward the partner, and gives a clear hand signal with one hand. Focus the image on the “signal” action. Do not include any radio response or extra complicated plot elements.\n\n13-14s:\nExplosive final shot. The partner kicks open the main door. Snow, dust, and broken door fragments burst outward. Bright white light floods from inside the building. The partner shouts: “FBI!”"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
       "id": 168,
       "type": "KimiCliDirect",
       "pos": [
@@ -1350,7 +1301,7 @@
         444
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1358,7 +1309,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 304
         },
         {
           "localized_name": "video",
@@ -1457,7 +1408,8 @@
           "slot_index": 0,
           "links": [
             297,
-            298
+            298,
+            300
           ]
         },
         {
@@ -1468,6 +1420,7 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "KimiCliDirect",
         "ue_properties": {
           "widget_ue_connectable": {
             "prompt": true,
@@ -1477,12 +1430,11 @@
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "KimiCliDirect"
+        }
       },
       "widgets_values": [
         "",
-        "You are an elite advertisement video prompt engineer specializing in Dreamina Seedance 2.0 commercial generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create COMMERCIAL VIDEO SEGMENTS — structured advertisements with product placement, branding, and calls-to-action — NOT generic cinematic scenes and NOT storyboard documents.\n\n## CORE TASK\n\n1. **Reference Analysis**: Carefully examine all provided reference materials.\n   - **Images**: Identify subjects, products, costumes, props, colors, textures, packaging, brand elements, and spatial layouts. Note which image shows what (e.g., Image 1 = character front view, Image 5 = product packaging, Image 6 = scene/background, Image 7 = brand logo/color reference).\n   - **Videos**: Analyze motion patterns, camera movement (pan, tilt, dolly, orbit, handheld, static product hero), pacing, transitions, visual effects, and overall commercial editing language. Note what each video demonstrates (e.g., Video 1 = product interaction motion, Video 2 = camera movement style, Video 3 = pacing/transition reference).\n\n2. **Commercial Narrative Arc (MANDATORY)**:\n   Every ad prompt MUST follow a proven advertising structure adapted to the 15-second segment format. Choose the arc that fits the ad type:\n\n   **Problem-Solution Arc (Health/Beauty/Office products):**\n   - 0-3s: HOOK — Relatable problem moment (tired eyes, dry skin, stress, clutter)\n   - 3-7s: PROBLEM ESCALATION — Show the pain point affecting daily life\n   - 7-11s: PRODUCT REVEAL — Product appears, user interacts with it, applies/uses it\n   - 11-14s: TRANSFORMATION / RELIEF — Result, satisfaction, improved state\n   - 14-15s: CTA — Product hero shot with brand name visible\n\n   **Dramatic Reveal Arc (Food/Beverage/Luxury):**\n   - 0-3s: ATMOSPHERE — Cinematic setup, mood, environment, character enters\n   - 3-7s: BUILD-UP — Anticipation, character approaches product, dramatic lighting\n   - 7-11s: THE MOMENT — Product interaction (eating, drinking, unboxing), sensory reaction\n   - 11-14s: PAYOFF — Emotional/physical satisfaction, product beauty shot\n   - 14-15s: CTA — Brand logo, product packaging, tagline\n\n   **Lifestyle Aspirational Arc (Fashion/Home/Lifestyle):**\n   - 0-4s: DREAM SETUP — Beautiful environment, aspirational character moment\n   - 4-8s: PRODUCT INTEGRATION — Product appears naturally in the lifestyle context\n   - 8-12s: BENEFIT IN ACTION — Character using/enjoying the product effortlessly\n   - 12-15s: CTA — Product close-up with brand identity, tagline, or offer\n\n   **Product Demo Arc (Tech/Appliances/Tools):**\n   - 0-3s: PROBLEM STATEMENT — Show inefficiency, old way, frustration\n   - 3-8s: PRODUCT INTRODUCTION — Product enters, features visible, sleek design\n   - 8-13s: DEMONSTRATION — Product in use, transformation happening, before/after\n   - 13-15s: CTA — Product hero shot, brand name, key benefit text\n\n3. **Prompt Architecture (Seedance Ad Formula)**:\n   Construct the prompt following Seedance 2.0's proven structure with commercial additions:\n\n   **REQUIRED — Subject + Product + Motion:**\n   - Define WHO clearly: appearance, clothing, distinguishing features. Lock to reference images.\n   - Define WHAT PRODUCT: name, packaging, color, shape, size. Lock to reference images.\n   - Define WHAT THEY ARE DOING: specific consumer action verbs — applying, drinking, eating, using, interacting, reacting. Movement direction, speed, posture changes.\n   - Use natural, descriptive language. Seedance understands \"she slowly unscrews the cap and tilts the bottle\" better than \"product use animation.\"\n\n   **REQUIRED — Commercial Environment + Aesthetics:**\n   - Environment: spatial setting that supports the ad narrative (office, kitchen, library, bedroom, street). Time of day, weather, architectural details.\n   - Aesthetics: color palette tied to brand mood (cool blues for health, warm ambers for food, clean whites for tech). Lighting style (fluorescent office, golden hour, dramatic chiaroscuro, soft beauty light).\n   - Product lighting: product must be hero-lit — clean, visible, appealing. No shadows obscuring the product.\n\n   **ADVANCED — Camera + Movement/Cut + Audio:**\n   - Camera: commercial shot language — wide establishing, medium two-shot, close-up detail, product hero, extreme close-up reaction. Lens feel (shallow depth of field for product beauty, anamorphic for cinematic ads).\n   - Movement/Cut: commercial editing pace — quick cuts for energy, slow push-in for intimacy, match cuts for product transitions, whip pans for dynamism.\n   - Audio: ambient sound design (office hum, kitchen sounds, nature), music mood (upbeat for problem-solution, dramatic orchestral for cinematic, gentle acoustic for lifestyle), diegetic product sounds (spray, pour, crunch, click).\n\n4. **Reference Integration Protocol**:\n   - When images provide subject references, explicitly lock those visual attributes: \"The character wears the exact same cream-colored trench coat and red scarf as shown in Image 1.\"\n   - When images provide product references, lock product details: \"The product is the same amber glass bottle with white pump dispenser shown in Image 2, positioned center-frame under soft key light.\"\n   - When videos provide motion reference, describe the commercial action in words: \"The character performs the same surprised-then-delighted reaction sequence as the woman in Video 1 — eyes widening, then a slow satisfied smile.\"\n   - When videos provide camera motion reference: \"The camera executes the same slow orbit around the product as shown in Video 2, starting wide and tightening to a beauty close-up.\"\n   - When multiple videos are provided for track completion: \"Video 1 shows [ending frame/scene]. Video 2 shows [opening frame/scene]. The generated bridge segment must seamlessly transition from the end of Video 1 to the beginning of Video 2, preserving character consistency and commercial editing pace.\"\n   - Respect the Seedance 3-video / 15-second limit. If the user provides more than 3 videos, prioritize the most relevant 3 for the generation task.\n\n5. **Text Rendering Awareness (if applicable)**:\n   - If the ad requires on-screen text (slogans, product names, offer text, subtitles):\n     - Content: exact text strings\n     - Positioning: bottom-center for subtitles, top-left for logos, center for hero text\n     - Style: font aesthetic tied to brand, color, outline, animation (fade in, typewriter, pop, slide)\n   - Note: Seedance automatically identifies context for font matching, but explicit guidance improves accuracy.\n\n6. **Product Placement Rules**:\n   - Product must be clearly visible for at least 3 seconds within the 15-second segment.\n   - Product should receive hero lighting — clean, well-lit, no distracting shadows.\n   - Product packaging/label must be readable where possible.\n   - Product interaction must look natural and appealing — never awkward or forced.\n   - For food/beverage: show texture, steam, condensation, freshness cues.\n   - For beauty/health: show application motion, absorption, skin glow, transformation.\n   - For tech/appliances: show sleek design, clean lines, modern materials, LED indicators.\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output as a single flowing paragraph. Target: **200–500 words** for simple ad segments; **400–700 words** for complex multi-reference ad segments.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must include: ad type classification, commercial narrative arc timing, subject description with reference locks, product description with reference locks, consumer action/motion, environment with lighting, camera work, audio cues, and product placement rules.\n7. **NATURAL LANGUAGE**: Write in fluent, cinematic prose with commercial awareness. Avoid technical animation jargon. Seedance performs best with descriptive, scene-direction-style descriptions.\n\n## PROHIBITIONS\n- NEVER output multiple prompt variants. Output ONE unified prompt.\n- NEVER include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- NEVER use vague placeholders like \"beautiful scene\" or \"high quality.\" Be specific about what the character does, how the product is used, and in what environment.\n- NEVER ignore the reference images/video. The prompt must explicitly incorporate visual details from the references.\n- NEVER generate storyboard descriptions, shot lists, or production documents. The output is a VIDEO GENERATION PROMPT for a single continuous 15-second ad segment.\n- NEVER omit the product from the prompt. Every ad prompt must explicitly describe the product and its placement.\n- NEVER omit the commercial narrative arc. The prompt must guide Seedance through a clear ad structure with timed beats.",
+        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3×3 short-film storyboard grid.",
         "",
         300
       ]
@@ -1499,7 +1451,7 @@
         332
       ],
       "flags": {},
-      "order": 13,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1578,14 +1530,14 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "RegexExtract",
         "ue_properties": {
           "widget_ue_connectable": {
             "string": true
           },
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "RegexExtract"
+        }
       },
       "widgets_values": [
         "\\[\\[PROMPT\\]\\]([\\s\\S]*?)\\[\\[/PROMPT\\]\\]",
@@ -1609,7 +1561,7 @@
         160
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -1634,15 +1586,15 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 15s keyframes flat: A - Problem-Solution Ad (Health/Beauty/Office)"
+        "storyboard/short film storyboard grid: A - Full 9-Panel Short-Film Grid (Recommended)"
       ]
     },
     {
@@ -1657,7 +1609,7 @@
         336
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1681,15 +1633,15 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PromptTemplateLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "PromptTemplateLoader"
+        }
       },
       "widgets_values": [
-        "video/seedance ad video prompt engineer 15s keyframes flat: system_prompt"
+        "storyboard/short film storyboard grid: system_prompt"
       ]
     },
     {
@@ -1704,7 +1656,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 14,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1723,12 +1675,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "PreviewAny",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.7",
           "input_ue_unconnectable": {}
         },
-        "Node name for S&R": "PreviewAny",
         "cnr_id": "comfy-core",
         "ver": "0.18.1",
         "enableTabs": false,
@@ -1743,6 +1695,239 @@
         null,
         null,
         null
+      ]
+    },
+    {
+      "id": 173,
+      "type": "SaveText",
+      "pos": [
+        -3683.467719252163,
+        745.4235200791942
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 300
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveText",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "shortfilm-img-15s-debug",
+        "overwrite",
+        false,
+        "txt"
+      ]
+    },
+    {
+      "id": 174,
+      "type": "SaveText",
+      "pos": [
+        -1614.8799654003428,
+        470.5649949491939
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 301
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveText",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "shortfilm-templates-prompt-15s-debug",
+        "overwrite",
+        false,
+        "txt"
+      ]
+    },
+    {
+      "id": 175,
+      "type": "LoadImage",
+      "pos": [
+        -2587.787000108215,
+        929.9566927698193
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "short_frames_00001_.png",
+        "image"
       ]
     }
   ],
@@ -1794,14 +1979,6 @@
       157,
       0,
       "VIDEO"
-    ],
-    [
-      281,
-      150,
-      0,
-      103,
-      1,
-      "IMAGE"
     ],
     [
       283,
@@ -1898,6 +2075,38 @@
       162,
       6,
       "STRING"
+    ],
+    [
+      300,
+      168,
+      0,
+      173,
+      0,
+      "STRING"
+    ],
+    [
+      301,
+      118,
+      0,
+      174,
+      0,
+      "STRING"
+    ],
+    [
+      304,
+      159,
+      0,
+      168,
+      0,
+      "IMAGE"
+    ],
+    [
+      305,
+      162,
+      0,
+      118,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1953,10 +2162,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6209213230591571,
+      "scale": 0.4665073802097334,
       "offset": [
-        1412.9023219794517,
-        506.4831710117112
+        1902.9803052941115,
+        801.8526728522019
       ]
     },
     "ue_links": [],
