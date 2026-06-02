@@ -1,7 +1,7 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 176,
+  "last_node_id": 180,
   "last_link_id": 303,
   "nodes": [
     {
@@ -1698,240 +1698,7 @@
       ]
     },
     {
-      "id": 173,
-      "type": "SaveText",
-      "pos": [
-        -3683.467719252163,
-        745.4235200791942
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 300
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "shortfilm-img-15s-debug",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
-      "id": 174,
-      "type": "SaveText",
-      "pos": [
-        -1614.8799654003428,
-        470.5649949491939
-      ],
-      "size": [
-        400,
-        273.3333435058594
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "widget": {
-            "name": "text"
-          },
-          "link": 301
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "mode",
-          "name": "mode",
-          "type": "COMBO",
-          "widget": {
-            "name": "mode"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "append_timestamp",
-          "name": "append_timestamp",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "append_timestamp"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "subfolder",
-          "name": "subfolder",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "subfolder"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SaveText",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "",
-        "shortfilm-templates-prompt-15s-debug",
-        "overwrite",
-        false,
-        "txt"
-      ]
-    },
-    {
-      "id": 175,
-      "type": "LoadImage",
-      "pos": [
-        -2587.787000108215,
-        929.9566927698193
-      ],
-      "size": [
-        282.8333435058594,
-        340
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "image",
-          "name": "image",
-          "type": "COMBO",
-          "widget": {
-            "name": "image"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "choose file to upload",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "IMAGE",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": []
-        },
-        {
-          "localized_name": "MASK",
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "short_frames_00001_.png",
-        "image"
-      ]
-    },
-    {
-      "id": 173,
+      "id": 177,
       "type": "PrimitiveStringMultiline",
       "pos": [
         -2686,
@@ -1983,7 +1750,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 178,
       "type": "JoinStrings",
       "pos": [
         -2400,
@@ -2033,7 +1800,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 179,
       "type": "PrimitiveStringMultiline",
       "pos": [
         -5190,
@@ -2085,7 +1852,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 180,
       "type": "JoinStrings",
       "pos": [
         -4900,
@@ -2148,7 +1915,7 @@
       214,
       120,
       0,
-      174,
+      178,
       0,
       "STRING"
     ],
@@ -2244,7 +2011,7 @@
       295,
       170,
       0,
-      176,
+      180,
       0,
       "STRING"
     ],
@@ -2284,7 +2051,7 @@
       300,
       168,
       0,
-      173,
+      177,
       0,
       "STRING"
     ],
@@ -2292,7 +2059,7 @@
       301,
       118,
       0,
-      174,
+      178,
       0,
       "STRING"
     ],
@@ -2314,15 +2081,15 @@
     ],
     [
       300,
-      173,
+      177,
       0,
-      174,
+      178,
       1,
       "STRING"
     ],
     [
       301,
-      174,
+      178,
       0,
       118,
       8,
@@ -2330,15 +2097,15 @@
     ],
     [
       302,
-      175,
+      179,
       0,
-      176,
+      180,
       1,
       "STRING"
     ],
     [
       303,
-      176,
+      180,
       0,
       168,
       8,
