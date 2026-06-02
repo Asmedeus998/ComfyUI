@@ -459,7 +459,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS \u2014 structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
+        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS — structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
         "",
         300
       ]
@@ -619,7 +619,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance short film video prompt engineer: B - Character + Scene \u2014 Build a Narrative Segment from Scratch"
+        "video/seedance short film video prompt engineer: B - Character + Scene — Build a Narrative Segment from Scratch"
       ]
     },
     {
@@ -1371,7 +1371,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3\u00d73 short-film storyboard grid.",
+        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3×3 short-film storyboard grid.",
         "",
         300
       ]
@@ -1683,7 +1683,7 @@
         "ver": "0.14.1"
       },
       "widgets_values": [
-        "man too delusional on "
+        "man too much drinking FANTA until he hallunication he marry to the streamer and have baby together."
       ]
     },
     {
@@ -1805,8 +1805,8 @@
       "id": 180,
       "type": "JoinStrings",
       "pos": [
-        -4555.8002,
-        1414.2799
+        -4585.810443339999,
+        1418.56707762
       ],
       "size": [
         225,
@@ -2389,7 +2389,7 @@
     },
     {
       "id": 5,
-      "title": "\ud83e\udde0 Prompt Pipeline (Kimi)",
+      "title": "🧠 Prompt Pipeline (Kimi)",
       "bounding": [
         -2710,
         -310,
@@ -2415,10 +2415,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307068,
+      "scale": 1.4641000000000006,
       "offset": [
-        6249.2156453305,
-        -32.35210118549735
+        3078.243732839438,
+        -912.9970773501553
       ]
     },
     "ue_links": [],
