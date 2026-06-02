@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 175,
-  "last_link_id": 305,
+  "last_node_id": 176,
+  "last_link_id": 303,
   "nodes": [
     {
       "id": 103,
@@ -459,7 +459,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS — structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
+        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS \u2014 structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
         "",
         300
       ]
@@ -619,7 +619,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance short film video prompt engineer: B - Character + Scene — Build a Narrative Segment from Scratch"
+        "video/seedance short film video prompt engineer: B - Character + Scene \u2014 Build a Narrative Segment from Scratch"
       ]
     },
     {
@@ -1434,7 +1434,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3×3 short-film storyboard grid.",
+        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3\u00d73 short-film storyboard grid.",
         "",
         300
       ]
@@ -1929,6 +1929,210 @@
         "short_frames_00001_.png",
         "image"
       ]
+    },
+    {
+      "id": 173,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -2686,
+        -200
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            300
+          ]
+        }
+      ],
+      "title": "Story Concept - Video",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "A LEGO minifigure soldier gets isekai'd into a fantasy world and must fight an army of elves to survive."
+      ]
+    },
+    {
+      "id": 174,
+      "type": "JoinStrings",
+      "pos": [
+        -2400,
+        -50
+      ],
+      "size": [
+        210,
+        120
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string1",
+          "type": "STRING",
+          "link": 214
+        },
+        {
+          "name": "string2",
+          "type": "STRING",
+          "link": 300
+        },
+        {
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            301
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        "\n\n"
+      ]
+    },
+    {
+      "id": 175,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -5190,
+        0
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "value",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            302
+          ]
+        }
+      ],
+      "title": "Story Concept - Storyboard",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "A LEGO minifigure soldier gets isekai'd into a fantasy world and must fight an army of elves to survive."
+      ]
+    },
+    {
+      "id": 176,
+      "type": "JoinStrings",
+      "pos": [
+        -4900,
+        100
+      ],
+      "size": [
+        210,
+        120
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string1",
+          "type": "STRING",
+          "link": 295
+        },
+        {
+          "name": "string2",
+          "type": "STRING",
+          "link": 302
+        },
+        {
+          "name": "delimiter",
+          "type": "STRING",
+          "widget": {
+            "name": "delimiter"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            303
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JoinStrings"
+      },
+      "widgets_values": [
+        "\n\n"
+      ]
     }
   ],
   "links": [
@@ -1944,8 +2148,8 @@
       214,
       120,
       0,
-      118,
-      8,
+      174,
+      0,
       "STRING"
     ],
     [
@@ -2040,8 +2244,8 @@
       295,
       170,
       0,
-      168,
-      8,
+      176,
+      0,
       "STRING"
     ],
     [
@@ -2107,6 +2311,38 @@
       118,
       0,
       "IMAGE"
+    ],
+    [
+      300,
+      173,
+      0,
+      174,
+      1,
+      "STRING"
+    ],
+    [
+      301,
+      174,
+      0,
+      118,
+      8,
+      "STRING"
+    ],
+    [
+      302,
+      175,
+      0,
+      176,
+      1,
+      "STRING"
+    ],
+    [
+      303,
+      176,
+      0,
+      168,
+      8,
+      "STRING"
     ]
   ],
   "groups": [
@@ -2136,7 +2372,7 @@
     },
     {
       "id": 5,
-      "title": "🧠 Prompt Pipeline (Kimi)",
+      "title": "\ud83e\udde0 Prompt Pipeline (Kimi)",
       "bounding": [
         -2710,
         -310,
