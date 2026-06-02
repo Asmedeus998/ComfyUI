@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 185,
-  "last_link_id": 313,
+  "last_node_id": 187,
+  "last_link_id": 315,
   "nodes": [
     {
       "id": 103,
@@ -16,8 +16,8 @@
         748
       ],
       "flags": {},
-      "order": 22,
-      "mode": 0,
+      "order": 12,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -260,8 +260,8 @@
         384
       ],
       "flags": {},
-      "order": 23,
-      "mode": 0,
+      "order": 13,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -326,7 +326,7 @@
         444
       ],
       "flags": {},
-      "order": 19,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -434,7 +434,8 @@
           "links": [
             215,
             244,
-            301
+            301,
+            315
           ]
         },
         {
@@ -476,7 +477,7 @@
         332
       ],
       "flags": {},
-      "order": 20,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -681,7 +682,7 @@
         541.2333374023438
       ],
       "flags": {},
-      "order": 21,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -734,7 +735,7 @@
         474.5
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -769,8 +770,8 @@
         448
       ],
       "flags": {},
-      "order": 24,
-      "mode": 0,
+      "order": 18,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -929,8 +930,8 @@
         555.8333129882812
       ],
       "flags": {},
-      "order": 25,
-      "mode": 0,
+      "order": 19,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -999,7 +1000,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 16,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1169,7 +1170,7 @@
       },
       "widgets_values": [
         "",
-        1713512227,
+        841413628,
         "randomize",
         "high",
         "auto",
@@ -1193,7 +1194,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 17,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1238,7 +1239,7 @@
         444
       ],
       "flags": {},
-      "order": 13,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1346,7 +1347,8 @@
           "links": [
             297,
             298,
-            300
+            300,
+            314
           ]
         },
         {
@@ -1388,7 +1390,7 @@
         332
       ],
       "flags": {},
-      "order": 14,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1593,7 +1595,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 15,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1638,8 +1640,8 @@
       "id": 177,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        -2672.3589803000004,
-        1117.3327595999995
+        -2584.1717366566,
+        1571.2376901174991
       ],
       "size": [
         400,
@@ -1671,7 +1673,7 @@
           ]
         }
       ],
-      "title": "Story Concept - Video",
+      "title": "Story Concept",
       "properties": {
         "Node name for S&R": "PrimitiveStringMultiline",
         "ue_properties": {
@@ -1750,70 +1752,18 @@
       ]
     },
     {
-      "id": 179,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -5210,
-        1690
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "value",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "STRING",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            302
-          ]
-        }
-      ],
-      "title": "Story Concept - Storyboard",
-      "properties": {
-        "Node name for S&R": "PrimitiveStringMultiline",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.14.1"
-      },
-      "widgets_values": [
-        "A story about how a man SIMP on girl streamer on internet."
-      ]
-    },
-    {
       "id": 180,
       "type": "JoinStrings",
       "pos": [
-        -4585.810443339999,
-        1418.56707762
+        -4354.967364391099,
+        1239.5988478731
       ],
       "size": [
         225,
         132
       ],
       "flags": {},
-      "order": 9,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1876,7 +1826,7 @@
         340
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1939,7 +1889,7 @@
         340
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -2004,7 +1954,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -2062,7 +2012,7 @@
         72
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -2104,7 +2054,7 @@
         121.30000305175781
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -2134,6 +2084,178 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 186,
+      "type": "SaveText",
+      "pos": [
+        -3788.306427911606,
+        884.1962831211408
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 314
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveText",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "shortfilm-img-15s",
+        "overwrite",
+        false,
+        "txt"
+      ]
+    },
+    {
+      "id": 187,
+      "type": "SaveText",
+      "pos": [
+        -1573.9761678796394,
+        1020.6258534600515
+      ],
+      "size": [
+        400,
+        273.3333435058594
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 315
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "mode",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "append_timestamp",
+          "name": "append_timestamp",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "append_timestamp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subfolder",
+          "name": "subfolder",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subfolder"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "SaveText"
+      },
+      "widgets_values": [
+        "",
+        "shortfilm-templates-prompt-15s",
+        "overwrite",
+        false,
+        "txt"
+      ]
     }
   ],
   "links": [
@@ -2291,7 +2413,7 @@
     ],
     [
       302,
-      179,
+      177,
       0,
       180,
       1,
@@ -2360,6 +2482,22 @@
       118,
       0,
       "IMAGE"
+    ],
+    [
+      314,
+      168,
+      0,
+      186,
+      0,
+      "STRING"
+    ],
+    [
+      315,
+      118,
+      0,
+      187,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
@@ -2401,7 +2539,7 @@
     },
     {
       "id": 6,
-      "title": "1. load storyboard + characters + video reference",
+      "title": "1. load storyboard + characters + story concept",
       "bounding": [
         -5943.126546814454,
         -199.6070105416606,
@@ -2415,10 +2553,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.38554328942953164,
+      "scale": 0.7513148009015783,
       "offset": [
-        2632.9431020190655,
-        1027.86590152965
+        6620.255436523081,
+        390.7033965833978
       ]
     },
     "ue_links": [],
