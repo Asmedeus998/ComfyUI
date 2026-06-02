@@ -1,22 +1,22 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 201,
-  "last_link_id": 416,
+  "last_node_id": 185,
+  "last_link_id": 371,
   "nodes": [
     {
       "id": 28,
       "type": "GrokImageEditDirect",
       "pos": [
-        6120,
-        -3220
+        6118.666813972321,
+        -3217.333358613544
       ],
       "size": [
         333.3333435058594,
         460
       ],
       "flags": {},
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -31,21 +31,21 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 409
+          "link": 384
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 410
+          "link": 385
         },
         {
           "localized_name": "image_3",
           "name": "image_3",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 386
         },
         {
           "localized_name": "api_key",
@@ -111,7 +111,6 @@
           "link": null
         },
         {
-          "localized_name": "image",
           "name": "image",
           "shape": 7,
           "type": "IMAGE",
@@ -144,7 +143,7 @@
         "",
         "1K",
         1,
-        288570576,
+        682614288,
         "randomize",
         "auto"
       ]
@@ -153,8 +152,8 @@
       "id": 25,
       "type": "GoogleGeminiDirect",
       "pos": [
-        5676.290733512872,
-        -3268.272254091158
+        5676.666531032258,
+        -3217.333358613544
       ],
       "size": [
         330,
@@ -170,21 +169,21 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 370
         },
         {
           "localized_name": "image_1",
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 407
+          "link": null
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 408
+          "link": null
         },
         {
           "localized_name": "image_3",
@@ -346,7 +345,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        880009079454868,
+        184129637472416,
         "randomize",
         "auto",
         "1K",
@@ -363,10 +362,10 @@
       ],
       "size": [
         333.3333435058594,
-        636
+        608
       ],
       "flags": {},
-      "order": 26,
+      "order": 20,
       "mode": 4,
       "inputs": [
         {
@@ -512,7 +511,6 @@
           "link": null
         },
         {
-          "localized_name": "image",
           "name": "image",
           "shape": 7,
           "type": "IMAGE",
@@ -547,7 +545,7 @@
         2048,
         2048,
         1,
-        1537261780,
+        1127440434,
         "randomize"
       ]
     },
@@ -555,8 +553,8 @@
       "id": 131,
       "type": "SaveImage",
       "pos": [
-        6540,
-        -2460
+        6590,
+        -2620
       ],
       "size": [
         333.3333435058594,
@@ -602,18 +600,18 @@
       "id": 133,
       "type": "OpenAIGPTImageDirect",
       "pos": [
-        7058.40414635456,
-        -3215.8473825295405
+        6992.98179883928,
+        -3192.0639418494397
       ],
       "size": [
         333.3333435058594,
-        604
+        576
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 28,
-      "mode": 0,
+      "order": 21,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -627,14 +625,14 @@
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 411
+          "link": null
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 412
+          "link": null
         },
         {
           "localized_name": "image_3",
@@ -748,7 +746,6 @@
           "link": null
         },
         {
-          "localized_name": "image",
           "name": "image",
           "shape": 7,
           "type": "IMAGE",
@@ -777,7 +774,7 @@
       },
       "widgets_values": [
         "",
-        1831518570,
+        1519854235,
         "randomize",
         "high",
         "auto",
@@ -793,16 +790,16 @@
       "id": 134,
       "type": "SaveImage",
       "pos": [
-        7112.767600858062,
-        -2496.8656422910603
+        7030,
+        -2620
       ],
       "size": [
         333.3333435058594,
         391.6666564941406
       ],
       "flags": {},
-      "order": 29,
-      "mode": 0,
+      "order": 28,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -821,7 +818,7 @@
         }
       ],
       "outputs": [],
-      "title": "Save GPT Image 2 Image",
+      "title": "Save GPT Image 1.5 Image",
       "properties": {
         "Node name for S&R": "SaveImage",
         "cnr_id": "comfy-core",
@@ -833,22 +830,22 @@
         }
       },
       "widgets_values": [
-        "rebrand-gpt"
+        "GPT_Image_1.5"
       ]
     },
     {
       "id": 90,
       "type": "84c2d189-ef35-4317-b56d-3bed5045314c",
       "pos": [
-        4622.450563906786,
-        -3202.07174806894
+        4602.666097016772,
+        -3217.333358613544
       ],
       "size": [
         410,
         510
       ],
       "flags": {},
-      "order": 22,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -856,25 +853,25 @@
           "localized_name": "pixels",
           "name": "image_1",
           "type": "IMAGE",
-          "link": 403
+          "link": 377
         },
         {
           "localized_name": "image_2",
           "name": "image_2",
           "type": "IMAGE",
-          "link": 404
+          "link": 378
         },
         {
           "localized_name": "image_3",
           "name": "image_3",
           "type": "IMAGE",
-          "link": 415
+          "link": 379
         },
         {
           "localized_name": "image_4",
           "name": "image_4",
           "type": "IMAGE",
-          "link": 416
+          "link": 380
         },
         {
           "name": "text",
@@ -969,36 +966,36 @@
       "id": 128,
       "type": "4bef21c6-ad90-465c-b6db-791064306e5c",
       "pos": [
-        5120,
-        -3220
+        5124.666254565349,
+        -3217.333358613544
       ],
       "size": [
         440,
         500
       ],
       "flags": {},
-      "order": 24,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
           "label": "image 1",
           "name": "image1",
           "type": "IMAGE",
-          "link": 400
+          "link": 381
         },
         {
           "label": "image 2 (optional)",
           "name": "image2",
           "shape": 7,
           "type": "IMAGE",
-          "link": 399
+          "link": 382
         },
         {
           "label": "image 3 (optional)",
           "name": "image3",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 383
         },
         {
           "name": "prompt",
@@ -1125,22 +1122,22 @@
         }
       },
       "widgets_values": [
-        "rebrand-Flux2_dev"
+        "Flux2_dev"
       ]
     },
     {
       "id": 129,
       "type": "SaveImage",
       "pos": [
-        5110,
-        -2620
+        5110.666747778858,
+        -2617.3335025370197
       ],
       "size": [
         440,
         390
       ],
       "flags": {},
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1172,22 +1169,22 @@
         }
       },
       "widgets_values": [
-        "rebrand-Qwen_2511"
+        "Qwen_2511"
       ]
     },
     {
       "id": 26,
       "type": "SaveImage",
       "pos": [
-        5608.278699371586,
-        -2629.2126601663867
+        5660.66671541309,
+        -2617.3335025370197
       ],
       "size": [
         360,
         380
       ],
       "flags": {},
-      "order": 19,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1226,22 +1223,22 @@
         }
       },
       "widgets_values": [
-        "rebrand-gemini"
+        "Nano_Banana_Pro"
       ]
     },
     {
       "id": 29,
       "type": "SaveImage",
       "pos": [
-        6082.27408804646,
-        -2587.1247143209116
+        6140.665963064168,
+        -2617.3335025370197
       ],
       "size": [
         340,
         380
       ],
       "flags": {},
-      "order": 21,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1273,7 +1270,7 @@
         }
       },
       "widgets_values": [
-        "rebrand-grok"
+        "Grok"
       ]
     },
     {
@@ -1288,7 +1285,7 @@
         390
       ],
       "flags": {},
-      "order": 16,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1327,22 +1324,22 @@
         }
       },
       "widgets_values": [
-        "rebrand-Flux2-Klein-4b-base"
+        "Flux2-Klein-4b-base"
       ]
     },
     {
       "id": 3,
       "type": "fc6d7b70-f58e-4eeb-8e52-b390a2d5fd88",
       "pos": [
-        4133.455728609645,
-        -3213.2346891314282
+        4100.666372752719,
+        -3217.333358613544
       ],
       "size": [
         390,
         500
       ],
       "flags": {},
-      "order": 17,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1382,22 +1379,22 @@
           "label": "reference_image1",
           "name": "image",
           "type": "IMAGE",
-          "link": 405
+          "link": 373
         },
         {
           "name": "image_2",
           "type": "IMAGE",
-          "link": 406
+          "link": 374
         },
         {
           "name": "image_3",
           "type": "IMAGE",
-          "link": 413
+          "link": 375
         },
         {
           "name": "image_4",
           "type": "IMAGE",
-          "link": 414
+          "link": 376
         }
       ],
       "outputs": [
@@ -1458,11 +1455,78 @@
       "widgets_values": []
     },
     {
+      "id": 164,
+      "type": "LoadImage",
+      "pos": [
+        1120.891466758435,
+        -2634.6566917561704
+      ],
+      "size": [
+        225,
+        340
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            348
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "sd_outfit_2.png",
+        "image"
+      ]
+    },
+    {
       "id": 166,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        3355.527342402187,
-        -2354.1416436004897
+        3000.505712080311,
+        -2461.0932068533048
       ],
       "size": [
         413.2833251953125,
@@ -1471,7 +1535,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1490,7 +1554,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            395
+            315
           ]
         }
       ],
@@ -1512,6 +1576,122 @@
       "bgcolor": "#353"
     },
     {
+      "id": 167,
+      "type": "Reroute",
+      "pos": [
+        3659.2639017354522,
+        -2447.7235294212765
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "widget": {
+            "name": "value"
+          },
+          "link": 315
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 169,
+      "type": "LoadImage",
+      "pos": [
+        1443.6148096870038,
+        -2633.049564265705
+      ],
+      "size": [
+        225,
+        372
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            349
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "de2d6c30-fad7-458c-b40f-9b1980571c4f.jpg",
+        "image"
+      ]
+    },
+    {
       "id": 172,
       "type": "LoadImage",
       "pos": [
@@ -1520,12 +1700,12 @@
       ],
       "size": [
         225,
-        344
+        340
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 0,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -1574,7 +1754,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "hydra-ai-project-brand-oneline.jpeg",
+        "brown_moisturizer_bottle.jpg",
         "image"
       ]
     },
@@ -1587,12 +1767,12 @@
       ],
       "size": [
         225,
-        344
+        340
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 1,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -1641,7 +1821,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "brown_moisturizer_bottle.jpg",
+        "2331317093890713432_2331317091332169902.jpg",
         "image"
       ]
     },
@@ -1654,12 +1834,12 @@
       ],
       "size": [
         225,
-        96
+        216
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1680,6 +1860,43 @@
           "label": "image2",
           "localized_name": "images.image2",
           "name": "images.image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 348
+        },
+        {
+          "label": "image3",
+          "localized_name": "images.image3",
+          "name": "images.image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 349
+        },
+        {
+          "label": "image4",
+          "localized_name": "images.image4",
+          "name": "images.image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image5",
+          "name": "images.image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image6",
+          "name": "images.image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image7",
+          "name": "images.image7",
           "shape": 7,
           "type": "IMAGE",
           "link": null
@@ -1717,7 +1934,7 @@
         72
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1751,15 +1968,15 @@
       "id": 176,
       "type": "BatchImagePreview",
       "pos": [
-        2395.8525931721297,
-        -3437.229250223609
+        4599.04641020947,
+        -3519.9086659459576
       ],
       "size": [
         305.29998779296875,
         104
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1776,7 +1993,8 @@
           "type": "IMAGE",
           "links": [
             365,
-            391
+            370,
+            372
           ]
         }
       ],
@@ -1802,7 +2020,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1868,7 +2086,7 @@
           "widget": {
             "name": "prompt"
           },
-          "link": 402
+          "link": null
         },
         {
           "localized_name": "system_prompt",
@@ -1878,7 +2096,7 @@
           "widget": {
             "name": "system_prompt"
           },
-          "link": 401
+          "link": null
         },
         {
           "localized_name": "model",
@@ -1929,8 +2147,8 @@
         }
       },
       "widgets_values": [
-        "Replace the text \"BOTANIKA\" on the lower half of the brown moisturizer bottle with \"HYDRA AI PROJECT\" in bold white sans-serif uppercase letters. Keep the exact bottle shape, brown glass material, pump dispenser, lighting, and white background unchanged. The new text should be the same size, position, and style as the original BOTANIKA text, following the curve of the cylindrical bottle. Preserve the existing \"HYDRATING MOISTURIZER\" text at the top and \"NATURAL INGREDIENTS · PLANT-POWERED\" text at the bottom unchanged. Photorealistic product photography, seamless integration.",
-        "You are a precision product photography editor. Your task is to examine the provided product and brand reference images, then generate a single optimized image editing prompt that replaces specific text on a product with new branding. The prompt must be wrapped in [[PROMPT]] and [[/PROMPT]] tags. Output ONLY the prompt — no explanations, no markdown, no formatting. Always explicitly name both the original text to replace and the new text to insert.",
+        "Analyze these reference images and generate a unified fashion shoot prompt that captures the collection's aesthetic. Create one master prompt for AI image generation.",
+        "You are an elite fashion photography prompt generator.\n\nSTRICT OUTPUT RULES:\n1. Analyze the reference images internally. DO NOT output your analysis, thinking, or reasoning.\n2. DO NOT use markdown, bullet points, headers, bold text, or lists.\n3. Output ONLY a single flowing paragraph prompt (150-250 words).\n4. The prompt must be wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n5. NOTHING outside the [[PROMPT]] tags will be used.\n6. The prompt itself must include: subject, full outfit details, pose/expression, lighting, background, photography style, mood/atmosphere.\n7. Use vivid fashion-industry language: editorial photography, fashion campaign, lookbook, haute couture, street style, cinematic lighting, softbox, golden hour, minimalist backdrop, textured fabric, sharp focus, depth of field.",
         "",
         300
       ],
@@ -1941,17 +2159,17 @@
       "id": 181,
       "type": "PreviewAny",
       "pos": [
-        2982.932800905174,
-        -2998.504845717068
+        2972.5277469434845,
+        -2994.0455368763437
       ],
       "size": [
         225,
-        152
+        8
       ],
       "flags": {
-        "collapsed": false
+        "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1987,8 +2205,8 @@
       "id": 182,
       "type": "PreviewAny",
       "pos": [
-        2983.4903783930868,
-        -3209.746783601242
+        2941.5999014044655,
+        -3204.3415607640004
       ],
       "size": [
         225,
@@ -1997,7 +2215,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -2033,8 +2251,8 @@
       "id": 183,
       "type": "RegexExtract",
       "pos": [
-        2842.494880664672,
-        -2767.706173182858
+        2844.4421121917894,
+        -2863.00160310913
       ],
       "size": [
         400,
@@ -2043,7 +2261,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -2159,10 +2377,10 @@
       ],
       "size": [
         383.9166564941406,
-        500.79998779296875
+        715.2000122070312
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -2207,22 +2425,22 @@
       "id": 185,
       "type": "BatchImageSplitter",
       "pos": [
-        5265.801364950575,
-        -3658.9663471401805
+        4599,
+        -3380
       ],
       "size": [
         320,
         286
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
           "name": "images",
           "type": "IMAGE",
-          "link": 391
+          "link": 372
         }
       ],
       "outputs": [
@@ -2231,12 +2449,10 @@
           "name": "image_1",
           "type": "IMAGE",
           "links": [
-            400,
-            403,
-            405,
-            407,
-            409,
-            411
+            373,
+            377,
+            381,
+            384
           ]
         },
         {
@@ -2244,25 +2460,31 @@
           "name": "image_2",
           "type": "IMAGE",
           "links": [
-            399,
-            404,
-            406,
-            408,
-            410,
-            412
+            374,
+            378,
+            382,
+            385
           ]
         },
         {
           "localized_name": "image_3",
           "name": "image_3",
           "type": "IMAGE",
-          "links": null
+          "links": [
+            375,
+            379,
+            383,
+            386
+          ]
         },
         {
           "localized_name": "image_4",
           "name": "image_4",
           "type": "IMAGE",
-          "links": null
+          "links": [
+            376,
+            380
+          ]
         },
         {
           "localized_name": "image_5",
@@ -2304,168 +2526,6 @@
         }
       },
       "widgets_values": []
-    },
-    {
-      "id": 193,
-      "type": "Reroute",
-      "pos": [
-        3659.2639017354522,
-        -2447.7235294212765
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 395
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false,
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      }
-    },
-    {
-      "id": 197,
-      "type": "MarkdownNote",
-      "pos": [
-        -134.131586319725,
-        -3908.4997657136446
-      ],
-      "size": [
-        600,
-        1280.199951171875
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Guide",
-      "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.7",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "---\n\n# USER PROMPT TEMPLATES\n\nUse these as the actual user messages that accompany the images. Keep them minimal — the system prompt above carries all the behavioral weight.\n\n## TEMPLATE A: Direct Generation (Default)\nUse this when you only have reference images and want a generation prompt.\n\n```\nAnalyze the attached reference images and output a single optimized image generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n```\n\n## TEMPLATE B: With Explicit Focus\nUse this when you want to steer the model toward a specific image or intent.\n\n```\nAnalyze the attached reference images and output a single optimized image generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n\nFocus: Use the subject from image {N} as the dominant subject. Borrow lighting and mood from the remaining images. The intended output is a {product hero shot / editorial portrait / lifestyle flat lay / mirror selfie / cinematic scene}.\n```\n\n## TEMPLATE C: Prompt Evolver / Auditor\nUse this when you already have a draft prompt that needs to be corrected against the reference images. This overrides the default behavior to include an audit step.\n\n```\nAttached are reference images and an existing prompt below. Audit it against the images, correct any hallucinations or material errors, inject missing details, and output the refined generation prompt wrapped in [[PROMPT]] and [[/PROMPT]] tags.\n\nExisting prompt: {paste prompt here}\n```\n\n## TEMPLATE D: Style Transfer\nUse this when the subject is in one image and the desired style/atmosphere is in another.\n\n```\nAttached are reference images. Output a generation prompt for the subject shown in image {N}, rendered in the visual style, lighting, and mood of the remaining images. Wrap the output in [[PROMPT]] and [[/PROMPT]] tags.\n```\n\n## Guidelines for the User Prompt\n\n- **Stay minimal.** The system prompt already contains all the rules, audit steps, and output formats. A long user prompt risks conflicting with or diluting those instructions.\n- **Only add constraints that are situational**, such as \"Focus on image 2\" or \"This is for an editing model.\" Do not restate rules that already exist in the system prompt.\n- **Always attach the images first**, then the text. Most multimodal APIs process images in the order they appear in the context.\n- **If using Template C (Evolver)**, make sure the existing prompt is clearly delimited so the model doesn't confuse it with instructions.\n"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
-      "id": 200,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        1900.8471271857925,
-        -2748.1293323573414
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            402
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "rebrand/product rebrand: A - Direct Rebrand (Recommended)"
-      ]
-    },
-    {
-      "id": 201,
-      "type": "PromptTemplateLoader",
-      "pos": [
-        1966.5608286526567,
-        -2534.873481528346
-      ],
-      "size": [
-        270,
-        104
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "template",
-          "name": "template",
-          "type": "COMBO",
-          "widget": {
-            "name": "template"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "text",
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            401
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptTemplateLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "rebrand/product rebrand: system_prompt"
-      ]
     }
   ],
   "links": [
@@ -2526,8 +2586,16 @@
       "IMAGE"
     ],
     [
+      315,
+      166,
+      0,
+      167,
+      0,
+      "STRING"
+    ],
+    [
       316,
-      193,
+      167,
       0,
       3,
       3,
@@ -2535,7 +2603,7 @@
     ],
     [
       317,
-      193,
+      167,
       0,
       90,
       4,
@@ -2543,7 +2611,7 @@
     ],
     [
       318,
-      193,
+      167,
       0,
       128,
       3,
@@ -2551,7 +2619,7 @@
     ],
     [
       319,
-      193,
+      167,
       0,
       25,
       12,
@@ -2559,7 +2627,7 @@
     ],
     [
       320,
-      193,
+      167,
       0,
       28,
       6,
@@ -2567,7 +2635,7 @@
     ],
     [
       321,
-      193,
+      167,
       0,
       130,
       12,
@@ -2575,7 +2643,7 @@
     ],
     [
       322,
-      193,
+      167,
       0,
       133,
       6,
@@ -2595,6 +2663,22 @@
       0,
       174,
       1,
+      "IMAGE"
+    ],
+    [
+      348,
+      164,
+      0,
+      174,
+      2,
+      "IMAGE"
+    ],
+    [
+      349,
+      169,
+      0,
+      174,
+      3,
       "IMAGE"
     ],
     [
@@ -2662,7 +2746,15 @@
       "STRING"
     ],
     [
-      391,
+      370,
+      176,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ],
+    [
+      372,
       176,
       0,
       185,
@@ -2670,63 +2762,7 @@
       "IMAGE"
     ],
     [
-      395,
-      166,
-      0,
-      193,
-      0,
-      "STRING"
-    ],
-    [
-      399,
-      185,
-      1,
-      128,
-      1,
-      "IMAGE"
-    ],
-    [
-      400,
-      185,
-      0,
-      128,
-      0,
-      "IMAGE"
-    ],
-    [
-      401,
-      201,
-      0,
-      180,
-      9,
-      "STRING"
-    ],
-    [
-      402,
-      200,
-      0,
-      180,
-      8,
-      "STRING"
-    ],
-    [
-      403,
-      185,
-      0,
-      90,
-      0,
-      "IMAGE"
-    ],
-    [
-      404,
-      185,
-      1,
-      90,
-      1,
-      "IMAGE"
-    ],
-    [
-      405,
+      373,
       185,
       0,
       3,
@@ -2734,7 +2770,7 @@
       "IMAGE"
     ],
     [
-      406,
+      374,
       185,
       1,
       3,
@@ -2742,82 +2778,98 @@
       "IMAGE"
     ],
     [
-      407,
+      375,
       185,
-      0,
-      25,
-      1,
-      "IMAGE"
-    ],
-    [
-      408,
-      185,
-      1,
-      25,
       2,
-      "IMAGE"
-    ],
-    [
-      409,
-      185,
-      0,
-      28,
-      1,
-      "IMAGE"
-    ],
-    [
-      410,
-      185,
-      1,
-      28,
-      2,
-      "IMAGE"
-    ],
-    [
-      411,
-      185,
-      0,
-      133,
-      1,
-      "IMAGE"
-    ],
-    [
-      412,
-      185,
-      1,
-      133,
-      2,
-      "IMAGE"
-    ],
-    [
-      413,
-      185,
-      0,
       3,
       6,
       "IMAGE"
     ],
     [
-      414,
+      376,
       185,
-      1,
+      3,
       3,
       7,
       "IMAGE"
     ],
     [
-      415,
+      377,
       185,
       0,
+      90,
+      0,
+      "IMAGE"
+    ],
+    [
+      378,
+      185,
+      1,
+      90,
+      1,
+      "IMAGE"
+    ],
+    [
+      379,
+      185,
+      2,
       90,
       2,
       "IMAGE"
     ],
     [
-      416,
+      380,
+      185,
+      3,
+      90,
+      3,
+      "IMAGE"
+    ],
+    [
+      381,
+      185,
+      0,
+      128,
+      0,
+      "IMAGE"
+    ],
+    [
+      382,
       185,
       1,
-      90,
+      128,
+      1,
+      "IMAGE"
+    ],
+    [
+      383,
+      185,
+      2,
+      128,
+      2,
+      "IMAGE"
+    ],
+    [
+      384,
+      185,
+      0,
+      28,
+      1,
+      "IMAGE"
+    ],
+    [
+      385,
+      185,
+      1,
+      28,
+      2,
+      "IMAGE"
+    ],
+    [
+      386,
+      185,
+      2,
+      28,
       3,
       "IMAGE"
     ]
@@ -2830,8 +2882,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 185,
+          "lastLinkId": 371,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3217,7 +3269,7 @@
               }
             },
             "widgets_values": [
-              194699178529914,
+              1075159571342649,
               "randomize"
             ]
           },
@@ -4860,8 +4912,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 185,
+          "lastLinkId": 371,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5226,8 +5278,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 185,
+          "lastLinkId": 371,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6050,7 +6102,7 @@
               }
             },
             "widgets_values": [
-              106597950928356,
+              442813080919398,
               "randomize"
             ]
           },
@@ -7357,8 +7409,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 185,
+          "lastLinkId": 371,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -8305,7 +8357,7 @@
               }
             },
             "widgets_values": [
-              727293790745468,
+              897347108810140,
               "randomize",
               40,
               4,
@@ -8780,7 +8832,7 @@
   },
   "config": {},
   "extra": {
-    "frontendVersion": "1.43.16",
+    "frontendVersion": "1.45.11",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
@@ -8789,10 +8841,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.4879632301962526,
+      "scale": 0.19487171000000164,
       "offset": [
-        -3125.5622228779876,
-        3537.546643300533
+        1079.7640809312547,
+        5172.069328809513
       ]
     }
   },
