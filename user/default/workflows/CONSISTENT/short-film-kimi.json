@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 180,
-  "last_link_id": 303,
+  "last_node_id": 185,
+  "last_link_id": 313,
   "nodes": [
     {
       "id": 103,
@@ -16,8 +16,8 @@
         748
       ],
       "flags": {},
-      "order": 17,
-      "mode": 0,
+      "order": 22,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -260,8 +260,8 @@
         384
       ],
       "flags": {},
-      "order": 18,
-      "mode": 0,
+      "order": 23,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -318,15 +318,15 @@
       "id": 118,
       "type": "KimiCliDirect",
       "pos": [
-        -2134.2196019999997,
-        -201.1458480000004
+        -2178.754861999999,
+        -186.86421800000033
       ],
       "size": [
         420,
         444
       ],
       "flags": {},
-      "order": 7,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -334,7 +334,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 305
+          "link": 313
         },
         {
           "localized_name": "video",
@@ -459,7 +459,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS \u2014 structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
+        "You are an elite short-film and animation video generation prompt engineer specializing in Dreamina Seedance 2.0. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed video generation prompt optimized for Seedance's natural-language understanding and multimodal reference capabilities. You create NARRATIVE CINEMATIC SEGMENTS — structured short-film scenes with character arcs, emotional beats, and visual storytelling.",
         "",
         300
       ]
@@ -476,7 +476,7 @@
         332
       ],
       "flags": {},
-      "order": 11,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -619,7 +619,7 @@
         }
       },
       "widgets_values": [
-        "video/seedance short film video prompt engineer: B - Character + Scene \u2014 Build a Narrative Segment from Scratch"
+        "video/seedance short film video prompt engineer: B - Character + Scene — Build a Narrative Segment from Scratch"
       ]
     },
     {
@@ -681,7 +681,7 @@
         541.2333374023438
       ],
       "flags": {},
-      "order": 12,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -726,15 +726,15 @@
       "id": 144,
       "type": "PreviewImage",
       "pos": [
-        -3130,
-        470
+        -3170,
+        610
       ],
       "size": [
         293.6666564941406,
         474.5
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -769,8 +769,8 @@
         448
       ],
       "flags": {},
-      "order": 19,
-      "mode": 0,
+      "order": 24,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -929,8 +929,8 @@
         555.8333129882812
       ],
       "flags": {},
-      "order": 20,
-      "mode": 0,
+      "order": 25,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -986,75 +986,11 @@
       ]
     },
     {
-      "id": 159,
-      "type": "LoadImage",
-      "pos": [
-        -5167.131913489616,
-        -186.29413270223995
-      ],
-      "size": [
-        282.8333435058594,
-        340
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "image",
-          "name": "image",
-          "type": "COMBO",
-          "widget": {
-            "name": "image"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "choose file to upload",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "IMAGE",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            286,
-            304
-          ]
-        },
-        {
-          "localized_name": "MASK",
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "short.png",
-        "image"
-      ]
-    },
-    {
       "id": 162,
       "type": "OpenAIGPTImageDirect",
       "pos": [
-        -3800,
-        -20
+        -3840,
+        120
       ],
       "size": [
         333.3333435058594,
@@ -1063,7 +999,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1071,14 +1007,14 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
+          "link": 311
         },
         {
           "localized_name": "image_1",
           "name": "image_1",
           "shape": 7,
           "type": "IMAGE",
-          "link": 286
+          "link": null
         },
         {
           "localized_name": "image_2",
@@ -1216,7 +1152,8 @@
             290,
             291,
             293,
-            305
+            305,
+            313
           ]
         }
       ],
@@ -1232,7 +1169,7 @@
       },
       "widgets_values": [
         "",
-        1076446186,
+        1853237706,
         "randomize",
         "high",
         "auto",
@@ -1248,15 +1185,15 @@
       "id": 163,
       "type": "SaveImage",
       "pos": [
-        -3390,
-        -20
+        -3430,
+        120
       ],
       "size": [
         333.3333435058594,
         391.6666564941406
       ],
       "flags": {},
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1293,15 +1230,15 @@
       "id": 168,
       "type": "KimiCliDirect",
       "pos": [
-        -4660,
-        -120
+        -4700,
+        20
       ],
       "size": [
         420,
         444
       ],
       "flags": {},
-      "order": 6,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1309,7 +1246,7 @@
           "name": "images",
           "shape": 7,
           "type": "IMAGE",
-          "link": 304
+          "link": 307
         },
         {
           "localized_name": "video",
@@ -1434,7 +1371,7 @@
       },
       "widgets_values": [
         "",
-        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3\u00d73 short-film storyboard grid.",
+        "You are an elite cinematic pre-visualization director specializing in short-film and animation storyboard generation. Your sole function is to analyze reference images and videos provided by the user, then synthesize a single, highly detailed image generation prompt optimized for producing a multi-panel 3×3 short-film storyboard grid.",
         "",
         300
       ]
@@ -1443,15 +1380,15 @@
       "id": 169,
       "type": "RegexExtract",
       "pos": [
-        -4183.3846052,
-        481.53832149999914
+        -4230,
+        620
       ],
       "size": [
         320,
         332
       ],
       "flags": {},
-      "order": 8,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1553,15 +1490,15 @@
       "id": 170,
       "type": "PromptTemplateLoader",
       "pos": [
-        -5190,
-        240
+        -5367.3332561,
+        621.0770402
       ],
       "size": [
         400,
         160
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -1602,14 +1539,14 @@
       "type": "PromptTemplateLoader",
       "pos": [
         -5170,
-        510
+        1160
       ],
       "size": [
         400,
         336
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -1648,15 +1585,15 @@
       "id": 172,
       "type": "PreviewAny",
       "pos": [
-        -4660,
-        500
+        -4700,
+        640
       ],
       "size": [
         383.9333190917969,
         360.8333435058594
       ],
       "flags": {},
-      "order": 9,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1701,8 +1638,8 @@
       "id": 177,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        -2686,
-        -200
+        -2672.3589803000004,
+        1117.3327595999995
       ],
       "size": [
         400,
@@ -1711,7 +1648,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 0,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1746,35 +1683,40 @@
         "ver": "0.14.1"
       },
       "widgets_values": [
-        "A LEGO minifigure soldier gets isekai'd into a fantasy world and must fight an army of elves to survive."
+        "man too delusional on "
       ]
     },
     {
       "id": 178,
       "type": "JoinStrings",
       "pos": [
-        -2400,
-        -50
+        -2464.3076643000004,
+        854.59447782
       ],
       "size": [
-        210,
-        120
+        225,
+        132
       ],
       "flags": {},
-      "order": 1,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "string1",
           "name": "string1",
+          "shape": 7,
           "type": "STRING",
           "link": 214
         },
         {
+          "localized_name": "string2",
           "name": "string2",
+          "shape": 7,
           "type": "STRING",
           "link": 300
         },
         {
+          "localized_name": "delimiter",
           "name": "delimiter",
           "type": "STRING",
           "widget": {
@@ -1785,6 +1727,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": [
@@ -1793,7 +1736,14 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "JoinStrings"
+        "Node name for S&R": "JoinStrings",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "delimiter": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "\n\n"
@@ -1803,8 +1753,8 @@
       "id": 179,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        -5190,
-        0
+        -5210,
+        1690
       ],
       "size": [
         400,
@@ -1813,7 +1763,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 2,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1848,35 +1798,40 @@
         "ver": "0.14.1"
       },
       "widgets_values": [
-        "A LEGO minifigure soldier gets isekai'd into a fantasy world and must fight an army of elves to survive."
+        "A story about how a man SIMP on girl streamer on internet."
       ]
     },
     {
       "id": 180,
       "type": "JoinStrings",
       "pos": [
-        -4900,
-        100
+        -4555.8002,
+        1414.2799
       ],
       "size": [
-        210,
-        120
+        225,
+        132
       ],
       "flags": {},
-      "order": 3,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
+          "localized_name": "string1",
           "name": "string1",
+          "shape": 7,
           "type": "STRING",
           "link": 295
         },
         {
+          "localized_name": "string2",
           "name": "string2",
+          "shape": 7,
           "type": "STRING",
           "link": 302
         },
         {
+          "localized_name": "delimiter",
           "name": "delimiter",
           "type": "STRING",
           "widget": {
@@ -1887,6 +1842,7 @@
       ],
       "outputs": [
         {
+          "localized_name": "STRING",
           "name": "STRING",
           "type": "STRING",
           "links": [
@@ -1895,11 +1851,289 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "JoinStrings"
+        "Node name for S&R": "JoinStrings",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "delimiter": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
       },
       "widgets_values": [
         "\n\n"
       ]
+    },
+    {
+      "id": 181,
+      "type": "LoadImage",
+      "pos": [
+        -5517.597365202424,
+        986.2072387256877
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            309
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "screenshot_106.png",
+        "image"
+      ]
+    },
+    {
+      "id": 182,
+      "type": "LoadImage",
+      "pos": [
+        -5860.764710434838,
+        997.7295540030848
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            308
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "screenshot_105.png",
+        "image"
+      ]
+    },
+    {
+      "id": 183,
+      "type": "BatchImagesNode",
+      "pos": [
+        -5786.6384774866065,
+        253.5518950224706
+      ],
+      "size": [
+        225,
+        96
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image0",
+          "localized_name": "images.image0",
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 308
+        },
+        {
+          "label": "image1",
+          "localized_name": "images.image1",
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 309
+        },
+        {
+          "label": "image2",
+          "localized_name": "images.image2",
+          "name": "images.image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            310
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 184,
+      "type": "ImageListToImageBatch",
+      "pos": [
+        -5573.811888085427,
+        52.00867712008403
+      ],
+      "size": [
+        225,
+        72
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 310
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            306
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageListToImageBatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 185,
+      "type": "BatchImagePreview",
+      "pos": [
+        -5487.705645744876,
+        259.3528597967337
+      ],
+      "size": [
+        668.7000122070312,
+        121.30000305175781
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 306
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            307,
+            311
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagePreview",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1958,14 +2192,6 @@
       156,
       0,
       "VIDEO"
-    ],
-    [
-      286,
-      159,
-      0,
-      162,
-      1,
-      "IMAGE"
     ],
     [
       289,
@@ -2049,38 +2275,6 @@
     ],
     [
       300,
-      168,
-      0,
-      177,
-      0,
-      "STRING"
-    ],
-    [
-      301,
-      118,
-      0,
-      178,
-      0,
-      "STRING"
-    ],
-    [
-      304,
-      159,
-      0,
-      168,
-      0,
-      "IMAGE"
-    ],
-    [
-      305,
-      162,
-      0,
-      118,
-      0,
-      "IMAGE"
-    ],
-    [
-      300,
       177,
       0,
       178,
@@ -2110,6 +2304,62 @@
       168,
       8,
       "STRING"
+    ],
+    [
+      306,
+      184,
+      0,
+      185,
+      0,
+      "IMAGE"
+    ],
+    [
+      307,
+      185,
+      0,
+      168,
+      0,
+      "IMAGE"
+    ],
+    [
+      308,
+      182,
+      0,
+      183,
+      0,
+      "IMAGE"
+    ],
+    [
+      309,
+      181,
+      0,
+      183,
+      1,
+      "IMAGE"
+    ],
+    [
+      310,
+      183,
+      0,
+      184,
+      0,
+      "IMAGE"
+    ],
+    [
+      311,
+      185,
+      0,
+      162,
+      0,
+      "IMAGE"
+    ],
+    [
+      313,
+      162,
+      0,
+      118,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -2139,7 +2389,7 @@
     },
     {
       "id": 5,
-      "title": "\ud83e\udde0 Prompt Pipeline (Kimi)",
+      "title": "🧠 Prompt Pipeline (Kimi)",
       "bounding": [
         -2710,
         -310,
@@ -2153,10 +2403,10 @@
       "id": 6,
       "title": "1. load storyboard + characters + video reference",
       "bounding": [
-        -5246.395447182389,
-        -262.3755780760806,
-        2454.9166469953343,
-        1553.761904306928
+        -5943.126546814454,
+        -199.6070105416606,
+        3184.229867821634,
+        2213.2798734796274
       ],
       "color": "#8f5c2a",
       "flags": {}
@@ -2165,10 +2415,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4665073802097334,
+      "scale": 0.5131581182307068,
       "offset": [
-        1902.9803052941115,
-        801.8526728522019
+        6249.2156453305,
+        -32.35210118549735
       ]
     },
     "ue_links": [],
