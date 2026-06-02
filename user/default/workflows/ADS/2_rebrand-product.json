@@ -45,7 +45,7 @@
           "name": "image_3",
           "shape": 7,
           "type": "IMAGE",
-          "link": 386
+          "link": null
         },
         {
           "localized_name": "api_key",
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        1614551913,
+        343575182,
         "randomize",
         "auto"
       ]
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        729709185080805,
+        373592735640020,
         "randomize",
         "auto",
         "1K",
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        399430482,
+        1579193235,
         "randomize"
       ]
     },
@@ -641,14 +641,14 @@
           "name": "image_3",
           "shape": 7,
           "type": "IMAGE",
-          "link": 389
+          "link": null
         },
         {
           "localized_name": "image_4",
           "name": "image_4",
           "shape": 7,
           "type": "IMAGE",
-          "link": 390
+          "link": null
         },
         {
           "localized_name": "mask",
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        1240627320,
+        1515137089,
         "randomize",
         "high",
         "auto",
@@ -833,7 +833,7 @@
         }
       },
       "widgets_values": [
-        "GPT_Image_2"
+        "rebrand-gpt"
       ]
     },
     {
@@ -1226,7 +1226,7 @@
         }
       },
       "widgets_values": [
-        "Nano_Banana_Pro"
+        "rebrand-gemini"
       ]
     },
     {
@@ -1273,7 +1273,7 @@
         }
       },
       "widgets_values": [
-        "Grok"
+        "rebrand-grok"
       ]
     },
     {
@@ -1654,7 +1654,7 @@
       ],
       "size": [
         225,
-        66
+        96
       ],
       "flags": {
         "collapsed": false
@@ -1932,8 +1932,8 @@
         }
       },
       "widgets_values": [
-        "Design a 3D CGI animation character model sheet for \"[PROJECT NAME].\"\n\nReference images attached for character design, costume, prop, and target style.\n\nRequired sections: Hero character line-up (both characters), expression sheet (3 per character), action pose gallery (6 poses), prop detail callouts (4–6 items), color palette & material swatches, scale reference, character bio panels.\n\nStyle: Clean white art board, thin light grey gutters, [AESTHETIC] 3D CGI character design, soft diffused lighting, appealing rounded shapes, production-ready quality.\n\nTask: Generate a single character bible image. All sections must share consistent 3D art style, lighting, and proportions. No section overlap. Professional animation studio presentation quality.",
-        "You are an elite 3D CGI animation character designer. Your sole function is to generate detailed, professional character design bibles — multi-section pre-production documents that communicate character identity, personality, expressions, action range, props, and materials in a single cohesive document image.\n\n## CORE TASK\n\n1. **Document Structure Analysis**: The output is a SINGLE IMAGE that functions as a multi-section character bible page. It must contain labeled sections arranged in a clear spatial grid. Analyze the user's requested sections and assign them to a logical layout:\n   - **Hero Character Line-Up**: The largest or most prominent section. Both characters standing side by side at full scale on a clean neutral background. Must show complete costumes, proportions, and silhouette readability. Front 3/4 view is ideal for appeal.\n   - **Expression Sheet**: Grid of 3–6 facial expressions per character on clean white backgrounds. Common expressions: Happy, Sad, Angry, Surprised, Determined, Playful. Must maintain identical face shape, eye size, and proportions across all expressions.\n   - **Action Pose Gallery**: 4–8 dynamic full-body poses showing the character's movement vocabulary — running, jumping, crouching, gesturing, interacting with props. Must maintain identical body proportions and costume details across all poses.\n   - **Prop Detail Callouts**: Close-up panels of key props and costume accessories — hats, weapons, tools, jewelry, footwear, fabric texture swatches. Include material descriptions.\n   - **Color Palette & Materials**: Row of circular or square swatches representing skin, hair, primary costume, accent color, prop wood/metal, plus material samples (fabric weave, skin subsurface, metal reflectivity, wood grain).\n   - **Scale Reference**: Both characters shown next to a familiar object or each other to establish height difference and world scale.\n   - **Character Bios**: Small info panels with icons or labels for Age, Role, Personality Traits, Likes, Dislikes. Use short punchy phrases.\n\n2. **Spatial Layout Engineering**: Describe the bible's physical structure explicitly:\n   - Define panel positions: left column (hero line-up + bios), top-right grid (expressions), middle-right grid (action poses), bottom strip (props + palette + scale).\n   - Specify the presentation surface: clean white art board, subtle warm grey, or very light cream. NEVER dark or textured backgrounds that fight the characters.\n   - Specify dividers: thin light grey lines, clean white gutters, or subtle drop shadows. Avoid heavy decorative dividers.\n   - Ensure sections do not overlap and have balanced negative space. Characters should \"breathe\" in their panels.\n\n3. **Typography & Text Integration**: The bible contains real text elements that must be legible and stylistically consistent:\n   - Character names: Large friendly rounded sans-serif or playful serif.\n   - Section headers: Small caps, clean sans-serif, all caps, minimal.\n   - Labels (FRONT / HAPPY / JUMP / PROP 1): Functional, uppercase, small.\n   - Bio text: Readable sans-serif at small scale. Short phrases only.\n   - Do NOT invent illegible gibberish text. If specific text is provided, use it exactly. If not provided, use plausible, short, readable placeholder text.\n\n4. **Cross-Section Consistency Lock**: All sections must show the EXACT SAME character:\n   - Same face shape, eye size, nose shape, ear position across turnaround, expressions, and action poses.\n   - Same body proportions — height, limb length, torso shape, hand size.\n   - Same costume details — fabric folds, button placement, logo position, scarf knot style.\n   - Same material properties — skin subsurface scattering, fabric softness, metal shine, wood grain.\n   - Same lighting direction across all panels (typically soft diffused top-left key light).\n\n## MODEL-AWARE OPTIMIZATION\nThe refined prompt feeds into: OpenAI GPT Image, Seedream, Grok Image Edit, Google Gemini, and Qwen image edit.\n- For **generation models** (GPT Image, Seedream, Gemini): Emphasize the document-as-image nature. Describe the bible as a physical printed sheet or digital design screen. Use natural language flow. Keep under 800 English words; complex layouts need more room than single-subject prompts.\n- For **editing models** (Grok Image Edit, Qwen image edit): If a base bible or character sketch is provided, prepend preservation clauses: \"Preserve the existing layout structure, section boundaries, and typography positions. Modify only the character face design to...\" or \"Keep the bible framework intact. Update the action poses and expression sheet to...\"\n- **Explicit Purpose / Type**: Always open with the document type: \"A professional 3D CGI animation character design bible,\" \"Pixar-quality character model sheet,\" or \"animated film pre-production character guide.\"\n\n## STRICT OUTPUT RULES\n1. **NO META OUTPUT**: Do not explain your reasoning or show layout plans. Output ONLY the final prompt.\n2. **NO FORMATTING**: No markdown, bullet points, headers, bold text, numbered lists, or line breaks within the prompt body.\n3. **STRUCTURE**: Output ONLY a single flowing paragraph (or two short connected paragraphs if complexity demands). Target: **300–600 words**.\n4. **DELIMITERS**: Wrap the entire prompt in `[[PROMPT]]` and `[[/PROMPT]]` tags.\n5. **NO EXTERNAL TEXT**: Nothing outside the `[[PROMPT]]` tags will be parsed.\n6. **MANDATORY COVERAGE**: The prompt must weave together: document type and purpose, presentation surface and dividers, spatial layout description, hero line-up content, expression sheet descriptions, action pose gallery, prop detail callouts, color palette and material swatches, scale reference, character bios, typography style, and cross-section consistency lock.\n7. **ANTI-OVERLAP ENFORCEMENT**: Explicitly state that sections are separated by clear gutters or divider lines and must not bleed into each other.\n\n## PROHIBITIONS\n- NEVER output a single character portrait or standalone scene. The output must ALWAYS be a multi-section character bible.\n- NEVER generate characters in conflicting art styles (e.g., realistic hero next to cartoon expressions).\n- NEVER omit requested sections. If the user asks for an expression sheet, action poses, or prop details, they must appear.\n- NEVER invent unreadable text or placeholder gibberish. All text must be plausible and stylistically appropriate.\n- Do not include aspect ratios, resolution specs, model names, or UI instructions inside the prompt.\n- Do not output multiple prompt variants; output one unified optimized prompt.",
+        "Replace the existing branding, logo, and text on the product in Image 1 with the new brand identity from Image 2. Preserve exactly: product shape, material texture, surface finish, lighting direction, shadows, and background. Only modify the label, logo, and text elements. The new branding must match the typography style, colors, and visual identity from Image 2 and look naturally integrated — as if photographed with this branding originally. Photorealistic product photography, seamless integration, no visible seams or artifacts.",
+        "You are a precision product photography editor. Your task is to examine the provided product and brand reference images, then generate a single optimized image editing prompt that replaces the existing product branding with the new brand identity. The prompt must be wrapped in [[PROMPT]] and [[/PROMPT]] tags. Output ONLY the prompt — no explanations, no markdown, no formatting.",
         "",
         300
       ],
@@ -2262,9 +2262,7 @@
           "links": [
             375,
             379,
-            383,
-            386,
-            389
+            383
           ]
         },
         {
@@ -2273,8 +2271,7 @@
           "type": "IMAGE",
           "links": [
             376,
-            380,
-            390
+            380
           ]
         },
         {
@@ -2621,14 +2618,6 @@
       "IMAGE"
     ],
     [
-      386,
-      185,
-      2,
-      28,
-      3,
-      "IMAGE"
-    ],
-    [
       387,
       185,
       0,
@@ -2642,22 +2631,6 @@
       1,
       133,
       2,
-      "IMAGE"
-    ],
-    [
-      389,
-      185,
-      2,
-      133,
-      3,
-      "IMAGE"
-    ],
-    [
-      390,
-      185,
-      3,
-      133,
-      4,
       "IMAGE"
     ],
     [
@@ -3088,7 +3061,7 @@
               }
             },
             "widgets_values": [
-              1033250379094127,
+              59463846720840,
               "randomize"
             ]
           },
@@ -5921,7 +5894,7 @@
               }
             },
             "widgets_values": [
-              115980216215795,
+              619798141656091,
               "randomize"
             ]
           },
@@ -8176,7 +8149,7 @@
               }
             },
             "widgets_values": [
-              1091845583187587,
+              678148457593098,
               "randomize",
               40,
               4,
@@ -8660,10 +8633,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.7400249944258624,
+      "scale": 0.8954302432552947,
       "offset": [
-        65.54627068247035,
-        2849.945861571233
+        -6369.075467143949,
+        2945.432720542702
       ]
     }
   },
