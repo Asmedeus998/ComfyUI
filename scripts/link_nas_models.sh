@@ -124,6 +124,7 @@ link_flat "$HF_BASE/vae"         "$COMFYUI/models/vae"          "HF VAE"
 link_flat "$HF_BASE/diffusion_models" "$COMFYUI/models/diffusion_models" "HF Diffusion Models"
 link_flat "$HF_BASE/latent_upscale_models" "$COMFYUI/models/latent_upscale_models" "HF Latent Upscalers"
 link_flat "$HF_BASE/LORA"        "$COMFYUI/models/loras"       "HF LoRAs"
+link_flat "$HF_BASE/unet"        "$COMFYUI/models/unet"        "HF UNet (IC-Light)"
 link_folder "$HF_BASE/motion_capture" "$COMFYUI/models" "HF Motion Capture (GVHMR + SMPL)"
 
 # ═══════════════════════════════════════════════════════════════════════

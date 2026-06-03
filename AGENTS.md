@@ -63,6 +63,7 @@
   - `diffusion_models/` → `models/diffusion_models`
   - `latent_upscale_models/` → `models/latent_upscale_models`
   - `LORA/` → `models/loras`
+  - `unet/` → `models/unet` (IC-Light models, e.g. `iclight_sd15_fc.safetensors`, `iclight_sd15_fbc.safetensors`)
 - **Custom-node-internal models** (e.g. IndexTTS2): Some nodes store their own checkpoints inside the custom node folder (e.g. `custom_nodes/ComfyUI-IndexTTS2/checkpoints/`). For these:
   1. Download to a NAS subfolder (e.g. `Huggingface/IndexTTS2/`).
   2. Symlink the individual files into the custom node's expected `checkpoints/` directory.
