@@ -1,0 +1,4162 @@
+{
+  "id": "66fb78f0-14e8-4e0a-8ebc-a854163427dc",
+  "revision": 0,
+  "last_node_id": 480,
+  "last_link_id": 458,
+  "nodes": [
+    {
+      "id": 396,
+      "type": "LoadImage",
+      "pos": [
+        4727.063981274612,
+        2531.27147537171
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            365
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "2073323297315053092_2073323294010038142.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 398,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5156.92221412953,
+        2508.2356362443616
+      ],
+      "size": [
+        400,
+        552
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 365
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            407,
+            410,
+            415
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "竖屏 9:16，从上方俯拍的近景构图，纯白摄影棚背景，高亮柔光。一名明确成年的韩国超酷美女穿搭博主，深色顺滑长发，精致妆容，极简时尚穿搭，整体干净利落。镜头从她上方略微俯视拍摄，近景到半身构图。她举起一只手，伸出食指，像是突然想到了一个好主意，眼神明亮自信，脸上带一点俏皮又很酷的笑意。姿势有“满电准备营业”的能量感，聪明、轻快、适合短视频开场。画面上方有一个简洁的灯泡图标。干净时尚，真实摄影质感，皮肤自然，细节清晰，不要科幻变身，不要粒子特效，不要夸张动漫滤镜，不要杂乱背景。",
+        674571063,
+        "randomize",
+        "high",
+        "auto",
+        "2160x3840",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 400,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5937.734387251579,
+        2473.648768849355
+      ],
+      "size": [
+        400,
+        552
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 415
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            408,
+            411
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Replace the light bulb with a large bold black title  “Street Fighter”",
+        544443669,
+        "randomize",
+        "high",
+        "auto",
+        "2160x3840",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 401,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5410,
+        3940
+      ],
+      "size": [
+        400,
+        552
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 418
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            409,
+            412
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Vertical 9:16, minimalist white cosplay outfit information page, generous white empty space at the top and bottom, especially clear bottom breathing room. Pure white photography studio background, bright high-key soft lighting, realistic commercial studio photography, premium fashion magazine catalog layout, clean, restrained, artistic.\n\nAt the top, a large bold black title reads: “CHUN-LI”. Under the title, add a very small refined subtitle: “BLUE QIPAO FIGHTER STYLE”. \n\nThe left side is a unified black thin-line bordered outfit and accessory checklist, fixed into 3 numbered sections. Each section contains exactly 2 product cutouts, six product cutouts total:\nSection 1: white spiked hair bun covers and gold hoop earrings;\nSection 2: blue high-fashion qipao bodysuit and cropped white martial-arts capelet;\nSection 3: white thigh-high boots and gold dragon-pattern waist sash.\nEach item is shown as a clean white-background product cutout, with a small “1x” quantity label below each product.\n\nAutomatically reinterpret Chun-Li from Street Fighter into a more fashionable, elegant, luxury martial-arts cosplay outfit. Preserve the recognizable character identity: double hair buns, blue qipao silhouette, gold accents, white boots, powerful leg-fighter aura, disciplined confidence, refined Chinese martial-arts energy.\n\nOn the right side, a clearly adult Asian female fashion blogger stands full-body wearing a complete Chun-Li-inspired high-fashion outfit: a fitted blue qipao-style bodysuit with high side slits, gold embroidered trim, a cropped white martial-arts capelet, white thigh-high structured boots, gold waist sash, white spiked bun covers, and gold earrings. She poses in a Chun-Li-inspired classic fighting stance: one leg forward, knees slightly bent, torso turned in a confident three-quarter angle, one hand open in front and the other drawn back near the waist, ready for a graceful spinning kick. The camera uses a subtle low-angle fashion perspective to elongate the legs without distortion. Her expression is calm, powerful, elegant, and confident.\n\nMake the person realistic and alive: natural skin texture, realistic black hair strands, believable silk fabric folds, subtle studio floor shadow, realistic proportions, long athletic legs without distortion. Avoid cheap plastic cosplay, exaggerated anime filter, bad text, crowded layout, distorted body proportions, messy background, unofficial messy logo marks, and placing the character or checklist too close to the bottom edge.",
+        485257147,
+        "randomize",
+        "high",
+        "auto",
+        "2160x3840",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 403,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5526.673591298257,
+        6763.147148008738
+      ],
+      "size": [
+        400,
+        552
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 425
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            431,
+            432
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Vertical 9:16, minimalist white cosplay outfit information page, generous white empty space at the top and bottom, especially clear bottom breathing room. Pure white photography studio background, bright high-key soft lighting, realistic commercial studio photography, premium fashion magazine catalog layout, clean, restrained, artistic.\n\nAt the top, a large bold black title reads: “MANON”. Under the title, add a very small refined subtitle: “BALLET JUDO COUTURE STYLE”. Add a few tiny elegant pink-white-gold thin-line icons as decorative accents: a ballet shoe icon, a judo belt icon, a medal icon, and a minimalist runway spotlight icon. Keep all icons refined, sparse, and aligned with the catalog layout.\n\nThe left side is a unified black thin-line bordered outfit and accessory checklist, fixed into 3 numbered sections. Each section contains exactly 2 product cutouts, six product cutouts total:\nSection 1: pale pink hair ribbon and gold medal choker;\nSection 2: white ballet-inspired halter bodysuit and cropped blush judo jacket;\nSection 3: high-waist pink wrap skirt and white lace-up heeled ballet boots.\nEach item is shown as a clean white-background product cutout, with a small “1x” quantity label below each product.\n\nAutomatically reinterpret Manon from Street Fighter into a more fashionable, elegant, luxury ballet-judo couture cosplay outfit. Preserve the recognizable character identity: tall model-like silhouette, French fashion aura, ballet elegance, judo strength, pale pink / white / gold palette, graceful confidence, refined competitive stage presence.\n\nOn the right side, a clearly adult female fashion blogger stands full-body wearing a complete Manon-inspired high-fashion outfit: a white ballet-inspired halter bodysuit, cropped blush-pink judo jacket worn open, high-waist pale pink wrap skirt, gold medal choker, pale pink hair ribbon, and white lace-up heeled ballet boots. She poses in a Manon-inspired classic ballet-judo stance: one foot pointed forward, one knee softly bent, torso tall and lifted, one arm curved in a ballet line while the other hand lightly grips the edge of the cropped judo jacket, like a graceful fighter preparing a throw. The camera uses a subtle low-angle fashion perspective to elongate the legs without distortion. Her expression is elegant, composed, proud, and stylish.\n\nMake the person realistic and alive: natural skin texture, realistic hair strands, believable satin and cotton fabric folds, soft studio floor shadow, realistic tall proportions, long legs without distortion. Avoid cheap plastic cosplay, exaggerated anime filter, bad text, crowded layout, distorted body proportions, messy background, unofficial messy logo marks, and placing the character or checklist too close to the bottom edge.",
+        37387719,
+        "randomize",
+        "high",
+        "auto",
+        "2160x3840",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 404,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5424.952259962749,
+        6020.132209169897
+      ],
+      "size": [
+        400,
+        552
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 424
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            429,
+            430
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Vertical 9:16, keep the exact same structure, minimalist white cosplay outfit information page, generous white empty space at both the top and bottom, especially clear bottom breathing room. Pure white photography studio background, bright high-key soft lighting, realistic commercial studio photography, premium fashion magazine layout, clean, restrained, artistic.\n\nThe overall page has a slightly elevated editorial layout feeling. Add a few tiny elegant black-and-red line icons as decorative accents: a folding fan icon, a small flame icon, a ribbon knot icon, and a minimalist tournament badge icon. Keep these icons very small, refined, sparse, and aligned with the catalog layout, never crowded.\n\nThe full-body character photo on the right uses a subtle low-angle fashion photography perspective, the camera slightly looking upward to elongate the legs and create a stronger model-like silhouette. The model is a clearly adult Asian female fashion blogger with a graceful hourglass body outline, open shoulders, defined waistline, long legs, realistic proportions, elegant confident posture.\n\nAt the top, a large bold black title reads: “MAI SHIRANUI”. Leave obvious white breathing room above the title, below the title, and at the bottom of the whole composition. Do not make the layout crowded.\n\nThe left side is a unified black thin-line bordered outfit and accessory checklist, fixed into 3 numbered sections. Each section contains exactly 2 product cutouts, six product cutouts total:\nSection 1: red high-pony tail ribbon and gold folding-fan hairpin;\nSection 2: ivory plunging halter bodysuit and cropped red-and-white lightweight kimono bolero;\nSection 3: high-waist white slit wrap skirt with red obi belt and gold strappy high-heel sandals.\nEach item is shown as a clean white-background product cutout, with a small “1x” quantity label below each product. Minimal, organized, spacious, high-end catalog style.\n\nAutomatically reinterpret Mai Shiranui from The King of Fighters into a more fashionable, sexy, luxury kunoichi-fighter resort cosplay outfit. Preserve the recognizable character identity: very long brown hair in a high ponytail, red ribbon, confident fighting-game heroine aura, folding fan motif, flame motif, red / white / gold color palette, playful but powerful expression, elegant martial-arts stage presence.\n\nOn the right side, the clearly adult Asian female fashion blogger stands full-body wearing a complete Mai Shiranui-inspired high-fashion sexy outfit: an ivory plunging halter bodysuit, a cropped lightweight red-and-white kimono bolero worn open, a high-waist white slit wrap skirt with subtle flame-line embroidery, a structured red obi belt, a slim gold waist chain, gold folding-fan hairpin, red hair ribbon, and gold strappy high-heel sandals. She holds an elegant opened folding fan in one hand, the other hand naturally resting on her waist. Her expression is confident, playful, stylish, and powerful, like a luxury fashion blogger presenting a complete KOF-inspired fighter cosplay outfit.\n\nMake the person realistic and alive: natural skin texture, realistic brown hair strands, believable fabric folds, elegant silk and satin texture, elongated legs without distortion, soft studio floor shadow. Avoid cheap plastic cosplay, messy background, exaggerated anime filter, bad text, crowded layout, distorted body proportions, unofficial messy logo marks, and placing the character or checklist too close to the bottom edge.",
+        346313288,
+        "randomize",
+        "high",
+        "auto",
+        "2160x3840",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 406,
+      "type": "FALKlingImage2Video",
+      "pos": [
+        6732.47689055824,
+        3227.3328739938675
+      ],
+      "size": [
+        340,
+        540
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "first_frame",
+          "name": "first_frame",
+          "type": "IMAGE",
+          "link": 417
+        },
+        {
+          "localized_name": "end_frame",
+          "name": "end_frame",
+          "type": "IMAGE",
+          "link": 419
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg_scale",
+          "name": "cfg_scale",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg_scale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative_prompt",
+          "name": "negative_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            406
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALKlingImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "0-1s：人物直视镜头，表情自信俏皮。她的手指向上指了2-3次头顶上方的标题，保持姿势，手臂向上抬一些，稍微收回，再向上点一下，提醒观众看上面的标题。\n\n1-3s：人物像站在白色摄影棚转台上一样，围绕自身垂直轴旋转。头顶标题自然淡出并消失，背景逐渐变成纯白。旋转过程中，人物顺滑移动到画面右侧，自然过渡到下一帧。",
+        4,
+        false,
+        0.5,
+        "kling-v3",
+        "9:16",
+        "720p",
+        913392745,
+        "randomize",
+        "blur, distort, and low quality"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 446,
+      "type": "SaveVideo",
+      "pos": [
+        6664.318519761657,
+        3630.812908757766
+      ],
+      "size": [
+        477.1333312988281,
+        477.51666259765625
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 406
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76"
+      },
+      "widgets_values": [
+        "dress-up/video",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 447,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5184.78781045517,
+        2986.7647261721636
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 407
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img"
+      ]
+    },
+    {
+      "id": 448,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5966.16429629876,
+        2892.7687129067335
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 408
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img"
+      ]
+    },
+    {
+      "id": 449,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5430,
+        4340
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 409
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img-cos"
+      ]
+    },
+    {
+      "id": 450,
+      "type": "PreviewImage",
+      "pos": [
+        6063.180572005867,
+        3088.6569799785775
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 411
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 451,
+      "type": "PreviewImage",
+      "pos": [
+        5223.660146177383,
+        3130.5611754807906
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 410
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 452,
+      "type": "PreviewImage",
+      "pos": [
+        5473.03946019825,
+        4580.642078718696
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 412
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 453,
+      "type": "LoadImage",
+      "pos": [
+        4907.835198431811,
+        7336.44241239063
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            418,
+            424,
+            425,
+            426,
+            447,
+            454
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "img_00005_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 454,
+      "type": "LoadImage",
+      "pos": [
+        5996.461154515617,
+        3255.0226553807893
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            417
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "img_00006_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 455,
+      "type": "LoadImage",
+      "pos": [
+        6599.950943247084,
+        4515.0055847483
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            419,
+            422
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "img-cos_00001_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 456,
+      "type": "OpenAIGPTImageDirect",
+      "pos": [
+        5522.963661626434,
+        7674.087306821511
+      ],
+      "size": [
+        400,
+        552
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 426
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            434,
+            435
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImageDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Vertical 9:16, keep the exact same structure, minimalist white cosplay outfit information page, generous white empty space at both the top and bottom, especially clear bottom breathing room. Pure white photography studio background, bright high-key soft lighting, realistic commercial studio photography, premium fashion magazine layout, clean, restrained, artistic.\n\nThe overall page has a slightly elevated editorial layout feeling. Add a few tiny elegant black-and-red line icons as decorative accents: a folding fan icon, a small flame icon, a ribbon knot icon, and a minimalist tournament badge icon. Keep these icons very small, refined, sparse, and aligned with the catalog layout, never crowded.\n\nThe full-body character photo on the right uses a subtle low-angle fashion photography perspective, the camera slightly looking upward to elongate the legs and create a stronger model-like silhouette. The model is a clearly adult Asian female fashion blogger with a graceful hourglass body outline, open shoulders, defined waistline, long legs, realistic proportions, elegant confident posture.\n\nAt the top, a large bold black title reads: “MAI SHIRANUI”. Leave obvious white breathing room above the title, below the title, and at the bottom of the whole composition. Do not make the layout crowded.\n\nThe left side is a unified black thin-line bordered outfit and accessory checklist, fixed into 3 numbered sections. Each section contains exactly 2 product cutouts, six product cutouts total:\nSection 1: red high-pony tail ribbon and gold folding-fan hairpin;\nSection 2: ivory plunging halter bodysuit and cropped red-and-white lightweight kimono bolero;\nSection 3: high-waist white slit wrap skirt with red obi belt and gold strappy high-heel sandals.\nEach item is shown as a clean white-background product cutout, with a small “1x” quantity label below each product. Minimal, organized, spacious, high-end catalog style.\n\nAutomatically reinterpret Mai Shiranui from The King of Fighters into a more fashionable, sexy, luxury kunoichi-fighter resort cosplay outfit. Preserve the recognizable character identity: very long brown hair in a high ponytail, red ribbon, confident fighting-game heroine aura, folding fan motif, flame motif, red / white / gold color palette, playful but powerful expression, elegant martial-arts stage presence.\n\nOn the right side, the clearly adult Asian female fashion blogger stands full-body wearing a complete Mai Shiranui-inspired high-fashion sexy outfit: an ivory plunging halter bodysuit, a cropped lightweight red-and-white kimono bolero worn open, a high-waist white slit wrap skirt with subtle flame-line embroidery, a structured red obi belt, a slim gold waist chain, gold folding-fan hairpin, red hair ribbon, and gold strappy high-heel sandals. She holds an elegant opened folding fan in one hand, the other hand naturally resting on her waist. Her expression is confident, playful, stylish, and powerful, like a luxury fashion blogger presenting a complete KOF-inspired fighter cosplay outfit.\n\nMake the person realistic and alive: natural skin texture, realistic brown hair strands, believable fabric folds, elegant silk and satin texture, elongated legs without distortion, soft studio floor shadow. Avoid cheap plastic cosplay, messy background, exaggerated anime filter, bad text, crowded layout, distorted body proportions, unofficial messy logo marks, and placing the character or checklist too close to the bottom edge.",
+        1711402644,
+        "randomize",
+        "high",
+        "auto",
+        "2160x3840",
+        1,
+        "gpt-image-2",
+        1024,
+        1024,
+        ""
+      ]
+    },
+    {
+      "id": 457,
+      "type": "SaveVideo",
+      "pos": [
+        7390,
+        5360
+      ],
+      "size": [
+        488.3166809082031,
+        445.5833435058594
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 420
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76"
+      },
+      "widgets_values": [
+        "dress-up/video",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 458,
+      "type": "FALKlingImage2Video",
+      "pos": [
+        7440,
+        4960
+      ],
+      "size": [
+        340,
+        540
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "first_frame",
+          "name": "first_frame",
+          "type": "IMAGE",
+          "link": 422
+        },
+        {
+          "localized_name": "end_frame",
+          "name": "end_frame",
+          "type": "IMAGE",
+          "link": 457
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg_scale",
+          "name": "cfg_scale",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg_scale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative_prompt",
+          "name": "negative_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            420
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALKlingImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "The character first performs a 2-second short action that matches the current character’s personality and aura. After the action ends, it naturally leads into a body rotation. The character rotates around her vertical axis as if standing on a white photography studio turntable, turning from a front-facing view to a side view, and naturally transitions into the next character.\n\nThe black border on the left side, the numbered boxes, the divider lines, the product positions, and the “1x” quantity text all remain front-facing, flat, and stable. They do not rotate, tilt, or flip pages. Only the product cutout image inside each product grid performs a small independent in-place 3D rotation, rotating around the product’s own central axis, and during the rotation it changes into the corresponding product for the next character.\n\nDo not zoom in, do not zoom out, do not push the camera in, do not pull the camera back, do not move the camera, do not rotate the camera, do not scale the entire frame, do not create perspective distortion, do not create fisheye distortion, do not create wide-angle stretching, do not make the character suddenly become larger or smaller, do not make the left checklist become larger or smaller, do not let the title drift, do not change the frame crop, do not let the layout jump, do not flip the entire left-side card, do not rotate the border, do not rotate the text, do not shake the camera, do not use dynamic camera movement, do not use a zoom transition.",
+        4,
+        false,
+        0.5,
+        "kling-v3",
+        "9:16",
+        "720p",
+        569279759,
+        "randomize",
+        "blur, distort, and low quality"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 459,
+      "type": "PreviewImage",
+      "pos": [
+        5892.5535012937335,
+        5595.588088818992
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 451
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 460,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5831.665344405485,
+        5165.443301210296
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 446
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img-cos"
+      ]
+    },
+    {
+      "id": 461,
+      "type": "PreviewImage",
+      "pos": [
+        5517.5949488441,
+        6396.2813480187
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 430
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 462,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5477.5949488441,
+        6216.2813480187
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 429
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img-cos"
+      ]
+    },
+    {
+      "id": 463,
+      "type": "PreviewImage",
+      "pos": [
+        6073.486840693734,
+        7332.850605918983
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 432
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 464,
+      "type": "SaveImagePrivate",
+      "pos": [
+        6030.447380495484,
+        7092.208527200287
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 431
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img-cos"
+      ]
+    },
+    {
+      "id": 465,
+      "type": "PreviewImage",
+      "pos": [
+        5691.253683893734,
+        8075.36879661898
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 435
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 466,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5607.291164595485,
+        7945.803592600283
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 434
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img-cos"
+      ]
+    },
+    {
+      "id": 467,
+      "type": "SaveVideo",
+      "pos": [
+        7390,
+        6470
+      ],
+      "size": [
+        488.3166809082031,
+        445.5833435058594
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 436
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76"
+      },
+      "widgets_values": [
+        "dress-up/video",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 468,
+      "type": "FALKlingImage2Video",
+      "pos": [
+        7440,
+        6070
+      ],
+      "size": [
+        340,
+        540
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "first_frame",
+          "name": "first_frame",
+          "type": "IMAGE",
+          "link": 458
+        },
+        {
+          "localized_name": "end_frame",
+          "name": "end_frame",
+          "type": "IMAGE",
+          "link": 455
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg_scale",
+          "name": "cfg_scale",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg_scale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative_prompt",
+          "name": "negative_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            436
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALKlingImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "The character first performs a 2-second short action that matches the current character’s personality and aura. After the action ends, it naturally leads into a body rotation. The character rotates around her vertical axis as if standing on a white photography studio turntable, turning from a front-facing view to a side view, and naturally transitions into the next character.\n\nThe black border on the left side, the numbered boxes, the divider lines, the product positions, and the “1x” quantity text all remain front-facing, flat, and stable. They do not rotate, tilt, or flip pages. Only the product cutout image inside each product grid performs a small independent in-place 3D rotation, rotating around the product’s own central axis, and during the rotation it changes into the corresponding product for the next character.\n\nDo not zoom in, do not zoom out, do not push the camera in, do not pull the camera back, do not move the camera, do not rotate the camera, do not scale the entire frame, do not create perspective distortion, do not create fisheye distortion, do not create wide-angle stretching, do not make the character suddenly become larger or smaller, do not make the left checklist become larger or smaller, do not let the title drift, do not change the frame crop, do not let the layout jump, do not flip the entire left-side card, do not rotate the border, do not rotate the text, do not shake the camera, do not use dynamic camera movement, do not use a zoom transition.",
+        4,
+        false,
+        0.5,
+        "kling-v3",
+        "9:16",
+        "720p",
+        1985275774,
+        "randomize",
+        "blur, distort, and low quality"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 469,
+      "type": "SaveVideo",
+      "pos": [
+        7450,
+        7670
+      ],
+      "size": [
+        488.3166809082031,
+        445.5833435058594
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 438
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "type": "COMBO",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76"
+      },
+      "widgets_values": [
+        "dress-up/video",
+        "auto",
+        "auto"
+      ]
+    },
+    {
+      "id": 470,
+      "type": "FALKlingImage2Video",
+      "pos": [
+        7500,
+        7270
+      ],
+      "size": [
+        340,
+        540
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "first_frame",
+          "name": "first_frame",
+          "type": "IMAGE",
+          "link": 456
+        },
+        {
+          "localized_name": "end_frame",
+          "name": "end_frame",
+          "type": "IMAGE",
+          "link": 443
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg_scale",
+          "name": "cfg_scale",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg_scale"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "negative_prompt",
+          "name": "negative_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "slot_index": 0,
+          "links": [
+            438
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FALKlingImage2Video",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "The character first performs a 2-second short action that matches the current character’s personality and aura. After the action ends, it naturally leads into a body rotation. The character rotates around her vertical axis as if standing on a white photography studio turntable, turning from a front-facing view to a side view, and naturally transitions into the next character.\n\nThe black border on the left side, the numbered boxes, the divider lines, the product positions, and the “1x” quantity text all remain front-facing, flat, and stable. They do not rotate, tilt, or flip pages. Only the product cutout image inside each product grid performs a small independent in-place 3D rotation, rotating around the product’s own central axis, and during the rotation it changes into the corresponding product for the next character.\n\nDo not zoom in, do not zoom out, do not push the camera in, do not pull the camera back, do not move the camera, do not rotate the camera, do not scale the entire frame, do not create perspective distortion, do not create fisheye distortion, do not create wide-angle stretching, do not make the character suddenly become larger or smaller, do not make the left checklist become larger or smaller, do not let the title drift, do not change the frame crop, do not let the layout jump, do not flip the entire left-side card, do not rotate the border, do not rotate the text, do not shake the camera, do not use dynamic camera movement, do not use a zoom transition.",
+        4,
+        false,
+        0.5,
+        "kling-v3",
+        "9:16",
+        "720p",
+        1542090052,
+        "randomize",
+        "blur, distort, and low quality"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 471,
+      "type": "LoadVideo",
+      "pos": [
+        7527.250174016702,
+        4052.502967090338
+      ],
+      "size": [
+        282.8333435058594,
+        590.816650390625
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "file",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VIDEO",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "video_00001_.mp4",
+        "image"
+      ]
+    },
+    {
+      "id": 472,
+      "type": "LoadImage",
+      "pos": [
+        6500.842087193459,
+        7382.497993143159
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            443
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "img-cos_00002_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 473,
+      "type": "GoogleGeminiDirect",
+      "pos": [
+        5445.21084449145,
+        5236.795770614934
+      ],
+      "size": [
+        330,
+        644
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 4,
+      "showAdvanced": false,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 447
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_modalities",
+          "name": "response_modalities",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_modalities"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            446,
+            451
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleGeminiDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "Vertical 9:16, minimalist white cosplay outfit information page, generous white empty space at the top and bottom, especially clear bottom breathing room. Pure white photography studio background, bright high-key soft lighting, realistic commercial studio photography, premium fashion magazine catalog layout, clean, restrained, artistic.\n\nAt the top, a large bold black title reads: “JURI HAN”. Under the title, add a very small refined subtitle: “FENG SHUI ENGINE STYLE”. \n\nThe left side is a unified black thin-line bordered outfit and accessory checklist, fixed into 3 numbered sections. Each section contains exactly 2 product cutouts, six product cutouts total:\nSection 1: black spiked hair accessories and purple cyber-eye earring;\nSection 2: black-and-purple asymmetrical halter bodysuit and cropped motorcycle bolero;\nSection 3: purple ankle wrap straps and black sculpted high-heel combat sandals.\nEach item is shown as a clean white-background product cutout, with a small “1x” quantity label below each product.\n\nAutomatically reinterpret Juri Han from Street Fighter into a more fashionable, dangerous, luxury cyber-fighter cosplay outfit. Preserve the recognizable character identity: black hair with horn-like shapes, purple-black palette, spider-like energy, taekwondo-inspired kicks, mischievous villainess aura, sharp confident smirk, cybernetic eye motif.\n\nOn the right side, a clearly adult Asian female fashion blogger stands full-body wearing a complete Juri-inspired high-fashion outfit: a black-and-purple asymmetrical halter bodysuit, cropped dark motorcycle bolero, purple strap details around the waist and ankles, black sculpted high-heel combat sandals, sharp spiked hair accessories, and a small purple cyber-eye earring. She poses in a Juri-inspired classic taekwondo stance: one leg crossed forward with the hip angled sharply, upper body leaning slightly sideways, one hand near her face with claw-like fingers, the other hand resting at her waist, creating a playful but dangerous silhouette. The camera uses a subtle low-angle fashion perspective to elongate the legs without distortion. Her expression is mischievous, stylish, predatory, and confident.\n\nMake the person realistic and alive: natural skin texture, realistic black hair strands, believable stretch fabric and leather folds, soft studio floor shadow, realistic proportions, long athletic legs without distortion. Avoid cheap plastic cosplay, exaggerated anime filter, bad text, crowded layout, distorted body proportions, messy background, unofficial messy logo marks, and placing the character or checklist too close to the bottom edge.",
+        "gemini-3-pro-image-preview",
+        337530875525215,
+        "randomize",
+        "auto",
+        "1K",
+        "IMAGE+TEXT",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ]
+    },
+    {
+      "id": 475,
+      "type": "PreviewImage",
+      "pos": [
+        6030,
+        8890
+      ],
+      "size": [
+        225,
+        280
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 452
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 476,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5980,
+        8530
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 453
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "dress-up/img-cos"
+      ]
+    },
+    {
+      "id": 477,
+      "type": "GoogleGeminiDirect",
+      "pos": [
+        5550,
+        8530
+      ],
+      "size": [
+        330,
+        644
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "showAdvanced": false,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 454
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "trigger",
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_modalities",
+          "name": "response_modalities",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_modalities"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            452,
+            453
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleGeminiDirect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "prompt": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "Vertical 9:16, keep the exact same structure, minimalist white cosplay outfit information page, generous white empty space at both the top and bottom, especially clear bottom breathing room. Pure white photography studio background, bright high-key soft lighting, realistic commercial studio photography, premium fashion magazine layout, clean, restrained, artistic.\n\nThe overall page has a slightly elevated editorial layout feeling. Add a few tiny elegant black-and-red line icons as decorative accents: a folding fan icon, a small flame icon, a ribbon knot icon, and a minimalist tournament badge icon. Keep these icons very small, refined, sparse, and aligned with the catalog layout, never crowded.\n\nThe full-body character photo on the right uses a subtle low-angle fashion photography perspective, the camera slightly looking upward to elongate the legs and create a stronger model-like silhouette. The model is a clearly adult Asian female fashion blogger with a graceful hourglass body outline, open shoulders, defined waistline, long legs, realistic proportions, elegant confident posture.\n\nAt the top, a large bold black title reads: “MAI SHIRANUI”. Leave obvious white breathing room above the title, below the title, and at the bottom of the whole composition. Do not make the layout crowded.\n\nThe left side is a unified black thin-line bordered outfit and accessory checklist, fixed into 3 numbered sections. Each section contains exactly 2 product cutouts, six product cutouts total:\nSection 1: red high-pony tail ribbon and gold folding-fan hairpin;\nSection 2: ivory plunging halter bodysuit and cropped red-and-white lightweight kimono bolero;\nSection 3: high-waist white slit wrap skirt with red obi belt and gold strappy high-heel sandals.\nEach item is shown as a clean white-background product cutout, with a small “1x” quantity label below each product. Minimal, organized, spacious, high-end catalog style.\n\nAutomatically reinterpret Mai Shiranui from The King of Fighters into a more fashionable, sexy, luxury kunoichi-fighter resort cosplay outfit. Preserve the recognizable character identity: very long brown hair in a high ponytail, red ribbon, confident fighting-game heroine aura, folding fan motif, flame motif, red / white / gold color palette, playful but powerful expression, elegant martial-arts stage presence.\n\nOn the right side, the clearly adult Asian female fashion blogger stands full-body wearing a complete Mai Shiranui-inspired high-fashion sexy outfit: an ivory plunging halter bodysuit, a cropped lightweight red-and-white kimono bolero worn open, a high-waist white slit wrap skirt with subtle flame-line embroidery, a structured red obi belt, a slim gold waist chain, gold folding-fan hairpin, red hair ribbon, and gold strappy high-heel sandals. She holds an elegant opened folding fan in one hand, the other hand naturally resting on her waist. Her expression is confident, playful, stylish, and powerful, like a luxury fashion blogger presenting a complete KOF-inspired fighter cosplay outfit.\n\nMake the person realistic and alive: natural skin texture, realistic brown hair strands, believable fabric folds, elegant silk and satin texture, elongated legs without distortion, soft studio floor shadow. Avoid cheap plastic cosplay, messy background, exaggerated anime filter, bad text, crowded layout, distorted body proportions, unofficial messy logo marks, and placing the character or checklist too close to the bottom edge.",
+        "gemini-3-pro-image-preview",
+        946910297762695,
+        "randomize",
+        "9:16",
+        "1K",
+        "IMAGE+TEXT",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input—regardless of format, intent, or abstraction—as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ]
+    },
+    {
+      "id": 478,
+      "type": "LoadImage",
+      "pos": [
+        6468.253642169474,
+        6308.533139490828
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            455,
+            456
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "16.png",
+        "image"
+      ]
+    },
+    {
+      "id": 479,
+      "type": "LoadImage",
+      "pos": [
+        6582.521868596239,
+        5393.521186004282
+      ],
+      "size": [
+        282.8333435058594,
+        340
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            457,
+            458
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "17.png",
+        "image"
+      ]
+    },
+    {
+      "id": 480,
+      "type": "FALSeedanceReference2Video",
+      "pos": [
+        8057.541545572882,
+        5494.104982866778
+      ],
+      "size": [
+        400,
+        748
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_7",
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_8",
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "image_9",
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "video",
+          "name": "video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_1",
+          "name": "video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "video_2",
+          "name": "video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "localized_name": "audio",
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "audio_1",
+          "name": "audio_1",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "audio_2",
+          "name": "audio_2",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "generate_audio",
+          "name": "generate_audio",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "generate_audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fast",
+          "name": "fast",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "fast"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "Node name for S&R": "FALSeedanceReference2Video"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "720p",
+        "16:9",
+        5,
+        true,
+        0,
+        "randomize",
+        false,
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      365,
+      396,
+      0,
+      398,
+      1,
+      "IMAGE"
+    ],
+    [
+      406,
+      406,
+      0,
+      446,
+      0,
+      "VIDEO"
+    ],
+    [
+      407,
+      398,
+      0,
+      447,
+      0,
+      "IMAGE"
+    ],
+    [
+      408,
+      400,
+      0,
+      448,
+      0,
+      "IMAGE"
+    ],
+    [
+      409,
+      401,
+      0,
+      449,
+      0,
+      "IMAGE"
+    ],
+    [
+      410,
+      398,
+      0,
+      451,
+      0,
+      "IMAGE"
+    ],
+    [
+      411,
+      400,
+      0,
+      450,
+      0,
+      "IMAGE"
+    ],
+    [
+      412,
+      401,
+      0,
+      452,
+      0,
+      "IMAGE"
+    ],
+    [
+      415,
+      398,
+      0,
+      400,
+      1,
+      "IMAGE"
+    ],
+    [
+      417,
+      454,
+      0,
+      406,
+      0,
+      "IMAGE"
+    ],
+    [
+      418,
+      453,
+      0,
+      401,
+      1,
+      "IMAGE"
+    ],
+    [
+      419,
+      455,
+      0,
+      406,
+      1,
+      "IMAGE"
+    ],
+    [
+      420,
+      458,
+      0,
+      457,
+      0,
+      "VIDEO"
+    ],
+    [
+      422,
+      455,
+      0,
+      458,
+      0,
+      "IMAGE"
+    ],
+    [
+      424,
+      453,
+      0,
+      404,
+      1,
+      "IMAGE"
+    ],
+    [
+      425,
+      453,
+      0,
+      403,
+      1,
+      "IMAGE"
+    ],
+    [
+      426,
+      453,
+      0,
+      456,
+      1,
+      "IMAGE"
+    ],
+    [
+      429,
+      404,
+      0,
+      462,
+      0,
+      "IMAGE"
+    ],
+    [
+      430,
+      404,
+      0,
+      461,
+      0,
+      "IMAGE"
+    ],
+    [
+      431,
+      403,
+      0,
+      464,
+      0,
+      "IMAGE"
+    ],
+    [
+      432,
+      403,
+      0,
+      463,
+      0,
+      "IMAGE"
+    ],
+    [
+      434,
+      456,
+      0,
+      466,
+      0,
+      "IMAGE"
+    ],
+    [
+      435,
+      456,
+      0,
+      465,
+      0,
+      "IMAGE"
+    ],
+    [
+      436,
+      468,
+      0,
+      467,
+      0,
+      "VIDEO"
+    ],
+    [
+      438,
+      470,
+      0,
+      469,
+      0,
+      "VIDEO"
+    ],
+    [
+      443,
+      472,
+      0,
+      470,
+      1,
+      "IMAGE"
+    ],
+    [
+      446,
+      473,
+      1,
+      460,
+      0,
+      "IMAGE"
+    ],
+    [
+      447,
+      453,
+      0,
+      473,
+      1,
+      "IMAGE"
+    ],
+    [
+      451,
+      473,
+      1,
+      459,
+      0,
+      "IMAGE"
+    ],
+    [
+      452,
+      477,
+      1,
+      475,
+      0,
+      "IMAGE"
+    ],
+    [
+      453,
+      477,
+      1,
+      476,
+      0,
+      "IMAGE"
+    ],
+    [
+      454,
+      453,
+      0,
+      477,
+      1,
+      "IMAGE"
+    ],
+    [
+      455,
+      478,
+      0,
+      468,
+      1,
+      "IMAGE"
+    ],
+    [
+      456,
+      478,
+      0,
+      470,
+      0,
+      "IMAGE"
+    ],
+    [
+      457,
+      479,
+      0,
+      458,
+      1,
+      "IMAGE"
+    ],
+    [
+      458,
+      479,
+      0,
+      468,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.11167815779424789,
+      "offset": [
+        -97.17354500920374,
+        -33.60377884294394
+      ]
+    },
+    "frontendVersion": "1.43.16",
+    "workflowRendererVersion": "Vue-corrected",
+    "linearData": {
+      "inputs": [
+        [
+          "312",
+          "value"
+        ],
+        [
+          "313",
+          "model.resolution"
+        ],
+        [
+          "224",
+          "image"
+        ],
+        [
+          "226",
+          "image"
+        ],
+        [
+          "227",
+          "image"
+        ],
+        [
+          "228",
+          "image"
+        ],
+        [
+          "232",
+          "image"
+        ],
+        [
+          "233",
+          "image"
+        ],
+        [
+          "234",
+          "image"
+        ],
+        [
+          "235",
+          "image"
+        ],
+        [
+          "310",
+          "seed"
+        ],
+        [
+          "343",
+          "seed"
+        ],
+        [
+          "351",
+          "seed"
+        ],
+        [
+          "359",
+          "seed"
+        ],
+        [
+          "367",
+          "seed"
+        ],
+        [
+          "375",
+          "seed"
+        ],
+        [
+          "383",
+          "seed"
+        ]
+      ],
+      "outputs": [
+        "308",
+        "344",
+        "352",
+        "360",
+        "368",
+        "376",
+        "384"
+      ]
+    },
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "linearMode": false,
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4
+}

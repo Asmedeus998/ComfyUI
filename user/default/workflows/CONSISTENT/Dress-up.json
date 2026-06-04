@@ -1289,7 +1289,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 1,
@@ -1369,6 +1369,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -1424,6 +1433,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -1438,7 +1448,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 2,
@@ -1518,6 +1528,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -1573,6 +1592,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -1587,7 +1607,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 3,
@@ -1667,6 +1687,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -1722,6 +1751,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -1736,7 +1766,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 39,
@@ -1816,6 +1846,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -1870,6 +1909,7 @@
         "kling-v3",
         "1080p",
         1,
+        "blur, distort, and low quality",
         "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
@@ -2302,7 +2342,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 7,
@@ -2382,6 +2422,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -2436,6 +2485,7 @@
         "kling-v3",
         "1080p",
         1,
+        "blur, distort, and low quality",
         "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
@@ -2905,7 +2955,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 14,
@@ -2985,6 +3035,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -3040,6 +3099,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -3054,7 +3114,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 15,
@@ -3134,6 +3194,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -3189,6 +3258,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -3203,7 +3273,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 16,
@@ -3283,6 +3353,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -3337,6 +3416,7 @@
         "kling-v3",
         "1080p",
         1,
+        "blur, distort, and low quality",
         "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
@@ -5540,7 +5620,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 43,
@@ -5620,6 +5700,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -5675,6 +5764,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -5689,7 +5779,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 44,
@@ -5769,6 +5859,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -5824,6 +5923,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -5838,7 +5938,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 45,
@@ -5918,6 +6018,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -5973,6 +6082,7 @@
         "1080p",
         1,
         "blur, distort, and low quality",
+        "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
       "color": "#432",
@@ -5987,7 +6097,7 @@
       ],
       "size": [
         340,
-        480
+        512
       ],
       "flags": {},
       "order": 47,
@@ -6067,6 +6177,15 @@
           "link": null
         },
         {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
           "localized_name": "resolution",
           "name": "resolution",
           "type": "COMBO",
@@ -6119,8 +6238,9 @@
         false,
         0.5,
         "kling-v3",
-        "1080p",
-        1,
+        "9:16",
+        "720p",
+        "blur, distort, and low quality",
         "blur, distort, and low quality",
         "blur, distort, and low quality"
       ],
@@ -6358,10 +6478,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.3797498335832418,
+      "scale": 0.895430243255241,
       "offset": [
-        -9840.9667140845,
-        -3752.662268600792
+        -11234.523538514908,
+        -4258.693481020825
       ]
     },
     "frontendVersion": "1.43.16",
