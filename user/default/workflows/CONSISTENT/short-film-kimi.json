@@ -16,8 +16,8 @@
         748
       ],
       "flags": {},
-      "order": 12,
-      "mode": 4,
+      "order": 11,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "images",
@@ -260,8 +260,8 @@
         384
       ],
       "flags": {},
-      "order": 13,
-      "mode": 4,
+      "order": 12,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -326,7 +326,7 @@
         444
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -477,7 +477,7 @@
         332
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -682,7 +682,7 @@
         541.2333374023438
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -735,7 +735,7 @@
         474.5
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -770,8 +770,8 @@
         448
       ],
       "flags": {},
-      "order": 18,
-      "mode": 4,
+      "order": 17,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -930,8 +930,8 @@
         555.8333129882812
       ],
       "flags": {},
-      "order": 19,
-      "mode": 4,
+      "order": 18,
+      "mode": 0,
       "inputs": [
         {
           "localized_name": "video",
@@ -1000,7 +1000,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1194,7 +1194,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1239,7 +1239,7 @@
         444
       ],
       "flags": {},
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1390,7 +1390,7 @@
         332
       ],
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1595,7 +1595,7 @@
         360.8333435058594
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1700,7 +1700,7 @@
         132
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1763,7 +1763,7 @@
         132
       ],
       "flags": {},
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1954,7 +1954,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -2012,7 +2012,7 @@
         72
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -2054,7 +2054,7 @@
         121.30000305175781
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -2097,7 +2097,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -2183,7 +2183,7 @@
         273.3333435058594
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -2242,12 +2242,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "SaveText",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.8"
-        },
-        "Node name for S&R": "SaveText"
+        }
       },
       "widgets_values": [
         "",
@@ -2553,10 +2553,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7513148009015783,
+      "scale": 0.5131581182307073,
       "offset": [
-        6620.255436523081,
-        390.7033965833978
+        1524.4110201923895,
+        678.3696536486848
       ]
     },
     "ue_links": [],

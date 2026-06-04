@@ -191,9 +191,9 @@ Reference mapping:
 
 Create a character mascot logo — close-up portrait composition, centered on the face.
 
-Preserve the character's facial structure, features, and proportions from Image 1 exactly — the face shape, glasses, elf ears, eye shape, and distinguishing features must remain recognizable as the same character. Shift the expression to a serious, gloomy, or menacing mood matching the Uwata_h art style. The character is wearing the hooded outfit from Image 2, visible as a dark hood and high collar framing the face.
+Examine Image 1 carefully and preserve the character's EXACT facial structure, hair style, and all distinguishing features as they actually appear — describe what you see precisely rather than assuming. The character must remain instantly recognizable as the same person. Shift the expression to a serious, gloomy, or menacing mood matching the Uwata_h art style. The character is wearing the hooded outfit from Image 2, visible as a dark hood and high collar framing the face.
 
-Render the entire composition in the signature Uwata_h art style: dark, high-contrast, heavily desaturated color palette approaching grayscale, textured and sketchy lineart, dramatic gloomy atmosphere. The only vibrant accents are the reds — the character's red eyes and red glasses glow intensely against the monochrome desolation. Adapt Image 3's blue, yellow, and pink into muted, subdued tones that barely pierce through the darkness — desaturated shadows, faint cool undertones, nothing bright or cheerful. Close-up portrait, face-centered, clean dark background, professional mascot logo quality.
+Render the entire composition in the signature Uwata_h art style: dark, high-contrast, heavily desaturated color palette approaching grayscale, textured and sketchy lineart, dramatic gloomy atmosphere. Any natural red tones in the character's original design (eyes, accessories, markings) may remain as vibrant glowing accents against the monochrome desolation — but do not invent red elements that were not originally present. Adapt Image 3's color palette into muted, subdued tones that barely pierce through the darkness — desaturated shadows, faint cool undertones, nothing bright or cheerful. Close-up portrait, face-centered, clean dark background, professional mascot logo quality.
 ```
 
 ### Template F: Character Mascot Logo — Full-Body (Outfit + Uwata_h Style)
@@ -206,9 +206,9 @@ Reference mapping:
 
 Create a character mascot logo — full-body composition.
 
-Preserve the character's facial structure, features, and body proportions from Image 1 exactly — the face, glasses, elf ears, and eye shape must remain recognizable as the same character. Shift the expression to a serious, gloomy, or menacing mood matching the Uwata_h art style. Dress the character in the full outfit from Image 2 — hooded suit, structured dark silhouette, and garment details.
+Examine Image 1 carefully and preserve the character's EXACT facial structure, hair style, body proportions, and all distinguishing features as they actually appear — describe what you see precisely rather than assuming. The character must remain instantly recognizable as the same person. Shift the expression to a serious, gloomy, or menacing mood matching the Uwata_h art style. Dress the character in the full outfit from Image 2 — hooded suit, structured dark silhouette, and garment details.
 
-Render the entire character in the signature Uwata_h art style: dark, high-contrast, heavily desaturated color palette approaching grayscale, textured and sketchy lineart, dramatic gloomy atmosphere. The only vibrant accents are the reds — the character's red eyes and red glasses glow intensely against the monochrome desolation. Adapt Image 3's blue, yellow, and pink into muted, subdued tones that barely pierce through the darkness — desaturated shadows, faint cool undertones, nothing bright or cheerful. Full-body standing pose, clean dark background, professional mascot logo quality.
+Render the entire character in the signature Uwata_h art style: dark, high-contrast, heavily desaturated color palette approaching grayscale, textured and sketchy lineart, dramatic gloomy atmosphere. Any natural red tones in the character's original design (eyes, accessories, markings) may remain as vibrant glowing accents against the monochrome desolation — but do not invent red elements that were not originally present. Adapt Image 3's color palette into muted, subdued tones that barely pierce through the darkness — desaturated shadows, faint cool undertones, nothing bright or cheerful. Full-body standing pose, clean dark background, professional mascot logo quality.
 ```
 
 ---
@@ -237,7 +237,7 @@ Render the entire character in the signature Uwata_h art style: dark, high-contr
 
 ### Character Drift in Mascot Logos
 **Symptom:** The character's face, hair, or distinguishing features change between the reference and the output — the character no longer looks like the same person.  
-**Fix:** Add explicit identity lock: "Preserve the EXACT facial structure, eye shape, glasses, ears, and expression from Image 1. The character must remain instantly recognizable. Only the outfit and colors change."
+**Fix:** Add explicit identity lock: "Preserve the EXACT facial structure, hair style, and all distinguishing features from Image 1 as they actually appear. Describe what you see in Image 1 precisely — do not assume or invent features. The character must remain instantly recognizable. Only the outfit and colors change."
 
 ### Outfit Misapplication
 **Symptom:** The outfit from Image 2 is only partially applied, mixed with the character's original clothing, or completely missing.  

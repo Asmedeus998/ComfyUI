@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 202,
-  "last_link_id": 417,
+  "last_node_id": 204,
+  "last_link_id": 419,
   "nodes": [
     {
       "id": 28,
@@ -16,7 +16,7 @@
         460
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -124,7 +124,7 @@
           "name": "image",
           "type": "IMAGE",
           "links": [
-            23
+            418
           ]
         }
       ],
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        1588167068,
+        1002939883,
         "randomize",
         "auto"
       ]
@@ -328,7 +328,7 @@
           "name": "image",
           "type": "IMAGE",
           "links": [
-            20
+            419
           ]
         }
       ],
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        1080685272645670,
+        107908118094655,
         "randomize",
         "auto",
         "1K",
@@ -366,7 +366,7 @@
         636
       ],
       "flags": {},
-      "order": 27,
+      "order": 25,
       "mode": 4,
       "inputs": [
         {
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        1831158952,
+        1653209106,
         "randomize"
       ]
     },
@@ -563,7 +563,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 28,
+      "order": 26,
       "mode": 4,
       "inputs": [
         {
@@ -612,7 +612,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 29,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        1395191768,
+        1202489877,
         "randomize",
         "high",
         "auto",
@@ -801,7 +801,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 30,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -848,7 +848,7 @@
         510
       ],
       "flags": {},
-      "order": 23,
+      "order": 21,
       "mode": 4,
       "inputs": [
         {
@@ -977,7 +977,7 @@
         500
       ],
       "flags": {},
-      "order": 25,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -1093,7 +1093,7 @@
         390
       ],
       "flags": {},
-      "order": 24,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -1140,7 +1140,7 @@
         390
       ],
       "flags": {},
-      "order": 26,
+      "order": 24,
       "mode": 4,
       "inputs": [
         {
@@ -1173,107 +1173,6 @@
       },
       "widgets_values": [
         "logo-Qwen_2511"
-      ]
-    },
-    {
-      "id": 26,
-      "type": "SaveImage",
-      "pos": [
-        5608.278699371586,
-        -2629.2126601663867
-      ],
-      "size": [
-        360,
-        380
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 20
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [],
-      "title": "Save Nano Banana Pro Image",
-      "properties": {
-        "Node name for S&R": "SaveImage",
-        "cnr_id": "comfy-core",
-        "ver": "0.5.1",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65,
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "logo-gemini"
-      ]
-    },
-    {
-      "id": 29,
-      "type": "SaveImage",
-      "pos": [
-        6082.27408804646,
-        -2587.1247143209116
-      ],
-      "size": [
-        340,
-        380
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "images",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 23
-        },
-        {
-          "localized_name": "filename_prefix",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [],
-      "title": "Save Grok Image",
-      "properties": {
-        "Node name for S&R": "SaveImage",
-        "cnr_id": "comfy-core",
-        "ver": "0.14.1",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "logo-grok"
       ]
     },
     {
@@ -1641,7 +1540,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "1.jpg",
+        "screenshot_111.png",
         "image"
       ]
     },
@@ -2541,6 +2440,94 @@
         "4.jpg",
         "image"
       ]
+    },
+    {
+      "id": 203,
+      "type": "SaveImagePrivate",
+      "pos": [
+        5701.593657730682,
+        -2588.1685559075113
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 419
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "logo-gemini"
+      ]
+    },
+    {
+      "id": 204,
+      "type": "SaveImagePrivate",
+      "pos": [
+        6100.422267576751,
+        -2600.021480247841
+      ],
+      "size": [
+        344.5666809082031,
+        340
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 418
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImagePrivate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "logo-grok"
+      ]
     }
   ],
   "links": [
@@ -2549,22 +2536,6 @@
       3,
       0,
       1,
-      0,
-      "IMAGE"
-    ],
-    [
-      20,
-      25,
-      1,
-      26,
-      0,
-      "IMAGE"
-    ],
-    [
-      23,
-      28,
-      0,
-      29,
       0,
       "IMAGE"
     ],
@@ -2903,6 +2874,22 @@
       174,
       2,
       "IMAGE"
+    ],
+    [
+      418,
+      28,
+      0,
+      204,
+      0,
+      "IMAGE"
+    ],
+    [
+      419,
+      25,
+      1,
+      203,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
@@ -2913,8 +2900,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 202,
-          "lastLinkId": 417,
+          "lastNodeId": 204,
+          "lastLinkId": 419,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3300,7 +3287,7 @@
               }
             },
             "widgets_values": [
-              561933992951540,
+              449842782002625,
               "randomize"
             ]
           },
@@ -4943,8 +4930,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 202,
-          "lastLinkId": 417,
+          "lastNodeId": 204,
+          "lastLinkId": 419,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5309,8 +5296,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 202,
-          "lastLinkId": 417,
+          "lastNodeId": 204,
+          "lastLinkId": 419,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6133,7 +6120,7 @@
               }
             },
             "widgets_values": [
-              523573550379717,
+              942062075053579,
               "randomize"
             ]
           },
@@ -7440,8 +7427,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 202,
-          "lastLinkId": 417,
+          "lastNodeId": 204,
+          "lastLinkId": 419,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -8388,7 +8375,7 @@
               }
             },
             "widgets_values": [
-              178503566754361,
+              215956426706689,
               "randomize",
               40,
               4,
@@ -8872,10 +8859,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.7144269653303424,
+      "scale": 0.5559917313492238,
       "offset": [
-        -4840.152243308673,
-        3344.3675969773335
+        -937.7945703062468,
+        3677.1588819422664
       ]
     }
   },
