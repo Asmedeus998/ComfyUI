@@ -1,8 +1,8 @@
 {
   "id": "0f3ce1fb-f5a8-4e33-8a97-28b4207276bd",
   "revision": 0,
-  "last_node_id": 187,
-  "last_link_id": 315,
+  "last_node_id": 188,
+  "last_link_id": 316,
   "nodes": [
     {
       "id": 103,
@@ -221,7 +221,8 @@
           "slot_index": 0,
           "links": [
             205,
-            283
+            283,
+            316
           ]
         }
       ],
@@ -261,7 +262,7 @@
       ],
       "flags": {},
       "order": 12,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "video",
@@ -2256,6 +2257,72 @@
         false,
         "txt"
       ]
+    },
+    {
+      "id": 188,
+      "type": "SaveVideoProRes",
+      "pos": [
+        439.4623649076083,
+        562.7915148513138
+      ],
+      "size": [
+        320,
+        384
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 316
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "profile",
+          "name": "profile",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "profile"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "output_directory",
+          "name": "output_directory",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "output_directory"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideoProRes",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shortfilm-15s",
+        "standard",
+        "/home/yumeko/Videos/filmaker/SHORTFILM"
+      ]
     }
   ],
   "links": [
@@ -2498,6 +2565,14 @@
       187,
       0,
       "STRING"
+    ],
+    [
+      316,
+      103,
+      0,
+      188,
+      0,
+      "VIDEO"
     ]
   ],
   "groups": [
@@ -2553,10 +2628,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307073,
+      "scale": 0.7513148009015783,
       "offset": [
-        1524.4110201923895,
-        678.3696536486848
+        702.4273541733822,
+        374.79540335942875
       ]
     },
     "ue_links": [],
