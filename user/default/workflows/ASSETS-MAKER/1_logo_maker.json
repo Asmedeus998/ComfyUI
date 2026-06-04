@@ -1,8 +1,8 @@
 {
   "id": "58f78c8c-912a-4108-8626-4348be1fab82",
   "revision": 0,
-  "last_node_id": 201,
-  "last_link_id": 416,
+  "last_node_id": 202,
+  "last_link_id": 417,
   "nodes": [
     {
       "id": 28,
@@ -16,7 +16,7 @@
         460
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -144,7 +144,7 @@
         "",
         "1K",
         1,
-        288570576,
+        1588167068,
         "randomize",
         "auto"
       ]
@@ -161,7 +161,7 @@
         644
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "showAdvanced": false,
       "inputs": [
@@ -346,7 +346,7 @@
         "",
         "",
         "gemini-3-pro-image-preview",
-        880009079454868,
+        1080685272645670,
         "randomize",
         "auto",
         "1K",
@@ -366,7 +366,7 @@
         636
       ],
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -547,7 +547,7 @@
         2048,
         2048,
         1,
-        1537261780,
+        1831158952,
         "randomize"
       ]
     },
@@ -563,7 +563,7 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 27,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -612,8 +612,8 @@
       "flags": {
         "collapsed": false
       },
-      "order": 28,
-      "mode": 0,
+      "order": 29,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -777,7 +777,7 @@
       },
       "widgets_values": [
         "",
-        1831518570,
+        1395191768,
         "randomize",
         "high",
         "auto",
@@ -801,8 +801,8 @@
         391.6666564941406
       ],
       "flags": {},
-      "order": 29,
-      "mode": 0,
+      "order": 30,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -848,8 +848,8 @@
         510
       ],
       "flags": {},
-      "order": 22,
-      "mode": 0,
+      "order": 23,
+      "mode": 4,
       "inputs": [
         {
           "label": "image",
@@ -977,8 +977,8 @@
         500
       ],
       "flags": {},
-      "order": 24,
-      "mode": 0,
+      "order": 25,
+      "mode": 4,
       "inputs": [
         {
           "label": "image 1",
@@ -1093,8 +1093,8 @@
         390
       ],
       "flags": {},
-      "order": 23,
-      "mode": 0,
+      "order": 24,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1125,7 +1125,7 @@
         }
       },
       "widgets_values": [
-        "rebrand-Flux2_dev"
+        "logo-Flux2_dev"
       ]
     },
     {
@@ -1140,8 +1140,8 @@
         390
       ],
       "flags": {},
-      "order": 25,
-      "mode": 0,
+      "order": 26,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1172,7 +1172,7 @@
         }
       },
       "widgets_values": [
-        "rebrand-Qwen_2511"
+        "logo-Qwen_2511"
       ]
     },
     {
@@ -1187,7 +1187,7 @@
         380
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1226,7 +1226,7 @@
         }
       },
       "widgets_values": [
-        "rebrand-gemini"
+        "logo-gemini"
       ]
     },
     {
@@ -1241,7 +1241,7 @@
         380
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1273,7 +1273,7 @@
         }
       },
       "widgets_values": [
-        "rebrand-grok"
+        "logo-grok"
       ]
     },
     {
@@ -1288,8 +1288,8 @@
         390
       ],
       "flags": {},
-      "order": 16,
-      "mode": 0,
+      "order": 17,
+      "mode": 4,
       "inputs": [
         {
           "localized_name": "images",
@@ -1327,7 +1327,7 @@
         }
       },
       "widgets_values": [
-        "rebrand-Flux2-Klein-4b-base"
+        "logo-Flux2-Klein-4b-base"
       ]
     },
     {
@@ -1342,8 +1342,8 @@
         500
       ],
       "flags": {},
-      "order": 17,
-      "mode": 0,
+      "order": 18,
+      "mode": 4,
       "inputs": [
         {
           "name": "unet_name",
@@ -1471,7 +1471,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1574,7 +1574,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "hydra-ai-project-brand-oneline.jpeg",
+        "2.jpg",
         "image"
       ]
     },
@@ -1641,7 +1641,7 @@
         "ver": "0.19.3"
       },
       "widgets_values": [
-        "brown_moisturizer_bottle.jpg",
+        "1.jpg",
         "image"
       ]
     },
@@ -1654,12 +1654,12 @@
       ],
       "size": [
         225,
-        96
+        120
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1680,6 +1680,14 @@
           "label": "image2",
           "localized_name": "images.image2",
           "name": "images.image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 417
+        },
+        {
+          "label": "image3",
+          "localized_name": "images.image3",
+          "name": "images.image3",
           "shape": 7,
           "type": "IMAGE",
           "link": null
@@ -1717,7 +1725,7 @@
         72
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1759,7 +1767,7 @@
         104
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1802,7 +1810,7 @@
         797.2666625976562
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1951,7 +1959,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1997,7 +2005,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -2043,7 +2051,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -2162,7 +2170,7 @@
         500.79998779296875
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -2215,7 +2223,7 @@
         286
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -2317,7 +2325,7 @@
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -2417,7 +2425,7 @@
         }
       },
       "widgets_values": [
-        "rebrand/product rebrand: A - Direct Rebrand (Recommended)"
+        "logo/logo maker: E - Character Mascot Logo — Close-Up (Outfit + Uwata_h Style)"
       ]
     },
     {
@@ -2464,7 +2472,74 @@
         }
       },
       "widgets_values": [
-        "rebrand/product rebrand: system_prompt"
+        "logo/logo maker: system_prompt"
+      ]
+    },
+    {
+      "id": 202,
+      "type": "LoadImage",
+      "pos": [
+        1313.9555314759205,
+        -2622.903577574745
+      ],
+      "size": [
+        225,
+        344
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            417
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.19.3"
+      },
+      "widgets_values": [
+        "4.jpg",
+        "image"
       ]
     }
   ],
@@ -2820,6 +2895,14 @@
       90,
       3,
       "IMAGE"
+    ],
+    [
+      417,
+      202,
+      0,
+      174,
+      2,
+      "IMAGE"
     ]
   ],
   "groups": [],
@@ -2830,8 +2913,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 202,
+          "lastLinkId": 417,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2842,8 +2925,8 @@
           "bounding": [
             -823.6666829929898,
             611.1000311059306,
-            147.53333282470703,
-            148
+            155.83333587646484,
+            208
           ]
         },
         "outputNode": {
@@ -2864,7 +2947,7 @@
               159
             ],
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               635.1000311059306
             ]
           },
@@ -2876,7 +2959,7 @@
               160
             ],
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               655.1000311059306
             ]
           },
@@ -2888,7 +2971,7 @@
               161
             ],
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               675.1000311059306
             ]
           },
@@ -2901,7 +2984,7 @@
             ],
             "label": "prompt",
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               695.1000311059306
             ]
           },
@@ -2914,7 +2997,7 @@
             ],
             "label": "reference_image1",
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               715.1000311059306
             ]
           },
@@ -2925,7 +3008,7 @@
             "linkIds": [],
             "label": "reference_image_2",
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               735.1000311059306
             ]
           },
@@ -2936,7 +3019,7 @@
             "linkIds": [],
             "label": "reference_image_3",
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               755.1000311059306
             ]
           },
@@ -2947,7 +3030,7 @@
             "linkIds": [],
             "label": "reference_image_4",
             "pos": [
-              -700.1333501682827,
+              -691.8333471165249,
               775.1000311059306
             ]
           }
@@ -3217,7 +3300,7 @@
               }
             },
             "widgets_values": [
-              194699178529914,
+              561933992951540,
               "randomize"
             ]
           },
@@ -3513,7 +3596,7 @@
             ],
             "size": [
               270,
-              142.6666717529297
+              144
             ],
             "flags": {},
             "order": 12,
@@ -4037,7 +4120,7 @@
             ],
             "size": [
               240,
-              120
+              144
             ],
             "flags": {},
             "order": 15,
@@ -4185,7 +4268,7 @@
             ],
             "size": [
               240,
-              120
+              144
             ],
             "flags": {},
             "order": 19,
@@ -4333,7 +4416,7 @@
             ],
             "size": [
               240,
-              120
+              144
             ],
             "flags": {},
             "order": 17,
@@ -4860,8 +4943,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 202,
+          "lastLinkId": 417,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5226,8 +5309,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 202,
+          "lastLinkId": 417,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6050,7 +6133,7 @@
               }
             },
             "widgets_values": [
-              106597950928356,
+              523573550379717,
               "randomize"
             ]
           },
@@ -7357,8 +7440,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 8,
-          "lastNodeId": 201,
-          "lastLinkId": 416,
+          "lastNodeId": 202,
+          "lastLinkId": 417,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -8305,7 +8388,7 @@
               }
             },
             "widgets_values": [
-              727293790745468,
+              178503566754361,
               "randomize",
               40,
               4,
@@ -8789,10 +8872,10 @@
     "ue_links": [],
     "links_added_by_ue": [],
     "ds": {
-      "scale": 0.4879632301962526,
+      "scale": 0.7144269653303424,
       "offset": [
-        -3125.5622228779876,
-        3537.546643300533
+        -4840.152243308673,
+        3344.3675969773335
       ]
     }
   },
